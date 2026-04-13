@@ -1,0 +1,5 @@
+{"case_id":"resolver-23-flare","slug":"23-flare","source_id":"S4","printed_pages":[33,34],"expectations":{"must_not_be_prose_derived":true,"min_players":5,"max_validation_issues":0}}
+{"case_id":"resolver-32-lob","slug":"32-lob","source_id":"S4","printed_pages":[35,36],"expectations":{"must_not_be_prose_derived":true,"min_players":5,"max_validation_issues":0}}
+{"case_id":"resolver-blob-cross","slug":"blob-cross","source_id":"S4","printed_pages":[9,10],"expectations":{"must_not_be_prose_derived":true,"min_players":5,"max_validation_issues":0}}
+{"case_id":"resolver-blob-belmont-flash","slug":"blob-belmont-flash","source_id":"S4","printed_pages":[5,6],"expectations":{"must_not_be_prose_derived":true,"min_players":5,"max_validation_issues":0}}
+{"case_id":"resolver-blob-4-low-flex","slug":"blob-4-low-flex","source_id":"S4","printed_pages":[20],"expectations":{"must_not_be_prose_derived":true,"min_players":5,"max_validation_issues":0}}

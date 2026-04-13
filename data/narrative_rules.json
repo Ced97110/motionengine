@@ -1,0 +1,16 @@
+{
+  "narrative_avg_words": 312,
+  "top_patterns": {
+    "mentions_rebounds": 95.5,
+    "mentions_shooting_pct": 76.2,
+    "mentions_bench": 71.8,
+    "mentions_streak": 35.4,
+    "mentions_quarter_run": 22.6,
+    "mentions_turnovers": 21.9,
+    "mentions_injury": 21.2,
+    "mentions_record": 18.0,
+    "mentions_three_pointers": 2.6,
+    "mentions_double_double": 0.5
+  },
+  "high_scorer_mention_threshold": 20
+}

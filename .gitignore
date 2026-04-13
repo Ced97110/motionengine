@@ -1,0 +1,60 @@
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.Python
+*.so
+
+# Virtualenv / uv
+.venv/
+venv/
+env/
+.uv-cache/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+coverage.xml
+*.cover
+
+# Ruff / mypy / pyright caches
+.ruff_cache/
+.mypy_cache/
+.pyright_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large pipeline outputs — regenerate with pipeline/02_parse_dataset.py
+/data/parsed_games.json
+
+# Copyrighted source PDFs — NOT redistributable
+/knowledge-base/raw/
+/knowledge-base/raw-football/
+
+# Local pending patch queue
+/knowledge-base/wiki/_pending/*
+!/knowledge-base/wiki/_pending/README.md
+
+# Logs / docker volumes
+*.log
+logs/
+/postgres-data/

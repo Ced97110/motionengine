@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: motion-postgres
+    environment:
+      POSTGRES_DB: motion
+      POSTGRES_USER: motion
+      POSTGRES_PASSWORD: motion_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - motion_pgdata:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/00-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U motion -d motion"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  motion_pgdata:

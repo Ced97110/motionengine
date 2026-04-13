@@ -1,0 +1,53 @@
+---
+type: play
+category: offense
+formation: 4-out 1-in
+tags: [zone-offense, 2-3-zone, baseline-cut, screen, shooter, corner-three, midrange]
+source_count: 1
+last_updated: 2026-04-11
+---
+
+# Baseline Swing
+
+## Overview
+A 2-3 zone play designed to get a shooter an open shot on the baseline from midrange or the three-point line. The play forces the baseline zone defender to play on-ball on the wing, then cuts the shooter baseline off a post screen to the wide-open ball-side short corner. [S4, pp.37-38]
+
+## Formation
+4-out 1-in. Shooter (4) starts in the strong-side corner. Posts (5) near the high post/elbow area. 1 at top of key, 2 at weak-side wing, 3 at strong-side wing.
+
+```json name=diagram-positions
+{"players":[{"role":"1","x":0,"y":30},{"role":"2","x":-18,"y":22},{"role":"3","x":18,"y":22},{"role":"4","x":22,"y":42},{"role":"5","x":0,"y":36}],"actions":[{"from":"1","to":"3","type":"pass"}],"notes":"Extracting the initial (Setup) formation from the first of three diagrams on p.37. The play begins in a 4-out 1-in set: 1 at top of key, 2 at weak-side (left) wing, 3 at strong-side (right) wing, 4 in the strong-side (right) corner, and 5 near the high post/paint area. The first action arrow shown is 1 passing to 3. Subsequent phases (3 cutting across, 5 screening X5, 4 cutting baseline) are depicted in diagrams 2 and 3 and are not part of the starting formation."}
+```
+
+## Phases
+
+### Phase 1: Shift the Defense
+- 1 passes to 3 on the wing (same side as the corner shooter, 4).
+- 3 immediately passes back to 1, who has shifted a few steps toward the middle of the court.
+- Simultaneously, 2 slides up from the weak-side wing to create space for 3 to cut through.
+- 3 cuts all the way across the court under the high zone defenders to the opposite (weak-side) wing.
+- 1 passes to 2, and 2 passes to 3 on the opposite wing.
+
+### Phase 2: Force Defender Commitment and Free the Shooter
+- Since X2 was defending 2 at the top, X3 must now close out to defend 3 on the wing to prevent the open shot — this pulls X3 away from the baseline.
+- As X3 closes out, 5 screens X5 (the ball-side low zone defender).
+- 4 cuts hard and quickly along the baseline to the wide-open ball-side short corner/baseline area.
+- 3 passes to 4 for the midrange or three-point shot (catch-and-shoot).
+
+## Key Coaching Points
+- "5 must not telegraph the screen" — if X5 reads it early, they fight through before 4 arrives and can contest the shot. [S4, p.38]
+- "4 must cut hard and quickly along the baseline" for the catch-and-shoot. Hesitation gives X5 time to recover. [S4, p.38]
+- Ensure 4 practices this shot (baseline midrange or corner three) regularly so they're ready for the quick catch-and-shoot opportunity. [S4, p.38]
+
+## Counters
+- If X5 fights through the screen early, 4 can reject the cut and look to flash to the mid-post instead.
+- If X3 doesn't fully commit to 3, 3 can take the open shot rather than forcing the pass to 4.
+
+## Related Plays
+- [[23-flare]] — similar zone-overload principle using ball movement to free a shooter
+- [[play-baseline-swing]] — this play
+- [[blob-belmont-flash]] — zone BLOB using similar baseline-cut concepts
+- [[play-pick-overload]] — another 2-3 zone play exploiting the low defender's rotation responsibility
+
+## Sources
+- [S4, pp.37-38] — full play description with diagrams
