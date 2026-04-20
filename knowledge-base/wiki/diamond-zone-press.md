@@ -24,7 +24,117 @@ The Diamond Zone Press is a 1-2-1-1 full-court zone defense that applies maximum
 - **4 (middle)**: Positioned to deny the high-post receiver and any middle breakout
 - **5 (back)**: Protects the goal against any long pass or quick advance
 
-<!-- DIAGRAM: needs visual extraction — 1-2-1-1 full-court zone press alignment, p.182 -->
+```json name=diagram-positions
+{
+  "schema_version": "2",
+  "figure_image": "backend/knowledge-base/figures/diamond-zone-press-0.png",
+  "court_region": "half",
+  "legend": {
+    "solid": "cut",
+    "dashed": "pass",
+    "zigzag": "dribble"
+  },
+  "phases": [
+    {
+      "label": "Diamond Zone Press (1-2-1-1) \u2014 Full-Court Alignment",
+      "players": [
+        {
+          "role": "1",
+          "x": 0.0,
+          "y": 47.0,
+          "jersey": "1",
+          "side": "defense",
+          "label": "inbounds_pressure_tallest"
+        },
+        {
+          "role": "2",
+          "x": -14.0,
+          "y": 35.0,
+          "jersey": "2",
+          "side": "defense",
+          "label": "left_wing_deny"
+        },
+        {
+          "role": "3",
+          "x": 14.0,
+          "y": 35.0,
+          "jersey": "3",
+          "side": "defense",
+          "label": "right_wing_deny"
+        },
+        {
+          "role": "4",
+          "x": 0.0,
+          "y": 20.0,
+          "jersey": "4",
+          "side": "defense",
+          "label": "middle_deny_high_post"
+        },
+        {
+          "role": "5",
+          "x": 0.0,
+          "y": 5.0,
+          "jersey": "5",
+          "side": "defense",
+          "label": "back_protector"
+        }
+      ],
+      "actions": [
+        {
+          "from": "1",
+          "to": "2",
+          "type": "cut",
+          "d": "M 0 47 C -5 45, -12 40, -14 35",
+          "style": "solid"
+        },
+        {
+          "from": "OB",
+          "to": "2",
+          "type": "pass",
+          "d": "M 0 47 L -14 35",
+          "style": "dashed"
+        },
+        {
+          "from": "2",
+          "to": "left_corner",
+          "type": "dribble",
+          "d": "M -14 35 L -22 28",
+          "style": "zigzag"
+        }
+      ],
+      "ball": {
+        "x": 0.0,
+        "y": 47.0,
+        "possessed_by": "OB"
+      },
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "1-2-1-1 Diamond Zone Press",
+          "x": 0,
+          "y": -2
+        },
+        {
+          "kind": "label",
+          "text": "Pressure inbounds passer; channel to sideline; trap on stop",
+          "x": 0,
+          "y": 50
+        }
+      ],
+      "extras": [
+        {
+          "kind": "label",
+          "text": "OB",
+          "x": 0,
+          "y": 47,
+          "meaning": "Offensive inbounds passer at baseline out of bounds"
+        }
+      ]
+    }
+  ],
+  "notes": "[S1, pp.182-183] Diamond Zone Press (1-2-1-1) full-court zone press alignment. No actual printed diagram was found on pp.182-183 of the scanned pages \u2014 the pages contain only prose description of the Diamond Zone Press. Positions are reconstructed from the text description: x1 (tallest defender, role \"1\") pressures the inbounds passer at the baseline; x2 and x3 (wings, roles \"2\" and \"3\") are positioned roughly at the quarter-court wings to deny middle and far-side passes and channel to the nearest sideline; x4 (role \"4\") is at mid-court to deny the high-post breakout receiver; x5 (role \"5\") is near the backcourt free-throw line extended as the safety. Ball is shown as inbounded from baseline. Action arrows are illustrative of the described phase 1 (inbounds pressure + sideline channel). If a separate printed diagram exists on a different page, coordinates should be updated from that visual. figure_image path echoed as supplied by resolver."
+}
+```
 
 ## Phases
 ### Phase 1: Inbounds Pressure

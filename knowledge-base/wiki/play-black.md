@@ -4,7 +4,38 @@ category: offense
 formation: 5-out
 tags: [man-to-man, step-up-screen, baseline-drive, post-flash, layup, kickout, quick-hitter]
 source_count: 1
-last_updated: 2026-04-11
+last_updated: 2026-04-20
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: baseline-drive-on-catch
+    role: "2"
+    criticality: required
+  - id: step-up-screen-set
+    role: "4"
+    criticality: required
+  - id: hard-cut-to-paint
+    role: "5"
+    criticality: required
+  - id: dump-off-pass
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: baseline-drive-on-catch
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: baseline-drive-on-catch
+    for_role: "2"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: hard-cut-to-paint
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: step-up-screen-set
+    for_role: "4"
 ---
 
 # Black
@@ -51,6 +82,12 @@ A quick man-to-man play from a 5-out formation that catches the defense off-guar
 - [[play-step-up]] — zone version using same step-up screen and baseline drive concept
 - [[play-swinger]] — man-to-man play with similar drive-and-kick structure
 - [[play-1-4-quick-floppy]] — another man-to-man quick hitter with multiple scoring reads
+
+## Related Concepts
+- [[concept-anatomy-hip-flexor-complex]] — required anatomy for roles 2 and 5 (baseline drive + hard flash cut)
+- [[concept-anatomy-glute-max]] — required horizontal-propulsion engine for the baseline drive and post-flash finish
+- [[concept-anatomy-ankle-complex]] — optional supporting anatomy for baseline drive and post-flash landing mechanics
+- [[concept-anatomy-core-outer]] — optional core-stability anatomy for contact on the post flash and deceleration into the finish
 
 ## Sources
 - [S4, p.56] — full play description with diagram

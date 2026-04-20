@@ -19,6 +19,9 @@ dependencies = [
     "python-jose[cryptography]>=3.3",
     "slowapi>=0.1.9",
     "structlog>=24.4",
+    "pypdfium2>=5.7",
+    "pyyaml>=6.0",
+    "Pillow>=10,<13",
 ]
 
 [project.optional-dependencies]
@@ -30,10 +33,16 @@ dev = [
     "ruff>=0.7",
     "mypy>=1.13",
     "types-python-jose",
+    "types-PyYAML",
 ]
 
 [project.scripts]
 motion-api = "motion.main:run"
+wiki-count-pages = "motion.wiki_ops.cli:count_pages"
+wiki-check-nba-terms = "motion.wiki_ops.cli:check_nba_terms"
+wiki-lint = "motion.wiki_ops.cli:lint_wiki"
+wiki-detect-page-offsets = "motion.wiki_ops.cli:detect_page_offsets"
+wiki-ingest = "motion.wiki_ops.cli:ingest"
 
 [build-system]
 requires = ["hatchling"]
@@ -62,7 +71,25 @@ warn_unused_ignores = true
 disallow_untyped_defs = true
 plugins = ["pydantic.mypy"]
 
+[[tool.mypy.overrides]]
+# pypdfium2 does not currently ship PEP-561 type stubs; suppress
+# "missing stubs" errors only for that single module so strict mode
+# stays intact everywhere else.
+module = "pypdfium2"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# PIL/Pillow ships inline stubs since v10; suppress import errors on
+# older mypy builds that haven't picked them up yet.
+module = "PIL.*"
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
 addopts = "-ra --strict-markers"
+
+[dependency-groups]
+dev = [
+    "types-pyyaml>=6.0.12.20260408",
+]

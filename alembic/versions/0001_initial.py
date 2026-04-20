@@ -4,7 +4,7 @@ Revision ID: 0001_initial
 Revises:
 Create Date: 2026-04-12
 
-Mirrors docs/specs/backend-architecture.md §3.1-§3.3.
+Mirrors backend/spec/architecture.md §3.1-§3.3.
 """
 
 from __future__ import annotations

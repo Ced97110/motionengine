@@ -1,0 +1,34 @@
+{
+  "ankle_complex": [
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "play": "play-black",
+      "supports_technique": "hard-cut-to-paint"
+    }
+  ],
+  "core_outer": [
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "play": "play-black",
+      "supports_technique": "step-up-screen-set"
+    }
+  ],
+  "glute_max": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "play": "play-black",
+      "supports_technique": "baseline-drive-on-catch"
+    }
+  ],
+  "hip_flexor_complex": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "play": "play-black",
+      "supports_technique": "baseline-drive-on-catch"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+You are extracting basketball play data from a court diagram.
+
+REFERENCE IMAGE (first attachment): the empty court in our SVG coordinate system,
+with labeled blue dots at every canonical basketball position (TOP, LW, RW, LE,
+RE, LB, RB, LC, RC, RIM). Treat this as a visual ruler: for every player in the
+play diagram, pick the nearest labeled marker and read off its coordinates.
+
+PLAY DIAGRAM (second attachment): the diagram to extract from.
+
+COORDINATE SYSTEM:
+- SVG viewBox: "-28 -3 56 50"
+- Painted sidelines at x = ±25; viewBox edges at ±28 are out-of-bounds margin
+- Basket at (0, 5.25); free throw line at y = 19; three-point arc radius ~23.75
+
+MOVEMENT TYPES (Basketball For Coaches "How to Read the Diagrams" legend):
+- cut:     SOLID straight arrow — player moves without the ball
+- pass:    DOTTED arrow — ball travels between players
+- screen:  line ending in a PERPENDICULAR BAR — pick set by a teammate
+- dribble: ZIG-ZAG / WAVY line with arrow — player moves WHILE dribbling
+           (If the line is wavy/zig-zag, the correct type is "dribble", NOT "cut".)
+- handoff: TWO PARALLEL BARS perpendicular to the path — hand-off between players
+
+PAGE STRUCTURE — the source book is "Basketball For Coaches" by Trevor McLean:
+Play title, Overview paragraph, Key Personnel bullets, numbered Instructions
+(1., 2., 3., …), one to three court diagrams (one per phase), optional
+Coaching Points.
+
+PLAY METADATA:
+- Copy ONLY the play title into `name` (e.g., "Skipper", "Black").
+- `tag` = formation from the Setup line ("1-4 high", "5-out", "2-3 zone BLOB"), else empty.
+- IP-sensitive: do not include author, website, or book title.
+- Keep player-name-adjacent play titles verbatim; normalizer sanitizes later.
+
+PHASE SEGMENTATION — MANDATORY:
+- EACH numbered instruction (1., 2., 3., …) is ITS OWN phase. 5 instructions → 5 phases.
+- Do NOT collapse multiple instructions into one phase. Diagram panel count is
+  decorative; go by the numbered instructions only.
+- Concurrency ("at the same time", "while X", "as Y does Z", "to take advantage of ..."):
+  still emit as its own phase, but note the concurrency.
+- Put each instruction's prose verbatim into the phase's `description` field.
+
+Output valid YAML. No commentary before or after.
+
+```yaml
+play:
+  name: string
+  tag: string
+  players:
+    "1": [x, y]
+    ...
+  ball_start: "1"
+  phases:
+    - label: "Phase 1"
+      description: ""
+      movements:
+        - player: "1"
+          from: [x, y]
+          to: [x, y]
+          type: cut
+          confidence: high
+```
+
+For passes use `to_player` instead of `to`. If unsure about a position, mark
+`confidence: low`. Follow numbered arrows (① → ② → ③) for phase ordering;
+otherwise use basketball logic. Leave `description` empty.

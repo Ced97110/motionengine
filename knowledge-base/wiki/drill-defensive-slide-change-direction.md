@@ -20,7 +20,222 @@ Build defensive lateral sliding footwork, the ability to pivot and change direct
 - Players line up at one baseline in a defensive stance, one behind the other
 - A coach or manager stationed at each cone to check execution
 
-<!-- DIAGRAM: Figure 5.1 — 7 cones on full court; players slide laterally between cones, pivot, sprint to next cone, repeat alternating slide/run from baseline to baseline -->
+```json name=diagram-positions
+{
+  "schema_version": "2",
+  "figure_image": "backend/knowledge-base/figures/drill-defensive-slide-change-direction-0.png",
+  "court_region": "half",
+  "legend": {
+    "zigzag": "slide",
+    "solid": "sprint/run"
+  },
+  "phases": [
+    {
+      "label": "Figure 5.1 \u2014 Cone or chair drill",
+      "players": [
+        {
+          "role": "1",
+          "x": -20.0,
+          "y": 2.0,
+          "jersey": "1",
+          "side": "offense",
+          "label": "player_start_baseline"
+        }
+      ],
+      "actions": [
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M -20 2 C -14 4, -10 6, -8 8",
+          "style": "zigzag"
+        },
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M -8 8 C -2 8, 4 8, 8 10",
+          "style": "solid"
+        },
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M 8 10 C 14 12, 18 14, 20 16",
+          "style": "zigzag"
+        },
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M 20 16 C 14 18, 8 20, 0 22",
+          "style": "solid"
+        },
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M 0 22 C -8 24, -14 26, -20 28",
+          "style": "zigzag"
+        },
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M -20 28 C -14 30, -6 32, 0 34",
+          "style": "solid"
+        },
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M 0 34 C 6 36, 14 38, 20 40",
+          "style": "zigzag"
+        },
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M 20 40 C 12 42, 4 44, 0 46",
+          "style": "solid"
+        }
+      ],
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "2 3 4 5 6 7 8 9",
+          "x": 0,
+          "y": -2,
+          "target_role": "1"
+        }
+      ],
+      "extras": [
+        {
+          "kind": "label",
+          "text": "PLAYER SLIDES",
+          "x": -14,
+          "y": 5
+        },
+        {
+          "kind": "label",
+          "text": "RUNS",
+          "x": 4,
+          "y": 9
+        },
+        {
+          "kind": "label",
+          "text": "RUNS",
+          "x": 12,
+          "y": 19
+        },
+        {
+          "kind": "label",
+          "text": "SLIDES",
+          "x": 4,
+          "y": 23
+        },
+        {
+          "kind": "label",
+          "text": "SLIDES",
+          "x": -10,
+          "y": 27
+        },
+        {
+          "kind": "label",
+          "text": "RUNS",
+          "x": -8,
+          "y": 33
+        },
+        {
+          "kind": "label",
+          "text": "SLIDES",
+          "x": 8,
+          "y": 37
+        },
+        {
+          "kind": "label",
+          "text": "RUNS",
+          "x": 10,
+          "y": 43
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": -8,
+          "y": 8
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": 20,
+          "y": 16
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": -20,
+          "y": 28
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": 0,
+          "y": 34
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": 20,
+          "y": 40
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": -28,
+          "y": 16,
+          "label": "left_sideline_pivot"
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": 28,
+          "y": 16,
+          "label": "right_sideline_pivot"
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": -28,
+          "y": 40,
+          "label": "left_sideline_pivot_2"
+        },
+        {
+          "kind": "label",
+          "text": "PIVOTS",
+          "x": 28,
+          "y": 40,
+          "label": "right_sideline_pivot_2"
+        },
+        {
+          "kind": "legend_symbol",
+          "symbol": "zigzag",
+          "meaning": "defensive slide (lateral)"
+        },
+        {
+          "kind": "legend_symbol",
+          "symbol": "solid",
+          "meaning": "sprint/run between cones"
+        },
+        {
+          "kind": "court_boundary",
+          "label": "full_court"
+        }
+      ]
+    }
+  ],
+  "notes": "[S1, pp.53-54] Figure 5.1 \u2014 Full-court cone/chair drill. Seven cones (represented as squares in the diagram) are spaced at alternating sideline and mid-court positions across the full court. The single defender (labeled 1, with a queue of additional players 2\u20139 behind at the starting baseline) slides laterally in a zigzag path between cones, pivots at each cone, then sprints to the next cone, alternating slide/sprint sequences until reaching the far baseline. The diagram uses zigzag lines for defensive slides and straight arrows for sprints/runs. \"PIVOTS\" labels mark each cone position. Sideline cone positions are also labeled \"PIVOTS.\" This is a full-court drill; the viewBox coords here are compressed to the half-court range, so cone positions are approximated across the y-axis to represent the full-court spacing. Ambiguity: exact lateral (x) positions of cones varied across the diagram; approximated from the scan."
+}
+```
 
 ## Execution
 1. First player assumes defensive stance facing the nearest basket, knees bent, low center of gravity.

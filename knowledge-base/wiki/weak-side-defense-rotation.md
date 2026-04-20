@@ -39,7 +39,396 @@ When a post player is double-teamed and kicks the ball out, rotation assignments
 - **Pass from 5 to 3 in the corner:** X4 takes 3 in the corner; X3 takes 4 (X4's original man), unless X5 arrives first [S1, Fig.1.2-1.3]
 - **Short pass to near corner:** The trapper facing the ball rotates because he has the quicker, more direct path to the ball without needing to turn and pivot first [S1, p.15]
 
-<!-- DIAGRAM: Figures 1.1-1.3 — post trap from weak-side high with cross-court pass rotations. X5 and X4 double 5; ball kicked to 3 on wing triggers X2 rotation; ball kicked to 3 in corner triggers X4-X3 rotation. See p.15. -->
+```json name=diagram-positions
+{
+  "schema_version": "2",
+  "figure_image": "backend/knowledge-base/figures/weak-side-defense-rotation-0.png",
+  "court_region": "half",
+  "legend": {
+    "solid": "cut",
+    "dashed": "pass",
+    "zigzag": "dribble"
+  },
+  "phases": [
+    {
+      "label": "Figure 1.1 \u2014 Trapping the post from weak-side high: cross-court pass from 5 to 3",
+      "players": [
+        {
+          "role": "1",
+          "x": -22.0,
+          "y": 30.0,
+          "jersey": "1",
+          "side": "offense",
+          "label": "left_wing_low"
+        },
+        {
+          "role": "2",
+          "x": 0.0,
+          "y": 44.0,
+          "jersey": "2",
+          "side": "offense",
+          "label": "baseline_center"
+        },
+        {
+          "role": "3",
+          "x": 21.0,
+          "y": 22.0,
+          "jersey": "3",
+          "side": "offense",
+          "label": "right_wing"
+        },
+        {
+          "role": "4",
+          "x": 4.0,
+          "y": 18.0,
+          "jersey": "4",
+          "side": "offense",
+          "label": "high_post_right"
+        },
+        {
+          "role": "5",
+          "x": -10.0,
+          "y": 22.0,
+          "jersey": "5",
+          "side": "offense",
+          "label": "left_elbow_area"
+        }
+      ],
+      "actions": [
+        {
+          "from": "5",
+          "to": "3",
+          "type": "pass",
+          "d": "M -10 22 C 5 18, 14 18, 21 22",
+          "style": "dashed"
+        },
+        {
+          "from": "x1",
+          "to": "1",
+          "type": "cut",
+          "d": "M -18 28 L -22 30",
+          "style": "solid"
+        }
+      ],
+      "defenders": [
+        {
+          "role": "x1",
+          "x": -18.0,
+          "y": 28.0,
+          "jersey": "X1",
+          "side": "defense",
+          "label": "on_1"
+        },
+        {
+          "role": "x2",
+          "x": 2.0,
+          "y": 36.0,
+          "jersey": "X2",
+          "side": "defense",
+          "label": "on_2"
+        },
+        {
+          "role": "x3",
+          "x": 18.0,
+          "y": 26.0,
+          "jersey": "X3",
+          "side": "defense",
+          "label": "on_3"
+        },
+        {
+          "role": "x4",
+          "x": 0.0,
+          "y": 20.0,
+          "jersey": "X4",
+          "side": "defense",
+          "label": "on_4_trapping_5"
+        },
+        {
+          "role": "x5",
+          "x": -7.0,
+          "y": 22.0,
+          "jersey": "X5",
+          "side": "defense",
+          "label": "on_5_trapping"
+        }
+      ],
+      "ball": {
+        "x": -10.0,
+        "y": 22.0,
+        "possessed_by": "5"
+      },
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "Defensive number alongside X. Change in all directions.",
+          "x": 0,
+          "y": 48
+        }
+      ]
+    },
+    {
+      "label": "Figure 1.2 \u2014 Rotation on cross-court outlet pass to 3: X2 rotates to 3 on the wing",
+      "players": [
+        {
+          "role": "1",
+          "x": -22.0,
+          "y": 26.0,
+          "jersey": "1",
+          "side": "offense",
+          "label": "left_wing"
+        },
+        {
+          "role": "2",
+          "x": 0.0,
+          "y": 44.0,
+          "jersey": "2",
+          "side": "offense",
+          "label": "baseline_center"
+        },
+        {
+          "role": "3",
+          "x": 22.0,
+          "y": 22.0,
+          "jersey": "3",
+          "side": "offense",
+          "label": "right_wing"
+        },
+        {
+          "role": "4",
+          "x": 4.0,
+          "y": 18.0,
+          "jersey": "4",
+          "side": "offense",
+          "label": "high_post_right"
+        },
+        {
+          "role": "5",
+          "x": -8.0,
+          "y": 22.0,
+          "jersey": "5",
+          "side": "offense",
+          "label": "left_elbow_area"
+        }
+      ],
+      "actions": [
+        {
+          "from": "5",
+          "to": "3",
+          "type": "pass",
+          "d": "M -8 22 C 5 17, 14 18, 22 22",
+          "style": "dashed"
+        },
+        {
+          "from": "x4",
+          "to": "3",
+          "type": "cut",
+          "d": "M 0 20 C 8 22, 14 22, 22 22",
+          "style": "solid"
+        },
+        {
+          "from": "x2",
+          "to": "3",
+          "type": "cut",
+          "d": "M 2 36 C 8 32, 14 28, 22 22",
+          "style": "solid"
+        }
+      ],
+      "defenders": [
+        {
+          "role": "x1",
+          "x": -14.0,
+          "y": 24.0,
+          "jersey": "X1",
+          "side": "defense",
+          "label": "near_5_trap"
+        },
+        {
+          "role": "x2",
+          "x": 2.0,
+          "y": 36.0,
+          "jersey": "X2",
+          "side": "defense",
+          "label": "rotating_to_3"
+        },
+        {
+          "role": "x3",
+          "x": 12.0,
+          "y": 30.0,
+          "jersey": "X3",
+          "side": "defense",
+          "label": "sinking_to_help"
+        },
+        {
+          "role": "x4",
+          "x": 0.0,
+          "y": 20.0,
+          "jersey": "X4",
+          "side": "defense",
+          "label": "trapping_5"
+        },
+        {
+          "role": "x5",
+          "x": -6.0,
+          "y": 22.0,
+          "jersey": "X5",
+          "side": "defense",
+          "label": "trapping_5"
+        }
+      ],
+      "ball": {
+        "x": -8.0,
+        "y": 22.0,
+        "possessed_by": "5"
+      },
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "X2 rotates to 3 on the wing",
+          "x": 14,
+          "y": 20
+        },
+        {
+          "kind": "label",
+          "text": "Had pass been to 3 in corner: X4 gets 3, X3 gets 4 unless X5 there first (see Fig 1.3)",
+          "x": 0,
+          "y": 48
+        }
+      ]
+    },
+    {
+      "label": "Figure 1.3 \u2014 Rotation on pass cross court from 5 to 3 (corner option)",
+      "players": [
+        {
+          "role": "1",
+          "x": -22.0,
+          "y": 26.0,
+          "jersey": "1",
+          "side": "offense",
+          "label": "left_wing"
+        },
+        {
+          "role": "2",
+          "x": 0.0,
+          "y": 44.0,
+          "jersey": "2",
+          "side": "offense",
+          "label": "baseline_center"
+        },
+        {
+          "role": "3",
+          "x": 22.0,
+          "y": 22.0,
+          "jersey": "3",
+          "side": "offense",
+          "label": "right_wing_or_corner"
+        },
+        {
+          "role": "4",
+          "x": 4.0,
+          "y": 18.0,
+          "jersey": "4",
+          "side": "offense",
+          "label": "high_post_right"
+        },
+        {
+          "role": "5",
+          "x": -8.0,
+          "y": 22.0,
+          "jersey": "5",
+          "side": "offense",
+          "label": "left_elbow_area"
+        }
+      ],
+      "actions": [
+        {
+          "from": "5",
+          "to": "3",
+          "type": "pass",
+          "d": "M -8 22 C 5 17, 14 17, 22 22",
+          "style": "dashed"
+        },
+        {
+          "from": "x4",
+          "to": "3",
+          "type": "cut",
+          "d": "M 0 20 C 8 24, 14 28, 22 38",
+          "style": "solid"
+        },
+        {
+          "from": "x3",
+          "to": "4",
+          "type": "cut",
+          "d": "M 12 28 C 8 24, 5 20, 4 18",
+          "style": "solid"
+        },
+        {
+          "from": "x2",
+          "to": "2",
+          "type": "cut",
+          "d": "M 4 36 C 2 38, 0 40, 0 44",
+          "style": "solid"
+        }
+      ],
+      "defenders": [
+        {
+          "role": "x1",
+          "x": -14.0,
+          "y": 24.0,
+          "jersey": "X1",
+          "side": "defense",
+          "label": "near_5_trap"
+        },
+        {
+          "role": "x2",
+          "x": 4.0,
+          "y": 36.0,
+          "jersey": "X2",
+          "side": "defense",
+          "label": "sinking"
+        },
+        {
+          "role": "x3",
+          "x": 12.0,
+          "y": 28.0,
+          "jersey": "X3",
+          "side": "defense",
+          "label": "rotating_to_4"
+        },
+        {
+          "role": "x4",
+          "x": 0.0,
+          "y": 20.0,
+          "jersey": "X4",
+          "side": "defense",
+          "label": "rotating_to_3_corner"
+        },
+        {
+          "role": "x5",
+          "x": -6.0,
+          "y": 22.0,
+          "jersey": "X5",
+          "side": "defense",
+          "label": "trapping_5"
+        }
+      ],
+      "ball": {
+        "x": -8.0,
+        "y": 22.0,
+        "possessed_by": "5"
+      },
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "X4 gets 3 in corner; X3 covers 4; X5 may arrive first",
+          "x": 12,
+          "y": 18
+        }
+      ]
+    }
+  ],
+  "notes": "[S1, p.15] Figures 1.1\u20131.3 \u2014 Post double-team weak-side rotation series. Fig 1.1 shows the initial trap on 5 (post) at the left elbow by X5 and X4, with dashed cross-court pass to 3 on the right wing and all defenders in pre-rotation positions. Fig 1.2 shows the rotation triggered by the outlet pass to 3 on the wing: X2 sprints from baseline area to close out on 3. Fig 1.3 shows the alternative corner rotation: X4 chases 3 to the corner, X3 covers 4 (X4's vacated man), and X2 sinks toward 2. Defensive jersey glyphs are drawn as numbers alongside an X symbol. Coordinates approximated from the small diagrams; some path curvature is estimated due to scan resolution."
+}
+```
 
 ## Common Mistakes
 1. **Moving on the catch** → by the time you react to the catch, penetration has already beaten the help; move when the ball leaves the passer's hands [S1, p.13]

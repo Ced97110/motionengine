@@ -1,0 +1,18 @@
+{
+  "explosive-first-step": [
+    {
+      "drill": "drill-ankling",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "exercise-hip-thrust",
+      "emphasis": "primary"
+    }
+  ],
+  "lateral-shuffle-recovery": [
+    {
+      "drill": "drill-band-lateral-walk",
+      "emphasis": "primary"
+    }
+  ]
+}

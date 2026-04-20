@@ -20,7 +20,77 @@ Teach the defender how to keep the dribbler in front of him and force the dribbl
 - Can run multiple pairs simultaneously on the same court
 - No cones required
 
-<!-- DIAGRAM: Figure 5.2 — offensive player dribbles in a zigzag pattern full court as defender forces direction changes; defender gets to spot in front of outside hand each time -->
+```json name=diagram-positions
+{
+  "schema_version": "2",
+  "figure_image": "backend/knowledge-base/figures/drill-1v1-zigzag-defense-0.png",
+  "court_region": "full",
+  "legend": {
+    "zigzag": "dribble",
+    "solid": "cut"
+  },
+  "phases": [
+    {
+      "label": "Figure 5.2 \u2014 One-against-one zigzag drill",
+      "players": [
+        {
+          "role": "1",
+          "x": -6.0,
+          "y": 2.0,
+          "jersey": "O",
+          "side": "offense",
+          "label": "offensive player top left start"
+        }
+      ],
+      "actions": [
+        {
+          "from": "1",
+          "to": "weak_side",
+          "type": "dribble",
+          "d": "M -6 2 C -2 6, 8 8, 10 12 C 12 16, 0 18, -2 22 C -4 26, 8 28, 10 32 C 12 36, 0 38, -2 42 C -4 44, 4 46, 6 47",
+          "style": "zigzag"
+        },
+        {
+          "from": "x1",
+          "to": "weak_side",
+          "type": "cut",
+          "d": "M -4 2 C 2 7, 9 9, 10 12 C 8 16, -1 19, -2 22 C 0 26, 9 29, 10 32 C 8 36, -1 39, -2 42 C 0 44, 5 46, 6 47",
+          "style": "solid"
+        }
+      ],
+      "defenders": [
+        {
+          "role": "x1",
+          "x": -4.0,
+          "y": 2.0,
+          "jersey": "X",
+          "side": "defense",
+          "label": "defender top left start"
+        }
+      ],
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "PLAYER OR COACH",
+          "x": -8,
+          "y": -1
+        }
+      ],
+      "extras": [
+        {
+          "kind": "legend_symbol",
+          "symbol": "zigzag",
+          "meaning": "dribble",
+          "label": "zigzag arrow = dribble path",
+          "x": -10,
+          "y": 5
+        }
+      ]
+    }
+  ],
+  "notes": "[S1, p.54] Figure 5.2 \u2014 Full-court 1-on-1 zigzag drill. The diagram spans the full court; the offensive player dribbles in a diagonal zigzag pattern from one end to the other while the defender slides to stay in front. Zigzag arrows represent the dribble path; solid arrows trace the defender's mirroring slide path. Only one offensive/defensive pair is depicted (the book shows pairs stacked on both sides of the court for a multi-player version). The court is shown in full but this tool uses the half-court viewBox; y coordinates have been compressed to fit [-3..47] with half-court at y\u22480 and far baseline at y\u224847. Path coordinates are approximate due to the full-court compression into the half-court viewBox."
+}
+```
 
 ## Execution
 1. Run the drill first WITHOUT a basketball to establish footwork, then WITH a basketball.

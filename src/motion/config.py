@@ -27,6 +27,12 @@ class Settings(BaseSettings):
     clerk_secret_key: str = "sk_test_unset"
     clerk_jwks_url: str = ""
     clerk_issuer: str = ""
+    clerk_authorized_parties: str = ""
+    clerk_webhook_secret: str = ""
+
+    @property
+    def clerk_authorized_parties_list(self) -> list[str]:
+        return [p.strip() for p in self.clerk_authorized_parties.split(",") if p.strip()]
 
     anthropic_api_key: str = "unset"
 

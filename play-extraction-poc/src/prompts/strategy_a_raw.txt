@@ -1,0 +1,90 @@
+You are extracting basketball play data from a court diagram.
+
+COORDINATE SYSTEM:
+- SVG viewBox: "-28 -3 56 50"
+- Origin (0,0) = center-top of the half-court
+- X axis: -28 (left viewBox edge) to +28 (right viewBox edge)
+- The painted sidelines are at x = -25 and x = +25 (the buffer to ±28 is out-of-bounds margin)
+- Y axis: -3 (above baseline) to +47 (half-court line)
+- Basket is at (0, 5.25)
+- Free throw line is at y = 19
+- Three-point arc has radius ~23.75 from basket
+- Canonical positions: top of key (0, 32), wings (±16, 26), corners (±22, 4),
+  elbows (±8, 19), blocks (±6, 8)
+
+MOVEMENT TYPES — Basketball For Coaches uses this exact symbol vocabulary
+(see the book's "How to Read the Diagrams" legend):
+- cut:     SOLID straight arrow — a player moving WITHOUT the ball.
+- pass:    DOTTED arrow — the ball travels between players (no player moves with the ball).
+- screen:  line that ends in a PERPENDICULAR BAR — a player sets a pick for a teammate.
+- dribble: ZIG-ZAG / WAVY line with an arrow — a player moves WHILE dribbling the ball.
+           If you see a zig-zag line, the correct type is "dribble", NOT "cut".
+- handoff: TWO PARALLEL BARS perpendicular to the path — a hand-off between two players.
+
+CRITICAL: a zig-zag/wavy line is ALWAYS type: "dribble". A straight solid arrow
+with no wave is type: "cut". Do not default to "cut" when the line is wavy.
+
+PAGE STRUCTURE — the source book is "Basketball For Coaches" by Trevor McLean.
+Every play page follows this format:
+  - Play title at the top (e.g., "Skipper", "Black", "X-Cross")
+  - "Overview of the Play" — one prose paragraph
+  - "Key Personnel" — bullet list describing which roles matter
+  - "Instructions" — a Setup sentence, then NUMBERED steps (1., 2., 3., …)
+  - One to three court diagrams on the right, one per natural phase of the play
+  - Optional "Coaching Points" section after the diagrams
+
+PLAY METADATA:
+- Copy ONLY the play title into "name" (e.g., "Skipper", "Black", "X-Cross").
+  DO NOT invent a name; leave empty if the title is unreadable.
+- "tag" should describe the set formation if visible in the Setup line ("1-3-1",
+  "1-4 high", "5-out", "2-3 zone BLOB"), otherwise empty.
+- IP-sensitive: DO NOT copy the author name, website, or book title into any field.
+- If the play title contains a player name (e.g., "Iverson"), keep it in "name"
+  unchanged — the downstream normalizer will sanitize.
+
+PHASE SEGMENTATION — YOU MUST FOLLOW THIS EXACTLY:
+- Each NUMBERED INSTRUCTION in the prose (1., 2., 3., …) becomes ITS OWN phase.
+  A 5-instruction play must produce 5 phases. A 4-instruction play → 4 phases.
+  Do NOT collapse multiple instructions into a single phase.
+- Exception: if an instruction contains a phrase like "at the same time",
+  "as X does Y", "while X", or "to take advantage of ...", that instruction
+  may be concurrent with the previous one — still emit it as its own phase.
+- Within a phase, include only the movement(s) described in that numbered instruction.
+- Preserve the book's prose verbatim in each phase's `description` field.
+- The number of court-diagram PANELS (1, 2, or 3 per page) is decorative —
+  IGNORE IT for phase counting. Go by the numbered instructions only.
+
+Output valid YAML matching this schema. Do not add commentary before or after.
+
+```yaml
+play:
+  name: string
+  tag: string
+  players:
+    "1": [x, y]
+    "2": [x, y]
+    "3": [x, y]
+    "4": [x, y]
+    "5": [x, y]
+  ball_start: "1"
+  phases:
+    - label: "Phase 1"
+      description: ""
+      movements:
+        - player: "1"
+          from: [x, y]
+          to: [x, y]
+          type: cut
+          confidence: high
+```
+
+For pass movements, use `to_player` (the receiving player's id) instead of `to`:
+```yaml
+- player: "1"
+  to_player: "4"
+  type: pass
+  confidence: high
+```
+
+Put the book's prose for each instruction into the phase's `description` field
+(verbatim, trimmed). If you are unsure about a coordinate, mark `confidence: low`.

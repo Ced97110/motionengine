@@ -400,6 +400,10 @@
 - [Play selection principles](play-selection-principles.md) — Core principles for selecting and designing plays: formation deception, personnel fit, body language, and keeping playbooks simple.
 - [Concept reading screens off ball](concept-reading-screens-off-ball.md) — How off-ball players read their defender on down screens, flare screens, and double screens to choose the best cut.
 - [Concept setting screens](concept-setting-screens.md) — Principles for setting legal, effective screens including angle, timing, hold, and hunting the defender.
+- [Concept anatomy hip flexor complex](concept-anatomy-hip-flexor-complex.md) — The iliopsoas, rectus femoris, sartorius, and TFL group that drives cutting, driving, and first-step acceleration. Part of the anterior kinetic chain per [S2, p.32].
+- [Concept anatomy glute max](concept-anatomy-glute-max.md) — The gluteus maximus as horizontal-propulsion engine for drives, defensive slides, and vertical jumps. Primary muscle trained by the hip thrust per [S2, pp.18-19].
+- [Concept anatomy ankle complex](concept-anatomy-ankle-complex.md) — ATFL, CFL, and the ligament-plus-calf system that controls landing, cutting, and pivoting. Ligament-dominant region; proprioceptive instrument that determines injury risk per [S2] Ch.7.
+- [Concept anatomy core outer](concept-anatomy-core-outer.md) — The rectus abdominis, obliques, and erector spinae that "produce and resist spinal movement in multiple planes" [S2, p.32]. Anti-rotation and anti-extension training target.
 
 <!-- concept pages will be listed here -->
 

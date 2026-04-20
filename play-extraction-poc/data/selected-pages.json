@@ -1,0 +1,13 @@
+{
+  "source_pdf": "backend/knowledge-base/raw/basketball-for-coaches.pdf",
+  "source_attribution": "BasketballForCoaches.com / Trevor McLean (2017)",
+  "diagrams": [
+    {"id": 1, "page": 60, "complexity": "simple",  "expected_play_name": "Black",        "notes": "5-out man, 5 steps, 1 diagram"},
+    {"id": 2, "page": 50, "complexity": "pass",    "expected_play_name": "Skipper",      "notes": "1-3-1 BLOB quick hitter, 4 steps, 2 diagrams, skip pass"},
+    {"id": 3, "page": 70, "complexity": "screen",  "expected_play_name": "Iverson Ram",  "notes": "1-4 high PnR with pin-down, 6 steps, 3 diagrams — rename 'Iverson' before publish"},
+    {"id": 4, "page": 15, "complexity": "zone",    "expected_play_name": "Double Skip",  "notes": "2-3 zone BLOB, 6 steps, 3 diagrams, defenders visible"},
+    {"id": 5, "page": 80, "complexity": "full",    "expected_play_name": "X-Cross",      "notes": "High 2-3 motion, 6 steps, 3 diagrams, 5-player multi-option"}
+  ],
+  "selection_method": "hand-picked after eyeballing pages 15, 20, 30, 40, 50, 60, 70, 80, 90",
+  "complexity_note": "Book design shows most plays across 2-3 diagram panels with numbered prose instructions. Phase segmentation is explicit from the instruction numbering — no LLM phase inference needed."
+}

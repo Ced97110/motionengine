@@ -20,7 +20,106 @@ Teach the post defender to position correctly (three-quarter or full front) base
 - 1 offensive post player at the low block
 - 1 defensive post player
 
-<!-- DIAGRAM: Figure 5.17 — Three passers at corner (P1), wing (P2), and top (P3); post defender adjusts from three-quarter to full front as ball moves from corner/top to wing -->
+```json name=diagram-positions
+{
+  "schema_version": "2",
+  "figure_image": "backend/knowledge-base/figures/drill-post-defense-three-quarter-fronting-0.png",
+  "court_region": "half",
+  "legend": {
+    "dashed": "pass",
+    "solid": "cut",
+    "dotted": "pass"
+  },
+  "phases": [
+    {
+      "label": "Figure 5.17 \u2014 Post defense: three-quarter (corner/top) vs. full front (wing)",
+      "players": [
+        {
+          "role": "P1",
+          "x": -22.0,
+          "y": 42.0,
+          "jersey": "P1",
+          "side": "offense",
+          "label": "left_corner_passer"
+        },
+        {
+          "role": "P2",
+          "x": -18.0,
+          "y": 30.0,
+          "jersey": "P2",
+          "side": "offense",
+          "label": "left_wing_passer"
+        },
+        {
+          "role": "P3",
+          "x": -8.0,
+          "y": 22.0,
+          "jersey": "P3",
+          "side": "offense",
+          "label": "top_of_key_passer"
+        },
+        {
+          "role": "1",
+          "x": -7.0,
+          "y": 40.0,
+          "jersey": "1",
+          "side": "offense",
+          "label": "offensive_post_low_block"
+        }
+      ],
+      "actions": [
+        {
+          "from": "P1",
+          "to": "P2",
+          "type": "pass",
+          "d": "M -22 42 L -18 30",
+          "style": "dashed"
+        },
+        {
+          "from": "P2",
+          "to": "P3",
+          "type": "pass",
+          "d": "M -18 30 L -8 22",
+          "style": "dashed"
+        }
+      ],
+      "defenders": [
+        {
+          "role": "x1",
+          "x": -4.0,
+          "y": 37.0,
+          "jersey": "X",
+          "side": "defense",
+          "label": "post_defender_fronting"
+        }
+      ],
+      "ball": {
+        "x": -22.0,
+        "y": 42.0,
+        "possessed_by": "P1"
+      },
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "FRONT",
+          "x": -2,
+          "y": 36,
+          "target_role": "x1"
+        }
+      ],
+      "extras": [
+        {
+          "kind": "label",
+          "text": "Post defense general rule: play three-quarter with ball in the corner or on top. Front with ball on the wing. Three-quarter or front with the ball at the top.",
+          "x": 0,
+          "y": 50
+        }
+      ]
+    }
+  ],
+  "notes": "[S1, p.58] Figure 5.17 \u2014 Three passers (P1 at left corner, P2 at left wing, P3 at top of key) feed a low-post offensive player (1) while the post defender (X) adjusts between three-quarter and full-front positioning. General rule per the book: three-quarter when ball is in corner or on top; full front when ball is on the wing. The \"FRONT\" annotation appears next to the defender in the diagram. Dashed lines indicate ball movement among passers. Defender sitting on offensive player's legs is described in prose but not separately depicted as an arrow."
+}
+```
 
 ## Execution
 1. Three passers pass among themselves: P1 (corner) → P2 (wing) → P3 (top) → back.

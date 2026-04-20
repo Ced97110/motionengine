@@ -1,0 +1,42 @@
+{
+  "ankle_complex": [
+    {
+      "drill": "drill-ankling",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-band-lateral-walk",
+      "emphasis": "secondary"
+    }
+  ],
+  "core_outer": [
+    {
+      "drill": "drill-back-extension",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-bird-dog",
+      "emphasis": "primary"
+    }
+  ],
+  "glute_max": [
+    {
+      "drill": "drill-back-extension",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-band-lateral-walk",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "exercise-hip-thrust",
+      "emphasis": "primary"
+    }
+  ],
+  "hip_flexor_complex": [
+    {
+      "drill": "exercise-hip-thrust",
+      "emphasis": "secondary"
+    }
+  ]
+}

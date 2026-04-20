@@ -1,0 +1,24 @@
+{
+  "play-black": [
+    {
+      "criticality": "required",
+      "id": "baseline-drive-on-catch",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "step-up-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "hard-cut-to-paint",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "dump-off-pass",
+      "role": "2"
+    }
+  ]
+}

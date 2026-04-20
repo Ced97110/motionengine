@@ -1,0 +1,77 @@
+STEP 1 PROMPT:
+The attached page is from "Basketball For Coaches" by Trevor McLean. Each page
+shows: a play title, an "Overview of the Play" paragraph, "Key Personnel"
+bullets, numbered "Instructions" (1., 2., 3., …), and one to three court
+diagrams on the right, each representing a phase of the play.
+
+Describe the play. Include:
+
+1. Play title (quote the header verbatim — e.g., "Skipper", "Iverson Ram").
+   Do NOT include the author, website, or book title. IP-sensitive.
+
+2. Formation (from the Setup line, e.g., "1-4 high", "5-out", "2-3 zone BLOB").
+
+3. For EACH numbered prose instruction (1., 2., 3., …), describe ONE MOVEMENT:
+   - Which player moves
+   - From where to where (basketball terminology)
+   - The line type: cut (solid straight arrow), pass (dotted arrow),
+     screen (perpendicular bar at the end), dribble (ZIG-ZAG / wavy arrow),
+     or handoff (two parallel bars).
+   - Quote the book's prose for that instruction verbatim (one short line).
+
+Every numbered instruction becomes its own entry in your output. Do not merge
+instructions. If instruction text contains "at the same time", "while X",
+"as Y does Z", or "to take advantage of …", note it as concurrent-with-previous.
+
+CRITICAL: a zig-zag / wavy line = "dribble", NOT "cut". A straight solid arrow = "cut".
+
+Be concise — one short line per movement.
+
+STEP 2 PROMPT:
+Convert the following basketball play description into YAML using the SVG
+coordinate system "-28 -3 56 50". Use this coordinate mapping:
+
+basketball_positions_to_viewbox:
+  top_of_key:         [0, 32]
+  right_wing:         [16, 26]
+  left_wing:          [-16, 26]
+  right_corner:       [22, 4]
+  left_corner:        [-22, 4]
+  right_block:        [6, 8]
+  left_block:         [-6, 8]
+  right_elbow:        [8, 19]
+  left_elbow:         [-8, 19]
+  free_throw_line:    [0, 19]
+  basket:             [0, 5.25]
+  half_court:         [0, 47]
+  right_short_corner: [16, 10]
+  left_short_corner:  [-16, 10]
+  right_hash:         [17, 15]
+  left_hash:          [-17, 15]
+
+Output schema (valid YAML, no commentary):
+
+```yaml
+play:
+  name: string
+  tag: string
+  players:
+    "1": [x, y]
+    ...
+  ball_start: "1"
+  phases:
+    - label: "Phase 1"
+      description: ""
+      movements:
+        - player: "1"
+          from: [x, y]
+          to: [x, y]
+          type: cut
+          confidence: high
+```
+
+For pass movements use `to_player` (receiver's id) instead of `to`. If the
+description is ambiguous about a position, interpolate reasonably and mark
+`confidence: low`. Leave `description` empty.
+
+DESCRIPTION:

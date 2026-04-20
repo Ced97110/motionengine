@@ -34,7 +34,122 @@ Herb Brown's post-up defensive system is built on a clear rule: **front all post
 - **Weak-Side Box (X4)**: Cover the weak-side block
 - **Weak-Side Elbow (X3)**: Cover the weak-side elbow
 
-<!-- DIAGRAM: Figure 9.23 — X5 fronts 5, X1 pressures ball, X2 plays nail, X4 weak-side box, X3 weak-side elbow. X2 must stop 4 on the nail to stop high-low action. [S1, p.137] -->
+```json name=diagram-positions
+{
+  "schema_version": "2",
+  "figure_image": "backend/knowledge-base/figures/post-up-defense-0.png",
+  "court_region": "half",
+  "legend": {
+    "solid": "cut",
+    "dashed": "pass",
+    "zigzag": "dribble"
+  },
+  "phases": [
+    {
+      "label": "Figure 9.23",
+      "players": [
+        {
+          "role": "1",
+          "x": -22.0,
+          "y": 26.0,
+          "jersey": "1",
+          "side": "offense",
+          "label": "ball_handler_top_left"
+        },
+        {
+          "role": "2",
+          "x": 0.0,
+          "y": 38.0,
+          "jersey": "2",
+          "side": "offense",
+          "label": "bottom_of_key"
+        },
+        {
+          "role": "3",
+          "x": 22.0,
+          "y": 22.0,
+          "jersey": "3",
+          "side": "offense",
+          "label": "right_wing"
+        },
+        {
+          "role": "4",
+          "x": 6.0,
+          "y": 26.0,
+          "jersey": "4",
+          "side": "offense",
+          "label": "nail_high_post"
+        },
+        {
+          "role": "5",
+          "x": -7.0,
+          "y": 40.0,
+          "jersey": "5",
+          "side": "offense",
+          "label": "left_low_block"
+        }
+      ],
+      "actions": [],
+      "defenders": [
+        {
+          "role": "x1",
+          "x": -20.0,
+          "y": 27.0,
+          "jersey": "x1",
+          "side": "defense",
+          "label": "on_ball_top_left"
+        },
+        {
+          "role": "x2",
+          "x": 2.0,
+          "y": 33.0,
+          "jersey": "x2",
+          "side": "defense",
+          "label": "nail"
+        },
+        {
+          "role": "x3",
+          "x": 8.0,
+          "y": 29.0,
+          "jersey": "x3",
+          "side": "defense",
+          "label": "weak_side_elbow"
+        },
+        {
+          "role": "x4",
+          "x": 7.0,
+          "y": 40.0,
+          "jersey": "x4",
+          "side": "defense",
+          "label": "weak_side_box"
+        },
+        {
+          "role": "x5",
+          "x": -5.0,
+          "y": 38.0,
+          "jersey": "x5",
+          "side": "defense",
+          "label": "fronting_post"
+        }
+      ],
+      "ball": {
+        "x": -22.0,
+        "y": 26.0,
+        "possessed_by": "1"
+      },
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "X5 fronts 5, X1 pressures the ball, X2 plays the nail, X4 plays the weak-side box, and X3 plays the weak-side elbow. X2 must stop 4 on the nail to stop high-low action.",
+          "x": 0,
+          "y": 50
+        }
+      ]
+    }
+  ],
+  "notes": "[S1, p.137] Figure 9.23 \u2014 Post-up defensive formation. X5 fronts offensive player 5 on the left low block. X1 applies ball pressure on 1 at the left wing/top area. X2 covers the nail to prevent high-low action with 4 at the high post. X4 covers the weak-side box and X3 covers the weak-side elbow. No action arrows are drawn in this diagram; it is a static positional formation showing defensive assignments. The ball is with 1 at the top-left wing."
+}
+```
 
 ## Variations
 ### Three-Quarter Defense (Ball Above FT Line)

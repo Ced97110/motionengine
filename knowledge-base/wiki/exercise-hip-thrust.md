@@ -6,7 +6,24 @@ players_needed: 1
 duration_minutes: 15-20
 tags: [strength, conditioning, leg-strength, glutes, jumping, acceleration, deceleration, landing]
 source_count: 1
-last_updated: 2026-04-11
+last_updated: 2026-04-20
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+trains_techniques:
+  - id: explosive-first-step
+    emphasis: primary
+insights:
+  safety_tip:
+    text: "Back of shoulder firm on padded bench; cervical spine (neck) must NOT be the main support."
+    citation: "[S2, p.18]"
+  coaching_cue: "Drive through the hips, not the lower back — extension comes from the hips, not the low back."
+  primary_form_error:
+    symptom: "Anterior pelvic tilt at lockout"
+    consequence: "Transfers load off the glute and into the lower back"
+    citation: "[S2, pp.18-19]"
 ---
 
 # Hip Thrust
@@ -42,6 +59,8 @@ Maximally recruit the gluteal muscles to build horizontal and vertical propulsio
 ## Concepts Taught
 - [[leg-strength-for-basketball]] — gluteal strength is the foundation of propulsion and safe landings
 - [[basketball-acceleration-and-deceleration]] — horizontal propulsion for driving past opponents; deceleration and cutting
+- [[concept-anatomy-glute-max]] — primary muscle trained (hip extension under load) [S2, pp.18-19]
+- [[concept-anatomy-hip-flexor-complex]] — `rectus femoris` named verbatim as a secondary muscle trained [S2, pp.18-19]
 
 ## Basketball Application
 The gluteal muscles significantly contribute to improving horizontal and vertical body propulsion, necessary for accelerating past and outjumping an opponent. These muscles are also crucial for safe and efficient landings, and contribute to breaking away from an opponent via enhanced deceleration and cutting. [S2, pp.18-19]

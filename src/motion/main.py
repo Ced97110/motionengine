@@ -18,6 +18,7 @@ from motion import __version__
 from motion.config import get_settings
 from motion.db import get_engine
 from motion.middleware.request_id import RequestIdMiddleware
+from motion.routers.knowledge import router as knowledge_router
 from motion.schemas.errors import ErrorBody, ErrorEnvelope
 
 logger = logging.getLogger("motion.main")
@@ -35,7 +36,11 @@ async def _lifespan(_: FastAPI) -> Any:
 
 def _cors_origins() -> list[str]:
     """Comma-separated env var CORS_ORIGINS, with sensible dev defaults."""
-    raw = os.getenv("CORS_ORIGINS", "http://localhost:3001,http://127.0.0.1:3001")
+    default = (
+        "http://localhost:3000,http://127.0.0.1:3000,"
+        "http://localhost:3001,http://127.0.0.1:3001"
+    )
+    raw = os.getenv("CORS_ORIGINS", default)
     return [o.strip() for o in raw.split(",") if o.strip()]
 
 
@@ -115,6 +120,8 @@ def create_app() -> FastAPI:
             "git_sha": os.getenv("GIT_SHA", "unknown"),
             "environment": settings.environment,
         }
+
+    app.include_router(knowledge_router)
 
     return app
 

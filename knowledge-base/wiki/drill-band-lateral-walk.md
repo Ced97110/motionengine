@@ -6,7 +6,21 @@ players_needed: 1
 duration_minutes: 5-10
 tags: [strengthening, ankle, lateral-movement, defense, conditioning, injury-prevention]
 source_count: 1
-last_updated: 2026-04-11
+last_updated: 2026-04-20
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+trains_techniques:
+  - id: lateral-shuffle-recovery
+    emphasis: primary
+insights:
+  coaching_cue: "Stay in the squat — don't stand up between steps; keep tension on the band at all times."
+  primary_form_error:
+    symptom: "Feet turning in or out"
+    consequence: "Takes tension off the lateral hip; defeats the propulsion target"
+    citation: "[S2, p.139]"
 ---
 
 # Band Lateral Walk
@@ -41,6 +55,8 @@ Develop lower-extremity strength and lateral ankle stabilization for injury prev
 ## Concepts Taught
 - [[ankle-strengthening]] — primary lateral ankle and hip strengthening exercise
 - [[concept-ankle-proprioception]] — lateral stability work reinforces proprioceptive awareness
+- [[concept-anatomy-glute-max]] — lateral hip strength drives cutting and defensive-slide propulsion [S2, p.139]
+- [[concept-anatomy-ankle-complex]] — lateral ankle stabilization and injury prevention [S2, p.139]
 
 ## Sources
 - [S2, p.139] — Band Lateral Walk exercise description and basketball focus

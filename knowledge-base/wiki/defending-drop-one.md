@@ -19,7 +19,213 @@ Brown teaches this play in practice by first diagramming the offense and then di
 - When scouting reveals drop-play tendencies from the opposition
 - As a teaching vehicle for help-side rotations and post-fronting concepts
 
-<!-- DIAGRAM: Figure 3.1 — Player 1 at low post left block; Players 2, 3, 4, 5 spread on perimeter and weak side. Figure 3.2 — X1 fronts Player 1; X5 in weak-side lane ready to double; X3/X4/X2 cover strong/weak elbows and weak-side box. -->
+```json name=diagram-positions
+{
+  "schema_version": "2",
+  "figure_image": "backend/knowledge-base/figures/defending-drop-one-0.png",
+  "court_region": "half",
+  "legend": {
+    "solid": "cut",
+    "dashed": "pass",
+    "zigzag": "screen",
+    "wavy": "screen"
+  },
+  "phases": [
+    {
+      "label": "Figure 3.1 \u2014 Drop one: one variation of the common drop play",
+      "players": [
+        {
+          "role": "1",
+          "x": -7.0,
+          "y": 40.0,
+          "jersey": "1",
+          "side": "offense",
+          "label": "left_low_block"
+        },
+        {
+          "role": "2",
+          "x": 18.0,
+          "y": 22.0,
+          "jersey": "2",
+          "side": "offense",
+          "label": "right_wing"
+        },
+        {
+          "role": "3",
+          "x": -18.0,
+          "y": 35.0,
+          "jersey": "3",
+          "side": "offense",
+          "label": "left_corner_wing"
+        },
+        {
+          "role": "4",
+          "x": -18.0,
+          "y": 22.0,
+          "jersey": "4",
+          "side": "offense",
+          "label": "left_wing"
+        },
+        {
+          "role": "5",
+          "x": -8.0,
+          "y": 18.0,
+          "jersey": "5",
+          "side": "offense",
+          "label": "top_of_key_left"
+        }
+      ],
+      "actions": [
+        {
+          "from": "5",
+          "to": "2",
+          "type": "pass",
+          "d": "M -8 18 C 4 18, 12 20, 18 22",
+          "style": "solid"
+        },
+        {
+          "from": "4",
+          "to": "3",
+          "type": "cut",
+          "d": "M -18 22 L -18 35",
+          "style": "solid"
+        },
+        {
+          "from": "5",
+          "to": "1",
+          "type": "pass",
+          "d": "M -8 18 C -8 28, -8 33, -7 40",
+          "style": "dashed"
+        }
+      ],
+      "ball": {
+        "x": -8.0,
+        "y": 18.0,
+        "possessed_by": "5"
+      }
+    },
+    {
+      "label": "Figure 3.2 \u2014 Defending drop one playing behind 1: if X1 fronts, X5 can look to double from across the lane and all other elbows and boxes are covered",
+      "players": [
+        {
+          "role": "1",
+          "x": -7.0,
+          "y": 40.0,
+          "jersey": "1",
+          "side": "offense",
+          "label": "left_low_block"
+        },
+        {
+          "role": "2",
+          "x": 18.0,
+          "y": 22.0,
+          "jersey": "2",
+          "side": "offense",
+          "label": "right_wing"
+        },
+        {
+          "role": "3",
+          "x": -18.0,
+          "y": 35.0,
+          "jersey": "3",
+          "side": "offense",
+          "label": "left_corner_wing"
+        },
+        {
+          "role": "4",
+          "x": -18.0,
+          "y": 22.0,
+          "jersey": "4",
+          "side": "offense",
+          "label": "left_wing"
+        },
+        {
+          "role": "5",
+          "x": -8.0,
+          "y": 18.0,
+          "jersey": "5",
+          "side": "offense",
+          "label": "top_of_key_left"
+        }
+      ],
+      "actions": [
+        {
+          "from": "x5",
+          "to": "1",
+          "type": "cut",
+          "d": "M 3 32 C -1 35, -3 38, -5 41",
+          "style": "solid"
+        },
+        {
+          "from": "x4",
+          "to": "x3",
+          "type": "cut",
+          "d": "M 8 29 L -8 29",
+          "style": "solid"
+        }
+      ],
+      "defenders": [
+        {
+          "role": "x1",
+          "x": -5.0,
+          "y": 41.0,
+          "jersey": "X1",
+          "side": "defense",
+          "label": "on_ball_post"
+        },
+        {
+          "role": "x2",
+          "x": 7.0,
+          "y": 39.0,
+          "jersey": "X2",
+          "side": "defense",
+          "label": "weak_side_box"
+        },
+        {
+          "role": "x3",
+          "x": -8.0,
+          "y": 29.0,
+          "jersey": "X3",
+          "side": "defense",
+          "label": "weak_side_elbow"
+        },
+        {
+          "role": "x4",
+          "x": 8.0,
+          "y": 29.0,
+          "jersey": "X4",
+          "side": "defense",
+          "label": "strong_side_elbow"
+        },
+        {
+          "role": "x5",
+          "x": 3.0,
+          "y": 32.0,
+          "jersey": "X5",
+          "side": "defense",
+          "label": "weak_side_lane"
+        }
+      ],
+      "annotations": [
+        {
+          "kind": "label",
+          "text": "X1 fronts or plays behind 1",
+          "target_role": "x1",
+          "x": -7,
+          "y": 43
+        },
+        {
+          "kind": "label",
+          "text": "X5 doubles from across the lane",
+          "target_role": "x5",
+          "x": 3,
+          "y": 31
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Key Principles
 1. **Option A — Play behind Player 1**: X1 defends behind the post player, relying on physicality and position to discourage the feed and deny easy catches.

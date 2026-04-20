@@ -1,0 +1,8463 @@
+{
+  "23-flare": [
+    "zone-offense",
+    "2-3-zone",
+    "flare-screen",
+    "three-point",
+    "shooter",
+    "quick-hitter"
+  ],
+  "32-lob": [
+    "zone-offense",
+    "2-3-zone",
+    "lob",
+    "backdoor",
+    "weak-side",
+    "alley-oop",
+    "quick-hitter"
+  ],
+  "acl-and-shoulder-injury-prevention": [
+    "conditioning",
+    "injury-prevention",
+    "ACL",
+    "knee",
+    "shoulder",
+    "prehabilitation",
+    "neuromuscular"
+  ],
+  "acl-injury-prevention": [
+    "injury-prevention",
+    "ACL",
+    "knee",
+    "conditioning",
+    "prehabilitation",
+    "neuromuscular",
+    "dynamic-valgus"
+  ],
+  "agility-training-principles": [
+    "agility",
+    "balance",
+    "conditioning",
+    "footwork",
+    "speed",
+    "quickness"
+  ],
+  "ankle-proprioception-basketball": [
+    "conditioning",
+    "rehabilitation",
+    "ankle",
+    "injury-prevention",
+    "proprioception"
+  ],
+  "ankle-sprain-rehabilitation": [
+    "rehabilitation",
+    "injury-prevention",
+    "ankle",
+    "return-to-play",
+    "conditioning"
+  ],
+  "ankle-strengthening": [
+    "injury-prevention",
+    "conditioning",
+    "ankle",
+    "strengthening",
+    "rehabilitation"
+  ],
+  "arm-bar-ball-protection": [
+    "offense",
+    "dribbling",
+    "ball-protection",
+    "shot-creation",
+    "driving"
+  ],
+  "athlete-assessment-saq": [
+    "conditioning",
+    "assessment",
+    "speed",
+    "agility",
+    "quickness",
+    "strength",
+    "testing"
+  ],
+  "balance-hand-form-shooting-drill": [
+    "shooting",
+    "fundamentals",
+    "form-shooting",
+    "balance-hand",
+    "alignment"
+  ],
+  "bank-shot": [
+    "offense",
+    "shooting",
+    "midrange",
+    "post",
+    "fundamentals"
+  ],
+  "bank-shot-drills": [
+    "shooting",
+    "bank-shot",
+    "midrange",
+    "post",
+    "individual-workout"
+  ],
+  "basic-rules-of-defense": [
+    "defense",
+    "man-to-man",
+    "post-defense",
+    "transition",
+    "closeout",
+    "rebounding",
+    "team-defense",
+    "philosophy"
+  ],
+  "basketball-acceleration-and-deceleration": [
+    "conditioning",
+    "acceleration",
+    "deceleration",
+    "cutting",
+    "first-step",
+    "direction-change",
+    "injury-prevention"
+  ],
+  "basketball-glossary-defensive-terms": [
+    "defense",
+    "man-to-man",
+    "terminology",
+    "glossary",
+    "pick-and-roll",
+    "help-defense",
+    "post-defense"
+  ],
+  "basketball-glossary-herb-brown": [
+    "defense",
+    "offense",
+    "terminology",
+    "glossary",
+    "man-to-man",
+    "zone",
+    "pick-and-roll",
+    "screens"
+  ],
+  "basketball-glossary-offensive-terms": [
+    "offense",
+    "terminology",
+    "glossary",
+    "screens",
+    "pick-and-roll",
+    "cutting",
+    "sets",
+    "transition"
+  ],
+  "basketball-physical-qualities-hierarchy": [
+    "conditioning",
+    "strength",
+    "power",
+    "plyometrics",
+    "athletic-development",
+    "periodization"
+  ],
+  "basketball-warmup-drills": [
+    "conditioning",
+    "warm-up",
+    "footwork",
+    "balance",
+    "coordination",
+    "injury-prevention"
+  ],
+  "basketball-warmup-protocol": [
+    "conditioning",
+    "warm-up",
+    "injury-prevention",
+    "flexibility",
+    "balance",
+    "coordination"
+  ],
+  "blob-4-low-flex": [
+    "BLOB",
+    "man-to-man",
+    "flex-screen",
+    "pin-down",
+    "screen-the-screener",
+    "layup",
+    "catch-and-shoot"
+  ],
+  "blob-4-low-flex-updated": [
+    "BLOB",
+    "man-to-man",
+    "flex-screen",
+    "pin-down",
+    "screen-the-screener",
+    "layup",
+    "catch-and-shoot"
+  ],
+  "blob-belmont-flash": [
+    "BLOB",
+    "zone",
+    "2-3-zone",
+    "corner-three",
+    "flash",
+    "screen",
+    "inbounds"
+  ],
+  "blob-box-flash": [
+    "BLOB",
+    "zone",
+    "2-3-zone",
+    "corner-three",
+    "back-screen",
+    "double-screen",
+    "overload",
+    "inbounds"
+  ],
+  "blob-box-gate": [
+    "BLOB",
+    "man-to-man",
+    "back-screen",
+    "gate-screen",
+    "cross-screen",
+    "catch-and-shoot",
+    "post-up",
+    "layup"
+  ],
+  "blob-box-gate-updated": [
+    "BLOB",
+    "man-to-man",
+    "back-screen",
+    "gate-screen",
+    "cross-screen",
+    "post-up",
+    "catch-and-shoot",
+    "layup"
+  ],
+  "blob-cross": [
+    "BLOB",
+    "zone",
+    "2-3-zone",
+    "cross",
+    "youth",
+    "simple",
+    "inbounds",
+    "corner-three"
+  ],
+  "blob-double-skip": [
+    "BLOB",
+    "zone",
+    "2-3-zone",
+    "skip-pass",
+    "flare-screen",
+    "double-screen",
+    "inbounds",
+    "three-point"
+  ],
+  "blob-flip": [
+    "BLOB",
+    "man-to-man",
+    "cross-screen",
+    "seal",
+    "post",
+    "layup",
+    "rim-attack",
+    "youth"
+  ],
+  "blob-flip-updated": [
+    "BLOB",
+    "man-to-man",
+    "cross-screen",
+    "rim-attack",
+    "layup",
+    "post",
+    "seal"
+  ],
+  "blob-hawk": [
+    "BLOB",
+    "zone",
+    "2-3-zone",
+    "quick-hitter",
+    "corner-three",
+    "screen",
+    "post-up",
+    "inbounds"
+  ],
+  "blob-side-cross-elevator": [
+    "BLOB",
+    "zone",
+    "2-3-zone",
+    "elevator-screen",
+    "sequential-screen",
+    "corner-three",
+    "inbounds"
+  ],
+  "blob-stack-double": [
+    "BLOB",
+    "man-to-man",
+    "staggered-screen",
+    "shooter",
+    "wing",
+    "three-point",
+    "midrange"
+  ],
+  "blob-stack-double-updated": [
+    "BLOB",
+    "man-to-man",
+    "staggered-screen",
+    "shooter",
+    "wing-shot",
+    "three-point",
+    "dribble-fake",
+    "deception"
+  ],
+  "blob-stack-man": [
+    "BLOB",
+    "man-to-man",
+    "youth",
+    "hard-cut",
+    "stack",
+    "simple"
+  ],
+  "blob-stack-man-spread": [
+    "BLOB",
+    "man-to-man",
+    "youth",
+    "stack",
+    "sequential-cuts",
+    "simplicity"
+  ],
+  "blob-stack-zone": [
+    "BLOB",
+    "zone",
+    "2-3-zone",
+    "midrange",
+    "corner-three",
+    "screen",
+    "youth"
+  ],
+  "blob-stack-zone-variant": [
+    "BLOB",
+    "zone",
+    "2-3-zone",
+    "midrange",
+    "corner-three",
+    "screen",
+    "youth"
+  ],
+  "blob-two-inside": [
+    "BLOB",
+    "man-to-man",
+    "screen-the-screener",
+    "post",
+    "layup",
+    "up-screen",
+    "cross-screen"
+  ],
+  "blob-two-inside-updated": [
+    "BLOB",
+    "man-to-man",
+    "screen-the-screener",
+    "post",
+    "layup",
+    "inside",
+    "mismatch",
+    "guards-clear"
+  ],
+  "blob-yo-yo": [
+    "BLOB",
+    "man-to-man",
+    "up-screen",
+    "post",
+    "layup",
+    "box",
+    "rim-attack"
+  ],
+  "blob-yo-yo-updated": [
+    "BLOB",
+    "man-to-man",
+    "up-screen",
+    "post",
+    "layup",
+    "rim-cut",
+    "youth",
+    "simplicity"
+  ],
+  "coaching-traits-herb-brown": [
+    "coaching-philosophy",
+    "leadership",
+    "communication",
+    "staff-management"
+  ],
+  "concept-1on1-pivoting-techniques": [
+    "offense",
+    "footwork",
+    "pivoting",
+    "ball-handling",
+    "passing",
+    "ball-protection",
+    "press-break"
+  ],
+  "concept-advanced-combined-dribble-moves": [
+    "offense",
+    "perimeter",
+    "dribble",
+    "one-on-one",
+    "advanced",
+    "ball-handling",
+    "half-court"
+  ],
+  "concept-agility-and-balance-training": [
+    "agility",
+    "balance",
+    "speed",
+    "conditioning",
+    "neuromuscular",
+    "coordination",
+    "deceleration"
+  ],
+  "concept-agility-training": [
+    "agility",
+    "quickness",
+    "speed",
+    "conditioning",
+    "footwork",
+    "defense",
+    "offense"
+  ],
+  "concept-anatomy-ankle-complex": [
+    "anatomy",
+    "lower-body",
+    "ankle",
+    "proprioception",
+    "injury-prevention",
+    "landing"
+  ],
+  "concept-anatomy-core-outer": [
+    "anatomy",
+    "core",
+    "trunk",
+    "rotation",
+    "stability",
+    "injury-prevention"
+  ],
+  "concept-anatomy-glute-max": [
+    "anatomy",
+    "lower-body",
+    "posterior-chain",
+    "glutes",
+    "propulsion",
+    "jumping"
+  ],
+  "concept-anatomy-hip-flexor-complex": [
+    "anatomy",
+    "lower-body",
+    "mobility",
+    "hip-flexor",
+    "injury-prevention"
+  ],
+  "concept-ankle-proprioception": [
+    "injury-prevention",
+    "conditioning",
+    "ankle",
+    "proprioception",
+    "balance",
+    "rehabilitation"
+  ],
+  "concept-ankle-sprain-rehabilitation": [
+    "rehabilitation",
+    "injury-prevention",
+    "ankle",
+    "conditioning",
+    "return-to-play"
+  ],
+  "concept-attacking-offense": [
+    "offense",
+    "half-court",
+    "transition",
+    "ball-movement",
+    "trapping",
+    "press-break",
+    "spacing"
+  ],
+  "concept-back-flip-chain": [
+    "agility",
+    "explosiveness",
+    "acrobatics",
+    "power",
+    "back-flip",
+    "kinesthetic-awareness",
+    "plyometrics"
+  ],
+  "concept-back-flip-progression-chain": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "acrobatics"
+  ],
+  "concept-back-screen-reads": [
+    "offense",
+    "screens",
+    "off-ball",
+    "back-screen",
+    "reading-defense",
+    "lob"
+  ],
+  "concept-backdoor-cut": [
+    "offense",
+    "half-court",
+    "backdoor",
+    "cutting",
+    "continuity",
+    "off-ball-movement"
+  ],
+  "concept-backdoor-cut-continuity": [
+    "offense",
+    "half-court",
+    "cutting",
+    "backdoor",
+    "continuity",
+    "off-ball",
+    "layup",
+    "one-hand-bounce-pass"
+  ],
+  "concept-ball-reversal-swing": [
+    "offense",
+    "ball-movement",
+    "spacing",
+    "half-court",
+    "weak-side"
+  ],
+  "concept-basket-man-ball-man": [
+    "defense",
+    "transition",
+    "fast-break",
+    "communication",
+    "half-court"
+  ],
+  "concept-basketball-conditioning-principles": [
+    "conditioning",
+    "strength",
+    "periodization",
+    "program-design",
+    "off-season",
+    "in-season"
+  ],
+  "concept-basketball-drill-philosophy-s6": [
+    "offense",
+    "practice",
+    "coaching-philosophy",
+    "fundamentals",
+    "shooting",
+    "conditioning"
+  ],
+  "concept-basketball-first-principles": [
+    "fundamentals",
+    "first-principles",
+    "game-design",
+    "positions",
+    "spacing",
+    "philosophy"
+  ],
+  "concept-basketball-needs-analysis": [
+    "conditioning",
+    "athlete-assessment",
+    "periodization",
+    "metabolic-demands",
+    "speed",
+    "agility"
+  ],
+  "concept-basketball-saq-sample-program": [
+    "conditioning",
+    "speed",
+    "agility",
+    "quickness",
+    "program-design",
+    "periodization",
+    "training",
+    "basketball"
+  ],
+  "concept-basketball-warmup-protocol": [
+    "conditioning",
+    "warm-up",
+    "injury-prevention",
+    "mobility",
+    "biomechanics",
+    "running"
+  ],
+  "concept-basketball-weight-training-philosophy": [
+    "strength",
+    "weight-training",
+    "olympic-lifts",
+    "conditioning",
+    "periodization",
+    "functional-strength"
+  ],
+  "concept-bodyweight-power-training-philosophy": [
+    "conditioning",
+    "power",
+    "calisthenics",
+    "athleticism",
+    "training-philosophy",
+    "strength",
+    "speed"
+  ],
+  "concept-calling-the-ball": [
+    "shooting",
+    "communication",
+    "catch-and-shoot",
+    "fundamentals"
+  ],
+  "concept-chin-action": [
+    "offense",
+    "half-court",
+    "continuity",
+    "back-screen",
+    "high-post",
+    "flare",
+    "motion",
+    "screening"
+  ],
+  "concept-combination-alternating-defenses": [
+    "defense",
+    "zone",
+    "man-to-man",
+    "combination-defense",
+    "box-and-one",
+    "pro",
+    "game-management"
+  ],
+  "concept-combination-live-ball-moves": [
+    "offense",
+    "live-ball",
+    "one-on-one",
+    "scoring",
+    "dribble-moves",
+    "footwork",
+    "half-court"
+  ],
+  "concept-combination-scoring-moves": [
+    "offense",
+    "one-on-one",
+    "scoring",
+    "shot-creation",
+    "footwork",
+    "perimeter",
+    "mindset"
+  ],
+  "concept-conditioned-reflexes": [
+    "conditioning",
+    "athleticism",
+    "neuromuscular",
+    "speed",
+    "reflexes"
+  ],
+  "concept-consolidation-training": [
+    "conditioning",
+    "training-methodology",
+    "skill-development",
+    "agility",
+    "nervous-system"
+  ],
+  "concept-continuity-offense": [
+    "offense",
+    "half-court",
+    "motion",
+    "backdoor",
+    "cutting",
+    "passing",
+    "screening",
+    "high-post"
+  ],
+  "concept-continuity-offense-entries": [
+    "offense",
+    "half-court",
+    "continuity",
+    "high-post",
+    "backdoor",
+    "dribble",
+    "screen",
+    "entry",
+    "read-and-react"
+  ],
+  "concept-continuity-offense-implementing": [
+    "offense",
+    "coaching-philosophy",
+    "continuity",
+    "teaching",
+    "fundamentals",
+    "team-culture"
+  ],
+  "concept-continuity-offense-overview": [
+    "offense",
+    "half-court",
+    "high-post",
+    "motion",
+    "screen-away",
+    "backdoor",
+    "continuity"
+  ],
+  "concept-continuity-offense-philosophy": [
+    "offense",
+    "continuity",
+    "philosophy",
+    "coaching-culture",
+    "team-basketball",
+    "fundamentals"
+  ],
+  "concept-core-anatomy-basketball": [
+    "conditioning",
+    "strength",
+    "anatomy",
+    "core",
+    "stability",
+    "injury-prevention"
+  ],
+  "concept-core-stability-circuit-basketball": [
+    "core",
+    "strength",
+    "stability",
+    "conditioning",
+    "abdominals",
+    "obliques",
+    "injury-prevention"
+  ],
+  "concept-curl-shot-off-screen": [
+    "offense",
+    "shooting",
+    "off-screen",
+    "curl-cut",
+    "elbow",
+    "midrange",
+    "catch-and-shoot"
+  ],
+  "concept-defensive-box-out-footwork": [
+    "defense",
+    "rebounding",
+    "footwork",
+    "pivoting",
+    "box-out"
+  ],
+  "concept-defensive-footwork-breakdown-drills": [
+    "defense",
+    "footwork",
+    "pivoting",
+    "on-ball-defense",
+    "drills",
+    "man-to-man",
+    "zone",
+    "zone-press"
+  ],
+  "concept-defensive-philosophy-herb-brown": [
+    "defense",
+    "philosophy",
+    "coaching",
+    "team",
+    "system"
+  ],
+  "concept-defensive-pivot-drills": [
+    "defense",
+    "footwork",
+    "pivoting",
+    "on-ball",
+    "man-to-man",
+    "drills",
+    "breakdown"
+  ],
+  "concept-defensive-rebound-outlet-pass-pivot": [
+    "defense",
+    "rebounding",
+    "transition",
+    "outlet-pass",
+    "footwork",
+    "pivoting"
+  ],
+  "concept-defensive-rebounding-footwork": [
+    "defense",
+    "rebounding",
+    "footwork",
+    "pivoting",
+    "box-out",
+    "man-to-man",
+    "team-defense"
+  ],
+  "concept-defensive-strategies-del-harris": [
+    "defense",
+    "strategy",
+    "game-planning",
+    "man-to-man",
+    "PnR",
+    "matchups",
+    "coaching-philosophy"
+  ],
+  "concept-defensive-strategy-del-harris": [
+    "defense",
+    "game-planning",
+    "matchups",
+    "pick-and-roll",
+    "strategy",
+    "half-court",
+    "man-to-man",
+    "zone"
+  ],
+  "concept-down-screen-reads": [
+    "offense",
+    "screens",
+    "off-ball",
+    "down-screen",
+    "reading-defense",
+    "catch-and-shoot"
+  ],
+  "concept-dribble-curl-shot": [
+    "offense",
+    "shooting",
+    "off-screen",
+    "curl-cut",
+    "live-ball",
+    "reading-defense",
+    "paint-attack",
+    "dribble-move"
+  ],
+  "concept-dribble-fade-shot": [
+    "offense",
+    "shooting",
+    "off-screen",
+    "live-ball",
+    "reading-defense",
+    "baseline",
+    "dribble-move"
+  ],
+  "concept-dribble-fill-shot": [
+    "offense",
+    "shooting",
+    "off-screen",
+    "live-ball",
+    "reading-defense",
+    "middle-attack",
+    "dribble-move"
+  ],
+  "concept-dribble-moves-van-gundy": [
+    "offense",
+    "perimeter",
+    "dribble",
+    "one-on-one",
+    "half-court",
+    "ball-handling"
+  ],
+  "concept-dribbling-driving-techniques": [
+    "offense",
+    "footwork",
+    "dribbling",
+    "driving",
+    "ball-handling",
+    "penetration"
+  ],
+  "concept-explosive-calisthenics-five-principles": [
+    "conditioning",
+    "speed",
+    "agility",
+    "power",
+    "athleticism",
+    "training-philosophy"
+  ],
+  "concept-explosive-calisthenics-program-design": [
+    "conditioning",
+    "plyometrics",
+    "strength",
+    "program-design",
+    "power"
+  ],
+  "concept-explosive-calisthenics-programming-philosophy": [
+    "conditioning",
+    "training-methodology",
+    "coaching-philosophy",
+    "skill-development"
+  ],
+  "concept-explosive-calisthenics-pullup-chain": [
+    "conditioning",
+    "upper-body",
+    "explosive",
+    "calisthenics",
+    "pulling",
+    "muscle-up",
+    "progression",
+    "strength-development"
+  ],
+  "concept-explosive-qualities-framework": [
+    "conditioning",
+    "athleticism",
+    "speed",
+    "agility",
+    "power",
+    "explosiveness"
+  ],
+  "concept-explosive-six": [
+    "conditioning",
+    "athleticism",
+    "power",
+    "speed",
+    "agility",
+    "calisthenics",
+    "program-design"
+  ],
+  "concept-explosive-six-hierarchy": [
+    "conditioning",
+    "plyometrics",
+    "speed",
+    "agility",
+    "strength",
+    "training-methodology"
+  ],
+  "concept-explosive-six-movement-families": [
+    "conditioning",
+    "power",
+    "agility",
+    "speed",
+    "athleticism",
+    "plyometrics",
+    "calisthenics"
+  ],
+  "concept-explosive-training-principles": [
+    "conditioning",
+    "athleticism",
+    "power",
+    "speed",
+    "agility",
+    "program-design",
+    "calisthenics"
+  ],
+  "concept-explosive-weight-training-basketball": [
+    "conditioning",
+    "strength-training",
+    "power",
+    "athleticism",
+    "jumping",
+    "acceleration"
+  ],
+  "concept-fast-break-elements-dantoni": [
+    "offense",
+    "transition",
+    "fast-break",
+    "tempo",
+    "philosophy",
+    "personnel"
+  ],
+  "concept-fast-break-execution": [
+    "offense",
+    "transition",
+    "fast-break",
+    "spacing",
+    "up-tempo",
+    "outlet-pass"
+  ],
+  "concept-fast-break-philosophy-karl-moe": [
+    "offense",
+    "transition",
+    "fast-break",
+    "philosophy",
+    "tempo"
+  ],
+  "concept-fast-break-primary-secondary-dantoni": [
+    "offense",
+    "transition",
+    "fast-break",
+    "pick-and-roll",
+    "spacing",
+    "tempo"
+  ],
+  "concept-fast-break-principles": [
+    "offense",
+    "transition",
+    "fast-break",
+    "up-tempo",
+    "rebounding",
+    "philosophy"
+  ],
+  "concept-fill-shot-off-screen": [
+    "offense",
+    "shooting",
+    "off-screen",
+    "catch-and-shoot",
+    "wing",
+    "midrange"
+  ],
+  "concept-first-step-quickness": [
+    "quickness",
+    "speed",
+    "agility",
+    "conditioning",
+    "first-step",
+    "acceleration",
+    "footwork"
+  ],
+  "concept-five-jumping-skills": [
+    "jumping",
+    "plyometrics",
+    "explosiveness",
+    "conditioning",
+    "bodyweight"
+  ],
+  "concept-flare-screen-reads": [
+    "offense",
+    "screens",
+    "off-ball",
+    "flare-screen",
+    "reading-defense",
+    "three-point"
+  ],
+  "concept-flex-back-screen-footwork": [
+    "offense",
+    "flex",
+    "back-screen",
+    "flare",
+    "footwork",
+    "pivoting",
+    "screens"
+  ],
+  "concept-flex-bump-option": [
+    "offense",
+    "flex",
+    "back-screen",
+    "communication",
+    "footwork",
+    "pivoting",
+    "post",
+    "bump"
+  ],
+  "concept-flex-bump-option-footwork": [
+    "offense",
+    "half-court",
+    "flex-offense",
+    "screens",
+    "footwork",
+    "pivoting",
+    "switches",
+    "post"
+  ],
+  "concept-flex-offense": [
+    "offense",
+    "half-court",
+    "screening",
+    "cutting",
+    "flex",
+    "motion",
+    "argentina"
+  ],
+  "concept-flex-offense-transition-entry": [
+    "offense",
+    "transition",
+    "fast-break",
+    "flex",
+    "lane-filling",
+    "spacing",
+    "Argentina"
+  ],
+  "concept-flex-offense-transition-setup": [
+    "offense",
+    "transition",
+    "fast-break",
+    "flex",
+    "lane-filling",
+    "Argentina"
+  ],
+  "concept-flex-veer-option": [
+    "offense",
+    "flex",
+    "post",
+    "duck-in",
+    "back-screen",
+    "footwork",
+    "pivoting"
+  ],
+  "concept-flex-veer-option-footwork": [
+    "offense",
+    "half-court",
+    "flex-offense",
+    "post",
+    "screens",
+    "footwork",
+    "pivoting"
+  ],
+  "concept-front-flip-chain": [
+    "explosiveness",
+    "agility",
+    "plyometrics",
+    "acrobatics",
+    "power",
+    "total-body-speed",
+    "kinesthetic-awareness"
+  ],
+  "concept-front-flip-mechanics": [
+    "athleticism",
+    "plyometrics",
+    "agility",
+    "power",
+    "coordination",
+    "tumbling",
+    "body-control"
+  ],
+  "concept-functional-strength-overload-underload": [
+    "strength",
+    "conditioning",
+    "functional-strength",
+    "overload",
+    "plyometrics",
+    "weight-training",
+    "explosiveness"
+  ],
+  "concept-game-preparation-halftime": [
+    "game-preparation",
+    "halftime-adjustments",
+    "scouting",
+    "coaching-philosophy",
+    "in-game-adjustments"
+  ],
+  "concept-game-preparation-nba": [
+    "coaching-philosophy",
+    "scouting",
+    "game-plan",
+    "video",
+    "preparation",
+    "pro"
+  ],
+  "concept-getting-open-perimeter": [
+    "offense",
+    "perimeter",
+    "cutting",
+    "getting-open",
+    "footwork",
+    "half-court"
+  ],
+  "concept-gretzky-law-anticipation": [
+    "quickness",
+    "reaction-time",
+    "defense",
+    "offense",
+    "game-intelligence"
+  ],
+  "concept-halftime-adjustments": [
+    "game-management",
+    "halftime",
+    "adjustments",
+    "coaching-process",
+    "scouting",
+    "in-game-strategy"
+  ],
+  "concept-high-post-bump-footwork": [
+    "offense",
+    "half-court",
+    "post",
+    "screens",
+    "footwork",
+    "pivoting",
+    "High-Post-cut",
+    "switches"
+  ],
+  "concept-high-post-continuity-basic-action": [
+    "offense",
+    "half-court",
+    "motion",
+    "continuity",
+    "screening",
+    "cutting",
+    "high-post",
+    "spacing"
+  ],
+  "concept-hop-back-crossover-combo": [
+    "offense",
+    "ball-handling",
+    "live-ball-moves",
+    "dribble-combinations",
+    "scoring"
+  ],
+  "concept-in-game-defensive-adjustments": [
+    "defense",
+    "game-management",
+    "momentum",
+    "pace",
+    "scouting",
+    "pro",
+    "coaching"
+  ],
+  "concept-individual-shooting-workout-design": [
+    "shooting",
+    "individual-workout",
+    "skill-development",
+    "practice-design",
+    "free-throws",
+    "spot-shots"
+  ],
+  "concept-isolation-defense-del-harris": [
+    "defense",
+    "isolation",
+    "trapping",
+    "pro",
+    "one-on-one",
+    "help-defense"
+  ],
+  "concept-isolation-defense-strategies": [
+    "defense",
+    "isolation",
+    "man-to-man",
+    "trapping",
+    "zone",
+    "pro"
+  ],
+  "concept-jab-step": [
+    "offense",
+    "footwork",
+    "one-on-one",
+    "scoring",
+    "shot-creation",
+    "perimeter"
+  ],
+  "concept-jab-step-van-gundy": [
+    "offense",
+    "perimeter",
+    "one-on-one",
+    "half-court",
+    "jab-step",
+    "fakes"
+  ],
+  "concept-joint-health-calisthenics": [
+    "conditioning",
+    "injury-prevention",
+    "athleticism",
+    "speed",
+    "calisthenics",
+    "joint-health"
+  ],
+  "concept-joint-health-for-speed": [
+    "conditioning",
+    "injury-prevention",
+    "mobility",
+    "speed",
+    "calisthenics",
+    "longevity"
+  ],
+  "concept-jump-chain-progression": [
+    "plyometrics",
+    "jumping",
+    "explosive-power",
+    "calisthenics",
+    "progression",
+    "lower-body"
+  ],
+  "concept-jump-shot-mechanics": [
+    "shooting",
+    "jump-shot",
+    "mechanics",
+    "footwork",
+    "midrange",
+    "fundamentals"
+  ],
+  "concept-jump-shot-release-and-follow-through": [
+    "shooting",
+    "jump-shot",
+    "mechanics",
+    "follow-through",
+    "release"
+  ],
+  "concept-kimble-practice-philosophy": [
+    "coaching-philosophy",
+    "practice",
+    "teaching",
+    "fundamentals",
+    "drill-design",
+    "motivation"
+  ],
+  "concept-kip-up-athletic-application": [
+    "conditioning",
+    "agility",
+    "explosive-power",
+    "total-body",
+    "calisthenics",
+    "floor-work",
+    "speed"
+  ],
+  "concept-kip-up-chain": [
+    "conditioning",
+    "agility",
+    "explosive-power",
+    "calisthenics",
+    "hip-snap",
+    "coordination"
+  ],
+  "concept-kip-up-fundamentals": [
+    "conditioning",
+    "agility",
+    "hip-power",
+    "explosive-power",
+    "athleticism",
+    "floor-movement"
+  ],
+  "concept-kip-up-progression-chain": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "concept-late-game-defensive-adjustments": [
+    "defense",
+    "late-game",
+    "pro",
+    "strategy",
+    "fouling",
+    "three-point-defense",
+    "situational"
+  ],
+  "concept-late-game-defensive-strategy": [
+    "defense",
+    "late-game",
+    "fouling",
+    "three-point",
+    "switching",
+    "game-management",
+    "pro"
+  ],
+  "concept-live-ball-combination-moves": [
+    "offense",
+    "ball-handling",
+    "scoring",
+    "pull-up",
+    "dribble",
+    "footwork",
+    "live-ball"
+  ],
+  "concept-live-ball-workout-system": [
+    "offense",
+    "shooting",
+    "ball-handling",
+    "workout-design",
+    "live-ball",
+    "free-throw",
+    "periodization"
+  ],
+  "concept-lower-body-plyometrics": [
+    "conditioning",
+    "plyometrics",
+    "lower-body",
+    "explosiveness",
+    "jumping",
+    "lateral-quickness",
+    "injury-prevention"
+  ],
+  "concept-matchup-press-obrien": [
+    "defense",
+    "full-court",
+    "press",
+    "man-to-man",
+    "zone",
+    "trapping",
+    "conditioning"
+  ],
+  "concept-mentally-correcting-a-miss": [
+    "offense",
+    "shooting",
+    "mental",
+    "visualization",
+    "confidence"
+  ],
+  "concept-midrange-jump-shot": [
+    "shooting",
+    "jump-shot",
+    "midrange",
+    "catch-and-shoot",
+    "pull-up",
+    "mechanics",
+    "fundamentals"
+  ],
+  "concept-modern-conditioning-basketball": [
+    "conditioning",
+    "strength",
+    "speed",
+    "agility",
+    "periodization",
+    "off-season",
+    "weight-training",
+    "functional-strength"
+  ],
+  "concept-motion-offense-philosophy": [
+    "offense",
+    "half-court",
+    "philosophy",
+    "spacing",
+    "passing",
+    "team-offense"
+  ],
+  "concept-motion-offense-principles": [
+    "offense",
+    "half-court",
+    "team-offense",
+    "philosophy",
+    "utah-motion offense",
+    "passing"
+  ],
+  "concept-muscle-up": [
+    "conditioning",
+    "upper-body",
+    "explosive-power",
+    "calisthenics",
+    "pulling",
+    "pushing",
+    "grip"
+  ],
+  "concept-muscle-up-progression-chain": [
+    "upper-body",
+    "pulling",
+    "pushing",
+    "explosive",
+    "calisthenics",
+    "power",
+    "total-body",
+    "progressive-overload"
+  ],
+  "concept-muscle-up-variations-s9": [
+    "conditioning",
+    "athleticism",
+    "explosive-training",
+    "upper-body",
+    "calisthenics",
+    "strength"
+  ],
+  "concept-nba-scouting-report": [
+    "scouting",
+    "game-plan",
+    "coaching-philosophy",
+    "preparation",
+    "pro"
+  ],
+  "concept-neurological-inhibition-speed": [
+    "speed",
+    "mental-training",
+    "visualization",
+    "conditioning",
+    "athleticism",
+    "neuroscience"
+  ],
+  "concept-neurological-speed-mindset": [
+    "speed",
+    "mental",
+    "conditioning",
+    "mindset",
+    "neurological",
+    "calisthenics"
+  ],
+  "concept-not-open-dribble-reaction-off-screen": [
+    "offense",
+    "shooting",
+    "screens",
+    "off-screen",
+    "dribble",
+    "ball-handling",
+    "shot-creation"
+  ],
+  "concept-off-ball-screen-reads": [
+    "offense",
+    "off-ball-screens",
+    "back-screen",
+    "down-screen",
+    "flare-screen",
+    "pro"
+  ],
+  "concept-off-screen-shot-selection-framework": [
+    "offense",
+    "shooting",
+    "off-screen",
+    "reading-defense",
+    "decision-making",
+    "live-ball",
+    "catch-and-shoot"
+  ],
+  "concept-off-season-shooting-challenge": [
+    "offense",
+    "shooting",
+    "individual-development",
+    "off-season",
+    "conditioning"
+  ],
+  "concept-offensive-post-footwork": [
+    "offense",
+    "post-play",
+    "footwork",
+    "pivoting",
+    "low-post",
+    "scoring"
+  ],
+  "concept-offensive-post-play-principles": [
+    "offense",
+    "post-play",
+    "fundamentals",
+    "footwork",
+    "half-court",
+    "inside-scoring"
+  ],
+  "concept-offensive-practice-philosophy-s6": [
+    "offense",
+    "practice",
+    "coaching-philosophy",
+    "fundamentals",
+    "shooting",
+    "dribbling",
+    "rebounding",
+    "passing"
+  ],
+  "concept-offensive-rebounding": [
+    "offense",
+    "rebounding",
+    "footwork",
+    "physicality"
+  ],
+  "concept-offensive-rebounding-techniques": [
+    "offense",
+    "rebounding",
+    "footwork",
+    "pivoting",
+    "stickbacks"
+  ],
+  "concept-olajuwon-whirl-move": [
+    "offense",
+    "post",
+    "footwork",
+    "pivoting",
+    "post-moves",
+    "scoring"
+  ],
+  "concept-on-ball-defensive-pivots": [
+    "defense",
+    "footwork",
+    "pivoting",
+    "on-ball",
+    "man-to-man",
+    "quickness"
+  ],
+  "concept-on-ball-pressure-fratello": [
+    "defense",
+    "on-ball",
+    "pressure",
+    "man-to-man",
+    "help-defense",
+    "rotation"
+  ],
+  "concept-one-two-step-footwork": [
+    "shooting",
+    "footwork",
+    "catch-and-shoot",
+    "jump-shot",
+    "balance",
+    "mechanics"
+  ],
+  "concept-oob-defense-del-harris": [
+    "defense",
+    "out-of-bounds",
+    "BLOB",
+    "SLOB",
+    "pro",
+    "late-game",
+    "switching",
+    "trapping"
+  ],
+  "concept-out-of-bounds-defense": [
+    "defense",
+    "out-of-bounds",
+    "man-to-man",
+    "switching",
+    "trapping",
+    "late-game",
+    "pro"
+  ],
+  "concept-outlet-pass-pivot": [
+    "defense",
+    "rebounding",
+    "transition",
+    "footwork",
+    "pivoting",
+    "outlet-pass"
+  ],
+  "concept-parc-progression-principle": [
+    "conditioning",
+    "athleticism",
+    "explosive-training",
+    "periodization",
+    "progression",
+    "calisthenics",
+    "power"
+  ],
+  "concept-perimeter-getting-open": [
+    "offense",
+    "perimeter",
+    "off-ball",
+    "cutting",
+    "spacing",
+    "half-court"
+  ],
+  "concept-perimeter-one-on-one-moves": [
+    "offense",
+    "perimeter",
+    "one-on-one",
+    "dribbling",
+    "ball-handling",
+    "footwork",
+    "jab-step",
+    "shot-fake",
+    "crossover"
+  ],
+  "concept-peripheral-vision-training": [
+    "reaction-time",
+    "court-vision",
+    "quickness",
+    "perceptual-training",
+    "agility"
+  ],
+  "concept-pilates-abdominal-circuit-basketball": [
+    "core",
+    "strength",
+    "conditioning",
+    "pilates",
+    "abdominals",
+    "coordination",
+    "injury-prevention"
+  ],
+  "concept-pin-screen": [
+    "offense",
+    "half-court",
+    "off-ball-screens",
+    "post-play",
+    "footwork",
+    "pivoting"
+  ],
+  "concept-pin-screen-footwork": [
+    "offense",
+    "screens",
+    "off-ball",
+    "post",
+    "pivoting",
+    "footwork"
+  ],
+  "concept-pivot-and-pass-technique": [
+    "offense",
+    "footwork",
+    "pivoting",
+    "passing",
+    "ball-handling"
+  ],
+  "concept-pivot-footwork": [
+    "footwork",
+    "pivoting",
+    "ball-handling",
+    "passing",
+    "offense"
+  ],
+  "concept-pivot-footwork-cutters-screeners": [
+    "offense",
+    "footwork",
+    "pivoting",
+    "ball-screen",
+    "screen-roll",
+    "catching",
+    "triple-threat"
+  ],
+  "concept-pivot-importance-basketball": [
+    "offense",
+    "defense",
+    "rebounding",
+    "footwork",
+    "pivoting",
+    "fundamentals",
+    "coaching-philosophy"
+  ],
+  "concept-pivoting-fundamentals": [
+    "fundamentals",
+    "footwork",
+    "pivoting",
+    "offense",
+    "defense",
+    "post-play",
+    "rebounding",
+    "screening",
+    "ball-handling",
+    "shooting"
+  ],
+  "concept-pivoting-offense": [
+    "offense",
+    "footwork",
+    "pivoting",
+    "fundamentals",
+    "ball-handling"
+  ],
+  "concept-pivoting-while-trapped": [
+    "offense",
+    "footwork",
+    "pivoting",
+    "ball-handling",
+    "press-break",
+    "trapping",
+    "ball-protection"
+  ],
+  "concept-player-coach-motivation": [
+    "coaching",
+    "motivation",
+    "leadership",
+    "team-culture",
+    "communication"
+  ],
+  "concept-player-development-philosophy-eastman": [
+    "player-development",
+    "coaching-philosophy",
+    "skill-development",
+    "motivation",
+    "shooting",
+    "individual-workouts"
+  ],
+  "concept-player-development-philosophy-s7": [
+    "player-development",
+    "coaching-philosophy",
+    "skill-development",
+    "motivation",
+    "shooting",
+    "dribbling",
+    "conditioning"
+  ],
+  "concept-plyometric-edge-shock-training": [
+    "plyometrics",
+    "power",
+    "conditioning",
+    "strength",
+    "jumping"
+  ],
+  "concept-plyometrics-basketball": [
+    "conditioning",
+    "plyometrics",
+    "power",
+    "jumping",
+    "first-step",
+    "athleticism",
+    "stretch-shortening-cycle"
+  ],
+  "concept-pnr-coverage-options": [
+    "defense",
+    "pick-and-roll",
+    "man-to-man",
+    "switching",
+    "trapping",
+    "rotation",
+    "pro"
+  ],
+  "concept-pnr-defensive-coverages-del-harris": [
+    "defense",
+    "pick-and-roll",
+    "switching",
+    "trapping",
+    "pro",
+    "help-defense",
+    "rotation"
+  ],
+  "concept-post-catch-mechanics": [
+    "offense",
+    "post",
+    "footwork",
+    "pivoting",
+    "ball-handling",
+    "fundamentals"
+  ],
+  "concept-post-contact-reverse-pivot": [
+    "offense",
+    "post-play",
+    "footwork",
+    "pivoting",
+    "low-post",
+    "sealing"
+  ],
+  "concept-post-drop-step": [
+    "offense",
+    "post-play",
+    "footwork",
+    "low-post",
+    "finishing",
+    "drop-step",
+    "hook-shot"
+  ],
+  "concept-post-face-up-moves": [
+    "offense",
+    "post-play",
+    "face-up",
+    "pivot",
+    "pro"
+  ],
+  "concept-post-front-outside-pivot": [
+    "offense",
+    "post",
+    "footwork",
+    "pivoting",
+    "post-moves",
+    "square-up"
+  ],
+  "concept-post-getting-open": [
+    "offense",
+    "post-play",
+    "footwork",
+    "getting-open",
+    "pro"
+  ],
+  "concept-post-moves-back-to-basket": [
+    "offense",
+    "post-play",
+    "back-to-basket",
+    "drop-step",
+    "pro"
+  ],
+  "concept-post-pivot-square-up": [
+    "offense",
+    "post",
+    "footwork",
+    "pivoting",
+    "fundamentals",
+    "scoring"
+  ],
+  "concept-post-play-fundamentals": [
+    "offense",
+    "post-play",
+    "fundamentals",
+    "pro"
+  ],
+  "concept-post-play-principles": [
+    "offense",
+    "post",
+    "half-court",
+    "footwork",
+    "fundamentals",
+    "post-play"
+  ],
+  "concept-post-player-development-progression": [
+    "offense",
+    "post-play",
+    "player-development",
+    "coaching",
+    "pro"
+  ],
+  "concept-post-player-getting-open": [
+    "offense",
+    "post",
+    "footwork",
+    "pivoting",
+    "low-post",
+    "flash-post",
+    "getting-open"
+  ],
+  "concept-post-receiving-footwork": [
+    "offense",
+    "post",
+    "footwork",
+    "pivoting",
+    "catching",
+    "ball-security"
+  ],
+  "concept-post-spin-screen": [
+    "offense",
+    "post",
+    "screen",
+    "footwork",
+    "pivoting",
+    "post-moves"
+  ],
+  "concept-post-spin-screen-move": [
+    "offense",
+    "post",
+    "screen",
+    "back-screen",
+    "footwork",
+    "low-post",
+    "getting-open"
+  ],
+  "concept-post-v-cut-get-open": [
+    "offense",
+    "post-play",
+    "footwork",
+    "pivoting",
+    "cutting",
+    "low-post"
+  ],
+  "concept-power-jump-chain": [
+    "conditioning",
+    "plyometrics",
+    "jumping",
+    "explosiveness",
+    "bodyweight"
+  ],
+  "concept-power-pushup-chain": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing",
+    "progression"
+  ],
+  "concept-power-pushup-principles": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing"
+  ],
+  "concept-power-speed-agility-definitions": [
+    "conditioning",
+    "agility",
+    "speed",
+    "power",
+    "plyometrics",
+    "athleticism"
+  ],
+  "concept-power-vs-skill-training": [
+    "conditioning",
+    "athleticism",
+    "explosive-training",
+    "power",
+    "agility",
+    "calisthenics",
+    "periodization"
+  ],
+  "concept-press-break-banana-cut": [
+    "press-break",
+    "offense",
+    "transition",
+    "inbounds",
+    "spacing"
+  ],
+  "concept-press-break-inbounds-after-basket": [
+    "offense",
+    "press-break",
+    "transition",
+    "inbounds",
+    "trapping"
+  ],
+  "concept-productive-practice-structure": [
+    "practice",
+    "offense",
+    "defense",
+    "coaching-philosophy",
+    "player-development"
+  ],
+  "concept-productive-practices": [
+    "coaching",
+    "practice",
+    "organization",
+    "teaching",
+    "pro",
+    "planning"
+  ],
+  "concept-progressive-calisthenics-ten-steps": [
+    "conditioning",
+    "power",
+    "agility",
+    "speed",
+    "athleticism",
+    "calisthenics",
+    "training-philosophy"
+  ],
+  "concept-quickness-and-reaction-time": [
+    "conditioning",
+    "agility",
+    "quickness",
+    "reaction-time",
+    "mental-processing",
+    "skill-development"
+  ],
+  "concept-reaction-time-basketball": [
+    "conditioning",
+    "agility",
+    "quickness",
+    "reaction-time",
+    "athleticism",
+    "defense"
+  ],
+  "concept-reaction-time-training": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "court-vision",
+    "perceptual-training"
+  ],
+  "concept-reading-defender-off-screen": [
+    "offense",
+    "shooting",
+    "screens",
+    "off-ball",
+    "reading defenders",
+    "half-court"
+  ],
+  "concept-reading-screens-off-ball": [
+    "offense",
+    "half-court",
+    "screening",
+    "off-ball-movement",
+    "shooter-creation",
+    "man-to-man",
+    "read-and-react"
+  ],
+  "concept-reflex-channeling-hebbs-rule": [
+    "conditioning",
+    "quickness",
+    "reaction-time",
+    "skill-development",
+    "neuroscience"
+  ],
+  "concept-reverse-dribble-continuity": [
+    "offense",
+    "half-court",
+    "continuity",
+    "dribble",
+    "entry",
+    "motion",
+    "screening",
+    "pick-and-roll"
+  ],
+  "concept-rip-step": [
+    "offense",
+    "ball-handling",
+    "scoring",
+    "dribble-drive",
+    "shot-creation",
+    "footwork"
+  ],
+  "concept-rip-step-workout-series": [
+    "offense",
+    "shot-creation",
+    "ball-handling",
+    "footwork",
+    "workout-design",
+    "practice-planning",
+    "progressive-training"
+  ],
+  "concept-round-off-acrobatics": [
+    "agility",
+    "explosiveness",
+    "acrobatics",
+    "power",
+    "lateral-rotation",
+    "combination-training"
+  ],
+  "concept-rub-off-screen-footwork": [
+    "offense",
+    "back-screen",
+    "High-Post",
+    "high-post",
+    "footwork",
+    "pivoting",
+    "post"
+  ],
+  "concept-rule-of-three-rule-of-six": [
+    "conditioning",
+    "plyometrics",
+    "strength",
+    "training-methodology",
+    "speed"
+  ],
+  "concept-saq-6-week-program-design": [
+    "conditioning",
+    "speed",
+    "agility",
+    "quickness",
+    "periodization",
+    "programming"
+  ],
+  "concept-saq-drill-finder": [
+    "conditioning",
+    "agility",
+    "speed",
+    "quickness",
+    "reaction-time",
+    "balance",
+    "drill-index"
+  ],
+  "concept-saq-drill-taxonomy": [
+    "conditioning",
+    "speed",
+    "agility",
+    "quickness",
+    "athleticism",
+    "reaction-time",
+    "balance"
+  ],
+  "concept-saq-program-design": [
+    "conditioning",
+    "agility",
+    "speed",
+    "quickness",
+    "periodization",
+    "program-design"
+  ],
+  "concept-screen-taxonomy-nba": [
+    "offense",
+    "screening",
+    "half-court",
+    "pick-and-roll",
+    "off-ball",
+    "reads"
+  ],
+  "concept-screen-the-screener-footwork": [
+    "offense",
+    "screens",
+    "screen-the-screener",
+    "footwork",
+    "pivoting",
+    "flex"
+  ],
+  "concept-screen-types-reads": [
+    "offense",
+    "half-court",
+    "screens",
+    "pick-and-roll",
+    "off-ball",
+    "reads"
+  ],
+  "concept-screening-basics": [
+    "offense",
+    "screening",
+    "ball-screen",
+    "off-ball",
+    "pro",
+    "pick-and-roll"
+  ],
+  "concept-screening-fundamentals": [
+    "offense",
+    "screens",
+    "pick-and-roll",
+    "off-ball",
+    "reading-defense",
+    "spacing"
+  ],
+  "concept-sensory-training-speed": [
+    "quickness",
+    "reaction-time",
+    "conditioning",
+    "agility"
+  ],
+  "concept-setting-screens": [
+    "offense",
+    "screening",
+    "man-to-man",
+    "half-court",
+    "spacing",
+    "screen-the-screener",
+    "ball-screen",
+    "down-screen"
+  ],
+  "concept-shooter-pivot-fundamentals": [
+    "offense",
+    "shooting",
+    "footwork",
+    "pivoting",
+    "catch-and-shoot",
+    "screens"
+  ],
+  "concept-shooter-pivots-off-screens": [
+    "offense",
+    "shooting",
+    "footwork",
+    "pivoting",
+    "screens",
+    "off-ball",
+    "catch-and-shoot"
+  ],
+  "concept-shooting-coaching-tips-wissel": [
+    "offense",
+    "shooting",
+    "coaching-philosophy",
+    "instruction",
+    "player-development"
+  ],
+  "concept-shooting-confidence-rhythm": [
+    "offense",
+    "shooting",
+    "mental",
+    "confidence",
+    "rhythm"
+  ],
+  "concept-shooting-drill-design-principles": [
+    "shooting",
+    "practice",
+    "fundamentals",
+    "game-realistic",
+    "conditioning",
+    "competition"
+  ],
+  "concept-shooting-drill-design-s6": [
+    "shooting",
+    "offense",
+    "fundamentals",
+    "practice",
+    "drill-design",
+    "game-realistic",
+    "competition"
+  ],
+  "concept-shooting-mechanics-wissel": [
+    "offense",
+    "shooting",
+    "mechanics",
+    "fundamentals",
+    "footwork"
+  ],
+  "concept-shooting-off-a-screen": [
+    "offense",
+    "screening",
+    "shooting",
+    "off-ball",
+    "catch-and-shoot",
+    "half-court",
+    "communication"
+  ],
+  "concept-shooting-off-dribble-wissel": [
+    "offense",
+    "shooting",
+    "dribble",
+    "footwork",
+    "pull-up",
+    "step-back",
+    "shot-fake"
+  ],
+  "concept-shooting-off-screens": [
+    "offense",
+    "screening",
+    "catch-and-shoot",
+    "footwork",
+    "balance",
+    "perimeter",
+    "shooting"
+  ],
+  "concept-shooting-off-screens-s3": [
+    "offense",
+    "screening",
+    "shooting",
+    "off-ball",
+    "catch-and-shoot",
+    "half-court"
+  ],
+  "concept-shooting-off-the-move": [
+    "offense",
+    "shooting",
+    "footwork",
+    "dribble",
+    "cutting",
+    "balance",
+    "pivoting"
+  ],
+  "concept-shooting-off-the-move-footwork": [
+    "offense",
+    "shooting",
+    "footwork",
+    "dribbling",
+    "cutting",
+    "pivoting"
+  ],
+  "concept-shooting-on-the-move": [
+    "shooting",
+    "footwork",
+    "off-screen",
+    "catch-and-shoot",
+    "game-speed",
+    "pivot"
+  ],
+  "concept-shot-chart-and-evaluation": [
+    "shooting",
+    "player-development",
+    "self-evaluation",
+    "practice",
+    "off-season"
+  ],
+  "concept-shot-charting-and-evaluation": [
+    "shooting",
+    "skill-development",
+    "analytics",
+    "self-evaluation",
+    "player-development",
+    "practice-planning"
+  ],
+  "concept-shot-fake-big-hop": [
+    "offense",
+    "shot-fake",
+    "big-hop",
+    "pull-up",
+    "scoring-moves",
+    "footwork",
+    "jump-stop"
+  ],
+  "concept-shot-fake-hop-back": [
+    "offense",
+    "shot-fake",
+    "hop-back",
+    "step-back",
+    "three-point",
+    "scoring-moves",
+    "space-creation"
+  ],
+  "concept-shot-fake-hop-back-crossover": [
+    "offense",
+    "shot-fake",
+    "hop-back",
+    "crossover",
+    "dribble",
+    "scoring-moves",
+    "advanced",
+    "counter"
+  ],
+  "concept-shot-fake-hop-back-roll-out": [
+    "offense",
+    "shot-fake",
+    "hop-back",
+    "roll-out",
+    "dribble",
+    "scoring-moves",
+    "space-creation",
+    "counter"
+  ],
+  "concept-shot-fake-step-fake": [
+    "offense",
+    "live-ball",
+    "scoring",
+    "footwork",
+    "one-on-one",
+    "ball-handling"
+  ],
+  "concept-shot-fake-step-through": [
+    "offense",
+    "shot-fake",
+    "step-through",
+    "scoring-moves",
+    "one-on-one",
+    "finishing",
+    "contact"
+  ],
+  "concept-shot-fake-stride-stop": [
+    "offense",
+    "shot-fake",
+    "pull-up",
+    "scoring-moves",
+    "one-on-one",
+    "dribble-penetration"
+  ],
+  "concept-shot-fake-workout-series": [
+    "offense",
+    "shot-fake",
+    "individual-workout",
+    "scoring-moves",
+    "skill-development",
+    "practice-planning",
+    "charting"
+  ],
+  "concept-shots-a-day-club": [
+    "offense",
+    "shooting",
+    "conditioning",
+    "individual-development",
+    "off-season"
+  ],
+  "concept-show-and-go": [
+    "offense",
+    "shot-fake",
+    "one-on-one",
+    "scoring",
+    "footwork",
+    "perimeter"
+  ],
+  "concept-show-and-go-opposite-drop-step": [
+    "offense",
+    "post",
+    "footwork",
+    "pivoting",
+    "post-moves",
+    "scoring"
+  ],
+  "concept-sikma-inside-pivot": [
+    "offense",
+    "post",
+    "footwork",
+    "pivoting",
+    "post-moves",
+    "square-up"
+  ],
+  "concept-six-individual-offensive-skills": [
+    "offense",
+    "fundamentals",
+    "practice",
+    "shooting",
+    "dribbling",
+    "passing",
+    "pivoting",
+    "rebounding",
+    "transition"
+  ],
+  "concept-skills-conditioning": [
+    "conditioning",
+    "offense",
+    "shooting",
+    "ball-handling",
+    "game-speed",
+    "skill-development"
+  ],
+  "concept-small-space-explosive-drills": [
+    "conditioning",
+    "explosive-power",
+    "agility",
+    "calisthenics",
+    "warm-up",
+    "speed"
+  ],
+  "concept-small-space-training": [
+    "conditioning",
+    "explosiveness",
+    "bodyweight",
+    "agility",
+    "coordination"
+  ],
+  "concept-speed-cycle": [
+    "quickness",
+    "reaction-time",
+    "agility",
+    "conditioning",
+    "neuroscience"
+  ],
+  "concept-speed-illusion": [
+    "speed",
+    "offense",
+    "defense",
+    "athleticism",
+    "basketball-IQ",
+    "positioning"
+  ],
+  "concept-speed-illusion-basketball": [
+    "speed",
+    "offense",
+    "footwork",
+    "ball-handling",
+    "deception",
+    "positioning"
+  ],
+  "concept-spin-screen-footwork": [
+    "offense",
+    "post",
+    "screens",
+    "footwork",
+    "pivoting",
+    "duck-in",
+    "back-screen"
+  ],
+  "concept-spin-screen-post-action": [
+    "offense",
+    "post",
+    "screening",
+    "footwork",
+    "pivoting",
+    "mismatch"
+  ],
+  "concept-sprint-mechanics-basketball": [
+    "speed",
+    "conditioning",
+    "acceleration",
+    "running-mechanics",
+    "sprint-training"
+  ],
+  "concept-squaring-the-floor": [
+    "offense",
+    "press-break",
+    "trapping",
+    "spacing",
+    "ball-movement"
+  ],
+  "concept-stagger-screen-footwork": [
+    "offense",
+    "stagger-screen",
+    "footwork",
+    "pivoting",
+    "screens",
+    "slip",
+    "reverse-pivot"
+  ],
+  "concept-step-back": [
+    "offense",
+    "footwork",
+    "shot-creation",
+    "one-on-one",
+    "scoring",
+    "pull-up",
+    "perimeter"
+  ],
+  "concept-ten-steps-progression": [
+    "conditioning",
+    "program-design",
+    "progression",
+    "calisthenics",
+    "periodization"
+  ],
+  "concept-three-explosive-qualities": [
+    "conditioning",
+    "speed",
+    "agility",
+    "power",
+    "athleticism",
+    "plyometrics"
+  ],
+  "concept-three-point-shooting": [
+    "shooting",
+    "three-point",
+    "long-range",
+    "footwork",
+    "offense",
+    "fundamentals"
+  ],
+  "concept-three-point-shot-technique": [
+    "shooting",
+    "three-point",
+    "long-range",
+    "footwork",
+    "catch-and-shoot",
+    "pull-up",
+    "mechanics"
+  ],
+  "concept-time-surfing-skill-training": [
+    "conditioning",
+    "training-methodology",
+    "agility",
+    "speed",
+    "skill-development"
+  ],
+  "concept-trapping-footwork": [
+    "defense",
+    "trapping",
+    "pivoting",
+    "footwork",
+    "press",
+    "half-court",
+    "full-court",
+    "rotation"
+  ],
+  "concept-trapping-footwork-pivots": [
+    "defense",
+    "trapping",
+    "footwork",
+    "pivoting",
+    "press",
+    "zone-press",
+    "double-team"
+  ],
+  "concept-triangle-line-of-deployment": [
+    "offense",
+    "triangle",
+    "post-play",
+    "spacing",
+    "ball-movement",
+    "half-court"
+  ],
+  "concept-triangle-offense": [
+    "offense",
+    "half-court",
+    "spacing",
+    "continuity",
+    "triangle",
+    "post",
+    "screening",
+    "cutting",
+    "passing"
+  ],
+  "concept-triangle-offense-formation": [
+    "offense",
+    "triangle",
+    "half-court",
+    "spacing",
+    "formation",
+    "ball-movement"
+  ],
+  "concept-triangle-offense-philosophy": [
+    "offense",
+    "half-court",
+    "spacing",
+    "ball-movement",
+    "triangle",
+    "system",
+    "philosophy"
+  ],
+  "concept-triangle-offense-pressure-releases": [
+    "offense",
+    "half-court",
+    "triangle",
+    "press-break",
+    "passing",
+    "cutting",
+    "continuity"
+  ],
+  "concept-triangle-offense-principles": [
+    "offense",
+    "half-court",
+    "triangle",
+    "continuity",
+    "spacing",
+    "post"
+  ],
+  "concept-triangle-offense-second-pass": [
+    "offense",
+    "half-court",
+    "triangle",
+    "post",
+    "cutting",
+    "screen",
+    "continuity"
+  ],
+  "concept-triangle-passing-principles": [
+    "offense",
+    "triangle",
+    "passing",
+    "ball-movement",
+    "decision-making"
+  ],
+  "concept-triangle-pressure-releases": [
+    "offense",
+    "half-court",
+    "triangle",
+    "pressure",
+    "ball-handling",
+    "passing",
+    "backdoor",
+    "read-and-react"
+  ],
+  "concept-triple-threat-position": [
+    "offense",
+    "perimeter",
+    "ball-handling",
+    "footwork",
+    "fundamentals",
+    "triple-threat"
+  ],
+  "concept-upper-body-strength-basketball": [
+    "strength-training",
+    "conditioning",
+    "injury-prevention",
+    "upper-body",
+    "kinetic-chain"
+  ],
+  "concept-v-cut-footwork": [
+    "offense",
+    "footwork",
+    "off-ball",
+    "cutting",
+    "screens",
+    "pivoting"
+  ],
+  "concept-vertical-jump-development": [
+    "conditioning",
+    "plyometrics",
+    "jumping",
+    "explosiveness",
+    "rebounding",
+    "shot-contest",
+    "layup"
+  ],
+  "concept-whole-part-whole-teaching": [
+    "coaching-philosophy",
+    "teaching-methods",
+    "skill-development",
+    "practice-design",
+    "footwork"
+  ],
+  "consolidation-training-explosive": [
+    "conditioning",
+    "explosive-power",
+    "skill-acquisition",
+    "practice-design",
+    "calisthenics"
+  ],
+  "creating-your-own-shot": [
+    "offense",
+    "shooting",
+    "shot-creation",
+    "dribble",
+    "one-on-one",
+    "scoring"
+  ],
+  "daily-defensive-checklist": [
+    "defense",
+    "man-to-man",
+    "post-defense",
+    "transition",
+    "closeout",
+    "screen-defense",
+    "trapping",
+    "ball-pressure",
+    "team-defense",
+    "help-defense"
+  ],
+  "defending-1-4-flat": [
+    "defense",
+    "man-to-man",
+    "1-4-flat",
+    "formation-defense",
+    "penetration-stoppage",
+    "help-defense"
+  ],
+  "defending-cross-four-get": [
+    "defense",
+    "man-to-man",
+    "pick-and-roll",
+    "cross-screen",
+    "pro",
+    "help-defense",
+    "rotation",
+    "blitz"
+  ],
+  "defending-down-screens": [
+    "defense",
+    "off-ball-screens",
+    "down-screens",
+    "man-to-man",
+    "denial"
+  ],
+  "defending-dribble-handoff": [
+    "defense",
+    "dribble-handoff",
+    "man-to-man",
+    "trapping",
+    "switching"
+  ],
+  "defending-dribble-handoff-and-get-action": [
+    "defense",
+    "man-to-man",
+    "dribble-handoff",
+    "get-action",
+    "screen-away",
+    "switching",
+    "trapping"
+  ],
+  "defending-drop-one": [
+    "defense",
+    "post-defense",
+    "man-to-man",
+    "isolation",
+    "pro",
+    "help-defense",
+    "double-team"
+  ],
+  "defending-flash-post": [
+    "defense",
+    "man-to-man",
+    "post-defense",
+    "flash-post",
+    "blind-pig",
+    "backdoor"
+  ],
+  "defending-flash-post-blind-pig": [
+    "defense",
+    "man-to-man",
+    "post-defense",
+    "flash-post",
+    "blind-pig",
+    "backdoor"
+  ],
+  "defending-off-ball-screens": [
+    "defense",
+    "man-to-man",
+    "off-ball-screens",
+    "down-screens",
+    "back-screens",
+    "cross-screens",
+    "help-defense"
+  ],
+  "defending-pinch-post": [
+    "defense",
+    "man-to-man",
+    "post-defense",
+    "screens",
+    "two-man-game",
+    "pinch-post"
+  ],
+  "defending-post-splits": [
+    "defense",
+    "man-to-man",
+    "post-defense",
+    "post-splits",
+    "switching",
+    "communication"
+  ],
+  "defending-specific-plays": [
+    "defense",
+    "man-to-man",
+    "off-ball-screens",
+    "help-defense",
+    "post-defense",
+    "isolation-defense"
+  ],
+  "defending-staggered-screens": [
+    "defense",
+    "off-ball-screens",
+    "staggered-screens",
+    "man-to-man",
+    "double-screens"
+  ],
+  "defensive-checklist-principles": [
+    "defense",
+    "man-to-man",
+    "help-defense",
+    "post-defense",
+    "transition",
+    "rebounding",
+    "trapping"
+  ],
+  "defensive-coaching-philosophy": [
+    "defense",
+    "man-to-man",
+    "full-court",
+    "pressure",
+    "philosophy",
+    "team-defense",
+    "coaching"
+  ],
+  "defensive-coaching-philosophy-herb-brown": [
+    "defense",
+    "man-to-man",
+    "press",
+    "transition",
+    "philosophy",
+    "team-defense",
+    "help-defense",
+    "rebounding"
+  ],
+  "defensive-keys-to-victory": [
+    "defense",
+    "man-to-man",
+    "transition",
+    "rebounding",
+    "team-defense",
+    "philosophy"
+  ],
+  "defensive-practice-culture": [
+    "coaching",
+    "philosophy",
+    "practice",
+    "culture",
+    "goal-setting",
+    "defense"
+  ],
+  "defensive-practice-philosophy-herb-brown": [
+    "defense",
+    "practice",
+    "coaching-philosophy",
+    "man-to-man",
+    "competitive-drills"
+  ],
+  "defensive-shell-drill": [
+    "defense",
+    "shell-drill",
+    "man-to-man",
+    "help-defense",
+    "screens",
+    "4v4",
+    "half-court",
+    "competitive"
+  ],
+  "defensive-transition-drills": [
+    "defense",
+    "transition",
+    "fast-break",
+    "conditioning",
+    "communication",
+    "rebounding"
+  ],
+  "defensive-transition-principles": [
+    "defense",
+    "transition",
+    "fast-break",
+    "floor-balance",
+    "team-defense",
+    "communication"
+  ],
+  "diamond-zone-press": [
+    "defense",
+    "zone-press",
+    "full-court-press",
+    "pressure-defense",
+    "trapping",
+    "zone"
+  ],
+  "drill-1-on-0-box-dribbling": [
+    "ball-handling",
+    "dribbling",
+    "pressure",
+    "half-court",
+    "offense"
+  ],
+  "drill-1-on-1-box-dribbling": [
+    "ball-handling",
+    "dribbling",
+    "1-on-1",
+    "pressure",
+    "half-court",
+    "defense",
+    "offense"
+  ],
+  "drill-10-cone-snake": [
+    "agility",
+    "cone-drill",
+    "shuffle",
+    "cutting",
+    "change-of-direction",
+    "defense",
+    "footwork",
+    "conditioning"
+  ],
+  "drill-100-yard-sprint-agility": [
+    "agility",
+    "conditioning",
+    "change-of-direction",
+    "footwork",
+    "reaction-time",
+    "line-sprints"
+  ],
+  "drill-15-yard-turn-drill": [
+    "agility",
+    "footwork",
+    "turning",
+    "change-of-direction",
+    "cone-drill",
+    "hip-flexibility"
+  ],
+  "drill-180-degree-turn-ladder": [
+    "agility",
+    "conditioning",
+    "footwork",
+    "quickness",
+    "ladder"
+  ],
+  "drill-1on1-baseline-touch": [
+    "1-on-1",
+    "scoring",
+    "driving",
+    "competitiveness",
+    "conditioning",
+    "offensive-moves",
+    "live-ball"
+  ],
+  "drill-1on1-half-court-attack": [
+    "1-on-1",
+    "driving",
+    "attacking",
+    "conditioning",
+    "transition",
+    "live-ball",
+    "defense"
+  ],
+  "drill-1v1-zigzag-defense": [
+    "defense",
+    "1v1",
+    "footwork",
+    "on-ball-defense",
+    "full-court"
+  ],
+  "drill-2-on-1-trapping": [
+    "defense",
+    "trapping",
+    "double-team",
+    "pressure",
+    "containment"
+  ],
+  "drill-20-yard-shuttle": [
+    "agility",
+    "conditioning",
+    "change-of-direction",
+    "footwork",
+    "reaction-time",
+    "line-sprints"
+  ],
+  "drill-20-yard-square-cone": [
+    "agility",
+    "footwork",
+    "change-of-direction",
+    "cutting",
+    "cone-drill",
+    "lateral-shuffle",
+    "backpedal"
+  ],
+  "drill-2v2-full-court-defense": [
+    "defense",
+    "2v2",
+    "full-court",
+    "help-defense",
+    "dribble-handoff",
+    "run-and-jump"
+  ],
+  "drill-30-yard-t-drill": [
+    "agility",
+    "conditioning",
+    "lateral-shuffle",
+    "change-of-direction",
+    "abductors",
+    "adductors",
+    "line-sprints"
+  ],
+  "drill-360-jump": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "agility",
+    "balance",
+    "explosive-power"
+  ],
+  "drill-3on2-to-2on1-transition": [
+    "transition",
+    "fast-break",
+    "defense",
+    "conditioning",
+    "full-court",
+    "communication"
+  ],
+  "drill-3on2-to-2on1-transition-s6": [
+    "transition",
+    "defense",
+    "offense",
+    "fast-break",
+    "communication",
+    "footwork",
+    "full-court",
+    "competitive"
+  ],
+  "drill-3v2-2v1-1v1-continuous": [
+    "defense",
+    "transition",
+    "fast-break",
+    "conditioning",
+    "1-on-1",
+    "2-on-1"
+  ],
+  "drill-3v2-fast-break-with-trailer": [
+    "defense",
+    "transition",
+    "fast-break",
+    "rebounding",
+    "conditioning",
+    "tandem-defense"
+  ],
+  "drill-3v2-full-court-fast-break-defense": [
+    "defense",
+    "transition",
+    "fast-break",
+    "3v2",
+    "full-court",
+    "tandem-defense"
+  ],
+  "drill-3v3-4v4-continuous-full-court": [
+    "defense",
+    "transition",
+    "conditioning",
+    "competitive",
+    "team",
+    "half-court",
+    "full-court"
+  ],
+  "drill-3v3-full-court-defense": [
+    "defense",
+    "3v3",
+    "full-court",
+    "communication",
+    "screens",
+    "transition",
+    "continuous"
+  ],
+  "drill-4-4-4-full-court-press": [
+    "defense",
+    "full-court press",
+    "transition",
+    "conditioning",
+    "matchup press",
+    "competitive"
+  ],
+  "drill-40-yard-backpedal-forward": [
+    "agility",
+    "conditioning",
+    "backpedal",
+    "change-of-direction",
+    "defensive-footwork",
+    "line-sprints"
+  ],
+  "drill-40-yard-lateral-shuffle": [
+    "agility",
+    "lateral-shuffle",
+    "conditioning",
+    "abductors",
+    "adductors",
+    "defensive-footwork",
+    "line-sprints"
+  ],
+  "drill-40-yard-sprint-agility": [
+    "agility",
+    "conditioning",
+    "change-of-direction",
+    "line-sprints"
+  ],
+  "drill-40-yard-square-bear-crawl-backpedal": [
+    "agility",
+    "conditioning",
+    "change-of-direction",
+    "cone-drill",
+    "footwork",
+    "body-position"
+  ],
+  "drill-40-yard-square-carioca": [
+    "agility",
+    "footwork",
+    "carioca",
+    "backpedal",
+    "change-of-direction",
+    "cone-drill",
+    "hip-flexibility"
+  ],
+  "drill-40-yard-square-single-leg-hop-backpedal": [
+    "agility",
+    "plyometrics",
+    "single-leg",
+    "cone-drill",
+    "footwork",
+    "change-of-direction",
+    "conditioning"
+  ],
+  "drill-400-shots-off-screen": [
+    "shooting",
+    "off-screen",
+    "live-ball moves",
+    "dribble moves",
+    "curl cut",
+    "baseline",
+    "paint attack",
+    "reading defenders",
+    "high-volume",
+    "comprehensive workout"
+  ],
+  "drill-4v4-half-court-game-of-stops": [
+    "defense",
+    "half-court",
+    "competitive",
+    "rebounding",
+    "stops",
+    "team"
+  ],
+  "drill-4v4-transition-defense": [
+    "defense",
+    "transition",
+    "fast-break",
+    "help-defense",
+    "communication"
+  ],
+  "drill-4x4s": [
+    "speed",
+    "plyometrics",
+    "sprint-mechanics",
+    "hip-flexor",
+    "stride-length",
+    "conditioning"
+  ],
+  "drill-55-second-shooting-drill": [
+    "shooting",
+    "rebounding",
+    "passing",
+    "outlet-pass",
+    "footwork",
+    "competitive",
+    "timed",
+    "game-realistic"
+  ],
+  "drill-55-second-shooting-format": [
+    "shooting",
+    "passing",
+    "pivoting",
+    "catching",
+    "rebounding",
+    "fundamentals",
+    "game-realistic"
+  ],
+  "drill-55-second-shooting-frank": [
+    "shooting",
+    "catch-and-shoot",
+    "footwork",
+    "conditioning",
+    "rhythm"
+  ],
+  "drill-55-yard-sprint-backpedal": [
+    "agility",
+    "conditioning",
+    "acceleration",
+    "deceleration",
+    "backpedal",
+    "line-sprints"
+  ],
+  "drill-60-yard-shuttle-sprint": [
+    "agility",
+    "conditioning",
+    "change-of-direction",
+    "line-sprints"
+  ],
+  "drill-a-march-walk": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "knee-lift",
+    "foot-speed",
+    "warm-up"
+  ],
+  "drill-a-movement-cone": [
+    "agility",
+    "cone-drill",
+    "shuffle",
+    "backpedal",
+    "multi-directional",
+    "footwork",
+    "conditioning"
+  ],
+  "drill-a-skips": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "hip-strength",
+    "ankle-stiffness",
+    "plyometrics"
+  ],
+  "drill-animal-agility-drills": [
+    "conditioning",
+    "agility",
+    "athleticism",
+    "warm-up",
+    "coordination",
+    "injury-prevention",
+    "calisthenics"
+  ],
+  "drill-animal-agility-drills-s9": [
+    "agility",
+    "conditioning",
+    "warm-up",
+    "coordination",
+    "core",
+    "mobility",
+    "calisthenics"
+  ],
+  "drill-ankling": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "ankle-strength",
+    "foot-speed"
+  ],
+  "drill-around-the-world-spinouts": [
+    "shooting",
+    "footwork",
+    "off-screen",
+    "catch-and-shoot",
+    "perimeter",
+    "game-speed"
+  ],
+  "drill-b-march-walk": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "hip-extension",
+    "hamstring",
+    "warm-up"
+  ],
+  "drill-b-skips": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "stride-length",
+    "hamstring",
+    "ankle-stiffness"
+  ],
+  "drill-back-drop-flip": [
+    "conditioning",
+    "agility",
+    "explosiveness",
+    "plyometrics",
+    "body-weight",
+    "calisthenics",
+    "power",
+    "rotation"
+  ],
+  "drill-back-drop-handspring": [
+    "conditioning",
+    "agility",
+    "explosiveness",
+    "plyometrics",
+    "body-weight",
+    "calisthenics",
+    "rotation"
+  ],
+  "drill-back-extension": [
+    "conditioning",
+    "core",
+    "strength",
+    "extension",
+    "posterior-chain",
+    "injury-prevention"
+  ],
+  "drill-back-flip": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "acrobatics",
+    "body-weight",
+    "back-flip-chain",
+    "explosiveness"
+  ],
+  "drill-back-flip-master": [
+    "conditioning",
+    "agility",
+    "calisthenics",
+    "acrobatics",
+    "explosive-power",
+    "vertical-jump"
+  ],
+  "drill-back-handspring": [
+    "conditioning",
+    "agility",
+    "calisthenics",
+    "acrobatics",
+    "explosive-power",
+    "shoulder-strength"
+  ],
+  "drill-back-macaco": [
+    "conditioning",
+    "agility",
+    "calisthenics",
+    "acrobatics",
+    "explosive-power",
+    "shoulder-strength"
+  ],
+  "drill-back-squat": [
+    "strength",
+    "conditioning",
+    "lower-body",
+    "legs",
+    "weight-training"
+  ],
+  "drill-back-squat-basketball": [
+    "strength",
+    "legs",
+    "conditioning",
+    "lower-body",
+    "squats",
+    "injury-prevention"
+  ],
+  "drill-backdrop-flip-s9": [
+    "athleticism",
+    "tumbling",
+    "plyometrics",
+    "body-control",
+    "power",
+    "off-season",
+    "landing-mechanics"
+  ],
+  "drill-backdrop-handspring-s9": [
+    "athleticism",
+    "tumbling",
+    "agility",
+    "plyometrics",
+    "body-control",
+    "landing-mechanics",
+    "off-season"
+  ],
+  "drill-backpedal-quickness": [
+    "quickness",
+    "agility",
+    "footwork",
+    "hip-flexor",
+    "defensive-footwork",
+    "conditioning"
+  ],
+  "drill-backward-icky-shuffle-with-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "ladder",
+    "peripheral-vision",
+    "court-sense",
+    "quick-feet",
+    "backpedal"
+  ],
+  "drill-backward-roll-hand-push-off": [
+    "agility",
+    "tumbling",
+    "kinesthetic-awareness",
+    "conditioning",
+    "upper-body"
+  ],
+  "drill-backward-roll-over-shoulder": [
+    "agility",
+    "tumbling",
+    "kinesthetic-awareness",
+    "conditioning"
+  ],
+  "drill-backward-roll-to-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "whole-body-reaction"
+  ],
+  "drill-bag-hops-180-turn": [
+    "agility",
+    "plyometrics",
+    "footwork",
+    "quickness",
+    "bag-drill",
+    "hip-flexibility"
+  ],
+  "drill-bag-weave": [
+    "agility",
+    "footwork",
+    "conditioning",
+    "quickness",
+    "bag-drill"
+  ],
+  "drill-balance-hand-form-shooting": [
+    "shooting",
+    "form",
+    "alignment",
+    "balance-hand",
+    "warm-up"
+  ],
+  "drill-ball-drops-with-partner": [
+    "quickness",
+    "reaction-time",
+    "first-step",
+    "visual-stimulus",
+    "conditioning",
+    "ball-handling"
+  ],
+  "drill-banana": [
+    "conditioning",
+    "core",
+    "strength",
+    "injury-prevention",
+    "flexion"
+  ],
+  "drill-band-defensive-slide": [
+    "injury-prevention",
+    "ACL",
+    "knee",
+    "defense",
+    "conditioning",
+    "strength-training",
+    "prehabilitation",
+    "glutes",
+    "lateral-movement"
+  ],
+  "drill-band-lateral-walk": [
+    "strengthening",
+    "ankle",
+    "lateral-movement",
+    "defense",
+    "conditioning",
+    "injury-prevention"
+  ],
+  "drill-band-squat": [
+    "injury-prevention",
+    "ACL",
+    "knee",
+    "conditioning",
+    "strength-training",
+    "prehabilitation",
+    "glutes"
+  ],
+  "drill-bar-pullover": [
+    "upper-body",
+    "pulling",
+    "plyometric",
+    "explosive",
+    "calisthenics",
+    "muscle-up-progression"
+  ],
+  "drill-barbell-bent-over-row-basketball": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "conditioning",
+    "back-strength",
+    "grip-strength",
+    "barbell"
+  ],
+  "drill-barrel-roll-to-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "whole-body-reaction"
+  ],
+  "drill-barrier-jump-cut-sprint": [
+    "plyometrics",
+    "quickness",
+    "reaction",
+    "change-of-direction",
+    "agility",
+    "lower-body"
+  ],
+  "drill-barrier-jumps": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "power",
+    "quickness",
+    "vertical-jump"
+  ],
+  "drill-baseline-shooting": [
+    "shooting",
+    "footwork",
+    "catch-and-shoot",
+    "elbow",
+    "angle-cuts",
+    "team-drill"
+  ],
+  "drill-basketball-wall-reaction-drills": [
+    "reaction-time",
+    "conditioning",
+    "ball-handling",
+    "agility",
+    "quickness",
+    "calisthenics"
+  ],
+  "drill-beep-beep-fast-break": [
+    "transition",
+    "fast-break",
+    "conditioning",
+    "decision-making",
+    "shooting"
+  ],
+  "drill-bench-press-basketball": [
+    "strength-training",
+    "upper-body",
+    "pushing",
+    "barbell",
+    "gym"
+  ],
+  "drill-bird-dog": [
+    "conditioning",
+    "core",
+    "strength",
+    "stability",
+    "extension",
+    "injury-prevention"
+  ],
+  "drill-block-jump": [
+    "conditioning",
+    "plyometrics",
+    "jumping",
+    "bodyweight",
+    "blocking",
+    "acceleration"
+  ],
+  "drill-block-jump-s9": [
+    "jumping",
+    "plyometrics",
+    "conditioning",
+    "bodyweight",
+    "blocking",
+    "transition"
+  ],
+  "drill-body-weight-squat-knee-rehab": [
+    "rehabilitation",
+    "knee",
+    "strengthening",
+    "conditioning"
+  ],
+  "drill-bounding": [
+    "speed",
+    "plyometrics",
+    "hip-power",
+    "stride-length",
+    "ankle-stiffness",
+    "conditioning"
+  ],
+  "drill-box-jump-knee-rehab": [
+    "rehabilitation",
+    "knee",
+    "plyometrics",
+    "explosive-training",
+    "conditioning"
+  ],
+  "drill-breakdown-pivoting-circle": [
+    "shooting",
+    "footwork",
+    "pivoting",
+    "offense",
+    "cutting",
+    "dribbling"
+  ],
+  "drill-breakdown-pivoting-shooters": [
+    "offense",
+    "shooting",
+    "footwork",
+    "pivoting",
+    "balance",
+    "cutting",
+    "dribbling"
+  ],
+  "drill-bridge-kick-over": [
+    "conditioning",
+    "agility",
+    "calisthenics",
+    "acrobatics",
+    "explosive-power",
+    "shoulder-strength"
+  ],
+  "drill-bridge-kip": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "drill-bullet-belt": [
+    "speed",
+    "acceleration",
+    "contrast-acceleration",
+    "stride-frequency",
+    "conditioning"
+  ],
+  "drill-bunny-jumps-ladder": [
+    "quickness",
+    "agility",
+    "ladder",
+    "ankle",
+    "elastic-strength",
+    "conditioning"
+  ],
+  "drill-butt-kick-jump": [
+    "conditioning",
+    "plyometrics",
+    "jumping",
+    "bodyweight",
+    "hip-flexors",
+    "leg-speed"
+  ],
+  "drill-butt-kick-jump-s9": [
+    "jumping",
+    "plyometrics",
+    "conditioning",
+    "bodyweight",
+    "hip-flexors",
+    "leg-speed"
+  ],
+  "drill-butt-kickers": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "foot-speed",
+    "stride-recovery"
+  ],
+  "drill-butt-kip": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "drill-carioca": [
+    "agility",
+    "footwork",
+    "lateral-speed",
+    "conditioning",
+    "hip-flexibility"
+  ],
+  "drill-cartwheel-tumbling": [
+    "agility",
+    "tumbling",
+    "kinesthetic-awareness",
+    "conditioning",
+    "lateral"
+  ],
+  "drill-catch-tuck-jump": [
+    "plyometrics",
+    "jumping",
+    "lower-body",
+    "explosive-power",
+    "tuck",
+    "calisthenics",
+    "core"
+  ],
+  "drill-chair-series-eastman": [
+    "shooting",
+    "scoring",
+    "footwork",
+    "conditioning",
+    "game-situations",
+    "layup",
+    "jump-shot",
+    "chair-drills"
+  ],
+  "drill-cheerleader-resistance-band": [
+    "injury-prevention",
+    "shoulder",
+    "strength-training",
+    "conditioning",
+    "prehabilitation",
+    "resistance-band",
+    "scapular-stability"
+  ],
+  "drill-cheerleader-shoulder-strengthening": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "scapular-stability",
+    "strengthening",
+    "resistance-band"
+  ],
+  "drill-chest-pullup": [
+    "upper-body",
+    "pulling",
+    "plyometric",
+    "explosive",
+    "calisthenics",
+    "muscle-up-progression"
+  ],
+  "drill-chest-strike-pushup": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing"
+  ],
+  "drill-chubby-checkers-with-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "ladder",
+    "peripheral-vision",
+    "court-sense",
+    "first-step-quickness",
+    "hip-rotation"
+  ],
+  "drill-circle-box-out": [
+    "rebounding",
+    "footwork",
+    "pivoting",
+    "box-out",
+    "defense",
+    "offense",
+    "competitive"
+  ],
+  "drill-circle-pass": [
+    "passing",
+    "conditioning",
+    "warm-up",
+    "spacing",
+    "communication"
+  ],
+  "drill-circle-pass-warmup": [
+    "passing",
+    "warm-up",
+    "conditioning",
+    "footwork",
+    "spacing"
+  ],
+  "drill-clap-pullup": [
+    "upper-body",
+    "pulling",
+    "plyometric",
+    "explosive",
+    "calisthenics",
+    "muscle-up-progression"
+  ],
+  "drill-clap-pushup": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing"
+  ],
+  "drill-clean-pull-hang": [
+    "conditioning",
+    "strength-training",
+    "power",
+    "jumping",
+    "acceleration",
+    "Olympic-lifting"
+  ],
+  "drill-close-grip-bench-press-basketball": [
+    "strength-training",
+    "upper-body",
+    "triceps",
+    "barbell",
+    "pushing",
+    "gym"
+  ],
+  "drill-closeout-1-2": [
+    "defense",
+    "closeout",
+    "lateral-movement",
+    "conditioning",
+    "footwork"
+  ],
+  "drill-closeout-shooting": [
+    "shooting",
+    "midrange",
+    "catch-and-shoot",
+    "closeout",
+    "defense",
+    "game-speed"
+  ],
+  "drill-closeout-shooting-off-dribble-series": [
+    "shooting",
+    "closeout",
+    "shot-fake",
+    "drive",
+    "pull-up",
+    "layup",
+    "passing",
+    "penetrate-and-pitch",
+    "three-point",
+    "timed"
+  ],
+  "drill-closeout-shooting-off-pass": [
+    "shooting",
+    "closeout",
+    "defensive-pressure",
+    "passing",
+    "rebounding",
+    "timed",
+    "competitive"
+  ],
+  "drill-combination-hop-back-crossover-workout": [
+    "ball-handling",
+    "shooting",
+    "live-ball-moves",
+    "dribble-combinations",
+    "self-creation"
+  ],
+  "drill-combination-live-ball-workouts": [
+    "shooting",
+    "ball-handling",
+    "scoring",
+    "live-ball",
+    "combination-moves",
+    "stride-stop",
+    "hop-back",
+    "crossover",
+    "layup",
+    "free-throws"
+  ],
+  "drill-combinations-in-the-clutch": [
+    "shooting",
+    "live-ball-moves",
+    "clutch",
+    "scoring",
+    "free-throw",
+    "three-point",
+    "ball-handling",
+    "competitive"
+  ],
+  "drill-combo-big-hop": [
+    "shooting",
+    "ball-handling",
+    "footwork",
+    "big-hop",
+    "pull-up",
+    "live-ball",
+    "free-throw"
+  ],
+  "drill-combo-hop-back": [
+    "shooting",
+    "three-point",
+    "ball-handling",
+    "footwork",
+    "hop-back",
+    "step-back",
+    "pull-up",
+    "live-ball",
+    "free-throw"
+  ],
+  "drill-combo-hop-back-crossover": [
+    "shooting",
+    "ball-handling",
+    "footwork",
+    "hop-back",
+    "crossover",
+    "live-ball",
+    "counter-move",
+    "free-throw"
+  ],
+  "drill-combo-hop-back-roll-out": [
+    "shooting",
+    "ball-handling",
+    "footwork",
+    "hop-back",
+    "roll-out",
+    "live-ball",
+    "counter-move",
+    "free-throw"
+  ],
+  "drill-combo-pull-up-3pt-workout": [
+    "shooting",
+    "three-point",
+    "pull-up",
+    "live-ball-moves",
+    "ball-handling"
+  ],
+  "drill-combo-sidestep-forward-back": [
+    "agility",
+    "footwork",
+    "conditioning",
+    "quickness",
+    "bag-drill",
+    "change-of-direction"
+  ],
+  "drill-combo-stride-stop-shot": [
+    "shooting",
+    "ball-handling",
+    "footwork",
+    "pull-up",
+    "stride-stop",
+    "live-ball",
+    "free-throw"
+  ],
+  "drill-combo-stride-stop-step-through": [
+    "shooting",
+    "finishing",
+    "ball-handling",
+    "footwork",
+    "stride-stop",
+    "step-through",
+    "live-ball",
+    "free-throw"
+  ],
+  "drill-cone-shuffle-warmup": [
+    "warm-up",
+    "footwork",
+    "conditioning",
+    "change-of-direction",
+    "defensive-slides"
+  ],
+  "drill-containing-opponent": [
+    "quickness",
+    "reaction",
+    "agility",
+    "direction-change",
+    "defense",
+    "conditioning"
+  ],
+  "drill-containing-opponent-drill": [
+    "quickness",
+    "change-of-direction",
+    "reaction",
+    "defense",
+    "agility",
+    "team"
+  ],
+  "drill-continuous-fast-break-progression": [
+    "defense",
+    "transition",
+    "fast-break",
+    "conditioning",
+    "offense",
+    "team"
+  ],
+  "drill-contralateral-kick": [
+    "rehabilitation",
+    "ankle",
+    "proprioception",
+    "balance",
+    "injury-prevention"
+  ],
+  "drill-contralateral-kick-balance": [
+    "rehabilitation",
+    "ankle",
+    "proprioception",
+    "balance",
+    "conditioning"
+  ],
+  "drill-convict-pushup": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing"
+  ],
+  "drill-cossacks-small-space": [
+    "conditioning",
+    "lower-body-power",
+    "flexibility",
+    "balance",
+    "mobility",
+    "calisthenics",
+    "warm-up"
+  ],
+  "drill-crossover-shuffle-ladder": [
+    "agility",
+    "ladder-drill",
+    "crossover",
+    "hip-flexibility",
+    "footwork",
+    "quickness",
+    "change-of-direction"
+  ],
+  "drill-crossover-skipping": [
+    "agility",
+    "footwork",
+    "lateral-speed",
+    "hip-power",
+    "conditioning"
+  ],
+  "drill-curl-shot-off-screen": [
+    "shooting",
+    "off-screen",
+    "curl cut",
+    "elbow",
+    "midrange",
+    "catch-and-shoot",
+    "reading defenders"
+  ],
+  "drill-curl-shots-off-screen": [
+    "shooting",
+    "off-screen",
+    "curl-cut",
+    "elbow",
+    "midrange",
+    "catch-and-shoot",
+    "individual-workout"
+  ],
+  "drill-cut-intos": [
+    "shooting",
+    "cutting",
+    "catch-and-shoot",
+    "two-count-stop",
+    "elbow",
+    "game-speed"
+  ],
+  "drill-cutting-outlet-pass-shooting": [
+    "offense",
+    "shooting",
+    "footwork",
+    "pivoting",
+    "outlet-pass",
+    "cutting",
+    "rebounding"
+  ],
+  "drill-daily-pre-practice-routine-s6": [
+    "fundamentals",
+    "shooting",
+    "dribbling",
+    "pivoting",
+    "passing",
+    "rebounding",
+    "screening",
+    "transition",
+    "warm-up",
+    "pre-practice"
+  ],
+  "drill-defensive-fast-break-progressions": [
+    "defense",
+    "transition",
+    "fast-break",
+    "conditioning",
+    "communication",
+    "team-defense"
+  ],
+  "drill-defensive-slide-backpedal-pivot-run": [
+    "defense",
+    "footwork",
+    "lateral-movement",
+    "backpedal",
+    "pivot",
+    "conditioning"
+  ],
+  "drill-defensive-slide-change-direction": [
+    "defense",
+    "footwork",
+    "lateral-movement",
+    "conditioning",
+    "slides"
+  ],
+  "drill-depth-jump-into-jump-shot": [
+    "conditioning",
+    "plyometrics",
+    "lower-body",
+    "jumping",
+    "shooting",
+    "game-specific"
+  ],
+  "drill-dip-progression-chain": [
+    "upper-body",
+    "pushing",
+    "strength",
+    "calisthenics",
+    "muscle-up-progression",
+    "dips",
+    "progressive-overload"
+  ],
+  "drill-dip-progressions": [
+    "conditioning",
+    "upper-body",
+    "pushing",
+    "calisthenics",
+    "muscle-up-progression",
+    "explosive",
+    "dips"
+  ],
+  "drill-dodge-ball-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "whole-body-reaction"
+  ],
+  "drill-donkey-kick": [
+    "posterior-chain",
+    "explosive-power",
+    "calisthenics",
+    "conditioning",
+    "core",
+    "warm-up"
+  ],
+  "drill-double-drag-dantoni": [
+    "transition",
+    "fast-break",
+    "screening",
+    "pick-and-roll",
+    "big-men",
+    "post"
+  ],
+  "drill-dribble-curl-off-screen": [
+    "shooting",
+    "off-screen",
+    "dribble moves",
+    "curl cut",
+    "elbow",
+    "paint attack",
+    "reading defenders",
+    "live-ball moves"
+  ],
+  "drill-dribble-curl-shots": [
+    "shooting",
+    "off-screen",
+    "curl-cut",
+    "live-ball",
+    "middle-attack",
+    "reading-defense",
+    "dribble-move",
+    "individual-workout"
+  ],
+  "drill-dribble-drags-dantoni": [
+    "transition",
+    "fast-break",
+    "dribble-handoff",
+    "pick-and-roll",
+    "big-men"
+  ],
+  "drill-dribble-fade-off-screen": [
+    "shooting",
+    "off-screen",
+    "dribble-fade",
+    "baseline-drive",
+    "live-ball",
+    "midrange",
+    "catch-and-shoot"
+  ],
+  "drill-dribble-fade-shooting": [
+    "shooting",
+    "off-screen",
+    "dribble moves",
+    "wing",
+    "baseline",
+    "reading defenders",
+    "live-ball moves"
+  ],
+  "drill-dribble-fade-shots": [
+    "shooting",
+    "off-screen",
+    "live-ball",
+    "dribble-move",
+    "baseline-attack",
+    "reading-defense",
+    "individual-workout"
+  ],
+  "drill-dribble-fade-workout": [
+    "shooting",
+    "off-screen",
+    "dribble",
+    "baseline-drive",
+    "live-ball-moves",
+    "shooting-off-screens"
+  ],
+  "drill-dribble-fill-off-screen": [
+    "shooting",
+    "off-screen",
+    "dribble moves",
+    "paint attack",
+    "reading defenders",
+    "live-ball moves",
+    "half-court"
+  ],
+  "drill-dribble-fill-shots": [
+    "shooting",
+    "off-screen",
+    "live-ball",
+    "dribble-move",
+    "middle-attack",
+    "reading-defense",
+    "individual-workout"
+  ],
+  "drill-dribble-intos": [
+    "shooting",
+    "pull-up",
+    "dribbling",
+    "two-count-stop",
+    "footwork",
+    "game-speed"
+  ],
+  "drill-drive-and-kick-series": [
+    "offense",
+    "drive-and-kick",
+    "spacing",
+    "penetration",
+    "passing",
+    "half-court"
+  ],
+  "drill-drop-and-get-up": [
+    "agility",
+    "reaction-time",
+    "conditioning",
+    "change-of-direction",
+    "quickness"
+  ],
+  "drill-e-movement-cone": [
+    "agility",
+    "cone-drill",
+    "shuffle",
+    "backpedal",
+    "sprint",
+    "multi-directional",
+    "footwork",
+    "conditioning"
+  ],
+  "drill-eastman-1on1-baseline-touch": [
+    "1on1",
+    "conditioning",
+    "competition",
+    "perimeter",
+    "post",
+    "first-step",
+    "game-speed"
+  ],
+  "drill-eastman-1on1-halfcourt-attack": [
+    "1on1",
+    "attacking-the-rim",
+    "dribble-penetration",
+    "defensive-recovery",
+    "conditioning",
+    "competition"
+  ],
+  "drill-eastman-chair-shooting-series": [
+    "shooting",
+    "footwork",
+    "cutting",
+    "chair-drills",
+    "game-speed",
+    "conditioning",
+    "layup",
+    "jump-shot"
+  ],
+  "drill-eastman-flex-elbow": [
+    "shooting",
+    "cutting",
+    "elbow",
+    "flex-offense",
+    "jump-shot",
+    "footwork"
+  ],
+  "drill-eccentric-leg-press": [
+    "rehabilitation",
+    "knee",
+    "strengthening",
+    "eccentric",
+    "conditioning"
+  ],
+  "drill-eggs-on-the-rim": [
+    "shooting",
+    "follow-through",
+    "arch",
+    "visualization",
+    "form-shooting"
+  ],
+  "drill-explosive-dip-variations": [
+    "upper-body",
+    "pushing",
+    "plyometric",
+    "explosive",
+    "speed-strength",
+    "calisthenics",
+    "power"
+  ],
+  "drill-explosive-reclined-pulls": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "pulling",
+    "power",
+    "quickness"
+  ],
+  "drill-fade-shot-off-screen": [
+    "shooting",
+    "off-screen",
+    "fade",
+    "catch-and-shoot",
+    "midrange",
+    "half-court"
+  ],
+  "drill-fade-shot-workout": [
+    "shooting",
+    "off-screen",
+    "fade",
+    "catch-and-shoot",
+    "shooting-off-screens"
+  ],
+  "drill-fast-break-off-free-throw": [
+    "defense",
+    "transition",
+    "fast-break",
+    "free-throw",
+    "pressing",
+    "conditioning"
+  ],
+  "drill-favorite-spot-make-goals": [
+    "shooting",
+    "spot-shots",
+    "make-based",
+    "individual-workout",
+    "confidence",
+    "self-improvement"
+  ],
+  "drill-favorite-spot-shooting-workouts": [
+    "shooting",
+    "spot-shooting",
+    "confidence",
+    "individual-workout",
+    "make-based"
+  ],
+  "drill-figure-eights": [
+    "agility",
+    "footwork",
+    "change-of-direction",
+    "reaction-time",
+    "cone-drill",
+    "turning"
+  ],
+  "drill-fill-shot-off-screen": [
+    "shooting",
+    "off-screen",
+    "catch-and-shoot",
+    "wing",
+    "midrange",
+    "reading defenders"
+  ],
+  "drill-fill-shots-off-screen": [
+    "shooting",
+    "off-screen",
+    "catch-and-shoot",
+    "wing",
+    "midrange",
+    "individual-workout"
+  ],
+  "drill-five-cone-snake": [
+    "agility",
+    "cone-drill",
+    "cutting",
+    "change-of-direction",
+    "sprint",
+    "footwork"
+  ],
+  "drill-five-on-five-change": [
+    "offense",
+    "defense",
+    "transition",
+    "conditioning",
+    "live-play"
+  ],
+  "drill-five-on-four-scramble": [
+    "defense",
+    "transition",
+    "offense",
+    "scramble",
+    "help-defense",
+    "communication"
+  ],
+  "drill-five-player-passing-game-fast-break": [
+    "transition",
+    "fast-break",
+    "passing",
+    "conditioning",
+    "decision-making"
+  ],
+  "drill-five-second-jamming": [
+    "defense",
+    "on-ball",
+    "pressure",
+    "ball-jam",
+    "1v1"
+  ],
+  "drill-five-second-on-ball": [
+    "defense",
+    "on-ball pressure",
+    "ball pressure",
+    "jamming",
+    "half-court"
+  ],
+  "drill-flat-pop-up": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing"
+  ],
+  "drill-flex-elbow-shooting": [
+    "shooting",
+    "cutting",
+    "elbow",
+    "catch-and-shoot",
+    "footwork",
+    "game-situations"
+  ],
+  "drill-flex-offense-back-screen-shooting": [
+    "shooting",
+    "screening",
+    "flex",
+    "back-screen",
+    "cutting",
+    "post"
+  ],
+  "drill-flex-offense-screen-the-screener-drill": [
+    "screening",
+    "flex",
+    "screen-the-screener",
+    "4on4",
+    "shooting",
+    "decision-making"
+  ],
+  "drill-flex-offense-three-player-shooting": [
+    "shooting",
+    "screening",
+    "flex",
+    "cutting",
+    "post",
+    "roll"
+  ],
+  "drill-flex-offense-two-player-shooting": [
+    "shooting",
+    "screening",
+    "flex",
+    "cutting",
+    "off-screen"
+  ],
+  "drill-flex-offense-two-screen-shooting": [
+    "shooting",
+    "screening",
+    "flex",
+    "decision-making",
+    "4on4",
+    "live",
+    "defense"
+  ],
+  "drill-flex-screen-the-screener-shooting": [
+    "shooting",
+    "screening",
+    "flex",
+    "4on4",
+    "screen-the-screener",
+    "skip pass",
+    "continuity"
+  ],
+  "drill-flex-shooting-three-players": [
+    "shooting",
+    "screening",
+    "flex",
+    "roll-to-basket",
+    "reading defense"
+  ],
+  "drill-flex-shooting-two-players": [
+    "shooting",
+    "screening",
+    "flex",
+    "off-ball movement",
+    "catch-and-shoot"
+  ],
+  "drill-flex-shooting-two-screens": [
+    "shooting",
+    "screening",
+    "flex",
+    "4on4",
+    "defensive reads",
+    "curl",
+    "fade",
+    "roll"
+  ],
+  "drill-flyspring": [
+    "conditioning",
+    "agility",
+    "explosiveness",
+    "plyometrics",
+    "body-weight",
+    "calisthenics",
+    "power"
+  ],
+  "drill-flyspring-s9": [
+    "athleticism",
+    "tumbling",
+    "plyometrics",
+    "body-control",
+    "power",
+    "off-season",
+    "landing-mechanics"
+  ],
+  "drill-follow-leader-shooting": [
+    "shooting",
+    "spot-shots",
+    "three-point",
+    "live-ball-moves",
+    "partner-drill",
+    "free-throws",
+    "team-drill"
+  ],
+  "drill-follow-the-leader-shooting-workouts": [
+    "shooting",
+    "ball-handling",
+    "live-ball-moves",
+    "free-throws",
+    "three-point",
+    "group-workout",
+    "conditioning"
+  ],
+  "drill-forward-backward-roll-combo": [
+    "agility",
+    "tumbling",
+    "kinesthetic-awareness",
+    "conditioning"
+  ],
+  "drill-forward-roll-over-shoulder": [
+    "agility",
+    "tumbling",
+    "kinesthetic-awareness",
+    "conditioning"
+  ],
+  "drill-four-point-back-flip": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "acrobatics",
+    "body-weight",
+    "back-flip-chain"
+  ],
+  "drill-fratello-2v2-help-recover": [
+    "defense",
+    "help-defense",
+    "2v2",
+    "communication",
+    "man-to-man"
+  ],
+  "drill-fratello-3v3-help-recover": [
+    "defense",
+    "help-defense",
+    "rotation",
+    "3v3",
+    "communication",
+    "man-to-man"
+  ],
+  "drill-fratello-closeout-baseline": [
+    "defense",
+    "closeout",
+    "on-ball",
+    "help-defense",
+    "1v1"
+  ],
+  "drill-fratello-closeout-drive": [
+    "defense",
+    "closeout",
+    "on-ball pressure",
+    "help-and-recover",
+    "footwork"
+  ],
+  "drill-free-shot-3-25": [
+    "shooting",
+    "free-throw",
+    "conditioning",
+    "mental-toughness",
+    "team",
+    "game-like"
+  ],
+  "drill-free-shot-five-balance-hand": [
+    "shooting",
+    "free-throw",
+    "weak-hand",
+    "layup",
+    "ball-handling",
+    "multi-skill"
+  ],
+  "drill-free-shot-make-two-sprint": [
+    "shooting",
+    "free-throw",
+    "conditioning",
+    "mental-toughness",
+    "game-like"
+  ],
+  "drill-free-shot-swish": [
+    "shooting",
+    "free-throw",
+    "competitive",
+    "game-like",
+    "swish"
+  ],
+  "drill-freeze-follow-through": [
+    "shooting",
+    "follow-through",
+    "form-shooting",
+    "fundamentals"
+  ],
+  "drill-front-flip-chain": [
+    "athleticism",
+    "plyometrics",
+    "tumbling",
+    "agility",
+    "power",
+    "coordination",
+    "body-control",
+    "off-season"
+  ],
+  "drill-front-handspring": [
+    "conditioning",
+    "agility",
+    "explosiveness",
+    "plyometrics",
+    "body-weight",
+    "calisthenics",
+    "rotation",
+    "upper-body"
+  ],
+  "drill-front-handspring-s9": [
+    "athleticism",
+    "tumbling",
+    "plyometrics",
+    "body-control",
+    "landing-mechanics",
+    "power",
+    "off-season"
+  ],
+  "drill-full-body-pop-up-pushup": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "total-body",
+    "pushing"
+  ],
+  "drill-full-court-transition-3s": [
+    "shooting",
+    "conditioning",
+    "transition",
+    "three-point",
+    "full-court"
+  ],
+  "drill-galloping": [
+    "speed",
+    "gait-strength",
+    "hip-projection",
+    "leg-cycle",
+    "ankle-stiffness",
+    "conditioning"
+  ],
+  "drill-goalie-reaction": [
+    "quickness",
+    "reaction-time",
+    "lateral-movement",
+    "upper-body",
+    "visual-stimulus",
+    "agility"
+  ],
+  "drill-green-post-defense": [
+    "defense",
+    "post-defense",
+    "fronting",
+    "help-defense",
+    "shell-drill",
+    "communication"
+  ],
+  "drill-h-movement-cone": [
+    "agility",
+    "cone-drill",
+    "sprint",
+    "backpedal",
+    "shuffle",
+    "multi-directional",
+    "footwork",
+    "conditioning"
+  ],
+  "drill-half-kip": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "drill-half-ladder-skill-to-sport-skill": [
+    "quickness",
+    "agility",
+    "agility-ladder",
+    "reaction",
+    "basketball-skill",
+    "integration"
+  ],
+  "drill-half-ladder-sport-specific-skill": [
+    "quickness",
+    "agility",
+    "ladder",
+    "reaction",
+    "sport-specific",
+    "basketball-skill",
+    "conditioning"
+  ],
+  "drill-half-super-pushup": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing",
+    "shoulder-speed"
+  ],
+  "drill-handstand-roll-front-flip": [
+    "conditioning",
+    "agility",
+    "explosiveness",
+    "body-weight",
+    "calisthenics",
+    "rotation",
+    "upper-body"
+  ],
+  "drill-handstand-roll-s9": [
+    "athleticism",
+    "tumbling",
+    "agility",
+    "plyometrics",
+    "body-control",
+    "upper-body-strength",
+    "off-season"
+  ],
+  "drill-harness-pull": [
+    "speed",
+    "acceleration",
+    "assisted-acceleration",
+    "conditioning",
+    "harness"
+  ],
+  "drill-heavy-sled-pulls": [
+    "speed",
+    "acceleration",
+    "conditioning",
+    "resisted-acceleration",
+    "stride-length",
+    "sled"
+  ],
+  "drill-heel-and-toe-walks": [
+    "speed",
+    "gait-strength",
+    "ankle",
+    "shin-splint-prevention",
+    "conditioning",
+    "injury-prevention"
+  ],
+  "drill-help-and-recover-2v2": [
+    "defense",
+    "help-defense",
+    "closeout",
+    "on-ball",
+    "penetration",
+    "2v2"
+  ],
+  "drill-help-and-recover-3v3": [
+    "defense",
+    "help-and-recover",
+    "full-rotation",
+    "communication",
+    "half-court",
+    "3-on-3"
+  ],
+  "drill-hexagon-drill": [
+    "agility",
+    "footwork",
+    "quickness",
+    "conditioning",
+    "plyometrics",
+    "testing"
+  ],
+  "drill-high-knees": [
+    "speed",
+    "plyometrics",
+    "sprint-mechanics",
+    "knee-drive",
+    "conditioning"
+  ],
+  "drill-hip-pullup": [
+    "upper-body",
+    "pulling",
+    "posterior-chain",
+    "plyometric",
+    "explosive",
+    "calisthenics",
+    "muscle-up-progression"
+  ],
+  "drill-hip-strike-pushup": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing"
+  ],
+  "drill-holton-closeout": [
+    "defense",
+    "closeout",
+    "footwork",
+    "ball-pressure",
+    "stance"
+  ],
+  "drill-hop-and-stick-balance": [
+    "balance",
+    "agility",
+    "quickness",
+    "proprioception",
+    "conditioning",
+    "plyometrics"
+  ],
+  "drill-hop-back-crossover-combo-workout": [
+    "ball-handling",
+    "shooting",
+    "pull-up",
+    "crossover",
+    "hop-back",
+    "live-ball",
+    "combination-moves",
+    "free-throws"
+  ],
+  "drill-hop-scotch-ladder": [
+    "quickness",
+    "agility",
+    "ladder",
+    "ankle",
+    "elastic-strength",
+    "coordination",
+    "footwork"
+  ],
+  "drill-hop-scotch-with-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "ladder",
+    "peripheral-vision",
+    "court-sense",
+    "ankle-strength"
+  ],
+  "drill-hopping-proprioception": [
+    "conditioning",
+    "ankle",
+    "proprioception",
+    "plyometrics",
+    "rehabilitation",
+    "explosive-training"
+  ],
+  "drill-icky-shuffle-ladder": [
+    "agility",
+    "ladder-drill",
+    "footwork",
+    "coordination",
+    "quickness",
+    "lower-body"
+  ],
+  "drill-icky-shuffle-with-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "ladder",
+    "peripheral-vision",
+    "court-sense",
+    "quick-feet"
+  ],
+  "drill-in-and-out-shuffle-with-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "ladder",
+    "peripheral-vision",
+    "court-sense",
+    "quick-feet"
+  ],
+  "drill-in-out-shuffle-ladder": [
+    "agility",
+    "ladder-drill",
+    "footwork",
+    "balance",
+    "coordination",
+    "quickness"
+  ],
+  "drill-in-place-ankle-jumps": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "quickness",
+    "elastic-strength",
+    "ankle"
+  ],
+  "drill-in-place-tuck-jumps": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "power",
+    "vertical-jump",
+    "quickness"
+  ],
+  "drill-incline-barbell-press-basketball": [
+    "strength-training",
+    "upper-body",
+    "barbell",
+    "incline",
+    "pushing",
+    "gym"
+  ],
+  "drill-incline-pop-up": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing"
+  ],
+  "drill-inverted-row-basketball": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "conditioning",
+    "posterior-deltoid",
+    "back-strength"
+  ],
+  "drill-jab-step-progression": [
+    "shooting",
+    "footwork",
+    "one-on-one",
+    "scoring",
+    "offense",
+    "jab-step",
+    "perimeter"
+  ],
+  "drill-jump-roll-front-flip": [
+    "conditioning",
+    "agility",
+    "explosiveness",
+    "plyometrics",
+    "body-weight",
+    "calisthenics",
+    "rotation"
+  ],
+  "drill-jump-roll-s9": [
+    "athleticism",
+    "tumbling",
+    "agility",
+    "plyometrics",
+    "body-control",
+    "coordination",
+    "off-season"
+  ],
+  "drill-jump-rope-multidirectional": [
+    "plyometrics",
+    "quickness",
+    "lower-body",
+    "conditioning",
+    "footwork",
+    "jump-rope"
+  ],
+  "drill-jumping-pullover": [
+    "upper-body",
+    "pulling",
+    "plyometric",
+    "explosive",
+    "calisthenics",
+    "muscle-up-progression",
+    "technique"
+  ],
+  "drill-jumping-pullup": [
+    "upper-body",
+    "explosive-power",
+    "calisthenics",
+    "pulling",
+    "conditioning"
+  ],
+  "drill-kettlebell-high-pull-basketball": [
+    "strength",
+    "power",
+    "upper-body",
+    "pulling",
+    "conditioning",
+    "explosive",
+    "kettlebell",
+    "rebounding",
+    "jumping"
+  ],
+  "drill-kettlebell-swing": [
+    "conditioning",
+    "strength-training",
+    "power",
+    "jumping",
+    "hip-extension",
+    "explosiveness"
+  ],
+  "drill-kip-up": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "drill-kip-up-chain": [
+    "conditioning",
+    "agility",
+    "hip-power",
+    "explosive-power",
+    "core",
+    "athleticism",
+    "floor-movement",
+    "progression"
+  ],
+  "drill-kip-up-progression-chain": [
+    "conditioning",
+    "agility",
+    "explosive-power",
+    "plyometrics",
+    "total-body",
+    "floor-work",
+    "calisthenics"
+  ],
+  "drill-kip-up-small-space-drills": [
+    "conditioning",
+    "agility",
+    "explosive-power",
+    "plyometrics",
+    "total-body",
+    "calisthenics",
+    "warmup"
+  ],
+  "drill-kip-up-small-space-variations": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "drill-kipping-pullup": [
+    "upper-body",
+    "explosive-power",
+    "calisthenics",
+    "pulling",
+    "grip",
+    "conditioning"
+  ],
+  "drill-kneeling-push-off": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "pushing"
+  ],
+  "drill-kojaks": [
+    "explosiveness",
+    "upper-body",
+    "pressing-power",
+    "acrobatics",
+    "small-space",
+    "conditioning"
+  ],
+  "drill-ladder-speed-run": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "stride-frequency",
+    "agility-ladder",
+    "foot-speed"
+  ],
+  "drill-ladder-stride-run": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "stride-frequency",
+    "agility-ladder",
+    "posture"
+  ],
+  "drill-landmine-trunk-rotation": [
+    "conditioning",
+    "core",
+    "strength",
+    "rotation",
+    "power"
+  ],
+  "drill-lat-pull-down-basketball": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "conditioning",
+    "back-strength",
+    "machine"
+  ],
+  "drill-lateral-plank": [
+    "conditioning",
+    "core",
+    "strength",
+    "stability",
+    "lateral-flexion",
+    "injury-prevention"
+  ],
+  "drill-lateral-skaters": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "lateral",
+    "cutting",
+    "quickness",
+    "agility"
+  ],
+  "drill-lateral-weave-bags": [
+    "agility",
+    "footwork",
+    "quickness",
+    "reaction-time",
+    "bag-drill",
+    "lateral"
+  ],
+  "drill-latissimus-dorsi-stretch": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "flexibility",
+    "stretching"
+  ],
+  "drill-left-to-right-v-cut": [
+    "shooting",
+    "footwork",
+    "v-cut",
+    "catch-and-shoot",
+    "passing",
+    "rebounding",
+    "team-drill",
+    "off-screen"
+  ],
+  "drill-line-slide-change-direction": [
+    "footwork",
+    "lateral-quickness",
+    "defensive-footwork",
+    "change-of-direction",
+    "agility",
+    "movement-skills"
+  ],
+  "drill-lunge-patterns": [
+    "balance",
+    "strength",
+    "lower-body",
+    "hip-mobility",
+    "conditioning",
+    "proprioception"
+  ],
+  "drill-lunge-power-up-jump": [
+    "conditioning",
+    "plyometrics",
+    "lower-body",
+    "quickness",
+    "power",
+    "lunge"
+  ],
+  "drill-lunge-with-power-up-jump": [
+    "plyometrics",
+    "conditioning",
+    "lower-body",
+    "quickness",
+    "lunge",
+    "jumping"
+  ],
+  "drill-mass-ballhandling-pivoting": [
+    "offense",
+    "footwork",
+    "pivoting",
+    "passing",
+    "ball-handling",
+    "press-break",
+    "trapping",
+    "team-drill"
+  ],
+  "drill-mass-footwork-breakdown": [
+    "offense",
+    "footwork",
+    "pivoting",
+    "post-play",
+    "screening",
+    "perimeter",
+    "team-drill",
+    "whole-part-whole"
+  ],
+  "drill-mass-footwork-rotation": [
+    "footwork",
+    "pivoting",
+    "post",
+    "perimeter",
+    "offense",
+    "screening",
+    "team-drill"
+  ],
+  "drill-mat-walk": [
+    "rehabilitation",
+    "knee",
+    "balance",
+    "conditioning",
+    "injury-prevention"
+  ],
+  "drill-mat-walk-knee-rehab": [
+    "rehabilitation",
+    "knee",
+    "balance",
+    "ankle",
+    "conditioning"
+  ],
+  "drill-medicine-ball-bull-in-a-ring": [
+    "quickness",
+    "medicine-ball",
+    "elastic-strength",
+    "passing",
+    "reaction-time",
+    "conditioning"
+  ],
+  "drill-medicine-ball-bull-in-ring": [
+    "quickness",
+    "reaction-time",
+    "medicine-ball",
+    "upper-body",
+    "elastic-strength",
+    "conditioning"
+  ],
+  "drill-medicine-ball-forward-scoop-toss": [
+    "quickness",
+    "medicine-ball",
+    "power",
+    "elastic-strength",
+    "reaction-time",
+    "conditioning",
+    "plyometrics"
+  ],
+  "drill-medicine-ball-lateral-shuffle-pass": [
+    "quickness",
+    "medicine-ball",
+    "elastic-strength",
+    "lateral-movement",
+    "defensive-footwork",
+    "reaction-time"
+  ],
+  "drill-medicine-ball-one-arm-push-off": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "quickness",
+    "power",
+    "unilateral"
+  ],
+  "drill-medicine-ball-overhead-throw": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "overhead",
+    "power",
+    "rebounding"
+  ],
+  "drill-medicine-ball-push-up": [
+    "conditioning",
+    "plyometrics",
+    "upper-body",
+    "strength",
+    "passing",
+    "rebounding",
+    "box-out",
+    "medicine-ball"
+  ],
+  "drill-medicine-ball-release-push-ups-partner": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "quickness",
+    "partner",
+    "medicine-ball"
+  ],
+  "drill-medicine-ball-release-pushup-partner": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "quickness",
+    "pushing",
+    "partner"
+  ],
+  "drill-medicine-ball-slam-vertical-jump": [
+    "conditioning",
+    "plyometrics",
+    "total-body",
+    "jumping",
+    "rebounding",
+    "core-strength",
+    "medicine-ball"
+  ],
+  "drill-medicine-ball-squat-push-toss": [
+    "quickness",
+    "medicine-ball",
+    "power",
+    "elastic-strength",
+    "reaction-time",
+    "conditioning",
+    "plyometrics"
+  ],
+  "drill-medicine-ball-upper-body-shuffles": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "quickness",
+    "power",
+    "lateral"
+  ],
+  "drill-medicine-ball-wall-chest-pass": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "passing",
+    "power"
+  ],
+  "drill-medicine-ball-wall-chest-passes": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "passing",
+    "quickness",
+    "medicine-ball"
+  ],
+  "drill-medicine-ball-wall-scoop-toss": [
+    "conditioning",
+    "upper-body",
+    "lower-body",
+    "plyometrics",
+    "power",
+    "quickness"
+  ],
+  "drill-medicine-ball-wall-side-toss": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "rotation",
+    "core",
+    "quickness"
+  ],
+  "drill-mirror-drills-box-square-shuffle": [
+    "quickness",
+    "lateral-speed",
+    "reaction",
+    "agility",
+    "defensive-slide",
+    "mirroring",
+    "conditioning"
+  ],
+  "drill-mirroring-partner-sprints": [
+    "quickness",
+    "change-of-direction",
+    "reaction",
+    "speed",
+    "backpedal",
+    "defense",
+    "conditioning"
+  ],
+  "drill-mirroring-two-box": [
+    "quickness",
+    "reaction",
+    "agility",
+    "direction-change",
+    "mirroring",
+    "conditioning"
+  ],
+  "drill-mirroring-two-box-drill": [
+    "quickness",
+    "change-of-direction",
+    "reaction",
+    "agility",
+    "mirroring",
+    "conditioning"
+  ],
+  "drill-monkey-flip": [
+    "conditioning",
+    "agility",
+    "calisthenics",
+    "acrobatics",
+    "explosive-power",
+    "shoulder-strength"
+  ],
+  "drill-multidirectional-skipping": [
+    "quickness",
+    "agility",
+    "coordination",
+    "footwork",
+    "conditioning",
+    "reaction-time"
+  ],
+  "drill-multiple-box-jump": [
+    "conditioning",
+    "plyometrics",
+    "lower-body",
+    "jumping",
+    "rebounding",
+    "explosiveness",
+    "change-of-direction"
+  ],
+  "drill-muscle-up": [
+    "upper-body",
+    "pulling",
+    "pushing",
+    "plyometric",
+    "explosive",
+    "calisthenics",
+    "total-body",
+    "power"
+  ],
+  "drill-muscle-up-variations": [
+    "conditioning",
+    "athleticism",
+    "explosive-training",
+    "upper-body",
+    "power",
+    "calisthenics"
+  ],
+  "drill-no-hands-kip-up": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "drill-obrien-press-1v1": [
+    "defense",
+    "full-court",
+    "press",
+    "1v1",
+    "on-ball",
+    "back-tip"
+  ],
+  "drill-obrien-press-2v2": [
+    "defense",
+    "full-court",
+    "press",
+    "2v2",
+    "trapping",
+    "on-ball"
+  ],
+  "drill-obrien-press-3v3": [
+    "defense",
+    "full-court",
+    "press",
+    "3v3",
+    "man-to-man",
+    "denial",
+    "communication"
+  ],
+  "drill-obrien-press-4v4v4": [
+    "defense",
+    "offense",
+    "full-court",
+    "press",
+    "transition",
+    "fast-break",
+    "conditioning"
+  ],
+  "drill-off-season-challenge-workouts": [
+    "shooting",
+    "off-season",
+    "conditioning",
+    "individual-workout",
+    "three-point",
+    "free-throw"
+  ],
+  "drill-offense-transition-defense-sequence": [
+    "conditioning",
+    "transition",
+    "offense",
+    "defense",
+    "shooting",
+    "lane-slides",
+    "help-defense",
+    "skills-conditioning"
+  ],
+  "drill-one-arm-back-handspring": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "acrobatics",
+    "body-weight",
+    "back-flip-chain"
+  ],
+  "drill-one-arm-wall-push-away": [
+    "upper-body",
+    "explosive-power",
+    "calisthenics",
+    "pushing",
+    "conditioning",
+    "injury-prevention"
+  ],
+  "drill-one-dribble-two-dribble-pull-up": [
+    "shooting",
+    "pull-up",
+    "dribbling",
+    "midrange",
+    "both-hands",
+    "pivot-foot"
+  ],
+  "drill-one-leg-hop-ladder": [
+    "quickness",
+    "agility",
+    "ladder",
+    "single-leg",
+    "ankle",
+    "unilateral",
+    "conditioning"
+  ],
+  "drill-one-on-one-cutthroat-live": [
+    "1-on-1",
+    "live-ball-moves",
+    "competitive",
+    "scoring",
+    "defense",
+    "ball-handling",
+    "game-simulation"
+  ],
+  "drill-open-court-dribble-moves": [
+    "ball-handling",
+    "dribbling",
+    "scoring",
+    "full-court",
+    "conditioning",
+    "transition"
+  ],
+  "drill-over-and-under": [
+    "shooting",
+    "catch-and-shoot",
+    "footwork",
+    "game-situations",
+    "jump-shot"
+  ],
+  "drill-overhead-cable-core-press": [
+    "conditioning",
+    "core",
+    "strength",
+    "lateral-flexion",
+    "shoulder",
+    "injury-prevention"
+  ],
+  "drill-overhead-medicine-ball-toss": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "plyometric",
+    "power",
+    "medicine-ball"
+  ],
+  "drill-overhead-press-basketball": [
+    "strength-training",
+    "upper-body",
+    "overhead",
+    "shoulder",
+    "barbell",
+    "gym"
+  ],
+  "drill-overhead-press-shoulder": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "strengthening",
+    "rotator-cuff"
+  ],
+  "drill-pallof-press": [
+    "conditioning",
+    "core",
+    "strength",
+    "rotation",
+    "anti-rotation",
+    "injury-prevention"
+  ],
+  "drill-partner-assisted-let-gos": [
+    "speed",
+    "acceleration",
+    "contrast-acceleration",
+    "stride-frequency",
+    "conditioning",
+    "partner"
+  ],
+  "drill-partner-blind-tosses": [
+    "quickness",
+    "reaction-time",
+    "visual-stimulus",
+    "first-step",
+    "conditioning",
+    "perception"
+  ],
+  "drill-partner-resisted-lateral-shuffle-chase": [
+    "quickness",
+    "lateral-speed",
+    "reaction",
+    "defense",
+    "change-of-direction",
+    "conditioning"
+  ],
+  "drill-partner-resisted-starts": [
+    "speed",
+    "acceleration",
+    "resisted-acceleration",
+    "stride-length",
+    "partner",
+    "conditioning"
+  ],
+  "drill-partner-shooting": [
+    "shooting",
+    "midrange",
+    "catch-and-shoot",
+    "passing",
+    "communication",
+    "footwork"
+  ],
+  "drill-partner-shooting-midrange": [
+    "shooting",
+    "midrange",
+    "catch-and-shoot",
+    "partner",
+    "passing",
+    "follow-through"
+  ],
+  "drill-partner-tubing-assisted-acceleration": [
+    "speed",
+    "acceleration",
+    "assisted-acceleration",
+    "stride-frequency",
+    "tubing",
+    "conditioning"
+  ],
+  "drill-pectoralis-stretch": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "chest",
+    "flexibility",
+    "stretching"
+  ],
+  "drill-physioball-hamstring-curl": [
+    "injury-prevention",
+    "ACL",
+    "knee",
+    "conditioning",
+    "strength-training",
+    "prehabilitation",
+    "hamstrings",
+    "posterior-chain"
+  ],
+  "drill-pin-down-pull-up": [
+    "shooting",
+    "pin-down",
+    "conditioning",
+    "catch-and-shoot",
+    "wing",
+    "sprint"
+  ],
+  "drill-pinch-post-series-dantoni": [
+    "transition",
+    "fast-break",
+    "post",
+    "elbow",
+    "dribble-handoff",
+    "pick-and-roll",
+    "big-men",
+    "face-up"
+  ],
+  "drill-pit-smashers": [
+    "speed",
+    "acceleration",
+    "starting-mechanics",
+    "explosive-power",
+    "triple-extension"
+  ],
+  "drill-pivot-and-pass": [
+    "pivoting",
+    "passing",
+    "footwork",
+    "shooting",
+    "ball-handling",
+    "dribbling"
+  ],
+  "drill-pivot-and-pass-station": [
+    "footwork",
+    "pivoting",
+    "passing",
+    "shooting",
+    "ball-handling",
+    "offense",
+    "defense"
+  ],
+  "drill-pivot-step-medicine-ball-chest-pass": [
+    "conditioning",
+    "plyometrics",
+    "upper-body",
+    "passing",
+    "chest-pass",
+    "footwork",
+    "jab-step",
+    "medicine-ball"
+  ],
+  "drill-plyo-push-ups": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "quickness",
+    "pushing"
+  ],
+  "drill-pool-drills": [
+    "speed",
+    "recovery",
+    "conditioning",
+    "injury-prevention",
+    "resistance",
+    "low-impact"
+  ],
+  "drill-post-defense-three-quarter-fronting": [
+    "defense",
+    "post-defense",
+    "fronting",
+    "man-to-man",
+    "low-post"
+  ],
+  "drill-posterior-capsule-stretch": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "flexibility",
+    "stretching"
+  ],
+  "drill-power-clean-hang": [
+    "conditioning",
+    "strength-training",
+    "power",
+    "Olympic-lifting",
+    "jumping",
+    "core",
+    "contact-absorption"
+  ],
+  "drill-power-shots-post-bubble": [
+    "post",
+    "shooting",
+    "footwork",
+    "power-move",
+    "drop-step",
+    "inside-scoring",
+    "bubble-defense",
+    "physical",
+    "pivot"
+  ],
+  "drill-power-skips": [
+    "plyometrics",
+    "conditioning",
+    "lower-body",
+    "quickness",
+    "hip-extension"
+  ],
+  "drill-power-snatch-floor": [
+    "conditioning",
+    "strength-training",
+    "power",
+    "Olympic-lifting",
+    "acceleration",
+    "mobility"
+  ],
+  "drill-power-snatch-hang": [
+    "conditioning",
+    "strength-training",
+    "power",
+    "jumping",
+    "Olympic-lifting",
+    "shoulder-stability",
+    "core"
+  ],
+  "drill-press-1v1-inbounds": [
+    "defense",
+    "full-court press",
+    "inbounds denial",
+    "ball pressure",
+    "back-tip"
+  ],
+  "drill-press-2v2-inbounds": [
+    "defense",
+    "full-court press",
+    "inbounds denial",
+    "trapping",
+    "back-tip",
+    "2-on-2"
+  ],
+  "drill-press-roll-front-flip": [
+    "conditioning",
+    "agility",
+    "explosiveness",
+    "body-weight",
+    "calisthenics",
+    "rotation"
+  ],
+  "drill-press-roll-s9": [
+    "athleticism",
+    "tumbling",
+    "agility",
+    "body-control",
+    "coordination",
+    "off-season",
+    "upper-body-strength"
+  ],
+  "drill-pride-zigzag-defensive": [
+    "defense",
+    "footwork",
+    "pivoting",
+    "on-ball",
+    "full-court",
+    "1-on-1",
+    "competitive",
+    "man-to-man"
+  ],
+  "drill-pull-up-basketball": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "conditioning",
+    "rebounding",
+    "back-strength"
+  ],
+  "drill-pull-up-jump-shot": [
+    "shooting",
+    "pull-up",
+    "dribble",
+    "footwork",
+    "midrange",
+    "fundamentals"
+  ],
+  "drill-pullup-hop": [
+    "upper-body",
+    "explosive-power",
+    "calisthenics",
+    "pulling",
+    "grip",
+    "conditioning"
+  ],
+  "drill-push-and-talk-defensive": [
+    "defense",
+    "footwork",
+    "pivoting",
+    "on-ball",
+    "directional",
+    "communication",
+    "advance-step",
+    "drop-and-swing",
+    "push-off",
+    "slide"
+  ],
+  "drill-push-get-up": [
+    "conditioning",
+    "upper-body",
+    "explosive-power",
+    "calisthenics",
+    "agility"
+  ],
+  "drill-push-getup": [
+    "conditioning",
+    "upper-body",
+    "lower-body",
+    "explosive-power",
+    "total-body",
+    "plyometrics"
+  ],
+  "drill-push-off-box-shuffle": [
+    "plyometrics",
+    "quickness",
+    "lower-body",
+    "elastic-strength",
+    "ankle",
+    "conditioning"
+  ],
+  "drill-push-push-defensive": [
+    "defense",
+    "footwork",
+    "pivoting",
+    "on-ball",
+    "mass-drill",
+    "advance-step",
+    "drop-and-swing",
+    "push-off",
+    "slide"
+  ],
+  "drill-push-up-basketball": [
+    "strength-training",
+    "upper-body",
+    "pushing",
+    "conditioning",
+    "no-equipment"
+  ],
+  "drill-quick-feet-agility-ladder": [
+    "quickness",
+    "agility",
+    "ladder",
+    "first-step",
+    "reaction",
+    "footwork",
+    "conditioning"
+  ],
+  "drill-quick-feet-all-directions": [
+    "quickness",
+    "agility",
+    "agility-ladder",
+    "first-step",
+    "reaction",
+    "footwork",
+    "conditioning"
+  ],
+  "drill-quick-square-ups": [
+    "shooting",
+    "footwork",
+    "reaction",
+    "pivoting",
+    "catch-and-shoot",
+    "jump-shot"
+  ],
+  "drill-racetrack-dribble": [
+    "ball-handling",
+    "dribbling",
+    "scoring",
+    "conditioning",
+    "full-court",
+    "transition",
+    "1-on-1"
+  ],
+  "drill-rapid-fire-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "whole-body-reaction"
+  ],
+  "drill-reactive-push-ups-clap": [
+    "upper-body",
+    "reaction",
+    "plyometrics",
+    "power",
+    "conditioning"
+  ],
+  "drill-reactive-push-ups-with-clap": [
+    "quickness",
+    "upper-body",
+    "reaction",
+    "plyometrics",
+    "power",
+    "push-up"
+  ],
+  "drill-read-defense-step-up-dantoni": [
+    "transition",
+    "fast-break",
+    "screening",
+    "pick-and-roll",
+    "reading-defense",
+    "big-men"
+  ],
+  "drill-rear-press-roll": [
+    "agility",
+    "acrobatics",
+    "back-flip",
+    "vestibular",
+    "kinesthetic-awareness",
+    "rolling",
+    "upper-body"
+  ],
+  "drill-rear-shoulder-roll": [
+    "agility",
+    "acrobatics",
+    "back-flip",
+    "vestibular",
+    "kinesthetic-awareness",
+    "safety",
+    "rolling"
+  ],
+  "drill-renegade-row-basketball": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "pushing",
+    "core",
+    "conditioning",
+    "stability",
+    "dumbbells"
+  ],
+  "drill-resistive-ankle-motion": [
+    "rehabilitation",
+    "ankle",
+    "strengthening",
+    "injury-prevention"
+  ],
+  "drill-reverse-replace-drive": [
+    "passing",
+    "cutting",
+    "driving",
+    "finishing",
+    "warm-up"
+  ],
+  "drill-rim-runs-dantoni": [
+    "transition",
+    "fast-break",
+    "screening",
+    "lob",
+    "roll",
+    "big-men",
+    "post"
+  ],
+  "drill-rip-step-big-hop": [
+    "finishing",
+    "layup",
+    "footwork",
+    "ball-handling",
+    "shot-creation",
+    "free-throw",
+    "contact"
+  ],
+  "drill-rip-step-hop-back": [
+    "shooting",
+    "three-point",
+    "shot-creation",
+    "footwork",
+    "step-back",
+    "free-throw"
+  ],
+  "drill-rip-step-hop-back-crossover": [
+    "shooting",
+    "ball-handling",
+    "footwork",
+    "live-ball",
+    "off-dribble",
+    "three-point"
+  ],
+  "drill-rip-step-hop-back-roll-out": [
+    "shot-creation",
+    "ball-handling",
+    "footwork",
+    "dribble-drive",
+    "combination-moves",
+    "free-throw"
+  ],
+  "drill-rip-step-pull-up-3s": [
+    "shooting",
+    "three-point",
+    "ball-handling",
+    "footwork",
+    "off-dribble",
+    "live-ball"
+  ],
+  "drill-rip-step-step-through": [
+    "shooting",
+    "finishing",
+    "ball-handling",
+    "footwork",
+    "layup",
+    "driving",
+    "reading defense"
+  ],
+  "drill-rip-step-stride-stop": [
+    "shooting",
+    "ball-handling",
+    "footwork",
+    "pull-up",
+    "driving",
+    "one-on-one",
+    "perimeter"
+  ],
+  "drill-rip-step-stride-stop-shots": [
+    "shooting",
+    "ball-handling",
+    "shot-creation",
+    "footwork",
+    "pull-up",
+    "free-throw",
+    "dribble-drive"
+  ],
+  "drill-rip-step-stride-stop-step-through": [
+    "shooting",
+    "layup",
+    "finishing",
+    "footwork",
+    "ball-handling",
+    "shot-creation",
+    "free-throw"
+  ],
+  "drill-rip-step-workout-series": [
+    "offense",
+    "live-ball-moves",
+    "shooting",
+    "footwork",
+    "scoring",
+    "conditioning",
+    "individual-workout"
+  ],
+  "drill-rip-step-workouts": [
+    "offense",
+    "live-ball",
+    "footwork",
+    "shooting",
+    "scoring",
+    "conditioning",
+    "ball-handling",
+    "individual-workout"
+  ],
+  "drill-rocker-board-balance": [
+    "conditioning",
+    "ankle",
+    "balance",
+    "proprioception",
+    "injury-prevention"
+  ],
+  "drill-rolling-sit-up": [
+    "conditioning",
+    "core",
+    "hip-flexors",
+    "floor-movement",
+    "kip-up-progression"
+  ],
+  "drill-rolling-squat": [
+    "conditioning",
+    "core",
+    "hip-flexors",
+    "floor-movement",
+    "kip-up-progression",
+    "momentum"
+  ],
+  "drill-rope-skipping": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "quickness",
+    "elastic-strength",
+    "footwork"
+  ],
+  "drill-rope-skipping-plyometric": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "quickness",
+    "elastic-strength",
+    "footwork"
+  ],
+  "drill-round-off-tumbling": [
+    "agility",
+    "tumbling",
+    "kinesthetic-awareness",
+    "conditioning",
+    "lateral"
+  ],
+  "drill-round-the-clock-pushups": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "explosive-power",
+    "endurance"
+  ],
+  "drill-ruler-drop-test": [
+    "quickness",
+    "hand-speed",
+    "reaction",
+    "upper-body",
+    "assessment"
+  ],
+  "drill-run-the-line": [
+    "shooting",
+    "conditioning",
+    "footwork",
+    "elbow",
+    "jump-shot",
+    "catch-and-shoot"
+  ],
+  "drill-running-front-flip": [
+    "agility",
+    "explosiveness",
+    "plyometrics",
+    "acrobatics",
+    "power",
+    "kinesthetic-awareness"
+  ],
+  "drill-s-drill-cone": [
+    "agility",
+    "cone-drill",
+    "cutting",
+    "change-of-direction",
+    "sprint",
+    "footwork"
+  ],
+  "drill-scissor-jumps": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "quickness",
+    "hip",
+    "balance"
+  ],
+  "drill-scissors-jump": [
+    "lower-body",
+    "explosive-power",
+    "plyometrics",
+    "hip-mobility",
+    "conditioning",
+    "jumping"
+  ],
+  "drill-seated-physioball-perturbation": [
+    "rehabilitation",
+    "ankle",
+    "proprioception",
+    "injury-prevention"
+  ],
+  "drill-seated-row-basketball": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "conditioning",
+    "back-strength",
+    "machine",
+    "posture"
+  ],
+  "drill-sequence-jumping-jacks": [
+    "plyometrics",
+    "quickness",
+    "lower-body",
+    "conditioning",
+    "footwork"
+  ],
+  "drill-sf-big-hop-workout": [
+    "shooting",
+    "shot-fake",
+    "big-hop",
+    "jump-stop",
+    "pull-up",
+    "individual-workout",
+    "finishing",
+    "midrange"
+  ],
+  "drill-sf-hop-back-crossover-workout": [
+    "shooting",
+    "ball-handling",
+    "scoring",
+    "dribble-moves",
+    "shot-fake",
+    "hop-back",
+    "crossover",
+    "free-throws"
+  ],
+  "drill-sf-hop-back-roll-out-workout": [
+    "shooting",
+    "shot-fake",
+    "hop-back",
+    "roll-out",
+    "dribble",
+    "individual-workout",
+    "scoring-moves",
+    "counter"
+  ],
+  "drill-sf-hop-back-workout": [
+    "shooting",
+    "shot-fake",
+    "hop-back",
+    "three-point",
+    "step-back",
+    "individual-workout",
+    "space-creation"
+  ],
+  "drill-sf-pull-up-threes-workout": [
+    "shooting",
+    "three-point",
+    "shot-fake",
+    "pull-up",
+    "scoring",
+    "free-throws"
+  ],
+  "drill-sf-stride-stop-step-through-workout": [
+    "shooting",
+    "shot-fake",
+    "step-through",
+    "stride-stop",
+    "pull-up",
+    "finishing",
+    "individual-workout"
+  ],
+  "drill-sf-stride-stop-workout": [
+    "shooting",
+    "shot-fake",
+    "pull-up",
+    "stride-stop",
+    "individual-workout",
+    "ball-handling",
+    "midrange"
+  ],
+  "drill-shell-drill-rebounding": [
+    "rebounding",
+    "defensive-rebounding",
+    "offensive-rebounding",
+    "boxing-out",
+    "team-defense",
+    "shell-drill"
+  ],
+  "drill-shell-rebounding": [
+    "rebounding",
+    "defense",
+    "offense",
+    "footwork",
+    "team",
+    "half-court"
+  ],
+  "drill-shell-shooting-frank": [
+    "defense",
+    "shooting",
+    "offense",
+    "team",
+    "shell-drill",
+    "organization"
+  ],
+  "drill-shoot-the-pyramid": [
+    "shooting",
+    "conditioning",
+    "individual-development",
+    "mental-toughness",
+    "competition"
+  ],
+  "drill-shooting-hand-form-shooting": [
+    "shooting",
+    "form",
+    "alignment",
+    "individual",
+    "warm-up"
+  ],
+  "drill-shot-fake-full-workout-series": [
+    "shooting",
+    "footwork",
+    "live-ball",
+    "ball-handling",
+    "off-dribble",
+    "scoring",
+    "one-on-one"
+  ],
+  "drill-shots-a-day-300": [
+    "shooting",
+    "conditioning",
+    "individual-development",
+    "off-season",
+    "ball-handling"
+  ],
+  "drill-shots-a-day-500": [
+    "shooting",
+    "conditioning",
+    "individual-development",
+    "off-season"
+  ],
+  "drill-shots-a-day-club": [
+    "shooting",
+    "conditioning",
+    "ball-handling",
+    "individual-workout",
+    "off-season"
+  ],
+  "drill-shoulder-pop": [
+    "conditioning",
+    "core",
+    "shoulder",
+    "wrist",
+    "floor-movement",
+    "kip-up-progression",
+    "explosive-power"
+  ],
+  "drill-shoulder-roll-front-flip": [
+    "conditioning",
+    "agility",
+    "explosiveness",
+    "plyometrics",
+    "body-weight",
+    "calisthenics",
+    "rotation"
+  ],
+  "drill-shoulder-roll-s9": [
+    "athleticism",
+    "tumbling",
+    "agility",
+    "body-control",
+    "coordination",
+    "off-season",
+    "injury-prevention"
+  ],
+  "drill-show-and-go-closeout-1on1": [
+    "shooting",
+    "one-on-one",
+    "offense",
+    "shot-fake",
+    "closeout",
+    "competitive",
+    "scoring"
+  ],
+  "drill-side-lying-clam": [
+    "injury-prevention",
+    "ACL",
+    "knee",
+    "conditioning",
+    "strength-training",
+    "prehabilitation",
+    "glutes",
+    "hip"
+  ],
+  "drill-side-lying-shoulder-external-rotation": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "rotator-cuff",
+    "strengthening"
+  ],
+  "drill-side-macaco": [
+    "conditioning",
+    "agility",
+    "calisthenics",
+    "acrobatics",
+    "explosive-power",
+    "shoulder-strength"
+  ],
+  "drill-side-right-in-ladder": [
+    "agility",
+    "ladder-drill",
+    "footwork",
+    "balance",
+    "coordination",
+    "quickness",
+    "lateral"
+  ],
+  "drill-side-to-side-skiers-angle-board": [
+    "agility",
+    "footwork",
+    "quickness",
+    "change-of-direction",
+    "angle-board",
+    "rotation"
+  ],
+  "drill-side-to-side-skiers-slide-board": [
+    "agility",
+    "lateral",
+    "footwork",
+    "balance",
+    "slide-board",
+    "rotation"
+  ],
+  "drill-sideline-shooting": [
+    "shooting",
+    "footwork",
+    "v-cut",
+    "catch-and-shoot",
+    "wing",
+    "perimeter",
+    "team-drill"
+  ],
+  "drill-single-arm-band-press-basketball": [
+    "strength-training",
+    "upper-body",
+    "resistance-band",
+    "unilateral",
+    "no-gym",
+    "pushing"
+  ],
+  "drill-single-arm-dumbbell-row-basketball": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "conditioning",
+    "unilateral",
+    "posterior-deltoid"
+  ],
+  "drill-single-arm-landmine-press-basketball": [
+    "strength-training",
+    "upper-body",
+    "overhead",
+    "shoulder",
+    "unilateral",
+    "landmine",
+    "gym"
+  ],
+  "drill-single-leg-balance-dumbbell-press": [
+    "balance",
+    "proprioception",
+    "strength",
+    "single-leg",
+    "upper-body",
+    "tri-plane"
+  ],
+  "drill-single-leg-balance-opposite-arm-reach": [
+    "balance",
+    "proprioception",
+    "injury-prevention",
+    "single-leg",
+    "rehabilitation"
+  ],
+  "drill-single-leg-balance-opposite-leg-reach": [
+    "balance",
+    "proprioception",
+    "injury-prevention",
+    "single-leg",
+    "rehabilitation"
+  ],
+  "drill-single-leg-bounds": [
+    "speed",
+    "plyometrics",
+    "unilateral",
+    "hip-power",
+    "stride-length",
+    "ankle-stiffness",
+    "conditioning"
+  ],
+  "drill-single-leg-hurdle-jump": [
+    "conditioning",
+    "plyometrics",
+    "lower-body",
+    "explosiveness",
+    "jumping",
+    "rebounding"
+  ],
+  "drill-single-leg-stance-balance": [
+    "rehabilitation",
+    "ankle",
+    "balance",
+    "proprioception",
+    "injury-prevention",
+    "single-leg"
+  ],
+  "drill-single-leg-stance-unstable-surface": [
+    "rehabilitation",
+    "knee",
+    "balance",
+    "proprioception",
+    "conditioning"
+  ],
+  "drill-skater-hop": [
+    "conditioning",
+    "plyometrics",
+    "lower-body",
+    "lateral-quickness",
+    "change-of-direction",
+    "cutting",
+    "injury-prevention"
+  ],
+  "drill-skiers-with-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "ladder",
+    "peripheral-vision",
+    "court-sense"
+  ],
+  "drill-skip-for-distance": [
+    "speed",
+    "plyometrics",
+    "hip-power",
+    "stride-length",
+    "conditioning"
+  ],
+  "drill-skip-for-height": [
+    "speed",
+    "plyometrics",
+    "hip-power",
+    "stride-length",
+    "ankle-stiffness",
+    "conditioning"
+  ],
+  "drill-slap-tuck-jump": [
+    "plyometrics",
+    "jumping",
+    "lower-body",
+    "explosive-power",
+    "tuck",
+    "calisthenics"
+  ],
+  "drill-sleeper-stretch": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "flexibility",
+    "stretching",
+    "rotator-cuff"
+  ],
+  "drill-small-space-calisthenics": [
+    "conditioning",
+    "athleticism",
+    "explosive-training",
+    "core",
+    "power",
+    "calisthenics",
+    "warm-up"
+  ],
+  "drill-small-space-power-drills": [
+    "conditioning",
+    "athleticism",
+    "explosive-training",
+    "core",
+    "plyometrics",
+    "warm-up"
+  ],
+  "drill-snake-jump-ladder": [
+    "agility",
+    "ladder-drill",
+    "jump",
+    "hip-rotation",
+    "balance",
+    "coordination",
+    "quickness",
+    "plyometrics"
+  ],
+  "drill-snake-with-reaction": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "ladder",
+    "peripheral-vision",
+    "court-sense",
+    "ankle-strength",
+    "hip-rotation"
+  ],
+  "drill-snatch-pull-hang": [
+    "conditioning",
+    "strength-training",
+    "power",
+    "jumping",
+    "Olympic-lifting",
+    "explosiveness"
+  ],
+  "drill-solo-basketball-reflex-drills": [
+    "reaction-time",
+    "quickness",
+    "conditioning",
+    "ball-handling",
+    "athleticism",
+    "solo-training"
+  ],
+  "drill-spinouts-midrange": [
+    "shooting",
+    "midrange",
+    "catch-and-shoot",
+    "solo",
+    "follow-through",
+    "jump-shot"
+  ],
+  "drill-spinouts-to-from-baseline": [
+    "shooting",
+    "footwork",
+    "off-screen",
+    "down-screen",
+    "catch-and-shoot",
+    "baseline"
+  ],
+  "drill-split-jump-into-run": [
+    "conditioning",
+    "plyometrics",
+    "lower-body",
+    "first-step",
+    "transition",
+    "fast-break",
+    "acceleration"
+  ],
+  "drill-split-squat-jumps": [
+    "speed",
+    "plyometrics",
+    "hip-power",
+    "stride-length",
+    "unilateral",
+    "conditioning"
+  ],
+  "drill-spot-shot-workout": [
+    "shooting",
+    "conditioning",
+    "spot-shooting",
+    "free-throws",
+    "individual-workout"
+  ],
+  "drill-spot-shot-workout-series": [
+    "shooting",
+    "spot-shots",
+    "free-throws",
+    "conditioning",
+    "individual-workout"
+  ],
+  "drill-sprint-catch-shoot-conditioning": [
+    "conditioning",
+    "shooting",
+    "transition",
+    "sprint",
+    "layup",
+    "pull-up",
+    "skills-conditioning"
+  ],
+  "drill-squat-jump-explosive": [
+    "conditioning",
+    "plyometrics",
+    "jumping",
+    "bodyweight",
+    "leg-power"
+  ],
+  "drill-squat-jump-s9": [
+    "jumping",
+    "plyometrics",
+    "conditioning",
+    "bodyweight",
+    "leg-power"
+  ],
+  "drill-squirm": [
+    "agility",
+    "footwork",
+    "reaction-time",
+    "conditioning",
+    "line-sprints"
+  ],
+  "drill-stability-ball-cyclic-impact-lockouts": [
+    "quickness",
+    "core-strength",
+    "reaction-time",
+    "stability-ball",
+    "elastic-strength",
+    "upper-body",
+    "conditioning"
+  ],
+  "drill-stability-ball-hops": [
+    "conditioning",
+    "upper-body",
+    "quickness",
+    "plyometrics",
+    "core"
+  ],
+  "drill-standing-front-flip": [
+    "agility",
+    "explosiveness",
+    "plyometrics",
+    "acrobatics",
+    "power",
+    "vertical-jump",
+    "total-body-speed"
+  ],
+  "drill-standing-heel-raise": [
+    "strengthening",
+    "ankle",
+    "conditioning",
+    "plyometrics",
+    "injury-prevention"
+  ],
+  "drill-standing-long-jump": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "power",
+    "horizontal-jump"
+  ],
+  "drill-standing-stationary-arm-swings": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "arm-action",
+    "warm-up"
+  ],
+  "drill-star-drill-sprint-backpedal-shuffle": [
+    "agility",
+    "cone-drill",
+    "multi-directional",
+    "change-of-direction",
+    "footwork",
+    "conditioning",
+    "shuffle",
+    "backpedal"
+  ],
+  "drill-star-drill-sprint-bear-crawl-shuffle": [
+    "agility",
+    "cone-drill",
+    "bear-crawl",
+    "multi-directional",
+    "conditioning",
+    "footwork",
+    "change-of-direction"
+  ],
+  "drill-star-drill-sprint-carioca-backpedal": [
+    "agility",
+    "cone-drill",
+    "carioca",
+    "hip-mobility",
+    "footwork",
+    "multi-directional",
+    "conditioning"
+  ],
+  "drill-step-back-progression": [
+    "shooting",
+    "footwork",
+    "offense",
+    "shot-creation",
+    "pull-up",
+    "scoring",
+    "step-back"
+  ],
+  "drill-step-down-knee-rehab": [
+    "rehabilitation",
+    "knee",
+    "strengthening",
+    "eccentric",
+    "conditioning"
+  ],
+  "drill-stop-and-pop": [
+    "shooting",
+    "pull-up",
+    "dribbling",
+    "midrange",
+    "solo",
+    "both-hands"
+  ],
+  "drill-straight-hop-explosive": [
+    "conditioning",
+    "plyometrics",
+    "jumping",
+    "bodyweight",
+    "ankle-strength"
+  ],
+  "drill-straight-hop-s9": [
+    "jumping",
+    "plyometrics",
+    "conditioning",
+    "bodyweight",
+    "ankle-strength"
+  ],
+  "drill-straight-leg-kip-up": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "drill-straight-leg-shuffle": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "hip-strength",
+    "ankle-strength"
+  ],
+  "drill-suicide-jump": [
+    "plyometrics",
+    "jumping",
+    "lower-body",
+    "explosive-power",
+    "tuck",
+    "calisthenics",
+    "master-step"
+  ],
+  "drill-super-transition": [
+    "transition",
+    "conditioning",
+    "full-court",
+    "team-offense",
+    "team-defense",
+    "fast-break"
+  ],
+  "drill-superman-pushup": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "posterior-chain",
+    "anterior-chain",
+    "explosive-power"
+  ],
+  "drill-supine-basketball-core-pass": [
+    "conditioning",
+    "core",
+    "strength",
+    "flexion",
+    "ball-handling"
+  ],
+  "drill-swing-kip": [
+    "upper-body",
+    "explosive-power",
+    "calisthenics",
+    "pulling",
+    "grip",
+    "conditioning",
+    "core"
+  ],
+  "drill-thoracic-spine-mobility": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "spine",
+    "mobility",
+    "flexibility"
+  ],
+  "drill-thread-jump": [
+    "plyometrics",
+    "jumping",
+    "lower-body",
+    "unilateral",
+    "explosive-power",
+    "calisthenics"
+  ],
+  "drill-three-line-fast-break": [
+    "transition",
+    "fast-break",
+    "passing",
+    "conditioning",
+    "spacing"
+  ],
+  "drill-three-line-lateral-footwork": [
+    "footwork",
+    "lateral-quickness",
+    "agility",
+    "defensive-footwork",
+    "conditioning",
+    "movement-skills"
+  ],
+  "drill-three-step-foot-tap-sprint": [
+    "quickness",
+    "first-step",
+    "reaction",
+    "agility",
+    "footwork",
+    "conditioning"
+  ],
+  "drill-thrusters-calisthenics": [
+    "conditioning",
+    "explosiveness",
+    "hip-flexors",
+    "small-space",
+    "cardio",
+    "burpees"
+  ],
+  "drill-timed-shooting-series": [
+    "shooting",
+    "inside-shooting",
+    "three-point",
+    "passing",
+    "rebounding",
+    "timed",
+    "competitive"
+  ],
+  "drill-toss-get-up-catch": [
+    "agility",
+    "conditioning",
+    "reaction-time",
+    "change-of-direction",
+    "medicine-ball",
+    "level-change"
+  ],
+  "drill-transition-jump-shot": [
+    "shooting",
+    "midrange",
+    "transition",
+    "catch-and-shoot",
+    "deceleration",
+    "balance"
+  ],
+  "drill-transition-shooting-series-10": [
+    "shooting",
+    "conditioning",
+    "transition",
+    "three-point",
+    "shot-fake",
+    "full-court"
+  ],
+  "drill-trapping-2v1": [
+    "defense",
+    "trapping",
+    "double-team",
+    "pressure-defense",
+    "half-court-trap",
+    "conditioning"
+  ],
+  "drill-triangle-drills-commands": [
+    "quickness",
+    "agility",
+    "direction-change",
+    "reaction",
+    "first-step",
+    "conditioning"
+  ],
+  "drill-triangle-drills-with-commands": [
+    "quickness",
+    "change-of-direction",
+    "agility",
+    "reaction",
+    "foot-plant",
+    "sprint",
+    "conditioning"
+  ],
+  "drill-triangle-passing-shooting": [
+    "shooting",
+    "midrange",
+    "team-drill",
+    "passing",
+    "rebounding",
+    "catch-and-shoot",
+    "high-rep"
+  ],
+  "drill-tuck-jump": [
+    "conditioning",
+    "plyometrics",
+    "jumping",
+    "rebounding",
+    "explosiveness",
+    "lower-body"
+  ],
+  "drill-tuck-jump-s9": [
+    "plyometrics",
+    "jumping",
+    "lower-body",
+    "explosive-power",
+    "tuck",
+    "calisthenics"
+  ],
+  "drill-tumbling-variations": [
+    "agility",
+    "tumbling",
+    "kinesthetic-awareness",
+    "conditioning",
+    "progression"
+  ],
+  "drill-unilateral-jump-calisthenics": [
+    "explosiveness",
+    "single-leg",
+    "balance",
+    "ankle-strength",
+    "coordination",
+    "plyometrics",
+    "small-space"
+  ],
+  "drill-uphill-acceleration-run": [
+    "speed",
+    "acceleration",
+    "conditioning",
+    "resisted-acceleration",
+    "stride-length"
+  ],
+  "drill-upper-body-box-shuffles": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "quickness",
+    "power"
+  ],
+  "drill-upper-body-shuffles": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "quickness",
+    "pushing"
+  ],
+  "drill-v-drill-cone": [
+    "agility",
+    "cone-drill",
+    "backpedal",
+    "change-of-direction",
+    "footwork",
+    "sprint",
+    "conditioning"
+  ],
+  "drill-vertical-jump-plyometric": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "power",
+    "vertical-jump",
+    "quickness"
+  ],
+  "drill-vertical-jump-s8": [
+    "conditioning",
+    "lower-body",
+    "plyometrics",
+    "vertical-jump",
+    "rebounding",
+    "triple-extension"
+  ],
+  "drill-vertical-leap-explosive": [
+    "conditioning",
+    "plyometrics",
+    "jumping",
+    "bodyweight",
+    "vertical-jump"
+  ],
+  "drill-vertical-leap-s9": [
+    "jumping",
+    "plyometrics",
+    "conditioning",
+    "bodyweight",
+    "vertical-jump"
+  ],
+  "drill-wall-slides": [
+    "speed",
+    "conditioning",
+    "sprint-mechanics",
+    "knee-lift",
+    "stride-frequency"
+  ],
+  "drill-wall-threads": [
+    "conditioning",
+    "lower-body-power",
+    "plyometrics",
+    "fast-feet",
+    "calisthenics",
+    "coordination"
+  ],
+  "drill-weak-side-help-conditioning": [
+    "defense",
+    "closeout",
+    "help-defense",
+    "conditioning",
+    "weak-side",
+    "movement-skills"
+  ],
+  "drill-weakest-spot-make-goals": [
+    "shooting",
+    "spot-shots",
+    "make-based",
+    "individual-workout",
+    "weakness-training",
+    "self-improvement"
+  ],
+  "drill-weakest-spot-shooting-workouts": [
+    "shooting",
+    "spot-shooting",
+    "weakness-development",
+    "individual-workout",
+    "make-based"
+  ],
+  "drill-wheel-bag": [
+    "agility",
+    "footwork",
+    "quickness",
+    "balance",
+    "bag-drill"
+  ],
+  "drill-wheelbarrow-drill": [
+    "conditioning",
+    "upper-body",
+    "plyometrics",
+    "core",
+    "power",
+    "partner"
+  ],
+  "drill-wide-to-close-popups": [
+    "conditioning",
+    "upper-body-power",
+    "plyometrics",
+    "push-ups",
+    "calisthenics",
+    "fast-hands"
+  ],
+  "drill-wing-to-top-combination-live-ball-move-shooting": [
+    "shooting",
+    "live-ball-moves",
+    "combination-moves",
+    "three-point",
+    "game-speed",
+    "individual-workout"
+  ],
+  "drill-wing-to-top-combo-live-ball": [
+    "shooting",
+    "three-point",
+    "live-ball",
+    "combination-moves",
+    "on-the-move",
+    "game-speed",
+    "charting"
+  ],
+  "drill-wing-to-top-rip-step-live-ball": [
+    "shooting",
+    "three-point",
+    "live-ball",
+    "rip-step",
+    "on-the-move",
+    "game-speed",
+    "charting"
+  ],
+  "drill-wing-to-top-rip-step-live-ball-move-shooting": [
+    "shooting",
+    "live-ball-moves",
+    "rip-step",
+    "three-point",
+    "game-speed",
+    "individual-workout"
+  ],
+  "drill-wing-to-top-shot-fake-live-ball": [
+    "shooting",
+    "three-point",
+    "live-ball",
+    "shot-fake",
+    "on-the-move",
+    "game-speed",
+    "charting"
+  ],
+  "drill-wing-to-top-shot-fake-live-ball-move-shooting": [
+    "shooting",
+    "shot-fake",
+    "live-ball-moves",
+    "three-point",
+    "game-speed",
+    "individual-workout"
+  ],
+  "drill-wing-to-top-three-point-shooting": [
+    "shooting",
+    "three-point",
+    "on-the-move",
+    "catch-and-shoot",
+    "game-speed",
+    "charting"
+  ],
+  "drill-wushu-kip-up": [
+    "conditioning",
+    "agility",
+    "plyometrics",
+    "explosive-power",
+    "calisthenics",
+    "floor-work"
+  ],
+  "drill-x-pattern-multiskill": [
+    "agility",
+    "footwork",
+    "cutting",
+    "diagonal-movement",
+    "cone-drill",
+    "change-of-direction"
+  ],
+  "drill-x-with-ball-tossed-ahead": [
+    "warm-up",
+    "defensive-footwork",
+    "closeout",
+    "transition",
+    "conditioning",
+    "layup"
+  ],
+  "drill-ytw-shoulder": [
+    "injury-prevention",
+    "shoulder",
+    "strength-training",
+    "conditioning",
+    "prehabilitation",
+    "rotator-cuff",
+    "scapular-stability"
+  ],
+  "drill-ytw-shoulder-strengthening": [
+    "conditioning",
+    "injury-prevention",
+    "shoulder",
+    "strengthening",
+    "scapular-stability"
+  ],
+  "drill-z-pattern-cuts": [
+    "agility",
+    "cutting",
+    "change-of-direction",
+    "cone-drill",
+    "footwork",
+    "conditioning"
+  ],
+  "drill-z-pattern-run": [
+    "agility",
+    "footwork",
+    "turning",
+    "diagonal-movement",
+    "cone-drill",
+    "change-of-direction"
+  ],
+  "drill-zigzag-cone": [
+    "agility",
+    "footwork",
+    "lateral-quickness",
+    "cone-drill",
+    "defense",
+    "conditioning"
+  ],
+  "drill-zigzag-crossover-shuffle-ladder": [
+    "agility",
+    "ladder-drill",
+    "crossover",
+    "hip-flexibility",
+    "footwork",
+    "abductor",
+    "adductor",
+    "change-of-direction"
+  ],
+  "drill-zigzag-on-ball-press": [
+    "defense",
+    "on-ball pressure",
+    "full-court",
+    "sliding",
+    "footwork"
+  ],
+  "drill-zigzag-on-ball-pressure": [
+    "defense",
+    "on-ball",
+    "pressure",
+    "1v1",
+    "ball-handling",
+    "footwork"
+  ],
+  "exercise-band-backward-walk": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "resistance-band",
+    "strength-endurance",
+    "deceleration",
+    "defensive-stance"
+  ],
+  "exercise-band-lateral-walk": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "resistance-band",
+    "lateral-movement",
+    "defensive-slides",
+    "hip-abductor"
+  ],
+  "exercise-calf-pop-up": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "calf",
+    "Achilles",
+    "jumping",
+    "rebounding",
+    "second-jump"
+  ],
+  "exercise-deadlift": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "posterior-chain",
+    "jumping",
+    "rebounding",
+    "boxing-out"
+  ],
+  "exercise-front-squat": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "squat",
+    "acceleration",
+    "jumping",
+    "deceleration"
+  ],
+  "exercise-hip-thrust": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "glutes",
+    "jumping",
+    "acceleration",
+    "deceleration",
+    "landing"
+  ],
+  "exercise-reverse-lunge": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "unilateral",
+    "balance",
+    "deceleration",
+    "injury-prevention"
+  ],
+  "exercise-reverse-step-down-from-box": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "unilateral",
+    "single-leg",
+    "deceleration",
+    "proprioception",
+    "balance"
+  ],
+  "exercise-romanian-deadlift": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "posterior-chain",
+    "hamstrings",
+    "injury-prevention",
+    "defense"
+  ],
+  "explosive-calisthenics-program-design": [
+    "conditioning",
+    "plyometrics",
+    "explosive-power",
+    "program-design",
+    "calisthenics"
+  ],
+  "explosive-power-programming-rule-of-three-six": [
+    "conditioning",
+    "plyometrics",
+    "power",
+    "programming",
+    "speed",
+    "explosiveness"
+  ],
+  "explosive-power-vs-skill-training": [
+    "conditioning",
+    "plyometrics",
+    "speed",
+    "agility",
+    "power",
+    "skill-development",
+    "programming"
+  ],
+  "explosive-six-hierarchy": [
+    "conditioning",
+    "plyometrics",
+    "power",
+    "agility",
+    "skill-development",
+    "progressions"
+  ],
+  "explosive-skill-training-time-surfing-consolidation": [
+    "skill-development",
+    "conditioning",
+    "programming",
+    "agility",
+    "nervous-system",
+    "practice-design"
+  ],
+  "explosive-weight-training-basketball": [
+    "strength-training",
+    "power",
+    "explosiveness",
+    "conditioning",
+    "rate-of-force-development",
+    "science"
+  ],
+  "face-guard-press": [
+    "defense",
+    "full-court-press",
+    "pressure-defense",
+    "face-guard",
+    "man-to-man",
+    "trapping",
+    "denial"
+  ],
+  "free-shot-technique": [
+    "shooting",
+    "free-throw",
+    "fundamentals",
+    "mental",
+    "routine",
+    "consistency"
+  ],
+  "full-court-press-defense": [
+    "defense",
+    "full-court-press",
+    "pressure-defense",
+    "run-and-jump",
+    "trapping",
+    "zone-press",
+    "man-to-man"
+  ],
+  "general-adaptation-syndrome-basketball": [
+    "conditioning",
+    "training-principles",
+    "periodization",
+    "recovery",
+    "strength"
+  ],
+  "general-adaptation-syndrome-training": [
+    "conditioning",
+    "periodization",
+    "strength",
+    "injury-prevention",
+    "athletic-development"
+  ],
+  "isolation-defense": [
+    "defense",
+    "isolation",
+    "man-to-man",
+    "help-defense",
+    "shadow",
+    "tilt",
+    "trapping"
+  ],
+  "jumpers-knee-rehabilitation": [
+    "injury-prevention",
+    "rehabilitation",
+    "knee",
+    "conditioning",
+    "plyometrics"
+  ],
+  "leg-strength-basketball": [
+    "strength",
+    "conditioning",
+    "jumping",
+    "deceleration",
+    "acceleration",
+    "injury-prevention",
+    "rebounding"
+  ],
+  "leg-strength-for-basketball": [
+    "strength",
+    "conditioning",
+    "leg-strength",
+    "jumping",
+    "acceleration",
+    "deceleration",
+    "rebounding",
+    "injury-prevention"
+  ],
+  "lower-body-plyometrics-basketball": [
+    "conditioning",
+    "plyometrics",
+    "lower-body",
+    "jumping",
+    "explosiveness",
+    "rebounding",
+    "change-of-direction"
+  ],
+  "lower-extremity-strength-basketball": [
+    "strength",
+    "conditioning",
+    "injury-prevention",
+    "lower-body",
+    "athletic-development"
+  ],
+  "midrange-jump-shot": [
+    "shooting",
+    "midrange",
+    "jump-shot",
+    "offense",
+    "fundamentals",
+    "catch-and-shoot"
+  ],
+  "nba-shooting-confidence-rhythm": [
+    "shooting",
+    "mental",
+    "confidence",
+    "rhythm",
+    "self-talk"
+  ],
+  "nba-shooting-error-correction": [
+    "shooting",
+    "error-correction",
+    "coaching",
+    "mechanics",
+    "self-diagnosis"
+  ],
+  "nba-shooting-mechanics-complete": [
+    "shooting",
+    "mechanics",
+    "footwork",
+    "technique",
+    "individual-offense"
+  ],
+  "nba-shooting-trigger-words": [
+    "shooting",
+    "mental",
+    "self-talk",
+    "cues",
+    "technique",
+    "confidence"
+  ],
+  "offensive-skill-development-practice-philosophy": [
+    "offense",
+    "practice",
+    "skill-development",
+    "goal-setting",
+    "conditioning"
+  ],
+  "pick-and-roll-defense": [
+    "defense",
+    "man-to-man",
+    "pick-and-roll",
+    "help-defense",
+    "rotation",
+    "on-ball-defense"
+  ],
+  "pick-and-roll-defense-summary": [
+    "defense",
+    "pick-and-roll",
+    "man-to-man",
+    "ball-screen",
+    "help-defense",
+    "rotation"
+  ],
+  "play-1-4-quick-floppy": [
+    "man-to-man",
+    "floppy",
+    "double-screen",
+    "staggered-screen",
+    "perimeter",
+    "quick-hitter",
+    "shooter",
+    "post-duck-in"
+  ],
+  "play-back-screen-post": [
+    "man-to-man",
+    "back-screen",
+    "staggered-screen",
+    "post-up",
+    "layup",
+    "quick-hitter",
+    "post-entry"
+  ],
+  "play-baseline-swing": [
+    "zone-offense",
+    "2-3-zone",
+    "baseline-cut",
+    "screen",
+    "shooter",
+    "corner-three",
+    "midrange"
+  ],
+  "play-black": [
+    "man-to-man",
+    "step-up-screen",
+    "baseline-drive",
+    "post-flash",
+    "layup",
+    "kickout",
+    "quick-hitter"
+  ],
+  "play-box-loop-post": [
+    "SLOB",
+    "man-to-man",
+    "high-post",
+    "down-screen",
+    "post-isolation",
+    "sequential-screens"
+  ],
+  "play-box-spin": [
+    "SLOB",
+    "man-to-man",
+    "quick-hitter",
+    "curl-cut",
+    "three-point",
+    "double-screen",
+    "box-set"
+  ],
+  "play-chin-series": [
+    "continuity",
+    "back-screen",
+    "chin",
+    "flare",
+    "down-screen",
+    "motion",
+    "half-court"
+  ],
+  "play-cross-screen": [
+    "cross-screen",
+    "double-screen",
+    "post-up",
+    "catch-and-shoot",
+    "half-court"
+  ],
+  "play-deception-slob": [
+    "SLOB",
+    "man-to-man",
+    "backdoor",
+    "three-point",
+    "box-set",
+    "screen-the-screener",
+    "quick-hitter"
+  ],
+  "play-diagonal-screen": [
+    "diagonal-screen",
+    "screen-the-screener",
+    "post-up",
+    "half-court",
+    "continuity"
+  ],
+  "play-diamond-slob": [
+    "SLOB",
+    "man-to-man",
+    "flare-screen",
+    "pick-and-roll",
+    "curl-cut",
+    "box-set",
+    "multi-option"
+  ],
+  "play-double-curls": [
+    "high-post-cut",
+    "staggered-screen",
+    "curl-cut",
+    "pick-and-roll",
+    "layup",
+    "half-court"
+  ],
+  "play-doubles": [
+    "man-to-man",
+    "double-screen",
+    "shooter",
+    "quick-hitter",
+    "perimeter",
+    "wing"
+  ],
+  "play-drive-hammer": [
+    "pick-and-roll",
+    "hammer-screen",
+    "drive",
+    "corner",
+    "spacing",
+    "ball-screen"
+  ],
+  "play-flare-overload": [
+    "zone-offense",
+    "2-3-zone",
+    "flare-screen",
+    "overload",
+    "skip-pass",
+    "three-point",
+    "on-ball-screen"
+  ],
+  "play-flex-warrior": [
+    "flex-screen",
+    "screen-the-screener",
+    "down-screen",
+    "post-up",
+    "catch-and-shoot",
+    "half-court"
+  ],
+  "play-flip-gate": [
+    "back-screen",
+    "gate-screen",
+    "rim-cut",
+    "catch-and-shoot",
+    "hand-off",
+    "deception"
+  ],
+  "play-high-pick-series": [
+    "continuity",
+    "high-pick",
+    "pick-and-roll",
+    "double-screen",
+    "dribble-handoff",
+    "motion",
+    "half-court"
+  ],
+  "play-high-post-double-screen": [
+    "high-post-cut",
+    "double-screen",
+    "pick-and-roll",
+    "catch-and-shoot",
+    "half-court",
+    "man-to-man"
+  ],
+  "play-high-split-action": [
+    "continuity",
+    "high-split",
+    "pick-and-roll",
+    "backdoor",
+    "back-screen",
+    "motion",
+    "half-court"
+  ],
+  "play-inside-isolate": [
+    "post-isolation",
+    "mismatch",
+    "low-post",
+    "foul-trouble",
+    "spacing",
+    "perimeter-screens"
+  ],
+  "play-iverson-ram": [
+    "iverson-cut",
+    "pick-and-roll",
+    "ram-screen",
+    "down-screen",
+    "wing-exchange",
+    "half-court"
+  ],
+  "play-loop-fly-slob": [
+    "SLOB",
+    "man-to-man",
+    "alley-oop",
+    "back-screen",
+    "double-screen",
+    "wide-box",
+    "lob"
+  ],
+  "play-low-split": [
+    "zone-offense",
+    "2-3-zone",
+    "post-flash",
+    "inside-scoring",
+    "fake-pass",
+    "draw-foul",
+    "interior-passing"
+  ],
+  "play-option-slob": [
+    "SLOB",
+    "man-to-man",
+    "shooter",
+    "read-the-defense",
+    "box-set",
+    "catch-and-shoot",
+    "on-ball-screen"
+  ],
+  "play-pass-and-cut-away": [
+    "continuity",
+    "cut-away",
+    "backdoor",
+    "down-screen",
+    "motion",
+    "half-court"
+  ],
+  "play-pass-and-screen-away": [
+    "continuity",
+    "screen-away",
+    "backdoor",
+    "down-screen",
+    "high-post",
+    "motion",
+    "half-court"
+  ],
+  "play-pick-and-roll-layered": [
+    "pick-and-roll",
+    "high-post",
+    "rub-cut",
+    "double-screen",
+    "post-up",
+    "half-court"
+  ],
+  "play-pick-overload": [
+    "zone-offense",
+    "2-3-zone",
+    "on-ball-screen",
+    "overload",
+    "three-point",
+    "penetration-kick",
+    "corner-three"
+  ],
+  "play-piston-elevator": [
+    "elevator-screen",
+    "iverson-cut",
+    "catch-and-shoot",
+    "three-point",
+    "decoy",
+    "half-court"
+  ],
+  "play-prowl-slob": [
+    "SLOB",
+    "man-to-man",
+    "pick-and-roll",
+    "box-set",
+    "quick-hitter",
+    "floor-spacing"
+  ],
+  "play-reverse-dribble-options": [
+    "continuity",
+    "reverse-dribble",
+    "backdoor",
+    "pick-and-roll",
+    "double-screen",
+    "motion",
+    "half-court"
+  ],
+  "play-selection-principles": [
+    "offense",
+    "play-design",
+    "coaching-philosophy",
+    "youth-basketball",
+    "formation"
+  ],
+  "play-side-blaze": [
+    "dribble-hand-off",
+    "pick-and-roll",
+    "roll",
+    "down-screen",
+    "spacing",
+    "backdoor"
+  ],
+  "play-skipper": [
+    "zone-offense",
+    "2-3-zone",
+    "skip-pass",
+    "corner-three",
+    "screen",
+    "quick-hitter",
+    "shooter"
+  ],
+  "play-step-up": [
+    "zone-offense",
+    "2-3-zone",
+    "step-up-screen",
+    "baseline-drive",
+    "layup",
+    "kickout",
+    "surprise-play"
+  ],
+  "play-swinger": [
+    "man-to-man",
+    "pick-and-roll",
+    "blindside-screen",
+    "PnR",
+    "decision-making",
+    "corner-three",
+    "layup",
+    "pull-up"
+  ],
+  "play-triangle-slob": [
+    "SLOB",
+    "man-to-man",
+    "cross-screen",
+    "screen-the-screener",
+    "low-post",
+    "catch-and-shoot",
+    "drive"
+  ],
+  "play-up-screen": [
+    "back-screen",
+    "down-screen",
+    "screen-the-screener",
+    "post-up",
+    "half-court"
+  ],
+  "play-x-cross": [
+    "flex-screen",
+    "high-post",
+    "off-ball-screen",
+    "man-to-man",
+    "half-court"
+  ],
+  "play-zipper-curl": [
+    "zipper-cut",
+    "down-screen",
+    "double-screen",
+    "off-ball-screen",
+    "shooter",
+    "man-to-man",
+    "half-court"
+  ],
+  "plyometric-edge-shock-training": [
+    "plyometrics",
+    "explosive-power",
+    "conditioning",
+    "stretch-shortening-cycle",
+    "calisthenics"
+  ],
+  "post-defense-fronting": [
+    "defense",
+    "post-defense",
+    "man-to-man",
+    "fronting",
+    "low-post",
+    "help-defense"
+  ],
+  "post-double-team-rotation": [
+    "defense",
+    "man-to-man",
+    "help-defense",
+    "post-defense",
+    "rotation",
+    "double-team",
+    "trapping"
+  ],
+  "post-double-team-rotations": [
+    "defense",
+    "man-to-man",
+    "post-defense",
+    "double-team",
+    "rotation",
+    "help-defense"
+  ],
+  "post-splits-defense": [
+    "defense",
+    "man-to-man",
+    "post-defense",
+    "post-splits",
+    "switching",
+    "communication"
+  ],
+  "post-up-defense": [
+    "defense",
+    "post-defense",
+    "man-to-man",
+    "help-defense",
+    "fronting",
+    "lock-and-lob"
+  ],
+  "practice-with-a-purpose": [
+    "offense",
+    "skill-development",
+    "practice",
+    "mindset",
+    "goal-setting"
+  ],
+  "press-continuity-1": [
+    "defense",
+    "press",
+    "full-court",
+    "man-to-man",
+    "run-and-jump",
+    "trapping"
+  ],
+  "qualities-of-good-players-teammates": [
+    "team-defense",
+    "team-offense",
+    "communication",
+    "leadership",
+    "player-development",
+    "philosophy"
+  ],
+  "quickness-and-reaction-time-training": [
+    "quickness",
+    "reaction-time",
+    "agility",
+    "speed",
+    "neuromuscular",
+    "mental-processing",
+    "conditioning"
+  ],
+  "rate-of-force-development-basketball": [
+    "conditioning",
+    "power",
+    "strength",
+    "athleticism",
+    "training-principles",
+    "explosive-training"
+  ],
+  "reaction-time-training": [
+    "reaction-time",
+    "agility",
+    "quickness",
+    "conditioning",
+    "peripheral-vision",
+    "court-sense"
+  ],
+  "reflex-channeling-hebbs-rule": [
+    "speed",
+    "reaction-time",
+    "skill-acquisition",
+    "neuroscience",
+    "drilling",
+    "practice-design"
+  ],
+  "run-and-jump-defense": [
+    "defense",
+    "full-court-press",
+    "pressure-defense",
+    "run-and-jump",
+    "trapping",
+    "switching",
+    "man-to-man"
+  ],
+  "running-technique-errors": [
+    "speed",
+    "conditioning",
+    "movement",
+    "sprinting",
+    "running",
+    "assessment"
+  ],
+  "saq-movement-competencies": [
+    "conditioning",
+    "speed",
+    "agility",
+    "footwork",
+    "mechanics",
+    "assessment"
+  ],
+  "saq-periodization": [
+    "conditioning",
+    "periodization",
+    "speed",
+    "agility",
+    "quickness",
+    "programming"
+  ],
+  "saq-safety-doms": [
+    "conditioning",
+    "injury-prevention",
+    "recovery",
+    "speed",
+    "agility",
+    "quickness"
+  ],
+  "saq-training-principles": [
+    "conditioning",
+    "speed",
+    "agility",
+    "quickness",
+    "periodization",
+    "strength"
+  ],
+  "scapular-dyskinesis-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "shoulder",
+    "mobility",
+    "conditioning",
+    "shooting"
+  ],
+  "set-23-flare-updated": [
+    "zone",
+    "2-3-zone",
+    "flare-screen",
+    "three-point",
+    "quick-hitter",
+    "set-play",
+    "shooter",
+    "ball-movement"
+  ],
+  "set-32-lob-updated": [
+    "zone",
+    "2-3-zone",
+    "lob",
+    "backdoor",
+    "athletic",
+    "weak-side",
+    "overload",
+    "quick-hitter",
+    "set-play"
+  ],
+  "shooting-balance-hand": [
+    "shooting",
+    "fundamentals",
+    "balance-hand",
+    "form",
+    "grip"
+  ],
+  "shooting-elbow-alignment": [
+    "shooting",
+    "fundamentals",
+    "elbow",
+    "alignment",
+    "form"
+  ],
+  "shooting-follow-through": [
+    "shooting",
+    "fundamentals",
+    "form-shooting",
+    "follow-through"
+  ],
+  "shooting-hand-form-shooting-drill": [
+    "shooting",
+    "fundamentals",
+    "form-shooting",
+    "alignment",
+    "elbow"
+  ],
+  "shooting-hand-grip": [
+    "shooting",
+    "fundamentals",
+    "grip",
+    "ball-handling",
+    "backspin"
+  ],
+  "shooting-hand-grip-and-elbow": [
+    "shooting",
+    "fundamentals",
+    "grip",
+    "elbow",
+    "balance-hand",
+    "target"
+  ],
+  "shooting-philosophy": [
+    "shooting",
+    "mindset",
+    "practice",
+    "development",
+    "youth",
+    "consistency"
+  ],
+  "shooting-stance": [
+    "shooting",
+    "fundamentals",
+    "stance",
+    "footwork",
+    "balance"
+  ],
+  "shooting-target-focus": [
+    "shooting",
+    "fundamentals",
+    "focus",
+    "target",
+    "consistency"
+  ],
+  "shooting-technique-fundamentals": [
+    "shooting",
+    "fundamentals",
+    "technique",
+    "form",
+    "overview"
+  ],
+  "shooting-technique-stance": [
+    "shooting",
+    "fundamentals",
+    "footwork",
+    "balance",
+    "stance"
+  ],
+  "shooting-visualization": [
+    "shooting",
+    "mental",
+    "visualization",
+    "confidence",
+    "pregame"
+  ],
+  "shot-charting": [
+    "shooting",
+    "practice",
+    "development",
+    "analytics",
+    "self-evaluation",
+    "consistency"
+  ],
+  "shot-fake": [
+    "offense",
+    "shooting",
+    "shot-creation",
+    "fakes",
+    "one-on-one",
+    "triple-threat"
+  ],
+  "shot-ready-position": [
+    "shooting",
+    "fundamentals",
+    "catch-and-shoot",
+    "readiness",
+    "quick-release"
+  ],
+  "shoulder-strengthening-basketball": [
+    "injury-prevention",
+    "strength-training",
+    "shoulder",
+    "conditioning",
+    "prehabilitation",
+    "rotator-cuff"
+  ],
+  "shoulder-stretching-basketball": [
+    "injury-prevention",
+    "flexibility",
+    "shoulder",
+    "mobility",
+    "conditioning",
+    "prehabilitation"
+  ],
+  "show-and-go": [
+    "offense",
+    "shot-creation",
+    "dribble",
+    "fakes",
+    "one-on-one",
+    "driving",
+    "pull-up"
+  ],
+  "skill-vs-athleticism": [
+    "athletic-development",
+    "conditioning",
+    "skill-development",
+    "offense"
+  ],
+  "skill-vs-athleticism-basketball": [
+    "training-principles",
+    "skill-development",
+    "athleticism",
+    "coaching-philosophy"
+  ],
+  "slob-twist": [
+    "SLOB",
+    "lob",
+    "ram-screen",
+    "on-ball-screen",
+    "paint-attack",
+    "pick-and-roll"
+  ],
+  "slob-x": [
+    "SLOB",
+    "staggered-screens",
+    "shooter",
+    "three-point",
+    "wing",
+    "off-ball-screens"
+  ],
+  "speed-cycle-five-stages": [
+    "speed",
+    "agility",
+    "reaction-time",
+    "cognitive-speed",
+    "quickness",
+    "defense",
+    "offense"
+  ],
+  "speed-cycle-sensory-training": [
+    "speed",
+    "reaction-time",
+    "perception",
+    "vision",
+    "sensory-training",
+    "quickness"
+  ],
+  "sport-specific-saq-program-design": [
+    "conditioning",
+    "agility",
+    "quickness",
+    "speed",
+    "program-design",
+    "periodization",
+    "practice-planning"
+  ],
+  "st-josephs-press": [
+    "defense",
+    "press",
+    "half-court",
+    "zone",
+    "trapping",
+    "deception"
+  ],
+  "strength-before-power-periodization": [
+    "conditioning",
+    "strength-training",
+    "power",
+    "periodization",
+    "injury-prevention",
+    "off-season"
+  ],
+  "strength-then-power-training-principle": [
+    "strength",
+    "power",
+    "conditioning",
+    "periodization",
+    "off-season",
+    "athletic-development",
+    "plyometrics",
+    "olympic-lifts"
+  ],
+  "stretch-shortening-cycle-basketball": [
+    "plyometrics",
+    "conditioning",
+    "power",
+    "explosive-strength",
+    "athletic-development"
+  ],
+  "stretch-shortening-cycle-plyometrics": [
+    "conditioning",
+    "plyometrics",
+    "power",
+    "elastic-strength",
+    "reactive-strength",
+    "jumping"
+  ],
+  "stretch-shortening-cycle-saq": [
+    "conditioning",
+    "speed",
+    "agility",
+    "quickness",
+    "plyometrics",
+    "physiology"
+  ],
+  "team-defense-calls-and-signals": [
+    "defense",
+    "communication",
+    "team-defense",
+    "press",
+    "zone",
+    "man-to-man",
+    "signals"
+  ],
+  "team-defense-calls-signals": [
+    "defense",
+    "communication",
+    "press",
+    "zone",
+    "man-to-man",
+    "coaching-system"
+  ],
+  "transition-defense": [
+    "defense",
+    "transition",
+    "fast-break",
+    "team-defense",
+    "help-defense"
+  ],
+  "transition-defense-principles": [
+    "defense",
+    "transition",
+    "fast-break",
+    "floor-balance",
+    "help-defense",
+    "man-to-man"
+  ],
+  "trapping-and-double-teaming": [
+    "defense",
+    "trapping",
+    "double-team",
+    "press",
+    "post-defense",
+    "pressure",
+    "rotation",
+    "man-to-man"
+  ],
+  "upper-body-pulling-strength-basketball": [
+    "strength",
+    "conditioning",
+    "upper-body",
+    "pulling",
+    "rebounding",
+    "defense",
+    "shooting",
+    "injury-prevention"
+  ],
+  "upper-body-strength-pushing": [
+    "strength",
+    "conditioning",
+    "upper-body",
+    "pushing",
+    "injury-prevention",
+    "kinetic-chain",
+    "passing",
+    "rebounding",
+    "shooting"
+  ],
+  "visualization-for-shooting": [
+    "shooting",
+    "mindset",
+    "mental-training",
+    "visualization",
+    "confidence"
+  ],
+  "weak-side-defense-rotation": [
+    "defense",
+    "help-defense",
+    "weak-side",
+    "rotation",
+    "man-to-man",
+    "team-defense"
+  ],
+  "weak-side-help-defense": [
+    "defense",
+    "man-to-man",
+    "weak-side",
+    "help-defense",
+    "rotation",
+    "team-defense"
+  ],
+  "whole-part-whole-teaching-method": [
+    "coaching",
+    "teaching",
+    "practice",
+    "skill-development",
+    "footwork",
+    "progressions"
+  ],
+  "zone-press-combinations": [
+    "defense",
+    "zone-press",
+    "pressure-defense",
+    "combination-defense",
+    "half-court",
+    "trapping",
+    "zone"
+  ]
+}

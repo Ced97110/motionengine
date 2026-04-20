@@ -1,0 +1,27 @@
+<svg viewBox="-28 -3 56 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Court (painted) -->
+  <rect x="-25" y="0" width="50" height="47" fill="#f5e1c0" stroke="white" stroke-width="0.3"/>
+  <!-- Paint -->
+  <rect x="-8" y="0" width="16" height="19" fill="none" stroke="white" stroke-width="0.3"/>
+  <!-- Free throw circle -->
+  <circle cx="0" cy="19" r="6" fill="none" stroke="white" stroke-width="0.3"/>
+  <!-- Three-point arc -->
+  <path d="M -22 4 A 23.75 23.75 0 0 0 22 4" fill="none" stroke="white" stroke-width="0.3"/>
+  <!-- Backboard + rim -->
+  <line x1="-3" y1="4" x2="3" y2="4" stroke="white" stroke-width="0.3"/>
+  <circle cx="0" cy="5.25" r="0.75" fill="none" stroke="#d4722b" stroke-width="0.2"/>
+
+  <!-- Coordinate labels at each canonical position -->
+  <g font-family="monospace" font-size="1.2" fill="#111">
+    <circle cx="0" cy="32" r="0.5" fill="#2563eb"/><text x="1" y="32.5">TOP (0,32)</text>
+    <circle cx="-16" cy="26" r="0.5" fill="#2563eb"/><text x="-15" y="26.5">LW (-16,26)</text>
+    <circle cx="16" cy="26" r="0.5" fill="#2563eb"/><text x="17" y="26.5">RW (16,26)</text>
+    <circle cx="-8" cy="19" r="0.5" fill="#2563eb"/><text x="-7" y="19.5">LE (-8,19)</text>
+    <circle cx="8" cy="19" r="0.5" fill="#2563eb"/><text x="9" y="19.5">RE (8,19)</text>
+    <circle cx="-6" cy="8" r="0.5" fill="#2563eb"/><text x="-5" y="8.5">LB (-6,8)</text>
+    <circle cx="6" cy="8" r="0.5" fill="#2563eb"/><text x="7" y="8.5">RB (6,8)</text>
+    <circle cx="-22" cy="4" r="0.5" fill="#2563eb"/><text x="-21" y="4.5">LC (-22,4)</text>
+    <circle cx="22" cy="4" r="0.5" fill="#2563eb"/><text x="23" y="4.5">RC (22,4)</text>
+    <circle cx="0" cy="5.25" r="0.5" fill="#d4722b"/><text x="1" y="5.75">RIM (0,5.25)</text>
+  </g>
+</svg>

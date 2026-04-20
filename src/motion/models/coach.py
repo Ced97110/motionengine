@@ -1,6 +1,6 @@
 """Coach profile, concept progress, vocab events.
 
-Mirrors docs/specs/backend-architecture.md §3.1 and docs/specs/coach-profile.md.
+Mirrors backend/spec/architecture.md §3.1 and frontend/docs/specs/coach-profile.md.
 """
 
 from __future__ import annotations

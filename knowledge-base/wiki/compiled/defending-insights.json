@@ -1,0 +1,441 @@
+{
+  "defending-1-4-flat": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "Point guard penetrates without help; kick-out passes produce wide-open 3-pointers. Correction: corner defenders must be up near the elbows.",
+        "symptom": "Corner defenders stay in the corner"
+      },
+      {
+        "remedy": "Quick slip pass over the top for an easy catch-and-score. Correction: stay one or two steps above your man.",
+        "symptom": "Post defenders too low"
+      },
+      {
+        "remedy": "One side is 3-on-2 or 4-on-3. Correction: the four off-ball defenders must all shift to cover elbows and boxes on the ball side.",
+        "symptom": "Not tilting on overload"
+      },
+      {
+        "remedy": "Drive to the lane; no help available. Correction: force sideline; never let the ball go middle in this set.",
+        "symptom": "Ball handler beats X1 middle"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "1-4-flat",
+      "formation-defense",
+      "penetration-stoppage",
+      "help-defense"
+    ]
+  },
+  "defending-cross-four-get": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "X4 must beat Player 4 to the spot; playing behind creates an easy low-post feed.",
+        "symptom": "X4 losing Player 4 under the cross screen"
+      },
+      {
+        "remedy": "A late rotation leaves the paint open; X5 must move as the trap forms, not when the ball is released.",
+        "symptom": "X5 failing to pre-rotate before the pass"
+      },
+      {
+        "remedy": "After helping on Player 3's penetration, X2 must sprint back to Player 2 on the weak side or risk an open three.",
+        "symptom": "X2 forgetting his recovery assignment"
+      },
+      {
+        "remedy": "If X4 follows the roll when Player 5 actually pops, the open three-pointer is gifted; read the roller's body language immediately.",
+        "symptom": "Confusing pop vs. dive read"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "pick-and-roll",
+      "cross-screen",
+      "pro",
+      "help-defense",
+      "rotation",
+      "blitz"
+    ]
+  },
+  "defending-down-screens": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "gives the offensive player a step-up or cut option; always face the ball",
+        "symptom": "Playing on top of the screen recipient with back to ball"
+      },
+      {
+        "remedy": "overrun = screening your own teammate",
+        "symptom": "Screener's defender chasing the screener after he cuts"
+      },
+      {
+        "remedy": "gives the screen recipient a clean path to his spot",
+        "symptom": "Not standing up the screener"
+      },
+      {
+        "remedy": "cutter receives ball with space to drive or shoot; ball defender must drop to nail immediately",
+        "symptom": "Ball defender not pressuring after the pass"
+      }
+    ],
+    "tags": [
+      "defense",
+      "off-ball-screens",
+      "down-screens",
+      "man-to-man",
+      "denial"
+    ]
+  },
+  "defending-dribble-handoff": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "the handoff screen is a trap for defenders who lose their positioning; must go through/inside",
+        "symptom": "Getting caught in the screen on a DHO"
+      },
+      {
+        "remedy": "the trap must occur at the moment of the handoff \u2014 late trapping lets the receiver get a step before help arrives",
+        "symptom": "Trapping too late"
+      },
+      {
+        "remedy": "when trapping, the passer can slip away for a backdoor or dive to the basket; weak-side help must account for this",
+        "symptom": "Not being aware of the slip"
+      }
+    ],
+    "tags": [
+      "defense",
+      "dribble-handoff",
+      "man-to-man",
+      "trapping",
+      "switching"
+    ]
+  },
+  "defending-dribble-handoff-and-get-action": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "receiver gets a free catch-and-shoot; correction: communicate early and go through inside",
+        "symptom": "Getting screened on the DHO"
+      },
+      {
+        "remedy": "backdoor cut goes uncovered; correction: third defender stays alert to the cutter",
+        "symptom": "Both defenders following the ball on the switch"
+      },
+      {
+        "remedy": "gives the passer a running start on the return cut; correction: step back only enough to allow the through-go",
+        "symptom": "Defender retreating too much on get action"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "dribble-handoff",
+      "get-action",
+      "screen-away",
+      "switching",
+      "trapping"
+    ]
+  },
+  "defending-drop-one": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "The lob over the front goes unchecked for an easy layup; X5 must anticipate and close before the pass.",
+        "symptom": "X5 failing to pre-rotate when X1 fronts"
+      },
+      {
+        "remedy": "X3/X4/X2 must maintain awareness of both the ball and their assignments in the help rotation.",
+        "symptom": "Perimeter defenders ball-watching"
+      },
+      {
+        "remedy": "If the opponent's best player catches cleanly at the low post, the defense is in trouble; fronting is preferable for elite scorers.",
+        "symptom": "X1 going behind on a known scorer"
+      }
+    ],
+    "tags": [
+      "defense",
+      "post-defense",
+      "man-to-man",
+      "isolation",
+      "pro",
+      "help-defense",
+      "double-team"
+    ]
+  },
+  "defending-flash-post": {
+    "diagram": {
+      "arrows": [
+        {
+          "emphasis": "primary",
+          "fromX": 0,
+          "fromY": 7,
+          "label": "Deny",
+          "toX": -3,
+          "toY": 13
+        },
+        {
+          "emphasis": "threat",
+          "fromX": 22,
+          "fromY": 8,
+          "label": "Backdoor",
+          "toX": 4,
+          "toY": 2
+        },
+        {
+          "emphasis": "help",
+          "fromX": -18,
+          "fromY": 10,
+          "label": "Help cross lane",
+          "toX": -6,
+          "toY": 4
+        }
+      ],
+      "kind": "half_court",
+      "positions": [
+        {
+          "emphasis": "primary",
+          "id": "X5",
+          "label": "X5",
+          "role": "defender",
+          "x": 0,
+          "y": 7
+        },
+        {
+          "emphasis": "primary",
+          "id": "O5",
+          "label": "5",
+          "role": "offense",
+          "x": -4,
+          "y": 15
+        },
+        {
+          "id": "X2",
+          "label": "X2",
+          "role": "defender",
+          "x": 18,
+          "y": 10
+        },
+        {
+          "id": "O2",
+          "label": "2",
+          "role": "offense",
+          "x": 22,
+          "y": 8
+        },
+        {
+          "emphasis": "help",
+          "id": "X3",
+          "label": "X3",
+          "role": "defender",
+          "x": -18,
+          "y": 10
+        }
+      ]
+    },
+    "symptoms": [
+      {
+        "remedy": "Easy catch at the elbow opens up easy scores for a skilled big. Correction: overplay and contest all flash-post entries.",
+        "symptom": "Post defender doesn't deny the flash"
+      },
+      {
+        "remedy": "Wing slips backdoor for an easy layup. Correction: *\"keep his man in front of him if possible\"* \u2014 always maintain man awareness.",
+        "symptom": "Wing defender watches the ball instead of man"
+      },
+      {
+        "remedy": "Backdoor cutter gets an easy layup off the flash. Correction: the low-block defender MUST cross the lane on any backdoor attempt.",
+        "symptom": "Low-block defender stays home"
+      },
+      {
+        "remedy": "Quick pass to the weak side corner produces open shots. Correction: nail, elbow, box must be occupied immediately.",
+        "symptom": "Weak side doesn't collapse"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "post-defense",
+      "flash-post",
+      "blind-pig",
+      "backdoor"
+    ]
+  },
+  "defending-flash-post-blind-pig": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "Offense gets a layup. Correction: Low-block defender has an absolute assignment to cross the lane on flash-post action. [S1, p.148]",
+        "symptom": "No one covers the backdoor"
+      },
+      {
+        "remedy": "Passer finds a cutter or open perimeter player. Correction: Step back, widen, and control passing lanes rather than lunging at ball handler. [S1, p.148]",
+        "symptom": "Post defender attacks the ball instead of passing lanes"
+      },
+      {
+        "remedy": "Gut pass reaches the middle. Correction: Open up, retreat to goal, or snap back rather than losing floor position. [S1, p.148]",
+        "symptom": "Wing defender chases his man and vacates passing lane"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "post-defense",
+      "flash-post",
+      "blind-pig",
+      "backdoor"
+    ]
+  },
+  "defending-off-ball-screens": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "screens your own teammate; correction: bump, step out, hold up",
+        "symptom": "Chasing the back picker"
+      },
+      {
+        "remedy": "gives him cutting/step-up options; correction: always move toward the ball",
+        "symptom": "Playing on top of down-screen receiver with back to the ball"
+      },
+      {
+        "remedy": "fader catches open; correction: recognize the fade early and shoot the gap",
+        "symptom": "Locking and trailing on fades"
+      },
+      {
+        "remedy": "cutter's defender has no help; correction: screener's defender must show on every screen",
+        "symptom": "Screener's defender not contact showing"
+      },
+      {
+        "remedy": "cutters can use screens at full speed; correction: make contact with the screener before he is set",
+        "symptom": "Failing to stand up screeners"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "off-ball-screens",
+      "down-screens",
+      "back-screens",
+      "cross-screens",
+      "help-defense"
+    ]
+  },
+  "defending-pinch-post": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "Passer's defender gets screened off and cutter receives an easy layup pass. Correction: post defender must step back and create a clear lane before the cutter arrives.",
+        "symptom": "Post defender doesn't open up"
+      },
+      {
+        "remedy": "Ball handler gets a clean pull-up jumper at the elbow. Correction: fight over all pinch-post screens.",
+        "symptom": "Going under the screen"
+      },
+      {
+        "remedy": "Post player dribbles into the paint unopposed. Correction: nail, elbow, and box must be filled immediately on any pinch-post action.",
+        "symptom": "Weak-side help collapses too late"
+      },
+      {
+        "remedy": "Middle defender leaves his zone and the pass splits the defense. Correction: force all passes over the outside shoulder of the trapper.",
+        "symptom": "Gut pass allowed"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "post-defense",
+      "screens",
+      "two-man-game",
+      "pinch-post"
+    ]
+  },
+  "defending-post-splits": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "One cutter goes free; the switch is split. Correction: Back defender must call it early and loudly \u2014 \"screen, switch!\" [S1, p.149]",
+        "symptom": "Late or no communication"
+      },
+      {
+        "remedy": "Quick passes exploit depth disadvantage. Correction: Both defenders must adjust upward on the pass to the post so they are already in position when the split begins. [S1, p.149]",
+        "symptom": "Defenders not level with the ball"
+      },
+      {
+        "remedy": "Offensive player dribbles through the middle of the switch. Correction: Both defenders must come together aggressively and not allow any splitting of the seam. [S1, p.149]",
+        "symptom": "Soft switch"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "post-defense",
+      "post-splits",
+      "switching",
+      "communication"
+    ]
+  },
+  "defending-specific-plays": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "stay level with the ball, use peripheral vision, ball-you-man principle",
+        "symptom": "Losing sight of the ball while guarding a weak-side cutter"
+      },
+      {
+        "remedy": "screener's defender must never overrun and pick off their own teammate",
+        "symptom": "Chasing the back picker"
+      },
+      {
+        "remedy": "soft defense allows easy low-block catches and cuts to the goal",
+        "symptom": "Failing to body up on screen recipients"
+      },
+      {
+        "remedy": "every play in this system requires maximum ball pressure to succeed",
+        "symptom": "On-ball defender failing to pressure"
+      },
+      {
+        "remedy": "three-quartering gives the lock-and-lob opportunity",
+        "symptom": "Post defender not fronting when ball is at or below FT line"
+      },
+      {
+        "remedy": "level with ball must be the default, not sagging too deep",
+        "symptom": "Weak-side defenders not being drawn to the ball"
+      }
+    ],
+    "tags": [
+      "defense",
+      "man-to-man",
+      "off-ball-screens",
+      "help-defense",
+      "post-defense",
+      "isolation-defense"
+    ]
+  },
+  "defending-staggered-screens": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "cutter shortcuts under both screens for an easy catch; must trail first and shortcut second",
+        "symptom": "Going over the first screen too aggressively"
+      },
+      {
+        "remedy": "cutter gets clean cuts; screeners must be held up",
+        "symptom": "Screener's defenders not standing up screeners"
+      },
+      {
+        "remedy": "if the cutter's defender gets screened on the second screen, silence = open shot; must verbally call \"switch\"",
+        "symptom": "Failing to communicate the switch"
+      },
+      {
+        "remedy": "staggered screens are designed to create a catch-and-shoot; the passer must be pressured to disrupt timing",
+        "symptom": "Ball defender not pressuring"
+      }
+    ],
+    "tags": [
+      "defense",
+      "off-ball-screens",
+      "staggered-screens",
+      "man-to-man",
+      "double-screens"
+    ]
+  }
+}

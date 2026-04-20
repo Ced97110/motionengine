@@ -1,0 +1,126 @@
+{
+  "concept-anatomy-ankle-complex": {
+    "common_mistakes": [
+      {
+        "citation": "[S2]",
+        "consequence": "Coaches routinely misjudge readiness; re-sprain risk spikes",
+        "symptom": "Returning from sprain too early \u2014 swelling resolves before proprioceptive capacity does"
+      }
+    ],
+    "key_principles": [
+      {
+        "citation": "[S2]",
+        "text": "Proprioception is housed in ligament mechanoreceptors \u2014 every sprain degrades balance and rapid-adjustment for weeks after the acute injury heals."
+      },
+      {
+        "citation": "[S2]",
+        "text": "Proactive proprioceptive training is the single highest-value injury-prevention investment for basketball."
+      }
+    ]
+  },
+  "concept-anatomy-core-outer": {
+    "common_mistakes": [
+      {
+        "citation": "[S2]",
+        "consequence": "Spinal stability fails under contact; plank, Pallof-press, bird-dog fill this gap",
+        "symptom": "Neglecting anti-extension and anti-rotation training"
+      }
+    ],
+    "key_principles": [
+      {
+        "citation": "[S2, p.32]",
+        "text": "Rectus abdominis + obliques + erector spinae produce and resist spinal movement in multiple planes \u2014 the engine of every trunk-driven basketball action."
+      },
+      {
+        "citation": "[S2, p.34]",
+        "text": "\"Draw in the abdominals\" first \u2014 inner-core activation precedes outer-core loading; without it, outer-core work leaks stability."
+      }
+    ]
+  },
+  "concept-anatomy-glute-max": {
+    "common_mistakes": [
+      {
+        "citation": "[S2]",
+        "consequence": "Underdeveloped posterior chain; hamstring overuse and strain risk",
+        "symptom": "Quadriceps-dominant training only (squats with hip-flexor bias)"
+      }
+    ],
+    "key_principles": [
+      {
+        "citation": "[S2]",
+        "text": "Largest muscle in the body \u2014 greatest force-production capacity; training it lifts every explosive basketball action."
+      },
+      {
+        "citation": "[S2]",
+        "text": "Horizontal and vertical propulsion \u2014 hip thrust for horizontal (driving past), squat for vertical (jumping)."
+      }
+    ]
+  },
+  "concept-anatomy-hip-flexor-complex": {
+    "common_mistakes": [
+      {
+        "citation": "[S2]",
+        "consequence": "Tight, short, weak muscles prone to strain on explosive cuts",
+        "symptom": "Flexion strength only (leg raises, sit-ups) without mobility work"
+      }
+    ],
+    "key_principles": [
+      {
+        "citation": "[S2]",
+        "text": "Mobility before strength \u2014 a tight iliopsoas limits stride length and baseline-cut depth before strength ever becomes the limiter."
+      },
+      {
+        "citation": "[S2, pp.18-19]",
+        "text": "Reciprocal with the glutes \u2014 chronically tight hip flexors inhibit gluteal activation; training mobility here unlocks the posterior chain."
+      }
+    ]
+  },
+  "drill-ankling": {
+    "coaching_cue": "Quiet but fast feet \u2014 loud landings indicate too much ground contact time; emphasize the push-off, not just the landing.",
+    "primary_form_error": {
+      "citation": "[S8, p.24]",
+      "consequence": "Breaks the ankle's elastic rhythm; defeats the rapid-contact target",
+      "symptom": "Excessive heel lift on recovery"
+    }
+  },
+  "drill-back-extension": {
+    "coaching_cue": "Hip hinge only \u2014 all motion comes from the hip joint; the upper torso stays stable and rigid.",
+    "primary_form_error": {
+      "citation": "[S2, p.39]",
+      "consequence": "Reduces target loading; if seen, shorten the range of motion",
+      "symptom": "Using momentum to swing up"
+    },
+    "safety_tip": {
+      "citation": "[S2, p.39]",
+      "text": "Do not go beyond parallel to the floor or arch the spine \u2014 hyperextension places dangerous stress on the vertebrae."
+    }
+  },
+  "drill-band-lateral-walk": {
+    "coaching_cue": "Stay in the squat \u2014 don't stand up between steps; keep tension on the band at all times.",
+    "primary_form_error": {
+      "citation": "[S2, p.139]",
+      "consequence": "Takes tension off the lateral hip; defeats the propulsion target",
+      "symptom": "Feet turning in or out"
+    }
+  },
+  "drill-bird-dog": {
+    "coaching_cue": "\"Carpenter's level\" \u2014 a level across the shoulders and across the hips must stay perfectly flat; no tilting.",
+    "primary_form_error": {
+      "citation": "[S2, p.41]",
+      "consequence": "Most common error; reduce hold time before adding reps",
+      "symptom": "Hip or shoulder rotation during arm/leg extension"
+    }
+  },
+  "exercise-hip-thrust": {
+    "coaching_cue": "Drive through the hips, not the lower back \u2014 extension comes from the hips, not the low back.",
+    "primary_form_error": {
+      "citation": "[S2, pp.18-19]",
+      "consequence": "Transfers load off the glute and into the lower back",
+      "symptom": "Anterior pelvic tilt at lockout"
+    },
+    "safety_tip": {
+      "citation": "[S2, p.18]",
+      "text": "Back of shoulder firm on padded bench; cervical spine (neck) must NOT be the main support."
+    }
+  }
+}

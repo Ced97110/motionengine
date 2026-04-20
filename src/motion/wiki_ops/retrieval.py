@@ -1,0 +1,470 @@
+"""Retrieval-bundle library for the cross-ref anatomy chain.
+
+Consumers (future ``/knowledge/ask``, halftime-chip, readiness-report) call
+these pure functions to turn a play / flagged-region / drill slug into a
+joined JSON bundle drawn from the compiled sidecars under
+``knowledge-base/wiki/compiled/``.
+
+The query patterns mirror ``spec/crossref-anatomy-chain.md`` §7:
+
+- :func:`build_play_context` — Q-A (drill prescription for a play)
+- :func:`build_readiness_filter` — Q-B (flagged regions → safe plays + rx)
+- :func:`build_drill_justification` — Q-C (drill → plays it prepares)
+
+No LLM, no fuzzy matching, no HTTP. Pure front-matter inversion lookups.
+"""
+
+from __future__ import annotations
+
+import json
+from dataclasses import asdict, dataclass, field
+from pathlib import Path
+from typing import Any
+
+from .paths import wiki_dir
+
+# --- dataclasses -------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class AnatomyInsight:
+    """Insight payload for a concept-anatomy page (coaching content)."""
+
+    key_principles: list[dict[str, str]] = field(default_factory=list)
+    common_mistakes: list[dict[str, str]] = field(default_factory=list)
+
+
+@dataclass(frozen=True)
+class DrillInsight:
+    """Insight payload for a drill or exercise page."""
+
+    safety_tip: dict[str, str] | None = None
+    coaching_cue: str | None = None
+    primary_form_error: dict[str, str] | None = None
+
+
+@dataclass(frozen=True)
+class AnatomyDemand:
+    """One entry of ``play.demands_anatomy`` with its concept-page slug."""
+
+    region: str
+    concept_slug: str
+    criticality: str
+    insight: AnatomyInsight | None = None
+    supports_technique: str | None = None
+    for_role: str | None = None
+
+
+@dataclass(frozen=True)
+class TechniqueDemand:
+    """One entry of ``play.demands_techniques`` with its resolved concept slug."""
+
+    technique_id: str
+    concept_slug: str | None
+    role: str | None
+    criticality: str
+
+
+@dataclass(frozen=True)
+class DrillPrescription:
+    """One prescribed drill, with the edge it was reached through.
+
+    ``target_technique`` and ``target_role`` are populated when the drill was
+    reached via an anatomy region that carries a ``supports_technique`` /
+    ``for_role`` linkage on the play's front-matter (edge #1 enriched authoring).
+    They let the UI render play-grounded sentences like "prepares role 5's
+    hard flash cut" instead of machine-slug traversal labels.
+    """
+
+    drill_slug: str
+    emphasis: str
+    via: str
+    insight: DrillInsight | None = None
+    target_region: str | None = None
+    target_technique: str | None = None
+    target_role: str | None = None
+
+
+@dataclass(frozen=True)
+class PlayContext:
+    """Full retrieval bundle for a single play (Q-A output)."""
+
+    play_slug: str
+    anatomy: list[AnatomyDemand] = field(default_factory=list)
+    techniques: list[TechniqueDemand] = field(default_factory=list)
+    drills: list[DrillPrescription] = field(default_factory=list)
+
+
+@dataclass(frozen=True)
+class ReadinessBundle:
+    """Q-B output: safe plays + primary-emphasis prescription drills."""
+
+    flagged_regions: list[str]
+    excluded_plays: list[str]
+    safe_plays: list[str]
+    prescription_drills: list[DrillPrescription]
+
+
+@dataclass(frozen=True)
+class DefensiveSymptom:
+    """One symptom/remedy pair parsed from a defending page's ``## Common Mistakes``."""
+
+    symptom: str
+    remedy: str
+
+
+@dataclass(frozen=True)
+class DefensiveMatch:
+    """A defending page relevant to a play, scored by tag overlap."""
+
+    defending_slug: str
+    overlap_score: int
+    matched_tags: list[str]
+    symptoms: list[DefensiveSymptom]
+    diagram: dict[str, Any] | None = None
+
+
+@dataclass(frozen=True)
+class CompiledIndexes:
+    """Compiled cross-ref indexes + auxiliary lookups."""
+
+    play_to_anatomy: dict[str, list[dict[str, str]]]
+    play_to_technique: dict[str, list[dict[str, str]]]
+    anatomy_to_play: dict[str, list[dict[str, str]]]
+    anatomy_to_drill: dict[str, list[dict[str, str]]]
+    technique_to_play: dict[str, list[dict[str, str]]]
+    technique_to_drill: dict[str, list[dict[str, str]]]
+    technique_aliases: dict[str, dict[str, Any]]
+    page_insights: dict[str, dict[str, Any]]
+    page_tags: dict[str, list[str]]
+    defending_insights: dict[str, dict[str, Any]]
+
+
+# --- loading -----------------------------------------------------------------
+
+
+def _read_json(path: Path) -> Any:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_indexes(compiled_directory: Path | None = None) -> CompiledIndexes:
+    """Load the 6 inverted indexes + technique-aliases.json from disk.
+
+    ``compiled_directory`` defaults to ``<wiki>/compiled/``.
+    """
+    base = compiled_directory if compiled_directory is not None else wiki_dir() / "compiled"
+    aliases_raw = _read_json(base / "technique-aliases.json")
+    aliases = aliases_raw.get("aliases", {}) if isinstance(aliases_raw, dict) else {}
+
+    def _maybe_read(filename: str) -> dict[str, Any]:
+        path = base / filename
+        return _read_json(path) if path.is_file() else {}
+
+    return CompiledIndexes(
+        play_to_anatomy=_read_json(base / "play-to-anatomy.json"),
+        play_to_technique=_read_json(base / "play-to-technique.json"),
+        anatomy_to_play=_read_json(base / "anatomy-to-play.json"),
+        anatomy_to_drill=_read_json(base / "anatomy-to-drill.json"),
+        technique_to_play=_read_json(base / "technique-to-play.json"),
+        technique_to_drill=_read_json(base / "technique-to-drill.json"),
+        technique_aliases=aliases,
+        page_insights=_maybe_read("page-insights.json"),
+        page_tags=_maybe_read("page-tags.json"),
+        defending_insights=_maybe_read("defending-insights.json"),
+    )
+
+
+# --- helpers -----------------------------------------------------------------
+
+
+def _region_to_concept_slug(region: str) -> str:
+    """Canonical anatomy page slug for a region id (e.g. ``glute_max``)."""
+    return f"concept-anatomy-{region.replace('_', '-')}"
+
+
+def _resolve_technique_slug(technique_id: str, aliases: dict[str, dict[str, Any]]) -> str | None:
+    """Return the concept-page slug for a technique id, or ``None`` if no page."""
+    entry = aliases.get(technique_id)
+    if isinstance(entry, dict):
+        slug = entry.get("slug")
+        if isinstance(slug, str) and slug:
+            return slug
+    return None
+
+
+def _anatomy_insight_for(slug: str, insights: dict[str, dict[str, Any]]) -> AnatomyInsight | None:
+    """Return an :class:`AnatomyInsight` for ``slug``, or ``None`` if unannotated."""
+    payload = insights.get(slug)
+    if not isinstance(payload, dict):
+        return None
+    key_principles = payload.get("key_principles") or []
+    common_mistakes = payload.get("common_mistakes") or []
+    if not (key_principles or common_mistakes):
+        return None
+    return AnatomyInsight(
+        key_principles=[p for p in key_principles if isinstance(p, dict)],
+        common_mistakes=[m for m in common_mistakes if isinstance(m, dict)],
+    )
+
+
+def _drill_insight_for(slug: str, insights: dict[str, dict[str, Any]]) -> DrillInsight | None:
+    """Return a :class:`DrillInsight` for ``slug``, or ``None`` if unannotated."""
+    payload = insights.get(slug)
+    if not isinstance(payload, dict):
+        return None
+    safety_tip = payload.get("safety_tip")
+    coaching_cue = payload.get("coaching_cue")
+    primary_form_error = payload.get("primary_form_error")
+    if not (safety_tip or coaching_cue or primary_form_error):
+        return None
+    return DrillInsight(
+        safety_tip=safety_tip if isinstance(safety_tip, dict) else None,
+        coaching_cue=coaching_cue if isinstance(coaching_cue, str) else None,
+        primary_form_error=(primary_form_error if isinstance(primary_form_error, dict) else None),
+    )
+
+
+# --- Q-A: drill prescription for a play --------------------------------------
+
+
+def build_play_context(play_slug: str, indexes: CompiledIndexes) -> PlayContext:
+    """Return the joined retrieval bundle for one play.
+
+    Follows spec §7 Q-A: union of (a) anatomy concept slugs, (b) drills
+    reachable through ``demands_anatomy → anatomy-to-drill``, and (c) drills
+    reachable through ``demands_techniques → technique-to-drill``. Drills are
+    deduplicated by slug; the first reaching edge is kept as ``via``.
+    """
+    anatomy_demands = [
+        AnatomyDemand(
+            region=entry["region"],
+            concept_slug=_region_to_concept_slug(entry["region"]),
+            criticality=entry.get("criticality", "optional"),
+            insight=_anatomy_insight_for(
+                _region_to_concept_slug(entry["region"]), indexes.page_insights
+            ),
+            supports_technique=entry.get("supports_technique"),
+            for_role=entry.get("for_role"),
+        )
+        for entry in indexes.play_to_anatomy.get(play_slug, [])
+    ]
+    technique_demands = [
+        TechniqueDemand(
+            technique_id=entry["id"],
+            concept_slug=_resolve_technique_slug(entry["id"], indexes.technique_aliases),
+            role=entry.get("role"),
+            criticality=entry.get("criticality", "optional"),
+        )
+        for entry in indexes.play_to_technique.get(play_slug, [])
+    ]
+    seen: set[str] = set()
+    drills: list[DrillPrescription] = []
+    for a in anatomy_demands:
+        for edge in indexes.anatomy_to_drill.get(a.region, []):
+            slug = edge["drill"]
+            if slug in seen:
+                continue
+            seen.add(slug)
+            drills.append(
+                DrillPrescription(
+                    drill_slug=slug,
+                    emphasis=edge.get("emphasis", "secondary"),
+                    via=f"anatomy:{a.region}",
+                    insight=_drill_insight_for(slug, indexes.page_insights),
+                    target_region=a.region,
+                    target_technique=a.supports_technique,
+                    target_role=a.for_role,
+                )
+            )
+    for t in technique_demands:
+        for edge in indexes.technique_to_drill.get(t.technique_id, []):
+            slug = edge["drill"]
+            if slug in seen:
+                continue
+            seen.add(slug)
+            drills.append(
+                DrillPrescription(
+                    drill_slug=slug,
+                    emphasis=edge.get("emphasis", "secondary"),
+                    via=f"technique:{t.technique_id}",
+                    insight=_drill_insight_for(slug, indexes.page_insights),
+                    target_technique=t.technique_id,
+                    target_role=t.role,
+                )
+            )
+    drills.sort(key=lambda d: (0 if d.emphasis == "primary" else 1, d.drill_slug))
+    return PlayContext(
+        play_slug=play_slug,
+        anatomy=anatomy_demands,
+        techniques=technique_demands,
+        drills=drills,
+    )
+
+
+# --- Q-B: readiness filter ---------------------------------------------------
+
+
+def build_readiness_filter(
+    flagged_regions: list[str],
+    indexes: CompiledIndexes,
+) -> ReadinessBundle:
+    """Return safe plays + primary-emphasis recovery drills for flagged regions.
+
+    Spec §7 Q-B: a play is excluded iff any flagged region appears on it at
+    ``criticality == required``. Prescription drills are the
+    ``emphasis == primary`` entries in ``anatomy-to-drill`` for the flagged
+    regions.
+    """
+    excluded: set[str] = set()
+    prescription: list[DrillPrescription] = []
+    seen_drills: set[str] = set()
+    for region in flagged_regions:
+        for entry in indexes.anatomy_to_play.get(region, []):
+            if entry.get("criticality") == "required":
+                excluded.add(entry["play"])
+        for entry in indexes.anatomy_to_drill.get(region, []):
+            if entry.get("emphasis") != "primary":
+                continue
+            slug = entry["drill"]
+            if slug in seen_drills:
+                continue
+            seen_drills.add(slug)
+            prescription.append(
+                DrillPrescription(
+                    drill_slug=slug,
+                    emphasis="primary",
+                    via=f"anatomy:{region}",
+                )
+            )
+    all_plays = set(indexes.play_to_anatomy.keys()) | set(indexes.play_to_technique.keys())
+    safe = sorted(all_plays - excluded)
+    return ReadinessBundle(
+        flagged_regions=list(flagged_regions),
+        excluded_plays=sorted(excluded),
+        safe_plays=safe,
+        prescription_drills=prescription,
+    )
+
+
+# --- Q-C: drill justification ------------------------------------------------
+
+
+def build_drill_justification(drill_slug: str, indexes: CompiledIndexes) -> list[str]:
+    """Return the sorted list of play slugs this drill prepares for.
+
+    Spec §7 Q-C: invert ``anatomy-to-drill`` and ``technique-to-drill`` to
+    find what the drill trains, then look up ``anatomy-to-play`` and
+    ``technique-to-play`` with a ``criticality == required`` filter.
+    """
+    regions = [
+        region
+        for region, drills in indexes.anatomy_to_drill.items()
+        if any(d["drill"] == drill_slug for d in drills)
+    ]
+    technique_ids = [
+        tid
+        for tid, drills in indexes.technique_to_drill.items()
+        if any(d["drill"] == drill_slug for d in drills)
+    ]
+    plays: set[str] = set()
+    for region in regions:
+        for entry in indexes.anatomy_to_play.get(region, []):
+            if entry.get("criticality") == "required":
+                plays.add(entry["play"])
+    for tid in technique_ids:
+        for entry in indexes.technique_to_play.get(tid, []):
+            if entry.get("criticality") == "required":
+                plays.add(entry["play"])
+    return sorted(plays)
+
+
+# --- serialization -----------------------------------------------------------
+
+
+def context_to_dict(ctx: PlayContext) -> dict[str, Any]:
+    """Return a JSON-serialisable dict for ``PlayContext`` (future HTTP output)."""
+    return asdict(ctx)
+
+
+def readiness_to_dict(bundle: ReadinessBundle) -> dict[str, Any]:
+    """Return a JSON-serialisable dict for ``ReadinessBundle``."""
+    return asdict(bundle)
+
+
+# --- Tag-match & defensive mirror -------------------------------------------
+
+# Stopwords filtered out of tag token overlap — small words that match
+# coincidentally without meaning (e.g. "to" in "man-to-man" vs "to" anywhere).
+_TAG_STOPWORDS: frozenset[str] = frozenset(
+    {"to", "of", "a", "the", "on", "in", "and", "or", "for", "at", "from"}
+)
+
+
+def _tag_tokens(tag: str) -> set[str]:
+    """Lowercase split of a kebab-case tag into its content tokens."""
+    return {word for word in tag.lower().split("-") if word and word not in _TAG_STOPWORDS}
+
+
+def _tag_overlap_score(play_tags: list[str], other_tags: list[str]) -> tuple[int, list[str]]:
+    """Return (score, matched play tags).
+
+    Score = number of *play* tags that share at least one non-stopword token
+    with any tag on the other page. Matched tags list preserves the play's
+    own tag wording so the UI can show "matched on: step-up-screen".
+    """
+    other_tokens: set[str] = set()
+    for tag in other_tags:
+        other_tokens.update(_tag_tokens(tag))
+    matched: list[str] = []
+    for tag in play_tags:
+        play_tokens = _tag_tokens(tag)
+        if play_tokens & other_tokens:
+            matched.append(tag)
+    return len(matched), matched
+
+
+def build_defensive_mirror(
+    play_slug: str,
+    indexes: CompiledIndexes,
+    top_k: int = 3,
+    min_score: int = 1,
+) -> list[DefensiveMatch]:
+    """Tag-match a play against all defending pages; return the top-scoring matches.
+
+    Each match carries the defending page's parsed symptoms (the defense's
+    failure modes — which are the offense's attack surface). Filtering by
+    ``min_score`` drops incidental single-word overlaps.
+    """
+    play_tags = indexes.page_tags.get(play_slug, [])
+    if not play_tags:
+        return []
+
+    candidates: list[DefensiveMatch] = []
+    for slug, payload in indexes.defending_insights.items():
+        defending_tags = payload.get("tags") or []
+        score, matched = _tag_overlap_score(play_tags, defending_tags)
+        if score < min_score:
+            continue
+        symptoms_raw = payload.get("symptoms") or []
+        symptoms = [
+            DefensiveSymptom(
+                symptom=entry.get("symptom", ""),
+                remedy=entry.get("remedy", ""),
+            )
+            for entry in symptoms_raw
+            if isinstance(entry, dict) and entry.get("symptom")
+        ]
+        diagram = payload.get("diagram")
+        candidates.append(
+            DefensiveMatch(
+                defending_slug=slug,
+                overlap_score=score,
+                matched_tags=matched,
+                symptoms=symptoms,
+                diagram=diagram if isinstance(diagram, dict) else None,
+            )
+        )
+    # Sort: higher score first, then prefer pages with an authored diagram
+    # (so visual content surfaces ahead of text-only ties), then alphabetical.
+    candidates.sort(key=lambda m: (-m.overlap_score, 0 if m.diagram else 1, m.defending_slug))
+    return candidates[:top_k]

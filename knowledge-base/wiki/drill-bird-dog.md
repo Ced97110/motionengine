@@ -6,7 +6,16 @@ players_needed: 1
 duration_minutes: 5-10
 tags: [conditioning, core, strength, stability, extension, injury-prevention]
 source_count: 1
-last_updated: 2026-04-11
+last_updated: 2026-04-20
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+insights:
+  coaching_cue: '"Carpenter''s level" — a level across the shoulders and across the hips must stay perfectly flat; no tilting.'
+  primary_form_error:
+    symptom: "Hip or shoulder rotation during arm/leg extension"
+    consequence: "Most common error; reduce hold time before adding reps"
+    citation: "[S2, p.41]"
 ---
 
 # Quadruped Arm and Leg Lift (Bird Dog) — Core Extension
@@ -41,6 +50,7 @@ Develop core and spinal stability by resisting rotational forces during simultan
 
 ## Concepts Taught
 - [[concept-core-anatomy-basketball]] — trains the deep inner core (multifidus, transversus abdominis) plus posterior chain for spinal stability
+- [[concept-anatomy-core-outer]] — erector spinae named as secondary muscle; anti-rotation and anti-extension work [S2, p.41]
 
 ## Sources
 - [S2, pp.40-41] — Execution, muscles involved, basketball focus, weighted variation

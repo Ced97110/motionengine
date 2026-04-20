@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+results/extractions/*
+results/overlays/*
+results/scores.json
+results/decision.md
+data/diagrams/*
+data/ground-truth-overlays/*
+!data/diagrams/.gitkeep
+!data/ground-truth-overlays/.gitkeep

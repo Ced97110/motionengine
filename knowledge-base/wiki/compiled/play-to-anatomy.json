@@ -1,0 +1,28 @@
+{
+  "play-black": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "baseline-drive-on-catch"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "baseline-drive-on-catch"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "hard-cut-to-paint"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "step-up-screen-set"
+    }
+  ]
+}

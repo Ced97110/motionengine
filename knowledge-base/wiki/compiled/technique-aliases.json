@@ -1,0 +1,115 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-04-20",
+  "aliases": {
+    "back-screen-recipient": {
+      "slug": "concept-back-screen-reads",
+      "confidence": "HIGH",
+      "notes": "Direct alias — page covers cutter reads off back screen."
+    },
+    "back-screen-set": {
+      "slug": "concept-flex-back-screen-footwork",
+      "confidence": "MEDIUM",
+      "notes": "Partial match — only the flex-specific variant exists; general back-screen-set page not yet authored."
+    },
+    "baseline-drive-on-catch": {
+      "slug": "concept-dribbling-driving-techniques",
+      "confidence": "MEDIUM",
+      "notes": "Partial match — general driving-techniques page; baseline-specific on-catch variant not yet authored."
+    },
+    "explosive-first-step": {
+      "slug": "concept-first-step-quickness",
+      "confidence": "HIGH",
+      "notes": "Direct alias — page exists and covers the technique."
+    },
+    "flare-screen-recipient": {
+      "slug": "concept-flare-screen-reads",
+      "confidence": "HIGH",
+      "notes": "Direct alias — page covers cutter reads off flare screen."
+    },
+    "lateral-shuffle-recovery": {
+      "slug": "concept-defensive-footwork-breakdown-drills",
+      "confidence": "MEDIUM",
+      "notes": "Partial match — general defensive footwork page; lateral-shuffle-recovery-specific variant not yet authored."
+    },
+    "pin-down-screen-recipient": {
+      "slug": "concept-down-screen-reads",
+      "confidence": "HIGH",
+      "notes": "Direct alias — page covers cutter reads off pin-down screen."
+    },
+    "pin-down-screen-set": {
+      "slug": "concept-pin-screen",
+      "secondary_slug": "concept-pin-screen-footwork",
+      "confidence": "HIGH",
+      "notes": "Two existing pages cover setter side; primary = concept-pin-screen."
+    },
+    "post-seal-footwork": {
+      "slug": "concept-offensive-post-footwork",
+      "secondary_slug": "concept-post-receiving-footwork",
+      "confidence": "HIGH",
+      "notes": "Two existing pages cover post footwork; primary = concept-offensive-post-footwork."
+    },
+    "screen-the-screener": {
+      "slug": "concept-screen-the-screener-footwork",
+      "confidence": "HIGH",
+      "notes": "Direct alias — page covers the screener-on-screener action."
+    },
+    "spin-screen-set": {
+      "slug": "concept-spin-screen-footwork",
+      "confidence": "HIGH",
+      "notes": "Direct alias — page covers setter mechanics for spin screen."
+    },
+    "stagger-screen-set": {
+      "slug": "concept-stagger-screen-footwork",
+      "confidence": "HIGH",
+      "notes": "Direct alias — page covers setter mechanics for stagger screen."
+    },
+    "step-up-screen-set": {
+      "slug": "concept-setting-screens",
+      "confidence": "MEDIUM",
+      "notes": "Partial match — general setting-screens page; step-up-specific variant not yet authored."
+    }
+  },
+  "pending": [
+    {
+      "id": "flare-screen-set",
+      "expected_slug": "concept-technique-flare-screen-set",
+      "notes": "NEW REQUIRED per spec §3.2 — no existing page covers setter side of flare screen."
+    },
+    {
+      "id": "hard-cut-to-paint",
+      "expected_slug": "concept-technique-hard-cut-to-paint",
+      "notes": "NEW REQUIRED per spec §3.2 — cut-type technique under-indexed in corpus."
+    },
+    {
+      "id": "flash-cut",
+      "expected_slug": "concept-technique-flash-cut",
+      "notes": "NEW REQUIRED per spec §3.2 — cut-type technique under-indexed in corpus."
+    },
+    {
+      "id": "soft-landing-mechanics",
+      "expected_slug": "concept-technique-soft-landing-mechanics",
+      "notes": "NEW REQUIRED per spec §3.2 — landing-mechanics cluster gap."
+    },
+    {
+      "id": "closeout-contest-verticality",
+      "expected_slug": "concept-technique-closeout-contest-verticality",
+      "notes": "NEW REQUIRED per spec §3.2 — closeout cluster gap."
+    },
+    {
+      "id": "dump-off-pass",
+      "expected_slug": "concept-technique-dump-off-pass",
+      "notes": "NEW REQUIRED per spec §3.2 — pass-type techniques under-indexed in corpus."
+    },
+    {
+      "id": "skip-pass",
+      "expected_slug": "concept-technique-skip-pass",
+      "notes": "NEW REQUIRED per spec §3.2 — pass-type techniques under-indexed in corpus."
+    },
+    {
+      "id": "dribble-handoff-receipt",
+      "expected_slug": "concept-technique-dribble-handoff-receipt",
+      "notes": "NEW REQUIRED per spec §3.2 — handoff-reception cluster gap."
+    }
+  ]
+}

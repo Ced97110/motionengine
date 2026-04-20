@@ -6,7 +6,19 @@ players_needed: 1
 duration_minutes: 5-10
 tags: [speed, conditioning, sprint-mechanics, ankle-strength, foot-speed]
 source_count: 1
-last_updated: 2026-04-11
+last_updated: 2026-04-20
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+trains_techniques:
+  - id: explosive-first-step
+    emphasis: secondary
+insights:
+  coaching_cue: "Quiet but fast feet — loud landings indicate too much ground contact time; emphasize the push-off, not just the landing."
+  primary_form_error:
+    symptom: "Excessive heel lift on recovery"
+    consequence: "Breaks the ankle's elastic rhythm; defeats the rapid-contact target"
+    citation: "[S8, p.24]"
 ---
 
 # Ankling
@@ -43,6 +55,7 @@ Increase foot speed and elastic ankle strength by emphasizing rapid plantar flex
 - [[concept-sprint-mechanics-basketball]] — leg action and foot contact are core to sprint technique
 - [[ankle-strengthening]] — elastic ankle strength is the physiological target of this drill
 - [[stretch-shortening-cycle-plyometrics]] — rapid push-off engages the stretch-shortening cycle
+- [[concept-anatomy-ankle-complex]] — elastic (reactive) ankle strength is the physiological target [S8, p.24]
 
 ## Sources
 - [S8, p.24] — Drill #2: Ankling, Basic-Technique Speed category

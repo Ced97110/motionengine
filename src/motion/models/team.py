@@ -1,6 +1,6 @@
 """Team, roster, play signals.
 
-Mirrors docs/specs/backend-architecture.md §3.2 and §3.3.
+Mirrors backend/spec/architecture.md §3.2 and §3.3.
 """
 
 from __future__ import annotations

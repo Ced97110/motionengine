@@ -6,7 +6,21 @@ players_needed: 1
 duration_minutes: 5-10
 tags: [conditioning, core, strength, extension, posterior-chain, injury-prevention]
 source_count: 1
-last_updated: 2026-04-11
+last_updated: 2026-04-20
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+insights:
+  safety_tip:
+    text: "Do not go beyond parallel to the floor or arch the spine — hyperextension places dangerous stress on the vertebrae."
+    citation: "[S2, p.39]"
+  coaching_cue: "Hip hinge only — all motion comes from the hip joint; the upper torso stays stable and rigid."
+  primary_form_error:
+    symptom: "Using momentum to swing up"
+    consequence: "Reduces target loading; if seen, shorten the range of motion"
+    citation: "[S2, p.39]"
 ---
 
 # Back Extension (Core Extension)
@@ -43,6 +57,8 @@ Strengthen the posterior chain (erector spinae, glutes, hamstrings) to support j
 
 ## Concepts Taught
 - [[concept-core-anatomy-basketball]] — trains the posterior chain (outer core extension muscles)
+- [[concept-anatomy-core-outer]] — erector spinae (iliocostalis, longissimus, spinalis) named verbatim as primary muscles [S2, p.39]
+- [[concept-anatomy-glute-max]] — gluteus maximus named verbatim as primary muscle [S2, p.39]
 
 ## Sources
 - [S2, pp.38-39] — Execution, safety tip, muscles involved, basketball focus, variations

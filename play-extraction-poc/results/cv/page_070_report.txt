@@ -1,0 +1,20 @@
+page 70 — 3 panel(s)
+
+  panel 0: 1011x954 px, 5 candidates, 5 OCR'd, registered
+    P5 at px(355.3, 409.4) → SVG(-7.9, +19.8)
+    P4 at px(663.8, 411.9) → SVG(+8.1, +19.9)
+    P3 at px(870.9, 412.8) → SVG(+18.9, +20.0)
+    P2 at px(145.1, 417.0) → SVG(-18.9, +20.2)
+    P1 at px(509.8, 743.4) → SVG(+0.1, +37.1)
+  panel 1: 1011x950 px, 5 candidates, 5 OCR'd, registered
+    P5 at px(426.2, 188.8) → SVG(-4.3, +8.3)
+    P3 at px(111.5, 383.7) → SVG(-20.7, +18.4)
+    P4 at px(541.2, 446.8) → SVG(+1.7, +21.7)
+    P2 at px(851.6, 448.1) → SVG(+18.0, +21.8)
+    P1 at px(679.8, 699.1) → SVG(+9.0, +34.9)
+  panel 2: 1011x947 px, 5 candidates, 5 OCR'd, registered
+    P4 at px(339.5, 132.9) → SVG(-8.7, +6.0)
+    P3 at px(69.6, 142.6) → SVG(-22.6, +6.5)
+    P5 at px(688.8, 375.0) → SVG(+9.4, +18.4)
+    P1 at px(179.2, 432.2) → SVG(-17.0, +21.4)
+    P2 at px(853.8, 440.0) → SVG(+18.0, +21.8)

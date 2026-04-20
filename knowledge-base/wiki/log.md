@@ -857,3 +857,36 @@
 - Created: concept-basketball-conditioning-principles.md
 - Updated: source-coaches-playbook.md
 - Notes: pro Coaches Playbook S7 — pages 361-371: back matter (index, conditioning final points, back cover). Index confirms book covers: conditioning methods/periodization, dribble moves (advanced), flex offense, Continuity offense, triangle offense, fast-break principles, out-of-bounds plays, last-second plays, screen plays, post moves, on-the-ball pressure, practice philosophy, game preparation/scouting, defensive strategies, full-court pressure/presses, and player development. Only actionable content is the final-points conditioning summary on p.337 and the back-cover source summary. The index itself is not extractable as wiki content, but provides a full book map. Creating a source-summary page for S7.
+
+## [2026-04-20] crossref-author | Edge #1 anatomy chain — first two regions
+- Created: concept-anatomy-hip-flexor-complex.md, concept-anatomy-glute-max.md
+- Updated: play-black.md, index.md
+- Notes: Design per spec/crossref-anatomy-chain.md. play-black.md back-annotated with demands_techniques and demands_anatomy front-matter plus a new Related Concepts section linking to both anatomy pages. Both anatomy pages cite [S2] Basketball Anatomy with verbatim anchors at [S2, pp.18-19] (rectus femoris, gluteus maximus named in exercise-hip-thrust.md) and [S2, p.32] (anterior/posterior chain classification from concept-core-anatomy-basketball.md:27). Lint exit 0 after edits; orphan warning on hip-flexor-complex resolved via the play-black back-link. Sequential lint runs: 1033 pages → 1034 → 1035.
+
+## [2026-04-20] crossref-author | Edge #1 ankle + outer-core completion for play-black
+- Created: concept-anatomy-ankle-complex.md, concept-anatomy-core-outer.md
+- Updated: play-black.md, index.md
+- Notes: Completes play-black's 4-region anatomy coverage per its demands_anatomy front-matter. ankle_complex is ligament-dominant (ATFL, CFL, PTFL, deltoid); introduces an optional new front-matter key `ligaments:` for joint-dominant regions. ankle-complex citations use `[S2]` without page (S2 Ch.7 Rehab coverage confirmed via source-basketball-anatomy.md but specific pages not verified). core_outer has verbatim `[S2, p.32]` anchor from concept-core-anatomy-basketball.md:26 and `[S2, p.34]` from line 29. Takes the chain from 2/4 to 4/4 for play-black.
+
+## [2026-04-20] crossref-compiler | crossref.py stub + first compiled indexes
+- Created: src/motion/wiki_ops/crossref.py, knowledge-base/wiki/compiled/{play-to-anatomy,play-to-technique,anatomy-to-play,anatomy-to-drill,technique-to-play,technique-to-drill}.json, knowledge-base/wiki/compiled/technique-aliases.json, eval/crossref-anatomy.jsonl
+- Updated: src/motion/wiki_ops/cli.py (added crossref subcommand)
+- Notes: Spec §6 compiler implemented as pure front-matter inversion — no LLM, no inference. Runs in ~500ms on the 1035-page corpus. Wired into cli.py as `python -m motion.wiki_ops crossref`. Ruff-clean. technique-aliases.json covers 13 alias mappings (9 HIGH + 4 MEDIUM per spec §3.2) with 8 pending NEW technique IDs. eval/crossref-anatomy.jsonl has 7 seed cases (3 Q-A, 3 Q-B, 1 Q-C) — drill-retrieval cases encoded as empty-return invariants since no drills have trains_anatomy yet.
+
+## [2026-04-20] crossref-author | Drill back-annotation — first batch of 5
+- Updated: exercise-hip-thrust.md, drill-band-lateral-walk.md, drill-bird-dog.md, drill-back-extension.md, drill-ankling.md (trains_anatomy + trains_techniques front-matter + `## Concepts Taught` wikilinks); concept-anatomy-glute-max.md, concept-anatomy-core-outer.md, concept-anatomy-ankle-complex.md (back-link drill entries in Related Concepts); eval/crossref-anatomy.jsonl (3 empty-return cases flipped to positive-return)
+- Notes: Completes 4-anatomy drill coverage for play-black (glute_max 3 drills, hip_flexor_complex 1 secondary, ankle_complex 2 drills, core_outer 2 drills). Compiler output went from 0/0 drill edges → 8 anatomy→drill + 3 technique→drill. All 5 drill pages carry verbatim S2 muscle anchors ([S2, pp.18-19] hip-thrust glutes, [S2, p.39] back-extension erector-spinae/gluteus-maximus, [S2, p.41] bird-dog multifidus/erector-spinae, [S2, p.139] band-lateral-walk ankle/hip, [S8, p.24] ankling). Lint exit 0; no new bidirectional warnings on the annotated drill set. Unblocks Q-A drill-rx, Q-B glute-max-prescription, and Q-C hip-thrust-justification eval cases.
+
+## [2026-04-20] crossref-eval | pytest runner for crossref-anatomy.jsonl
+- Created: tests/wiki_ops/test_crossref_eval.py
+- Notes: Parametrized pytest harness that loads the 6 compiled JSON indexes under wiki/compiled/ and executes Q-A / Q-B / Q-C query patterns from spec §7 against each case in eval/crossref-anatomy.jsonl. Scoring: expected_chunk_ids must be present, forbidden_chunks must be absent, extra chunks are neutral (superset-safe — the Engine ranks downstream). 7/7 pass in 0.02s. Full test suite: 68 passed. Ruff-clean. Makes the eval a CI regression gate on every future wiki PR.
+
+## [2026-04-20] crossref-library | retrieval bundle module (Track 1a)
+- Created: src/motion/wiki_ops/retrieval.py, tests/wiki_ops/test_retrieval.py
+- Updated: tests/wiki_ops/test_crossref_eval.py (refactored to import query functions from retrieval — single source of truth)
+- Notes: Pure library layer for Engine consumers (future /knowledge/ask, halftime-chip, readiness-report). Three query functions matching spec §7: build_play_context (Q-A), build_readiness_filter (Q-B), build_drill_justification (Q-C). Frozen dataclasses: AnatomyDemand, TechniqueDemand, DrillPrescription, PlayContext, ReadinessBundle, CompiledIndexes. Technique IDs resolve to concept-page slugs via technique-aliases.json lookup. Drills are deduplicated (primary-emphasis first, then by slug) with `via` provenance ("anatomy:{region}" or "technique:{id}"). 12 unit tests: 9 synthetic fixture + 3 live smoke tests pinning the play-black bundle (4 regions, 5 drills). Full suite: 80 passed. Ruff-clean. Prior memory claim that `routers/knowledge.py::/knowledge/ask` existed was verified WRONG — the endpoint was aspirational in spec §12, never built; corrected before scoping this work. Track 1b (thin FastAPI router wrapping build_play_context) is the next step.
+
+## [2026-04-20] crossref-router | FastAPI knowledge endpoints (Track 1b)
+- Created: src/motion/schemas/knowledge.py, src/motion/routers/knowledge.py, tests/integration/test_knowledge_router.py
+- Updated: src/motion/main.py (include_router(knowledge_router))
+- Notes: Three HTTP endpoints wrapping the retrieval library, all POST under /api/knowledge/ — play-context (Q-A), readiness (Q-B), drill-justification (Q-C). camelCase Pydantic aliases for the frontend contract (matches schemas/errors.py pattern). Indexes loaded once at first-request via lru_cache (recompile requires process restart). No auth on these endpoints yet — add later. 7 TestClient integration tests pin the HTTP contract against real compiled indexes. Full suite: 80 → 87 passed. Ruff-clean on new files. **First user-reachable surface of edge #1**: a frontend Next.js card can now call `/api/knowledge/readiness` with a flagged region and display excluded plays + recovery drills. Thin slice toward the "injury-aware game plan" feature called out as priority pivot.
