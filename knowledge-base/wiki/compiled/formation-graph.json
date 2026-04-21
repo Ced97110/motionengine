@@ -1,0 +1,164 @@
+{
+  "1-2-2": [
+    "play-indiana-box-high-x"
+  ],
+  "1-3-1": [
+    "23-flare",
+    "play-flare-overload",
+    "play-low-split",
+    "play-pick-overload",
+    "play-skipper",
+    "play-step-up",
+    "play-swinger",
+    "set-23-flare-updated"
+  ],
+  "1-4-box": [
+    "play-power-down-attack"
+  ],
+  "1-4-high": [
+    "blob-cross",
+    "blob-double-skip",
+    "play-1-4-quick-floppy",
+    "play-celtics-post-drop",
+    "play-celtics-x-action",
+    "play-double-curls",
+    "play-doubles",
+    "play-flip-gate",
+    "play-hawks-zipper-cross-screen",
+    "play-high-post-double-screen",
+    "play-iverson-ram",
+    "play-knicks-zipper-baseline-triple",
+    "play-minnesota-hawk-combination",
+    "play-piston-elevator",
+    "play-utah-jazz-ucla-action",
+    "play-x-cross",
+    "play-zipper-curl"
+  ],
+  "2-3 high-post": [
+    "play-chin-series",
+    "play-high-pick-series",
+    "play-high-split-action",
+    "play-pass-and-cut-away",
+    "play-pass-and-screen-away",
+    "play-reverse-dribble-options"
+  ],
+  "2-guard-front": [
+    "play-power-cross-attack"
+  ],
+  "3-out-2-in": [
+    "32-lob",
+    "play-back-screen-post",
+    "set-32-lob-updated"
+  ],
+  "4-low": [
+    "blob-4-low-flex-updated",
+    "blob-4-low-flex"
+  ],
+  "4-out 1-in": [
+    "play-baseline-swing",
+    "play-inside-isolate"
+  ],
+  "5-out": [
+    "play-black"
+  ],
+  "LA offense (modified)": [
+    "play-versus-box-and-one"
+  ],
+  "balanced-5-out": [
+    "play-forward-oriented-attack"
+  ],
+  "box": [
+    "blob-box-flash",
+    "blob-box-gate-updated",
+    "blob-box-gate",
+    "blob-flip-updated",
+    "blob-flip",
+    "blob-side-cross-elevator",
+    "blob-two-inside-updated",
+    "blob-two-inside",
+    "blob-yo-yo-updated",
+    "blob-yo-yo",
+    "play-box-cross-2-blob",
+    "play-box-loop-post",
+    "play-box-spin",
+    "play-cross-screen",
+    "play-deception-slob",
+    "play-diagonal-screen",
+    "play-diamond-slob",
+    "play-drive-hammer",
+    "play-inside-pick-the-picker-blob",
+    "play-lob-blob",
+    "play-loop-fly-slob",
+    "play-option-slob",
+    "play-pick-and-roll-layered",
+    "play-prowl-slob",
+    "play-up-screen",
+    "slob-x"
+  ],
+  "box (slots variant)": [
+    "slob-twist"
+  ],
+  "early-offense": [
+    "play-new-jersey-loop-action"
+  ],
+  "guard-to-forward (LA set)": [
+    "play-versus-1-3-1"
+  ],
+  "horns": [
+    "play-flex-warrior",
+    "play-side-blaze"
+  ],
+  "irregular": [
+    "blob-hawk"
+  ],
+  "line": [
+    "play-line-blob"
+  ],
+  "sideline-stack": [
+    "play-detroit-double-pnr-series"
+  ],
+  "sideline-stack-to-single": [
+    "play-minnesota-triple-pnr"
+  ],
+  "spread (3 out, 2 in)": [
+    "play-versus-triangle-and-two"
+  ],
+  "spread-5-out": [
+    "play-guard-oriented-attack"
+  ],
+  "stack": [
+    "blob-stack-double-updated",
+    "blob-stack-double",
+    "blob-stack-man-spread",
+    "blob-stack-man",
+    "blob-stack-zone-variant",
+    "blob-stack-zone"
+  ],
+  "staggered-baseline": [
+    "play-philadelphia-baseline-screening"
+  ],
+  "transition-to-half-court": [
+    "play-san-antonio-early-offense-corner-fill",
+    "play-san-antonio-guard-through"
+  ],
+  "triangle": [
+    "play-triangle-slob"
+  ],
+  "wide-box": [
+    "blob-belmont-flash"
+  ],
+  "wing-PnR": [
+    "play-charlotte-pnr-back-screen"
+  ],
+  "wing-sideline": [
+    "play-detroit-step-up-flare",
+    "play-orlando-angled-pnr"
+  ],
+  "wing-triple-stack": [
+    "play-miami-pnr-baseline-screening"
+  ],
+  "x-out": [
+    "play-three-point-x-out-slob",
+    "play-x-out-single-double"
+  ]
+}

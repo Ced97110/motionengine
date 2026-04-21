@@ -1,18 +1,30 @@
-"""Cross-reference compiler for the anatomy ↔ technique ↔ play ↔ drill chain.
+"""Cross-reference compiler for the Motion wiki.
 
-Reads front-matter from `wiki/*.md`, inverts `demands_*` and `trains_*` arrays,
-emits 6 JSON indexes under `wiki/compiled/`. No inference, no LLM — pure
-front-matter inversion.
+Walks ``wiki/*.md`` and emits **13 JSON indexes** under ``wiki/compiled/``.
+No inference, no LLM — pure structural compilation of authored content.
 
-Spec: `backend/spec/crossref-anatomy-chain.md` §6.
+Two classes of output:
 
-Output files (under `wiki/compiled/`):
-- ``play-to-anatomy.json``      — `{play_slug: [{region, criticality}]}`
-- ``play-to-technique.json``    — `{play_slug: [{id, criticality, role}]}`
-- ``anatomy-to-play.json``      — inverted; `{region: [{play, criticality}]}`
-- ``anatomy-to-drill.json``     — inverted; `{region: [{drill, emphasis}]}`
-- ``technique-to-play.json``    — inverted; `{id: [{play, criticality, role}]}`
-- ``technique-to-drill.json``   — inverted; `{id: [{drill, emphasis}]}`
+**Front-matter inversion (edge #1 anatomy chain — 6 indexes):**
+- ``play-to-anatomy.json``      — ``{play_slug: [{region, criticality, supports_technique?, for_role?}]}``
+- ``play-to-technique.json``    — ``{play_slug: [{id, criticality, role}]}``
+- ``anatomy-to-play.json``      — inverted; ``{region: [{play, criticality, ...}]}``
+- ``anatomy-to-drill.json``     — inverted; ``{region: [{drill, emphasis}]}``
+- ``technique-to-play.json``    — inverted; ``{id: [{play, criticality, role}]}``
+- ``technique-to-drill.json``   — inverted; ``{id: [{drill, emphasis}]}``
+
+**Content/body extractions (3 indexes):**
+- ``page-insights.json``        — structured ``insights:`` blocks per page
+- ``page-tags.json``             — ``{slug: [tags]}`` for all tagged pages
+- ``defending-insights.json``    — parsed ``## Common Mistakes`` + ``diagram:`` per defending-*.md
+
+**Native wikilink & structural graphs (4 indexes — Karpathy-native edges):**
+- ``wikilink-graph.json``         — forward; ``{page_slug: [target_slugs]}`` (unique per source)
+- ``wikilink-graph-reverse.json`` — inverted; ``{target_slug: [pages_linking_here]}``
+- ``citation-graph.json``         — ``{"Sn, p.X": [pages_citing_it]}`` (normalized cite keys)
+- ``formation-graph.json``        — ``{formation_name: [play_slugs]}``
+
+Spec: ``backend/spec/crossref-anatomy-chain.md`` §6.
 
 Usage:
 
@@ -35,11 +47,21 @@ from typing import Any
 from .frontmatter import parse_full
 from .paths import wiki_dir
 
-# --- defending ## Common Mistakes parser -------------------------------------
+# --- body-prose parsers ------------------------------------------------------
 
 # Lines of the form: "1. **Symptom text** → Remedy prose" — the shape is
 # consistent across all 13 defending-*.md pages (verified 2026-04-20).
 _MISTAKE_LINE = re.compile(r"^\d+\.\s+\*\*(?P<symptom>.+?)\*\*\s+→\s+(?P<remedy>.+)$")
+
+# Body-level wikilinks: [[page-slug]] — kebab-case, matches the SCHEMA.md
+# filename convention. The set/unique-per-source pattern mirrors
+# `_check_bidirectional` in lint_wiki.py so the counts line up with lint output.
+_WIKILINK_RE = re.compile(r"\[\[(?P<target>[a-z0-9][a-z0-9-]+[a-z0-9])\]\]")
+
+# Source citations: [S1] or [S2, p.32] or [S7, pp.117-119]. The source-id
+# and the optional page designator are captured separately for normalized
+# cluster keys ("S2, p.32" or "S2" alone).
+_CITATION_RE = re.compile(r"\[(?P<source>S\d+)(?:,\s*(?P<pages>pp?\.\s*[\d\u2013\u2014-]+))?\]")
 
 
 def _extract_common_mistakes(body: str) -> list[dict[str, str]]:
@@ -68,6 +90,42 @@ def _extract_common_mistakes(body: str) -> list[dict[str, str]]:
                     "remedy": match.group("remedy").strip(),
                 }
             )
+    return out
+
+
+def _extract_wikilink_targets(body: str) -> list[str]:
+    """Return the unique wikilink targets in ``body``, in first-occurrence order.
+
+    Dedupe per source page — matches lint_wiki.py's `_check_bidirectional`
+    semantics (counting unique (source, target) pairs, not raw occurrences).
+    """
+    seen: set[str] = set()
+    out: list[str] = []
+    for match in _WIKILINK_RE.finditer(body):
+        target = match.group("target")
+        if target in seen:
+            continue
+        seen.add(target)
+        out.append(target)
+    return out
+
+
+def _extract_citations(body: str) -> list[str]:
+    """Return unique citation keys (e.g. ``"S2, p.32"`` or ``"S1"``) in order.
+
+    Normalizes the key to ``"Sn"`` or ``"Sn, p.X"`` form so an inverted index
+    groups pages citing the exact same passage.
+    """
+    seen: set[str] = set()
+    out: list[str] = []
+    for match in _CITATION_RE.finditer(body):
+        source = match.group("source")
+        pages = match.group("pages")
+        key = source if not pages else f"{source}, {pages.strip()}"
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(key)
     return out
 
 
@@ -104,6 +162,10 @@ def compile_indexes(
     page_insights: dict[str, Any] = {}
     page_tags: dict[str, list[str]] = {}
     defending_insights: dict[str, Any] = {}
+    wikilink_forward: dict[str, list[str]] = {}
+    wikilink_reverse: dict[str, list[str]] = defaultdict(list)
+    citation_graph: dict[str, list[str]] = defaultdict(list)
+    formation_graph: dict[str, list[str]] = defaultdict(list)
 
     for md_path in sorted(wiki_directory.glob("*.md")):
         slug = md_path.stem
@@ -123,6 +185,22 @@ def compile_indexes(
         insights = fm.get("insights")
         if isinstance(insights, dict) and insights:
             page_insights[slug] = insights
+
+        # Body-level structural edges — native Karpathy cross-refs compiled
+        # into forward/reverse indexes without modifying wiki content.
+        wikilink_targets = _extract_wikilink_targets(body)
+        if wikilink_targets:
+            wikilink_forward[slug] = wikilink_targets
+            for target in wikilink_targets:
+                wikilink_reverse[target].append(slug)
+
+        for citation_key in _extract_citations(body):
+            citation_graph[citation_key].append(slug)
+
+        if page_type == "play":
+            formation = fm.get("formation")
+            if isinstance(formation, str) and formation.strip():
+                formation_graph[formation.strip()].append(slug)
 
         if slug.startswith("defending-"):
             symptoms = _extract_common_mistakes(body)
@@ -226,6 +304,10 @@ def compile_indexes(
         "page-insights.json": page_insights,
         "page-tags.json": page_tags,
         "defending-insights.json": defending_insights,
+        "wikilink-graph.json": wikilink_forward,
+        "wikilink-graph-reverse.json": dict(wikilink_reverse),
+        "citation-graph.json": dict(citation_graph),
+        "formation-graph.json": dict(formation_graph),
     }
 
 
@@ -279,9 +361,14 @@ def main(argv: list[str] | None = None) -> int:
     n_defending_symptoms = sum(
         len(entry.get("symptoms", [])) for entry in indexes["defending-insights.json"].values()
     )
+    n_wikilink_source_pages = len(indexes["wikilink-graph.json"])
+    n_wikilink_edges = sum(len(targets) for targets in indexes["wikilink-graph.json"].values())
+    n_wikilink_targets = len(indexes["wikilink-graph-reverse.json"])
+    n_citation_keys = len(indexes["citation-graph.json"])
+    n_formation_keys = len(indexes["formation-graph.json"])
 
     sys.stdout.write(
-        f"[crossref] compiled 9 indexes to {out_dir}\n"
+        f"[crossref] compiled 13 indexes to {out_dir}\n"
         f"  plays with demands_anatomy:    {n_plays_anatomy}\n"
         f"  plays with demands_techniques: {n_plays_technique}\n"
         f"  anatomy regions referenced:    {n_anatomy_regions}\n"
@@ -291,6 +378,11 @@ def main(argv: list[str] | None = None) -> int:
         f"  pages with insights:           {n_insights}\n"
         f"  pages with tags:               {n_tagged_pages}\n"
         f"  defending pages parsed:        {n_defending} ({n_defending_symptoms} symptoms)\n"
+        f"  wikilink source pages:         {n_wikilink_source_pages} "
+        f"({n_wikilink_edges} unique (source, target) pairs → "
+        f"{n_wikilink_targets} unique targets)\n"
+        f"  citation keys:                 {n_citation_keys}\n"
+        f"  formations:                    {n_formation_keys}\n"
     )
     return 0
 
