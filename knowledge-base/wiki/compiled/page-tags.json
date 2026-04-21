@@ -393,6 +393,16 @@
     "ball-protection",
     "press-break"
   ],
+  "concept-1on1-reads-and-attacks": [
+    "offense",
+    "1v1",
+    "footwork",
+    "ball-handling",
+    "triple-threat",
+    "jab-series",
+    "decision-making",
+    "perimeter"
+  ],
   "concept-achilles-tendinopathy-basketball": [
     "injury-prevention",
     "rehabilitation",
@@ -612,6 +622,16 @@
     "breathing",
     "pre-participation"
   ],
+  "concept-attacking-disruptive-defenses": [
+    "offense",
+    "half-court",
+    "zone",
+    "disruptive-defense",
+    "1-3-1",
+    "box-and-one",
+    "triangle-and-two",
+    "special-situations"
+  ],
   "concept-attacking-offense": [
     "offense",
     "half-court",
@@ -664,12 +684,28 @@
     "layup",
     "one-hand-bounce-pass"
   ],
+  "concept-balance-quickness-agility-youth": [
+    "balance",
+    "quickness",
+    "agility",
+    "footwork",
+    "defense",
+    "offense",
+    "conditioning"
+  ],
   "concept-ball-reversal-swing": [
     "offense",
     "ball-movement",
     "spacing",
     "half-court",
     "weak-side"
+  ],
+  "concept-ball-you-man-flat-triangle": [
+    "defense",
+    "help-side",
+    "positioning",
+    "man-to-man",
+    "off-ball-defense"
   ],
   "concept-basket-man-ball-man": [
     "defense",
@@ -1356,6 +1392,14 @@
     "injury-prevention",
     "pre-season"
   ],
+  "concept-basketball-preseason-conditioning-rose": [
+    "conditioning",
+    "preseason",
+    "anaerobic",
+    "interval-training",
+    "plyometrics",
+    "physical-preparation"
+  ],
   "concept-basketball-preseason-medical-preparation": [
     "preseason",
     "sports-medicine",
@@ -1778,6 +1822,27 @@
     "midrange",
     "catch-and-shoot"
   ],
+  "concept-defending-cross-screen-sts": [
+    "defense",
+    "cross-screen",
+    "screen-the-screener",
+    "man-to-man",
+    "communication"
+  ],
+  "concept-defending-pin-down-screens": [
+    "defense",
+    "off-ball-screens",
+    "man-to-man",
+    "screen-defense",
+    "pin-down"
+  ],
+  "concept-defensive-ball-handler-stances": [
+    "defense",
+    "on-ball-defense",
+    "footwork",
+    "man-to-man",
+    "stance"
+  ],
   "concept-defensive-box-out-footwork": [
     "defense",
     "rebounding",
@@ -1847,6 +1912,15 @@
     "man-to-man",
     "zone"
   ],
+  "concept-defensive-unit-coordination": [
+    "defense",
+    "clock-management",
+    "foul-strategy",
+    "end-game",
+    "player-input",
+    "team-culture",
+    "game-management"
+  ],
   "concept-dermatology-basketball-athlete": [
     "sports-medicine",
     "medical",
@@ -1859,6 +1933,14 @@
     "nutrition",
     "pre-participation",
     "in-season"
+  ],
+  "concept-disrupting-full-court-transitions": [
+    "defense",
+    "transition",
+    "fast-break",
+    "rebounding",
+    "lane-denial",
+    "team-defense"
   ],
   "concept-down-screen-reads": [
     "offense",
@@ -1912,12 +1994,30 @@
     "ball-handling",
     "penetration"
   ],
+  "concept-dribbling-fundamentals-youth": [
+    "ball-handling",
+    "dribbling",
+    "youth",
+    "fundamentals",
+    "fingertips",
+    "control-dribble",
+    "speed-dribble"
+  ],
   "concept-dynamic-valgus-hip-core-pfp": [
     "injury-prevention",
     "biomechanics",
     "sports-medicine",
     "knee",
     "core"
+  ],
+  "concept-early-offense-philosophy": [
+    "offense",
+    "transition",
+    "early-offense",
+    "half-court",
+    "post-up",
+    "pick-and-roll",
+    "screening"
   ],
   "concept-eccentric-training-basketball": [
     "strength-training",
@@ -2183,6 +2283,16 @@
     "motion",
     "argentina"
   ],
+  "concept-flex-offense-s13": [
+    "offense",
+    "half-court",
+    "continuity",
+    "flex",
+    "screening",
+    "ball-control",
+    "baseline-screen",
+    "pick-the-picker"
+  ],
   "concept-flex-offense-transition-entry": [
     "offense",
     "transition",
@@ -2232,6 +2342,21 @@
     "program-design",
     "conditioning"
   ],
+  "concept-foul-policy-basketball": [
+    "foul-management",
+    "substitution",
+    "game-management",
+    "zone-defense",
+    "late-game",
+    "clock-management"
+  ],
+  "concept-free-throw-strategy": [
+    "free-throws",
+    "shooting",
+    "pressure",
+    "offense",
+    "game-management"
+  ],
   "concept-front-flip-chain": [
     "explosiveness",
     "agility",
@@ -2249,6 +2374,13 @@
     "coordination",
     "tumbling",
     "body-control"
+  ],
+  "concept-front-pivot-youth": [
+    "offense",
+    "footwork",
+    "pivoting",
+    "ball-handling",
+    "youth"
   ],
   "concept-functional-strength-overload-underload": [
     "strength",
@@ -2347,6 +2479,15 @@
     "dribble-combinations",
     "scoring"
   ],
+  "concept-hustle-board": [
+    "player evaluation",
+    "motivation",
+    "team culture",
+    "hustle",
+    "effort",
+    "extra effort",
+    "practice"
+  ],
   "concept-in-game-defensive-adjustments": [
     "defense",
     "game-management",
@@ -2364,6 +2505,31 @@
     "RPE",
     "velocity-based-training",
     "periodization"
+  ],
+  "concept-individual-defensive-movement": [
+    "defense",
+    "footwork",
+    "on-ball",
+    "man-to-man",
+    "individual",
+    "stance",
+    "advance-step",
+    "retreat-step",
+    "swing-step",
+    "slide-step",
+    "overplay",
+    "help-side"
+  ],
+  "concept-individual-offensive-skills-framework": [
+    "offense",
+    "individual skills",
+    "player development",
+    "ballhandling",
+    "passing",
+    "screening",
+    "shooting",
+    "decision-making",
+    "athletic development"
   ],
   "concept-individual-shooting-workout-design": [
     "shooting",
@@ -2572,6 +2738,16 @@
     "tendinopathy",
     "jumpers-knee"
   ],
+  "concept-la-offense": [
+    "offense",
+    "half-court",
+    "continuity",
+    "motion",
+    "man-to-man",
+    "zone",
+    "ball-movement",
+    "spacing"
+  ],
   "concept-late-game-defensive-adjustments": [
     "defense",
     "late-game",
@@ -2622,6 +2798,15 @@
     "early-specialization",
     "periodization"
   ],
+  "concept-loop-action-nba": [
+    "offense",
+    "staggered-screen",
+    "baseline-screen",
+    "early-offense",
+    "loop",
+    "shooter",
+    "post-up"
+  ],
   "concept-low-back-pain-basketball": [
     "sports medicine",
     "injury",
@@ -2629,6 +2814,16 @@
     "spine",
     "back pain",
     "return to play"
+  ],
+  "concept-low-post-fakes-moves-youth": [
+    "offense",
+    "post-play",
+    "low-post",
+    "footwork",
+    "drop-step",
+    "spin",
+    "pump-fake",
+    "motion-offense"
   ],
   "concept-lower-body-exercise-fundamentals": [
     "strength-training",
@@ -2653,6 +2848,14 @@
     "biomechanics",
     "core",
     "lower-extremity"
+  ],
+  "concept-man-to-man-rotation-rules": [
+    "defense",
+    "man-to-man",
+    "help-side",
+    "rotation",
+    "breakaway-drive",
+    "team-defense"
   ],
   "concept-marfan-syndrome-basketball": [
     "sports-medicine",
@@ -2732,6 +2935,14 @@
     "weight-training",
     "functional-strength"
   ],
+  "concept-motion-offense-four-rules": [
+    "offense",
+    "motion-offense",
+    "cutting",
+    "spacing",
+    "half-court",
+    "youth"
+  ],
   "concept-motion-offense-philosophy": [
     "offense",
     "half-court",
@@ -2747,6 +2958,13 @@
     "philosophy",
     "utah-motion offense",
     "passing"
+  ],
+  "concept-motion-offense-screening-rules": [
+    "offense",
+    "motion-offense",
+    "screening",
+    "cutting",
+    "spacing"
   ],
   "concept-motor-cognitive-youth-basketball": [
     "youth-basketball",
@@ -2840,6 +3058,12 @@
     "nba",
     "medical-coverage",
     "mental-health"
+  ],
+  "concept-nba-scouting-philosophy": [
+    "offense",
+    "scouting",
+    "game-preparation",
+    "play-design"
   ],
   "concept-nba-scouting-report": [
     "scouting",
@@ -2965,6 +3189,13 @@
     "footwork",
     "pivoting",
     "stickbacks"
+  ],
+  "concept-offensive-system-design": [
+    "offense",
+    "half-court",
+    "system-design",
+    "coaching-philosophy",
+    "player-development"
   ],
   "concept-olajuwon-whirl-move": [
     "offense",
@@ -3181,6 +3412,13 @@
     "calisthenics",
     "power"
   ],
+  "concept-passing-fundamentals-youth": [
+    "offense",
+    "passing",
+    "fundamentals",
+    "youth",
+    "ball-handling"
+  ],
   "concept-patellar-dislocation-basketball": [
     "injury-prevention",
     "rehabilitation",
@@ -3202,6 +3440,15 @@
     "knee",
     "biomechanics"
   ],
+  "concept-performance-rating-system": [
+    "player evaluation",
+    "statistics",
+    "playing time",
+    "team chemistry",
+    "objectivity",
+    "practice",
+    "coaching management"
+  ],
   "concept-perimeter-getting-open": [
     "offense",
     "perimeter",
@@ -3209,6 +3456,14 @@
     "cutting",
     "spacing",
     "half-court"
+  ],
+  "concept-perimeter-one-on-one-intelligence": [
+    "offense",
+    "one-on-one",
+    "dribbling",
+    "decision-making",
+    "motion-offense",
+    "perimeter"
   ],
   "concept-perimeter-one-on-one-moves": [
     "offense",
@@ -3378,6 +3633,16 @@
     "rotation",
     "pro"
   ],
+  "concept-pnr-defense-s13": [
+    "defense",
+    "pick-and-roll",
+    "man-to-man",
+    "team-defense",
+    "communication",
+    "trap",
+    "hedge",
+    "switch"
+  ],
   "concept-pnr-defensive-coverages-del-harris": [
     "defense",
     "pick-and-roll",
@@ -3408,6 +3673,12 @@
     "pivoting",
     "low-post",
     "sealing"
+  ],
+  "concept-post-defensive-coverage-types": [
+    "post",
+    "defense",
+    "footwork",
+    "reading-defense"
   ],
   "concept-post-drop-step": [
     "offense",
@@ -3492,6 +3763,13 @@
     "pivoting",
     "catching",
     "ball-security"
+  ],
+  "concept-post-scoring-at-end-of-dribble": [
+    "post",
+    "offense",
+    "footwork",
+    "finishing",
+    "pump-fake"
   ],
   "concept-post-spin-screen": [
     "offense",
@@ -3727,6 +4005,19 @@
     "shooter-creation",
     "man-to-man",
     "read-and-react"
+  ],
+  "concept-rebounding-areas-youth": [
+    "rebounding",
+    "offense",
+    "defense",
+    "fundamentals",
+    "youth"
+  ],
+  "concept-rebounding-position-savvy": [
+    "rebounding",
+    "positioning",
+    "basketball-iq",
+    "court-awareness"
   ],
   "concept-reflex-channeling-hebbs-rule": [
     "conditioning",
@@ -4232,6 +4523,13 @@
     "post-moves",
     "square-up"
   ],
+  "concept-six-guiding-principles": [
+    "coaching-philosophy",
+    "team-culture",
+    "winning",
+    "fundamentals",
+    "character"
+  ],
   "concept-six-individual-offensive-skills": [
     "offense",
     "fundamentals",
@@ -4354,6 +4652,21 @@
     "pull-up",
     "perimeter"
   ],
+  "concept-step-up-pnr": [
+    "offense",
+    "ball-screen",
+    "PnR",
+    "step-up",
+    "sideline",
+    "NBA"
+  ],
+  "concept-straight-stick-shooting": [
+    "shooting",
+    "fundamentals",
+    "alignment",
+    "youth",
+    "mechanics"
+  ],
   "concept-stress-fractures-basketball": [
     "sports-medicine",
     "injury-prevention",
@@ -4370,6 +4683,14 @@
     "cardiovascular",
     "NBA"
   ],
+  "concept-switching-defenses": [
+    "defense",
+    "zone",
+    "man-to-man",
+    "combination-defense",
+    "in-game-adjustment",
+    "momentum"
+  ],
   "concept-syndesmotic-sprain-basketball": [
     "rehabilitation",
     "ankle",
@@ -4382,6 +4703,27 @@
     "change-of-direction",
     "assessment",
     "conditioning"
+  ],
+  "concept-team-defensive-movement-principles": [
+    "defense",
+    "man-to-man",
+    "team-defense",
+    "help-side",
+    "ball-side",
+    "denial",
+    "ball-you-man",
+    "cutting",
+    "screening"
+  ],
+  "concept-team-defensive-stunts": [
+    "defense",
+    "pressure-defense",
+    "trapping",
+    "run-and-jump",
+    "channeling",
+    "team-defense",
+    "defensive-stunts",
+    "full-court"
   ],
   "concept-ten-steps-progression": [
     "conditioning",
@@ -4448,12 +4790,29 @@
     "pull-up",
     "mechanics"
   ],
+  "concept-three-point-shot-trends": [
+    "offense",
+    "three-point-shooting",
+    "strategy",
+    "statistics",
+    "system-design"
+  ],
   "concept-three-quarter-court-sprint-test": [
     "testing",
     "speed",
     "conditioning",
     "assessment",
     "sprinting"
+  ],
+  "concept-three-step-read-motion-offense": [
+    "offense",
+    "motion-offense",
+    "cutting",
+    "help-side",
+    "reading-defense",
+    "weak-side",
+    "v-cut",
+    "backdoor-cut"
   ],
   "concept-time-surfing-skill-training": [
     "conditioning",
@@ -4540,6 +4899,17 @@
     "continuity",
     "spacing",
     "post"
+  ],
+  "concept-triangle-offense-s13": [
+    "offense",
+    "half-court",
+    "continuity",
+    "triangle",
+    "post-up",
+    "backdoor",
+    "pick-and-roll",
+    "isolation",
+    "ball-control"
   ],
   "concept-triangle-offense-second-pass": [
     "offense",
@@ -4693,6 +5063,22 @@
     "wrist",
     "hand"
   ],
+  "concept-youth-basketball-balance-quickness-agility": [
+    "agility",
+    "quickness",
+    "balance",
+    "youth",
+    "fundamentals",
+    "conditioning"
+  ],
+  "concept-youth-basketball-drill-finder": [
+    "youth",
+    "fundamentals",
+    "offense",
+    "defense",
+    "practice",
+    "teaching"
+  ],
   "concept-youth-basketball-injuries": [
     "sports-medicine",
     "youth",
@@ -4714,6 +5100,48 @@
     "overuse",
     "plyometrics",
     "resistance-training"
+  ],
+  "concept-youth-basketball-practice-organization": [
+    "practice",
+    "coaching",
+    "youth",
+    "organization",
+    "drills",
+    "motion-offense",
+    "defense"
+  ],
+  "concept-youth-basketball-practice-schedules": [
+    "practice",
+    "youth",
+    "planning",
+    "scheduling",
+    "motion-offense",
+    "defense",
+    "season-phases"
+  ],
+  "concept-youth-basketball-skill-taxonomy": [
+    "offense",
+    "defense",
+    "fundamentals",
+    "youth",
+    "teaching",
+    "taxonomy"
+  ],
+  "concept-youth-basketball-teaching-philosophy": [
+    "offense",
+    "defense",
+    "youth",
+    "fundamentals",
+    "teaching",
+    "practice",
+    "coaching"
+  ],
+  "concept-youth-dribbling-fundamentals": [
+    "offense",
+    "ball-handling",
+    "dribbling",
+    "fundamentals",
+    "youth"
   ],
   "consolidation-training-explosive": [
     "conditioning",
@@ -4991,6 +5419,15 @@
     "offensive-moves",
     "live-ball"
   ],
+  "drill-1on1-full-court-game": [
+    "offense",
+    "defense",
+    "1v1",
+    "conditioning",
+    "full-court",
+    "competitive",
+    "transition"
+  ],
   "drill-1on1-half-court-attack": [
     "1-on-1",
     "driving",
@@ -4999,6 +5436,24 @@
     "transition",
     "live-ball",
     "defense"
+  ],
+  "drill-1on1-relief": [
+    "offense",
+    "1v1",
+    "perimeter",
+    "dribbling",
+    "cutting",
+    "triple-threat",
+    "live-ball-moves"
+  ],
+  "drill-1on1-team": [
+    "offense",
+    "1v1",
+    "perimeter",
+    "dribbling",
+    "triple-threat",
+    "pump-fake",
+    "live-ball-moves"
   ],
   "drill-1v1-zigzag-defense": [
     "defense",
@@ -5030,6 +5485,15 @@
     "cone-drill",
     "lateral-shuffle",
     "backpedal"
+  ],
+  "drill-21-shooting-youth": [
+    "shooting",
+    "competitive",
+    "passing",
+    "rebounding",
+    "youth",
+    "team",
+    "game-like"
   ],
   "drill-2v2-full-court-defense": [
     "defense",
@@ -5273,6 +5737,16 @@
     "ankle-stiffness",
     "plyometrics"
   ],
+  "drill-agility-tip-drill-s15": [
+    "agility",
+    "quickness",
+    "conditioning",
+    "balance",
+    "jumping",
+    "footwork",
+    "rebounding",
+    "defensive-footwork"
+  ],
   "drill-animal-agility-drills": [
     "conditioning",
     "agility",
@@ -5298,6 +5772,13 @@
     "ankle-strength",
     "foot-speed"
   ],
+  "drill-approach-and-close-out": [
+    "defense",
+    "closeout",
+    "1v1",
+    "perimeter",
+    "live-ball-moves"
+  ],
   "drill-around-the-world-spinouts": [
     "shooting",
     "footwork",
@@ -5305,6 +5786,14 @@
     "catch-and-shoot",
     "perimeter",
     "game-speed"
+  ],
+  "drill-around-the-world-youth": [
+    "shooting",
+    "competitive",
+    "youth",
+    "spot-shooting",
+    "game-like",
+    "progression"
   ],
   "drill-b-march-walk": [
     "speed",
@@ -5321,6 +5810,12 @@
     "stride-length",
     "hamstring",
     "ankle-stiffness"
+  ],
+  "drill-baby-hook-youth": [
+    "post",
+    "shooting",
+    "finishing",
+    "footwork"
   ],
   "drill-back-drop-flip": [
     "conditioning",
@@ -5577,6 +6072,22 @@
     "angle-cuts",
     "team-drill"
   ],
+  "drill-basic-three-step-read": [
+    "offense",
+    "motion-offense",
+    "cutting",
+    "help-side-defense",
+    "v-cut",
+    "backdoor-cut",
+    "reading-defense"
+  ],
+  "drill-basketball-sit-up": [
+    "conditioning",
+    "core",
+    "preseason",
+    "abdominals",
+    "strength"
+  ],
   "drill-basketball-wall-reaction-drills": [
     "reaction-time",
     "conditioning",
@@ -5677,6 +6188,15 @@
     "calisthenics",
     "floor-work"
   ],
+  "drill-bull-in-ring-rebounding": [
+    "rebounding",
+    "conditioning",
+    "competition",
+    "mental-toughness",
+    "post-play",
+    "agility",
+    "balance"
+  ],
   "drill-bullet-belt": [
     "speed",
     "acceleration",
@@ -5755,6 +6275,16 @@
     "layup",
     "jump-shot",
     "chair-drills"
+  ],
+  "drill-change-of-pace-dribble": [
+    "ball-handling",
+    "dribbling",
+    "change-of-pace",
+    "conditioning",
+    "full-court",
+    "youth",
+    "pivot",
+    "jump-stop"
   ],
   "drill-cheerleader-resistance-band": [
     "injury-prevention",
@@ -5852,6 +6382,14 @@
     "barbell",
     "pushing",
     "gym"
+  ],
+  "drill-close-the-gap-stance": [
+    "defense",
+    "help-side",
+    "footwork",
+    "charge",
+    "man-to-man",
+    "off-ball-defense"
   ],
   "drill-closeout-1-2": [
     "defense",
@@ -6037,6 +6575,17 @@
     "balance",
     "conditioning"
   ],
+  "drill-control-dribble-youth": [
+    "ball-handling",
+    "dribbling",
+    "conditioning",
+    "control-dribble",
+    "pivot",
+    "jump-stop",
+    "passing",
+    "full-court",
+    "youth"
+  ],
   "drill-convict-pushup": [
     "conditioning",
     "upper-body",
@@ -6052,6 +6601,23 @@
     "mobility",
     "calisthenics",
     "warm-up"
+  ],
+  "drill-count-slide-pivot-savvy": [
+    "rebounding",
+    "defense",
+    "footwork",
+    "post-play",
+    "shooting",
+    "conditioning"
+  ],
+  "drill-crossover-dribble-s15": [
+    "ball-handling",
+    "dribbling",
+    "crossover",
+    "change-of-direction",
+    "conditioning",
+    "pivoting",
+    "passing"
   ],
   "drill-crossover-shuffle-ladder": [
     "agility",
@@ -6116,6 +6682,58 @@
     "warm-up",
     "pre-practice"
   ],
+  "drill-defeat-help-and-recover": [
+    "offense",
+    "cutting",
+    "dribble-penetration",
+    "motion-offense",
+    "help-defense",
+    "youth"
+  ],
+  "drill-defending-cross-screens": [
+    "defense",
+    "cross-screen",
+    "man-to-man",
+    "communication",
+    "team-defense"
+  ],
+  "drill-defending-drag-sets": [
+    "defense",
+    "pick-and-roll",
+    "drag",
+    "transition",
+    "man-to-man",
+    "communication",
+    "team-defense"
+  ],
+  "drill-defending-middle-pnr": [
+    "defense",
+    "pick-and-roll",
+    "middle",
+    "man-to-man",
+    "team-defense",
+    "communication",
+    "rotation"
+  ],
+  "drill-defending-sideline-pnr": [
+    "defense",
+    "pick-and-roll",
+    "sideline",
+    "man-to-man",
+    "team-defense",
+    "communication",
+    "trap",
+    "rotation"
+  ],
+  "drill-defensive-cone": [
+    "defense",
+    "1-on-1",
+    "dribble",
+    "on-ball",
+    "triple-threat",
+    "competitive",
+    "conditioning"
+  ],
   "drill-defensive-fast-break-progressions": [
     "defense",
     "transition",
@@ -6138,6 +6756,35 @@
     "lateral-movement",
     "conditioning",
     "slides"
+  ],
+  "drill-defensive-step-youth": [
+    "defense",
+    "footwork",
+    "on-ball",
+    "man-to-man",
+    "advance-step",
+    "retreat-step",
+    "slide-step",
+    "individual"
+  ],
+  "drill-deny-the-flash-pivot-youth": [
+    "defense",
+    "man-to-man",
+    "denial",
+    "flash-pivot",
+    "post-defense",
+    "help-side",
+    "body-check"
+  ],
+  "drill-deny-the-wing-youth": [
+    "defense",
+    "man-to-man",
+    "denial",
+    "fence-slide",
+    "ball-side",
+    "wing",
+    "V-cut",
+    "backdoor"
   ],
   "drill-depth-jump-into-jump-shot": [
     "conditioning",
@@ -6187,6 +6834,24 @@
     "pick-and-roll",
     "big-men",
     "post"
+  ],
+  "drill-draw-the-charge-youth": [
+    "defense",
+    "charge",
+    "help-side",
+    "individual",
+    "flat-triangle",
+    "ball-you-man",
+    "man-to-man"
+  ],
+  "drill-dribble-closeout-youth": [
+    "defense",
+    "closeout",
+    "breakaway-drive",
+    "overplay",
+    "slide-step",
+    "swing-step",
+    "1on1"
   ],
   "drill-dribble-curl-off-screen": [
     "shooting",
@@ -6276,6 +6941,52 @@
     "footwork",
     "game-speed"
   ],
+  "drill-dribble-stop-jump-shot": [
+    "shooting",
+    "dribbling",
+    "stopping",
+    "footwork",
+    "pull-up",
+    "youth",
+    "conditioning"
+  ],
+  "drill-dribble-stop-pivot": [
+    "footwork",
+    "dribbling",
+    "stopping",
+    "pivoting",
+    "conditioning",
+    "youth"
+  ],
+  "drill-dribble-stop-pivot-pass-cut": [
+    "footwork",
+    "dribbling",
+    "stopping",
+    "pivoting",
+    "passing",
+    "cutting",
+    "v-cut",
+    "conditioning",
+    "youth"
+  ],
+  "drill-dribble-tag-s15": [
+    "ball-handling",
+    "ball-protection",
+    "competitive",
+    "quick-hands",
+    "defensive-instincts",
+    "fun"
+  ],
+  "drill-dribbling-off-wall-s15": [
+    "ball-handling",
+    "dribbling",
+    "agility",
+    "hand-quickness",
+    "ball-control",
+    "balance",
+    "conditioning",
+    "fingertip-control"
+  ],
   "drill-drive-and-kick-series": [
     "offense",
     "drive-and-kick",
@@ -6290,6 +7001,24 @@
     "conditioning",
     "change-of-direction",
     "quickness"
+  ],
+  "drill-drop-step-baseline-middle": [
+    "offense",
+    "post-play",
+    "low-post",
+    "drop-step",
+    "footwork",
+    "jump-stop",
+    "power-layup",
+    "baby-hook"
+  ],
+  "drill-dual-help-drill": [
+    "defense",
+    "help-side",
+    "charge",
+    "footwork",
+    "man-to-man",
+    "off-ball-defense"
   ],
   "drill-e-movement-cone": [
     "agility",
@@ -6349,6 +7078,18 @@
     "arch",
     "visualization",
     "form-shooting"
+  ],
+  "drill-eight-point-defensive-drill": [
+    "defense",
+    "man-to-man",
+    "comprehensive",
+    "strong-side",
+    "weak-side",
+    "post-defense",
+    "denial",
+    "closeout",
+    "flash-pivot",
+    "interception"
   ],
   "drill-elevated-bridge-hold": [
     "core",
@@ -6413,6 +7154,22 @@
     "individual-workout",
     "make-based"
   ],
+  "drill-fence-slide": [
+    "defense",
+    "denial",
+    "footwork",
+    "on-ball-defense",
+    "off-ball-defense",
+    "man-to-man"
+  ],
+  "drill-figure-8-dribble": [
+    "ball-handling",
+    "dribbling",
+    "touch",
+    "coordination",
+    "fingertips",
+    "youth"
+  ],
   "drill-figure-eights": [
     "agility",
     "footwork",
@@ -6437,6 +7194,13 @@
     "midrange",
     "individual-workout"
   ],
+  "drill-fingertip-drill": [
+    "ball-handling",
+    "touch",
+    "fingertips",
+    "individual",
+    "youth"
+  ],
   "drill-five-cone-snake": [
     "agility",
     "cone-drill",
@@ -6451,6 +7215,14 @@
     "transition",
     "conditioning",
     "live-play"
+  ],
+  "drill-five-on-five-no-defense": [
+    "offense",
+    "motion-offense",
+    "team-offense",
+    "half-court",
+    "decision-making",
+    "read-and-react"
   ],
   "drill-five-on-four-scramble": [
     "defense",
@@ -6569,6 +7341,22 @@
     "fade",
     "roll"
   ],
+  "drill-flip-ball-drill-youth": [
+    "shooting",
+    "fundamentals",
+    "alignment",
+    "youth",
+    "muscle-memory",
+    "wrist"
+  ],
+  "drill-flip-ball-off-wall": [
+    "shooting",
+    "alignment",
+    "fundamentals",
+    "youth",
+    "straight-stick",
+    "wall-drill"
+  ],
   "drill-flyspring": [
     "conditioning",
     "agility",
@@ -6605,6 +7393,13 @@
     "group-workout",
     "conditioning"
   ],
+  "drill-follow-the-rules-motion-offense": [
+    "offense",
+    "motion-offense",
+    "team-offense",
+    "decision-making",
+    "half-court"
+  ],
   "drill-forward-backward-roll-combo": [
     "agility",
     "tumbling",
@@ -6626,6 +7421,29 @@
     "lunges",
     "barbell",
     "bilateral"
+  ],
+  "drill-four-corner-stopping-pivoting": [
+    "footwork",
+    "dribbling",
+    "stopping",
+    "pivoting",
+    "passing",
+    "v-cut",
+    "conditioning",
+    "youth",
+    "team"
+  ],
+  "drill-four-individual-defensive-traits": [
+    "defense",
+    "man-to-man",
+    "help-side",
+    "denial",
+    "rotation",
+    "rebounding",
+    "closeout",
+    "flash-pivot",
+    "1on1",
+    "comprehensive"
   ],
   "drill-four-point-back-flip": [
     "conditioning",
@@ -6710,6 +7528,21 @@
     "body-control",
     "off-season"
   ],
+  "drill-front-foot-to-free-foot": [
+    "defense",
+    "on-ball-defense",
+    "footwork",
+    "man-to-man",
+    "stance",
+    "overplay"
+  ],
+  "drill-front-foot-to-pivot-foot": [
+    "defense",
+    "on-ball-defense",
+    "footwork",
+    "man-to-man",
+    "stance"
+  ],
   "drill-front-handspring": [
     "conditioning",
     "agility",
@@ -6729,6 +7562,23 @@
     "power",
     "off-season"
   ],
+  "drill-front-pivot-s15": [
+    "pivoting",
+    "footwork",
+    "ball-handling",
+    "passing",
+    "triple-threat",
+    "quickness",
+    "agility"
+  ],
+  "drill-fronting-post-youth": [
+    "post",
+    "defense",
+    "offense",
+    "fronting",
+    "lob-pass",
+    "passing"
+  ],
   "drill-full-body-pop-up-pushup": [
     "conditioning",
     "upper-body",
@@ -6737,12 +7587,30 @@
     "total-body",
     "pushing"
   ],
+  "drill-full-court-cutting": [
+    "offense",
+    "cutting",
+    "passing",
+    "conditioning",
+    "full-court",
+    "youth",
+    "layup"
+  ],
   "drill-full-court-transition-3s": [
     "shooting",
     "conditioning",
     "transition",
     "three-point",
     "full-court"
+  ],
+  "drill-fun-cone-dribbling": [
+    "ball-handling",
+    "dribbling",
+    "agility",
+    "change-of-pace",
+    "change-of-direction",
+    "conditioning",
+    "fun"
   ],
   "drill-galloping": [
     "speed",
@@ -6775,6 +7643,35 @@
     "help-defense",
     "shell-drill",
     "communication"
+  ],
+  "drill-guard-to-center-pattern": [
+    "offense",
+    "half-court",
+    "continuity",
+    "backdoor",
+    "high-post",
+    "double-screen",
+    "press-break",
+    "LA-offense"
+  ],
+  "drill-guard-to-forward-pattern": [
+    "offense",
+    "half-court",
+    "continuity",
+    "screening",
+    "ball-reversal",
+    "pick-and-roll",
+    "LA-offense"
+  ],
+  "drill-guard-to-guard-pattern": [
+    "offense",
+    "half-court",
+    "continuity",
+    "back-screen",
+    "pin-down",
+    "pick-and-roll",
+    "LA-offense",
+    "guard-play"
   ],
   "drill-h-movement-cone": [
     "agility",
@@ -6810,6 +7707,15 @@
     "sport-specific",
     "basketball-skill",
     "conditioning"
+  ],
+  "drill-half-spin-dribble-s15": [
+    "ball-handling",
+    "dribbling",
+    "change-of-direction",
+    "fakes",
+    "conditioning",
+    "pivoting",
+    "passing"
   ],
   "drill-half-super-pushup": [
     "conditioning",
@@ -6884,6 +7790,42 @@
     "half-court",
     "3-on-3"
   ],
+  "drill-help-and-recover-youth": [
+    "defense",
+    "help-side",
+    "hedge",
+    "help-and-recover",
+    "rotation",
+    "closeout",
+    "1-on-1",
+    "man-to-man"
+  ],
+  "drill-help-side-drill": [
+    "defense",
+    "help-side",
+    "footwork",
+    "man-to-man",
+    "off-ball-defense",
+    "flat-triangle"
+  ],
+  "drill-help-the-helper": [
+    "defense",
+    "help-side",
+    "weak-side",
+    "man-to-man",
+    "rotation",
+    "deny",
+    "fence-slide",
+    "rebounding"
+  ],
+  "drill-hesitation-dribble-s15": [
+    "ball-handling",
+    "dribbling",
+    "change-of-pace",
+    "conditioning",
+    "pivoting",
+    "passing"
+  ],
   "drill-hexagon-drill": [
     "agility",
     "footwork",
@@ -6898,6 +7840,14 @@
     "sprint-mechanics",
     "knee-drive",
     "conditioning"
+  ],
+  "drill-high-low-post-passing-youth": [
+    "post",
+    "passing",
+    "offense",
+    "footwork",
+    "high-low",
+    "reading-defense"
   ],
   "drill-hip-pullup": [
     "upper-body",
@@ -6985,6 +7935,15 @@
     "court-sense",
     "quick-feet"
   ],
+  "drill-in-and-out-dribble-s15": [
+    "ball-handling",
+    "dribbling",
+    "fakes",
+    "change-of-direction",
+    "conditioning",
+    "pivoting",
+    "passing"
+  ],
   "drill-in-and-out-shuffle-with-reaction": [
     "reaction-time",
     "agility",
@@ -7034,6 +7993,22 @@
     "explosive-power",
     "pushing"
   ],
+  "drill-interception-stance": [
+    "defense",
+    "denial",
+    "passing-lane",
+    "interception",
+    "footwork",
+    "man-to-man"
+  ],
+  "drill-interval-training-basketball": [
+    "conditioning",
+    "anaerobic",
+    "preseason",
+    "interval-training",
+    "speed",
+    "cardiovascular"
+  ],
   "drill-inverted-row-basketball": [
     "strength",
     "upper-body",
@@ -7050,6 +8025,15 @@
     "offense",
     "jab-step",
     "perimeter"
+  ],
+  "drill-jab-step-roll-rebounding": [
+    "rebounding",
+    "footwork",
+    "post-play",
+    "defense",
+    "conditioning",
+    "agility",
+    "balance"
   ],
   "drill-jump-roll-front-flip": [
     "conditioning",
@@ -7076,6 +8060,34 @@
     "conditioning",
     "footwork",
     "jump-rope"
+  ],
+  "drill-jump-stop-youth": [
+    "footwork",
+    "stopping",
+    "pivoting",
+    "ball-handling",
+    "conditioning",
+    "youth"
+  ],
+  "drill-jump-switching-youth": [
+    "defense",
+    "pick-and-roll",
+    "jump-switch",
+    "screen",
+    "on-ball",
+    "help-side",
+    "rotation",
+    "team",
+    "switching"
+  ],
+  "drill-jump-to-the-ball-youth": [
+    "defense",
+    "man-to-man",
+    "help-side",
+    "jump-to-ball",
+    "interception-stance",
+    "off-ball",
+    "team"
   ],
   "drill-jumping-pullover": [
     "upper-body",
@@ -7202,6 +8214,15 @@
     "rotation",
     "power"
   ],
+  "drill-lane-slide-s15": [
+    "defense",
+    "agility",
+    "quickness",
+    "conditioning",
+    "defensive-footwork",
+    "lateral-movement",
+    "slide-step"
+  ],
   "drill-lat-pull-down-basketball": [
     "strength",
     "upper-body",
@@ -7252,6 +8273,14 @@
     "team-drill",
     "off-screen"
   ],
+  "drill-lift-extend-flip": [
+    "shooting",
+    "fundamentals",
+    "youth",
+    "alignment",
+    "follow-through",
+    "muscle-memory"
+  ],
   "drill-line-slide-change-direction": [
     "footwork",
     "lateral-quickness",
@@ -7284,6 +8313,21 @@
     "lunge",
     "jumping"
   ],
+  "drill-lying-down-flip-ball": [
+    "shooting",
+    "fundamentals",
+    "alignment",
+    "youth",
+    "wrist",
+    "muscle-memory"
+  ],
+  "drill-make-em-to-move": [
+    "three-point-shooting",
+    "shooting",
+    "competition",
+    "team-drill",
+    "individual-accountability"
+  ],
   "drill-mass-ballhandling-pivoting": [
     "offense",
     "footwork",
@@ -7312,6 +8356,16 @@
     "offense",
     "screening",
     "team-drill"
+  ],
+  "drill-mass-wave-sliding": [
+    "defense",
+    "footwork",
+    "man-to-man",
+    "mass-drill",
+    "on-ball",
+    "advance-retreat-swing",
+    "fence-slide",
+    "team"
   ],
   "drill-mat-walk": [
     "rehabilitation",
@@ -7459,6 +8513,16 @@
     "core",
     "quickness"
   ],
+  "drill-mikan-baby-hook": [
+    "post-play",
+    "shooting",
+    "finishing",
+    "ambidextrous",
+    "conditioning",
+    "youth",
+    "baby-hook",
+    "fundamentals"
+  ],
   "drill-mirror-drills-box-square-shuffle": [
     "quickness",
     "lateral-speed",
@@ -7467,6 +8531,25 @@
     "defensive-slide",
     "mirroring",
     "conditioning"
+  ],
+  "drill-mirror-slap-s15": [
+    "quickness",
+    "agility",
+    "footwork",
+    "defense",
+    "offense",
+    "reaction-time",
+    "mirroring",
+    "pivoting"
+  ],
+  "drill-mirror-step-youth": [
+    "defense",
+    "footwork",
+    "on-ball",
+    "mirror",
+    "individual",
+    "man-to-man",
+    "reactive"
   ],
   "drill-mirroring-partner-sprints": [
     "quickness",
@@ -7536,6 +8619,16 @@
     "power",
     "calisthenics"
   ],
+  "drill-nba-shooting-drill-youth": [
+    "shooting",
+    "competitive",
+    "game-simulation",
+    "youth",
+    "individual",
+    "three-point",
+    "post-moves",
+    "free-throw"
+  ],
   "drill-no-hands-kip-up": [
     "conditioning",
     "agility",
@@ -7543,6 +8636,14 @@
     "explosive-power",
     "calisthenics",
     "floor-work"
+  ],
+  "drill-no-rim-shooting": [
+    "shooting",
+    "arc",
+    "touch",
+    "youth",
+    "accuracy",
+    "fundamentals"
   ],
   "drill-nordic-hamstring-curl": [
     "strength",
@@ -7638,6 +8739,13 @@
     "unilateral",
     "conditioning"
   ],
+  "drill-one-on-one-blockouts": [
+    "rebounding",
+    "defense",
+    "footwork",
+    "post-play",
+    "conditioning"
+  ],
   "drill-one-on-one-cutthroat-live": [
     "1-on-1",
     "live-ball-moves",
@@ -7646,6 +8754,52 @@
     "defense",
     "ball-handling",
     "game-simulation"
+  ],
+  "drill-one-on-one-lane-drill-youth": [
+    "offense",
+    "defense",
+    "one-on-one",
+    "dribbling",
+    "perimeter",
+    "decision-making"
+  ],
+  "drill-one-on-one-multiple-skills": [
+    "defense",
+    "man-to-man",
+    "help-side",
+    "post-defense",
+    "closeout",
+    "rotation",
+    "flash-pivot",
+    "comprehensive",
+    "1on1"
+  ],
+  "drill-one-on-one-on-one": [
+    "offense",
+    "defense",
+    "1v1",
+    "competitive",
+    "scoring",
+    "live-ball-moves",
+    "post-moves"
+  ],
+  "drill-one-on-one-on-one-on-one": [
+    "offense",
+    "defense",
+    "1v1",
+    "competitive",
+    "live-ball-moves",
+    "scoring",
+    "conditioning"
+  ],
+  "drill-one-on-two-pivoting": [
+    "footwork",
+    "pivoting",
+    "ball-handling",
+    "step-through",
+    "trapping",
+    "defense",
+    "youth"
   ],
   "drill-open-court-dribble-moves": [
     "ball-handling",
@@ -7692,6 +8846,16 @@
     "shoulder",
     "strengthening",
     "rotator-cuff"
+  ],
+  "drill-overplay-step-youth": [
+    "defense",
+    "overplay",
+    "on-ball",
+    "dribble",
+    "full-court",
+    "slide-step",
+    "man-to-man",
+    "forcing"
   ],
   "drill-pallof-press": [
     "conditioning",
@@ -7757,6 +8921,16 @@
     "tubing",
     "conditioning"
   ],
+  "drill-paye-drill": [
+    "offense",
+    "defense",
+    "ball-handling",
+    "1v1",
+    "footwork",
+    "decision-making",
+    "rocker-step",
+    "jab-series"
+  ],
   "drill-pectoralis-stretch": [
     "conditioning",
     "injury-prevention",
@@ -7764,6 +8938,15 @@
     "chest",
     "flexibility",
     "stretching"
+  ],
+  "drill-penetration-drill": [
+    "offense",
+    "defense",
+    "motion-offense",
+    "dribble-penetration",
+    "help-side",
+    "cutting",
+    "3v3"
   ],
   "drill-physioball-hamstring-curl": [
     "injury-prevention",
@@ -7859,6 +9042,42 @@
     "fronting",
     "man-to-man",
     "low-post"
+  ],
+  "drill-post-moves-passing-shooting-rebounding": [
+    "post-play",
+    "rebounding",
+    "defense",
+    "shooting",
+    "passing",
+    "team",
+    "integration",
+    "youth"
+  ],
+  "drill-post-screening-youth": [
+    "post",
+    "screening",
+    "offense",
+    "motion-offense",
+    "high-low",
+    "reads"
+  ],
+  "drill-post-spin-half-spin": [
+    "offense",
+    "post-play",
+    "low-post",
+    "spin-move",
+    "half-spin",
+    "footwork",
+    "separation",
+    "post-moves"
+  ],
+  "drill-post-up-mechanics-youth": [
+    "post",
+    "offense",
+    "footwork",
+    "shooting",
+    "finishing",
+    "one-on-one"
   ],
   "drill-posterior-capsule-stretch": [
     "conditioning",
@@ -8048,6 +9267,30 @@
     "footwork",
     "conditioning"
   ],
+  "drill-quick-foot-movement-s15": [
+    "quickness",
+    "agility",
+    "balance",
+    "conditioning",
+    "footwork",
+    "pivoting",
+    "foot-speed"
+  ],
+  "drill-quick-hands-s15": [
+    "defense",
+    "quickness",
+    "hand-quickness",
+    "defensive-stance",
+    "deflection",
+    "1-on-1",
+    "ball-security"
+  ],
+  "drill-quick-shooting-two-players-youth": [
+    "shooting",
+    "passing",
+    "rebounding",
+    "conditioning"
+  ],
   "drill-quick-square-ups": [
     "shooting",
     "footwork",
@@ -8113,6 +9356,22 @@
     "safety",
     "rolling"
   ],
+  "drill-rebound-pass-shoot-youth": [
+    "shooting",
+    "rebounding",
+    "conditioning",
+    "cutting",
+    "teamwork"
+  ],
+  "drill-recovery": [
+    "offense",
+    "defense",
+    "1v1",
+    "loose-ball",
+    "competitive",
+    "transition",
+    "conditioning"
+  ],
   "drill-renegade-row-basketball": [
     "strength",
     "upper-body",
@@ -8129,6 +9388,15 @@
     "strengthening",
     "injury-prevention"
   ],
+  "drill-retreating-dribble": [
+    "ball-handling",
+    "dribbling",
+    "ball-protection",
+    "trapping",
+    "conditioning",
+    "pivoting",
+    "passing"
+  ],
   "drill-reverse-hip-extension-hold": [
     "core",
     "glutes",
@@ -8136,6 +9404,14 @@
     "isometric",
     "strength",
     "rehabilitation"
+  ],
+  "drill-reverse-pivot-youth": [
+    "footwork",
+    "pivoting",
+    "ball-handling",
+    "passing",
+    "youth",
+    "conditioning"
   ],
   "drill-reverse-replace-drive": [
     "passing",
@@ -8256,6 +9532,13 @@
     "proprioception",
     "injury-prevention"
   ],
+  "drill-roll-step-post-youth": [
+    "post",
+    "offense",
+    "footwork",
+    "pivoting",
+    "one-on-one"
+  ],
   "drill-rolling-sit-up": [
     "conditioning",
     "core",
@@ -8324,6 +9607,18 @@
     "power",
     "kinesthetic-awareness"
   ],
+  "drill-running-outside-the-lines-s15": [
+    "balance",
+    "quickness",
+    "agility",
+    "conditioning",
+    "footwork",
+    "defense",
+    "offense",
+    "warm-up",
+    "pivoting",
+    "dribbling"
+  ],
   "drill-s-drill-cone": [
     "agility",
     "cone-drill",
@@ -8331,6 +9626,82 @@
     "change-of-direction",
     "sprint",
     "footwork"
+  ],
+  "drill-s15-channeling": [
+    "defense",
+    "full-court",
+    "on-ball-defense",
+    "channeling",
+    "trapping",
+    "pressure-defense",
+    "dribble-containment"
+  ],
+  "drill-s15-five-on-five": [
+    "offense",
+    "defense",
+    "full-court",
+    "motion-offense",
+    "team-defense",
+    "scrimmage",
+    "five-on-five"
+  ],
+  "drill-s15-run-and-jump": [
+    "defense",
+    "full-court",
+    "man-to-man",
+    "run-and-jump",
+    "trapping",
+    "pressure-defense",
+    "team-defense",
+    "defensive-stunts"
+  ],
+  "drill-s15-run-and-trap": [
+    "defense",
+    "full-court",
+    "trapping",
+    "pressure-defense",
+    "defensive-stunts",
+    "interception",
+    "man-to-man"
+  ],
+  "drill-s15-shell-drill": [
+    "defense",
+    "half-court",
+    "man-to-man",
+    "shell-drill",
+    "help-defense",
+    "rotation",
+    "closeout",
+    "post-defense",
+    "screening"
+  ],
+  "drill-s15-trap-the-dribble": [
+    "defense",
+    "full-court",
+    "trapping",
+    "pressure-defense",
+    "defensive-stunts",
+    "channeling",
+    "interception"
+  ],
+  "drill-s15-trap-the-pass": [
+    "defense",
+    "full-court",
+    "trapping",
+    "pressure-defense",
+    "defensive-stunts",
+    "interception",
+    "pass-trap"
+  ],
+  "drill-s15-zigzag-with-trapper": [
+    "defense",
+    "offense",
+    "full-court",
+    "dribbling",
+    "trapping",
+    "channeling",
+    "pressure-defense",
+    "zigzag"
   ],
   "drill-scissor-jumps": [
     "conditioning",
@@ -8584,6 +9955,15 @@
     "quickness",
     "lateral"
   ],
+  "drill-side-to-side-dribble": [
+    "ball-handling",
+    "dribbling",
+    "touch",
+    "ambidextrous",
+    "youth",
+    "speed-dribble",
+    "control-dribble"
+  ],
   "drill-side-to-side-skiers-angle-board": [
     "agility",
     "footwork",
@@ -8700,6 +10080,13 @@
     "proprioception",
     "conditioning"
   ],
+  "drill-six-basket-free-throws": [
+    "free-throws",
+    "shooting",
+    "pressure",
+    "competition",
+    "team-drill"
+  ],
   "drill-skater-hop": [
     "conditioning",
     "plyometrics",
@@ -8733,6 +10120,15 @@
     "ankle-stiffness",
     "conditioning"
   ],
+  "drill-skip-pass-closeout-youth": [
+    "defense",
+    "closeout",
+    "skip-pass",
+    "interception-stance",
+    "help-side",
+    "off-ball",
+    "1on1"
+  ],
   "drill-slap-tuck-jump": [
     "plyometrics",
     "jumping",
@@ -8748,6 +10144,12 @@
     "flexibility",
     "stretching",
     "rotator-cuff"
+  ],
+  "drill-slide-step-dribble-youth": [
+    "post",
+    "dribbling",
+    "footwork",
+    "ball-handling"
   ],
   "drill-small-space-calisthenics": [
     "conditioning",
@@ -8802,6 +10204,34 @@
     "ball-handling",
     "athleticism",
     "solo-training"
+  ],
+  "drill-speed-dribble-youth": [
+    "ball-handling",
+    "dribbling",
+    "conditioning",
+    "speed-dribble",
+    "pivot",
+    "jump-stop",
+    "passing",
+    "full-court",
+    "youth"
+  ],
+  "drill-spider-dribble": [
+    "ball-handling",
+    "touch",
+    "hand-eye-coordination",
+    "hand-quickness",
+    "youth",
+    "fingertips"
+  ],
+  "drill-spin-reverse-dribble-s15": [
+    "ball-handling",
+    "dribbling",
+    "spin-move",
+    "change-of-direction",
+    "conditioning",
+    "pivoting",
+    "passing"
   ],
   "drill-spinouts-midrange": [
     "shooting",
@@ -8895,6 +10325,14 @@
     "quickness",
     "plyometrics",
     "core"
+  ],
+  "drill-standing-figure-8-ballhandling": [
+    "ball-handling",
+    "touch",
+    "coordination",
+    "individual",
+    "youth",
+    "fingertips"
   ],
   "drill-standing-front-flip": [
     "agility",
@@ -9014,6 +10452,14 @@
     "hip-strength",
     "ankle-strength"
   ],
+  "drill-stride-stop-youth": [
+    "footwork",
+    "stopping",
+    "shooting",
+    "dribbling",
+    "conditioning",
+    "youth"
+  ],
   "drill-suicide-jump": [
     "plyometrics",
     "jumping",
@@ -9039,6 +10485,13 @@
     "anterior-chain",
     "explosive-power"
   ],
+  "drill-superman-rebounding": [
+    "rebounding",
+    "conditioning",
+    "individual",
+    "agility",
+    "quickness"
+  ],
   "drill-supine-basketball-core-pass": [
     "conditioning",
     "core",
@@ -9054,6 +10507,16 @@
     "grip",
     "conditioning",
     "core"
+  ],
+  "drill-team-dribble-tag": [
+    "ball-handling",
+    "ball-protection",
+    "quick-footwork",
+    "peripheral-vision",
+    "agility",
+    "conditioning",
+    "fun",
+    "competitive"
   ],
   "drill-thoracic-spine-mobility": [
     "conditioning",
@@ -9086,6 +10549,55 @@
     "conditioning",
     "movement-skills"
   ],
+  "drill-three-on-three-passing-cutting-dribbling-spacing": [
+    "offense",
+    "cutting",
+    "dribbling",
+    "passing",
+    "spacing",
+    "motion-offense",
+    "3-on-3",
+    "youth"
+  ],
+  "drill-three-on-three-passing-cutting-spacing": [
+    "offense",
+    "cutting",
+    "passing",
+    "spacing",
+    "motion-offense",
+    "3-on-3",
+    "no-dribble",
+    "youth"
+  ],
+  "drill-three-player-continuous-screening": [
+    "offense",
+    "screening",
+    "motion-offense",
+    "cutting",
+    "ball-movement"
+  ],
+  "drill-three-player-cutting": [
+    "offense",
+    "cutting",
+    "motion-offense",
+    "passing",
+    "spacing",
+    "youth"
+  ],
+  "drill-three-point-shooting-competitive": [
+    "three-point-shooting",
+    "shooting",
+    "competition",
+    "team-drill",
+    "pressure"
+  ],
+  "drill-three-quarter-post-drill-youth": [
+    "post",
+    "defense",
+    "offense",
+    "footwork",
+    "one-on-one"
+  ],
   "drill-three-step-foot-tap-sprint": [
     "quickness",
     "first-step",
@@ -9110,6 +10622,14 @@
     "rebounding",
     "timed",
     "competitive"
+  ],
+  "drill-tip-ball-off-wall-pivot": [
+    "rebounding",
+    "agility",
+    "balance",
+    "conditioning",
+    "footwork",
+    "individual"
   ],
   "drill-toss-get-up-catch": [
     "agility",
@@ -9191,6 +10711,78 @@
     "kinesthetic-awareness",
     "conditioning",
     "progression"
+  ],
+  "drill-two-basket-free-throws": [
+    "free-throws",
+    "shooting",
+    "pressure",
+    "competition",
+    "team-drill"
+  ],
+  "drill-two-line-moving": [
+    "passing",
+    "movement",
+    "conditioning",
+    "youth",
+    "ball-handling",
+    "team"
+  ],
+  "drill-two-line-standing-still": [
+    "passing",
+    "fundamentals",
+    "youth",
+    "ball-handling"
+  ],
+  "drill-two-on-two-pass-dribble-cut": [
+    "offense",
+    "cutting",
+    "defense",
+    "motion-offense",
+    "passing",
+    "dribbling",
+    "2-on-2",
+    "youth"
+  ],
+  "drill-two-on-two-rebounding": [
+    "rebounding",
+    "post-play",
+    "defense",
+    "team",
+    "conditioning",
+    "passing",
+    "shooting"
+  ],
+  "drill-two-on-two-recognition": [
+    "offense",
+    "cutting",
+    "defense",
+    "motion-offense",
+    "2-on-2",
+    "recognition",
+    "youth"
+  ],
+  "drill-two-player-cutting": [
+    "offense",
+    "cutting",
+    "motion-offense",
+    "passing",
+    "spacing",
+    "youth"
+  ],
+  "drill-two-step-post-defense-youth": [
+    "post",
+    "defense",
+    "footwork",
+    "one-on-one"
+  ],
+  "drill-ucla-movement": [
+    "offense",
+    "half-court",
+    "spacing",
+    "screening",
+    "passing",
+    "continuity",
+    "decision-making"
   ],
   "drill-unilateral-jump-calisthenics": [
     "explosiveness",
@@ -9286,6 +10878,14 @@
     "fast-feet",
     "calisthenics",
     "coordination"
+  ],
+  "drill-wave-good-bye": [
+    "shooting",
+    "fundamentals",
+    "wrist",
+    "youth",
+    "alignment",
+    "muscle-memory"
   ],
   "drill-weak-side-help-conditioning": [
     "defense",
@@ -9422,6 +11022,83 @@
     "transition",
     "conditioning",
     "layup"
+  ],
+  "drill-youth-basic-layup": [
+    "shooting",
+    "layup",
+    "passing",
+    "conditioning",
+    "rebounding",
+    "youth"
+  ],
+  "drill-youth-combination-dribbling": [
+    "dribbling",
+    "offense",
+    "footwork",
+    "combination",
+    "youth"
+  ],
+  "drill-youth-crossover-move": [
+    "dribbling",
+    "offense",
+    "footwork",
+    "crossover",
+    "youth"
+  ],
+  "drill-youth-half-spin-move": [
+    "dribbling",
+    "offense",
+    "footwork",
+    "half-spin",
+    "youth"
+  ],
+  "drill-youth-in-and-out-move": [
+    "dribbling",
+    "offense",
+    "footwork",
+    "in-and-out",
+    "youth"
+  ],
+  "drill-youth-paye-drill": [
+    "offense",
+    "defense",
+    "footwork",
+    "read-and-react",
+    "1-on-1",
+    "youth",
+    "jab-step",
+    "dribbling"
+  ],
+  "drill-youth-post-position": [
+    "post",
+    "offense",
+    "footwork",
+    "post-moves",
+    "drop-step",
+    "youth"
+  ],
+  "drill-youth-rocker-step": [
+    "offense",
+    "footwork",
+    "jab-step",
+    "rocker-step",
+    "triple-threat",
+    "youth"
+  ],
+  "drill-youth-spin-move": [
+    "dribbling",
+    "offense",
+    "footwork",
+    "spin-move",
+    "youth"
+  ],
+  "drill-youth-triple-threat-position": [
+    "offense",
+    "triple-threat",
+    "footwork",
+    "pivoting",
+    "V-cut",
+    "youth"
   ],
   "drill-ytw-shoulder": [
     "injury-prevention",
@@ -10134,6 +11811,15 @@
     "kickout",
     "quick-hitter"
   ],
+  "play-box-cross-2-blob": [
+    "blob",
+    "baseline",
+    "cross-screen",
+    "lob",
+    "layup",
+    "box-set",
+    "flexible-nomenclature"
+  ],
   "play-box-loop-post": [
     "SLOB",
     "man-to-man",
@@ -10150,6 +11836,31 @@
     "three-point",
     "double-screen",
     "box-set"
+  ],
+  "play-celtics-post-drop": [
+    "post-up",
+    "backdoor",
+    "down-screen",
+    "back-screen",
+    "lob",
+    "cutting"
+  ],
+  "play-celtics-x-action": [
+    "ball-screen",
+    "down-screen",
+    "back-screen",
+    "PnR",
+    "lob",
+    "post-up",
+    "motion",
+    "cutting"
+  ],
+  "play-charlotte-pnr-back-screen": [
+    "ball-screen",
+    "back-screen",
+    "post-up",
+    "PnR",
+    "lane-cross"
   ],
   "play-chin-series": [
     "continuity",
@@ -10175,6 +11886,23 @@
     "box-set",
     "screen-the-screener",
     "quick-hitter"
+  ],
+  "play-detroit-double-pnr-series": [
+    "ball-screen",
+    "double-screen",
+    "staggered",
+    "PnR",
+    "roll-and-pop",
+    "weak-side-spot-up"
+  ],
+  "play-detroit-step-up-flare": [
+    "ball-screen",
+    "step-up",
+    "flare",
+    "back-screen",
+    "down-screen",
+    "skip-pass",
+    "PnR"
   ],
   "play-diagonal-screen": [
     "diagonal-screen",
@@ -10241,6 +11969,30 @@
     "hand-off",
     "deception"
   ],
+  "play-forward-oriented-attack": [
+    "forward-play",
+    "hand-off",
+    "post-up",
+    "staggered-screen",
+    "split-action",
+    "half-court"
+  ],
+  "play-guard-oriented-attack": [
+    "guard-play",
+    "down-screen",
+    "pick-and-roll",
+    "dribble-handoff",
+    "half-court"
+  ],
+  "play-hawks-zipper-cross-screen": [
+    "zipper",
+    "back-screen",
+    "cross-screen",
+    "lob",
+    "pick-the-picker",
+    "post-up",
+    "combination"
+  ],
   "play-high-pick-series": [
     "continuity",
     "high-pick",
@@ -10267,6 +12019,14 @@
     "motion",
     "half-court"
   ],
+  "play-indiana-box-high-x": [
+    "box-set",
+    "cross-screen",
+    "down-screen",
+    "post-up",
+    "combination",
+    "high-post-X"
+  ],
   "play-inside-isolate": [
     "post-isolation",
     "mismatch",
@@ -10275,6 +12035,15 @@
     "spacing",
     "perimeter-screens"
   ],
+  "play-inside-pick-the-picker-blob": [
+    "blob",
+    "baseline",
+    "pick-the-picker",
+    "stagger-screen",
+    "layup",
+    "deception",
+    "score-off-inbounds"
+  ],
   "play-iverson-ram": [
     "iverson-cut",
     "pick-and-roll",
@@ -10282,6 +12051,32 @@
     "down-screen",
     "wing-exchange",
     "half-court"
+  ],
+  "play-knicks-zipper-baseline-triple": [
+    "zipper",
+    "staggered-screen",
+    "PnR",
+    "isolation",
+    "elbow-screen",
+    "post-up",
+    "combination"
+  ],
+  "play-line-blob": [
+    "blob",
+    "baseline",
+    "pressure-break",
+    "line-formation",
+    "inbounds",
+    "adaptable"
+  ],
+  "play-lob-blob": [
+    "blob",
+    "baseline",
+    "lob",
+    "deception",
+    "cross-screen",
+    "post",
+    "frontcourt"
   ],
   "play-loop-fly-slob": [
     "SLOB",
@@ -10301,6 +12096,39 @@
     "draw-foul",
     "interior-passing"
   ],
+  "play-miami-pnr-baseline-screening": [
+    "ball-screen",
+    "PnR",
+    "baseline-screen",
+    "down-screen",
+    "triple-stack",
+    "skip-pass"
+  ],
+  "play-minnesota-hawk-combination": [
+    "hawk-cut",
+    "back-screen",
+    "double-screen",
+    "PnR",
+    "isolation",
+    "combination",
+    "staggered-screen"
+  ],
+  "play-minnesota-triple-pnr": [
+    "ball-screen",
+    "triple-screen",
+    "double-stack",
+    "PnR",
+    "post-feed",
+    "weak-side-clear"
+  ],
+  "play-new-jersey-loop-action": [
+    "staggered-screen",
+    "baseline-screen",
+    "loop",
+    "post-up",
+    "early-offense",
+    "shooter"
+  ],
   "play-option-slob": [
     "SLOB",
     "man-to-man",
@@ -10309,6 +12137,15 @@
     "box-set",
     "catch-and-shoot",
     "on-ball-screen"
+  ],
+  "play-orlando-angled-pnr": [
+    "ball-screen",
+    "angled-PnR",
+    "staggered-screen",
+    "weak-side",
+    "pop",
+    "roll",
+    "skip"
   ],
   "play-pass-and-cut-away": [
     "continuity",
@@ -10326,6 +12163,15 @@
     "high-post",
     "motion",
     "half-court"
+  ],
+  "play-philadelphia-baseline-screening": [
+    "staggered-screen",
+    "flare",
+    "isolation",
+    "back-screen",
+    "PnR",
+    "lob",
+    "handoff"
   ],
   "play-pick-and-roll-layered": [
     "pick-and-roll",
@@ -10352,6 +12198,24 @@
     "decoy",
     "half-court"
   ],
+  "play-power-cross-attack": [
+    "low-post",
+    "center-oriented",
+    "screen-the-screener",
+    "cross-screen",
+    "inside-out",
+    "indirect-entry",
+    "half-court"
+  ],
+  "play-power-down-attack": [
+    "low-post",
+    "center-oriented",
+    "inside-out",
+    "down-screen",
+    "split-action",
+    "ball-reversal",
+    "half-court"
+  ],
   "play-prowl-slob": [
     "SLOB",
     "man-to-man",
@@ -10368,6 +12232,22 @@
     "double-screen",
     "motion",
     "half-court"
+  ],
+  "play-san-antonio-early-offense-corner-fill": [
+    "early-offense",
+    "post-up",
+    "high-low",
+    "ball-reversal",
+    "transition",
+    "pick-and-roll"
+  ],
+  "play-san-antonio-guard-through": [
+    "early-offense",
+    "post-up",
+    "high-low",
+    "cross-screen",
+    "pick-and-roll",
+    "transition"
   ],
   "play-selection-principles": [
     "offense",
@@ -10412,6 +12292,14 @@
     "layup",
     "pull-up"
   ],
+  "play-three-point-x-out-slob": [
+    "slob",
+    "three-point",
+    "pick-the-picker",
+    "screening",
+    "down-3",
+    "frontcourt"
+  ],
   "play-triangle-slob": [
     "SLOB",
     "man-to-man",
@@ -10428,12 +12316,55 @@
     "post-up",
     "half-court"
   ],
+  "play-utah-jazz-ucla-action": [
+    "UCLA-cut",
+    "staggered-screen",
+    "back-screen",
+    "pick-the-picker",
+    "PnR",
+    "post-up",
+    "high-low"
+  ],
+  "play-versus-1-3-1": [
+    "zone-offense",
+    "1-3-1",
+    "half-court",
+    "lob",
+    "misdirection",
+    "ball-reversal",
+    "special-situations"
+  ],
+  "play-versus-box-and-one": [
+    "zone-offense",
+    "box-and-one",
+    "half-court",
+    "passing-triangle",
+    "special-situations",
+    "disruptive-defense"
+  ],
+  "play-versus-triangle-and-two": [
+    "zone-offense",
+    "triangle-and-two",
+    "half-court",
+    "overload",
+    "special-situations",
+    "disruptive-defense",
+    "rebounding"
+  ],
   "play-x-cross": [
     "flex-screen",
     "high-post",
     "off-ball-screen",
     "man-to-man",
     "half-court"
+  ],
+  "play-x-out-single-double": [
+    "slob",
+    "three-point",
+    "stagger-screen",
+    "down-3",
+    "frontcourt",
+    "baseline-set"
   ],
   "play-zipper-curl": [
     "zipper-cut",

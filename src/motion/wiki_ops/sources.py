@@ -31,6 +31,10 @@ SOURCE_PDFS: Final[dict[str, str]] = {
     "S10": "basketball-sports-medicine-and-science.pdf",
     "S11": "strength-training-for-basketball-nsca.pdf",
     "S12": "improving-practice-performance-basketball.pdf",
+    # Tier 2 ingest batch — added 2026-04-20
+    "S13": "winning-basketball-fundamentals.pdf",
+    "S14": "basketball-playbook-2.pdf",
+    "S15": "youth-basketball-drills.pdf",
 }
 
 

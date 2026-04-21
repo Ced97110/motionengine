@@ -1255,3 +1255,128 @@
 - Created: concept-acl-return-to-sport-psychology.md, concept-basketball-player-retirement-psychology.md, concept-kinesiophobia-basketball-rehab.md, concept-basketball-mindfulness.md
 - Updated: (none)
 - Notes: Basketball Sports Medicine and Science (S10), pp.1007-1018: Chapter 80 - Psychological aspects of return to sport after ACL reconstruction (kinesiophobia, ACL-RSI, TSK-11, K-SES, psychological interventions, movement patterns); Chapter 81 - Retired professional basketball player psychological aspects (retirement transition, mindfulness, mental preparation).
+
+## [2026-04-20] ingest | basketball playbook 2 (pp.1-20)
+- Created: source-basketball-playbook-2.md, concept-early-offense-philosophy.md, play-san-antonio-early-offense-corner-fill.md, play-san-antonio-guard-through.md, concept-nba-scouting-philosophy.md
+- Updated: (none)
+- Notes: Basketball Playbook 2 (S14) — Cover, TOC, Introduction (positions, symbols, scouting philosophy), Chapter 1: Early Offense (San Antonio Spurs Popovich system — Corner Fill, Corner Fill with Dribble Entry, Corner Fill with PnR, Guard Through Action, Through with Cross Screen, High Post Dive Action)
+
+## [2026-04-20] ingest | basketball playbook 2 (pp.41-60)
+- Created: play-detroit-step-up-flare.md, play-detroit-double-pnr-series.md, play-minnesota-triple-pnr.md, play-charlotte-pnr-back-screen.md, play-orlando-angled-pnr.md, play-miami-pnr-baseline-screening.md, play-new-jersey-loop-action.md, play-philadelphia-baseline-screening.md, concept-step-up-pnr.md, concept-loop-action-nba.md
+- Updated: source-basketball-playbook-2.md
+- Notes: Basketball Playbook 2, pp.27-46: Chapter 3 (Pick-and-Roll Plays) and Chapter 4 (Baseline Screening Plays) — Detroit Pistons step-up flare, stacked/staggered double PnR, Minnesota triple PnR, Charlotte Hornets PnR with back screen, Orlando Magic angled PnR, Miami Heat PnR into baseline screening, New Jersey/Milwaukee Loop action, Philadelphia 76ers baseline screening plays
+
+## [2026-04-20] ingest | basketball playbook 2 (pp.61-80)
+- Created: play-celtics-x-action.md, play-celtics-post-drop.md, play-utah-jazz-ucla-action.md, play-knicks-zipper-baseline-triple.md, play-hawks-zipper-cross-screen.md, play-minnesota-hawk-combination.md, play-indiana-box-high-x.md
+- Updated: source-basketball-playbook-2.md
+- Notes: Basketball Playbook 2, pp.47-65: Chapter 5 (1-4 High-Post Set — Boston Celtics X Action, Utah Jazz UCLA Action) and Chapter 6 (Combination Plays — NY Knicks Zipper-to-Baseline Triple, Atlanta Hawks Zipper-to-Cross Screen, Minnesota Hawk Combination, Indiana Box Set)
+
+## [2026-04-20] ingest | winning basketball fundamentals (pp.1-20)
+- Created: source-winning-basketball-fundamentals.md, concept-six-guiding-principles.md, concept-basketball-preseason-conditioning-rose.md, drill-interval-training-basketball.md, drill-basketball-sit-up.md
+- Updated: (none)
+- Notes: Winning Basketball Fundamentals by Lee Rose (S13) — Pages 1-20: Title page, table of contents, foreword, preface, acknowledgments, key to diagrams, Chapter 1 (Six Guiding Principles) — conditioning philosophy, interval training system, preseason program structure, plyometrics introduction, sit-up drill.
+
+## [2026-04-20] ingest | winning basketball fundamentals (pp.61-80)
+- Created: concept-performance-rating-system.md, concept-hustle-board.md, concept-individual-offensive-skills-framework.md
+- Updated: source-winning-basketball-fundamentals.md
+- Notes: Winning Basketball Fundamentals Ch.3 (Performance Rating System, pp.47-63) and Ch.4 intro (Individual Offensive Skills / Athletic Tools, pp.65-66). Source ID: S13.
+
+## [2026-04-20] ingest | winning basketball fundamentals (pp.121-140)
+- Created: concept-offensive-system-design.md, play-guard-oriented-attack.md, play-forward-oriented-attack.md, play-power-down-attack.md, play-power-cross-attack.md, concept-free-throw-strategy.md, concept-three-point-shot-trends.md, drill-six-basket-free-throws.md, drill-two-basket-free-throws.md, drill-three-point-shooting-competitive.md, drill-make-em-to-move.md
+- Updated: source-winning-basketball-fundamentals.md
+- Notes: S13, pp.107-125: Chapter 5 Offensive Priorities — fitting into an offensive system, guard-oriented attack, forward-oriented attack, low-post-oriented attack (power down, power cross), free throw philosophy and data, three-point shot trends, and competitive shooting drills.
+
+## [2026-04-20] ingest | winning basketball fundamentals (pp.141-160)
+- Created: concept-la-offense.md, drill-ucla-movement.md, drill-guard-to-forward-pattern.md, drill-guard-to-guard-pattern.md, drill-guard-to-center-pattern.md, concept-flex-offense-s13.md, concept-triangle-offense-s13.md
+- Updated: source-winning-basketball-fundamentals.md
+- Notes: Winning Basketball Fundamentals Ch.6 pp.127-146: LA Offense (philosophy, guard-to-forward/guard-to-guard/guard-to-center pass patterns), Flex Offense (full cycle), Triangle Offense (options 1-4, isolation, transition to opposite side). Source ID S13.
+
+## [2026-04-20] ingest | winning basketball fundamentals (pp.221-240)
+- Created: concept-defending-pin-down-screens.md, drill-defending-cross-screens.md, concept-defending-cross-screen-sts.md, drill-defending-sideline-pnr.md, concept-pnr-defense-s13.md, drill-defending-middle-pnr.md, drill-defending-drag-sets.md, concept-disrupting-full-court-transitions.md, concept-switching-defenses.md, concept-defensive-unit-coordination.md, concept-foul-policy-basketball.md
+- Updated: source-winning-basketball-fundamentals.md
+- Notes: Chapter 8 (pp.207-223) and Chapter 9 start (pp.225-226): Team defense — pin-down, cross screen, cross-screen screen-the-screener, sideline PnR, middle PnR, drag sets, disrupting full-court transitions, switching defenses, defensive unit coordination (player input, clock management, foul strategy, end-of-game decisions). Chapter 9: Creating Your Own Foul Policy.
+
+## [2026-04-20] ingest | winning basketball fundamentals (pp.261-280)
+- Created: play-three-point-x-out-slob.md, play-x-out-single-double.md, play-inside-pick-the-picker-blob.md, play-box-cross-2-blob.md, play-line-blob.md, play-lob-blob.md, concept-attacking-disruptive-defenses.md, play-versus-1-3-1.md, play-versus-box-and-one.md, play-versus-triangle-and-two.md
+- Updated: source-winning-basketball-fundamentals.md
+- Notes: Winning Basketball Fundamentals (S13) pp.247-265 — Chapter 9 special situations: SLOB/BLOB plays (Three-Point X-Out, X-Out into Single-Double, Inside Pick-the-Picker, Box Cross 2, Line, Lob), attacking disruptive defenses (vs 1-3-1, vs Box-and-One, vs Triangle-and-Two), index pages, and About the Author. Final chunk of book.
+
+## [2026-04-20] ingest | youth basketball drills (pp.1-20)
+- Created: source-youth-basketball-drills.md, concept-youth-basketball-teaching-philosophy.md, concept-youth-basketball-balance-quickness-agility.md, concept-youth-basketball-skill-taxonomy.md, concept-youth-basketball-drill-finder.md
+- Updated: (none)
+- Notes: Pages 1-20: Cover, copyright, table of contents, drill finder (all 160 drills listed with metadata), skill finder (offensive and defensive skill taxonomy), and introduction. This is S15 — Youth Basketball Drills by Burrall Paye & Patrick Paye, 2nd ed., Human Kinetics 2013. No drill content yet (that begins p.3+), but rich structural/taxonomy information and coaching philosophy extracted.
+
+## [2026-04-20] ingest | youth basketball drills (pp.21-40)
+- Created: concept-balance-quickness-agility-youth.md, drill-running-outside-the-lines-s15.md, drill-mirror-slap-s15.md, drill-dribbling-off-wall-s15.md, drill-lane-slide-s15.md, drill-quick-hands-s15.md, drill-quick-foot-movement-s15.md, drill-agility-tip-drill-s15.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Source S15: Youth Basketball Drills — Introduction and Chapter 1 (Balance, Quickness, and Agility). Pages 1-16 (pp. xix-16). Extracted drills 1-7 and core balance/quickness/agility concepts. Note: source is actually pages 1-16 of the book, not pages 21-40 as specified — processing what was provided.
+
+## [2026-04-20] ingest | youth basketball drills (pp.41-60)
+- Created: drill-youth-basic-layup.md, drill-youth-triple-threat-position.md, drill-youth-post-position.md, drill-youth-rocker-step.md, drill-youth-in-and-out-move.md, drill-youth-crossover-move.md, drill-youth-spin-move.md, drill-youth-half-spin-move.md, drill-youth-combination-dribbling.md, drill-youth-paye-drill.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills S15, Chapter 2: Stance and Footwork — Drills 8-17 covering basic layup, triple-threat position, post position, rocker step, in-and-out move, crossover move, spin move, half-spin move, combination dribbling moves, and the Paye Drill
+
+## [2026-04-20] ingest | youth basketball drills (pp.61-80)
+- Created: drill-paye-drill.md, concept-1on1-reads-and-attacks.md, drill-fingertip-drill.md, drill-standing-figure-8-ballhandling.md, drill-figure-8-dribble.md, drill-side-to-side-dribble.md, drill-spider-dribble.md, drill-speed-dribble-youth.md, drill-control-dribble-youth.md, drill-change-of-pace-dribble.md, concept-dribbling-fundamentals-youth.md
+- Updated: source-youth-basketball-drills.md
+- Notes: S15 Youth Basketball Drills pp.37-56: Paye Drill (stance/footwork 1v1 system), Chapter 3 Ballhandling intro, and drills 18-25 (Fingertip, Standing Figure 8, Figure 8 Dribble, Side-to-Side Dribble, Spider Dribble, Speed Dribble, Control Dribble, Change of Pace)
+
+## [2026-04-20] ingest | youth basketball drills (pp.81-100)
+- Created: drill-hesitation-dribble-s15.md, drill-retreating-dribble.md, drill-in-and-out-dribble-s15.md, drill-crossover-dribble-s15.md, drill-spin-reverse-dribble-s15.md, drill-half-spin-dribble-s15.md, drill-fun-cone-dribbling.md, drill-dribble-tag-s15.md, drill-team-dribble-tag.md, drill-front-pivot-s15.md, concept-youth-dribbling-fundamentals.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills S15, pp.57-76: Ballhandling drills (hesitation dribble #26, retreating dribble #27, in-and-out dribble #28, crossover dribble #29, spin/reverse dribble #30, half-spin dribble #31, fun cone dribbling #32, dribble tag #33, team dribble tag #34) and Chapter 4 intro + front pivot drill #35. Source summary page also created.
+
+## [2026-04-20] ingest | youth basketball drills (pp.101-120)
+- Created: concept-front-pivot-youth.md, drill-reverse-pivot-youth.md, drill-jump-stop-youth.md, drill-stride-stop-youth.md, drill-one-on-two-pivoting.md, drill-dribble-stop-pivot.md, drill-dribble-stop-pivot-pass-cut.md, drill-dribble-stop-jump-shot.md, drill-four-corner-stopping-pivoting.md, concept-passing-fundamentals-youth.md, drill-two-line-standing-still.md, drill-two-line-moving.md
+- Updated: source-youth-basketball-drills.md
+- Notes: S15 pp.77-96: Stopping and Pivoting chapter (front pivot, reverse pivot, jump stop, stride stop, one-on-two pivoting, dribble/stop/pivot drills, four-corner drill) and Passing chapter intro with Two-Line Standing Still and Two-Line Moving drills
+
+## [2026-04-20] ingest | youth basketball drills (pp.141-160)
+- Created: concept-motion-offense-four-rules.md, drill-two-player-cutting.md, drill-three-player-cutting.md, drill-defeat-help-and-recover.md, drill-full-court-cutting.md, drill-two-on-two-pass-dribble-cut.md, drill-two-on-two-recognition.md, drill-three-on-three-passing-cutting-spacing.md, drill-three-on-three-passing-cutting-dribbling-spacing.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills S15, pp.117-136: Chapter 6 (Cutting) advanced drill, and Chapter 7 (Passing and Cutting) — drills 58-65 covering motion offense cutting rules, two-player cutting, three-player cutting, defeat help and recover, full-court cutting, two-on-two pass/dribble/cut, two-on-two recognition, three-on-three passing/cutting/spacing, three-on-three with dribbling. Also source summary for S15.
+
+## [2026-04-20] ingest | youth basketball drills (pp.181-200)
+- Created: drill-three-player-continuous-screening.md, concept-motion-offense-screening-rules.md, drill-tip-ball-off-wall-pivot.md, drill-bull-in-ring-rebounding.md, drill-jab-step-roll-rebounding.md, drill-one-on-one-blockouts.md, drill-superman-rebounding.md, concept-rebounding-position-savvy.md, drill-count-slide-pivot-savvy.md, drill-two-on-two-rebounding.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills (S15), pp.157-176: Screening chapter teaching points (motion offense screening rules, screen on ball, down screen, back screen, screen the screener); Rebounding chapter (Drills 76-82) — Tip Ball Off Wall, Bull in Ring, Jab Step and Roll, One-on-One Blockouts, Superman, Count-Slide-Pivot-Savvy, Two-on-Two Rebounding — with body positioning, boxout techniques, primary rebounding position savvy rules.
+
+## [2026-04-20] ingest | youth basketball drills (pp.201-220)
+- Created: concept-straight-stick-shooting.md, concept-rebounding-areas-youth.md, drill-wave-good-bye.md, drill-flip-ball-drill-youth.md, drill-lift-extend-flip.md, drill-lying-down-flip-ball.md, drill-flip-ball-off-wall.md, drill-around-the-world-youth.md, drill-no-rim-shooting.md, drill-21-shooting-youth.md, drill-nba-shooting-drill-youth.md, drill-mikan-baby-hook.md, drill-post-moves-passing-shooting-rebounding.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills (S15) pp.177-196: Chapter 10 Shooting — straight-stick concept, rebounding areas, blast-out technique, and shooting drills 84-93 (Wave Good-Bye, Flip-Ball, Lift-Extend-Flip, Lying-Down Flip-Ball, Flip the Ball Off the Wall, Around the World, No Rim, 21, NBA Shooting Drill, Mikan Drill for Baby Hook). Also Drill 83 Post Moves Passing-Shooting-Rebounding.
+
+## [2026-04-20] ingest | youth basketball drills (pp.221-240)
+- Created: drill-baby-hook-youth.md, drill-rebound-pass-shoot-youth.md, drill-quick-shooting-two-players-youth.md, drill-post-up-mechanics-youth.md, drill-slide-step-dribble-youth.md, drill-fronting-post-youth.md, drill-two-step-post-defense-youth.md, drill-roll-step-post-youth.md, drill-three-quarter-post-drill-youth.md, drill-high-low-post-passing-youth.md, drill-post-screening-youth.md, drill-one-on-one-lane-drill-youth.md, concept-post-scoring-at-end-of-dribble.md, concept-post-defensive-coverage-types.md, concept-perimeter-one-on-one-intelligence.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills S15, pp.197-216: Chapter 11 (Post) and Chapter 12 (Perimeter intro) — drills 93-104 covering baby hook, rebound-pass-shoot, post-up mechanics, slide-step dribble, fronting, two-step drill, roll step, three-quarter drill, high-low post passing, post screening, and one-on-one lane drill.
+
+## [2026-04-20] ingest | youth basketball drills (pp.241-260)
+- Created: drill-1on1-relief.md, drill-1on1-team.md, drill-one-on-one-on-one-on-one.md, drill-1on1-full-court-game.md, drill-recovery.md, drill-one-on-one-on-one.md, drill-approach-and-close-out.md, drill-basic-three-step-read.md, concept-three-step-read-motion-offense.md, drill-penetration-drill.md, concept-low-post-fakes-moves-youth.md, drill-drop-step-baseline-middle.md, drill-post-spin-half-spin.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills (S15): Pages 217-236 — Perimeter 1-on-1 drills (105-113), Low-Post Fakes and Moves chapter intro (Ch.13), Drop-Step Baseline/Middle drill (114), Post Spin and Half-Spin drill (115)
+
+## [2026-04-20] ingest | youth basketball drills (pp.281-300)
+- Created: drill-follow-the-rules-motion-offense.md, drill-five-on-five-no-defense.md, concept-defensive-ball-handler-stances.md, drill-fence-slide.md, drill-front-foot-to-pivot-foot.md, drill-front-foot-to-free-foot.md, drill-interception-stance.md, drill-close-the-gap-stance.md, concept-ball-you-man-flat-triangle.md, drill-help-side-drill.md, drill-dual-help-drill.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills (S15) pp. 257-276 — Team offense motion drills (#126-127) and Defensive Stance & Footwork chapter (#128-134): fence slide, front-foot-to-pivot-foot, front-foot-to-free-foot, interception stance, close-the-gap, help-side drill, dual-help drill, ball-you-man, flat triangle
+
+## [2026-04-20] ingest | youth basketball drills (pp.301-320)
+- Created: drill-help-the-helper.md, drill-defensive-cone.md, drill-defensive-step-youth.md, drill-overplay-step-youth.md, drill-mirror-step-youth.md, drill-jump-switching-youth.md, drill-draw-the-charge-youth.md, drill-help-and-recover-youth.md, concept-individual-defensive-movement.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills S15, pp.277-296 — Chapter 15-16: Help-side defense drills (Help the Helper #135, Defensive Cone #136), Chapter 16 Individual Movement: Defensive Step #137 (advance/retreat/swing/slide steps), Overplay Step #138, Mirror Step #139, Jump Switching #140, Draw the Charge #141, Help and Recover #142
+
+## [2026-04-20] ingest | youth basketball drills (pp.321-340)
+- Created: concept-man-to-man-rotation-rules.md, drill-rotation-youth, drill-four-individual-defensive-traits.md, drill-mass-wave-sliding.md, drill-jump-to-the-ball-youth.md, drill-deny-the-wing-youth.md, drill-deny-the-flash-pivot-youth.md, drill-dribble-closeout-youth.md, drill-skip-pass-closeout-youth.md, drill-eight-point-defensive-drill.md, drill-one-on-one-multiple-skills.md, concept-team-defensive-movement-principles.md
+- Updated: source-youth-basketball-drills.md
+- Notes: S15 youth basketball drills pp.297-316 — Team Movement chapter (Ch.17): Rotation drill (#143), Four Individual Defensive Traits (#144), Mass Wave Sliding (#145), Jump to the Ball (#146), Deny the Wing (#147), Deny the Flash Pivot (#148), Dribble Closeout (#149), Skip Pass and Closeout (#150), Eight-Point Drill (#151), One-on-One Multiple Skills Drill (#152). Also contains the key man-to-man rotation concept explaining ball-side vs help-side rules.
+
+## [2026-04-20] ingest | youth basketball drills (pp.341-360)
+- Created: drill-s15-shell-drill.md, drill-s15-five-on-five.md, drill-s15-run-and-jump.md, drill-s15-run-and-trap.md, drill-s15-trap-the-dribble.md, drill-s15-trap-the-pass.md, drill-s15-channeling.md, drill-s15-zigzag-with-trapper.md, concept-team-defensive-stunts.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills S15, pp.317-335 — Chapters 18-19: Team Defense Shell Drill (Drill 153), Five on Five (Drill 154), and Team Defensive Stunts (Drills 155-160): run-and-jump, run-and-trap, trap the dribble, trap the pass, channeling, zigzag with a trapper
+
+## [2026-04-20] ingest | youth basketball drills (pp.361-372)
+- Created: concept-youth-basketball-practice-organization.md, concept-youth-basketball-practice-schedules.md
+- Updated: source-youth-basketball-drills.md
+- Notes: Youth Basketball Drills (S15) — Appendix: Organizing Practice Sessions (pp. 337-343) and back matter. Contains practice organization philosophy, sample practice schedules for 30-min and 90-min sessions across early/mid/late season. About the Authors and publisher pages are filler. Source summary needed for S15.
