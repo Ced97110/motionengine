@@ -393,6 +393,119 @@
     "ball-protection",
     "press-break"
   ],
+  "concept-achilles-tendinopathy-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "achilles",
+    "overuse",
+    "tendinopathy"
+  ],
+  "concept-achilles-tendon-basketball": [
+    "sports-medicine",
+    "rehabilitation",
+    "achilles",
+    "PRP",
+    "injury-prevention",
+    "tendinopathy"
+  ],
+  "concept-achilles-tendon-rupture-basketball": [
+    "rehabilitation",
+    "ankle",
+    "achilles",
+    "sports-medicine",
+    "injury-prevention"
+  ],
+  "concept-acl-biomechanical-rehabilitation-basketball": [
+    "rehabilitation",
+    "ACL",
+    "knee",
+    "biomechanics",
+    "neuromuscular",
+    "movement-quality",
+    "injury-prevention",
+    "sports-medicine"
+  ],
+  "concept-acl-injury-biomechanics-basketball": [
+    "injury-prevention",
+    "ACL",
+    "biomechanics",
+    "landing-mechanics",
+    "rehabilitation",
+    "women"
+  ],
+  "concept-acl-injury-management-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "ACL",
+    "return-to-sport"
+  ],
+  "concept-acl-on-parquet-rehabilitation-basketball": [
+    "rehabilitation",
+    "ACL",
+    "knee",
+    "return-to-sport",
+    "sports-medicine",
+    "movement-quality",
+    "neuromuscular",
+    "on-court"
+  ],
+  "concept-acl-reconstruction-outcomes-basketball": [
+    "injury",
+    "ACL",
+    "rehabilitation",
+    "return-to-sport",
+    "surgery",
+    "sports-medicine"
+  ],
+  "concept-acl-return-to-sport-criteria-basketball": [
+    "rehabilitation",
+    "ACL",
+    "knee",
+    "return-to-sport",
+    "sports-medicine",
+    "testing",
+    "injury-prevention"
+  ],
+  "concept-acl-return-to-sport-psychology": [
+    "rehabilitation",
+    "injury-prevention",
+    "ACL",
+    "psychology",
+    "return-to-sport"
+  ],
+  "concept-aclr-psychological-factors": [
+    "rehabilitation",
+    "ACL",
+    "psychology",
+    "return-to-sport",
+    "injury",
+    "fear",
+    "self-efficacy",
+    "kinesiophobia"
+  ],
+  "concept-acute-spinal-trauma-basketball": [
+    "sports-medicine",
+    "spinal-injury",
+    "emergency",
+    "sideline"
+  ],
+  "concept-acute-trauma-on-court-basketball": [
+    "sports-medicine",
+    "injury-management",
+    "emergency",
+    "return-to-play",
+    "sideline"
+  ],
+  "concept-adolescent-knee-injuries-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "youth",
+    "knee"
+  ],
   "concept-advanced-combined-dribble-moves": [
     "offense",
     "perimeter",
@@ -419,6 +532,19 @@
     "footwork",
     "defense",
     "offense"
+  ],
+  "concept-allergies-basketball-athlete": [
+    "sports-medicine",
+    "medical",
+    "pre-participation",
+    "in-season"
+  ],
+  "concept-anatomical-core-basketball": [
+    "strength-training",
+    "core",
+    "injury-prevention",
+    "post-play",
+    "defense"
   ],
   "concept-anatomy-ankle-complex": [
     "anatomy",
@@ -465,6 +591,26 @@
     "ankle",
     "conditioning",
     "return-to-play"
+  ],
+  "concept-ankle-support-basketball": [
+    "injury-prevention",
+    "ankle",
+    "rehabilitation",
+    "biomechanics"
+  ],
+  "concept-antagonist-paired-sets": [
+    "strength-training",
+    "program-design",
+    "GPP",
+    "off-season",
+    "periodization"
+  ],
+  "concept-asthma-basketball-athlete": [
+    "sports-medicine",
+    "medical",
+    "conditioning",
+    "breathing",
+    "pre-participation"
   ],
   "concept-attacking-offense": [
     "offense",
@@ -532,6 +678,141 @@
     "communication",
     "half-court"
   ],
+  "concept-basketball-accelerometry-training-load": [
+    "conditioning",
+    "athlete-monitoring",
+    "training-load",
+    "periodization"
+  ],
+  "concept-basketball-acl-injury-epidemiology": [
+    "sports-medicine",
+    "ACL",
+    "knee",
+    "injury-prevention",
+    "gender"
+  ],
+  "concept-basketball-agility-testing": [
+    "strength-training",
+    "testing",
+    "agility",
+    "speed",
+    "COD",
+    "conditioning",
+    "talent-identification"
+  ],
+  "concept-basketball-anabolic-catabolic-model": [
+    "physiology",
+    "endocrinology",
+    "recovery",
+    "overtraining",
+    "periodization"
+  ],
+  "concept-basketball-ankle-sprain-biomechanics": [
+    "injury-prevention",
+    "ankle",
+    "biomechanics",
+    "rehabilitation",
+    "proprioception"
+  ],
+  "concept-basketball-ankle-sprain-epidemiology": [
+    "sports-medicine",
+    "ankle",
+    "injury-prevention",
+    "return-to-play"
+  ],
+  "concept-basketball-ankle-sprain-treatment": [
+    "sports-medicine",
+    "ankle",
+    "rehabilitation",
+    "return-to-play",
+    "injury-prevention"
+  ],
+  "concept-basketball-anthropometrics-position": [
+    "player-development",
+    "talent-identification",
+    "physiology",
+    "somatotype",
+    "youth-basketball"
+  ],
+  "concept-basketball-anxiety-performance": [
+    "sport-psychology",
+    "anxiety",
+    "performance",
+    "mental-health",
+    "coping",
+    "focus"
+  ],
+  "concept-basketball-athlete-specific-considerations": [
+    "strength-training",
+    "program-design",
+    "individualization",
+    "injury-prevention",
+    "youth-development",
+    "biomechanics"
+  ],
+  "concept-basketball-blood-lactate-demands": [
+    "physiology",
+    "conditioning",
+    "energy-systems",
+    "monitoring",
+    "lactate"
+  ],
+  "concept-basketball-body-composition-by-position": [
+    "conditioning",
+    "athlete-monitoring",
+    "strength-training",
+    "nutrition",
+    "body-composition"
+  ],
+  "concept-basketball-cardiac-conditions-sports-participation": [
+    "sports medicine",
+    "cardiac",
+    "sudden cardiac death",
+    "return to play",
+    "screening",
+    "safety"
+  ],
+  "concept-basketball-cardiac-screening": [
+    "sports-medicine",
+    "cardiac",
+    "preseason",
+    "sudden-death",
+    "screening",
+    "injury-prevention"
+  ],
+  "concept-basketball-common-injuries": [
+    "sports-medicine",
+    "injury-prevention",
+    "rehabilitation",
+    "ankle",
+    "ACL",
+    "tendinitis"
+  ],
+  "concept-basketball-competition-periodization-nba-fiba": [
+    "periodization",
+    "load-management",
+    "in-season",
+    "competition",
+    "NBA",
+    "FIBA",
+    "recovery"
+  ],
+  "concept-basketball-competitive-phases": [
+    "strength-training",
+    "in-season",
+    "periodization",
+    "competitive-season",
+    "maximal-strength",
+    "power",
+    "velocity-based-training"
+  ],
+  "concept-basketball-concussion-management": [
+    "sports-medicine",
+    "injury-prevention",
+    "concussion",
+    "head-neck-face",
+    "rehabilitation"
+  ],
   "concept-basketball-conditioning-principles": [
     "conditioning",
     "strength",
@@ -539,6 +820,40 @@
     "program-design",
     "off-season",
     "in-season"
+  ],
+  "concept-basketball-coping-strategies": [
+    "sport-psychology",
+    "coping",
+    "stress",
+    "mental-skills",
+    "pressure",
+    "anxiety"
+  ],
+  "concept-basketball-court-types": [
+    "sports-medicine",
+    "equipment",
+    "court",
+    "injury-prevention",
+    "biomechanics"
+  ],
+  "concept-basketball-cpr-bls-protocol": [
+    "sports-medicine",
+    "cardiac",
+    "CPR",
+    "BLS",
+    "ALS",
+    "emergency",
+    "AED",
+    "defibrillation"
+  ],
+  "concept-basketball-doping-antidoping": [
+    "sports-medicine",
+    "doping",
+    "anti-doping",
+    "nutrition",
+    "supplements",
+    "FIBA",
+    "WADA"
   ],
   "concept-basketball-drill-philosophy-s6": [
     "offense",
@@ -548,6 +863,83 @@
     "shooting",
     "conditioning"
   ],
+  "concept-basketball-ear-neck-injuries": [
+    "sports-medicine",
+    "injury-prevention",
+    "head-neck-face",
+    "rehabilitation",
+    "emergency"
+  ],
+  "concept-basketball-emergency-abcde-protocol": [
+    "sports-medicine",
+    "emergency",
+    "first-aid",
+    "on-court",
+    "medical"
+  ],
+  "concept-basketball-emergency-action-plan": [
+    "sports-medicine",
+    "emergency",
+    "cardiac",
+    "safety",
+    "game-management"
+  ],
+  "concept-basketball-emergency-airway": [
+    "sports-medicine",
+    "emergency",
+    "airway",
+    "on-court",
+    "breathing"
+  ],
+  "concept-basketball-endocrine-monitoring": [
+    "physiology",
+    "monitoring",
+    "recovery",
+    "overtraining",
+    "endocrinology",
+    "periodization"
+  ],
+  "concept-basketball-energy-systems": [
+    "conditioning",
+    "energy-systems",
+    "physiology",
+    "aerobic",
+    "anaerobic",
+    "vo2max",
+    "periodization"
+  ],
+  "concept-basketball-european-medical-coverage": [
+    "sports-medicine",
+    "medical-team",
+    "european-basketball",
+    "physiotherapy",
+    "multidisciplinary"
+  ],
+  "concept-basketball-event-medical-coverage": [
+    "sports-medicine",
+    "event-management",
+    "emergency",
+    "medical-coverage"
+  ],
+  "concept-basketball-exercise-intensity-zones": [
+    "conditioning",
+    "athlete-monitoring",
+    "training-load",
+    "periodization"
+  ],
+  "concept-basketball-facial-injuries": [
+    "sports-medicine",
+    "injury-prevention",
+    "head-neck-face",
+    "rehabilitation"
+  ],
+  "concept-basketball-fatigue-monitoring": [
+    "conditioning",
+    "periodization",
+    "injury-prevention",
+    "athlete-monitoring",
+    "fatigue"
+  ],
   "concept-basketball-first-principles": [
     "fundamentals",
     "first-principles",
@@ -556,6 +948,240 @@
     "spacing",
     "philosophy"
   ],
+  "concept-basketball-foot-ankle-injury-epidemiology": [
+    "injury-prevention",
+    "sports-medicine",
+    "ankle",
+    "foot",
+    "epidemiology"
+  ],
+  "concept-basketball-foot-ankle-injury-prevention": [
+    "injury-prevention",
+    "sports-medicine",
+    "ankle",
+    "foot",
+    "neuromuscular-training",
+    "warm-up"
+  ],
+  "concept-basketball-foot-ankle-injury-risk-factors": [
+    "injury-prevention",
+    "sports-medicine",
+    "ankle",
+    "foot",
+    "risk-factors"
+  ],
+  "concept-basketball-functional-movement-testing": [
+    "injury-prevention",
+    "biomechanics",
+    "testing",
+    "ACL",
+    "movement-quality",
+    "rehabilitation"
+  ],
+  "concept-basketball-game-activity-demands": [
+    "game-demands",
+    "time-motion-analysis",
+    "physiology",
+    "conditioning",
+    "training-design",
+    "aerobic",
+    "lactate",
+    "heart-rate",
+    "distance",
+    "sprinting"
+  ],
+  "concept-basketball-gpp-program-design": [
+    "strength-training",
+    "GPP",
+    "off-season",
+    "youth-basketball",
+    "periodization",
+    "conditioning"
+  ],
+  "concept-basketball-hand-finger-injuries": [
+    "injury-prevention",
+    "sports-medicine",
+    "rehabilitation",
+    "hand",
+    "finger",
+    "upper-extremity"
+  ],
+  "concept-basketball-heart-rate-demands": [
+    "physiology",
+    "conditioning",
+    "monitoring",
+    "heart-rate",
+    "intensity-zones"
+  ],
+  "concept-basketball-hydration": [
+    "nutrition",
+    "recovery",
+    "physiology",
+    "injury-prevention"
+  ],
+  "concept-basketball-illness-management": [
+    "sports-medicine",
+    "illness",
+    "concussion",
+    "cardiac",
+    "return-to-play",
+    "medical-staff"
+  ],
+  "concept-basketball-in-season-programming": [
+    "strength-training",
+    "in-season",
+    "periodization",
+    "programming",
+    "frequency",
+    "intensity",
+    "exercise-selection"
+  ],
+  "concept-basketball-injury-epidemiology": [
+    "sports-medicine",
+    "injury-prevention",
+    "epidemiology",
+    "injury-management"
+  ],
+  "concept-basketball-injury-etiology-complex-systems": [
+    "injury-prevention",
+    "load-management",
+    "biomechanics",
+    "epidemiology",
+    "risk-management",
+    "coaching-philosophy"
+  ],
+  "concept-basketball-injury-prevention-framework": [
+    "injury-prevention",
+    "rehabilitation",
+    "neuromuscular-training",
+    "return-to-play",
+    "risk-factors",
+    "screening"
+  ],
+  "concept-basketball-injury-prevention-overview": [
+    "injury-prevention",
+    "load-management",
+    "ankle",
+    "ACL",
+    "concussion",
+    "youth",
+    "sRPE",
+    "epidemiology"
+  ],
+  "concept-basketball-inseason-program-tables": [
+    "strength-training",
+    "in-season",
+    "program-design",
+    "periodization",
+    "guards",
+    "bigs",
+    "sample-program"
+  ],
+  "concept-basketball-inseason-resistance-training": [
+    "strength-training",
+    "periodization",
+    "in-season",
+    "velocity-based-training",
+    "PAP",
+    "cluster-sets",
+    "power"
+  ],
+  "concept-basketball-jump-landing-biomechanics": [
+    "biomechanics",
+    "jumping",
+    "landing",
+    "plyometrics",
+    "injury-prevention",
+    "strength-training"
+  ],
+  "concept-basketball-jump-load": [
+    "injury-prevention",
+    "conditioning",
+    "periodization",
+    "plyometrics",
+    "strength-training"
+  ],
+  "concept-basketball-load-management": [
+    "conditioning",
+    "sports-medicine",
+    "injury-prevention",
+    "periodization",
+    "monitoring"
+  ],
+  "concept-basketball-lower-extremity-injury-epidemiology": [
+    "injury-prevention",
+    "biomechanics",
+    "epidemiology",
+    "ankle",
+    "knee",
+    "rehabilitation"
+  ],
+  "concept-basketball-medical-event-coverage": [
+    "sports-medicine",
+    "game-management",
+    "event-planning",
+    "emergency",
+    "equipment"
+  ],
+  "concept-basketball-medical-team": [
+    "sports-medicine",
+    "injury-prevention",
+    "medical-team",
+    "rehabilitation"
+  ],
+  "concept-basketball-medical-team-communication": [
+    "sports-medicine",
+    "communication",
+    "multidisciplinary",
+    "player-health",
+    "return-to-play"
+  ],
+  "concept-basketball-medical-team-structure": [
+    "sports-medicine",
+    "medical-staff",
+    "injury-prevention",
+    "team-management",
+    "preseason"
+  ],
+  "concept-basketball-mental-health": [
+    "sports-medicine",
+    "mental-health",
+    "sports-psychology",
+    "performance",
+    "wellness"
+  ],
+  "concept-basketball-mindfulness": [
+    "psychology",
+    "mindfulness",
+    "mental-health",
+    "performance",
+    "rehabilitation",
+    "retirement"
+  ],
+  "concept-basketball-movement-demands": [
+    "conditioning",
+    "periodization",
+    "strength-training",
+    "position-specific",
+    "speed",
+    "agility"
+  ],
+  "concept-basketball-movement-demands-biomechanics": [
+    "biomechanics",
+    "movement-demands",
+    "conditioning",
+    "position-specific",
+    "lateral-movement"
+  ],
+  "concept-basketball-movement-taxonomy": [
+    "biomechanics",
+    "movement-analysis",
+    "conditioning",
+    "acceleration",
+    "deceleration",
+    "jumping",
+    "lateral-movement"
+  ],
   "concept-basketball-needs-analysis": [
     "conditioning",
     "athlete-assessment",
@@ -563,6 +1189,249 @@
     "metabolic-demands",
     "speed",
     "agility"
+  ],
+  "concept-basketball-non-orthopedic-health": [
+    "sports-medicine",
+    "injury-prevention",
+    "health",
+    "concussion",
+    "sudden-cardiac-death"
+  ],
+  "concept-basketball-nutrition-energy-requirements": [
+    "nutrition",
+    "recovery",
+    "periodization",
+    "physiology"
+  ],
+  "concept-basketball-nutrition-macronutrients": [
+    "nutrition",
+    "recovery",
+    "periodization",
+    "physiology"
+  ],
+  "concept-basketball-nutrition-micronutrients": [
+    "nutrition",
+    "recovery",
+    "physiology",
+    "injury-prevention"
+  ],
+  "concept-basketball-ocular-injuries": [
+    "sports-medicine",
+    "injury-prevention",
+    "head-neck-face",
+    "rehabilitation"
+  ],
+  "concept-basketball-off-season-programming": [
+    "strength-training",
+    "periodization",
+    "off-season",
+    "power",
+    "conditioning",
+    "basketball-fitness"
+  ],
+  "concept-basketball-offseason-periodization": [
+    "strength-training",
+    "periodization",
+    "off-season",
+    "plyometrics",
+    "GPP",
+    "power",
+    "conditioning"
+  ],
+  "concept-basketball-offseason-sample-programs": [
+    "strength-training",
+    "off-season",
+    "periodization",
+    "program-design",
+    "conditioning"
+  ],
+  "concept-basketball-performance-anxiety": [
+    "sport-psychology",
+    "anxiety",
+    "attention",
+    "shooting",
+    "performance",
+    "pressure"
+  ],
+  "concept-basketball-performance-indicators-winning": [
+    "offense",
+    "defense",
+    "rebounding",
+    "game-preparation",
+    "scouting",
+    "performance-analysis"
+  ],
+  "concept-basketball-performance-testing-battery": [
+    "strength-training",
+    "testing",
+    "conditioning",
+    "periodization",
+    "injury-prevention"
+  ],
+  "concept-basketball-performance-testing-overview": [
+    "strength-training",
+    "conditioning",
+    "testing",
+    "athlete-assessment",
+    "performance"
+  ],
+  "concept-basketball-periodization-model": [
+    "strength-training",
+    "periodization",
+    "program-design",
+    "conditioning",
+    "annual-plan",
+    "macrocycle",
+    "mesocycle"
+  ],
+  "concept-basketball-periodization-phases": [
+    "strength-training",
+    "periodization",
+    "conditioning",
+    "in-season",
+    "off-season",
+    "program-design"
+  ],
+  "concept-basketball-physical-anthropometric-characteristics": [
+    "anthropometrics",
+    "physical-testing",
+    "strength",
+    "power",
+    "aerobic-capacity",
+    "body-composition",
+    "talent-identification",
+    "NBA",
+    "NCAA"
+  ],
+  "concept-basketball-physical-demands-position": [
+    "strength-training",
+    "conditioning",
+    "physical-demands",
+    "position-specific",
+    "wearable-technology",
+    "training-load"
+  ],
+  "concept-basketball-player-retirement-psychology": [
+    "psychology",
+    "career-transition",
+    "retirement",
+    "mental-health",
+    "wellbeing"
+  ],
+  "concept-basketball-position-anthropometrics-nsca": [
+    "anthropometrics",
+    "body-composition",
+    "strength-training",
+    "position-specific",
+    "talent-identification",
+    "periodization"
+  ],
+  "concept-basketball-position-specific-training": [
+    "strength-training",
+    "conditioning",
+    "position-specific",
+    "periodization",
+    "program-design"
+  ],
+  "concept-basketball-post-exercise-recovery": [
+    "recovery",
+    "conditioning",
+    "fatigue",
+    "post-game",
+    "in-season",
+    "load-management"
+  ],
+  "concept-basketball-postseason-training": [
+    "strength-training",
+    "periodization",
+    "recovery",
+    "postseason",
+    "conditioning",
+    "basketball-fitness"
+  ],
+  "concept-basketball-pre-participation-evaluation": [
+    "sports-medicine",
+    "screening",
+    "cardiac",
+    "injury-prevention",
+    "pre-season"
+  ],
+  "concept-basketball-preseason-medical-preparation": [
+    "preseason",
+    "sports-medicine",
+    "injury-prevention",
+    "screening",
+    "medical-staff"
+  ],
+  "concept-basketball-preseason-microcycle": [
+    "strength-training",
+    "preseason",
+    "periodization",
+    "reactive-strength",
+    "velocity",
+    "PAP",
+    "plyometrics",
+    "position-specific"
+  ],
+  "concept-basketball-preseason-programming": [
+    "strength-training",
+    "periodization",
+    "preseason",
+    "power",
+    "velocity-based-training",
+    "PAP",
+    "cluster-training",
+    "complex-training"
+  ],
+  "concept-basketball-preseason-sample-microcycle": [
+    "strength-training",
+    "power",
+    "preseason",
+    "programming",
+    "microcycle",
+    "sample-program",
+    "bigs",
+    "PAP",
+    "cluster-training"
+  ],
+  "concept-basketball-protective-gear": [
+    "sports-medicine",
+    "equipment",
+    "injury-prevention",
+    "ankle",
+    "braces",
+    "compression"
+  ],
+  "concept-basketball-recovery-strategies": [
+    "recovery",
+    "sports-medicine",
+    "nutrition",
+    "sleep",
+    "hydration",
+    "conditioning"
+  ],
+  "concept-basketball-rehabilitation-framework": [
+    "rehabilitation",
+    "injury-prevention",
+    "biomechanics",
+    "return-to-play",
+    "hip",
+    "lower-extremity"
+  ],
+  "concept-basketball-resistance-training-principles": [
+    "strength-training",
+    "program-design",
+    "periodization",
+    "SAID",
+    "conditioning",
+    "resistance-training"
+  ],
+  "concept-basketball-return-to-play": [
+    "sports-medicine",
+    "rehabilitation",
+    "injury-management",
+    "return-to-play",
+    "athletic-trainer"
   ],
   "concept-basketball-saq-sample-program": [
     "conditioning",
@@ -573,6 +1442,80 @@
     "periodization",
     "training",
     "basketball"
+  ],
+  "concept-basketball-shoe-design": [
+    "sports-medicine",
+    "equipment",
+    "shoes",
+    "ankle",
+    "injury-prevention",
+    "biomechanics"
+  ],
+  "concept-basketball-shoulder-assessment": [
+    "sports-medicine",
+    "shoulder",
+    "injury-prevention",
+    "assessment",
+    "rehabilitation"
+  ],
+  "concept-basketball-sports-medicine-ethics": [
+    "sports-medicine",
+    "ethics",
+    "legal",
+    "team-physician",
+    "return-to-play",
+    "injury-management"
+  ],
+  "concept-basketball-strength-testing": [
+    "strength-training",
+    "testing",
+    "conditioning",
+    "injury-prevention",
+    "periodization"
+  ],
+  "concept-basketball-strength-training-methodology": [
+    "strength",
+    "conditioning",
+    "periodization",
+    "power",
+    "specificity",
+    "program-design"
+  ],
+  "concept-basketball-stress-fractures": [
+    "sports-medicine",
+    "stress-fracture",
+    "foot",
+    "injury-prevention",
+    "NBA"
+  ],
+  "concept-basketball-team-physician-role": [
+    "sports-medicine",
+    "team-physician",
+    "medical-management",
+    "injury-prevention",
+    "emergency"
+  ],
+  "concept-basketball-training-camp-monitoring": [
+    "conditioning",
+    "periodization",
+    "injury-prevention",
+    "athlete-monitoring",
+    "pre-season"
+  ],
+  "concept-basketball-training-load-monitoring": [
+    "conditioning",
+    "periodization",
+    "athlete-monitoring",
+    "training-load",
+    "match-schedule"
+  ],
+  "concept-basketball-travel-sleep-management": [
+    "sports-medicine",
+    "travel",
+    "sleep",
+    "recovery",
+    "wellness",
+    "circadian-rhythm"
   ],
   "concept-basketball-warmup-protocol": [
     "conditioning",
@@ -590,6 +1533,42 @@
     "periodization",
     "functional-strength"
   ],
+  "concept-basketball-well-being-monitoring": [
+    "sports-medicine",
+    "load-management",
+    "monitoring",
+    "recovery",
+    "fatigue"
+  ],
+  "concept-basketball-workload-measurement": [
+    "sports-medicine",
+    "load-management",
+    "monitoring",
+    "technology",
+    "heart-rate",
+    "microsensors"
+  ],
+  "concept-basketball-workload-quantification": [
+    "conditioning",
+    "monitoring",
+    "workload",
+    "sport-science",
+    "periodization"
+  ],
+  "concept-bench-press-test-basketball": [
+    "strength-training",
+    "testing",
+    "upper-body",
+    "bench-press",
+    "conditioning"
+  ],
+  "concept-blood-flow-restriction-basketball": [
+    "strength-training",
+    "recovery",
+    "rehabilitation",
+    "conditioning",
+    "basketball-fitness"
+  ],
   "concept-bodyweight-power-training-philosophy": [
     "conditioning",
     "power",
@@ -598,6 +1577,21 @@
     "training-philosophy",
     "strength",
     "speed"
+  ],
+  "concept-bony-foot-injury-basketball": [
+    "injury-prevention",
+    "foot",
+    "stress-fracture",
+    "biomechanics",
+    "rehabilitation"
+  ],
+  "concept-cabcd-downed-athlete": [
+    "sports-medicine",
+    "emergency",
+    "on-court",
+    "cpr",
+    "primary-survey",
+    "cervical-spine"
   ],
   "concept-calling-the-ball": [
     "shooting",
@@ -614,6 +1608,39 @@
     "flare",
     "motion",
     "screening"
+  ],
+  "concept-chronic-ankle-instability-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "ankle",
+    "surgery",
+    "return-to-play"
+  ],
+  "concept-cluster-training-basketball": [
+    "strength-training",
+    "power",
+    "preseason",
+    "cluster-training",
+    "velocity",
+    "periodization"
+  ],
+  "concept-clutch-choking-basketball": [
+    "sport-psychology",
+    "pressure",
+    "clutch",
+    "choking",
+    "attention",
+    "decision-making",
+    "free-throw"
+  ],
+  "concept-cmj-monitoring-basketball": [
+    "conditioning",
+    "strength-training",
+    "monitoring",
+    "in-season",
+    "periodization",
+    "jump-training",
+    "fatigue-management"
   ],
   "concept-combination-alternating-defenses": [
     "defense",
@@ -641,6 +1668,13 @@
     "footwork",
     "perimeter",
     "mindset"
+  ],
+  "concept-concussion-management-basketball": [
+    "sports-medicine",
+    "concussion",
+    "return-to-play",
+    "injury-management",
+    "safety"
   ],
   "concept-conditioned-reflexes": [
     "conditioning",
@@ -710,6 +1744,14 @@
     "stability",
     "injury-prevention"
   ],
+  "concept-core-muscle-injury-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "hip",
+    "groin",
+    "core"
+  ],
   "concept-core-stability-circuit-basketball": [
     "core",
     "strength",
@@ -718,6 +1760,14 @@
     "abdominals",
     "obliques",
     "injury-prevention"
+  ],
+  "concept-countermovement-jump-fatigue-monitoring": [
+    "fatigue",
+    "monitoring",
+    "conditioning",
+    "neuromuscular",
+    "sport-science",
+    "testing"
   ],
   "concept-curl-shot-off-screen": [
     "offense",
@@ -797,6 +1847,19 @@
     "man-to-man",
     "zone"
   ],
+  "concept-dermatology-basketball-athlete": [
+    "sports-medicine",
+    "medical",
+    "injury-prevention",
+    "hygiene"
+  ],
+  "concept-diabetes-basketball-athlete": [
+    "sports-medicine",
+    "medical",
+    "nutrition",
+    "pre-participation",
+    "in-season"
+  ],
   "concept-down-screen-reads": [
     "offense",
     "screens",
@@ -848,6 +1911,57 @@
     "driving",
     "ball-handling",
     "penetration"
+  ],
+  "concept-dynamic-valgus-hip-core-pfp": [
+    "injury-prevention",
+    "biomechanics",
+    "sports-medicine",
+    "knee",
+    "core"
+  ],
+  "concept-eccentric-training-basketball": [
+    "strength-training",
+    "eccentric",
+    "power",
+    "injury-prevention",
+    "conditioning",
+    "basketball-fitness"
+  ],
+  "concept-elbow-anatomy-basketball": [
+    "anatomy",
+    "injury",
+    "elbow",
+    "sports-medicine",
+    "biomechanics"
+  ],
+  "concept-elbow-bursitis-neuropathy-basketball": [
+    "injury",
+    "elbow",
+    "rehabilitation",
+    "sports-medicine",
+    "nerve",
+    "bursitis"
+  ],
+  "concept-elbow-instability-basketball": [
+    "injury",
+    "elbow",
+    "rehabilitation",
+    "sports-medicine",
+    "surgery"
+  ],
+  "concept-elbow-tendon-injuries-basketball": [
+    "injury",
+    "elbow",
+    "rehabilitation",
+    "sports-medicine",
+    "tendons"
+  ],
+  "concept-epicondylitis-basketball": [
+    "injury",
+    "elbow",
+    "overuse",
+    "rehabilitation",
+    "sports-medicine"
   ],
   "concept-explosive-calisthenics-five-principles": [
     "conditioning",
@@ -931,6 +2045,13 @@
     "jumping",
     "acceleration"
   ],
+  "concept-fais-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "hip",
+    "groin"
+  ],
   "concept-fast-break-elements-dantoni": [
     "offense",
     "transition",
@@ -970,6 +2091,21 @@
     "rebounding",
     "philosophy"
   ],
+  "concept-female-athlete-triad-basketball": [
+    "sports-medicine",
+    "female-athlete",
+    "nutrition",
+    "bone-health",
+    "injury-prevention"
+  ],
+  "concept-female-basketball-player-physiology": [
+    "sports-medicine",
+    "female-athletes",
+    "ACL",
+    "injury-prevention",
+    "hormones",
+    "nutrition"
+  ],
   "concept-fill-shot-off-screen": [
     "offense",
     "shooting",
@@ -977,6 +2113,13 @@
     "catch-and-shoot",
     "wing",
     "midrange"
+  ],
+  "concept-finger-injuries-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "hand",
+    "finger"
   ],
   "concept-first-step-quickness": [
     "quickness",
@@ -1075,6 +2218,20 @@
     "footwork",
     "pivoting"
   ],
+  "concept-foot-ankle-injury-basketball": [
+    "rehabilitation",
+    "injury-prevention",
+    "ankle",
+    "foot",
+    "sports-medicine"
+  ],
+  "concept-force-velocity-curve-basketball": [
+    "strength-training",
+    "power",
+    "force-velocity",
+    "program-design",
+    "conditioning"
+  ],
   "concept-front-flip-chain": [
     "explosiveness",
     "agility",
@@ -1117,6 +2274,15 @@
     "preparation",
     "pro"
   ],
+  "concept-gas-overtraining-basketball": [
+    "strength-training",
+    "conditioning",
+    "periodization",
+    "recovery",
+    "overtraining",
+    "GAS",
+    "supercompensation"
+  ],
   "concept-getting-open-perimeter": [
     "offense",
     "perimeter",
@@ -1124,6 +2290,13 @@
     "getting-open",
     "footwork",
     "half-court"
+  ],
+  "concept-gpp-athletic-performance-pyramid": [
+    "strength-training",
+    "periodization",
+    "program-design",
+    "off-season",
+    "GPP"
   ],
   "concept-gretzky-law-anticipation": [
     "quickness",
@@ -1160,6 +2333,13 @@
     "high-post",
     "spacing"
   ],
+  "concept-hip-groin-injuries-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "hip",
+    "groin"
+  ],
   "concept-hop-back-crossover-combo": [
     "offense",
     "ball-handling",
@@ -1176,6 +2356,15 @@
     "pro",
     "coaching"
   ],
+  "concept-in-season-intensity-tools": [
+    "strength-training",
+    "in-season",
+    "intensity",
+    "load-management",
+    "RPE",
+    "velocity-based-training",
+    "periodization"
+  ],
   "concept-individual-shooting-workout-design": [
     "shooting",
     "individual-workout",
@@ -1183,6 +2372,23 @@
     "practice-design",
     "free-throws",
     "spot-shots"
+  ],
+  "concept-inherited-aortic-disease-basketball": [
+    "sports medicine",
+    "cardiac",
+    "aortic disease",
+    "Marfan syndrome",
+    "return to play",
+    "sudden cardiac death",
+    "screening"
+  ],
+  "concept-inseason-injury-management-basketball": [
+    "sports-medicine",
+    "injury-management",
+    "rehabilitation",
+    "return-to-play",
+    "preseason",
+    "in-season"
   ],
   "concept-isolation-defense-del-harris": [
     "defense",
@@ -1199,6 +2405,13 @@
     "trapping",
     "zone",
     "pro"
+  ],
+  "concept-isometric-training-basketball": [
+    "strength-training",
+    "isometric",
+    "power",
+    "core",
+    "basketball-fitness"
   ],
   "concept-jab-step": [
     "offense",
@@ -1232,6 +2445,13 @@
     "calisthenics",
     "longevity"
   ],
+  "concept-jones-fracture-basketball": [
+    "rehabilitation",
+    "foot",
+    "fracture",
+    "sports-medicine",
+    "injury-prevention"
+  ],
   "concept-jump-chain-progression": [
     "plyometrics",
     "jumping",
@@ -1239,6 +2459,13 @@
     "calisthenics",
     "progression",
     "lower-body"
+  ],
+  "concept-jump-shot-biomechanics": [
+    "biomechanics",
+    "shooting",
+    "upper-extremity",
+    "skill",
+    "jump-shot"
   ],
   "concept-jump-shot-mechanics": [
     "shooting",
@@ -1262,6 +2489,14 @@
     "fundamentals",
     "drill-design",
     "motivation"
+  ],
+  "concept-kinesiophobia-basketball-rehab": [
+    "rehabilitation",
+    "ACL",
+    "psychology",
+    "kinesiophobia",
+    "movement",
+    "injury-prevention"
   ],
   "concept-kip-up-athletic-application": [
     "conditioning",
@@ -1296,6 +2531,47 @@
     "calisthenics",
     "floor-work"
   ],
+  "concept-knee-cartilage-injuries-basketball": [
+    "injury",
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "cartilage",
+    "return-to-sport"
+  ],
+  "concept-knee-injuries-basketball-overview": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "ACL",
+    "meniscus",
+    "tendinopathy"
+  ],
+  "concept-knee-rehabilitation-basketball": [
+    "rehabilitation",
+    "knee",
+    "ACL",
+    "injury-prevention",
+    "return-to-play",
+    "sports-medicine"
+  ],
+  "concept-knee-rehabilitation-phases-basketball": [
+    "rehabilitation",
+    "knee",
+    "ACL",
+    "injury-prevention",
+    "return-to-sport",
+    "sports-medicine"
+  ],
+  "concept-knee-tendinopathy-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "tendinopathy",
+    "jumpers-knee"
+  ],
   "concept-late-game-defensive-adjustments": [
     "defense",
     "late-game",
@@ -1313,6 +2589,13 @@
     "switching",
     "game-management",
     "pro"
+  ],
+  "concept-lateral-ankle-sprain-basketball": [
+    "rehabilitation",
+    "ankle",
+    "injury-prevention",
+    "sports-medicine",
+    "proprioception"
   ],
   "concept-live-ball-combination-moves": [
     "offense",
@@ -1332,6 +2615,29 @@
     "free-throw",
     "periodization"
   ],
+  "concept-long-term-athletic-development": [
+    "youth-development",
+    "player-development",
+    "long-term-athletic-development",
+    "early-specialization",
+    "periodization"
+  ],
+  "concept-low-back-pain-basketball": [
+    "sports medicine",
+    "injury",
+    "rehabilitation",
+    "spine",
+    "back pain",
+    "return to play"
+  ],
+  "concept-lower-body-exercise-fundamentals": [
+    "strength-training",
+    "lower-body",
+    "technique",
+    "safety",
+    "breathing",
+    "spotting"
+  ],
   "concept-lower-body-plyometrics": [
     "conditioning",
     "plyometrics",
@@ -1341,6 +2647,20 @@
     "lateral-quickness",
     "injury-prevention"
   ],
+  "concept-lower-crossed-syndrome-basketball": [
+    "sports-medicine",
+    "injury-prevention",
+    "biomechanics",
+    "core",
+    "lower-extremity"
+  ],
+  "concept-marfan-syndrome-basketball": [
+    "sports-medicine",
+    "cardiovascular",
+    "injury-prevention",
+    "pre-participation",
+    "medical"
+  ],
   "concept-matchup-press-obrien": [
     "defense",
     "full-court",
@@ -1349,6 +2669,34 @@
     "zone",
     "trapping",
     "conditioning"
+  ],
+  "concept-mcl-lcl-plc-injury-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "ligament"
+  ],
+  "concept-meniscal-injury-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "meniscus"
+  ],
+  "concept-meniscal-repair-rehabilitation": [
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "injury-prevention"
+  ],
+  "concept-mental-health-injury-recovery-basketball": [
+    "injury",
+    "rehabilitation",
+    "mental-health",
+    "sport-psychology",
+    "return-to-play",
+    "acl"
   ],
   "concept-mentally-correcting-a-miss": [
     "offense",
@@ -1365,6 +2713,14 @@
     "pull-up",
     "mechanics",
     "fundamentals"
+  ],
+  "concept-mli-rehabilitation-return-to-basketball": [
+    "rehabilitation",
+    "knee",
+    "injury",
+    "return-to-sport",
+    "sports-medicine",
+    "periodization"
   ],
   "concept-modern-conditioning-basketball": [
     "conditioning",
@@ -1391,6 +2747,33 @@
     "philosophy",
     "utah-motion offense",
     "passing"
+  ],
+  "concept-motor-cognitive-youth-basketball": [
+    "youth-basketball",
+    "player-development",
+    "motor-skills",
+    "cognitive-development",
+    "coaching-philosophy"
+  ],
+  "concept-multi-ligament-knee-injury-basketball": [
+    "injury",
+    "knee",
+    "rehabilitation",
+    "surgery",
+    "sports-medicine",
+    "multi-ligament",
+    "ACL",
+    "PCL"
+  ],
+  "concept-muscle-injury-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "muscle-injury",
+    "return-to-play",
+    "hamstrings",
+    "calf",
+    "quadriceps"
   ],
   "concept-muscle-up": [
     "conditioning",
@@ -1419,12 +2802,66 @@
     "calisthenics",
     "strength"
   ],
+  "concept-nba-air-travel-performance": [
+    "player-health",
+    "recovery",
+    "conditioning",
+    "scheduling",
+    "load-management"
+  ],
+  "concept-nba-body-composition-trends": [
+    "body-composition",
+    "anthropometrics",
+    "strength-training",
+    "periodization",
+    "position-specific"
+  ],
+  "concept-nba-injury-epidemiology": [
+    "sports-medicine",
+    "injury-prevention",
+    "nba",
+    "epidemiology",
+    "return-to-play"
+  ],
+  "concept-nba-long-distance-travel": [
+    "sports-medicine",
+    "travel",
+    "recovery",
+    "sleep",
+    "circadian-rhythm",
+    "fatigue",
+    "NBA",
+    "injury-prevention",
+    "performance"
+  ],
+  "concept-nba-medical-coverage": [
+    "sports-medicine",
+    "injury-prevention",
+    "nba",
+    "medical-coverage",
+    "mental-health"
+  ],
   "concept-nba-scouting-report": [
     "scouting",
     "game-plan",
     "coaching-philosophy",
     "preparation",
     "pro"
+  ],
+  "concept-nba-surgical-outcomes": [
+    "sports-medicine",
+    "return-to-play",
+    "nba",
+    "surgery",
+    "rehabilitation"
+  ],
+  "concept-nba-travel-injury-mood": [
+    "sports-medicine",
+    "travel",
+    "recovery",
+    "injury-prevention",
+    "sleep",
+    "immune-system"
   ],
   "concept-neurological-inhibition-speed": [
     "speed",
@@ -1442,6 +2879,14 @@
     "neurological",
     "calisthenics"
   ],
+  "concept-neuromuscular-training-basketball-injury-prevention": [
+    "injury-prevention",
+    "neuromuscular-training",
+    "eccentric-training",
+    "motor-control",
+    "warm-up",
+    "hip-strength"
+  ],
   "concept-not-open-dribble-reaction-off-screen": [
     "offense",
     "shooting",
@@ -1450,6 +2895,13 @@
     "dribble",
     "ball-handling",
     "shot-creation"
+  ],
+  "concept-ocd-knee-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "youth",
+    "knee"
   ],
   "concept-off-ball-screen-reads": [
     "offense",
@@ -1522,6 +2974,14 @@
     "post-moves",
     "scoring"
   ],
+  "concept-olympic-lift-basketball-principles": [
+    "strength-training",
+    "olympic-lifts",
+    "explosive-power",
+    "total-body",
+    "program-design",
+    "coaching"
+  ],
   "concept-on-ball-defensive-pivots": [
     "defense",
     "footwork",
@@ -1537,6 +2997,36 @@
     "man-to-man",
     "help-defense",
     "rotation"
+  ],
+  "concept-on-court-cardiac-emergency": [
+    "sports-medicine",
+    "cardiac",
+    "emergency",
+    "on-court",
+    "cpr",
+    "aed"
+  ],
+  "concept-on-court-extremity-injuries": [
+    "sports-medicine",
+    "injury-management",
+    "on-court",
+    "rehabilitation",
+    "return-to-play"
+  ],
+  "concept-on-court-facial-injuries": [
+    "sports-medicine",
+    "facial-injuries",
+    "on-court",
+    "injury-management",
+    "emergency"
+  ],
+  "concept-on-court-rehabilitation-basketball": [
+    "rehabilitation",
+    "return-to-sport",
+    "return-to-performance",
+    "injury-prevention",
+    "motor-learning",
+    "conditioning"
   ],
   "concept-one-two-step-footwork": [
     "shooting",
@@ -1556,6 +3046,108 @@
     "switching",
     "trapping"
   ],
+  "concept-ophthalmic-trauma-basketball": [
+    "sports-medicine",
+    "eye-injury",
+    "injury-management",
+    "return-to-play",
+    "safety"
+  ],
+  "concept-orthobiologics-acl-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "ACL",
+    "orthobiologics",
+    "PRP",
+    "stem-cells"
+  ],
+  "concept-orthobiologics-cartilage-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "cartilage",
+    "orthobiologics",
+    "PRP",
+    "BMAC",
+    "knee"
+  ],
+  "concept-orthobiologics-cartilage-meniscal-basketball": [
+    "sports-medicine",
+    "injury-management",
+    "rehabilitation",
+    "orthobiologics",
+    "cartilage",
+    "meniscus"
+  ],
+  "concept-orthobiologics-ligament-muscle-basketball": [
+    "sports-medicine",
+    "rehabilitation",
+    "orthobiologics",
+    "PRP",
+    "BMAC",
+    "ligament",
+    "muscle-injury"
+  ],
+  "concept-orthobiologics-mcl-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "MCL",
+    "orthobiologics",
+    "PRP",
+    "knee"
+  ],
+  "concept-orthobiologics-muscle-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "muscle",
+    "hamstring",
+    "orthobiologics",
+    "PRP",
+    "return-to-play"
+  ],
+  "concept-orthobiologics-tendon-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "tendinopathy",
+    "biologic-therapy"
+  ],
+  "concept-orthobiologics-tendon-fascia-basketball": [
+    "sports-medicine",
+    "injury-prevention",
+    "rehabilitation",
+    "orthobiologics",
+    "PRP",
+    "tendinopathy"
+  ],
+  "concept-orthobiologics-ucl-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "elbow",
+    "UCL",
+    "orthobiologics",
+    "PRP"
+  ],
+  "concept-osteoarthritis-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "hip",
+    "osteoarthritis"
+  ],
+  "concept-osteochondral-lesion-talus-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "ankle",
+    "surgery",
+    "return-to-play",
+    "cartilage"
+  ],
   "concept-out-of-bounds-defense": [
     "defense",
     "out-of-bounds",
@@ -1573,6 +3165,13 @@
     "pivoting",
     "outlet-pass"
   ],
+  "concept-overload-young-basketball-players": [
+    "youth",
+    "injury-prevention",
+    "periodization",
+    "sports-medicine",
+    "long-term-athletic-development"
+  ],
   "concept-parc-progression-principle": [
     "conditioning",
     "athleticism",
@@ -1581,6 +3180,27 @@
     "progression",
     "calisthenics",
     "power"
+  ],
+  "concept-patellar-dislocation-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "knee"
+  ],
+  "concept-patellar-tendinopathy-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "patellar-tendon",
+    "jumpers-knee",
+    "overuse"
+  ],
+  "concept-patellofemoral-pain-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "knee",
+    "biomechanics"
   ],
   "concept-perimeter-getting-open": [
     "offense",
@@ -1693,6 +3313,14 @@
     "trapping",
     "ball-protection"
   ],
+  "concept-plantar-fasciitis-basketball": [
+    "sports-medicine",
+    "rehabilitation",
+    "plantar-fasciitis",
+    "PRP",
+    "injury-prevention",
+    "foot"
+  ],
   "concept-player-coach-motivation": [
     "coaching",
     "motivation",
@@ -1724,6 +3352,14 @@
     "strength",
     "jumping"
   ],
+  "concept-plyometric-volume-guidelines-basketball": [
+    "plyometrics",
+    "conditioning",
+    "strength-training",
+    "off-season",
+    "change-of-direction",
+    "youth-basketball"
+  ],
   "concept-plyometrics-basketball": [
     "conditioning",
     "plyometrics",
@@ -1750,6 +3386,12 @@
     "pro",
     "help-defense",
     "rotation"
+  ],
+  "concept-post-cardiac-arrest-care-basketball": [
+    "sports-medicine",
+    "cardiac",
+    "emergency",
+    "return-to-play"
   ],
   "concept-post-catch-mechanics": [
     "offense",
@@ -1876,6 +3518,34 @@
     "cutting",
     "low-post"
   ],
+  "concept-postactivation-potentiation": [
+    "strength-training",
+    "power",
+    "PAP",
+    "preseason",
+    "complex-training",
+    "contrast-training",
+    "plyometrics",
+    "neuromuscular"
+  ],
+  "concept-postactivation-potentiation-basketball": [
+    "strength",
+    "power",
+    "warm-up",
+    "conditioning",
+    "PAP",
+    "pregame",
+    "jumping",
+    "sprinting"
+  ],
+  "concept-postseason-programming-basketball": [
+    "strength-training",
+    "periodization",
+    "off-season",
+    "recovery",
+    "conditioning",
+    "program-design"
+  ],
   "concept-power-jump-chain": [
     "conditioning",
     "plyometrics",
@@ -1915,6 +3585,12 @@
     "calisthenics",
     "periodization"
   ],
+  "concept-pregnancy-postpartum-basketball": [
+    "sports-medicine",
+    "female-athlete",
+    "rehabilitation",
+    "return-to-play"
+  ],
   "concept-press-break-banana-cut": [
     "press-break",
     "offense",
@@ -1953,6 +3629,30 @@
     "calisthenics",
     "training-philosophy"
   ],
+  "concept-prp-ankle-sprains-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "ankle",
+    "orthobiologics",
+    "PRP",
+    "return-to-play"
+  ],
+  "concept-prp-classification-systems": [
+    "sports-medicine",
+    "orthobiologics",
+    "PRP",
+    "rehabilitation",
+    "injury-prevention"
+  ],
+  "concept-prp-patellar-tendinopathy-basketball": [
+    "sports-medicine",
+    "rehabilitation",
+    "PRP",
+    "orthobiologics",
+    "patellar-tendinopathy",
+    "jumpers-knee"
+  ],
   "concept-quickness-and-reaction-time": [
     "conditioning",
     "agility",
@@ -1960,6 +3660,23 @@
     "reaction-time",
     "mental-processing",
     "skill-development"
+  ],
+  "concept-quiet-eye-basketball-shooting": [
+    "shooting",
+    "sport-psychology",
+    "attention",
+    "performance",
+    "free-throws",
+    "anxiety"
+  ],
+  "concept-quiet-eye-free-throw": [
+    "sport-psychology",
+    "shooting",
+    "free-throw",
+    "gaze",
+    "attention",
+    "vision",
+    "quiet-eye"
   ],
   "concept-reaction-time-basketball": [
     "conditioning",
@@ -1976,6 +3693,23 @@
     "conditioning",
     "court-vision",
     "perceptual-training"
+  ],
+  "concept-reactive-strength-basketball": [
+    "strength",
+    "power",
+    "plyometrics",
+    "jumping",
+    "reactive-strength",
+    "SSC",
+    "conditioning"
+  ],
+  "concept-reactive-strength-testing-basketball": [
+    "strength-training",
+    "testing",
+    "reactive-strength",
+    "plyometrics",
+    "SSC",
+    "conditioning"
   ],
   "concept-reading-defender-off-screen": [
     "offense",
@@ -2000,6 +3734,35 @@
     "reaction-time",
     "skill-development",
     "neuroscience"
+  ],
+  "concept-resistance-training-benefits-basketball": [
+    "strength-training",
+    "conditioning",
+    "injury-prevention",
+    "body-composition",
+    "recovery",
+    "periodization"
+  ],
+  "concept-resistance-training-importance-basketball": [
+    "strength",
+    "resistance-training",
+    "injury-prevention",
+    "periodization",
+    "conditioning"
+  ],
+  "concept-resistance-training-program-variables": [
+    "strength-training",
+    "conditioning",
+    "periodization",
+    "program-design",
+    "resistance-training"
+  ],
+  "concept-return-to-play-decisions-basketball": [
+    "sports-medicine",
+    "injury-prevention",
+    "load-management",
+    "return-to-play",
+    "rehabilitation"
   ],
   "concept-reverse-dribble-continuity": [
     "offense",
@@ -2027,6 +3790,30 @@
     "workout-design",
     "practice-planning",
     "progressive-training"
+  ],
+  "concept-robust-athlete-development-basketball": [
+    "sports-medicine",
+    "injury-prevention",
+    "load-management",
+    "physical-development",
+    "conditioning"
+  ],
+  "concept-rotational-medicine-ball-throw-test": [
+    "strength-training",
+    "testing",
+    "rotational-power",
+    "medicine-ball",
+    "ACL-prevention",
+    "core"
+  ],
+  "concept-rotator-cuff-tendinopathy-basketball": [
+    "sports-medicine",
+    "rehabilitation",
+    "rotator-cuff",
+    "PRP",
+    "BMAC",
+    "shoulder",
+    "orthobiologics"
   ],
   "concept-round-off-acrobatics": [
     "agility",
@@ -2086,6 +3873,23 @@
     "periodization",
     "program-design"
   ],
+  "concept-scaphoid-fracture-basketball": [
+    "injury",
+    "wrist",
+    "fracture",
+    "sports-medicine",
+    "rehabilitation",
+    "surgery"
+  ],
+  "concept-scoring-strategies-winning-teams": [
+    "offense",
+    "game-strategy",
+    "analytics",
+    "fast-break",
+    "post-play",
+    "rebounding",
+    "bench-players"
+  ],
   "concept-screen-taxonomy-nba": [
     "offense",
     "screening",
@@ -2141,6 +3945,22 @@
     "screen-the-screener",
     "ball-screen",
     "down-screen"
+  ],
+  "concept-shared-decision-making-sports-cardiology": [
+    "sports medicine",
+    "cardiac",
+    "return to play",
+    "athlete welfare",
+    "coaching communication"
+  ],
+  "concept-shared-mental-models-basketball": [
+    "sport-psychology",
+    "team-dynamics",
+    "decision-making",
+    "communication",
+    "coaching",
+    "offense",
+    "defense"
   ],
   "concept-shooter-pivot-fundamentals": [
     "offense",
@@ -2351,6 +4171,35 @@
     "individual-development",
     "off-season"
   ],
+  "concept-shoulder-assessment-basketball": [
+    "sports-medicine",
+    "shoulder",
+    "assessment",
+    "rehabilitation",
+    "injury-prevention",
+    "scapular"
+  ],
+  "concept-shoulder-injuries-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "shoulder"
+  ],
+  "concept-shoulder-instability-basketball": [
+    "injury",
+    "rehabilitation",
+    "shoulder",
+    "surgery",
+    "return-to-play",
+    "sports-medicine"
+  ],
+  "concept-shoulder-rehabilitation-basketball": [
+    "rehabilitation",
+    "shoulder",
+    "injury-prevention",
+    "return-to-play",
+    "sports-medicine"
+  ],
   "concept-show-and-go": [
     "offense",
     "shot-fake",
@@ -2366,6 +4215,14 @@
     "pivoting",
     "post-moves",
     "scoring"
+  ],
+  "concept-sickle-cell-trait-basketball": [
+    "sports medicine",
+    "sickle cell",
+    "athlete health",
+    "conditioning",
+    "return to play",
+    "exertional collapse"
   ],
   "concept-sikma-inside-pivot": [
     "offense",
@@ -2449,6 +4306,14 @@
     "pivoting",
     "mismatch"
   ],
+  "concept-sport-psychology-basketball": [
+    "mental-health",
+    "sport-psychology",
+    "performance",
+    "injury",
+    "resilience",
+    "mindset"
+  ],
   "concept-sprint-mechanics-basketball": [
     "speed",
     "conditioning",
@@ -2472,6 +4337,14 @@
     "slip",
     "reverse-pivot"
   ],
+  "concept-star-shoulder-rehab-basketball": [
+    "rehabilitation",
+    "shoulder",
+    "injury",
+    "return-to-play",
+    "clinical",
+    "pain-management"
+  ],
   "concept-step-back": [
     "offense",
     "footwork",
@@ -2481,12 +4354,74 @@
     "pull-up",
     "perimeter"
   ],
+  "concept-stress-fractures-basketball": [
+    "sports-medicine",
+    "injury-prevention",
+    "bone-health",
+    "rehabilitation",
+    "return-to-play"
+  ],
+  "concept-sudden-cardiac-death-basketball": [
+    "sports medicine",
+    "cardiac",
+    "sudden cardiac death",
+    "athlete health",
+    "screening",
+    "cardiovascular",
+    "NBA"
+  ],
+  "concept-syndesmotic-sprain-basketball": [
+    "rehabilitation",
+    "ankle",
+    "sports-medicine",
+    "injury-prevention"
+  ],
+  "concept-t-test-basketball": [
+    "testing",
+    "agility",
+    "change-of-direction",
+    "assessment",
+    "conditioning"
+  ],
   "concept-ten-steps-progression": [
     "conditioning",
     "program-design",
     "progression",
     "calisthenics",
     "periodization"
+  ],
+  "concept-tendinopathy-basketball": [
+    "rehabilitation",
+    "sports-medicine",
+    "injury-prevention",
+    "tendinopathy",
+    "patellar",
+    "achilles"
+  ],
+  "concept-tendinopathy-basketball-pathophysiology": [
+    "injury-prevention",
+    "sports-medicine",
+    "tendinopathy",
+    "achilles",
+    "patellar-tendon",
+    "overuse"
+  ],
+  "concept-tendinopathy-rehabilitation-basketball": [
+    "rehabilitation",
+    "injury-prevention",
+    "patellar-tendon",
+    "achilles-tendon",
+    "return-to-sport",
+    "tendinopathy"
+  ],
+  "concept-thg-rehabilitation-basketball": [
+    "rehabilitation",
+    "hip",
+    "groin",
+    "trunk",
+    "injury-prevention",
+    "return-to-play",
+    "sports-medicine"
   ],
   "concept-three-explosive-qualities": [
     "conditioning",
@@ -2513,12 +4448,26 @@
     "pull-up",
     "mechanics"
   ],
+  "concept-three-quarter-court-sprint-test": [
+    "testing",
+    "speed",
+    "conditioning",
+    "assessment",
+    "sprinting"
+  ],
   "concept-time-surfing-skill-training": [
     "conditioning",
     "training-methodology",
     "agility",
     "speed",
     "skill-development"
+  ],
+  "concept-torso-stiffness-basketball": [
+    "strength",
+    "core",
+    "injury-prevention",
+    "force-production",
+    "conditioning"
   ],
   "concept-trapping-footwork": [
     "defense",
@@ -2626,12 +4575,45 @@
     "fundamentals",
     "triple-threat"
   ],
+  "concept-trochlear-dysplasia-basketball": [
+    "sports-medicine",
+    "knee",
+    "biomechanics",
+    "injury-prevention"
+  ],
+  "concept-upper-body-exercise-technique-basketball": [
+    "strength",
+    "upper-body",
+    "resistance-training",
+    "technique",
+    "spotting",
+    "breathing",
+    "equipment"
+  ],
   "concept-upper-body-strength-basketball": [
     "strength-training",
     "conditioning",
     "injury-prevention",
     "upper-body",
     "kinetic-chain"
+  ],
+  "concept-upper-extremity-demands-basketball": [
+    "biomechanics",
+    "upper-extremity",
+    "dribbling",
+    "shooting",
+    "rebounding",
+    "position-specific"
+  ],
+  "concept-upper-extremity-injuries-basketball": [
+    "injury-prevention",
+    "upper-extremity",
+    "rehabilitation",
+    "biomechanics",
+    "finger",
+    "thumb",
+    "wrist",
+    "shoulder"
   ],
   "concept-v-cut-footwork": [
     "offense",
@@ -2640,6 +4622,24 @@
     "cutting",
     "screens",
     "pivoting"
+  ],
+  "concept-variable-resistance-training-basketball": [
+    "strength-training",
+    "power",
+    "variable-resistance",
+    "preseason",
+    "chains",
+    "bands",
+    "explosiveness"
+  ],
+  "concept-velocity-based-training-basketball": [
+    "strength-training",
+    "power",
+    "velocity-based-training",
+    "preseason",
+    "Olympic-lifts",
+    "RFD",
+    "periodization"
   ],
   "concept-vertical-jump-development": [
     "conditioning",
@@ -2650,12 +4650,70 @@
     "shot-contest",
     "layup"
   ],
+  "concept-vertical-jump-testing-basketball": [
+    "strength-training",
+    "testing",
+    "power",
+    "vertical-jump",
+    "conditioning",
+    "talent-identification"
+  ],
+  "concept-vo2max-test-basketball": [
+    "testing",
+    "aerobic",
+    "conditioning",
+    "assessment",
+    "VO2max",
+    "beep-test"
+  ],
   "concept-whole-part-whole-teaching": [
     "coaching-philosophy",
     "teaching-methods",
     "skill-development",
     "practice-design",
     "footwork"
+  ],
+  "concept-wolff-law-bone-adaptation-basketball": [
+    "injury-prevention",
+    "resistance-training",
+    "bone-health",
+    "youth-basketball",
+    "conditioning"
+  ],
+  "concept-workload-acute-chronic-ratio": [
+    "conditioning",
+    "periodization",
+    "injury-prevention",
+    "athlete-monitoring"
+  ],
+  "concept-wrist-hand-injuries-basketball": [
+    "injury-prevention",
+    "rehabilitation",
+    "sports-medicine",
+    "wrist",
+    "hand"
+  ],
+  "concept-youth-basketball-injuries": [
+    "sports-medicine",
+    "youth",
+    "injury-prevention",
+    "rehabilitation",
+    "return-to-play"
+  ],
+  "concept-youth-basketball-ltad": [
+    "youth",
+    "player-development",
+    "long-term-athletic-development",
+    "injury-prevention",
+    "coaching"
+  ],
+  "concept-youth-basketball-overuse-injuries": [
+    "sports-medicine",
+    "youth",
+    "injury-prevention",
+    "overuse",
+    "plyometrics",
+    "resistance-training"
   ],
   "consolidation-training-explosive": [
     "conditioning",
@@ -3478,6 +5536,16 @@
     "grip-strength",
     "barbell"
   ],
+  "drill-barbell-jump-squat": [
+    "strength",
+    "power",
+    "plyometrics",
+    "jumping",
+    "lower-body",
+    "barbell",
+    "rate-of-force-development",
+    "explosive"
+  ],
   "drill-barrel-roll-to-reaction": [
     "reaction-time",
     "agility",
@@ -4282,6 +6350,14 @@
     "visualization",
     "form-shooting"
   ],
+  "drill-elevated-bridge-hold": [
+    "core",
+    "glutes",
+    "posterior-chain",
+    "isometric",
+    "rehabilitation",
+    "strength"
+  ],
   "drill-explosive-dip-variations": [
     "upper-body",
     "pushing",
@@ -4541,6 +6617,16 @@
     "kinesthetic-awareness",
     "conditioning"
   ],
+  "drill-forward-step-lunge": [
+    "strength",
+    "lower-body",
+    "quads",
+    "glutes",
+    "hamstrings",
+    "lunges",
+    "barbell",
+    "bilateral"
+  ],
   "drill-four-point-back-flip": [
     "conditioning",
     "agility",
@@ -4666,6 +6752,14 @@
     "ankle-stiffness",
     "conditioning"
   ],
+  "drill-glute-ham-raise": [
+    "strength",
+    "hamstrings",
+    "glutes",
+    "posterior-chain",
+    "lower-body",
+    "glute-ham-bench"
+  ],
   "drill-goalie-reaction": [
     "quickness",
     "reaction-time",
@@ -4724,6 +6818,14 @@
     "explosive-power",
     "pushing",
     "shoulder-speed"
+  ],
+  "drill-hamstring-slide": [
+    "strength",
+    "hamstrings",
+    "glutes",
+    "posterior-chain",
+    "slide-board",
+    "lower-body"
   ],
   "drill-handstand-roll-front-flip": [
     "conditioning",
@@ -5442,6 +7544,15 @@
     "calisthenics",
     "floor-work"
   ],
+  "drill-nordic-hamstring-curl": [
+    "strength",
+    "hamstrings",
+    "posterior-chain",
+    "lower-body",
+    "injury-prevention",
+    "eccentric",
+    "nordic"
+  ],
   "drill-obrien-press-1v1": [
     "defense",
     "full-court",
@@ -5681,6 +7792,17 @@
     "pick-and-roll",
     "big-men",
     "face-up"
+  ],
+  "drill-pistol-squat": [
+    "strength",
+    "lower-body",
+    "single-leg",
+    "quads",
+    "glutes",
+    "hamstrings",
+    "balance",
+    "proprioception",
+    "plyometric-box"
   ],
   "drill-pit-smashers": [
     "speed",
@@ -6006,6 +8128,14 @@
     "ankle",
     "strengthening",
     "injury-prevention"
+  ],
+  "drill-reverse-hip-extension-hold": [
+    "core",
+    "glutes",
+    "posterior-chain",
+    "isometric",
+    "strength",
+    "rehabilitation"
   ],
   "drill-reverse-replace-drive": [
     "passing",
@@ -6408,6 +8538,18 @@
     "competitive",
     "scoring"
   ],
+  "drill-side-lunge": [
+    "strength",
+    "lower-body",
+    "lateral",
+    "hip-abductors",
+    "hip-adductors",
+    "quads",
+    "glutes",
+    "dumbbells",
+    "defensive-slides",
+    "cutting"
+  ],
   "drill-side-lying-clam": [
     "injury-prevention",
     "ACL",
@@ -6530,6 +8672,18 @@
     "explosiveness",
     "jumping",
     "rebounding"
+  ],
+  "drill-single-leg-romanian-deadlift": [
+    "strength",
+    "lower-body",
+    "single-leg",
+    "hamstrings",
+    "glutes",
+    "posterior-chain",
+    "hip-hinge",
+    "kettlebell",
+    "balance",
+    "injury-prevention"
   ],
   "drill-single-leg-stance-balance": [
     "rehabilitation",
@@ -6764,6 +8918,13 @@
     "plyometrics",
     "power",
     "horizontal-jump"
+  ],
+  "drill-standing-pallof-overhead-press": [
+    "core",
+    "strength",
+    "anti-rotation",
+    "cable",
+    "stability"
   ],
   "drill-standing-stationary-arm-swings": [
     "speed",
@@ -7100,6 +9261,17 @@
     "bodyweight",
     "vertical-jump"
   ],
+  "drill-walking-lunge": [
+    "strength",
+    "lower-body",
+    "quads",
+    "glutes",
+    "hamstrings",
+    "hip-flexors",
+    "lunges",
+    "dumbbells",
+    "dynamic-balance"
+  ],
   "drill-wall-slides": [
     "speed",
     "conditioning",
@@ -7220,6 +9392,13 @@
     "game-speed",
     "charting"
   ],
+  "drill-wood-chop": [
+    "core",
+    "rotational-power",
+    "cable",
+    "obliques",
+    "strength"
+  ],
   "drill-wushu-kip-up": [
     "conditioning",
     "agility",
@@ -7309,6 +9488,14 @@
     "ball-handling",
     "footwork"
   ],
+  "exercise-back-squat-nsca": [
+    "strength-training",
+    "lower-body",
+    "squat",
+    "bilateral",
+    "barbell",
+    "compound"
+  ],
   "exercise-band-backward-walk": [
     "strength",
     "conditioning",
@@ -7327,6 +9514,63 @@
     "defensive-slides",
     "hip-abductor"
   ],
+  "exercise-barbell-biceps-curl": [
+    "strength-training",
+    "upper-body",
+    "biceps",
+    "barbell",
+    "elbow-flexion"
+  ],
+  "exercise-barbell-hip-thrust-nsca": [
+    "strength-training",
+    "lower-body",
+    "glutes",
+    "hip-extension",
+    "bilateral",
+    "barbell",
+    "compound"
+  ],
+  "exercise-bent-over-row-basketball": [
+    "strength-training",
+    "upper-body",
+    "pulling",
+    "lat",
+    "back",
+    "barbell",
+    "hip-hinge"
+  ],
+  "exercise-bicep-curl-basketball": [
+    "strength-training",
+    "upper-body",
+    "arms",
+    "injury-prevention"
+  ],
+  "exercise-birddog-plank": [
+    "strength-training",
+    "core",
+    "anti-rotation",
+    "glutes",
+    "dynamic"
+  ],
+  "exercise-bulgarian-split-squat": [
+    "strength",
+    "lower-body",
+    "unilateral",
+    "squat",
+    "glutes",
+    "hamstrings",
+    "quads",
+    "injury-prevention"
+  ],
+  "exercise-cable-squat-to-row": [
+    "strength-training",
+    "lower-body",
+    "upper-body",
+    "compound",
+    "cable",
+    "pulling",
+    "squatting"
+  ],
   "exercise-calf-pop-up": [
     "strength",
     "conditioning",
@@ -7337,6 +9581,14 @@
     "rebounding",
     "second-jump"
   ],
+  "exercise-deadbug": [
+    "strength-training",
+    "core",
+    "isometric",
+    "dynamic",
+    "deep-stabilizers",
+    "stability-ball"
+  ],
   "exercise-deadlift": [
     "strength",
     "conditioning",
@@ -7345,6 +9597,55 @@
     "jumping",
     "rebounding",
     "boxing-out"
+  ],
+  "exercise-deadlift-nsca": [
+    "strength-training",
+    "lower-body",
+    "deadlift",
+    "posterior-chain",
+    "bilateral",
+    "barbell",
+    "compound"
+  ],
+  "exercise-drop-step-squat": [
+    "strength",
+    "lower-body",
+    "hip-abductor",
+    "squat",
+    "lateral",
+    "defense",
+    "athletic-position"
+  ],
+  "exercise-dumbbell-bench-press": [
+    "strength",
+    "upper-body",
+    "pushing",
+    "chest",
+    "shoulders",
+    "triceps",
+    "bench-press"
+  ],
+  "exercise-dumbbell-biceps-curl": [
+    "strength-training",
+    "upper-body",
+    "biceps",
+    "dumbbell",
+    "elbow-flexion",
+    "supination"
+  ],
+  "exercise-face-pull-basketball": [
+    "strength-training",
+    "upper-body",
+    "shoulder",
+    "rotator-cuff",
+    "injury-prevention",
+    "cable"
+  ],
+  "exercise-front-plank": [
+    "strength-training",
+    "core",
+    "isometric",
+    "injury-prevention"
   ],
   "exercise-front-squat": [
     "strength",
@@ -7355,6 +9656,36 @@
     "jumping",
     "deceleration"
   ],
+  "exercise-front-squat-nsca": [
+    "strength-training",
+    "lower-body",
+    "squat",
+    "bilateral",
+    "barbell",
+    "quadriceps",
+    "compound"
+  ],
+  "exercise-hang-clean-basketball": [
+    "strength-training",
+    "olympic-lifts",
+    "explosive-power",
+    "total-body",
+    "lower-body"
+  ],
+  "exercise-hang-pull-basketball": [
+    "strength-training",
+    "olympic-lifts",
+    "explosive-power",
+    "total-body",
+    "pull"
+  ],
+  "exercise-hang-snatch-basketball": [
+    "strength-training",
+    "olympic-lifts",
+    "explosive-power",
+    "overhead",
+    "total-body"
+  ],
   "exercise-hip-thrust": [
     "strength",
     "conditioning",
@@ -7364,6 +9695,115 @@
     "acceleration",
     "deceleration",
     "landing"
+  ],
+  "exercise-isometric-mid-thigh-pull": [
+    "strength-training",
+    "lower-body",
+    "isometric",
+    "assessment",
+    "force-production",
+    "Olympic-derivatives"
+  ],
+  "exercise-lat-pulldown-machine": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "bilateral",
+    "machine",
+    "lats",
+    "back",
+    "posterior-deltoid",
+    "posture"
+  ],
+  "exercise-lateral-shoulder-raise": [
+    "strength-training",
+    "upper-body",
+    "shoulder",
+    "deltoid",
+    "dumbbell"
+  ],
+  "exercise-one-arm-cable-chest-press": [
+    "strength",
+    "upper-body",
+    "pushing",
+    "unilateral",
+    "cable",
+    "chest",
+    "shoulders",
+    "core",
+    "stability"
+  ],
+  "exercise-one-arm-cable-row": [
+    "strength",
+    "upper-body",
+    "pulling",
+    "unilateral",
+    "cable",
+    "lats",
+    "back",
+    "posterior-deltoid",
+    "grip"
+  ],
+  "exercise-one-arm-dumbbell-snatch": [
+    "strength-training",
+    "olympic-lifts",
+    "explosive-power",
+    "unilateral",
+    "total-body",
+    "dumbbell"
+  ],
+  "exercise-overhead-dumbbell-triceps-extension": [
+    "strength-training",
+    "upper-body",
+    "arms",
+    "triceps",
+    "injury-prevention"
+  ],
+  "exercise-pallof-press-variations": [
+    "strength-training",
+    "core",
+    "anti-rotation",
+    "cable",
+    "isometric"
+  ],
+  "exercise-plate-front-shoulder-raise": [
+    "strength-training",
+    "upper-body",
+    "shoulder",
+    "anterior-deltoid",
+    "plate"
+  ],
+  "exercise-power-clean-basketball": [
+    "strength-training",
+    "olympic-lifts",
+    "explosive-power",
+    "total-body",
+    "lower-body",
+    "upper-body"
+  ],
+  "exercise-power-snatch-basketball": [
+    "strength-training",
+    "olympic-lifts",
+    "explosive-power",
+    "total-body",
+    "overhead",
+    "shoulder"
+  ],
+  "exercise-prone-yti-basketball": [
+    "strength-training",
+    "shoulder",
+    "rotator-cuff",
+    "scapular",
+    "injury-prevention",
+    "rehabilitation"
+  ],
+  "exercise-pull-up-basketball": [
+    "strength-training",
+    "upper-body",
+    "pulling",
+    "lat",
+    "back",
+    "shoulder"
   ],
   "exercise-reverse-lunge": [
     "strength",
@@ -7392,6 +9832,71 @@
     "hamstrings",
     "injury-prevention",
     "defense"
+  ],
+  "exercise-romanian-deadlift-nsca": [
+    "strength-training",
+    "lower-body",
+    "deadlift",
+    "hamstrings",
+    "hip-hinge",
+    "barbell",
+    "injury-prevention"
+  ],
+  "exercise-side-plank": [
+    "strength-training",
+    "core",
+    "isometric",
+    "lateral",
+    "injury-prevention"
+  ],
+  "exercise-side-rotational-v-up": [
+    "strength-training",
+    "core",
+    "rotational",
+    "obliques",
+    "dynamic"
+  ],
+  "exercise-single-leg-cable-hip-abduction": [
+    "strength",
+    "lower-body",
+    "hip-abductor",
+    "unilateral",
+    "cable",
+    "rehabilitation",
+    "injury-prevention"
+  ],
+  "exercise-standing-dumbbell-shoulder-press": [
+    "strength-training",
+    "upper-body",
+    "shoulder",
+    "pressing",
+    "deltoid",
+    "triceps",
+    "dumbbell"
+  ],
+  "exercise-step-up": [
+    "strength",
+    "lower-body",
+    "unilateral",
+    "step-up",
+    "glutes",
+    "hamstrings",
+    "quads",
+    "balance"
+  ],
+  "exercise-triceps-pushdown": [
+    "strength-training",
+    "upper-body",
+    "triceps",
+    "cable",
+    "elbow-extension"
+  ],
+  "exercise-v-up": [
+    "strength-training",
+    "core",
+    "dynamic",
+    "abdominals",
+    "hip-flexors"
   ],
   "explosive-calisthenics-program-design": [
     "conditioning",

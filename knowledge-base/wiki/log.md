@@ -890,3 +890,368 @@
 - Created: src/motion/schemas/knowledge.py, src/motion/routers/knowledge.py, tests/integration/test_knowledge_router.py
 - Updated: src/motion/main.py (include_router(knowledge_router))
 - Notes: Three HTTP endpoints wrapping the retrieval library, all POST under /api/knowledge/ — play-context (Q-A), readiness (Q-B), drill-justification (Q-C). camelCase Pydantic aliases for the frontend contract (matches schemas/errors.py pattern). Indexes loaded once at first-request via lru_cache (recompile requires process restart). No auth on these endpoints yet — add later. 7 TestClient integration tests pin the HTTP contract against real compiled indexes. Full suite: 80 → 87 passed. Ruff-clean on new files. **First user-reachable surface of edge #1**: a frontend Next.js card can now call `/api/knowledge/readiness` with a flagged region and display excluded plays + recovery drills. Thin slice toward the "injury-aware game plan" feature called out as priority pivot.
+
+## [2026-04-20] ingest | improving practice performance basketball (pp.1-20)
+- Created: source-improving-practice-performance-basketball.md, concept-basketball-fatigue-monitoring.md, concept-basketball-workload-quantification.md, concept-countermovement-jump-fatigue-monitoring.md
+- Updated: (none)
+- Notes: S12 pages 1-20: Title page, table of contents, editorial overview, and fatigue monitoring/management review article (Edwards et al., 2018). Key concepts: basketball physical demands, fatigue definition (perceived vs performance fatigability), workload quantification methods (microtechnology, s-RPE), and fatigue monitoring tools (sprint, CMJ, ASRM, HRV, biochemical markers).
+
+## [2026-04-20] ingest | improving practice performance basketball (pp.21-40)
+- Created: source-improving-practice-performance.md, concept-basketball-training-camp-monitoring.md, concept-workload-acute-chronic-ratio.md, concept-basketball-performance-indicators-winning.md, concept-basketball-accelerometry-training-load.md, concept-basketball-exercise-intensity-zones.md
+- Updated: concept-basketball-fatigue-monitoring.md
+- Notes: S12 pages 1-40: Academic journal articles on basketball athlete monitoring, fatigue management, team performance indicators, and training load. Three articles: (1) fatigue monitoring tools for basketball training camps and competition periods, (2) team performance indicators for women's Olympic basketball, (3) accelerometry-derived exercise dose during competitive basketball season.
+
+## [2026-04-20] ingest | improving practice performance basketball (pp.41-60)
+- Created: concept-basketball-training-load-monitoring.md, concept-scoring-strategies-winning-teams.md, concept-basketball-body-composition-by-position.md
+- Updated: source-improving-practice-performance-basketball.md
+- Notes: Pages 32-51 from S12 — Three academic research articles: (1) Exercise intensity/dose in basketball training sessions (accelerometry study, Sports 2018 6:69), (2) Scoring strategies differentiating winning/losing teams at FIBA EuroBasket Women 2017 (Sports 2018 6:50), (3) Seasonal and longitudinal body composition changes by sport-position in NCAA DI basketball athletes (Sports 2018 6:85). These are peer-reviewed sports science articles, not coaching manual content per se, but contain actionable coaching knowledge about training load, game strategy, and athlete monitoring.
+
+## [2026-04-20] ingest | improving practice performance basketball (pp.61-80)
+- Created: concept-nba-air-travel-performance.md, concept-basketball-anthropometrics-position.md, concept-motor-cognitive-youth-basketball.md
+- Updated: source-improving-practice-performance.md
+- Notes: Pages 52-80: Three research articles — (1) NBA air travel and performance narrative review, (2) Anthropometric variables and somatotype of young vs professional basketball players, (3) Motor and cognitive skills in Italian youth basketball players 7-10 years old. Source ID S12 assigned.
+
+## [2026-04-20] ingest | improving practice performance basketball (pp.101-108)
+- Created: concept-cmj-monitoring-basketball.md
+- Updated: (none)
+- Notes: S12 pages 92-96: Academic research article (Sports 2017, 5, 85) on countermovement jump (CMJ) monitoring in elite female basketball players across a competitive season. Contains actionable concepts for S&C coaches: CMJ as fatigue monitoring tool, eccentric variable tracking, in-season load management, and jump consistency as a training adaptation marker. No drills or plays — pure research/concept content.
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.1-20)
+- Created: source-strength-training-basketball-nsca.md, concept-resistance-training-importance-basketball.md, concept-reactive-strength-basketball.md, concept-velocity-based-training-basketball.md, concept-postactivation-potentiation-basketball.md, concept-torso-stiffness-basketball.md, concept-wolff-law-bone-adaptation-basketball.md
+- Updated: (none)
+- Notes: S11 pages 1-20: Cover, TOC, Foreword, Introduction, and Chapter 1 (Importance of Resistance Training) — foundational concepts: strength definition, injury prevention, bone adaptation, SSC/reactive strength, torso stiffness, force production, power development, velocity-based training, PAP warm-ups
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.21-40)
+- Created: concept-resistance-training-benefits-basketball.md, concept-basketball-movement-taxonomy.md, concept-basketball-energy-systems.md, concept-basketball-position-anthropometrics-nsca.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 Ch1 pp.1-6: Resistance training benefits for basketball — aerobic/anaerobic capacity, body composition, mood/alertness, parasympathetic recovery. Ch2 pp.7-20: Sport analysis — biomechanical movement categories (jumping, linear, lateral, upper body), physiological analysis (energy systems, work-to-rest ratio, VO2max), anthropometrics by position (height/weight/wingspan data tables), mass indices, mass distribution ratios, physiological evolution of the game.
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.41-60)
+- Created: concept-nba-body-composition-trends.md, concept-basketball-movement-demands.md, concept-basketball-jump-load.md, concept-basketball-strength-testing.md, concept-basketball-performance-testing-battery.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 Ch2-3: NBA body composition longitudinal trends (2008-2018), position-specific movement demands, jump mechanics/load, injury epidemiology, and Ch3 testing protocols (IMTP, hip AD:AB, Nordic hamstring, T/Y/I shoulder, ballistic push-up, bench press max reps)
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.61-80)
+- Created: concept-basketball-performance-testing-overview.md, concept-bench-press-test-basketball.md, concept-reactive-strength-testing-basketball.md, concept-vertical-jump-testing-basketball.md, concept-rotational-medicine-ball-throw-test.md, concept-basketball-agility-testing.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 pp.61-80: Basketball performance testing chapter — bench press test norms, reactive strength tests (drop jump, repeated jump), power tests (vertical jump, running vertical jump), rotational medicine ball throw, speed and agility tests (reactive lane shuttle, lane agility, three-quarter court sprint) with normative data from high school, NCAA, and NBA combine.
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.81-100)
+- Created: concept-three-quarter-court-sprint-test.md, concept-t-test-basketball.md, concept-vo2max-test-basketball.md, concept-force-velocity-curve-basketball.md, concept-basketball-resistance-training-principles.md
+- Updated: (none)
+- Notes: S11 Ch3-4: Basketball fitness testing (3/4 court sprint, T-test, aerobic tests) and sport-specific program design guidelines (force-velocity curve, resistance training principles, SAID, periodization, size principle, exercise selection)
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.101-120)
+- Created: concept-resistance-training-program-variables.md, concept-long-term-athletic-development.md, concept-gas-overtraining-basketball.md, concept-basketball-physical-demands-position.md, concept-basketball-athlete-specific-considerations.md, concept-basketball-position-specific-training.md, concept-basketball-periodization-model.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 pp.1-20 (chapter content on resistance training program design variables, LTAD, GAS/adaptation, physical demands, athlete-specific considerations, position-specific training, and general periodization model for basketball)
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.121-140)
+- Created: concept-basketball-periodization-phases.md, exercise-power-clean-basketball.md, exercise-hang-clean-basketball.md, exercise-power-snatch-basketball.md, exercise-one-arm-dumbbell-snatch.md, exercise-hang-snatch-basketball.md, exercise-hang-pull-basketball.md, concept-olympic-lift-basketball-principles.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 Ch.4 conclusion (in-season periodization) + Ch.5 Total Body Exercise Technique: Power Clean, Lateral Clean, Hang Clean, Power Snatch, One-Arm Dumbbell Snatch, Hang Snatch, Hang Pull — with full technique, breathing, coaching cues, and variations
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.161-180)
+- Created: concept-lower-body-exercise-fundamentals.md, exercise-cable-squat-to-row.md, exercise-isometric-mid-thigh-pull.md, exercise-back-squat-nsca.md, exercise-front-squat-nsca.md, exercise-deadlift-nsca.md, exercise-barbell-hip-thrust-nsca.md, exercise-romanian-deadlift-nsca.md
+- Updated: (none)
+- Notes: S11 Ch.6 Lower Body Exercise Technique (Mubarak Malik) — Cable Squat to Row, Isometric Mid-Thigh Pull, chapter intro (fundamentals: grips, body positioning, breathing, spotting), Deadlift, Front Squat, Back Squat (+ Box Squat + Hatfield variations), Barbell Hip Thrust, Romanian Deadlift
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.181-200)
+- Created: drill-hamstring-slide.md, drill-barbell-jump-squat.md, drill-glute-ham-raise.md, drill-nordic-hamstring-curl.md, drill-forward-step-lunge.md, drill-walking-lunge.md, drill-side-lunge.md, drill-pistol-squat.md, drill-single-leg-romanian-deadlift.md
+- Updated: (none)
+- Notes: S11 pp.181-200: Lower body exercise technique pages — Hamstring Slide, Barbell Jump Squat, Glute-Ham Raise, Nordic Hamstring Curl, Forward Step Lunge, Walking Lunge, Reverse Lunge, Side Lunge, Pistol Squat, Single-Leg Romanian Deadlift
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.201-220)
+- Created: exercise-bulgarian-split-squat.md, exercise-step-up.md, exercise-drop-step-squat.md, exercise-single-leg-cable-hip-abduction.md, concept-upper-body-exercise-technique-basketball.md, exercise-dumbbell-bench-press.md, exercise-one-arm-cable-chest-press.md, exercise-one-arm-cable-row.md, exercise-lat-pulldown-machine.md
+- Updated: (none)
+- Notes: S11 Ch.6-7: Lower body exercises (Bulgarian split squat, step-up, drop step squat, single-leg cable hip abduction) and Ch.7 upper body exercise technique intro + exercises (dumbbell bench press, one-arm cable chest press, one-arm cable row, lat pulldown machine)
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.221-240)
+- Created: exercise-pull-up-basketball.md, exercise-bent-over-row-basketball.md, exercise-face-pull-basketball.md, exercise-lateral-shoulder-raise.md, exercise-plate-front-shoulder-raise.md, exercise-standing-dumbbell-shoulder-press.md, exercise-prone-yti-basketball.md, exercise-triceps-pushdown.md, exercise-barbell-biceps-curl.md, exercise-dumbbell-biceps-curl.md
+- Updated: (none)
+- Notes: S11 pp.221-240: Upper body accessory exercises — pull-up, bent-over row, face pull, lateral shoulder raise, plate front shoulder raise, standing dumbbell shoulder press, prone Y's/T's/I's, triceps pushdown, barbell biceps curl, dumbbell biceps curl
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.241-260)
+- Created: concept-anatomical-core-basketball.md, exercise-bicep-curl-basketball.md, exercise-overhead-dumbbell-triceps-extension.md, exercise-front-plank.md, exercise-v-up.md, exercise-side-rotational-v-up.md, exercise-deadbug.md, exercise-side-plank.md, exercise-birddog-plank.md, exercise-pallof-press-variations.md
+- Updated: (none)
+- Notes: S11 Ch.7-8: Upper arm exercises (bicep curl variations, overhead dumbbell triceps extension) and Chapter 8 Anatomical Core Exercise Technique — front plank, V-up, side rotational V-up, deadbug, side plank, suspension side plank, birddog plank, Pallof press, standing Pallof press with lateral step, standing Pallof overhead press. By John Shackleton.
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.261-280)
+- Created: drill-standing-pallof-overhead-press.md, drill-elevated-bridge-hold.md, drill-reverse-hip-extension-hold.md, drill-wood-chop.md, concept-postseason-programming-basketball.md, concept-gpp-athletic-performance-pyramid.md, concept-antagonist-paired-sets.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 Ch.8-9: Core exercises (Standing Pallof overhead press, Elevated bridge hold, Reverse hip extension hold, Wood chop) and Ch.9 Postseason Programming (GPP, active recovery, periodization, program design by level)
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.281-300)
+- Created: concept-basketball-postseason-training.md, concept-basketball-off-season-programming.md, concept-eccentric-training-basketball.md, concept-isometric-training-basketball.md, concept-blood-flow-restriction-basketball.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 Ch9-10: Postseason recovery phase (collegiate/professional), blood flow restriction training, postseason sample programs for guards and bigs (Tables 9.1-9.4), Off-season programming chapter (Ch10) — goals, GPP, strength, power microcycles, eccentric training, isometric training, RFD, reactive strength, AEL
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.301-320)
+- Created: concept-basketball-offseason-periodization.md, concept-plyometric-volume-guidelines-basketball.md, concept-basketball-gpp-program-design.md, concept-basketball-offseason-sample-programs.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 pp.301-320: Off-season resistance training periodization for basketball — plyometric volume guidelines, high school/college/pro athlete programming, GPP, strength→power progression, and complete sample program tables (Tables 10.1-10.5) for Guards and Bigs across 3 microcycles.
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.321-340)
+- Created: concept-basketball-preseason-programming.md, concept-cluster-training-basketball.md, concept-postactivation-potentiation.md, concept-variable-resistance-training-basketball.md, concept-basketball-preseason-sample-microcycle.md
+- Updated: concept-velocity-based-training-basketball.md
+- Notes: S11 Ch.11: Preseason Programming (Higgins & Thom) — goals/objectives, length/structure, cluster training, PAP, complex/contrast training, French contrast method, variable resistance, velocity-based training, accentuated eccentric loading, high school/college/pro level guidelines, sample microcycle tables (Bigs off-season Microcycle 3 Power weeks 11-14)
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.341-360)
+- Created: concept-basketball-preseason-microcycle.md, concept-basketball-in-season-programming.md, concept-in-season-intensity-tools.md, concept-basketball-competitive-phases.md
+- Updated: (none)
+- Notes: S11 Ch.11-12: Preseason microcycle training tables (Guards & Bigs, Table 11.2 & 11.3) and In-Season Programming (Ch.12) — goals, structure, exercise selection, frequency, intensity tools (Prilepin's Chart, Relative Intensity Scale, RPE Scale), and competitive phases I & II
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.361-380)
+- Created: concept-basketball-inseason-resistance-training.md, concept-basketball-inseason-program-tables.md
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 pp.361-380: In-season resistance training phases (Competitive Phase I and II), sample program tables for Guards and Bigs (Tables 12.4-12.7), velocity-based training, PAP complexes, cluster sets, and reference/bibliography sections (skipped). Key concepts: in-season periodization, competitive phase transitions, velocity-based training, PAP/postactivation potentiation, cluster method.
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.381-400)
+- Created: (none)
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: S11 strength training for basketball NSCA — back matter: bibliography (Ch4-12) and book INDEX (A-P). No extractable concepts, drills, or plays — pure reference/index pages. Creating source summary page for S11.
+
+## [2026-04-20] ingest | strength training for basketball nsca (pp.421-426)
+- Created: (none)
+- Updated: source-strength-training-basketball-nsca.md
+- Notes: Pages 421-426: Author biographies for NSCA Strength Training for Basketball contributors (Malik, Reeser, Shackleton, Sikka, Smith, Spiteri, Thom) and NSCA/Human Kinetics promotional pages. No extractable coaching concepts, drills, or plays — filler/biographical content only.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.21-40)
+- Created: source-basketball-sports-medicine-science.md, concept-basketball-physical-anthropometric-characteristics.md, concept-basketball-game-activity-demands.md
+- Updated: (none)
+- Notes: Basketball Sports Medicine and Science (S10), Ch.1 Physical/Anthropometric Characteristics, Ch.2 Activity and Physiological Demands During Basketball Game Play — pages 3-19 (first substantive content pages)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.41-60)
+- Created: concept-basketball-blood-lactate-demands.md, concept-basketball-heart-rate-demands.md, concept-basketball-endocrine-monitoring.md, concept-basketball-anabolic-catabolic-model.md, concept-basketball-jump-landing-biomechanics.md, concept-basketball-lower-extremity-injury-epidemiology.md, concept-basketball-ankle-sprain-biomechanics.md, concept-basketball-movement-demands-biomechanics.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: S10 Basketball Sports Medicine and Science, pp.20-41: Blood lactate, heart rate demands during gameplay (Ch.2 end), endocrine aspects of performance and recovery (Ch.3), and biomechanics of lower extremity movements and injury (Ch.4 intro)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.61-80)
+- Created: concept-ankle-support-basketball.md, concept-bony-foot-injury-basketball.md, concept-acl-injury-biomechanics-basketball.md, concept-patellar-tendinopathy-basketball.md, concept-basketball-rehabilitation-framework.md, concept-upper-extremity-demands-basketball.md, concept-jump-shot-biomechanics.md, concept-upper-extremity-injuries-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: S10, pp.42-62: Chapter 4 (lower extremity injury continued — ankle support, bony foot injury, ACL, patellar tendinopathy, rehabilitation framework) and Chapter 5 (upper extremity biomechanics — movement demands, jump shot mechanics, dribbling, injuries: finger fracture, thumb sprain, wrist sprain, shoulder injury, rehabilitation)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.81-100)
+- Created: concept-basketball-nutrition-energy-requirements.md, concept-basketball-nutrition-macronutrients.md, concept-basketball-nutrition-micronutrients.md, concept-basketball-hydration.md, concept-basketball-medical-team-structure.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: S10 Ch.6-7: Nutrition and hydration for basketball athletes (pp.65-84) + Medical team construction (pp.83-84). Key topics: energy requirements, macronutrients (CHO/protein/fat), micronutrients, hydration/dehydration, and medical team structure by level.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.101-120)
+- Created: concept-basketball-medical-team.md, concept-basketball-pre-participation-evaluation.md, concept-basketball-emergency-action-plan.md, concept-basketball-medical-event-coverage.md, concept-sudden-cardiac-death-basketball.md, concept-lower-crossed-syndrome-basketball.md, concept-concussion-management-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: S10 pp.85-104: Chapters 7-9 — basketball medical team construction, pre-participation evaluation (PPE) framework, medical coverage of basketball events. Sports medicine concepts covering injury epidemiology, cardiac screening, musculoskeletal screening, concussion protocols, equipment lists, and emergency action plans.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.121-140)
+- Created: concept-basketball-event-medical-coverage.md, concept-basketball-medical-team-communication.md, concept-basketball-team-physician-role.md, concept-basketball-european-medical-coverage.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: S10, pp.105-125: Chapters 9-12 — Medical coverage of basketball events (evacuation, ambulance, hospitals, doping), communication challenges in medical management (multidisciplinary team, coaching staff, players, media, doping), and team physician role in basketball (duties, PPE, ATC relationship, EAP). Chapter 12 begins: elite European basketball medical coverage.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.141-160)
+- Created: concept-basketball-preseason-medical-preparation.md, concept-basketball-return-to-play.md, concept-basketball-common-injuries.md, concept-basketball-illness-management.md, concept-basketball-mental-health.md, concept-basketball-travel-sleep-management.md, concept-basketball-cardiac-screening.md
+- Updated: concept-basketball-medical-team-structure.md
+- Notes: S10, pp.126-146: Team Medical Coverage chapters — Elite European Basketball (Ch.12), College Basketball (Ch.13), and NBA (Ch.14). Covers medical staff roles, preseason preparation, field triage, return-to-play algorithms, common injuries (ankle sprain, ACL, tendinitis, muscle strains, finger/wrist, facial trauma), common illnesses (viral illness, concussion, cardiac concerns), travel/sleep/mental health considerations, and NBA PPE protocols.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.161-180)
+- Created: concept-nba-medical-coverage.md, concept-nba-injury-epidemiology.md, concept-nba-surgical-outcomes.md, concept-basketball-concussion-management.md, concept-on-court-cardiac-emergency.md, concept-on-court-extremity-injuries.md, concept-on-court-facial-injuries.md, concept-cabcd-downed-athlete.md, concept-basketball-emergency-airway.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Basketball Sports Medicine and Science (S10), Ch.14-16, pp.147-168: NBA team medical coverage, emergency action plan, mental health, injury epidemiology, surgical outcomes, on-court examination (concussion, cardiac, facial, upper/lower extremity), and worst-case scenario preparation (C-ABCD protocol, CPR, cervical spine, airway, breathing).
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.181-200)
+- Created: concept-basketball-emergency-abcde-protocol.md, concept-basketball-cpr-bls-protocol.md
+- Updated: concept-sudden-cardiac-death-basketball.md
+- Notes: Chapter 16 (pp.169-174): On-court emergency medical protocols — ABCDE primary survey continuation (C-Circulation, D-Disability), emergency transfer conditions table, first aid skills, suturing, taping, splinting, dislocation reduction. Chapter 17 (pp.175-188): CPR and cardiorespiratory arrest in basketball — SCD definition, epidemiology, risk factors, screening, BLS algorithm, ALS algorithm, defibrillation, pharmaceutical therapy.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.201-220)
+- Created: concept-post-cardiac-arrest-care-basketball.md, concept-acute-trauma-on-court-basketball.md, concept-acute-spinal-trauma-basketball.md, concept-basketball-injury-epidemiology.md, concept-basketball-ankle-sprain-epidemiology.md, concept-basketball-acl-injury-epidemiology.md, concept-basketball-stress-fractures.md
+- Updated: concept-basketball-concussion-management.md, source-basketball-sports-medicine-science.md
+- Notes: S10 Ch.18-19: Immediate on-court acute trauma management (extremity, spinal, concussion) and basketball injury epidemiology/risk factors (high school, NCAA, NBA) pp.189-209
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.221-240)
+- Created: concept-basketball-hand-finger-injuries.md, concept-basketball-non-orthopedic-health.md, concept-basketball-facial-injuries.md, concept-basketball-ocular-injuries.md, concept-basketball-ear-neck-injuries.md
+- Updated: concept-basketball-concussion-management.md, concept-basketball-injury-epidemiology.md
+- Notes: S10 Ch.19 tail (hand/shoulder/non-orthopedic injuries epidemiology conclusion), Ch.20 Head/Neck/Face injuries, Ch.21 Concussion Management in Basketball (pp.210-230) — medical/sports medicine content; creates concept pages for hand injuries, facial injuries, ocular injuries, ear injuries, neck injuries, concussion management
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.241-260)
+- Created: concept-ophthalmic-trauma-basketball.md, concept-shoulder-injuries-basketball.md
+- Updated: concept-concussion-management-basketball.md
+- Notes: S10 Ch.21-23 pp.231-252: Concussion management (SRC assessment tools, return-to-play protocol, complications, prevention) and Ophthalmic trauma in basketball (epidemiology, common eye injuries, sideline assessment, return-to-play guidelines) and beginning of shoulder injuries chapter (epidemiology, mechanism)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.261-280)
+- Created: concept-shoulder-instability-basketball.md
+- Updated: concept-shoulder-injuries-basketball.md, source-basketball-sports-medicine-science.md
+- Notes: S10 Ch.23-24 pp.253-273: Shoulder injuries in basketball — clinical evaluation, imaging, treatment, common injuries (dislocation, rotator cuff, SLAP, scapular dyskinesis), shoulder instability management (anatomy, pathoanatomy, spectrum, epidemiology, conservative vs surgical treatment)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.281-300)
+- Created: concept-elbow-anatomy-basketball.md, concept-elbow-instability-basketball.md, concept-elbow-tendon-injuries-basketball.md, concept-epicondylitis-basketball.md, concept-elbow-bursitis-neuropathy-basketball.md, concept-wrist-hand-injuries-basketball.md, concept-scaphoid-fracture-basketball.md
+- Updated: concept-shoulder-instability-basketball.md
+- Notes: Chapter 24 (end): Shoulder instability surgery/rehab/return-to-play; Chapter 25: Elbow injuries in basketball (anatomy, instability, fractures, tendon injuries, epicondylitis, bursitis, neuropathies); Chapter 26 (start): Wrist and hand injuries — epidemiology and scaphoid fractures
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.301-320)
+- Created: concept-finger-injuries-basketball.md, concept-hip-groin-injuries-basketball.md
+- Updated: concept-wrist-hand-injuries-basketball.md
+- Notes: S10 Ch.26-28 pp.296-320: Wrist/hand injuries (scaphoid, hamate, metacarpal, TFCC, scapholunate, ECU, finger injuries) and hip/groin injuries (adductor strains, iliopsoas tendinitis, FAIS overview)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.321-340)
+- Created: concept-core-muscle-injury-basketball.md, concept-fais-basketball.md, concept-knee-injuries-basketball-overview.md, concept-patellar-dislocation-basketball.md
+- Updated: concept-hip-groin-injuries-basketball.md, source-basketball-sports-medicine-science.md
+- Notes: Chapter 28 (pp.317-331): Hip and Groin Injuries in Basketball — core muscle injury, FAIS, labral tears, acetabular dysplasia, peri-articular impingement, diagnosis, treatment, RTS. Chapter 29 (pp.333-337): Knee Injuries in Basketball — epidemiology, patellar dislocation, fractures, jumper's knee, ACL overview.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.341-360)
+- Created: concept-acl-injury-management-basketball.md, concept-meniscal-injury-basketball.md, concept-knee-tendinopathy-basketball.md, concept-mcl-lcl-plc-injury-basketball.md
+- Updated: concept-knee-injuries-basketball-overview.md
+- Notes: Chapter 29 (pp.338-350): Knee injuries in basketball — patellar dislocation RTS, knee dislocation, ACL, PCL, MCL, LCL/PLC, meniscal injuries, tendinopathies. Chapter 30 (pp.351-357): Management of ACL injuries — anatomy, diagnosis, conservative vs surgical, graft selection, rehab phases, RTS criteria.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.361-380)
+- Created: concept-acl-reconstruction-outcomes-basketball.md, concept-multi-ligament-knee-injury-basketball.md, concept-mli-rehabilitation-return-to-basketball.md
+- Updated: (none)
+- Notes: Chapter 30 (conclusion/outcomes) and Chapter 31: ACL reconstruction outcomes, return to sport data, multi-ligament knee injuries in basketball — classification, diagnosis, treatment, rehabilitation, and outcomes. Pages 358-377 from Basketball Sports Medicine and Science (S10).
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.381-400)
+- Created: concept-knee-cartilage-injuries-basketball.md, concept-adolescent-knee-injuries-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Chapter 32: Management of Knee Cartilage Injuries in Basketball (pp.379-390); Chapter 33: Management of Knee Injuries in Adolescent Basketball Players (pp.391-400). Source ID: S10.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.401-420)
+- Created: concept-meniscal-repair-rehabilitation.md, concept-ocd-knee-basketball.md, concept-patellofemoral-pain-basketball.md, concept-trochlear-dysplasia-basketball.md, concept-dynamic-valgus-hip-core-pfp.md
+- Updated: concept-adolescent-knee-injuries-basketball.md
+- Notes: Chapter 33 (pp.399-409): Adolescent knee injuries — tibial tubercle fractures, meniscal injuries, OCD, overuse injuries (Osgood-Schlatter, SLJ, patellar tendonitis). Chapter 34 (pp.411-419): Anatomical causes of patellofemoral pain in basketball players — trochlear dysplasia, patellar morphology, bony alignment, soft tissue restraints, core/hip stability, cartilage.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.441-460)
+- Created: concept-basketball-foot-ankle-injury-epidemiology.md, concept-basketball-foot-ankle-injury-risk-factors.md, concept-basketball-foot-ankle-injury-prevention.md, concept-basketball-ankle-sprain-treatment.md, concept-chronic-ankle-instability-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: S10 Ch.36-37 pp.441-460: Foot and ankle injuries in basketball — epidemiology, risk factors, evaluation, injury prevention, treatment/return-to-play, and chronic ankle instability management. Patellofemoral chapter bibliography (pp.440-443) is reference list only — no new coaching content extracted.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.461-480)
+- Created: concept-osteochondral-lesion-talus-basketball.md, concept-achilles-tendon-rupture-basketball.md
+- Updated: concept-chronic-ankle-instability-basketball.md
+- Notes: Chapter 37: Chronic Ankle Instability Management (pp.461-466), Chapter 38: Cartilage Injuries of Foot/Ankle in Basketball (pp.467-479), Chapter 39: Achilles Tendon Ruptures intro (pp.481-482). Medical/surgical content from Basketball Sports Medicine and Science.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.481-500)
+- Created: concept-tendinopathy-basketball-pathophysiology.md, concept-achilles-tendinopathy-basketball.md
+- Updated: concept-achilles-tendon-rupture-basketball.md, concept-patellar-tendinopathy-basketball.md, source-basketball-sports-medicine-science.md
+- Notes: Chapter 39: Achilles Tendon Ruptures in Basketball (pp.483-489) and Chapter 40: Management of Common Tendinopathies in Basketball (pp.491-503) — rehabilitation phases, RTP data, tendinopathy pathophysiology, patellar and Achilles tendinopathy diagnosis/management
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.501-520)
+- Created: concept-low-back-pain-basketball.md, concept-osteoarthritis-basketball.md
+- Updated: (none)
+- Notes: S10 Ch.40-42: Tendinopathy references (bibliography only, no new content), Ch.41 Back Injuries and Low Back Pain in Basketball (pp.509-517), Ch.42 Osteoarthritis in Basketball Players (pp.519-525). Extracting clinical concepts for back injuries and osteoarthritis.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.521-540)
+- Created: concept-muscle-injury-basketball.md, concept-stress-fractures-basketball.md
+- Updated: concept-osteoarthritis-basketball.md, source-basketball-sports-medicine-science.md
+- Notes: S10 Ch.42-44 pp.526-547: Osteoarthritis treatment algorithm, muscle injury management (epidemiology, risk factors, screening, imaging, rehabilitation, RTP), and intro to stress fractures in basketball
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.541-560)
+- Created: concept-orthobiologics-tendon-basketball.md
+- Updated: concept-stress-fractures-basketball.md
+- Notes: Chapter 44: Stress Fractures and the Stress Reaction Spectrum in Basketball (pp.548-560). Chapter 45: Orthobiologics for Tendon and Fascia Injuries (pp.561-567). Sports medicine content covering stress fracture pathophysiology, epidemiology, imaging, grading, site-specific management (tibia, metatarsal/Jones fracture, navicular, sesamoid), prevention, return-to-sport, and orthobiologics (corticosteroids, PRP, cell-based therapies) for patellar/quadriceps tendinopathy and Achilles tendinopathy.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.561-580)
+- Created: concept-orthobiologics-tendon-fascia-basketball.md, concept-prp-patellar-tendinopathy-basketball.md, concept-plantar-fasciitis-basketball.md, concept-achilles-tendon-basketball.md, concept-orthobiologics-ligament-muscle-basketball.md, concept-rotator-cuff-tendinopathy-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Chapter 45: Orthobiologics for tendon/fascia injuries (patellar tendinopathy, Achilles tendinopathy/rupture, plantar fasciitis, rotator cuff) — PRP, BMAC, amniotic-derived products, corticosteroids, BTX-A clinical evidence summaries. Chapter 46 intro: orthobiologics for ligament/muscle injuries.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.581-600)
+- Created: concept-orthobiologics-acl-basketball.md, concept-orthobiologics-mcl-basketball.md, concept-prp-ankle-sprains-basketball.md, concept-orthobiologics-ucl-basketball.md, concept-orthobiologics-muscle-basketball.md, concept-prp-classification-systems.md, concept-orthobiologics-cartilage-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Chapter 46-47 (pp.588-608): Orthobiologics for ligament, muscle, and cartilage injuries in basketball — PRP, BMAC, stem cells for ACL, MCL, ankle sprains, UCL, muscle injuries, hamstrings, and cartilage/chondral injuries. Sports medicine/rehabilitation content from Basketball Sports Medicine and Science (S10).
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.601-620)
+- Created: concept-orthobiologics-cartilage-meniscal-basketball.md, concept-inseason-injury-management-basketball.md, concept-shoulder-assessment-basketball.md
+- Updated: concept-basketball-injury-epidemiology.md
+- Notes: Chapter 47 (pp.609-616): Orthobiologics for cartilage and meniscal injuries in sports — BMAC, MSCs, ASCs, PRP, fibrin clot for meniscal repair. Chapter 48 (pp.617-624): In-season management of basketball injuries — preseason prep, acute vs chronic injury management, return-to-play factors, end-of-season programs. Chapter 49 (pp.627-629): Shoulder assessment in basketball — kinetic chain, scapular assessment, SICK scapula syndrome.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.621-640)
+- Created: concept-basketball-shoulder-assessment.md, concept-basketball-functional-movement-testing.md
+- Updated: (none)
+- Notes: Chapter 49: Shoulder Assessment in Basketball (pp.630-644) — scapular dyskinesis assessment, shoulder instability, rotator cuff tears (supraspinatus, subscapularis, infraspinatus, teres minor), AC joint sprain, subacromial pain syndrome, clinical tests with tables. Chapter 50: Functional Assessment in Elite Basketball Players (pp.645-649) — FMS, LESS, squat/single-leg squat/single-leg hop tests, lab-based motion capture.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.641-660)
+- Created: concept-basketball-injury-prevention-overview.md, concept-basketball-injury-etiology-complex-systems.md
+- Updated: concept-basketball-functional-movement-testing.md
+- Notes: Ch. 50 (pp.650-655): Functional Assessment in Elite Basketball Players — lab-based movement tests (DVJ, single-leg CMJ, single-leg lateral hop, 10-sec hop), movement correction 3-phase philosophy. Ch. 51 (pp.657-663): Injury Prevention in Basketball — risk factors, optimal load, sRPE, 11+ programme, ankle/knee/concussion prevention programmes. Ch. 52 (pp.665-671): Complex Systems Approach for Basketball Injury Risk Mitigation — CMEB model, web of determinants, load as primary exposure.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.661-680)
+- Created: concept-basketball-injury-prevention-framework.md, concept-neuromuscular-training-basketball-injury-prevention.md, concept-star-shoulder-rehab-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Ch. 53 (pp.673-685): Practical Guidelines for Injury Prevention in Basketball (Steve Short, Denver Nuggets). Ch. 54 (pp.687-693): Rehabilitation of Shoulder Injuries in Basketball (Breidenbach, Sargent, Failla). Covers injury prevention framework, risk factors, neuromuscular training, return to play, and STAR shoulder rehab framework.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.681-700)
+- Created: concept-shoulder-rehabilitation-basketball.md, concept-thg-rehabilitation-basketball.md, concept-knee-rehabilitation-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: S10 Ch.54 pp.694-700: Shoulder rehabilitation middle and late phases; Ch.55 pp.701-713: Trunk, hip and groin (THG) injury rehabilitation framework; Ch.56 pp.711-713: Knee injury rehabilitation intro
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.701-720)
+- Created: concept-knee-rehabilitation-phases-basketball.md, concept-acl-return-to-sport-criteria-basketball.md, concept-acl-biomechanical-rehabilitation-basketball.md, concept-acl-on-parquet-rehabilitation-basketball.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Chapter 56: Rehabilitation of Knee Injuries in Basketball Players (pp. 714-721) and Chapter 57: Biomechanical Perspective on Rehabilitation of ACL Injuries in Basketball (pp. 723-734) — rehabilitation phases, return to sport criteria, neuromuscular imbalance patterns, movement deficits, on-parquet rehabilitation program
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.721-740)
+- Created: concept-foot-ankle-injury-basketball.md, concept-lateral-ankle-sprain-basketball.md, concept-syndesmotic-sprain-basketball.md, concept-jones-fracture-basketball.md, concept-tendinopathy-basketball.md, source-basketball-sports-medicine.md
+- Updated: concept-achilles-tendon-rupture-basketball.md
+- Notes: S10 Ch.57-59 (pp.735-755): ACL rehab references (bibliography only), Ch.58 foot/ankle injuries in basketball (lateral ankle sprain, syndesmotic sprain, Jones fracture, Achilles tendon rupture), Ch.59 tendinopathy rehabilitation (patellar and Achilles, mechanotherapy, 3-phase rehab, outcome measures, pain monitoring model)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.741-760)
+- Created: concept-tendinopathy-rehabilitation-basketball.md, concept-on-court-rehabilitation-basketball.md
+- Updated: source-basketball-sports-medicine.md
+- Notes: S10 Ch.59-60: Tendinopathy rehabilitation (patellar & Achilles) + On-court rehabilitation framework (return to play/performance, ball-handling/shooting/defensive progressions, motor learning principles)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.761-780)
+- Created: concept-basketball-strength-training-methodology.md, concept-basketball-competition-periodization-nba-fiba.md, concept-basketball-post-exercise-recovery.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Basketball Sports Medicine and Science, pp.779-799: Chapter 61 (Strength Training for Basketball - methodological framework by Torres Ronda & Cuzzolin), Chapter 62 (Training/Performance Differences Between NBA and FIBA Rules by Cuzzolin), Chapter 63 intro (Post-Exercise Recovery Strategies). Also p.777 is a reference page (bibliography for prior chapter - skip).
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.781-800)
+- Created: concept-basketball-recovery-strategies.md, concept-basketball-load-management.md
+- Updated: (none)
+- Notes: S10 Ch.63-64: Post-exercise recovery strategies in basketball (sleep, nutrition, hydration, ergogenic aids, hydrotherapy, cryotherapy, compression, massage, mental recovery) + Load Management in Basketball (load definition, s-RPE, ACWR, spikes, worst-case scenario)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.801-820)
+- Created: concept-return-to-play-decisions-basketball.md, concept-robust-athlete-development-basketball.md, concept-basketball-workload-measurement.md, concept-basketball-well-being-monitoring.md, concept-female-basketball-player-physiology.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Basketball Sports Medicine and Science — Ch.64 (Load Management, pp.820-822), Ch.65 (Practical Considerations for Workload Measurement, pp.823-832), Ch.66 (The Female Basketball Player, pp.835-840). Three distinct conceptual areas: return-to-play decisions & robust athlete development; workload measurement tools (external/internal); female athlete physiology (hormones, tissue differences, ACL risk, triad/RED-S).
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.821-840)
+- Created: concept-female-athlete-triad-basketball.md, concept-pregnancy-postpartum-basketball.md, concept-youth-basketball-ltad.md, concept-youth-basketball-injuries.md
+- Updated: concept-stress-fractures-basketball.md
+- Notes: S10 Ch.66-67: Female basketball player (stress fractures, pregnancy, postpartum) and Young/Adolescent basketball player (LTAD, apophyseal injuries, JOCD, stress fractures, ligamentous injuries, concussion)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.841-860)
+- Created: concept-sickle-cell-trait-basketball.md
+- Updated: concept-sudden-cardiac-death-basketball.md, source-basketball-sports-medicine-science.md
+- Notes: Basketball Sports Medicine and Science (S10), Ch.68: Sickle Cell Trait/Disease in Basketball Players; Ch.69: Sudden Cardiac Death and Cardiac Conditions in Athletes — epidemiology, pathogenesis, screening, EICR, management guidelines
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.861-880)
+- Created: concept-basketball-cardiac-conditions-sports-participation.md, concept-inherited-aortic-disease-basketball.md, concept-shared-decision-making-sports-cardiology.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Basketball Sports Medicine and Science, Ch. 69-70 (pp. 882-901): Cardiac conditions and sports participation guidelines (HCM, ARVC, DCM, WPW, channelopathies, BAV, anomalous coronary arteries, aortic enlargement, myocarditis, ICDs, shared decision-making, return to play); Inherited aortic disease and sports participation (Marfan syndrome, Loeys-Dietz, BAV, FTAAD, medical/surgical management, exercise physiology effects on aorta, AHA/ACC eligibility recommendations)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.881-900)
+- Created: concept-marfan-syndrome-basketball.md, concept-diabetes-basketball-athlete.md, concept-allergies-basketball-athlete.md, concept-asthma-basketball-athlete.md, concept-dermatology-basketball-athlete.md, concept-overload-young-basketball-players.md
+- Updated: (none)
+- Notes: Basketball Sports Medicine and Science Ch.70-72: Inherited aortic disease/Marfan syndrome and sports participation (pp.902-905), Selected medical issues in basketball — diabetes, allergies, asthma, dermatology (pp.907-918), Overload in young basketball players (pp.919-922)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.901-920)
+- Created: concept-youth-basketball-overuse-injuries.md, concept-basketball-doping-antidoping.md, concept-nba-long-distance-travel.md
+- Updated: (none)
+- Notes: Basketball Sports Medicine and Science (S10), Ch.72-74: Youth basketball overload/overuse injuries, doping/nutrition supplementation in basketball, and long-distance traveling effects on NBA players (fatigue, performance, sleep, health, mood state) with practical recommendations.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.921-940)
+- Created: concept-nba-travel-injury-mood.md, concept-basketball-court-types.md, concept-basketball-shoe-design.md, concept-basketball-protective-gear.md, concept-basketball-sports-medicine-ethics.md
+- Updated: (none)
+- Notes: Basketball Sports Medicine and Science (S10), Ch. 74-76: Long-distance travel injury propensity/mood state table (pp.943-944), Ch.75 court types/shoes/protective gear (pp.947-955), Ch.76 ethical and medico-legal issues in basketball sports medicine (pp.957-963)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.941-960)
+- Created: concept-sport-psychology-basketball.md, concept-mental-health-injury-recovery-basketball.md, concept-quiet-eye-basketball-shooting.md, concept-basketball-anxiety-performance.md
+- Updated: source-basketball-sports-medicine-science.md
+- Notes: Chapter 77 (pp.969-981): Sport Psychology in Basketball — mental health among elite athletes, mental skills (goal setting, relaxation, activation, imagery, self-talk, attentional control, emotional control, automaticity, biofeedback), mental health and injury recovery. Chapter 78 (pp.983-986): Performance under pressure — perception behavioral control, gaze behavior, quiet eye period, anxiety and shooting percentage.
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.961-980)
+- Created: concept-basketball-performance-anxiety.md, concept-basketball-coping-strategies.md, concept-quiet-eye-free-throw.md, concept-clutch-choking-basketball.md, concept-shared-mental-models-basketball.md, concept-aclr-psychological-factors.md
+- Updated: (none)
+- Notes: Chapter 78: Sport Psychology in Basketball — Performance Under Pressure (pp.987-994) and Chapter 79: Perceptual-Cognitive Processes in Basketball — Individual and Team Aspects (pp.995-1004) and Chapter 80: Psychological Aspects in Return to Sport Following ACL Reconstruction (pp.1005-1006 partial)
+
+## [2026-04-20] ingest | basketball sports medicine and science (pp.981-991)
+- Created: concept-acl-return-to-sport-psychology.md, concept-basketball-player-retirement-psychology.md, concept-kinesiophobia-basketball-rehab.md, concept-basketball-mindfulness.md
+- Updated: (none)
+- Notes: Basketball Sports Medicine and Science (S10), pp.1007-1018: Chapter 80 - Psychological aspects of return to sport after ACL reconstruction (kinesiophobia, ACL-RSI, TSK-11, K-SES, psychological interventions, movement patterns); Chapter 81 - Retired professional basketball player psychological aspects (retirement transition, mindfulness, mental preparation).

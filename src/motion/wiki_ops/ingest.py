@@ -70,6 +70,7 @@ import os
 import re
 import sys
 import tempfile
+import time
 from collections.abc import Iterator
 from dataclasses import dataclass, field
 from datetime import date
@@ -526,37 +527,25 @@ def _coerce_page(raw: Any) -> WikiPageWrite | None:
     )
 
 
-def ingest_chunk(
-    client: anthropic.Anthropic,
-    *,
+def _build_chunk_message_params(
     chunk_bytes: bytes,
     chunk: ChunkRange,
     source: SourceMeta,
     schema: str,
     index_text: str,
-    model: str = DEFAULT_MODEL,
-    max_tokens: int = DEFAULT_MAX_TOKENS,
-) -> ChunkResult:
-    """Send one chunk to Claude and parse the ``write_wiki_pages`` tool call.
+    model: str,
+    max_tokens: int,
+) -> dict[str, Any]:
+    """Build the ``messages.create`` params dict for one chunk.
 
-    Prompt caching strategy (spec §9):
-
-    - Cache: the system-prompt text block (schema + index framing is
-      stable across the whole ingest run) and the tool definition.
-    - Do NOT cache: the user message — its content includes the PDF
-      document block and a printed-page range label, both of which vary
-      per chunk.
-
-    Returns a :class:`ChunkResult` with an empty ``pages`` list if the
-    model returns no tool call (e.g., because the chunk is a table of
-    contents or bibliography). Mirrors ``ingest.ts:296-325``.
+    Shared between the synchronous path (``ingest_chunk``) and the batch
+    path (``ingest_chunks_batch``). Returns a dict suitable for either
+    ``client.messages.create(**params)`` or
+    ``{"custom_id": ..., "params": dict_from_here}`` inside a batch
+    ``messages.batches.create(requests=[...])`` call.
     """
-    if not chunk_bytes:
-        return ChunkResult(pages=[], notes="Empty chunk bytes — skipped")
-
     b64 = base64.standard_b64encode(chunk_bytes).decode("ascii")
     system_prompt = build_system_prompt(source, schema, index_text)
-
     system_blocks: list[dict[str, Any]] = [
         {
             "type": "text",
@@ -565,12 +554,11 @@ def ingest_chunk(
         }
     ]
     tool_def = _tool_definition(cache=True)
-
-    response = client.messages.create(
-        model=model,
-        max_tokens=max_tokens,
-        system=cast(Any, system_blocks),
-        messages=[
+    return {
+        "model": model,
+        "max_tokens": max_tokens,
+        "system": system_blocks,
+        "messages": [
             {
                 "role": "user",
                 "content": [
@@ -595,16 +583,23 @@ def ingest_chunk(
                 ],
             }
         ],
-        tools=cast(Any, [tool_def]),
-        tool_choice=cast(Any, {"type": "tool", "name": "write_wiki_pages"}),
-    )
+        "tools": [tool_def],
+        "tool_choice": {"type": "tool", "name": "write_wiki_pages"},
+    }
 
-    usage = getattr(response, "usage", None)
+
+def _parse_chunk_response(content_list: Any, usage: Any) -> ChunkResult:
+    """Parse a Claude message response into a :class:`ChunkResult`.
+
+    Shared between sync and batch paths. ``content_list`` is the message
+    ``.content`` attribute (list of blocks); ``usage`` is the message
+    ``.usage`` attribute.
+    """
     cache_read = int(getattr(usage, "cache_read_input_tokens", 0) or 0)
     cache_creation = int(getattr(usage, "cache_creation_input_tokens", 0) or 0)
 
     tool_use = next(
-        (block for block in response.content if getattr(block, "type", None) == "tool_use"),
+        (block for block in content_list if getattr(block, "type", None) == "tool_use"),
         None,
     )
     if tool_use is None:
@@ -617,8 +612,6 @@ def ingest_chunk(
 
     tool_input = cast(dict[str, Any], getattr(tool_use, "input", {}) or {})
     raw_pages = tool_input.get("pages", [])
-    # Normalize: the model may return a single object instead of an array.
-    # Mirrors ``ingest.ts:303-306``.
     if isinstance(raw_pages, dict):
         raw_page_list: list[Any] = [raw_pages]
     elif isinstance(raw_pages, list):
@@ -641,6 +634,125 @@ def ingest_chunk(
         cache_read_tokens=cache_read,
         cache_creation_tokens=cache_creation,
     )
+
+
+def ingest_chunk(
+    client: anthropic.Anthropic,
+    *,
+    chunk_bytes: bytes,
+    chunk: ChunkRange,
+    source: SourceMeta,
+    schema: str,
+    index_text: str,
+    model: str = DEFAULT_MODEL,
+    max_tokens: int = DEFAULT_MAX_TOKENS,
+) -> ChunkResult:
+    """Send one chunk to Claude and parse the ``write_wiki_pages`` tool call.
+
+    Synchronous path. Prompt caching: system-prompt and tool def are cached;
+    user message (PDF chunk + range label) is not.
+    """
+    if not chunk_bytes:
+        return ChunkResult(pages=[], notes="Empty chunk bytes — skipped")
+
+    params = _build_chunk_message_params(
+        chunk_bytes, chunk, source, schema, index_text, model, max_tokens
+    )
+    response = client.messages.create(**cast(Any, params))
+    return _parse_chunk_response(response.content, getattr(response, "usage", None))
+
+
+def ingest_chunks_batch(
+    client: anthropic.Anthropic,
+    *,
+    prepared: list[tuple[ChunkRange, bytes]],
+    source: SourceMeta,
+    schema: str,
+    index_text: str,
+    model: str = DEFAULT_MODEL,
+    max_tokens: int = DEFAULT_MAX_TOKENS,
+    poll_interval_seconds: int = 30,
+) -> dict[str, ChunkResult]:
+    """Submit all chunks as one Anthropic Message Batches job (50% discount).
+
+    Returns a mapping of ``custom_id`` → :class:`ChunkResult`. ``custom_id``
+    format is ``chunk-<start_printed>-<end_printed>`` so the caller can
+    match results back to the originating :class:`ChunkRange`.
+
+    Polls the batch every ``poll_interval_seconds`` until ``processing_status``
+    reaches ``ended``. Batches are typically processed in minutes but can take
+    up to 24 hours per Anthropic's guarantee.
+    """
+    if not prepared:
+        return {}
+
+    requests: list[dict[str, Any]] = []
+    for chunk, chunk_bytes in prepared:
+        if not chunk_bytes:
+            continue
+        custom_id = f"chunk-{chunk.start_printed}-{chunk.end_printed}"
+        params = _build_chunk_message_params(
+            chunk_bytes, chunk, source, schema, index_text, model, max_tokens
+        )
+        requests.append({"custom_id": custom_id, "params": params})
+
+    if not requests:
+        return {}
+
+    sys.stdout.write(f"[batch] submitting {len(requests)} chunks to Anthropic batch API...\n")
+    sys.stdout.flush()
+    batch = client.messages.batches.create(requests=cast(Any, requests))
+    batch_id = batch.id
+    sys.stdout.write(f"[batch] id={batch_id} — polling every {poll_interval_seconds}s\n")
+    sys.stdout.flush()
+
+    # Poll loop
+    while True:
+        current = client.messages.batches.retrieve(batch_id)
+        counts = current.request_counts
+        status = current.processing_status
+        sys.stdout.write(
+            f"[batch] status={status}  "
+            f"processing={counts.processing} "
+            f"succeeded={counts.succeeded} "
+            f"errored={counts.errored} "
+            f"canceled={counts.canceled} "
+            f"expired={counts.expired}\n"
+        )
+        sys.stdout.flush()
+        if status == "ended":
+            break
+        time.sleep(poll_interval_seconds)
+
+    # Fetch results (streamed JSONL)
+    results: dict[str, ChunkResult] = {}
+    for item in client.messages.batches.results(batch_id):
+        custom_id = item.custom_id
+        result = item.result
+        result_type = getattr(result, "type", None)
+        if result_type == "succeeded":
+            message = getattr(result, "message", None)
+            if message is None:
+                results[custom_id] = ChunkResult(
+                    pages=[], notes="Batch: succeeded but message missing"
+                )
+                continue
+            results[custom_id] = _parse_chunk_response(
+                message.content, getattr(message, "usage", None)
+            )
+        else:
+            # errored / canceled / expired
+            error_obj = getattr(result, "error", None)
+            error_msg = (
+                getattr(error_obj, "error", None)
+                if error_obj is not None
+                else f"Batch result {result_type}"
+            )
+            results[custom_id] = ChunkResult(
+                pages=[],
+                notes=f"Batch {result_type}: {error_msg}",
+            )
+    return results
 
 
 # -------------------------------------------------------------- write pages
@@ -836,6 +948,7 @@ def run(
     model: str = DEFAULT_MODEL,
     max_tokens: int = DEFAULT_MAX_TOKENS,
     dry_run: bool = False,
+    batch: bool = False,
     raw_dir: Path | None = None,
     wiki_root: Path | None = None,
     page_offsets_path: Path | None = None,
@@ -903,6 +1016,75 @@ def run(
     index_text = _read_index(wiki_root_path)
 
     all_pages: list[WikiPageWrite] = []
+
+    if batch:
+        sys.stdout.write("[batch] rendering all chunk PDFs...\n")
+        sys.stdout.flush()
+        prepared: list[tuple[ChunkRange, bytes]] = []
+        for chunk in chunks:
+            try:
+                prepared.append((chunk, render_chunk_bytes(source_pdf, chunk)))
+            except Exception as exc:
+                sys.stdout.write(
+                    f"[batch] skip pp.{chunk.start_printed}-"
+                    f"{chunk.end_printed}: render error {exc}\n"
+                )
+        batch_results = ingest_chunks_batch(
+            client,
+            prepared=prepared,
+            source=source,
+            schema=schema,
+            index_text=index_text,
+            model=model,
+            max_tokens=max_tokens,
+        )
+        for chunk, _ in prepared:
+            custom_id = f"chunk-{chunk.start_printed}-{chunk.end_printed}"
+            result = batch_results.get(custom_id)
+            if result is None:
+                sys.stdout.write(
+                    f"[batch] pp.{chunk.start_printed}-{chunk.end_printed}: "
+                    "no batch result returned\n"
+                )
+                continue
+            summary.total_cache_read_tokens += result.cache_read_tokens
+            summary.total_cache_creation_tokens += result.cache_creation_tokens
+            if not result.pages:
+                sys.stdout.write(
+                    f"[batch] pp.{chunk.start_printed}-{chunk.end_printed}: "
+                    f"skipped ({result.notes or 'no extractable content'})\n"
+                )
+                continue
+            normalized, created, updated = write_pages(result.pages, wiki_root_path)
+            summary.created.extend(created)
+            summary.updated.extend(updated)
+            summary.total_pages_written += len(normalized)
+            all_pages.extend(normalized)
+            sys.stdout.write(
+                f"[batch] pp.{chunk.start_printed}-{chunk.end_printed}: "
+                f"{len(created)} created, {len(updated)} updated\n"
+            )
+            append_log(
+                source,
+                chunk,
+                created,
+                updated,
+                result.notes,
+                wiki_root_path,
+                today=today,
+            )
+        if all_pages:
+            update_index(all_pages, wiki_root_path)
+        sys.stdout.write(
+            "\nBatch ingestion complete\n"
+            f"  pages created: {len(summary.created)}\n"
+            f"  pages updated: {len(summary.updated)}\n"
+            f"  total written: {summary.total_pages_written}\n"
+            f"  cache reads:   {summary.total_cache_read_tokens}\n"
+            f"  cache writes:  {summary.total_cache_creation_tokens}\n"
+        )
+        return summary
+
     for i, chunk in enumerate(chunks, start=1):
         sys.stdout.write(f"[{i}/{len(chunks)}] pp.{chunk.start_printed}-{chunk.end_printed} ... ")
         sys.stdout.flush()
@@ -1014,6 +1196,15 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         help="Show chunk plan without calling Claude or writing files.",
     )
     parser.add_argument(
+        "--batch",
+        action="store_true",
+        help=(
+            "Use Anthropic Message Batches API (50%% discount). "
+            "Submits all chunks as one batch and polls until done. "
+            "Turnaround typically minutes, up to 24h guaranteed."
+        ),
+    )
+    parser.add_argument(
         "--raw-dir",
         type=Path,
         default=None,
@@ -1046,6 +1237,7 @@ def main(argv: list[str] | None = None) -> int:
             model=args.model,
             max_tokens=args.max_tokens,
             dry_run=args.dry_run,
+            batch=args.batch,
             raw_dir=args.raw_dir,
             wiki_root=args.wiki_dir,
             page_offsets_path=args.page_offsets,
