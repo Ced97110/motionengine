@@ -57,7 +57,6 @@ After looking over the high shoulder, the post player faces three scenarios:
 ## Related Concepts
 - [[concept-post-spin-screen]] — one of the ways post players flash to receiving position
 - [[concept-show-and-go-opposite-drop-step]] — the primary scoring move triggered by the defender read
-- [[concept-olajuwon-whirl-move]] — the front-pivot scoring move triggered by a different defender read
 - [[concept-post-front-outside-pivot]] — square-up post move when the defender cannot be felt or seen
 - [[concept-sikma-inside-pivot]] — the reverse-pivot square-up counter move
 

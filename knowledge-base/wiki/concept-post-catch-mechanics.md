@@ -49,7 +49,6 @@ These mechanics are universal: they apply whether the player has flashed to the 
 
 ## Related Concepts
 - [[concept-show-and-go-opposite-drop-step]] — primary post move after reading defender on the low/high side
-- [[concept-olajuwon-whirl-move]] — front-pivot post move using the catch mechanics as the starting point
 - [[concept-post-pivot-square-up]] — front outside pivot and reverse-pivot post move for when the defender cannot be located by feel
 - [[concept-spin-screen-post-action]] — one method of getting open before applying these catch mechanics
 - [[post-up-defense]] — the defensive techniques these catch mechanics are designed to defeat

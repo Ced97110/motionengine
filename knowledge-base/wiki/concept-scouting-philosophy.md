@@ -53,7 +53,7 @@ The philosophy of this scouting system is that **there are no secret plays**: "E
 3. **Treating plays as fixed** → Every play has multiple options; defenses must prepare for all reads, not just the primary action.
 
 ## Related Concepts
-- [[concept-nba-scouting-report]] — the detailed structure of a pro scouting report
+- [[concept-scouting-report]] — the detailed structure of a pro scouting report
 - [[concept-game-preparation-nba]] — full pre-game preparation framework
 - [[concept-in-game-defensive-adjustments]] — using scouting intelligence during games
 - [[play-selection-principles]] — how play design connects to personnel

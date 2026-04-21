@@ -1,0 +1,52 @@
+---
+type: drill
+level: intermediate
+positions: [PG, SG, SF, PF, C]
+players_needed: 6
+duration_minutes: 4
+tags: [defense, man-to-man, help-side, rotation, team-defense, breakaway-drive]
+source_count: 1
+last_updated: 2026-04-11
+---
+
+# Rotation Drill (#143)
+
+## Objective
+Teach the three-call rotation system (hedge/rotate/trap) that activates when a ball handler beats their defender in man-to-man defense.
+
+## Setup
+- Half court
+- 3 offensive players (1, 3, 4) and 3 defenders (X1, X3, X4)
+- Coach passes to initiate the drill
+- Players rotate through positions 1, 3, 4, X1, X3, X4
+
+<!-- DIAGRAM: Player 1 with ball on the left wing dribbling toward basket, X1 beaten. X4 slides across the lane (from near the low block) to stop ball. Player 3 is at the right wing, X3 at mid-lane. Player 4 near ball-side block. -->
+
+## Execution
+1. Coach passes to player 1, who drives by defender X1 on either side.
+2. X4, seeing player 1 become a breakaway dribbler, makes one of three calls:
+   - **"Hedge"** — X4 believes X1 can recover; all defenders keep their assignments.
+   - **"Rotate"** — X4 slides across the lane to stop the ball; X3 immediately rotates down to cover the basket area (player 4 is cutting for a layup pass); X1 recovers to cover X3's assignment (player 3).
+   - **"Trap"** — X4 and X1 trap the ball handler together; X3 plays interception stance between players 3 and 4, shading toward 4 near the basket. If a pass escapes the trap: X3 takes the pass receiver, X1 stays on player 1, X4 sprints to cover the remaining open player.
+3. If player 1 drives left, X3 is first responsible to close the gap; if X3 cannot stop it, X4 calls "rotate."
+4. Players rotate after each offensive player has played positions 1, 3, and 4 and each defender has played X1, X3, and X4.
+
+## Coaching Points
+- **X4 must make a decisive call immediately** — hesitation allows a layup.
+- Rotation must be activated quickly enough to stop the ball OUTSIDE the lane.
+- X3 must read X4's call and sprint to the basket before player 4 arrives.
+- Ball-side defense (before the drive) is always denial + fence slide; X1 should not be beaten easily.
+- Make drills more demanding than game conditions — "you want to make your drills more demanding than actual game conditions." [S15, p.297]
+
+## Progressions
+1. **Beginner**: Walk through the rotation; X1 allows the drive passively so defenders can learn the rotation assignment. Only run the standard "rotate" call.
+2. **Intermediate** (base drill): X1 attempts to deny the pass to player 1 first (fence slide/deny-wing technique), then player 1 drives live. X4 calls hedge, rotate, or trap.
+3. **Advanced**: Allow player 1 and X1 to play full 1-on-1 until player 1 creates separation or drives either side. On a successful rotation, extend to live 3-on-3 — all aspects of motion offense and man-to-man defense come into play. [S15, p.298]
+
+## Concepts Taught
+- [[concept-man-to-man-rotation-rules]] — the core two-line assignment rule this drill drills
+- [[weak-side-help-defense]] — positioning before the rotation activates
+- [[trapping-and-double-teaming]] — the trap option in this drill
+
+## Sources
+- [S15, pp.297-299] — complete drill description including three-call system, rotation assignments, and progression levels

@@ -74,7 +74,6 @@ Both moves arrive at the same square-up position but via opposite initial pivot 
 - [[concept-post-receiving-footwork]] — the catch and read sequence preceding this move
 - [[concept-sikma-inside-pivot]] — the related reverse-pivot square-up technique
 - [[concept-show-and-go-opposite-drop-step]] — used instead when the defender CAN be read by feel
-- [[concept-olajuwon-whirl-move]] — the front-pivot scoring move used when the defender IS readable
 
 ## Sources
 - [S6, pp.195-197] — complete description of the front outside pivot and square-up, footwork diagrams, comparison to reverse-pivot post move, and attack options after squaring up

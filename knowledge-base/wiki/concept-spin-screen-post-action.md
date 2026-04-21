@@ -57,7 +57,6 @@ The same action can be initiated from the opposite side of the court with 05 on 
 ## Related Concepts
 - [[concept-post-catch-mechanics]] — the two-foot hop and chin-the-ball technique used immediately after the spin-screen catch
 - [[concept-show-and-go-opposite-drop-step]] — the primary post move executed after gaining position from the spin screen
-- [[concept-olajuwon-whirl-move]] — alternative post move when the defender is on the high side after the catch
 - [[post-defense-fronting]] — the defensive technique (fronting/three-quartering) that the spin screen is designed to defeat
 - [[defending-post-splits]] — related two-man post defensive concepts
 

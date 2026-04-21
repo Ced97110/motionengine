@@ -111,6 +111,36 @@ _PLAYER_NAMES: tuple[str, ...] = (
     "Austin Reaves",
     "Rui Hachimura",
     "Anthony Davis",
+    # Oliver-era greats (Basketball on Paper, S16) — added 2026-04-21.
+    # Surnames only where the name is distinctive enough to avoid false
+    # positives with ordinary basketball vocabulary.
+    "Hakeem Olajuwon",
+    "Olajuwon",
+    "Tim Duncan",
+    "Wilt Chamberlain",
+    "Chamberlain",
+    "Bill Russell",
+    "Karl Malone",
+    "John Stockton",
+    "Stockton",
+    "Patrick Ewing",
+    "Ewing",
+    "David Robinson",
+    "Allen Iverson",
+    "Iverson",
+    "Dennis Rodman",
+    "Rodman",
+    "Charles Barkley",
+    "Barkley",
+    "Joe Dumars",
+    "Dumars",
+    "George Mikan",
+    "Mikan",
+    "Reggie Miller",
+    "Vince Carter",
+    "Lisa Leslie",
+    "Cynthia Cooper",
+    "Dean Smith",
 )
 
 

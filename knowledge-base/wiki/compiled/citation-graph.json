@@ -4265,6 +4265,13 @@
   "S12, pp.92-96": [
     "concept-cmj-monitoring-basketball"
   ],
+  "S13": [
+    "concept-basketball-statistical-framework",
+    "concept-difficulty-theory-credit-distribution",
+    "concept-four-factors-winning",
+    "concept-points-per-possession",
+    "concept-possession-usage-team-balance"
+  ],
   "S13, p.107": [
     "concept-offensive-system-design"
   ],
@@ -4574,6 +4581,9 @@
   "S13, pp.65-66": [
     "concept-individual-offensive-skills-framework"
   ],
+  "S14": [
+    "concept-offensive-score-sheet"
+  ],
   "S14, p.1": [
     "concept-early-offense-philosophy",
     "play-san-antonio-guard-through"
@@ -4683,6 +4693,9 @@
   ],
   "S14, pp.6\u20137": [
     "play-san-antonio-guard-through"
+  ],
+  "S15": [
+    "concept-four-factors-winning"
   ],
   "S15, p.11": [
     "concept-balance-quickness-agility-youth",
@@ -5417,6 +5430,1061 @@
   ],
   "S15, pp.94-95": [
     "drill-two-line-standing-still"
+  ],
+  "S16": [
+    "concept-basketball-efficiency-ratings",
+    "concept-offensive-defensive-rating-team-analysis",
+    "concept-points-per-possession",
+    "concept-team-height-performance"
+  ],
+  "S16, p.1": [
+    "concept-basketball-statistical-framework"
+  ],
+  "S16, p.10": [
+    "concept-possession-score-sheet"
+  ],
+  "S16, p.100": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, p.102": [
+    "concept-hot-hand-fallacy"
+  ],
+  "S16, p.103": [
+    "concept-hot-hand-basketball"
+  ],
+  "S16, p.105": [
+    "concept-hot-hand-basketball"
+  ],
+  "S16, p.106": [
+    "concept-hot-hand-basketball"
+  ],
+  "S16, p.107": [
+    "concept-hot-hand-basketball"
+  ],
+  "S16, p.109": [
+    "concept-competitive-balance"
+  ],
+  "S16, p.11": [
+    "concept-possession-score-sheet"
+  ],
+  "S16, p.111": [
+    "concept-competitive-balance"
+  ],
+  "S16, p.112": [
+    "concept-competitive-balance"
+  ],
+  "S16, p.113": [
+    "concept-competitive-balance"
+  ],
+  "S16, p.114": [
+    "concept-basketball-teamwork-economics"
+  ],
+  "S16, p.115": [
+    "concept-basketball-teamwork-economics"
+  ],
+  "S16, p.115-116": [
+    "concept-basketball-teamwork-economics"
+  ],
+  "S16, p.116": [
+    "concept-basketball-teamwork-economics"
+  ],
+  "S16, p.119": [
+    "concept-bell-curve-method"
+  ],
+  "S16, p.12": [
+    "concept-possession-score-sheet"
+  ],
+  "S16, p.121": [
+    "concept-bell-curve-method",
+    "concept-scoring-consistency"
+  ],
+  "S16, p.126": [
+    "concept-basketball-bell-curve-model",
+    "concept-consistency-player-development"
+  ],
+  "S16, p.127": [
+    "concept-basketball-bell-curve-model",
+    "concept-consistency-player-development",
+    "concept-underdog-risky-strategies"
+  ],
+  "S16, p.128": [
+    "concept-basketball-bell-curve-model",
+    "concept-underdog-risky-strategies"
+  ],
+  "S16, p.129": [
+    "concept-basketball-bell-curve-model",
+    "concept-underdog-risky-strategies"
+  ],
+  "S16, p.13": [
+    "concept-possession-score-sheet"
+  ],
+  "S16, p.131": [
+    "concept-basketball-bell-curve-model"
+  ],
+  "S16, p.132": [
+    "concept-basketball-bell-curve-model",
+    "concept-underdog-risky-strategies"
+  ],
+  "S16, p.135": [
+    "concept-referee-inconsistency-effect"
+  ],
+  "S16, p.136": [
+    "concept-referee-inconsistency-effect",
+    "concept-underdog-risky-strategies"
+  ],
+  "S16, p.137": [
+    "concept-referee-inconsistency-effect"
+  ],
+  "S16, p.138": [
+    "concept-garbage-time-statistics"
+  ],
+  "S16, p.139": [
+    "concept-uncorrelated-ratings"
+  ],
+  "S16, p.140": [
+    "concept-uncorrelated-ratings"
+  ],
+  "S16, p.141": [
+    "concept-garbage-time-statistics",
+    "concept-offense-vs-defense-wins-championships"
+  ],
+  "S16, p.142": [
+    "concept-garbage-time-statistics",
+    "concept-offense-vs-defense-wins-championships",
+    "concept-uncorrelated-ratings"
+  ],
+  "S16, p.143": [
+    "concept-uncorrelated-offensive-defensive-ratings"
+  ],
+  "S16, p.145": [
+    "concept-difficulty-theory-credit-distribution"
+  ],
+  "S16, p.147": [
+    "concept-difficulty-theory-credit-distribution",
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, p.148": [
+    "concept-difficulty-theory-credit-distribution"
+  ],
+  "S16, p.150": [
+    "concept-individual-floor-percentage"
+  ],
+  "S16, p.150-151": [
+    "concept-individual-floor-percentage"
+  ],
+  "S16, p.151": [
+    "concept-individual-floor-percentage"
+  ],
+  "S16, p.153": [
+    "concept-difficulty-theory-credit-distribution"
+  ],
+  "S16, p.155": [
+    "concept-individual-floor-percentage"
+  ],
+  "S16, p.157": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, p.157-158": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, p.158": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, p.158-159": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, p.162": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, p.163": [
+    "concept-possession-usage-efficiency-tradeoff"
+  ],
+  "S16, p.176": [
+    "concept-possession-usage-efficiency-tradeoff"
+  ],
+  "S16, p.177": [
+    "concept-womens-basketball-offensive-efficiency"
+  ],
+  "S16, p.178": [
+    "concept-womens-basketball-offensive-efficiency"
+  ],
+  "S16, p.179": [
+    "concept-possession-usage-efficiency-tradeoff",
+    "concept-womens-basketball-offensive-efficiency"
+  ],
+  "S16, p.181": [
+    "concept-plus-minus-player-rating"
+  ],
+  "S16, p.182": [
+    "concept-plus-minus-player-rating"
+  ],
+  "S16, p.183": [
+    "concept-player-rating-limitations"
+  ],
+  "S16, p.184": [
+    "concept-player-rating-limitations"
+  ],
+  "S16, p.186": [
+    "concept-winval-plus-minus"
+  ],
+  "S16, p.187": [
+    "concept-player-rating-limitations",
+    "concept-winval-plus-minus"
+  ],
+  "S16, p.188": [
+    "concept-player-rating-limitations",
+    "concept-winval-plus-minus"
+  ],
+  "S16, p.190": [
+    "concept-player-rating-limitations"
+  ],
+  "S16, p.192": [
+    "concept-box-score-analysis"
+  ],
+  "S16, p.193": [
+    "concept-box-score-analysis",
+    "concept-four-factors-basketball"
+  ],
+  "S16, p.195": [
+    "concept-box-score-analysis",
+    "concept-four-factors-basketball"
+  ],
+  "S16, p.196": [
+    "concept-box-score-analysis"
+  ],
+  "S16, p.197": [
+    "concept-box-score-analysis",
+    "concept-four-factors-basketball"
+  ],
+  "S16, p.199": [
+    "concept-individual-defensive-ratings"
+  ],
+  "S16, p.2": [
+    "concept-offensive-score-sheet"
+  ],
+  "S16, p.201": [
+    "concept-individual-defensive-ratings"
+  ],
+  "S16, p.202": [
+    "concept-individual-defensive-ratings"
+  ],
+  "S16, p.221": [
+    "concept-coaching-evaluation-basketball"
+  ],
+  "S16, p.222": [
+    "concept-coaching-evaluation-basketball"
+  ],
+  "S16, p.223": [
+    "concept-coaching-evaluation-metrics"
+  ],
+  "S16, p.225": [
+    "concept-coaching-evaluation-metrics"
+  ],
+  "S16, p.226": [
+    "concept-coaching-evaluation-metrics"
+  ],
+  "S16, p.227": [
+    "concept-coaching-evaluation-metrics"
+  ],
+  "S16, p.228": [
+    "concept-coaching-evaluation-metrics"
+  ],
+  "S16, p.230": [
+    "concept-time-out-strategy-value"
+  ],
+  "S16, p.231": [
+    "concept-time-out-strategy-value"
+  ],
+  "S16, p.233": [
+    "concept-offensive-skill-curves",
+    "concept-possession-usage-rate"
+  ],
+  "S16, p.234": [
+    "concept-offensive-skill-curves"
+  ],
+  "S16, p.236": [
+    "concept-offensive-skill-curves"
+  ],
+  "S16, p.237": [
+    "concept-offensive-skill-curves",
+    "concept-possession-usage-rate"
+  ],
+  "S16, p.238": [
+    "concept-offensive-skill-curves"
+  ],
+  "S16, p.239": [
+    "concept-offensive-skill-curves"
+  ],
+  "S16, p.240": [
+    "concept-offensive-skill-curves"
+  ],
+  "S16, p.241": [
+    "concept-offensive-skill-curves"
+  ],
+  "S16, p.243": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.244": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.245": [
+    "concept-individual-win-loss-records",
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "S16, p.247": [
+    "concept-individual-win-loss-records",
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "S16, p.248": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.249": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.250": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.251": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.252": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.253": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.254": [
+    "concept-individual-win-loss-records",
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "S16, p.255": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, p.256": [
+    "concept-individual-win-loss-records",
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "S16, p.258": [
+    "concept-individual-net-points"
+  ],
+  "S16, p.259": [
+    "concept-individual-net-points"
+  ],
+  "S16, p.260": [
+    "concept-individual-net-points"
+  ],
+  "S16, p.261": [
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "S16, p.262": [
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "S16, p.285": [
+    "concept-basketball-on-paper-analytical-framework"
+  ],
+  "S16, p.287": [
+    "concept-basketball-on-paper-analytical-framework"
+  ],
+  "S16, p.290": [
+    "concept-shooting-specialist-value"
+  ],
+  "S16, p.291": [
+    "concept-shooting-specialist-value"
+  ],
+  "S16, p.292": [
+    "concept-basketball-on-paper-analytical-framework",
+    "concept-defensive-specialist-value",
+    "concept-shooting-specialist-value"
+  ],
+  "S16, p.293": [
+    "concept-defensive-specialist-value"
+  ],
+  "S16, p.294": [
+    "concept-defensive-specialist-value"
+  ],
+  "S16, p.295": [
+    "concept-defensive-specialist-value"
+  ],
+  "S16, p.296": [
+    "concept-defensive-specialist-value"
+  ],
+  "S16, p.297": [
+    "concept-defensive-specialist-value",
+    "concept-player-promise-vs-performance"
+  ],
+  "S16, p.298": [
+    "concept-player-promise-vs-performance"
+  ],
+  "S16, p.299": [
+    "concept-player-promise-vs-performance"
+  ],
+  "S16, p.3": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, p.300": [
+    "concept-player-promise-vs-performance"
+  ],
+  "S16, p.301": [
+    "concept-player-promise-vs-performance"
+  ],
+  "S16, p.302": [
+    "concept-extreme-physical-archetypes"
+  ],
+  "S16, p.303": [
+    "concept-specialist-player-evaluation"
+  ],
+  "S16, p.305": [
+    "concept-specialist-player-evaluation"
+  ],
+  "S16, p.309": [
+    "concept-specialist-player-evaluation"
+  ],
+  "S16, p.310": [
+    "concept-specialist-player-evaluation"
+  ],
+  "S16, p.314": [
+    "concept-womens-basketball-player-evaluation-analytics"
+  ],
+  "S16, p.315": [
+    "concept-womens-basketball-player-evaluation-analytics"
+  ],
+  "S16, p.317": [
+    "concept-womens-basketball-player-evaluation-analytics"
+  ],
+  "S16, p.318": [
+    "concept-four-offensive-factors-team-evaluation",
+    "concept-team-first-player-second-analysis"
+  ],
+  "S16, p.319": [
+    "concept-four-offensive-factors-team-evaluation",
+    "concept-offensive-defensive-rating-team-analysis"
+  ],
+  "S16, p.320": [
+    "concept-four-offensive-factors-team-evaluation",
+    "concept-offensive-defensive-rating-team-analysis",
+    "concept-team-first-player-second-analysis"
+  ],
+  "S16, p.322": [
+    "concept-four-offensive-factors-team-evaluation",
+    "concept-team-first-player-second-analysis"
+  ],
+  "S16, p.343": [
+    "concept-floor-percentage",
+    "concept-individual-offensive-rating"
+  ],
+  "S16, p.344": [
+    "concept-individual-offensive-rating"
+  ],
+  "S16, p.345": [
+    "concept-floor-percentage",
+    "concept-individual-offensive-rating"
+  ],
+  "S16, p.346": [
+    "concept-individual-offensive-rating",
+    "concept-offensive-rebound-weight"
+  ],
+  "S16, p.351": [
+    "concept-historical-offensive-ratings"
+  ],
+  "S16, p.352": [
+    "concept-floor-percentage",
+    "concept-historical-offensive-ratings"
+  ],
+  "S16, p.353": [
+    "concept-historical-offensive-ratings"
+  ],
+  "S16, p.354": [
+    "concept-historical-offensive-ratings"
+  ],
+  "S16, p.355": [
+    "concept-historical-offensive-ratings"
+  ],
+  "S16, p.359": [
+    "concept-defensive-stops-formula",
+    "concept-individual-defensive-rating"
+  ],
+  "S16, p.360": [
+    "concept-defensive-stops-formula",
+    "concept-individual-defensive-rating",
+    "concept-individual-offensive-rating"
+  ],
+  "S16, p.361": [
+    "concept-defensive-stops-formula",
+    "concept-individual-defensive-rating"
+  ],
+  "S16, p.362": [
+    "concept-individual-defensive-rating"
+  ],
+  "S16, p.363": [
+    "concept-basketball-analytics-glossary"
+  ],
+  "S16, p.365": [
+    "concept-basketball-historical-regression"
+  ],
+  "S16, p.366": [
+    "concept-basketball-analytics-glossary",
+    "concept-basketball-historical-regression",
+    "source-basketball-on-paper"
+  ],
+  "S16, p.367": [
+    "concept-basketball-analytics-glossary"
+  ],
+  "S16, p.368": [
+    "concept-basketball-analytics-glossary"
+  ],
+  "S16, p.4": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, p.43": [
+    "concept-team-height-performance"
+  ],
+  "S16, p.44": [
+    "concept-offensive-rating-historical-trends"
+  ],
+  "S16, p.46": [
+    "concept-coaching-defense-systems",
+    "concept-defensive-rating-historical-trends"
+  ],
+  "S16, p.49": [
+    "concept-defensive-rating-historical-trends"
+  ],
+  "S16, p.5": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, p.50": [
+    "concept-coaching-defense-systems",
+    "concept-defensive-rating-historical-trends",
+    "concept-offensive-rating-historical-trends",
+    "concept-pace-of-play"
+  ],
+  "S16, p.51": [
+    "concept-defensive-rating-historical-trends"
+  ],
+  "S16, p.52": [
+    "concept-coaching-defense-systems",
+    "concept-defensive-rating-historical-trends",
+    "concept-offensive-rating-historical-trends",
+    "concept-pace-of-play"
+  ],
+  "S16, p.54": [
+    "concept-defensive-rating-historical-trends",
+    "concept-team-height-performance"
+  ],
+  "S16, p.55": [
+    "concept-defensive-rating-historical-trends"
+  ],
+  "S16, p.57": [
+    "concept-roster-stability"
+  ],
+  "S16, p.59": [
+    "concept-defensive-rating-historical-trends",
+    "concept-offensive-rating-historical-trends",
+    "concept-roster-stability",
+    "concept-team-height-performance"
+  ],
+  "S16, p.6": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, p.67": [
+    "concept-rule-changes-pace-efficiency"
+  ],
+  "S16, p.7": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, p.70": [
+    "concept-winning-streak-probability"
+  ],
+  "S16, p.71": [
+    "concept-winning-streak-probability"
+  ],
+  "S16, p.74": [
+    "concept-winning-streak-probability"
+  ],
+  "S16, p.75": [
+    "concept-winning-streak-probability"
+  ],
+  "S16, p.78": [
+    "concept-basketball-teamwork-statistics"
+  ],
+  "S16, p.80": [
+    "concept-basketball-teamwork-statistics"
+  ],
+  "S16, p.82": [
+    "concept-player-value-approximation"
+  ],
+  "S16, p.83": [
+    "concept-player-rating-systems-comparison"
+  ],
+  "S16, p.84": [
+    "concept-player-rating-systems-comparison"
+  ],
+  "S16, p.85": [
+    "concept-player-rating-systems-comparison"
+  ],
+  "S16, p.87": [
+    "concept-rebounding-myths-roles"
+  ],
+  "S16, p.88": [
+    "concept-four-factors",
+    "concept-rebounding-myths-roles"
+  ],
+  "S16, p.89": [
+    "concept-four-factors",
+    "concept-rebounding-myths-roles"
+  ],
+  "S16, p.9": [
+    "concept-possession-score-sheet"
+  ],
+  "S16, p.90": [
+    "concept-four-factors"
+  ],
+  "S16, p.91": [
+    "concept-four-factors",
+    "concept-rebounding-myths-roles"
+  ],
+  "S16, p.94": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, p.95": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, p.97": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, p.98": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, p.99": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, pp.1-2": [
+    "concept-four-factors-winning",
+    "concept-points-per-possession"
+  ],
+  "S16, pp.1-7": [
+    "concept-basketball-analytics-philosophy",
+    "concept-basketball-statistical-framework"
+  ],
+  "S16, pp.101-102": [
+    "concept-hot-hand-fallacy"
+  ],
+  "S16, pp.103-107": [
+    "concept-hot-hand-basketball"
+  ],
+  "S16, pp.108-113": [
+    "concept-competitive-balance"
+  ],
+  "S16, pp.111-112": [
+    "concept-competitive-balance"
+  ],
+  "S16, pp.114-116": [
+    "concept-basketball-teamwork-economics"
+  ],
+  "S16, pp.117-122": [
+    "concept-bell-curve-method"
+  ],
+  "S16, pp.119-120": [
+    "concept-bell-curve-method"
+  ],
+  "S16, pp.120-121": [
+    "concept-bell-curve-method"
+  ],
+  "S16, pp.121-122": [
+    "concept-scoring-consistency"
+  ],
+  "S16, pp.123-124": [
+    "concept-basketball-bell-curve-model"
+  ],
+  "S16, pp.123-133": [
+    "concept-basketball-bell-curve-model"
+  ],
+  "S16, pp.126-127": [
+    "concept-basketball-bell-curve-model",
+    "concept-consistency-player-development"
+  ],
+  "S16, pp.127-128": [
+    "concept-basketball-bell-curve-model",
+    "concept-underdog-risky-strategies"
+  ],
+  "S16, pp.127-132": [
+    "concept-underdog-risky-strategies"
+  ],
+  "S16, pp.129-131": [
+    "concept-basketball-bell-curve-model"
+  ],
+  "S16, pp.134-137": [
+    "concept-referee-inconsistency-effect"
+  ],
+  "S16, pp.136-137": [
+    "concept-referee-inconsistency-effect"
+  ],
+  "S16, pp.138-139": [
+    "concept-basketball-bell-curve-model",
+    "concept-garbage-time-statistics"
+  ],
+  "S16, pp.138-142": [
+    "concept-uncorrelated-ratings"
+  ],
+  "S16, pp.139-140": [
+    "concept-uncorrelated-ratings"
+  ],
+  "S16, pp.141-142": [
+    "concept-offense-vs-defense-wins-championships",
+    "concept-uncorrelated-ratings"
+  ],
+  "S16, pp.142": [
+    "concept-uncorrelated-ratings"
+  ],
+  "S16, pp.144-153": [
+    "concept-difficulty-theory-credit-distribution"
+  ],
+  "S16, pp.145-153": [
+    "concept-difficulty-theory-credit-distribution"
+  ],
+  "S16, pp.146-147": [
+    "concept-difficulty-theory-credit-distribution"
+  ],
+  "S16, pp.148-149": [
+    "concept-difficulty-theory-credit-distribution"
+  ],
+  "S16, pp.149-150": [
+    "concept-individual-floor-percentage"
+  ],
+  "S16, pp.149-162": [
+    "concept-individual-floor-percentage"
+  ],
+  "S16, pp.150-151": [
+    "concept-individual-floor-percentage"
+  ],
+  "S16, pp.155-162": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, pp.157-159": [
+    "concept-individual-floor-percentage"
+  ],
+  "S16, pp.157-162": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, pp.158-159": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, pp.160-161": [
+    "concept-possession-usage-team-balance"
+  ],
+  "S16, pp.163-180": [
+    "concept-possession-usage-efficiency-tradeoff"
+  ],
+  "S16, pp.176-177": [
+    "concept-womens-basketball-offensive-efficiency"
+  ],
+  "S16, pp.176-180": [
+    "concept-womens-basketball-offensive-efficiency"
+  ],
+  "S16, pp.181-182": [
+    "concept-plus-minus-player-rating"
+  ],
+  "S16, pp.183-184": [
+    "concept-player-rating-limitations"
+  ],
+  "S16, pp.183-191": [
+    "concept-player-rating-limitations"
+  ],
+  "S16, pp.185-186": [
+    "concept-winval-plus-minus"
+  ],
+  "S16, pp.185-188": [
+    "concept-player-rating-limitations",
+    "concept-winval-plus-minus"
+  ],
+  "S16, pp.186-187": [
+    "concept-winval-plus-minus"
+  ],
+  "S16, pp.190-191": [
+    "concept-player-rating-limitations"
+  ],
+  "S16, pp.192-197": [
+    "concept-box-score-analysis"
+  ],
+  "S16, pp.193-197": [
+    "concept-box-score-analysis"
+  ],
+  "S16, pp.193-202": [
+    "concept-four-factors-basketball"
+  ],
+  "S16, pp.198-202": [
+    "concept-individual-defensive-ratings"
+  ],
+  "S16, pp.199-200": [
+    "concept-individual-defensive-ratings"
+  ],
+  "S16, pp.202": [
+    "concept-individual-defensive-ratings"
+  ],
+  "S16, pp.212-216": [
+    "concept-coaching-evaluation-basketball"
+  ],
+  "S16, pp.221-222": [
+    "concept-coaching-evaluation-basketball"
+  ],
+  "S16, pp.223-229": [
+    "concept-coaching-evaluation-metrics"
+  ],
+  "S16, pp.230-231": [
+    "concept-time-out-strategy-value"
+  ],
+  "S16, pp.232-233": [
+    "concept-offensive-skill-curves"
+  ],
+  "S16, pp.232-237": [
+    "concept-possession-usage-rate"
+  ],
+  "S16, pp.232-241": [
+    "concept-offensive-skill-curves",
+    "concept-possession-usage-rate"
+  ],
+  "S16, pp.239-241": [
+    "concept-offensive-skill-curves"
+  ],
+  "S16, pp.240-241": [
+    "concept-possession-usage-rate"
+  ],
+  "S16, pp.243-244": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, pp.243-260": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, pp.243-262": [
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "S16, pp.247-248": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, pp.249-250": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, pp.249-256": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, pp.252-253": [
+    "concept-individual-win-loss-records"
+  ],
+  "S16, pp.257-259": [
+    "concept-individual-net-points"
+  ],
+  "S16, pp.257-260": [
+    "concept-individual-net-points"
+  ],
+  "S16, pp.261-262": [
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "S16, pp.283-284": [
+    "concept-basketball-on-paper-analytical-framework"
+  ],
+  "S16, pp.283-302": [
+    "concept-basketball-on-paper-analytical-framework"
+  ],
+  "S16, pp.284-285": [
+    "concept-basketball-on-paper-analytical-framework"
+  ],
+  "S16, pp.290-292": [
+    "concept-shooting-specialist-value"
+  ],
+  "S16, pp.290-296": [
+    "concept-basketball-on-paper-analytical-framework"
+  ],
+  "S16, pp.292-293": [
+    "concept-defensive-specialist-value"
+  ],
+  "S16, pp.292-297": [
+    "concept-defensive-specialist-value"
+  ],
+  "S16, pp.295-296": [
+    "concept-defensive-specialist-value"
+  ],
+  "S16, pp.297-299": [
+    "concept-player-promise-vs-performance"
+  ],
+  "S16, pp.297-301": [
+    "concept-player-promise-vs-performance"
+  ],
+  "S16, pp.301-302": [
+    "concept-extreme-physical-archetypes"
+  ],
+  "S16, pp.303-317": [
+    "concept-specialist-player-evaluation"
+  ],
+  "S16, pp.312-313": [
+    "concept-womens-basketball-player-evaluation-analytics"
+  ],
+  "S16, pp.312-317": [
+    "concept-womens-basketball-player-evaluation-analytics"
+  ],
+  "S16, pp.318-321": [
+    "concept-team-first-player-second-analysis"
+  ],
+  "S16, pp.318-322": [
+    "concept-four-offensive-factors-team-evaluation",
+    "concept-offensive-defensive-rating-team-analysis",
+    "concept-team-first-player-second-analysis"
+  ],
+  "S16, pp.343-346": [
+    "concept-individual-offensive-rating"
+  ],
+  "S16, pp.343-349": [
+    "concept-floor-percentage",
+    "concept-individual-offensive-rating"
+  ],
+  "S16, pp.345-346": [
+    "concept-offensive-rebound-weight"
+  ],
+  "S16, pp.345-347": [
+    "concept-offensive-rebound-weight"
+  ],
+  "S16, pp.348-349": [
+    "concept-individual-offensive-rating"
+  ],
+  "S16, pp.350-355": [
+    "concept-floor-percentage"
+  ],
+  "S16, pp.350-358": [
+    "concept-floor-percentage",
+    "concept-historical-offensive-ratings"
+  ],
+  "S16, pp.359-361": [
+    "concept-defensive-stops-formula"
+  ],
+  "S16, pp.359-362": [
+    "concept-individual-defensive-rating"
+  ],
+  "S16, pp.360-362": [
+    "concept-individual-defensive-rating"
+  ],
+  "S16, pp.364-366": [
+    "concept-basketball-historical-regression"
+  ],
+  "S16, pp.367-368": [
+    "concept-basketball-analytics-glossary"
+  ],
+  "S16, pp.4-5": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, pp.4-7": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, pp.43-46": [
+    "concept-offensive-rating-historical-trends"
+  ],
+  "S16, pp.45": [
+    "concept-offensive-rating-historical-trends"
+  ],
+  "S16, pp.46-54": [
+    "concept-coaching-defense-systems"
+  ],
+  "S16, pp.46-55": [
+    "concept-defensive-rating-historical-trends"
+  ],
+  "S16, pp.47-49": [
+    "concept-defensive-rating-historical-trends"
+  ],
+  "S16, pp.49": [
+    "concept-defensive-rating-historical-trends"
+  ],
+  "S16, pp.5-6": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, pp.50-54": [
+    "concept-pace-of-play"
+  ],
+  "S16, pp.53": [
+    "concept-pace-of-play"
+  ],
+  "S16, pp.57-59": [
+    "concept-roster-stability"
+  ],
+  "S16, pp.59-62": [
+    "concept-roster-stability"
+  ],
+  "S16, pp.6-7": [
+    "concept-basketball-analytics-philosophy"
+  ],
+  "S16, pp.63-68": [
+    "concept-basketball-efficiency-ratings"
+  ],
+  "S16, pp.64-67": [
+    "concept-rule-changes-pace-efficiency"
+  ],
+  "S16, pp.65-66": [
+    "concept-rule-changes-pace-efficiency"
+  ],
+  "S16, pp.66-67": [
+    "concept-basketball-efficiency-ratings",
+    "concept-rule-changes-pace-efficiency"
+  ],
+  "S16, pp.69-76": [
+    "concept-winning-streak-probability"
+  ],
+  "S16, pp.71-73": [
+    "concept-winning-streak-probability"
+  ],
+  "S16, pp.77-81": [
+    "concept-basketball-teamwork-statistics"
+  ],
+  "S16, pp.78-79": [
+    "concept-basketball-teamwork-statistics"
+  ],
+  "S16, pp.8-22": [
+    "concept-possession-score-sheet"
+  ],
+  "S16, pp.80-81": [
+    "concept-basketball-teamwork-statistics"
+  ],
+  "S16, pp.81-82": [
+    "concept-basketball-teamwork-statistics",
+    "concept-player-value-approximation"
+  ],
+  "S16, pp.83-84": [
+    "concept-player-rating-systems-comparison"
+  ],
+  "S16, pp.83-85": [
+    "concept-player-rating-systems-comparison"
+  ],
+  "S16, pp.84-85": [
+    "concept-player-rating-systems-comparison"
+  ],
+  "S16, pp.86-87": [
+    "concept-rebounding-myths-roles"
+  ],
+  "S16, pp.86-92": [
+    "concept-four-factors",
+    "concept-rebounding-myths-roles"
+  ],
+  "S16, pp.89-92": [
+    "concept-four-factors"
+  ],
+  "S16, pp.9-22": [
+    "concept-possession-score-sheet"
+  ],
+  "S16, pp.90-91": [
+    "concept-four-factors"
+  ],
+  "S16, pp.90-92": [
+    "concept-rebounding-myths-roles"
+  ],
+  "S16, pp.91-92": [
+    "concept-four-factors"
+  ],
+  "S16, pp.93-100": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, pp.96-97": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, pp.97": [
+    "concept-lineup-significance-testing"
+  ],
+  "S16, pp.98-99": [
+    "concept-lineup-significance-testing"
   ],
   "S2": [
     "concept-anatomy-ankle-complex",
@@ -7849,15 +8917,6 @@
   "S6, p.190": [
     "concept-show-and-go-opposite-drop-step"
   ],
-  "S6, p.192": [
-    "concept-olajuwon-whirl-move"
-  ],
-  "S6, p.193": [
-    "concept-olajuwon-whirl-move"
-  ],
-  "S6, p.194": [
-    "concept-olajuwon-whirl-move"
-  ],
   "S6, p.195": [
     "concept-post-front-outside-pivot"
   ],
@@ -8316,15 +9375,6 @@
   ],
   "S6, pp.189-190": [
     "concept-show-and-go-opposite-drop-step"
-  ],
-  "S6, pp.191-193": [
-    "concept-olajuwon-whirl-move"
-  ],
-  "S6, pp.191-194": [
-    "concept-olajuwon-whirl-move"
-  ],
-  "S6, pp.193-194": [
-    "concept-olajuwon-whirl-move"
   ],
   "S6, pp.195-196": [
     "concept-post-front-outside-pivot"
@@ -9444,7 +10494,7 @@
     "concept-game-preparation-nba"
   ],
   "S7, pp.288-290": [
-    "concept-nba-scouting-report"
+    "concept-scouting-report"
   ],
   "S7, pp.29-30": [
     "concept-dribble-moves-van-gundy"

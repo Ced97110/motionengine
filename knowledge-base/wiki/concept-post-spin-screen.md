@@ -65,7 +65,6 @@ The play is triggered by a perimeter ball reversal (e.g., 01 → 03 at the top o
 ## Related Concepts
 - [[concept-post-receiving-footwork]] — the two-foot hop catch and chin-the-ball technique that all post catches should begin with
 - [[concept-show-and-go-opposite-drop-step]] — the primary post scoring move after catching off the spin screen action
-- [[concept-olajuwon-whirl-move]] — alternative post move when defender is shading low after the catch
 - [[post-defense-fronting]] — the defensive technique this action is designed to defeat
 - [[concept-setting-screens]] — general screen-setting principles that apply to the spin screener
 

@@ -743,6 +743,22 @@
     "overtraining",
     "periodization"
   ],
+  "concept-basketball-analytics-glossary": [
+    "analytics",
+    "statistics",
+    "possession",
+    "offense",
+    "defense",
+    "evaluation"
+  ],
+  "concept-basketball-analytics-philosophy": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "team-building",
+    "offense",
+    "defense"
+  ],
   "concept-basketball-ankle-sprain-biomechanics": [
     "injury-prevention",
     "ankle",
@@ -785,6 +801,15 @@
     "injury-prevention",
     "youth-development",
     "biomechanics"
+  ],
+  "concept-basketball-bell-curve-model": [
+    "analytics",
+    "statistics",
+    "win-percentage",
+    "offensive-rating",
+    "defensive-rating",
+    "consistency",
+    "pace"
   ],
   "concept-basketball-blood-lactate-demands": [
     "physiology",
@@ -905,6 +930,14 @@
     "head-neck-face",
     "rehabilitation",
     "emergency"
+  ],
+  "concept-basketball-efficiency-ratings": [
+    "analytics",
+    "offense",
+    "defense",
+    "team-performance",
+    "efficiency",
+    "possessions"
   ],
   "concept-basketball-emergency-abcde-protocol": [
     "sports-medicine",
@@ -1048,6 +1081,13 @@
     "monitoring",
     "heart-rate",
     "intensity-zones"
+  ],
+  "concept-basketball-historical-regression": [
+    "analytics",
+    "statistics",
+    "historical-analysis",
+    "regression",
+    "evaluation"
   ],
   "concept-basketball-hydration": [
     "nutrition",
@@ -1281,6 +1321,13 @@
     "program-design",
     "conditioning"
   ],
+  "concept-basketball-on-paper-analytical-framework": [
+    "analytics",
+    "player-evaluation",
+    "offensive-rating",
+    "defensive-rating",
+    "possession-based"
+  ],
   "concept-basketball-performance-anxiety": [
     "sport-psychology",
     "anxiety",
@@ -1510,6 +1557,15 @@
     "return-to-play",
     "injury-management"
   ],
+  "concept-basketball-statistical-framework": [
+    "analytics",
+    "statistics",
+    "offense",
+    "defense",
+    "team-evaluation",
+    "player-evaluation",
+    "possessions"
+  ],
   "concept-basketball-strength-testing": [
     "strength-training",
     "testing",
@@ -1538,6 +1594,24 @@
     "medical-management",
     "injury-prevention",
     "emergency"
+  ],
+  "concept-basketball-teamwork-economics": [
+    "team-building",
+    "culture",
+    "offense",
+    "analytics",
+    "coaching-philosophy"
+  ],
+  "concept-basketball-teamwork-statistics": [
+    "analytics",
+    "offense",
+    "defense",
+    "teamwork",
+    "statistics",
+    "passing",
+    "screening",
+    "rebounding",
+    "spacing"
   ],
   "concept-basketball-training-camp-monitoring": [
     "conditioning",
@@ -1599,6 +1673,13 @@
     "sport-science",
     "periodization"
   ],
+  "concept-bell-curve-method": [
+    "analytics",
+    "statistics",
+    "offense",
+    "defense",
+    "team-building"
+  ],
   "concept-bench-press-test-basketball": [
     "strength-training",
     "testing",
@@ -1628,6 +1709,13 @@
     "stress-fracture",
     "biomechanics",
     "rehabilitation"
+  ],
+  "concept-box-score-analysis": [
+    "analytics",
+    "statistics",
+    "game-analysis",
+    "scouting",
+    "coaching-decisions"
   ],
   "concept-cabcd-downed-athlete": [
     "sports-medicine",
@@ -1686,6 +1774,27 @@
     "jump-training",
     "fatigue-management"
   ],
+  "concept-coaching-defense-systems": [
+    "defense",
+    "coaching",
+    "analytics",
+    "NBA",
+    "systems"
+  ],
+  "concept-coaching-evaluation-basketball": [
+    "coaching-philosophy",
+    "performance-evaluation",
+    "team-management",
+    "winning"
+  ],
+  "concept-coaching-evaluation-metrics": [
+    "analytics",
+    "coaching",
+    "evaluation",
+    "winning-percentage",
+    "expectations",
+    "statistics"
+  ],
   "concept-combination-alternating-defenses": [
     "defense",
     "zone",
@@ -1713,6 +1822,12 @@
     "perimeter",
     "mindset"
   ],
+  "concept-competitive-balance": [
+    "analytics",
+    "statistics",
+    "team-building",
+    "strategy"
+  ],
   "concept-concussion-management-basketball": [
     "sports-medicine",
     "concussion",
@@ -1726,6 +1841,14 @@
     "neuromuscular",
     "speed",
     "reflexes"
+  ],
+  "concept-consistency-player-development": [
+    "player-development",
+    "consistency",
+    "talent",
+    "coaching-philosophy",
+    "high-school",
+    "analytics"
   ],
   "concept-consolidation-training": [
     "conditioning",
@@ -1876,6 +1999,13 @@
     "drills",
     "breakdown"
   ],
+  "concept-defensive-rating-historical-trends": [
+    "defense",
+    "analytics",
+    "NBA",
+    "statistics",
+    "team-evaluation"
+  ],
   "concept-defensive-rebound-outlet-pass-pivot": [
     "defense",
     "rebounding",
@@ -1892,6 +2022,22 @@
     "box-out",
     "man-to-man",
     "team-defense"
+  ],
+  "concept-defensive-specialist-value": [
+    "analytics",
+    "player-evaluation",
+    "defense",
+    "defensive-rating",
+    "stop-percentage",
+    "role-players",
+    "nba"
+  ],
+  "concept-defensive-stops-formula": [
+    "analytics",
+    "statistics",
+    "defense",
+    "player-evaluation",
+    "possession-based"
   ],
   "concept-defensive-strategies-del-harris": [
     "defense",
@@ -1933,6 +2079,14 @@
     "nutrition",
     "pre-participation",
     "in-season"
+  ],
+  "concept-difficulty-theory-credit-distribution": [
+    "analytics",
+    "statistics",
+    "offense",
+    "defense",
+    "teamwork",
+    "player-evaluation"
   ],
   "concept-disrupting-full-court-transitions": [
     "defense",
@@ -2145,6 +2299,14 @@
     "jumping",
     "acceleration"
   ],
+  "concept-extreme-physical-archetypes": [
+    "analytics",
+    "player-evaluation",
+    "nba",
+    "physical-archetypes",
+    "defensive-rating",
+    "offensive-rating"
+  ],
   "concept-fais-basketball": [
     "injury-prevention",
     "rehabilitation",
@@ -2328,6 +2490,13 @@
     "footwork",
     "pivoting"
   ],
+  "concept-floor-percentage": [
+    "analytics",
+    "statistics",
+    "offense",
+    "player-evaluation",
+    "possession-based"
+  ],
   "concept-foot-ankle-injury-basketball": [
     "rehabilitation",
     "injury-prevention",
@@ -2349,6 +2518,38 @@
     "zone-defense",
     "late-game",
     "clock-management"
+  ],
+  "concept-four-factors": [
+    "analytics",
+    "offense",
+    "defense",
+    "team-strategy",
+    "statistics",
+    "efficiency"
+  ],
+  "concept-four-factors-basketball": [
+    "analytics",
+    "offense",
+    "defense",
+    "statistics",
+    "game-analysis",
+    "coaching-decisions"
+  ],
+  "concept-four-factors-winning": [
+    "analytics",
+    "offense",
+    "defense",
+    "statistics",
+    "team-evaluation",
+    "shooting",
+    "rebounding"
+  ],
+  "concept-four-offensive-factors-team-evaluation": [
+    "offense",
+    "analytics",
+    "team-evaluation",
+    "performance-rating",
+    "basketball-on-paper"
   ],
   "concept-free-throw-strategy": [
     "free-throws",
@@ -2405,6 +2606,14 @@
     "video",
     "preparation",
     "pro"
+  ],
+  "concept-garbage-time-statistics": [
+    "analytics",
+    "statistics",
+    "garbage-time",
+    "offensive-rating",
+    "defensive-rating",
+    "game-management"
   ],
   "concept-gas-overtraining-basketball": [
     "strength-training",
@@ -2472,12 +2681,34 @@
     "hip",
     "groin"
   ],
+  "concept-historical-offensive-ratings": [
+    "analytics",
+    "statistics",
+    "offense",
+    "player-evaluation",
+    "nba-history",
+    "benchmarking"
+  ],
   "concept-hop-back-crossover-combo": [
     "offense",
     "ball-handling",
     "live-ball-moves",
     "dribble-combinations",
     "scoring"
+  ],
+  "concept-hot-hand-basketball": [
+    "offense",
+    "shooting",
+    "analytics",
+    "statistics",
+    "psychology"
+  ],
+  "concept-hot-hand-fallacy": [
+    "analytics",
+    "shooting",
+    "psychology",
+    "decision-making",
+    "statistics"
   ],
   "concept-hustle-board": [
     "player evaluation",
@@ -2520,6 +2751,42 @@
     "overplay",
     "help-side"
   ],
+  "concept-individual-defensive-rating": [
+    "analytics",
+    "statistics",
+    "defense",
+    "player-evaluation",
+    "possession-based"
+  ],
+  "concept-individual-defensive-ratings": [
+    "analytics",
+    "defense",
+    "statistics",
+    "player-evaluation",
+    "defensive-rating"
+  ],
+  "concept-individual-floor-percentage": [
+    "analytics",
+    "statistics",
+    "offense",
+    "player-evaluation",
+    "efficiency"
+  ],
+  "concept-individual-net-points": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "offense",
+    "defense",
+    "ratings"
+  ],
+  "concept-individual-offensive-rating": [
+    "analytics",
+    "statistics",
+    "offense",
+    "player-evaluation",
+    "possession-based"
+  ],
   "concept-individual-offensive-skills-framework": [
     "offense",
     "individual skills",
@@ -2538,6 +2805,14 @@
     "practice-design",
     "free-throws",
     "spot-shots"
+  ],
+  "concept-individual-win-loss-records": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "offense",
+    "defense",
+    "ratings"
   ],
   "concept-inherited-aortic-disease-basketball": [
     "sports medicine",
@@ -2772,6 +3047,13 @@
     "injury-prevention",
     "sports-medicine",
     "proprioception"
+  ],
+  "concept-lineup-significance-testing": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "defense",
+    "lineup-analysis"
   ],
   "concept-live-ball-combination-moves": [
     "offense",
@@ -3059,19 +3341,6 @@
     "medical-coverage",
     "mental-health"
   ],
-  "concept-nba-scouting-philosophy": [
-    "offense",
-    "scouting",
-    "game-preparation",
-    "play-design"
-  ],
-  "concept-nba-scouting-report": [
-    "scouting",
-    "game-plan",
-    "coaching-philosophy",
-    "preparation",
-    "pro"
-  ],
   "concept-nba-surgical-outcomes": [
     "sports-medicine",
     "return-to-play",
@@ -3151,6 +3420,21 @@
     "off-season",
     "conditioning"
   ],
+  "concept-offense-vs-defense-wins-championships": [
+    "analytics",
+    "playoffs",
+    "offense",
+    "defense",
+    "championships",
+    "historical-analysis"
+  ],
+  "concept-offensive-defensive-rating-team-analysis": [
+    "analytics",
+    "team-evaluation",
+    "basketball-on-paper",
+    "offensive-rating",
+    "defensive-rating"
+  ],
   "concept-offensive-post-footwork": [
     "offense",
     "post-play",
@@ -3177,6 +3461,20 @@
     "rebounding",
     "passing"
   ],
+  "concept-offensive-rating-historical-trends": [
+    "offense",
+    "analytics",
+    "NBA",
+    "statistics",
+    "team-evaluation"
+  ],
+  "concept-offensive-rebound-weight": [
+    "analytics",
+    "statistics",
+    "offense",
+    "rebounding",
+    "player-evaluation"
+  ],
   "concept-offensive-rebounding": [
     "offense",
     "rebounding",
@@ -3190,20 +3488,28 @@
     "pivoting",
     "stickbacks"
   ],
+  "concept-offensive-score-sheet": [
+    "analytics",
+    "statistics",
+    "game-film",
+    "scouting",
+    "possessions"
+  ],
+  "concept-offensive-skill-curves": [
+    "analytics",
+    "offense",
+    "efficiency",
+    "possession-usage",
+    "player-evaluation",
+    "optimization",
+    "individual-offense"
+  ],
   "concept-offensive-system-design": [
     "offense",
     "half-court",
     "system-design",
     "coaching-philosophy",
     "player-development"
-  ],
-  "concept-olajuwon-whirl-move": [
-    "offense",
-    "post",
-    "footwork",
-    "pivoting",
-    "post-moves",
-    "scoring"
   ],
   "concept-olympic-lift-basketball-principles": [
     "strength-training",
@@ -3403,6 +3709,15 @@
     "sports-medicine",
     "long-term-athletic-development"
   ],
+  "concept-pace-of-play": [
+    "offense",
+    "defense",
+    "analytics",
+    "NBA",
+    "statistics",
+    "tempo",
+    "pace"
+  ],
   "concept-parc-progression-principle": [
     "conditioning",
     "athleticism",
@@ -3600,6 +3915,46 @@
     "dribbling",
     "conditioning"
   ],
+  "concept-player-evaluation-philosophy-oliver": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "coaching-philosophy",
+    "roster-management"
+  ],
+  "concept-player-promise-vs-performance": [
+    "analytics",
+    "player-evaluation",
+    "nba",
+    "draft",
+    "player-development",
+    "offensive-rating"
+  ],
+  "concept-player-rating-limitations": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "roster-construction"
+  ],
+  "concept-player-rating-systems-comparison": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "performance-rating"
+  ],
+  "concept-player-value-approximation": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "offense",
+    "defense"
+  ],
+  "concept-plus-minus-player-rating": [
+    "analytics",
+    "player-evaluation",
+    "plus-minus",
+    "lineup-analysis"
+  ],
   "concept-plyometric-edge-shock-training": [
     "plyometrics",
     "power",
@@ -3651,6 +4006,49 @@
     "pro",
     "help-defense",
     "rotation"
+  ],
+  "concept-points-per-possession": [
+    "analytics",
+    "offense",
+    "defense",
+    "efficiency",
+    "statistics",
+    "team-evaluation",
+    "player-evaluation"
+  ],
+  "concept-possession-score-sheet": [
+    "analytics",
+    "game-analysis",
+    "statistics",
+    "offense",
+    "defense",
+    "scouting"
+  ],
+  "concept-possession-usage-efficiency-tradeoff": [
+    "offense",
+    "analytics",
+    "player-evaluation",
+    "possession-based",
+    "efficiency",
+    "roster-construction"
+  ],
+  "concept-possession-usage-rate": [
+    "analytics",
+    "offense",
+    "possession-usage",
+    "efficiency",
+    "statistics",
+    "player-evaluation",
+    "ball-dominance"
+  ],
+  "concept-possession-usage-team-balance": [
+    "analytics",
+    "statistics",
+    "offense",
+    "team-offense",
+    "possessions",
+    "player-evaluation",
+    "roster-construction"
   ],
   "concept-post-cardiac-arrest-care-basketball": [
     "sports-medicine",
@@ -4013,11 +4411,25 @@
     "fundamentals",
     "youth"
   ],
+  "concept-rebounding-myths-roles": [
+    "rebounding",
+    "analytics",
+    "offense",
+    "defense",
+    "statistics"
+  ],
   "concept-rebounding-position-savvy": [
     "rebounding",
     "positioning",
     "basketball-iq",
     "court-awareness"
+  ],
+  "concept-referee-inconsistency-effect": [
+    "analytics",
+    "statistics",
+    "referee",
+    "game-management",
+    "win-percentage"
   ],
   "concept-reflex-channeling-hebbs-rule": [
     "conditioning",
@@ -4089,6 +4501,13 @@
     "physical-development",
     "conditioning"
   ],
+  "concept-roster-stability": [
+    "team-building",
+    "analytics",
+    "NBA",
+    "roster-management",
+    "coaching"
+  ],
   "concept-rotational-medicine-ball-throw-test": [
     "strength-training",
     "testing",
@@ -4122,6 +4541,16 @@
     "footwork",
     "pivoting",
     "post"
+  ],
+  "concept-rule-changes-pace-efficiency": [
+    "analytics",
+    "offense",
+    "defense",
+    "history",
+    "NBA",
+    "rules",
+    "efficiency",
+    "three-point-shot"
   ],
   "concept-rule-of-three-rule-of-six": [
     "conditioning",
@@ -4172,6 +4601,13 @@
     "rehabilitation",
     "surgery"
   ],
+  "concept-scoring-consistency": [
+    "offense",
+    "defense",
+    "analytics",
+    "team-building",
+    "strategy"
+  ],
   "concept-scoring-strategies-winning-teams": [
     "offense",
     "game-strategy",
@@ -4180,6 +4616,19 @@
     "post-play",
     "rebounding",
     "bench-players"
+  ],
+  "concept-scouting-philosophy": [
+    "offense",
+    "scouting",
+    "game-preparation",
+    "play-design"
+  ],
+  "concept-scouting-report": [
+    "scouting",
+    "game-plan",
+    "coaching-philosophy",
+    "preparation",
+    "pro"
   ],
   "concept-screen-taxonomy-nba": [
     "offense",
@@ -4367,6 +4816,14 @@
     "catch-and-shoot",
     "game-speed",
     "pivot"
+  ],
+  "concept-shooting-specialist-value": [
+    "analytics",
+    "player-evaluation",
+    "shooting",
+    "role-players",
+    "offensive-rating",
+    "nba"
   ],
   "concept-shot-chart-and-evaluation": [
     "shooting",
@@ -4564,6 +5021,13 @@
     "agility",
     "coordination"
   ],
+  "concept-specialist-player-evaluation": [
+    "analytics",
+    "basketball-on-paper",
+    "player-evaluation",
+    "performance-rating",
+    "specialist"
+  ],
   "concept-speed-cycle": [
     "quickness",
     "reaction-time",
@@ -4725,6 +5189,20 @@
     "defensive-stunts",
     "full-court"
   ],
+  "concept-team-first-player-second-analysis": [
+    "analytics",
+    "team-evaluation",
+    "basketball-on-paper",
+    "coaching-philosophy",
+    "performance-rating"
+  ],
+  "concept-team-height-performance": [
+    "analytics",
+    "NBA",
+    "team-building",
+    "height",
+    "roster-construction"
+  ],
   "concept-ten-steps-progression": [
     "conditioning",
     "program-design",
@@ -4813,6 +5291,14 @@
     "weak-side",
     "v-cut",
     "backdoor-cut"
+  ],
+  "concept-time-out-strategy-value": [
+    "late-game",
+    "strategy",
+    "time-out",
+    "game-management",
+    "analytics",
+    "close-games"
   ],
   "concept-time-surfing-skill-training": [
     "conditioning",
@@ -4951,6 +5437,32 @@
     "biomechanics",
     "injury-prevention"
   ],
+  "concept-uncorrelated-offensive-defensive-ratings": [
+    "analytics",
+    "statistics",
+    "defense",
+    "offense",
+    "team-evaluation",
+    "ratings"
+  ],
+  "concept-uncorrelated-ratings": [
+    "analytics",
+    "statistics",
+    "offensive-rating",
+    "defensive-rating",
+    "garbage-time",
+    "historical-analysis"
+  ],
+  "concept-underdog-risky-strategies": [
+    "game-management",
+    "strategy",
+    "press",
+    "pace",
+    "analytics",
+    "underdog",
+    "variance",
+    "three-point-shooting"
+  ],
   "concept-upper-body-exercise-technique-basketball": [
     "strength",
     "upper-body",
@@ -5043,12 +5555,43 @@
     "practice-design",
     "footwork"
   ],
+  "concept-winning-streak-probability": [
+    "analytics",
+    "team-performance",
+    "probability",
+    "winning-streaks",
+    "season-records",
+    "NBA",
+    "WNBA"
+  ],
+  "concept-winval-plus-minus": [
+    "analytics",
+    "player-evaluation",
+    "statistics",
+    "lineup-analysis",
+    "plus-minus"
+  ],
   "concept-wolff-law-bone-adaptation-basketball": [
     "injury-prevention",
     "resistance-training",
     "bone-health",
     "youth-basketball",
     "conditioning"
+  ],
+  "concept-womens-basketball-offensive-efficiency": [
+    "offense",
+    "analytics",
+    "player-evaluation",
+    "WNBA",
+    "possession-based",
+    "efficiency"
+  ],
+  "concept-womens-basketball-player-evaluation-analytics": [
+    "analytics",
+    "basketball-on-paper",
+    "player-evaluation",
+    "wnba",
+    "performance-rating"
   ],
   "concept-workload-acute-chronic-ratio": [
     "conditioning",

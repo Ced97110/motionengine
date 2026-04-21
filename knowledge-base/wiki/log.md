@@ -1380,3 +1380,88 @@
 - Created: concept-youth-basketball-practice-organization.md, concept-youth-basketball-practice-schedules.md
 - Updated: source-youth-basketball-drills.md
 - Notes: Youth Basketball Drills (S15) — Appendix: Organizing Practice Sessions (pp. 337-343) and back matter. Contains practice organization philosophy, sample practice schedules for 30-min and 90-min sessions across early/mid/late season. About the Authors and publisher pages are filler. Source summary needed for S15.
+
+## [2026-04-21] ingest | basketball on paper (pp.1-20)
+- Created: source-basketball-on-paper.md, concept-points-per-possession.md, concept-basketball-statistical-framework.md, concept-floor-percentage.md, concept-individual-offensive-rating.md, concept-individual-defensive-rating.md, concept-four-factors-winning.md, concept-offensive-score-sheet.md
+- Updated: (none)
+- Notes: Basketball on Paper by Dean Oliver — pages 1-20. Cover, copyright, table of contents, acknowledgments, abbreviations list, and Chapter 1 (How to Read This Book). No drills or plays; extractable content is source summary, the statistical framework philosophy, key abbreviations/terminology, and the points-per-possession concept.
+
+## [2026-04-21] ingest | basketball on paper (pp.21-40)
+- Created: concept-basketball-analytics-philosophy.md, concept-possession-score-sheet.md
+- Updated: source-basketball-on-paper.md
+- Notes: Basketball on Paper S16, pp.1-22: Introduction ("How to Read This Book") and Chapter 2 (Watching a Game: Offensive Score Sheets) — the book's philosophy on multi-dimensional player valuation and a detailed possession-by-possession shorthand notation system illustrated through Game 4 of the 1997 NBA Finals (Bulls vs. Jazz). No drills or plays — primarily analytical/conceptual content plus a source summary.
+
+## [2026-04-21] ingest | basketball on paper (pp.61-80)
+- Created: concept-offensive-rating-nba-historical.md, concept-defensive-rating-nba-historical.md, concept-pace-of-play-nba.md, concept-roster-stability-nba.md, concept-four-factors-basketball.md, concept-nba-team-height-performance.md, concept-nba-coaching-defense-systems.md
+- Updated: source-basketball-on-paper.md
+- Notes: Basketball on Paper (S16), pages 43-62 approximately — Chapter 3: Best and Worst Offenses and Defenses. Historical NBA team ratings analysis: top/bottom 25 offenses and defenses, pace analysis, height analysis, roster stability, coach patterns, standard deviations methodology.
+
+## [2026-04-21] ingest | basketball on paper (pp.81-100)
+- Created: concept-nba-rule-changes-pace-efficiency.md, concept-winning-streak-probability.md, concept-basketball-teamwork-statistics.md, concept-player-value-approximation.md, concept-basketball-efficiency-ratings.md
+- Updated: source-basketball-on-paper.md, concept-four-factors-basketball.md
+- Notes: Basketball on Paper Ch.3 conclusion (pp.63-68) + Ch.4 winning streaks (pp.69-76) + Ch.5 Teamwork intro (pp.77-82). Source S16. Key concepts: four factors of team success, NBA rule change history/effects, winning streak probability tables, teamwork taxonomy, value approximation methods critique.
+
+## [2026-04-21] ingest | basketball on paper (pp.101-120)
+- Created: concept-player-rating-systems-comparison.md, concept-four-factors.md, concept-rebounding-myths-roles.md, concept-lineup-significance-testing.md, concept-hot-hand-fallacy.md
+- Updated: source-basketball-on-paper.md
+- Notes: Basketball on Paper (S16) pp.83-102: Chapter 5 conclusion (player rating systems comparison), Chapter 6 (rebounding myths and roles), Chapter 7 (significance testing / Derrick Coleman), Chapter 8 intro (hot hand / Tversky)
+
+## [2026-04-21] ingest | basketball on paper (pp.121-140)
+- Created: concept-hot-hand-basketball.md, concept-nba-competitive-balance.md, concept-basketball-teamwork-economics.md, concept-bell-curve-method.md, concept-scoring-consistency.md
+- Updated: source-basketball-on-paper.md
+- Notes: Basketball on Paper S16 pp.103-122: Chapter 8 (Tversky/Hot Hand), Chapter 9 (Power of Parity), Chapter 10 (Teamwork 2: Ultimatum Game), Chapter 11 (Basketball's Bell Curve) — analytics/statistics concepts
+
+## [2026-04-21] ingest | basketball on paper (pp.141-160)
+- Created: concept-basketball-bell-curve-model.md, concept-uncorrelated-ratings.md, concept-referee-inconsistency-effect.md, concept-underdog-risky-strategies.md, concept-garbage-time-statistics.md, concept-offense-vs-defense-wins-championships.md, concept-consistency-player-development.md
+- Updated: source-basketball-on-paper.md
+- Notes: Basketball on Paper Ch.11-12 (pp.123-142): Bell Curve model applications — team consistency, win% prediction, risky strategies for underdogs, referee inconsistency effects, "perfect score" phenomenon, garbage time / uncorrelated ratings, and Does Defense Win Championships? data.
+
+## [2026-04-21] ingest | basketball on paper (pp.161-180)
+- Created: concept-difficulty-theory-credit-distribution.md, concept-individual-floor-percentage.md, concept-uncorrelated-offensive-defensive-ratings.md, concept-possession-usage-team-balance.md
+- Updated: concept-individual-offensive-rating.md, source-basketball-on-paper.md
+- Notes: Basketball on Paper Ch.13-14 (pp.143-162): Difficulty Theory for distributing credit, individual floor percentage and offensive rating formulas, NBA team case studies (2002 Lakers, 1999/2000 Blazers, 1993-1996 Bulls), uncorrelated offensive/defensive ratings endnote
+
+## [2026-04-21] ingest | basketball on paper (pp.181-200)
+- Created: concept-plus-minus-player-rating.md, concept-wnba-offensive-efficiency.md, concept-possession-usage-efficiency-tradeoff.md
+- Updated: concept-individual-offensive-rating.md, source-basketball-on-paper.md
+- Notes: Chapter 14 (pp.163-180) and Chapter 15 (pp.181-182): Individual Offensive Ratings — career stats for Jordan, Magic, Bird, Miller, Kerr, Barry, Scott, Shaq, Duncan, Robinson, Olajuwon, Mourning; best/worst team offenses; WNBA stats; Chapter 15 intro on the Holy Grail of Player Ratings (plus/minus concept, Winston/Sagarin critique)
+
+## [2026-04-21] ingest | basketball on paper (pp.201-220)
+- Created: concept-player-rating-limitations.md, concept-winval-plus-minus.md, concept-box-score-analysis.md, concept-individual-defensive-ratings.md
+- Updated: source-basketball-on-paper.md, concept-four-factors-basketball.md
+- Notes: Basketball on Paper Ch.15-17 (pp.183-202): Holy Grail of Player Ratings, Insight on a Box Score, Individual Defensive Ratings. Key concepts: player rating limitations, lineup analysis, box score reading framework, possession-based game analysis, Winston/Sagarin WINVAL method, Project Defensive Score Sheet.
+
+## [2026-04-21] ingest | basketball on paper (pp.221-240)
+- Created: concept-defensive-stops-formula.md, concept-dumars-like-defenders.md, concept-coaching-evaluation-basketball.md
+- Updated: concept-individual-defensive-rating.md, source-basketball-on-paper.md
+- Notes: Basketball on Paper Ch.17 (pp.203-220): Individual defensive ratings — defensive stops formula, forced miss weight, individual defensive rating (DRtg), data difficulties, conceptual difficulties (matchups, positional specificity), great defensive teams analysis (Bulls, Knicks, Jazz, Spurs). Ch.18 (pp.221-222): Evaluating coaches — introduction, coaching philosophy tensions between winning and other goals.
+
+## [2026-04-21] ingest | basketball on paper (pp.241-260)
+- Created: concept-coaching-evaluation-metrics.md, concept-time-out-strategy-value.md, concept-offensive-skill-curves.md, concept-individual-win-loss-records.md, concept-possession-usage-rate.md
+- Updated: source-basketball-on-paper.md
+- Notes: Basketball on Paper (S16) pp.223-242: Chapters 18-20 covering coaching evaluation methods (FG% forecast, bell curve, parity charts), time-out strategy value, offensive skill curves (possession rate vs. efficiency), and individual win-loss records framework.
+
+## [2026-04-21] ingest | basketball on paper (pp.261-280)
+- Created: concept-individual-net-points.md, concept-player-evaluation-philosophy-oliver.md
+- Updated: concept-individual-win-loss-records.md, source-basketball-on-paper.md
+- Notes: Basketball on Paper Ch.20-21 (pp.243-262): Individual win-loss records (game-by-game and bell curve methods), individual net points framework, and player evaluation philosophy. Dense statistical concepts with NBA case studies.
+
+## [2026-04-21] ingest | basketball on paper (pp.301-320)
+- Created: concept-basketball-on-paper-analytical-framework.md, concept-russell-vs-chamberlain-analytics.md, concept-shooting-specialist-value.md, concept-defensive-specialist-value.md, concept-player-promise-vs-performance.md, concept-nba-extreme-physical-archetypes.md
+- Updated: source-basketball-on-paper.md
+- Notes: Chapter 21 conclusion (pp.283-289): Russell vs Chamberlain analysis using team offensive/defensive ratings. Chapter 22 (pp.290-302): Player evaluation files — shooting specialists (Miller, Mullin), defensive specialists (Dumars, Laimbeer, Dunn, Hanzlik, Cooper, Cheeks, Payton, Bowen, Mutombo), "The Promises" (Washburn, Ceballos, Dumas, O.Miller, Berry, Sampson, Coleman), and "The Freaks" intro (Bol, Bogues).
+
+## [2026-04-21] ingest | basketball on paper (pp.321-340)
+- Created: concept-four-offensive-factors-team-evaluation.md, concept-team-first-player-second-analysis.md, concept-offensive-defensive-rating-team-analysis.md, concept-specialist-player-evaluation.md, concept-wnba-player-evaluation-analytics.md
+- Updated: source-basketball-on-paper.md
+- Notes: Chapter 22 (pp.303-317): Freaks, Specialists, and Women — statistical career summaries for NBA/WNBA players including Bogues, Bol, Webb, Muresan, Eaton, Dantley, Kemp, Cummings, Sikma, Williams, Porter, Harper, Cooper, and early WNBA stars. Chapter 23 (pp.318-322): Basic Tools to Evaluate a Team — four offensive factors framework, team-first analysis philosophy, and Vince Carter/Toronto Raptors 2002 season case study.
+
+## [2026-04-21] ingest | basketball on paper (pp.361-380)
+- Created: concept-offensive-rebound-weight.md, concept-historical-offensive-ratings.md
+- Updated: source-basketball-on-paper.md, concept-individual-offensive-rating.md, concept-floor-percentage.md, concept-individual-defensive-rating.md, concept-defensive-stops-formula.md
+- Notes: Basketball on Paper (S16) Appendices 1-3 (pp. 343-362): Individual Offensive Ratings formulas, Floor Percentages, historical great offenses data tables (Appendix 2), and Individual Defensive Formulas (Appendix 3). Highly technical statistical content.
+
+## [2026-04-21] ingest | basketball on paper (pp.381-396)
+- Created: concept-basketball-analytics-glossary.md, concept-basketball-historical-regression.md
+- Updated: source-basketball-on-paper.md
+- Notes: Basketball on Paper (S16) pp. 363-376: Appendix 4 (Team Statistic Historical Regression), Glossary, References, Index, About the Author, and back cover. This is the end-matter of the book — no new coaching concepts or drills. The key extractable content is: (1) the Glossary defining Dean Oliver's core analytical terminology (possession, play, offensive/defensive rating, floor percentage, scoring possession, etc.), (2) the Appendix 4 multivariate regression methodology for estimating historical TOV and OREB, and (3) a source summary update noting the book's scope. No drills or plays present.

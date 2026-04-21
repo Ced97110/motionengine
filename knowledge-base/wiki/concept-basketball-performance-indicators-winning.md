@@ -76,7 +76,7 @@ The same four indicators (FG%, defensive rebounds, steals, turnovers) predict ou
 ## Related Concepts
 - [[concept-defensive-strategies-del-harris]] — Del Harris's complete defensive strategy framework
 - [[defensive-keys-to-victory]] — Herb Brown's defensive keys connecting to these indicators
-- [[concept-nba-scouting-report]] — scouting report structure using performance indicators
+- [[concept-scouting-report]] — scouting report structure using performance indicators
 - [[concept-game-preparation-nba]] — complete game preparation system
 - [[concept-late-game-defensive-strategy]] — late-game defensive management
 - [[concept-fast-break-principles]] — transition offense connecting to steals and defensive rebound fast breaks

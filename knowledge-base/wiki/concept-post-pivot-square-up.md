@@ -66,7 +66,6 @@ The Sikma reverse-pivot mechanic also applies to guards and wings who need to cr
 ## Related Concepts
 - [[concept-post-catch-mechanics]] — the universal two-foot hop and chin mechanics that begin every post move
 - [[concept-show-and-go-opposite-drop-step]] — the primary post move when the defender CAN be read (low or high side)
-- [[concept-olajuwon-whirl-move]] — front-pivot alternative for a readable defender position
 - [[concept-rip-step]] — the perimeter equivalent of the blast move and front crossover pivot used after squaring up
 - [[post-up-defense]] — straight-up defensive positioning that triggers the need for these square-up moves
 

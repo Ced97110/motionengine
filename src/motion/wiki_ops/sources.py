@@ -35,6 +35,9 @@ SOURCE_PDFS: Final[dict[str, str]] = {
     "S13": "winning-basketball-fundamentals.pdf",
     "S14": "basketball-playbook-2.pdf",
     "S15": "youth-basketball-drills.pdf",
+    # Analytics foundation — Dean Oliver, Basketball on Paper (2004, Potomac Books)
+    # Opens concept-analytic-* node category (Four Factors, possession analytics).
+    "S16": "basketball-on-paper.pdf",
 }
 
 

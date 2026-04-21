@@ -72,7 +72,6 @@ an elite post player played college basketball at Illinois Wesleyan University u
 - [[concept-post-receiving-footwork]] — the catch routine that must precede this move
 - [[concept-post-front-outside-pivot]] — the front-pivot alternative that produces the same result via a different path
 - [[concept-show-and-go-opposite-drop-step]] — used instead when the defender IS readable by feel
-- [[concept-olajuwon-whirl-move]] — front-pivot scoring move; contrast with the Sikma reverse pivot
 
 ## Sources
 - [S6, pp.197-200] — complete description of the Sikma inside pivot, an elite post player background, both foot-choice variations, comparison to front outside pivot, and correction for below-the-block positioning

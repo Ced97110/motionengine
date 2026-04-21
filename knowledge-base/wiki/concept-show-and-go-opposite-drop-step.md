@@ -73,7 +73,6 @@ The coaching cue is: *"Show and go opposite."* The move works toward both the ba
 
 ## Related Concepts
 - [[concept-post-receiving-footwork]] — the catch routine that must precede this move
-- [[concept-olajuwon-whirl-move]] — the front-pivot alternative to the drop-step for the same defender reads
 - [[concept-post-front-outside-pivot]] — used when the defender's position cannot be determined by feel
 - [[concept-sikma-inside-pivot]] — reverse-pivot square-up move, often used in combination after arrival at the middle of the lane
 - [[post-defense-fronting]] — the defensive positioning this move is designed to attack

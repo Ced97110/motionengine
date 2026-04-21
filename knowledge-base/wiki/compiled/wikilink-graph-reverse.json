@@ -344,6 +344,7 @@
     "concept-defensive-footwork-breakdown-drills",
     "concept-defensive-pivot-drills",
     "concept-defensive-rebounding-footwork",
+    "concept-individual-defensive-ratings",
     "concept-on-ball-defensive-pivots",
     "daily-defensive-checklist",
     "defending-cross-four-get",
@@ -1073,6 +1074,12 @@
   "concept-basketball-anabolic-catabolic-model": [
     "concept-basketball-endocrine-monitoring"
   ],
+  "concept-basketball-analytics-glossary": [
+    "concept-basketball-historical-regression"
+  ],
+  "concept-basketball-analytics-philosophy": [
+    "concept-possession-score-sheet"
+  ],
   "concept-basketball-ankle-sprain-biomechanics": [
     "concept-basketball-lower-extremity-injury-epidemiology"
   ],
@@ -1099,6 +1106,14 @@
     "concept-basketball-position-specific-training",
     "concept-long-term-athletic-development",
     "concept-resistance-training-program-variables"
+  ],
+  "concept-basketball-bell-curve-model": [
+    "concept-consistency-player-development",
+    "concept-garbage-time-statistics",
+    "concept-offense-vs-defense-wins-championships",
+    "concept-referee-inconsistency-effect",
+    "concept-uncorrelated-ratings",
+    "concept-underdog-risky-strategies"
   ],
   "concept-basketball-blood-lactate-demands": [
     "concept-basketball-endocrine-monitoring",
@@ -1183,6 +1198,11 @@
   ],
   "concept-basketball-ear-neck-injuries": [
     "concept-basketball-concussion-management"
+  ],
+  "concept-basketball-efficiency-ratings": [
+    "concept-basketball-teamwork-statistics",
+    "concept-rule-changes-pace-efficiency",
+    "concept-winning-streak-probability"
   ],
   "concept-basketball-emergency-abcde-protocol": [
     "concept-basketball-cpr-bls-protocol"
@@ -1294,12 +1314,16 @@
     "concept-basketball-foot-ankle-injury-epidemiology",
     "concept-basketball-foot-ankle-injury-prevention"
   ],
+  "concept-basketball-four-factors": [
+    "concept-basketball-analytics-glossary"
+  ],
   "concept-basketball-functional-movement-testing": [
     "concept-basketball-injury-etiology-complex-systems",
     "concept-basketball-injury-prevention-overview",
     "concept-basketball-shoulder-assessment"
   ],
   "concept-basketball-game-activity-demands": [
+    "concept-basketball-bell-curve-model",
     "concept-basketball-physical-anthropometric-characteristics"
   ],
   "concept-basketball-gpp-program-design": [
@@ -1475,17 +1499,40 @@
     "concept-isometric-training-basketball",
     "concept-robust-athlete-development-basketball"
   ],
+  "concept-basketball-offensive-defensive-ratings": [
+    "concept-basketball-analytics-glossary"
+  ],
   "concept-basketball-offseason-periodization": [
     "concept-basketball-gpp-program-design",
     "concept-basketball-offseason-sample-programs",
     "concept-plyometric-volume-guidelines-basketball"
   ],
+  "concept-basketball-on-paper-analytical-framework": [
+    "concept-defensive-specialist-value",
+    "concept-extreme-physical-archetypes",
+    "concept-player-promise-vs-performance",
+    "concept-shooting-specialist-value"
+  ],
   "concept-basketball-performance-anxiety": [
     "concept-aclr-psychological-factors",
     "concept-basketball-coping-strategies",
     "concept-clutch-choking-basketball",
+    "concept-hot-hand-basketball",
     "concept-quiet-eye-free-throw",
     "concept-shared-mental-models-basketball"
+  ],
+  "concept-basketball-performance-indicators-winning": [
+    "concept-basketball-analytics-glossary",
+    "concept-basketball-analytics-philosophy",
+    "concept-basketball-historical-regression",
+    "concept-basketball-on-paper-analytical-framework",
+    "concept-four-factors-basketball",
+    "concept-four-offensive-factors-team-evaluation",
+    "concept-individual-net-points",
+    "concept-individual-win-loss-records",
+    "concept-possession-score-sheet",
+    "concept-team-first-player-second-analysis",
+    "concept-uncorrelated-ratings"
   ],
   "concept-basketball-performance-testing-battery": [
     "concept-basketball-strength-testing"
@@ -1558,7 +1605,9 @@
   "concept-basketball-position-anthropometrics-nsca": [
     "concept-basketball-movement-taxonomy",
     "concept-basketball-physical-anthropometric-characteristics",
-    "concept-resistance-training-benefits-basketball"
+    "concept-extreme-physical-archetypes",
+    "concept-resistance-training-benefits-basketball",
+    "concept-team-height-performance"
   ],
   "concept-basketball-position-specific-training": [
     "concept-basketball-athlete-specific-considerations",
@@ -1628,6 +1677,11 @@
   "concept-basketball-shoulder-instability-tests": [
     "concept-basketball-shoulder-assessment"
   ],
+  "concept-basketball-statistical-framework": [
+    "concept-four-factors-winning",
+    "concept-offensive-score-sheet",
+    "concept-points-per-possession"
+  ],
   "concept-basketball-strength-testing": [
     "concept-basketball-functional-movement-testing",
     "concept-basketball-performance-testing-battery",
@@ -1640,6 +1694,14 @@
     "concept-basketball-european-medical-coverage",
     "concept-basketball-event-medical-coverage",
     "concept-basketball-medical-team-communication"
+  ],
+  "concept-basketball-teamwork-economics": [
+    "concept-bell-curve-method",
+    "concept-competitive-balance"
+  ],
+  "concept-basketball-teamwork-statistics": [
+    "concept-basketball-efficiency-ratings",
+    "concept-player-value-approximation"
   ],
   "concept-basketball-training-camp-monitoring": [
     "concept-basketball-accelerometry-training-load",
@@ -1673,6 +1735,9 @@
     "concept-basketball-preseason-programming",
     "source-strength-training-basketball-nsca"
   ],
+  "concept-basketball-win-percentage-prediction": [
+    "concept-basketball-bell-curve-model"
+  ],
   "concept-basketball-workload-measurement": [
     "concept-basketball-well-being-monitoring"
   ],
@@ -1685,9 +1750,21 @@
     "concept-countermovement-jump-fatigue-monitoring",
     "concept-sickle-cell-trait-basketball"
   ],
+  "concept-bell-curve-method": [
+    "concept-basketball-teamwork-economics",
+    "concept-competitive-balance",
+    "concept-hot-hand-basketball",
+    "concept-scoring-consistency"
+  ],
   "concept-blood-flow-restriction-basketball": [
     "concept-basketball-post-exercise-recovery",
     "concept-osteochondral-lesion-talus-basketball"
+  ],
+  "concept-box-score-analysis": [
+    "concept-four-factors-basketball",
+    "concept-individual-defensive-ratings",
+    "concept-player-rating-limitations",
+    "concept-winval-plus-minus"
   ],
   "concept-cabcd-downed-athlete": [
     "concept-basketball-emergency-airway",
@@ -1726,6 +1803,10 @@
   "concept-cmj-monitoring-basketball": [
     "concept-postseason-programming-basketball",
     "concept-reactive-strength-basketball"
+  ],
+  "concept-coaching-evaluation-metrics": [
+    "concept-offensive-skill-curves",
+    "concept-time-out-strategy-value"
   ],
   "concept-combination-alternating-defenses": [
     "concept-foul-policy-basketball",
@@ -1797,6 +1878,11 @@
     "drill-wing-to-top-shot-fake-live-ball-move-shooting",
     "drill-wing-to-top-shot-fake-live-ball",
     "source-offensive-skill-development"
+  ],
+  "concept-competitive-balance": [
+    "concept-basketball-teamwork-economics",
+    "concept-bell-curve-method",
+    "concept-scoring-consistency"
   ],
   "concept-concussion-management-basketball": [
     "concept-ophthalmic-trauma-basketball"
@@ -1910,6 +1996,7 @@
   "concept-defensive-box-out-footwork": [
     "concept-offensive-rebounding-techniques",
     "concept-outlet-pass-pivot",
+    "concept-rebounding-myths-roles",
     "concept-rebounding-position-savvy",
     "drill-bull-in-ring-rebounding",
     "drill-circle-box-out",
@@ -1931,6 +2018,7 @@
     "drill-zigzag-on-ball-pressure"
   ],
   "concept-defensive-philosophy-herb-brown": [
+    "concept-coaching-defense-systems",
     "concept-defensive-ball-handler-stances",
     "concept-defensive-strategies-del-harris",
     "concept-matchup-press-obrien",
@@ -1943,6 +2031,13 @@
     "drill-push-and-talk-defensive",
     "drill-push-push-defensive",
     "source-footwork-balance-pivoting"
+  ],
+  "concept-defensive-rating-historical-trends": [
+    "concept-coaching-defense-systems",
+    "concept-offensive-rating-historical-trends",
+    "concept-pace-of-play",
+    "concept-roster-stability",
+    "concept-team-height-performance"
   ],
   "concept-defensive-rebound-outlet-pass-pivot": [
     "concept-pivot-importance-basketball"
@@ -1959,6 +2054,14 @@
     "drill-shell-drill-rebounding",
     "source-footwork-balance-pivoting"
   ],
+  "concept-defensive-specialist-value": [
+    "concept-extreme-physical-archetypes",
+    "concept-player-promise-vs-performance",
+    "concept-shooting-specialist-value"
+  ],
+  "concept-defensive-stops-formula": [
+    "concept-individual-defensive-rating"
+  ],
   "concept-defensive-strategies-del-harris": [
     "concept-basketball-performance-indicators-winning",
     "concept-scoring-strategies-winning-teams",
@@ -1966,10 +2069,17 @@
     "exercise-pallof-press-variations"
   ],
   "concept-defensive-strategy-del-harris": [
-    "concept-switching-defenses"
+    "concept-switching-defenses",
+    "concept-underdog-risky-strategies"
   ],
   "concept-defensive-unit-coordination": [
-    "concept-foul-policy-basketball"
+    "concept-foul-policy-basketball",
+    "concept-time-out-strategy-value"
+  ],
+  "concept-difficulty-theory-credit-distribution": [
+    "concept-individual-floor-percentage",
+    "concept-possession-usage-team-balance",
+    "concept-uncorrelated-offensive-defensive-ratings"
   ],
   "concept-down-screen-reads": [
     "concept-back-screen-reads",
@@ -2312,6 +2422,14 @@
   "concept-flex-veer-option-footwork": [
     "concept-flex-bump-option-footwork"
   ],
+  "concept-floor-percentage": [
+    "concept-basketball-statistical-framework",
+    "concept-historical-offensive-ratings",
+    "concept-individual-defensive-rating",
+    "concept-individual-offensive-rating",
+    "concept-offensive-rebound-weight",
+    "concept-points-per-possession"
+  ],
   "concept-foot-ankle-injury-basketball": [
     "concept-achilles-tendon-rupture-basketball",
     "concept-jones-fracture-basketball",
@@ -2323,8 +2441,36 @@
     "concept-basketball-resistance-training-principles",
     "concept-basketball-strength-training-methodology"
   ],
+  "concept-foul-policy-basketball": [
+    "concept-referee-inconsistency-effect"
+  ],
   "concept-four-corner-stopping-pivoting": [
     "concept-passing-fundamentals-youth"
+  ],
+  "concept-four-factors": [
+    "concept-hot-hand-fallacy",
+    "concept-lineup-significance-testing",
+    "concept-player-rating-systems-comparison",
+    "concept-rebounding-myths-roles"
+  ],
+  "concept-four-factors-basketball": [
+    "concept-basketball-efficiency-ratings",
+    "concept-basketball-teamwork-statistics",
+    "concept-defensive-rating-historical-trends",
+    "concept-offensive-rating-historical-trends",
+    "concept-player-value-approximation",
+    "concept-rule-changes-pace-efficiency",
+    "concept-winning-streak-probability"
+  ],
+  "concept-four-factors-winning": [
+    "concept-basketball-statistical-framework",
+    "concept-points-per-possession"
+  ],
+  "concept-four-offensive-factors-team-evaluation": [
+    "concept-offensive-defensive-rating-team-analysis",
+    "concept-specialist-player-evaluation",
+    "concept-team-first-player-second-analysis",
+    "concept-womens-basketball-player-evaluation-analytics"
   ],
   "concept-free-throw-pressure": [
     "concept-free-throw-strategy"
@@ -2383,8 +2529,8 @@
     "concept-defensive-unit-coordination",
     "concept-foul-policy-basketball",
     "concept-nba-air-travel-performance",
-    "concept-nba-scouting-philosophy",
-    "concept-nba-scouting-report",
+    "concept-scouting-philosophy",
+    "concept-scouting-report",
     "concept-shared-decision-making-sports-cardiology",
     "concept-shared-mental-models-basketball",
     "concept-six-guiding-principles",
@@ -2425,6 +2571,10 @@
     "concept-core-muscle-injury-basketball",
     "concept-fais-basketball"
   ],
+  "concept-historical-offensive-ratings": [
+    "concept-floor-percentage",
+    "concept-individual-offensive-rating"
+  ],
   "concept-hop-back-crossover-combo": [
     "drill-combination-hop-back-crossover-workout",
     "drill-combinations-in-the-clutch",
@@ -2432,18 +2582,66 @@
     "drill-one-on-one-cutthroat-live"
   ],
   "concept-hustle-board": [
+    "concept-basketball-analytics-philosophy",
     "concept-individual-offensive-skills-framework",
-    "concept-performance-rating-system"
+    "concept-performance-rating-system",
+    "concept-player-value-approximation",
+    "concept-plus-minus-player-rating",
+    "concept-specialist-player-evaluation"
   ],
   "concept-in-game-defensive-adjustments": [
     "concept-combination-alternating-defenses",
     "concept-late-game-defensive-adjustments",
     "concept-late-game-defensive-strategy",
-    "concept-nba-scouting-philosophy"
+    "concept-scouting-philosophy"
   ],
   "concept-in-season-intensity-tools": [
     "concept-basketball-competitive-phases",
     "concept-basketball-in-season-programming"
+  ],
+  "concept-individual-defensive-rating": [
+    "concept-basketball-statistical-framework",
+    "concept-coaching-evaluation-basketball",
+    "concept-defensive-stops-formula",
+    "concept-individual-offensive-rating",
+    "concept-offensive-rebound-weight",
+    "concept-points-per-possession"
+  ],
+  "concept-individual-defensive-ratings": [
+    "concept-box-score-analysis",
+    "concept-four-factors-basketball",
+    "concept-player-rating-limitations",
+    "concept-winval-plus-minus"
+  ],
+  "concept-individual-floor-percentage": [
+    "concept-difficulty-theory-credit-distribution",
+    "concept-possession-usage-team-balance",
+    "concept-uncorrelated-offensive-defensive-ratings"
+  ],
+  "concept-individual-net-points": [
+    "concept-player-evaluation-philosophy-oliver"
+  ],
+  "concept-individual-offensive-rating": [
+    "concept-basketball-statistical-framework",
+    "concept-defensive-stops-formula",
+    "concept-difficulty-theory-credit-distribution",
+    "concept-floor-percentage",
+    "concept-four-factors-winning",
+    "concept-historical-offensive-ratings",
+    "concept-individual-defensive-rating",
+    "concept-individual-floor-percentage",
+    "concept-offensive-rebound-weight",
+    "concept-offensive-score-sheet",
+    "concept-plus-minus-player-rating",
+    "concept-points-per-possession",
+    "concept-possession-usage-efficiency-tradeoff",
+    "concept-possession-usage-team-balance",
+    "concept-uncorrelated-offensive-defensive-ratings",
+    "concept-womens-basketball-offensive-efficiency"
+  ],
+  "concept-individual-offensive-skills-framework": [
+    "concept-individual-win-loss-records",
+    "concept-offense-vs-defense-wins-championships"
   ],
   "concept-individual-shooting-workout-design": [
     "concept-player-development-philosophy-s7",
@@ -2451,6 +2649,13 @@
     "drill-55-second-shooting-drill",
     "drill-closeout-shooting-off-pass",
     "drill-timed-shooting-series"
+  ],
+  "concept-individual-win-loss-records": [
+    "concept-coaching-evaluation-metrics",
+    "concept-individual-net-points",
+    "concept-offensive-skill-curves",
+    "concept-player-evaluation-philosophy-oliver",
+    "concept-possession-usage-rate"
   ],
   "concept-inherited-aortic-disease-basketball": [
     "concept-basketball-cardiac-conditions-sports-participation",
@@ -2612,7 +2817,8 @@
     "drill-ucla-movement"
   ],
   "concept-late-game-defensive-adjustments": [
-    "concept-oob-defense-del-harris"
+    "concept-oob-defense-del-harris",
+    "concept-time-out-strategy-value"
   ],
   "concept-late-game-defensive-strategy": [
     "concept-basketball-performance-indicators-winning",
@@ -2621,7 +2827,8 @@
     "concept-defensive-unit-coordination",
     "concept-in-game-defensive-adjustments",
     "concept-out-of-bounds-defense",
-    "concept-pnr-coverage-options"
+    "concept-pnr-coverage-options",
+    "concept-referee-inconsistency-effect"
   ],
   "concept-lateral-ankle-sprain-basketball": [
     "concept-achilles-tendon-rupture-basketball",
@@ -2631,6 +2838,11 @@
   ],
   "concept-layup-mechanics": [
     "drill-youth-basic-layup"
+  ],
+  "concept-lineup-significance-testing": [
+    "concept-four-factors",
+    "concept-hot-hand-fallacy",
+    "concept-player-rating-systems-comparison"
   ],
   "concept-live-ball-combination-moves": [
     "concept-live-ball-workout-system",
@@ -2689,6 +2901,7 @@
     "source-speed-agility-quickness"
   ],
   "concept-man-to-man-rotation-rules": [
+    "concept-defensive-specialist-value",
     "concept-team-defensive-movement-principles",
     "drill-deny-the-flash-pivot-youth",
     "drill-deny-the-wing-youth",
@@ -2795,11 +3008,13 @@
   ],
   "concept-motion-offense-principles": [
     "concept-attacking-disruptive-defenses",
+    "concept-basketball-teamwork-statistics",
     "concept-la-offense",
     "concept-low-post-fakes-moves-youth",
     "concept-motion-offense-four-rules",
     "concept-motion-offense-screening-rules",
     "concept-perimeter-one-on-one-intelligence",
+    "concept-scoring-consistency",
     "concept-three-step-read-motion-offense",
     "concept-youth-basketball-practice-organization",
     "concept-youth-basketball-practice-schedules",
@@ -2879,10 +3094,6 @@
     "concept-on-court-cardiac-emergency",
     "concept-on-court-facial-injuries"
   ],
-  "concept-nba-scouting-report": [
-    "concept-basketball-performance-indicators-winning",
-    "concept-nba-scouting-philosophy"
-  ],
   "concept-nba-surgical-outcomes": [
     "concept-nba-injury-epidemiology",
     "concept-nba-medical-coverage",
@@ -2915,6 +3126,9 @@
   "concept-off-screen-shot-selection-framework": [
     "concept-screen-taxonomy-nba"
   ],
+  "concept-offense-vs-defense-wins-championships": [
+    "concept-basketball-bell-curve-model"
+  ],
   "concept-offensive-post-footwork": [
     "concept-offensive-post-play-principles",
     "concept-post-contact-reverse-pivot",
@@ -2923,9 +3137,25 @@
   "concept-offensive-practice-philosophy-s6": [
     "concept-shooting-drill-design-s6"
   ],
+  "concept-offensive-rating": [
+    "concept-basketball-on-paper-analytical-framework"
+  ],
+  "concept-offensive-rating-historical-trends": [
+    "concept-coaching-defense-systems",
+    "concept-defensive-rating-historical-trends",
+    "concept-pace-of-play",
+    "concept-roster-stability",
+    "concept-team-height-performance"
+  ],
+  "concept-offensive-rebound-weight": [
+    "concept-defensive-stops-formula",
+    "concept-floor-percentage",
+    "concept-individual-offensive-rating"
+  ],
   "concept-offensive-rebounding": [
     "concept-fast-break-principles",
     "concept-rebounding-areas-youth",
+    "concept-rebounding-myths-roles",
     "concept-rebounding-position-savvy",
     "concept-scoring-strategies-winning-teams",
     "drill-bull-in-ring-rebounding",
@@ -2945,19 +3175,21 @@
     "drill-superman-rebounding",
     "drill-tip-ball-off-wall-pivot"
   ],
-  "concept-offensive-system-design": [
-    "concept-free-throw-strategy",
-    "concept-three-point-shot-trends"
+  "concept-offensive-skill-curves": [
+    "concept-coaching-evaluation-metrics",
+    "concept-possession-usage-rate"
   ],
-  "concept-olajuwon-whirl-move": [
-    "concept-post-catch-mechanics",
-    "concept-post-front-outside-pivot",
-    "concept-post-pivot-square-up",
-    "concept-post-receiving-footwork",
-    "concept-post-spin-screen",
-    "concept-show-and-go-opposite-drop-step",
-    "concept-sikma-inside-pivot",
-    "concept-spin-screen-post-action"
+  "concept-offensive-system-design": [
+    "concept-four-offensive-factors-team-evaluation",
+    "concept-free-throw-strategy",
+    "concept-individual-win-loss-records",
+    "concept-offense-vs-defense-wins-championships",
+    "concept-offensive-skill-curves",
+    "concept-player-evaluation-philosophy-oliver",
+    "concept-possession-usage-efficiency-tradeoff",
+    "concept-possession-usage-rate",
+    "concept-three-point-shot-trends",
+    "concept-uncorrelated-ratings"
   ],
   "concept-on-ball-defensive-pivots": [
     "concept-defensive-ball-handler-stances",
@@ -3086,6 +3318,11 @@
     "drill-jab-step-roll-rebounding",
     "drill-two-on-two-rebounding"
   ],
+  "concept-pace-of-play": [
+    "concept-defensive-rating-historical-trends",
+    "concept-offensive-rating-historical-trends",
+    "concept-roster-stability"
+  ],
   "concept-parc-progression-principle": [
     "concept-muscle-up-variations-s9",
     "concept-power-vs-skill-training",
@@ -3106,8 +3343,44 @@
     "concept-trochlear-dysplasia-basketball"
   ],
   "concept-performance-rating-system": [
+    "concept-basketball-analytics-glossary",
+    "concept-basketball-analytics-philosophy",
+    "concept-basketball-historical-regression",
+    "concept-basketball-on-paper-analytical-framework",
+    "concept-basketball-statistical-framework",
+    "concept-basketball-teamwork-economics",
+    "concept-bell-curve-method",
+    "concept-box-score-analysis",
+    "concept-coaching-defense-systems",
+    "concept-coaching-evaluation-basketball",
+    "concept-competitive-balance",
+    "concept-difficulty-theory-credit-distribution",
+    "concept-floor-percentage",
+    "concept-four-factors",
+    "concept-four-offensive-factors-team-evaluation",
+    "concept-garbage-time-statistics",
+    "concept-historical-offensive-ratings",
     "concept-hustle-board",
-    "concept-individual-offensive-skills-framework"
+    "concept-individual-defensive-rating",
+    "concept-individual-net-points",
+    "concept-individual-offensive-rating",
+    "concept-individual-offensive-skills-framework",
+    "concept-individual-win-loss-records",
+    "concept-offensive-defensive-rating-team-analysis",
+    "concept-offensive-skill-curves",
+    "concept-player-evaluation-philosophy-oliver",
+    "concept-player-rating-limitations",
+    "concept-player-rating-systems-comparison",
+    "concept-player-value-approximation",
+    "concept-plus-minus-player-rating",
+    "concept-points-per-possession",
+    "concept-possession-score-sheet",
+    "concept-possession-usage-rate",
+    "concept-possession-usage-team-balance",
+    "concept-specialist-player-evaluation",
+    "concept-team-first-player-second-analysis",
+    "concept-winning-streak-probability",
+    "concept-womens-basketball-player-evaluation-analytics"
   ],
   "concept-perimeter-one-on-one-moves": [
     "concept-1on1-reads-and-attacks",
@@ -3228,10 +3501,12 @@
     "concept-basketball-anxiety-performance",
     "concept-basketball-coping-strategies",
     "concept-basketball-player-retirement-psychology",
+    "concept-consistency-player-development",
     "concept-game-preparation-halftime",
     "concept-motor-cognitive-youth-basketball",
     "concept-offensive-system-design",
     "concept-performance-rating-system",
+    "concept-player-promise-vs-performance",
     "drill-1on1-baseline-touch",
     "drill-1on1-half-court-attack",
     "drill-chair-series-eastman",
@@ -3253,6 +3528,21 @@
     "drill-eastman-chair-shooting-series",
     "drill-eastman-flex-elbow",
     "drill-pin-down-pull-up"
+  ],
+  "concept-player-rating-limitations": [
+    "concept-box-score-analysis",
+    "concept-individual-defensive-ratings",
+    "concept-winval-plus-minus"
+  ],
+  "concept-player-rating-systems-comparison": [
+    "concept-four-factors",
+    "concept-lineup-significance-testing"
+  ],
+  "concept-player-role-archetypes": [
+    "concept-shooting-specialist-value"
+  ],
+  "concept-player-value-approximation": [
+    "concept-basketball-teamwork-statistics"
   ],
   "concept-plyometric-volume-guidelines-basketball": [
     "concept-youth-basketball-overuse-injuries"
@@ -3325,6 +3615,14 @@
     "concept-isolation-defense-del-harris",
     "concept-oob-defense-del-harris"
   ],
+  "concept-points-per-possession": [
+    "concept-basketball-statistical-framework",
+    "concept-four-factors-winning",
+    "concept-offensive-score-sheet"
+  ],
+  "concept-possession-score-sheet": [
+    "concept-basketball-analytics-philosophy"
+  ],
   "concept-post-catch-mechanics": [
     "concept-offensive-post-play-principles",
     "concept-post-pivot-square-up",
@@ -3359,7 +3657,6 @@
     "drill-post-up-mechanics-youth"
   ],
   "concept-post-front-outside-pivot": [
-    "concept-olajuwon-whirl-move",
     "concept-post-receiving-footwork",
     "concept-show-and-go-opposite-drop-step",
     "concept-sikma-inside-pivot",
@@ -3431,7 +3728,6 @@
   "concept-post-receiving-footwork": [
     "concept-flex-offense",
     "concept-offensive-post-play-principles",
-    "concept-olajuwon-whirl-move",
     "concept-post-front-outside-pivot",
     "concept-post-play-principles",
     "concept-post-spin-screen",
@@ -3588,7 +3884,9 @@
   "concept-quiet-eye-free-throw": [
     "concept-basketball-coping-strategies",
     "concept-basketball-performance-anxiety",
-    "concept-clutch-choking-basketball"
+    "concept-clutch-choking-basketball",
+    "concept-hot-hand-basketball",
+    "concept-hot-hand-fallacy"
   ],
   "concept-reaction-time-basketball": [
     "concept-acl-on-parquet-rehabilitation-basketball",
@@ -3706,9 +4004,17 @@
     "source-offensive-skill-development"
   ],
   "concept-rebounding-areas-youth": [
+    "concept-rebounding-myths-roles",
     "drill-post-moves-passing-shooting-rebounding"
   ],
+  "concept-rebounding-myths-roles": [
+    "concept-four-factors",
+    "concept-lineup-significance-testing",
+    "concept-player-rating-systems-comparison"
+  ],
   "concept-rebounding-position-savvy": [
+    "concept-four-factors-winning",
+    "concept-rebounding-myths-roles",
     "drill-count-slide-pivot-savvy",
     "drill-two-on-two-rebounding"
   ],
@@ -3776,12 +4082,21 @@
     "practice-with-a-purpose",
     "source-footwork-balance-pivoting"
   ],
+  "concept-roster-stability": [
+    "concept-defensive-rating-historical-trends",
+    "concept-offensive-rating-historical-trends",
+    "concept-pace-of-play",
+    "concept-team-height-performance"
+  ],
   "concept-round-off-acrobatics": [
     "concept-back-flip-chain"
   ],
   "concept-rub-off-screen-footwork": [
     "concept-flex-bump-option",
     "concept-high-post-bump-footwork"
+  ],
+  "concept-rule-changes-pace-efficiency": [
+    "concept-basketball-efficiency-ratings"
   ],
   "concept-rule-of-three-rule-of-six": [
     "concept-consolidation-training",
@@ -3800,6 +4115,20 @@
     "concept-agility-training",
     "concept-basketball-saq-sample-program",
     "concept-saq-drill-finder"
+  ],
+  "concept-scoring-consistency": [
+    "concept-bell-curve-method"
+  ],
+  "concept-scoring-strategies-winning-teams": [
+    "concept-four-factors-basketball"
+  ],
+  "concept-scouting-philosophy": [
+    "concept-offensive-score-sheet",
+    "concept-possession-score-sheet"
+  ],
+  "concept-scouting-report": [
+    "concept-basketball-performance-indicators-winning",
+    "concept-scouting-philosophy"
   ],
   "concept-screen-taxonomy-nba": [
     "concept-motion-offense-philosophy",
@@ -3844,6 +4173,7 @@
     "play-up-screen"
   ],
   "concept-screening-basics": [
+    "concept-basketball-teamwork-statistics",
     "concept-motion-offense-screening-rules",
     "concept-off-ball-screen-reads",
     "drill-five-on-five-no-defense",
@@ -3946,6 +4276,7 @@
     "concept-quiet-eye-basketball-shooting"
   ],
   "concept-shooting-confidence-rhythm": [
+    "concept-hot-hand-basketball",
     "concept-mentally-correcting-a-miss",
     "concept-shooting-coaching-tips-wissel",
     "concept-shooting-mechanics-wissel",
@@ -3961,6 +4292,7 @@
   ],
   "concept-shooting-mechanics-wissel": [
     "concept-free-throw-strategy",
+    "concept-hot-hand-fallacy",
     "concept-jump-shot-biomechanics",
     "concept-mentally-correcting-a-miss",
     "concept-quiet-eye-basketball-shooting",
@@ -4058,6 +4390,9 @@
     "drill-wing-to-top-shot-fake-live-ball",
     "drill-wing-to-top-three-point-shooting",
     "source-basketball-shooting"
+  ],
+  "concept-shooting-specialist-value": [
+    "concept-defensive-specialist-value"
   ],
   "concept-shot-chart-and-evaluation": [
     "concept-shooting-on-the-move",
@@ -4172,7 +4507,6 @@
   ],
   "concept-show-and-go-opposite-drop-step": [
     "concept-offensive-post-play-principles",
-    "concept-olajuwon-whirl-move",
     "concept-post-catch-mechanics",
     "concept-post-drop-step",
     "concept-post-front-outside-pivot",
@@ -4188,7 +4522,6 @@
     "concept-sudden-cardiac-death-basketball"
   ],
   "concept-sikma-inside-pivot": [
-    "concept-olajuwon-whirl-move",
     "concept-post-drop-step",
     "concept-post-face-up-moves",
     "concept-post-front-outside-pivot",
@@ -4198,6 +4531,7 @@
   ],
   "concept-six-guiding-principles": [
     "concept-basketball-preseason-conditioning-rose",
+    "concept-coaching-evaluation-basketball",
     "drill-basketball-sit-up",
     "drill-interval-training-basketball"
   ],
@@ -4228,6 +4562,9 @@
     "drill-run-the-line",
     "drill-sprint-catch-shoot-conditioning",
     "drill-timed-shooting-series"
+  ],
+  "concept-specialist-player-evaluation": [
+    "concept-womens-basketball-player-evaluation-analytics"
   ],
   "concept-speed-cycle": [
     "concept-explosive-calisthenics-program-design",
@@ -4334,12 +4671,20 @@
     "concept-inherited-aortic-disease-basketball",
     "concept-sickle-cell-trait-basketball"
   ],
+  "concept-switching-defenses": [
+    "concept-basketball-bell-curve-model",
+    "concept-underdog-risky-strategies"
+  ],
   "concept-syndesmotic-sprain-basketball": [
     "concept-lateral-ankle-sprain-basketball"
   ],
   "concept-t-test-basketball": [
     "concept-three-quarter-court-sprint-test",
     "concept-vo2max-test-basketball"
+  ],
+  "concept-team-first-player-second-analysis": [
+    "concept-offensive-defensive-rating-team-analysis",
+    "concept-specialist-player-evaluation"
   ],
   "concept-ten-steps-progression": [
     "concept-explosive-six",
@@ -4399,6 +4744,10 @@
     "source-coaches-playbook"
   ],
   "concept-three-point-shot-trends": [
+    "concept-four-factors-winning",
+    "concept-rule-changes-pace-efficiency",
+    "concept-underdog-risky-strategies",
+    "concept-womens-basketball-offensive-efficiency",
     "drill-make-em-to-move",
     "drill-three-point-shooting-competitive"
   ],
@@ -4408,6 +4757,9 @@
   ],
   "concept-three-step-read-motion-offense": [
     "drill-penetration-drill"
+  ],
+  "concept-time-out-strategy-value": [
+    "concept-coaching-evaluation-metrics"
   ],
   "concept-time-surfing-skill-training": [
     "concept-consolidation-training",
@@ -4429,6 +4781,7 @@
   ],
   "concept-triangle-offense": [
     "concept-ball-reversal-swing",
+    "concept-basketball-teamwork-economics",
     "concept-continuity-offense-entries",
     "concept-triangle-offense-s13",
     "concept-triangle-pressure-releases",
@@ -4498,6 +4851,18 @@
     "drill-youth-rocker-step",
     "drill-youth-triple-threat-position",
     "shot-fake"
+  ],
+  "concept-uncorrelated-offensive-defensive-ratings": [
+    "concept-difficulty-theory-credit-distribution",
+    "concept-individual-floor-percentage"
+  ],
+  "concept-uncorrelated-ratings": [
+    "concept-basketball-bell-curve-model",
+    "concept-garbage-time-statistics",
+    "concept-offense-vs-defense-wins-championships"
+  ],
+  "concept-underdog-risky-strategies": [
+    "concept-consistency-player-development"
   ],
   "concept-upper-body-exercise-technique-basketball": [
     "concept-upper-extremity-demands-basketball",
@@ -4658,12 +5023,23 @@
     "concept-youth-basketball-practice-organization",
     "drill-mass-footwork-breakdown"
   ],
+  "concept-winning-streak-probability": [
+    "concept-basketball-efficiency-ratings"
+  ],
+  "concept-winval-plus-minus": [
+    "concept-box-score-analysis",
+    "concept-individual-defensive-ratings",
+    "concept-player-rating-limitations"
+  ],
   "concept-wolff-law-bone-adaptation-basketball": [
     "concept-basketball-court-types",
     "concept-basketball-nutrition-micronutrients",
     "concept-female-athlete-triad-basketball",
     "concept-female-basketball-player-physiology",
     "concept-stress-fractures-basketball"
+  ],
+  "concept-womens-basketball-offensive-efficiency": [
+    "concept-possession-usage-efficiency-tradeoff"
   ],
   "concept-workload-acute-chronic-ratio": [
     "concept-acl-on-parquet-rehabilitation-basketball",
@@ -4727,6 +5103,7 @@
     "concept-youth-basketball-drill-finder"
   ],
   "concept-youth-basketball-teaching-philosophy": [
+    "concept-consistency-player-development",
     "concept-youth-basketball-balance-quickness-agility",
     "concept-youth-basketball-drill-finder",
     "concept-youth-basketball-skill-taxonomy"
@@ -4882,6 +5259,7 @@
     "concept-defensive-strategy-del-harris",
     "concept-game-preparation-halftime",
     "concept-halftime-adjustments",
+    "concept-individual-defensive-ratings",
     "defensive-practice-culture",
     "post-double-team-rotations",
     "transition-defense",
@@ -6628,6 +7006,7 @@
     "concept-matchup-press-obrien",
     "concept-pivoting-while-trapped",
     "concept-team-defensive-stunts",
+    "concept-underdog-risky-strategies",
     "defensive-transition-drills",
     "diamond-zone-press",
     "drill-defensive-fast-break-progressions",
@@ -6958,6 +7337,9 @@
     "drill-rip-step-workouts",
     "whole-part-whole-teaching-method"
   ],
+  "performance-rating-system": [
+    "concept-coaching-evaluation-metrics"
+  ],
   "pick-and-roll-defense": [
     "basketball-glossary-defensive-terms",
     "basketball-glossary-herb-brown",
@@ -6968,13 +7350,13 @@
     "concept-fast-break-primary-secondary-dantoni",
     "concept-game-preparation-nba",
     "concept-individual-defensive-movement",
-    "concept-nba-scouting-report",
     "concept-on-ball-pressure-fratello",
     "concept-pivot-footwork-cutters-screeners",
     "concept-pnr-coverage-options",
     "concept-pnr-defense-s13",
     "concept-pnr-defensive-coverages-del-harris",
     "concept-reverse-dribble-continuity",
+    "concept-scouting-report",
     "concept-screen-taxonomy-nba",
     "concept-screen-types-reads",
     "concept-screening-basics",
@@ -7302,7 +7684,7 @@
     "blob-stack-man-spread",
     "concept-continuity-offense-implementing",
     "concept-motion-offense-philosophy",
-    "concept-nba-scouting-philosophy",
+    "concept-scouting-philosophy",
     "concept-three-point-shooting",
     "concept-triangle-offense-philosophy",
     "play-option-slob",
@@ -7374,7 +7756,6 @@
     "concept-defensive-rebounding-footwork",
     "concept-flex-veer-option",
     "concept-game-preparation-nba",
-    "concept-nba-scouting-report",
     "concept-offensive-post-footwork",
     "concept-pivot-importance-basketball",
     "concept-post-contact-reverse-pivot",
@@ -7382,6 +7763,7 @@
     "concept-post-player-getting-open",
     "concept-post-spin-screen",
     "concept-post-v-cut-get-open",
+    "concept-scouting-report",
     "concept-show-and-go-opposite-drop-step",
     "concept-spin-screen-footwork",
     "concept-spin-screen-post-action",
@@ -7973,6 +8355,9 @@
   ],
   "source-basketball-anatomy": [
     "strength-then-power-training-principle"
+  ],
+  "source-basketball-on-paper": [
+    "concept-basketball-historical-regression"
   ],
   "source-youth-basketball-drills": [
     "concept-youth-basketball-drill-finder"
