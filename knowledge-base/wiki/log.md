@@ -897,7 +897,7 @@
 - Notes: S12 pages 1-20: Title page, table of contents, editorial overview, and fatigue monitoring/management review article (Edwards et al., 2018). Key concepts: basketball physical demands, fatigue definition (perceived vs performance fatigability), workload quantification methods (microtechnology, s-RPE), and fatigue monitoring tools (sprint, CMJ, ASRM, HRV, biochemical markers).
 
 ## [2026-04-20] ingest | improving practice performance basketball (pp.21-40)
-- Created: source-improving-practice-performance.md, concept-basketball-training-camp-monitoring.md, concept-workload-acute-chronic-ratio.md, concept-basketball-performance-indicators-winning.md, concept-basketball-accelerometry-training-load.md, concept-basketball-exercise-intensity-zones.md
+- Created: source-improving-practice-performance-basketball.md, concept-basketball-training-camp-monitoring.md, concept-workload-acute-chronic-ratio.md, concept-basketball-performance-indicators-winning.md, concept-basketball-accelerometry-training-load.md, concept-basketball-exercise-intensity-zones.md
 - Updated: concept-basketball-fatigue-monitoring.md
 - Notes: S12 pages 1-40: Academic journal articles on basketball athlete monitoring, fatigue management, team performance indicators, and training load. Three articles: (1) fatigue monitoring tools for basketball training camps and competition periods, (2) team performance indicators for women's Olympic basketball, (3) accelerometry-derived exercise dose during competitive basketball season.
 
@@ -908,7 +908,7 @@
 
 ## [2026-04-20] ingest | improving practice performance basketball (pp.61-80)
 - Created: concept-nba-air-travel-performance.md, concept-basketball-anthropometrics-position.md, concept-motor-cognitive-youth-basketball.md
-- Updated: source-improving-practice-performance.md
+- Updated: source-improving-practice-performance-basketball.md
 - Notes: Pages 52-80: Three research articles — (1) NBA air travel and performance narrative review, (2) Anthropometric variables and somatotype of young vs professional basketball players, (3) Motor and cognitive skills in Italian youth basketball players 7-10 years old. Source ID S12 assigned.
 
 ## [2026-04-20] ingest | improving practice performance basketball (pp.101-108)
@@ -1187,13 +1187,13 @@
 - Notes: Chapter 56: Rehabilitation of Knee Injuries in Basketball Players (pp. 714-721) and Chapter 57: Biomechanical Perspective on Rehabilitation of ACL Injuries in Basketball (pp. 723-734) — rehabilitation phases, return to sport criteria, neuromuscular imbalance patterns, movement deficits, on-parquet rehabilitation program
 
 ## [2026-04-20] ingest | basketball sports medicine and science (pp.721-740)
-- Created: concept-foot-ankle-injury-basketball.md, concept-lateral-ankle-sprain-basketball.md, concept-syndesmotic-sprain-basketball.md, concept-jones-fracture-basketball.md, concept-tendinopathy-basketball.md, source-basketball-sports-medicine.md
+- Created: concept-foot-ankle-injury-basketball.md, concept-lateral-ankle-sprain-basketball.md, concept-syndesmotic-sprain-basketball.md, concept-jones-fracture-basketball.md, concept-tendinopathy-basketball.md, source-basketball-sports-medicine-science.md
 - Updated: concept-achilles-tendon-rupture-basketball.md
 - Notes: S10 Ch.57-59 (pp.735-755): ACL rehab references (bibliography only), Ch.58 foot/ankle injuries in basketball (lateral ankle sprain, syndesmotic sprain, Jones fracture, Achilles tendon rupture), Ch.59 tendinopathy rehabilitation (patellar and Achilles, mechanotherapy, 3-phase rehab, outcome measures, pain monitoring model)
 
 ## [2026-04-20] ingest | basketball sports medicine and science (pp.741-760)
 - Created: concept-tendinopathy-rehabilitation-basketball.md, concept-on-court-rehabilitation-basketball.md
-- Updated: source-basketball-sports-medicine.md
+- Updated: source-basketball-sports-medicine-science.md
 - Notes: S10 Ch.59-60: Tendinopathy rehabilitation (patellar & Achilles) + On-court rehabilitation framework (return to play/performance, ball-handling/shooting/defensive progressions, motor learning principles)
 
 ## [2026-04-20] ingest | basketball sports medicine and science (pp.761-780)
