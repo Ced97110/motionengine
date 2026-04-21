@@ -1,0 +1,25 @@
+{
+  "play-black": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "quick-hitter targets layup or open 3 via step-up screen + baseline drive; no mid-range attempts by design"
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "baseline drive to rim invites body-contact fouls on the closeout"
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "set-play mechanics limit the sequence to \u22642 passes; lower TOV surface than motion offense"
+    }
+  ]
+}

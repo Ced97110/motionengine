@@ -36,6 +36,25 @@ demands_anatomy:
     criticality: optional
     supports_technique: step-up-screen-set
     for_role: "4"
+# Cross-ref edge #8 — stat-signature. Four-Factor direction this play drives.
+# direction: "lifts" (raises our factor) or "protects" (lowers opp factor).
+# factor enum: efg-pct | oreb-pct | tov-pct | ftr | ppp | pace | floor-pct
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "quick-hitter targets layup or open 3 via step-up screen + baseline drive; no mid-range attempts by design"
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "baseline drive to rim invites body-contact fouls on the closeout"
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "set-play mechanics limit the sequence to ≤2 passes; lower TOV surface than motion offense"
 ---
 
 # Black

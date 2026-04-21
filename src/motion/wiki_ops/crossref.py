@@ -1,17 +1,24 @@
 """Cross-reference compiler for the Motion wiki.
 
-Walks ``wiki/*.md`` and emits **13 JSON indexes** under ``wiki/compiled/``.
+Walks ``wiki/*.md`` and emits **15 JSON indexes** under ``wiki/compiled/``.
 No inference, no LLM — pure structural compilation of authored content.
 
 Two classes of output:
 
 **Front-matter inversion (edge #1 anatomy chain — 6 indexes):**
-- ``play-to-anatomy.json``      — ``{play_slug: [{region, criticality, supports_technique?, for_role?}]}``
-- ``play-to-technique.json``    — ``{play_slug: [{id, criticality, role}]}``
-- ``anatomy-to-play.json``      — inverted; ``{region: [{play, criticality, ...}]}``
-- ``anatomy-to-drill.json``     — inverted; ``{region: [{drill, emphasis}]}``
-- ``technique-to-play.json``    — inverted; ``{id: [{play, criticality, role}]}``
-- ``technique-to-drill.json``   — inverted; ``{id: [{drill, emphasis}]}``
+
+- ``play-to-anatomy.json``, ``play-to-technique.json`` — forward edges from each
+  play to its declared anatomy regions and required techniques.
+- ``anatomy-to-play.json``, ``anatomy-to-drill.json`` — inverted; every region
+  mapped to the plays that demand it and the drills that train it.
+- ``technique-to-play.json``, ``technique-to-drill.json`` — same inversion,
+  keyed on technique id.
+
+**Stat-signature inversion (edge #8 analytics chain — 2 indexes):**
+
+- ``play-to-signature.json``, ``signature-to-play.json`` — plays' Four-Factor
+  directions (lifts / protects eFG%, OREB%, TOV%, FTR, PPP, pace, floor%),
+  forward and inverted.
 
 **Content/body extractions (3 indexes):**
 - ``page-insights.json``        — structured ``insights:`` blocks per page
@@ -155,10 +162,12 @@ def compile_indexes(
     """
     play_to_anatomy: dict[str, list[dict[str, str]]] = {}
     play_to_technique: dict[str, list[dict[str, str]]] = {}
+    play_to_signature: dict[str, list[dict[str, str]]] = {}
     anatomy_to_play: dict[str, list[dict[str, str]]] = defaultdict(list)
     anatomy_to_drill: dict[str, list[dict[str, str]]] = defaultdict(list)
     technique_to_play: dict[str, list[dict[str, str]]] = defaultdict(list)
     technique_to_drill: dict[str, list[dict[str, str]]] = defaultdict(list)
+    signature_to_play: dict[str, list[dict[str, str]]] = defaultdict(list)
     page_insights: dict[str, Any] = {}
     page_tags: dict[str, list[str]] = {}
     defending_insights: dict[str, Any] = {}
@@ -236,10 +245,25 @@ def compile_indexes(
                 for item in _dict_items(fm, "demands_anatomy")
                 if item.get("region")
             ]
+            signatures = [
+                _clean(
+                    {
+                        "factor": item["factor"],
+                        "direction": item.get("direction"),
+                        "concept_slug": item.get("concept_slug"),
+                        "magnitude": item.get("magnitude"),
+                        "rationale": item.get("rationale"),
+                    }
+                )
+                for item in _dict_items(fm, "produces_signature")
+                if item.get("factor")
+            ]
             if techs:
                 play_to_technique[slug] = techs
             if anatomies:
                 play_to_anatomy[slug] = anatomies
+            if signatures:
+                play_to_signature[slug] = signatures
             for a in anatomies:
                 anatomy_to_play[a["region"]].append(
                     _clean(
@@ -258,6 +282,18 @@ def compile_indexes(
                             "play": slug,
                             "criticality": t.get("criticality"),
                             "role": t.get("role"),
+                        }
+                    )
+                )
+            for sig in signatures:
+                signature_to_play[sig["factor"]].append(
+                    _clean(
+                        {
+                            "play": slug,
+                            "direction": sig.get("direction"),
+                            "magnitude": sig.get("magnitude"),
+                            "concept_slug": sig.get("concept_slug"),
+                            "rationale": sig.get("rationale"),
                         }
                     )
                 )
@@ -297,10 +333,12 @@ def compile_indexes(
     return {
         "play-to-anatomy.json": play_to_anatomy,
         "play-to-technique.json": play_to_technique,
+        "play-to-signature.json": play_to_signature,
         "anatomy-to-play.json": dict(anatomy_to_play),
         "anatomy-to-drill.json": dict(anatomy_to_drill),
         "technique-to-play.json": dict(technique_to_play),
         "technique-to-drill.json": dict(technique_to_drill),
+        "signature-to-play.json": dict(signature_to_play),
         "page-insights.json": page_insights,
         "page-tags.json": page_tags,
         "defending-insights.json": defending_insights,
@@ -351,6 +389,9 @@ def main(argv: list[str] | None = None) -> int:
 
     n_plays_anatomy = len(indexes["play-to-anatomy.json"])
     n_plays_technique = len(indexes["play-to-technique.json"])
+    n_plays_signature = len(indexes["play-to-signature.json"])
+    n_signature_factors = len(indexes["signature-to-play.json"])
+    n_signature_edges = sum(len(v) for v in indexes["signature-to-play.json"].values())
     n_anatomy_regions = len(indexes["anatomy-to-play.json"])
     n_techniques = len(indexes["technique-to-play.json"])
     n_drills_anatomy = sum(len(v) for v in indexes["anatomy-to-drill.json"].values())
@@ -368,11 +409,13 @@ def main(argv: list[str] | None = None) -> int:
     n_formation_keys = len(indexes["formation-graph.json"])
 
     sys.stdout.write(
-        f"[crossref] compiled 13 indexes to {out_dir}\n"
+        f"[crossref] compiled 15 indexes to {out_dir}\n"
         f"  plays with demands_anatomy:    {n_plays_anatomy}\n"
         f"  plays with demands_techniques: {n_plays_technique}\n"
+        f"  plays with produces_signature: {n_plays_signature}\n"
         f"  anatomy regions referenced:    {n_anatomy_regions}\n"
         f"  techniques referenced:         {n_techniques}\n"
+        f"  analytic factors referenced:   {n_signature_factors} ({n_signature_edges} edges)\n"
         f"  anatomy → drill edges:         {n_drills_anatomy}\n"
         f"  technique → drill edges:       {n_drills_technique}\n"
         f"  pages with insights:           {n_insights}\n"
