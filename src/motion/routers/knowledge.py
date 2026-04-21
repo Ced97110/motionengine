@@ -49,6 +49,10 @@ from motion.wiki_ops.retrieval import (
     build_drill_justification,
     build_play_context,
     build_readiness_filter,
+    get_formation_siblings,
+    get_incoming_links,
+    get_outgoing_links,
+    get_shared_citation_pages,
     load_indexes,
 )
 
@@ -200,7 +204,7 @@ def _defensive_mirror_out(matches: list) -> list[DefensiveMatchOut]:
 
 @router.post("/play-context", response_model=PlayContextResponse)
 async def play_context(request: PlayContextRequest) -> PlayContextResponse:
-    """Q-A + defensive mirror: return the joined retrieval bundle for a play."""
+    """Q-A + defensive mirror + native-graph adjacencies: full retrieval bundle."""
     indexes = _cached_indexes()
     ctx = build_play_context(request.play_slug, indexes)
     mirror = build_defensive_mirror(request.play_slug, indexes, top_k=3)
@@ -210,6 +214,10 @@ async def play_context(request: PlayContextRequest) -> PlayContextResponse:
         techniques=_technique_out(ctx.techniques),
         drills=_drill_out(ctx.drills),
         defensive_mirror=_defensive_mirror_out(mirror),
+        sibling_plays=get_formation_siblings(request.play_slug, indexes),
+        incoming_references=get_incoming_links(request.play_slug, indexes),
+        outgoing_references=get_outgoing_links(request.play_slug, indexes),
+        shared_citation_pages=get_shared_citation_pages(request.play_slug, indexes),
     )
 
 

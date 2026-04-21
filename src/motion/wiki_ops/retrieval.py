@@ -138,6 +138,11 @@ class CompiledIndexes:
     page_insights: dict[str, dict[str, Any]]
     page_tags: dict[str, list[str]]
     defending_insights: dict[str, dict[str, Any]]
+    # Native Karpathy cross-refs compiled from body prose (2026-04-20).
+    wikilink_forward: dict[str, list[str]]
+    wikilink_reverse: dict[str, list[str]]
+    citation_graph: dict[str, list[str]]
+    formation_graph: dict[str, list[str]]
 
 
 # --- loading -----------------------------------------------------------------
@@ -171,6 +176,10 @@ def load_indexes(compiled_directory: Path | None = None) -> CompiledIndexes:
         page_insights=_maybe_read("page-insights.json"),
         page_tags=_maybe_read("page-tags.json"),
         defending_insights=_maybe_read("defending-insights.json"),
+        wikilink_forward=_maybe_read("wikilink-graph.json"),
+        wikilink_reverse=_maybe_read("wikilink-graph-reverse.json"),
+        citation_graph=_maybe_read("citation-graph.json"),
+        formation_graph=_maybe_read("formation-graph.json"),
     )
 
 
@@ -421,6 +430,76 @@ def _tag_overlap_score(play_tags: list[str], other_tags: list[str]) -> tuple[int
         if play_tokens & other_tokens:
             matched.append(tag)
     return len(matched), matched
+
+
+# --- Native-graph helpers (wikilink + citation + formation) -----------------
+
+
+def get_outgoing_links(slug: str, indexes: CompiledIndexes) -> list[str]:
+    """Return the unique wikilink targets declared in ``slug``'s body."""
+    return list(indexes.wikilink_forward.get(slug, []))
+
+
+def get_incoming_links(slug: str, indexes: CompiledIndexes) -> list[str]:
+    """Return the pages whose body wikilinks point at ``slug``.
+
+    This is the reverse view of the native Karpathy cross-refs. Only ~21% of
+    pairs are reciprocal in the corpus, so this often surfaces pages the
+    target itself doesn't link back to (asymmetric graph).
+    """
+    return list(indexes.wikilink_reverse.get(slug, []))
+
+
+def get_formation_siblings(play_slug: str, indexes: CompiledIndexes) -> list[str]:
+    """Return other plays sharing this play's formation, excluding itself.
+
+    Derived from the ``formation:`` front-matter on play pages. Returns [] if
+    the play has no formation set or its formation has only one member.
+    """
+    # Find this play's formation by reverse lookup in the formation graph.
+    for _formation, plays in indexes.formation_graph.items():
+        if play_slug in plays:
+            return [p for p in plays if p != play_slug]
+    return []
+
+
+def get_cite_cluster(citation_key: str, indexes: CompiledIndexes) -> list[str]:
+    """Return pages citing the exact ``[Sn, p.X]`` key.
+
+    Key normalization matches the compiler: ``"S2"`` for source-only, or
+    ``"S2, p.32"`` / ``"S2, pp.18-19"`` for page-anchored citations.
+    """
+    return list(indexes.citation_graph.get(citation_key, []))
+
+
+def get_shared_citation_pages(
+    slug: str,
+    indexes: CompiledIndexes,
+    max_cluster_size: int = 50,
+) -> list[str]:
+    """Return distinct pages that cite any of the same ``[Sn, p.X]`` anchors ``slug`` cites.
+
+    Walks: slug → (cite keys it uses via citation_graph reverse lookup) → (other
+    pages citing those same keys). Excludes ``slug`` itself. ``max_cluster_size``
+    bounds expansion per cite key so one very-common citation doesn't flood
+    the result; keys above the cap are skipped.
+    """
+    # First find which citation keys `slug` appears in (inverse of citation_graph).
+    my_keys: list[str] = [key for key, pages in indexes.citation_graph.items() if slug in pages]
+    if not my_keys:
+        return []
+    seen: set[str] = {slug}
+    out: list[str] = []
+    for key in my_keys:
+        cluster = indexes.citation_graph.get(key, [])
+        if len(cluster) > max_cluster_size:
+            continue
+        for page in cluster:
+            if page in seen:
+                continue
+            seen.add(page)
+            out.append(page)
+    return out
 
 
 def build_defensive_mirror(

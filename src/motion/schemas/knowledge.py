@@ -128,6 +128,11 @@ class PlayContextResponse(_CamelModel):
     techniques: list[TechniqueDemandOut]
     drills: list[DrillPrescriptionOut]
     defensive_mirror: list[DefensiveMatchOut] = []
+    # Native Karpathy cross-refs compiled from body-level edges:
+    sibling_plays: list[str] = []  # same formation as this play
+    incoming_references: list[str] = []  # pages whose body wikilinks point here
+    outgoing_references: list[str] = []  # wikilinks this page declares in body
+    shared_citation_pages: list[str] = []  # other pages citing the same [Sn, p.X]
 
 
 # --- Q-B: readiness filter ---------------------------------------------------
