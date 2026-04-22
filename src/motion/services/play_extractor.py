@@ -21,6 +21,7 @@ Mirrors the pattern in ``motion.services.play_brief``.
 
 from __future__ import annotations
 
+import copy
 import json
 import os
 from dataclasses import dataclass
@@ -77,7 +78,11 @@ _SCHEMA_HINT = """{
         "2": "...", "3": "...", "4": "...", "5": "..."
       },
       "actions": [
-        { "marker": "arrow|screen|shot", "path": "", "move": { "id": "2", "to": [x,y] } }
+        {
+          "marker": "arrow|screen|shot|dribble|handoff",
+          "path": "",
+          "move": { "id": "2", "to": [x,y] }
+        }
       ],
       "defenseActions": [
         { "id": "X2", "to": [x,y], "desc": "Plausible defender response." }
@@ -121,6 +126,17 @@ _RULES = """RULES:
   curves in the lab.
 - phases[].actions[].move: include for player(s) who move this phase;
   `id` is "1"-"5", `to` is end position.
+- phases[].actions[].marker: choose based on the book's verb:
+  - "dribble" when the ball-handler dribbles along a path ("1 dribbles
+    across the top", "zigzag dribble to the wing", "drives baseline",
+    "pushes it up the floor"). The mover MUST be the current ball-handler.
+  - "handoff" when the book describes a dribble handoff / DHO ("2
+    dribble-hands-off to 3", "DHO between 1 and 4"). Emit ONE handoff
+    action on the giver; the receiver typically has an accompanying
+    "arrow" action cutting to the exchange point.
+  - "screen" for on/off-ball screens, "shot" for the shot attempt, and
+    "arrow" for plain cuts, passes, and non-dribble movement. Prefer
+    "dribble" over "arrow" when the ball is on the mover's hip.
 - phases[].defenseActions: invent plausible reactions for the 1-2 most-
   affected defenders per phase. Keep `desc` short.
 - If the prose contains "Occasionally...", "If the defense does X...",
@@ -233,8 +249,8 @@ def _collect_todos(play: dict[str, Any]) -> list[str]:
         )
         if phases_with_actions > 0:
             todos.append(
-                f"{phases_with_actions} phase(s) have actions with empty `path` "
-                "— draw the curves in the lab or edit the SVG path strings by hand."
+                f"{phases_with_actions} phase(s) have straight-line synthesized "
+                "`path` strings — redraw curves in the lab for realistic motion."
             )
         if any(isinstance(p, dict) and p.get("spotlightText") for p in phases):
             todos.append(
@@ -252,6 +268,97 @@ def _collect_todos(play: dict[str, Any]) -> list[str]:
             "concepts.related is empty — add adjacent plays from your corpus."
         )
     return todos
+
+
+def _coord_pair(value: Any) -> tuple[float, float] | None:
+    """Return ``(x, y)`` as floats if ``value`` looks like a 2-element coord."""
+    if not isinstance(value, (list, tuple)) or len(value) != 2:
+        return None
+    try:
+        return float(value[0]), float(value[1])
+    except (TypeError, ValueError):
+        return None
+
+
+def _needs_synthesis(path: Any) -> bool:
+    """Empty string, missing, or whitespace-only → synthesize."""
+    if path is None:
+        return True
+    if not isinstance(path, str):
+        return False
+    return path.strip() == ""
+
+
+def _synthesize_phase_actions(
+    phase: Any,
+    positions: dict[str, tuple[float, float]],
+) -> None:
+    """Walk one phase's actions, mutating empty ``path`` fields in place.
+
+    ``positions`` is updated as each mover advances so subsequent actions in
+    the same phase chain off the new coordinates.
+    """
+    if not isinstance(phase, dict):
+        return
+    actions = phase.get("actions")
+    if not isinstance(actions, list):
+        return
+    for action in actions:
+        if not isinstance(action, dict):
+            continue
+        move = action.get("move")
+        if not isinstance(move, dict):
+            continue
+        mover = move.get("id")
+        if not isinstance(mover, str) or mover not in positions:
+            # No player binding or unknown player — skip gracefully.
+            continue
+        end = _coord_pair(move.get("to"))
+        if end is None:
+            # Claude omitted the endpoint — leave path empty.
+            continue
+        if not _needs_synthesis(action.get("path")):
+            # User-authored path already present — advance tracker anyway so
+            # later actions chain from the correct endpoint.
+            positions[mover] = end
+            continue
+        x0, y0 = positions[mover]
+        x1, y1 = end
+        action["path"] = f"M {round(x0, 2)} {round(y0, 2)} L {round(x1, 2)} {round(y1, 2)}"
+        positions[mover] = end
+
+
+def _synthesize_action_paths(play: dict[str, Any]) -> None:
+    """Fill empty SVG paths with straight-line ``M x0 y0 L x1 y1`` segments.
+
+    Tracks each player's position through the main phase sequence. Branch
+    options fork from a deep-copied snapshot so parallel branches do not
+    contaminate each other.
+    """
+    players = play.get("players")
+    if not isinstance(players, dict):
+        return
+    positions: dict[str, tuple[float, float]] = {}
+    for pid, coord in players.items():
+        pair = _coord_pair(coord)
+        if isinstance(pid, str) and pair is not None:
+            positions[pid] = pair
+    if not positions:
+        return
+
+    for phase in play.get("phases") or []:
+        _synthesize_phase_actions(phase, positions)
+
+    bp = play.get("branchPoint")
+    if isinstance(bp, dict):
+        options = bp.get("options")
+        if isinstance(options, list):
+            for opt in options:
+                if not isinstance(opt, dict):
+                    continue
+                branch_phase = opt.get("phase")
+                branch_positions = copy.deepcopy(positions)
+                _synthesize_phase_actions(branch_phase, branch_positions)
 
 
 def extract_play_from_prose(prose: str) -> ExtractionResult:
@@ -308,6 +415,7 @@ def extract_play_from_prose(prose: str) -> ExtractionResult:
         )
 
     stripped = _sanitize_branch_point(parsed)
+    _synthesize_action_paths(parsed)
     todos = _collect_todos(parsed)
     if stripped:
         todos.append(

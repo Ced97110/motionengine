@@ -1,0 +1,246 @@
+"""Unit tests for :mod:`motion.services.wiki_importer`.
+
+Covers all three outcome tiers plus the path-traversal guard.
+"""
+# ruff: noqa: E501  # Fixture strings embed single-line JSON blobs by design.
+
+from __future__ import annotations
+
+from pathlib import Path
+
+import pytest
+
+from motion.services import wiki_importer
+from motion.services.wiki_importer import (
+    _resolve_wiki_path,
+    import_wiki_play,
+    list_importable_wiki_plays,
+)
+
+# ---------------------------------------------------------------------------
+# Wiki-dir pinning: redirect the importer at a synthetic wiki per test.
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def tmp_wiki(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
+    """Create an empty wiki dir and patch :func:`wiki_importer.wiki_dir`."""
+    wiki = tmp_path / "wiki"
+    wiki.mkdir()
+    monkeypatch.setattr(wiki_importer, "wiki_dir", lambda: wiki)
+    return wiki
+
+
+def _write_page(wiki: Path, slug: str, content: str) -> Path:
+    path = wiki / f"{slug}.md"
+    path.write_text(content, encoding="utf-8")
+    return path
+
+
+SINGLE_BLOCK_PAGE = """---
+type: play
+category: offense
+formation: 5-out
+tags: [quick-hitter]
+---
+
+# Black
+
+## Overview
+A quick man-to-man play from a 5-out formation. [S4, p.56]
+
+```json name=diagram-positions
+{"players":[{"role":"1","x":0,"y":33},{"role":"2","x":-18,"y":28},{"role":"3","x":18,"y":28},{"role":"4","x":-22,"y":42},{"role":"5","x":22,"y":42}],"actions":[{"from":"1","to":"2","type":"pass"},{"from":"4","to":"2","type":"screen"},{"from":"2","to":"rim","type":"dribble"},{"from":"5","to":"left_elbow","type":"cut"}],"notes":"Phase 1 and 2 combined."}
+```
+
+## Phases
+
+### Phase 1: Wing Entry and Step-Up Screen
+- 1 passes to 2.
+- 4 steps up and sets a screen on 2's defender.
+
+### Phase 2: Baseline Drive
+- 2 rips through and drives baseline.
+
+### Phase 3: Rotation and Finish
+- 5 flashes into the key.
+- Options: finish, kick to 3, or dump to 5.
+
+## Related Plays
+- [[play-step-up]]
+- [[play-swinger]]
+
+## Sources
+- [S4, p.56]
+"""
+
+
+MULTI_BLOCK_PAGE = """---
+type: play
+category: offense
+formation: 2-3 high-post
+---
+
+# High Split
+
+## Overview
+Pass-and-follow continuity from a 2-3 high-post set. [S7, p.123]
+
+## Phases
+
+### Phase 1: Entry
+- 2 passes to 1; 5 flashes to the high-post elbow.
+```json name=diagram-positions
+{"players":[{"role":"1","x":-8,"y":36},{"role":"2","x":8,"y":36},{"role":"3","x":-22,"y":22},{"role":"4","x":20,"y":22},{"role":"5","x":8,"y":29}],"actions":[{"from":"2","to":"1","type":"pass"},{"from":"1","to":"5","type":"pass"}],"notes":"Phase 1 starting formation."}
+```
+
+### Phase 2: Split Options
+- 1 follows the pass toward 5; 4 fakes a split and cuts backdoor.
+```json name=diagram-positions
+{"players":[{"role":"1","x":0,"y":44},{"role":"2","x":-10,"y":38},{"role":"3","x":-22,"y":22},{"role":"4","x":20,"y":28},{"role":"5","x":10,"y":30}],"actions":[{"from":"5","to":"4","type":"pass"},{"from":"4","to":"rim","type":"cut"},{"from":"1","to":"5","type":"cut"}],"notes":"Phase 2 Option A."}
+```
+
+## Sources
+- [S7, p.123]
+"""
+
+
+NO_DIAGRAM_PAGE = """---
+type: play
+category: offense
+---
+
+# Versus Triangle-and-Two
+
+## Overview
+Zone offense counter to the triangle-and-two defense.
+
+## Phases
+
+### Phase 1: Initial Ball Movement
+- O1 passes to O5; O1 and O2 dive to the blocks.
+
+## Sources
+- [S13, p.255]
+"""
+
+
+# ---------------------------------------------------------------------------
+# Core scenarios.
+# ---------------------------------------------------------------------------
+
+
+def test_single_block_play_imports_as_partial(tmp_wiki: Path) -> None:
+    """One diagram block with three phase sections → ``wiki-partial``.
+
+    The single block gets duplicated across phases, which is the partial tier's
+    contract. All phases land with actions attached.
+    """
+    _write_page(tmp_wiki, "play-black", SINGLE_BLOCK_PAGE)
+    result = import_wiki_play("play-black")
+
+    assert result.source == "wiki-partial"
+    assert result.play is not None
+    assert result.play["name"] == "Black"
+    assert result.play["tag"] == "offense"
+    assert "5-out formation" in result.play["desc"]
+    assert result.play["concepts"]["related"] == ["play-step-up", "play-swinger"]
+
+    players = result.play["players"]
+    assert set(players.keys()) == {"1", "2", "3", "4", "5"}
+    assert players["1"] == [0, 33]
+
+    phases = result.play["phases"]
+    assert len(phases) == 3
+    assert all(p["actions"] for p in phases)
+    # Pass "1→2" should emit ball travel, not a move.
+    first_actions = phases[0]["actions"]
+    pass_actions = [a for a in first_actions if a.get("ball")]
+    assert pass_actions and pass_actions[0]["ball"] == {"from": "1", "to": "2"}
+    # Screen should map to marker=screen.
+    screens = [a for a in first_actions if a["marker"] == "screen"]
+    assert screens, "expected at least one screen action"
+    # Dribble 2→rim resolves to the rim coord.
+    dribbles = [a for a in first_actions if a["marker"] == "dribble"]
+    assert dribbles and dribbles[0]["move"]["id"] == "2"
+
+
+def test_multi_block_play_imports_as_structured(tmp_wiki: Path) -> None:
+    """Two phases + two phase-tagged blocks → ``wiki-structured``."""
+    _write_page(tmp_wiki, "play-high-split-action", MULTI_BLOCK_PAGE)
+    result = import_wiki_play("play-high-split-action")
+
+    assert result.source == "wiki-structured"
+    assert result.play is not None
+    assert result.play["name"] == "High Split"
+
+    phases = result.play["phases"]
+    assert len(phases) == 2
+    assert phases[0]["label"] == "Entry"
+    assert phases[1]["label"] == "Split Options"
+
+    # Phase 2 should use the block tagged "Phase 2" (5→4 pass + 4→rim cut).
+    phase2_actions = phases[1]["actions"]
+    rim_cut = [a for a in phase2_actions if a.get("move", {}).get("id") == "4"]
+    assert rim_cut and rim_cut[0]["move"]["to"] == [0, 4]
+
+
+def test_no_diagram_play_returns_none(tmp_wiki: Path) -> None:
+    """``type: play`` page without any diagram blocks → ``wiki-no-diagram``."""
+    _write_page(tmp_wiki, "play-versus-triangle-and-two", NO_DIAGRAM_PAGE)
+    result = import_wiki_play("play-versus-triangle-and-two")
+
+    assert result.source == "wiki-no-diagram"
+    assert result.play is None
+    assert any("prose extractor" in todo for todo in result.todos)
+
+
+# ---------------------------------------------------------------------------
+# Security — path traversal.
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "bad_slug",
+    [
+        "../escape",
+        "nested/slug",
+        "..",
+        "./play-black",
+        "",
+        r"backslash\name",
+    ],
+)
+def test_path_traversal_rejected(tmp_wiki: Path, bad_slug: str) -> None:
+    """Slugs with separators or parent refs must be rejected cleanly."""
+    with pytest.raises(ValueError, match=r"invalid slug|escapes wiki"):
+        _resolve_wiki_path(bad_slug, tmp_wiki)
+
+
+def test_import_rejects_traversal(tmp_wiki: Path) -> None:
+    """The public entry point refuses to read files outside the wiki dir."""
+    with pytest.raises(ValueError):
+        import_wiki_play("../escape")
+
+
+# ---------------------------------------------------------------------------
+# Listing.
+# ---------------------------------------------------------------------------
+
+
+def test_list_importable_plays_reports_diagram_flag(tmp_wiki: Path) -> None:
+    """Listing surfaces slug/name/phaseCount/hasDiagram/blockCount per page."""
+    _write_page(tmp_wiki, "play-black", SINGLE_BLOCK_PAGE)
+    _write_page(tmp_wiki, "play-versus-triangle-and-two", NO_DIAGRAM_PAGE)
+    # A non-play page should be ignored.
+    _write_page(
+        tmp_wiki,
+        "concept-foo",
+        "---\ntype: concept\n---\n\n# Foo\n",
+    )
+    entries = list_importable_wiki_plays()
+    slugs = {e["slug"]: e for e in entries}
+    assert set(slugs.keys()) == {"play-black", "play-versus-triangle-and-two"}
+    assert slugs["play-black"]["hasDiagram"] is True
+    assert slugs["play-black"]["blockCount"] == 1
+    assert slugs["play-versus-triangle-and-two"]["hasDiagram"] is False
