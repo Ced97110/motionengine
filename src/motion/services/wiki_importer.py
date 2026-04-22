@@ -22,12 +22,14 @@ Non-goals:
 
 from __future__ import annotations
 
+import contextlib
 import json
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Literal
 
+from motion.services.phase_expander import expand_phase_from_narrative
 from motion.services.play_extractor import _synthesize_action_paths
 from motion.wiki_ops.frontmatter import parse_full
 from motion.wiki_ops.paths import wiki_dir
@@ -273,9 +275,9 @@ def import_wiki_play(slug: str) -> ImportResult:
 
     if source_tier == "wiki-partial":
         todos.append(
-            "Fewer diagram blocks than phase sections — the single block was "
-            "duplicated across all phases. Edit each phase to reflect its actual "
-            "action sequence."
+            "Fewer diagram blocks than phase sections — populated phases carry "
+            "the available block's actions, the rest start empty. Author the "
+            "missing phases in the lab."
         )
 
     # Flag any diagram blocks that never got assigned to a phase.
@@ -606,15 +608,86 @@ def _build_phases(
             )
         return v7_phases, todos
 
-    # Track which blocks are still unused (future feature: merge into text).
+    # Accumulator of role-token actions seen so far across phases — passed as
+    # optional ordering context to the narrative expander so it knows what has
+    # already happened before the empty phase it is expanding.
+    preceding_role_actions: list[dict[str, Any]] = []
+    # Live positional state — advances as each phase's actions resolve. The
+    # narrative expander needs this so it can pick the correct directional
+    # role token (e.g. "5 sprints up to 2" → if 2 is at right_wing after
+    # earlier phases, the screen target is right_wing not left_wing).
+    current_positions: dict[str, tuple[float, float]] = {
+        pid: (float(xy[0]), float(xy[1])) for pid, xy in players.items()
+    }
+
+    def _advance_positions(v7_actions: list[dict[str, Any]]) -> None:
+        for a in v7_actions:
+            # Screens don't relocate the screener: physically a screener sets
+            # a brief body-block NEAR the screenee's path and stays close to
+            # their base position (often an elbow or post). The wiki shape
+            # records ``move.to = <screenee's coord>`` purely so the screen
+            # glyph renders at the screening point — advancing the screener's
+            # position to that point would corrupt downstream phase context
+            # (e.g. the LLM sees 4 on the wing after phase 1 instead of at
+            # the elbow, and picks the wrong direction in phase 2).
+            if a.get("marker") == "screen":
+                continue
+            move = a.get("move")
+            if not isinstance(move, dict):
+                continue
+            mover = move.get("id")
+            to = move.get("to")
+            if (
+                isinstance(mover, str)
+                and isinstance(to, (list, tuple))
+                and len(to) == 2
+            ):
+                with contextlib.suppress(TypeError, ValueError):
+                    current_positions[mover] = (float(to[0]), float(to[1]))
+
     for phase in phase_sections:
-        # Pick the block for this phase (first assigned; fall back to blocks[0]).
-        block_idx = phase.block_indices[0] if phase.block_indices else 0
-        block = blocks[block_idx]
-        actions, action_todos = _convert_actions(
-            block.data.get("actions"), players, phase.label
-        )
-        todos.extend(action_todos)
+        # Pick the block for this phase. If the alignment pass could not find
+        # a diagram for this phase, leave its actions empty rather than
+        # duplicating the first block — duplicating produced confusing
+        # "5 identical actions in every phase" output for partial-tier plays
+        # (e.g. iverson-ram: 1 block, 3 phase sections).
+        if phase.block_indices:
+            block = blocks[phase.block_indices[0]]
+            raw_actions = block.data.get("actions")
+            actions, action_todos = _convert_actions(
+                raw_actions, players, phase.label
+            )
+            todos.extend(action_todos)
+            if isinstance(raw_actions, list):
+                for entry in raw_actions:
+                    if isinstance(entry, dict):
+                        preceding_role_actions.append(entry)
+        else:
+            # Empty phase → try LLM narrative expansion before giving up.
+            expanded = expand_phase_from_narrative(
+                phase.label,
+                phase.text,
+                list(players.keys()),
+                preceding_actions=list(preceding_role_actions),
+                current_positions=dict(current_positions),
+            )
+            if expanded:
+                actions, action_todos = _convert_actions(
+                    expanded, players, phase.label
+                )
+                todos.extend(action_todos)
+                todos.append(
+                    f"[{phase.label}] actions LLM-expanded from narrative — "
+                    "review against book."
+                )
+                preceding_role_actions.extend(expanded)
+            else:
+                actions = []
+                todos.append(
+                    f"[{phase.label}] no diagram block aligned with this phase — "
+                    "actions left empty; draw them in the lab."
+                )
+        _advance_positions(actions)
         v7_phases.append(
             {
                 "label": phase.label,

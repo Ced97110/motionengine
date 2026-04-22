@@ -23,12 +23,30 @@ from __future__ import annotations
 
 import copy
 import json
+import math
 import os
 from dataclasses import dataclass
 from typing import Any
 
 _MODEL = "claude-sonnet-4-6"
 _MAX_TOKENS = 4096
+
+# ---------------------------------------------------------------------------
+# Curve-synthesis geometry constants (type-aware + screen-aware synthesis).
+# ---------------------------------------------------------------------------
+
+# SVG units of perpendicular tolerance for treating a screener as "in the way"
+# of a cutter's straight line. Anything farther is ignored.
+SCREEN_PROXIMITY = 4.0
+# Bow depth for cuts that curve around a screener (perpendicular offset from
+# the straight line, away from the screener).
+CURVE_BOW = 3.5
+# Bow depth for ordinary cuts (no screener nearby) — a gentle arc biased
+# toward the court centerline so cuts don't hug the sideline.
+DEFAULT_BOW = 1.5
+# For screen markers: how far short of the screenee's coord to stop the line,
+# so the T-bar marker renders at the screening point rather than past it.
+SCREEN_STOP_BACK = 3.0
 
 
 @dataclass(frozen=True)
@@ -289,6 +307,251 @@ def _needs_synthesis(path: Any) -> bool:
     return path.strip() == ""
 
 
+def _straight_path(start: tuple[float, float], end: tuple[float, float]) -> str:
+    """Emit ``M x0 y0 L x1 y1`` with 2-decimal rounding."""
+    x0, y0 = start
+    x1, y1 = end
+    return f"M {round(x0, 2)} {round(y0, 2)} L {round(x1, 2)} {round(y1, 2)}"
+
+
+def _point_segment_perp(
+    p: tuple[float, float],
+    a: tuple[float, float],
+    b: tuple[float, float],
+) -> tuple[float, float, float]:
+    """Return (perpendicular distance, signed side, segment length).
+
+    Distance is clamped to the segment endpoints (closest point on segment).
+    Signed side > 0 if ``p`` is on one side of the a→b line, < 0 on the other
+    (follows the 2D cross product sign convention). Length is |b - a|.
+    """
+    ax, ay = a
+    bx, by = b
+    px, py = p
+    dx = bx - ax
+    dy = by - ay
+    length = math.hypot(dx, dy)
+    if length == 0.0:
+        return math.hypot(px - ax, py - ay), 0.0, 0.0
+    # Signed cross product → tells us which side of the line p sits on.
+    cross = (dx) * (py - ay) - (dy) * (px - ax)
+    # Project p onto the segment, clamp to [0, length].
+    t = ((px - ax) * dx + (py - ay) * dy) / (length * length)
+    t_clamped = max(0.0, min(1.0, t))
+    foot_x = ax + t_clamped * dx
+    foot_y = ay + t_clamped * dy
+    dist = math.hypot(px - foot_x, py - foot_y)
+    return dist, cross, length
+
+
+def _unit_perpendicular(
+    start: tuple[float, float], end: tuple[float, float]
+) -> tuple[float, float]:
+    """Return the left-hand unit normal of the start→end vector.
+
+    Paired with the cross-product sign in :func:`_point_segment_perp` this
+    lets callers pick the side of the line they want to bow toward.
+    """
+    dx = end[0] - start[0]
+    dy = end[1] - start[1]
+    length = math.hypot(dx, dy)
+    if length == 0.0:
+        return 0.0, 0.0
+    # Rotate the unit tangent 90° CCW → left-hand normal.
+    return -dy / length, dx / length
+
+
+def _find_screener(
+    start: tuple[float, float],
+    end: tuple[float, float],
+    actions: list[Any],
+    positions: dict[str, tuple[float, float]],
+    mover_id: str | None = None,
+) -> tuple[float, float] | None:
+    """Return the coord of the screener to route this cut around.
+
+    Two rules, semantic wins over geometric:
+
+    1. **Semantic**: a screen whose ``move.to`` coord equals the cut mover's
+       starting position is explicitly setting a screen for THIS cut (the
+       importer records "4 screens 2" as ``{move.id=4, move.to=<coord of 2>}``,
+       so matching coords is the reliable signal regardless of how far the
+       screener sits from the straight-line path). This catches Iverson-style
+       elbow screens where the screener is 7+ SVG units off the cut line.
+    2. **Geometric fallback**: screener within :data:`SCREEN_PROXIMITY` SVG
+       units of the cut segment (not the infinite line). Handles cases where
+       the wiki didn't explicitly pair screen-to-cut or extraction lost the
+       linkage.
+    """
+    semantic_match: tuple[float, float] | None = None
+    best: tuple[float, float] | None = None
+    best_dist = SCREEN_PROXIMITY
+    for other in actions:
+        if not isinstance(other, dict):
+            continue
+        if other.get("marker") != "screen":
+            continue
+        other_move = other.get("move")
+        if not isinstance(other_move, dict):
+            continue
+        screener_id = other_move.get("id")
+        if not isinstance(screener_id, str):
+            continue
+        screener_coord = positions.get(screener_id)
+        if screener_coord is None:
+            continue
+        # Rule 1 — semantic match via the screen's target coord.
+        if semantic_match is None and mover_id is not None:
+            other_to = other_move.get("to")
+            if isinstance(other_to, (list, tuple)) and len(other_to) == 2:
+                try:
+                    ox = float(other_to[0])
+                    oy = float(other_to[1])
+                    if (
+                        abs(ox - start[0]) < 0.01
+                        and abs(oy - start[1]) < 0.01
+                    ):
+                        semantic_match = screener_coord
+                        continue
+                except (TypeError, ValueError):
+                    pass
+        # Rule 2 — geometric fallback.
+        dist, _side, length = _point_segment_perp(screener_coord, start, end)
+        if length == 0.0:
+            continue
+        if dist <= best_dist:
+            best_dist = dist
+            best = screener_coord
+    return semantic_match or best
+
+
+def _cubic_around(
+    start: tuple[float, float],
+    end: tuple[float, float],
+    screener: tuple[float, float],
+) -> str:
+    """Build a cubic bezier that bows OVER/AROUND ``screener``.
+
+    Control point = screener + :data:`CURVE_BOW` along the line's normal, on
+    the SAME side of the line as the screener (so the curve peaks beyond the
+    screener, not between screener and line). This matches basketball
+    convention: a cut using a screen passes on the far side of the screener's
+    body — for a high screen, the cutter goes OVER THE TOP (even farther from
+    the basket). Both control points are identical so the cubic behaves like
+    a single-control quadratic but still emits a ``C`` command.
+    """
+    nx, ny = _unit_perpendicular(start, end)
+    _dist, side, _length = _point_segment_perp(screener, start, end)
+    # Match the screener's side: the curve goes around the FAR side of the
+    # screener, not between the screener and the cut line. side == 0
+    # (degenerate: screener sits on the line) defaults to positive normal.
+    sign = 1.0 if side >= 0 else -1.0
+    cx = screener[0] + sign * nx * CURVE_BOW
+    cy = screener[1] + sign * ny * CURVE_BOW
+    x0, y0 = start
+    x1, y1 = end
+    return (
+        f"M {round(x0, 2)} {round(y0, 2)} "
+        f"C {round(cx, 2)} {round(cy, 2)} "
+        f"{round(cx, 2)} {round(cy, 2)} "
+        f"{round(x1, 2)} {round(y1, 2)}"
+    )
+
+
+def _cubic_gentle_arc(
+    start: tuple[float, float], end: tuple[float, float]
+) -> str:
+    """Build a gentle arc bowing toward the court centerline.
+
+    Midpoint of the segment gets offset by :data:`DEFAULT_BOW` along the
+    line's normal, picking the side whose x-component nudges the midpoint
+    toward x=0 (the centerline). For segments that start and end near the
+    centerline already (both |x| < 3) we bow toward the basket end (+y).
+    """
+    x0, y0 = start
+    x1, y1 = end
+    mid_x = (x0 + x1) / 2.0
+    mid_y = (y0 + y1) / 2.0
+    nx, ny = _unit_perpendicular(start, end)
+    if abs(x0) < 3.0 and abs(x1) < 3.0:
+        # Both endpoints hug the centerline — bow toward the basket end (+y).
+        sign = 1.0 if ny >= 0 else -1.0
+    else:
+        # Bow toward x=0. If nx points toward the centerline from the midpoint,
+        # use +sign; otherwise flip.
+        if mid_x > 0:
+            sign = -1.0 if nx > 0 else 1.0
+        elif mid_x < 0:
+            sign = 1.0 if nx > 0 else -1.0
+        else:
+            sign = 1.0
+    cx = mid_x + sign * nx * DEFAULT_BOW
+    cy = mid_y + sign * ny * DEFAULT_BOW
+    return (
+        f"M {round(x0, 2)} {round(y0, 2)} "
+        f"C {round(cx, 2)} {round(cy, 2)} "
+        f"{round(cx, 2)} {round(cy, 2)} "
+        f"{round(x1, 2)} {round(y1, 2)}"
+    )
+
+
+def _screen_stub(
+    screener: tuple[float, float], target: tuple[float, float]
+) -> str:
+    """Build a short line from screener stopping ``SCREEN_STOP_BACK`` short.
+
+    If the full distance is less than the stop-back threshold the full line
+    is emitted — we never invert direction.
+    """
+    sx, sy = screener
+    tx, ty = target
+    dx = tx - sx
+    dy = ty - sy
+    length = math.hypot(dx, dy)
+    if length <= SCREEN_STOP_BACK or length == 0.0:
+        return _straight_path(screener, target)
+    ratio = (length - SCREEN_STOP_BACK) / length
+    ex = sx + dx * ratio
+    ey = sy + dy * ratio
+    return _straight_path(screener, (ex, ey))
+
+
+def _synthesize_one_action(
+    action: dict[str, Any],
+    start: tuple[float, float],
+    end: tuple[float, float],
+    sibling_actions: list[Any],
+    positions: dict[str, tuple[float, float]],
+) -> str:
+    """Pick the right path shape for a single action.
+
+    Dispatches on ``marker`` + ``dashed``:
+    - ``screen`` → short stub line that stops short of the screenee.
+    - ``arrow`` + dashed (pass) → straight line (unchanged).
+    - ``arrow`` non-dashed (cut/move) → screen-aware cubic arc, else gentle arc.
+    - ``shot`` / ``dribble`` / ``handoff`` / anything else → straight line.
+    """
+    marker = action.get("marker")
+    dashed = bool(action.get("dashed"))
+    if marker == "screen":
+        return _screen_stub(start, end)
+    if marker == "arrow" and not dashed:
+        move = action.get("move")
+        mover_id = (
+            move.get("id") if isinstance(move, dict) else None
+        )
+        mover_id_str = mover_id if isinstance(mover_id, str) else None
+        screener = _find_screener(
+            start, end, sibling_actions, positions, mover_id_str
+        )
+        if screener is not None:
+            return _cubic_around(start, end, screener)
+        return _cubic_gentle_arc(start, end)
+    # arrow+dashed (pass), shot, dribble, handoff, and unknown markers →
+    # straight line — the viewer overlays dribble zigzags / handoff ticks.
+    return _straight_path(start, end)
+
+
 def _synthesize_phase_actions(
     phase: Any,
     positions: dict[str, tuple[float, float]],
@@ -296,7 +559,9 @@ def _synthesize_phase_actions(
     """Walk one phase's actions, mutating empty ``path`` fields in place.
 
     ``positions`` is updated as each mover advances so subsequent actions in
-    the same phase chain off the new coordinates.
+    the same phase chain off the new coordinates. Screen-awareness peeks at
+    sibling actions within the same phase to curve cuts around screeners
+    whose coords sit within :data:`SCREEN_PROXIMITY` of the straight line.
     """
     if not isinstance(phase, dict):
         return
@@ -308,6 +573,25 @@ def _synthesize_phase_actions(
             continue
         move = action.get("move")
         if not isinstance(move, dict):
+            # Ball-only (pass) branch: actions with a ``ball.{from,to}`` field
+            # but no ``move`` — the wiki importer's convention for passes.
+            # Synthesize a straight line between the passer and receiver so
+            # the dashed pass-arrow actually renders instead of staying blank.
+            ball = action.get("ball")
+            if (
+                isinstance(ball, dict)
+                and _needs_synthesis(action.get("path"))
+            ):
+                ball_from = ball.get("from")
+                ball_to = ball.get("to")
+                if (
+                    isinstance(ball_from, str)
+                    and isinstance(ball_to, str)
+                ):
+                    from_pos = positions.get(ball_from)
+                    to_pos = positions.get(ball_to)
+                    if from_pos is not None and to_pos is not None:
+                        action["path"] = _straight_path(from_pos, to_pos)
             continue
         mover = move.get("id")
         if not isinstance(mover, str) or mover not in positions:
@@ -322,9 +606,10 @@ def _synthesize_phase_actions(
             # later actions chain from the correct endpoint.
             positions[mover] = end
             continue
-        x0, y0 = positions[mover]
-        x1, y1 = end
-        action["path"] = f"M {round(x0, 2)} {round(y0, 2)} L {round(x1, 2)} {round(y1, 2)}"
+        start = positions[mover]
+        action["path"] = _synthesize_one_action(
+            action, start, end, actions, positions
+        )
         positions[mover] = end
 
 

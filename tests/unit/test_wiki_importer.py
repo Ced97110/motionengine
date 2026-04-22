@@ -130,12 +130,25 @@ Zone offense counter to the triangle-and-two defense.
 # ---------------------------------------------------------------------------
 
 
-def test_single_block_play_imports_as_partial(tmp_wiki: Path) -> None:
+def test_single_block_play_imports_as_partial(
+    tmp_wiki: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     """One diagram block with three phase sections → ``wiki-partial``.
 
-    The single block gets duplicated across phases, which is the partial tier's
-    contract. All phases land with actions attached.
+    The single block lands in exactly ONE phase (the one the notes reference,
+    or the first phase if the block is unlabeled). Remaining phases stay
+    empty so the user can author each one without first deduplicating
+    identical action lists — duplicating produced confusing "same 5 actions
+    in every phase" output.
+
+    The narrative expander is stubbed to ``[]`` here so this test pins the
+    pre-LLM baseline; the LLM-expansion path has its own coverage below.
     """
+    monkeypatch.setattr(
+        wiki_importer,
+        "expand_phase_from_narrative",
+        lambda *_args, **_kwargs: [],
+    )
     _write_page(tmp_wiki, "play-black", SINGLE_BLOCK_PAGE)
     result = import_wiki_play("play-black")
 
@@ -152,17 +165,63 @@ def test_single_block_play_imports_as_partial(tmp_wiki: Path) -> None:
 
     phases = result.play["phases"]
     assert len(phases) == 3
-    assert all(p["actions"] for p in phases)
-    # Pass "1→2" should emit ball travel, not a move.
-    first_actions = phases[0]["actions"]
+    # Exactly one phase populated; the other two empty with an explanatory TODO.
+    populated = [p for p in phases if p["actions"]]
+    empty = [p for p in phases if not p["actions"]]
+    assert len(populated) == 1
+    assert len(empty) == 2
+    assert any("no diagram block aligned" in t.lower() for t in result.todos)
+    # The populated phase still carries the full action conversion.
+    first_actions = populated[0]["actions"]
     pass_actions = [a for a in first_actions if a.get("ball")]
     assert pass_actions and pass_actions[0]["ball"] == {"from": "1", "to": "2"}
-    # Screen should map to marker=screen.
     screens = [a for a in first_actions if a["marker"] == "screen"]
     assert screens, "expected at least one screen action"
-    # Dribble 2→rim resolves to the rim coord.
     dribbles = [a for a in first_actions if a["marker"] == "dribble"]
     assert dribbles and dribbles[0]["move"]["id"] == "2"
+
+
+def test_empty_phases_filled_by_llm_expander(
+    tmp_wiki: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """Empty phases call into ``expand_phase_from_narrative`` and inherit TODO.
+
+    Stubs the expander so one unpopulated phase gets a single cut action; the
+    importer must convert it via ``_convert_actions`` and tag a TODO noting
+    the actions were LLM-expanded.
+    """
+
+    def fake_expander(
+        phase_label: str,
+        _text: str,
+        player_ids: list[str],
+        preceding_actions: list[dict[str, object]] | None = None,
+        current_positions: dict[str, tuple[float, float]] | None = None,
+    ) -> list[dict[str, str]]:
+        # Empty phases get one fabricated action so we can assert end-to-end.
+        assert "1" in player_ids
+        assert preceding_actions is not None
+        # Position context must be populated — the expander now uses this to
+        # pick correct directional tokens. By the time the empty phase runs,
+        # phase 1's structured actions have already advanced positions.
+        assert current_positions is not None
+        assert set(current_positions.keys()) >= {"1", "2", "3", "4", "5"}
+        return [{"from": "2", "to": "right_wing", "type": "cut"}]
+
+    monkeypatch.setattr(
+        wiki_importer, "expand_phase_from_narrative", fake_expander
+    )
+    _write_page(tmp_wiki, "play-black", SINGLE_BLOCK_PAGE)
+    result = import_wiki_play("play-black")
+
+    assert result.source == "wiki-partial"
+    assert result.play is not None
+    phases = result.play["phases"]
+    # All three phases must now carry at least one action (1 from block, 2
+    # from LLM expansion).
+    populated = [p for p in phases if p["actions"]]
+    assert len(populated) == 3
+    assert any("LLM-expanded" in t for t in result.todos)
 
 
 def test_multi_block_play_imports_as_structured(tmp_wiki: Path) -> None:
