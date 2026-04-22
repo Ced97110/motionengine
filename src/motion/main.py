@@ -19,6 +19,7 @@ from motion.config import get_settings
 from motion.db import get_engine
 from motion.middleware.request_id import RequestIdMiddleware
 from motion.routers.knowledge import router as knowledge_router
+from motion.routers.playlab import router as playlab_router
 from motion.schemas.errors import ErrorBody, ErrorEnvelope
 
 logger = logging.getLogger("motion.main")
@@ -122,6 +123,7 @@ def create_app() -> FastAPI:
         }
 
     app.include_router(knowledge_router)
+    app.include_router(playlab_router)
 
     return app
 
