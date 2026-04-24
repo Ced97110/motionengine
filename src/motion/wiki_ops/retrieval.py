@@ -106,6 +106,20 @@ class SignatureEntry:
 
 
 @dataclass(frozen=True)
+class CounterEntry:
+    """One structured counter bullet with provenance label.
+
+    ``extraction`` ∈ {"verbatim", "paraphrase", "llm-inferred"}. Engine
+    consumers surface only ``llm-inferred`` entries on user chrome — the
+    other two flags mark book-derived prose that must not surface.
+    """
+
+    text: str
+    extraction: str
+    source_hint: str | None = None
+
+
+@dataclass(frozen=True)
 class PlayContext:
     """Full retrieval bundle for a single play (Q-A output)."""
 
@@ -115,6 +129,7 @@ class PlayContext:
     drills: list[DrillPrescription] = field(default_factory=list)
     defending: list[DefendingEdge] = field(default_factory=list)
     signature: list[SignatureEntry] = field(default_factory=list)
+    counters: list[CounterEntry] = field(default_factory=list)
 
 
 @dataclass(frozen=True)
@@ -153,6 +168,7 @@ class CompiledIndexes:
     play_to_anatomy: dict[str, list[dict[str, str]]]
     play_to_technique: dict[str, list[dict[str, str]]]
     play_to_signature: dict[str, list[dict[str, str]]]
+    play_to_counters: dict[str, list[dict[str, str]]]
     anatomy_to_play: dict[str, list[dict[str, str]]]
     anatomy_to_drill: dict[str, list[dict[str, str]]]
     technique_to_play: dict[str, list[dict[str, str]]]
@@ -193,6 +209,7 @@ def load_indexes(compiled_directory: Path | None = None) -> CompiledIndexes:
         play_to_anatomy=_read_json(base / "play-to-anatomy.json"),
         play_to_technique=_read_json(base / "play-to-technique.json"),
         play_to_signature=_maybe_read("play-to-signature.json"),
+        play_to_counters=_maybe_read("play-to-counters.json"),
         anatomy_to_play=_read_json(base / "anatomy-to-play.json"),
         anatomy_to_drill=_read_json(base / "anatomy-to-drill.json"),
         technique_to_play=_read_json(base / "technique-to-play.json"),
@@ -368,6 +385,19 @@ def build_play_context(play_slug: str, indexes: CompiledIndexes) -> PlayContext:
                 concept_slug=raw.get("concept_slug"),
             )
         )
+    counters: list[CounterEntry] = []
+    for raw in indexes.play_to_counters.get(play_slug, []):
+        text = raw.get("text") or ""
+        extraction = raw.get("extraction") or "llm-inferred"
+        if not text:
+            continue
+        counters.append(
+            CounterEntry(
+                text=text,
+                extraction=extraction,
+                source_hint=raw.get("source_hint"),
+            )
+        )
     return PlayContext(
         play_slug=play_slug,
         anatomy=anatomy_demands,
@@ -375,6 +405,7 @@ def build_play_context(play_slug: str, indexes: CompiledIndexes) -> PlayContext:
         drills=drills,
         defending=defending_edges,
         signature=signature,
+        counters=counters,
     )
 
 

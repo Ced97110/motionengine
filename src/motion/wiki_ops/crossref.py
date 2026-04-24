@@ -31,6 +31,11 @@ Two classes of output:
 Matching rule: a play matches a defending page iff their tag sets share at
 least one non-generic tag (i.e. not ``defense`` / ``man-to-man`` / similar).
 
+**Counters provenance (1 index — M4 part 3):**
+- ``play-to-counters.json``     — ``{play_slug: [{text, extraction, source_hint}]}``
+Engine surfaces only entries with ``extraction == "llm-inferred"`` to gate
+out book-derived prose.
+
 **Native wikilink & structural graphs (4 indexes — Karpathy-native edges):**
 - ``wikilink-graph.json``         — forward; ``{page_slug: [target_slugs]}`` (unique per source)
 - ``wikilink-graph-reverse.json`` — inverted; ``{target_slug: [pages_linking_here]}``
@@ -189,6 +194,7 @@ def compile_indexes(
     play_to_anatomy: dict[str, list[dict[str, str]]] = {}
     play_to_technique: dict[str, list[dict[str, str]]] = {}
     play_to_signature: dict[str, list[dict[str, str]]] = {}
+    play_to_counters: dict[str, list[dict[str, str]]] = {}
     anatomy_to_play: dict[str, list[dict[str, str]]] = defaultdict(list)
     anatomy_to_drill: dict[str, list[dict[str, str]]] = defaultdict(list)
     technique_to_play: dict[str, list[dict[str, str]]] = defaultdict(list)
@@ -285,12 +291,25 @@ def compile_indexes(
                 for item in _dict_items(fm, "produces_signature")
                 if item.get("factor")
             ]
+            counters = [
+                _clean(
+                    {
+                        "text": item["text"],
+                        "extraction": item.get("extraction"),
+                        "source_hint": item.get("source_hint"),
+                    }
+                )
+                for item in _dict_items(fm, "counters")
+                if item.get("text")
+            ]
             if techs:
                 play_to_technique[slug] = techs
             if anatomies:
                 play_to_anatomy[slug] = anatomies
             if signatures:
                 play_to_signature[slug] = signatures
+            if counters:
+                play_to_counters[slug] = counters
             for a in anatomies:
                 anatomy_to_play[a["region"]].append(
                     _clean(
@@ -367,6 +386,7 @@ def compile_indexes(
         "play-to-anatomy.json": play_to_anatomy,
         "play-to-technique.json": play_to_technique,
         "play-to-signature.json": play_to_signature,
+        "play-to-counters.json": play_to_counters,
         "anatomy-to-play.json": dict(anatomy_to_play),
         "anatomy-to-drill.json": dict(anatomy_to_drill),
         "technique-to-play.json": dict(technique_to_play),
@@ -478,6 +498,8 @@ def main(argv: list[str] | None = None) -> int:
     )
     n_plays_defending = len(indexes["play-to-defending.json"])
     n_defending_edges = sum(len(v) for v in indexes["play-to-defending.json"].values())
+    n_plays_counters = len(indexes["play-to-counters.json"])
+    n_counter_bullets = sum(len(v) for v in indexes["play-to-counters.json"].values())
     n_wikilink_source_pages = len(indexes["wikilink-graph.json"])
     n_wikilink_edges = sum(len(targets) for targets in indexes["wikilink-graph.json"].values())
     n_wikilink_targets = len(indexes["wikilink-graph-reverse.json"])
@@ -485,7 +507,7 @@ def main(argv: list[str] | None = None) -> int:
     n_formation_keys = len(indexes["formation-graph.json"])
 
     sys.stdout.write(
-        f"[crossref] compiled 17 indexes to {out_dir}\n"
+        f"[crossref] compiled 18 indexes to {out_dir}\n"
         f"  plays with demands_anatomy:    {n_plays_anatomy}\n"
         f"  plays with demands_techniques: {n_plays_technique}\n"
         f"  plays with produces_signature: {n_plays_signature}\n"
@@ -498,6 +520,7 @@ def main(argv: list[str] | None = None) -> int:
         f"  pages with tags:               {n_tagged_pages}\n"
         f"  defending pages parsed:        {n_defending} ({n_defending_symptoms} symptoms)\n"
         f"  play → defending edges:        {n_defending_edges} across {n_plays_defending} plays\n"
+        f"  counter bullets indexed:       {n_counter_bullets} across {n_plays_counters} plays\n"
         f"  wikilink source pages:         {n_wikilink_source_pages} "
         f"({n_wikilink_edges} unique (source, target) pairs → "
         f"{n_wikilink_targets} unique targets)\n"

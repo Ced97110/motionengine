@@ -1,0 +1,358 @@
+{
+  "23-flare": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When X2 fails to track 2's dribble drag toward the top of the key, 2 is already open for a catch-and-shoot three before 5 ever sets the flare screen."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 1's skip pass over the top to 2 is cut off by X2, 1 reverses the ball to 3 on the weak-side wing to reset the attack."
+    }
+  ],
+  "32-lob": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When 3's backdoor cut is sealed off by the defense, 1 pivots the read to 4 sealing in the paint for a post touch, or the offense resets to its half-court alignment."
+    }
+  ],
+  "blob-cross": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When both corner receivers are blanketed by zone defenders, the crossing post players arriving at the opposite low blocks should find themselves unguarded due to defensive overcommitment."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the low-block post players are picked up by zone defenders rotating inside, the corner shooters are left open because the bottom defenders have abandoned their perimeter coverage."
+    }
+  ],
+  "blob-flip": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When both 4 and 5 are denied at the rim, 3 flashes up to the top of the key as a safety outlet to receive a lob pass over the defense."
+    }
+  ],
+  "blob-hawk": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When x3 cheats over the screen to cut off 2's corner cut, 4 is left unguarded on the low block and becomes the inbounder's primary target for a catch-and-shoot midrange jumper."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When both 2 in the corner and 4 at the low block are covered by the defense, 1 relocating to the slot may present a safety-valve inbound target to retain possession."
+    }
+  ],
+  "play-1-4-quick-floppy": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When a defender cheats under the screen, the cutting guard should immediately recognize it and pop to the perimeter ready to shoot on the catch."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When defenders switch the screens, the post player sealed on a smaller defender should be attacked immediately with an interior pass for the duck-in score."
+    }
+  ],
+  "play-back-screen-post": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When 5's defender reads the back screen early, 3 abandons the screen action and immediately looks for a pass from 1 to attack an open mid-range look."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2's path through the staggered screen is cut off by denial pressure, either 4 or 3 seizes the opportunity to duck into the paint on their respective sides after completing their screen."
+    }
+  ],
+  "play-baseline-swing": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When X5 battles through 5's screen before 4 arrives, 4 abandons the baseline cut and pivots to flash toward the mid-post for a closer look."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When X3 fails to fully honor 3's wing presence, 3 keeps the ball and rises for the open shot instead of swinging the pass to 4."
+    }
+  ],
+  "play-black": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When D4 holds position and never rotates to stop the baseline drive, 2 has a clear path to the basket for an uncontested finish."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the kick-out pass to 3 is taken away by the defense, bring the ball back up to 1 at the top of the key and reset the play."
+    }
+  ],
+  "play-box-cross-2-blob": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When X2 reads and cheats over the cross screen early, O4 slips the screen and attacks the rim directly to punish the anticipation."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When O2's cut is denied and no clean look develops, O1 can safely inbound to O3 relocated high and reset the possession."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense has scouted O2's cut, shift the call to 'Cross 3' or 'Diagonal 4' to attack a more favorable defensive matchup on the next possession."
+    }
+  ],
+  "play-box-spin": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When 3 cannot receive the pass at the rim, 5 stays put and 2 uses that screen to burst out to the three-point line for a catch-and-shoot opportunity."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When both the rim cut and the three-point pop are taken away, 1 stationed in the weak-side corner serves as a safe outlet to reset the possession."
+    }
+  ],
+  "play-celtics-post-drop": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When X3 shades toward the baseline early to take away the backdoor pass, 3 uses that overplay to seal the defender on the hip and post up directly on the left block for a feed from 4."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2 cannot deliver the lob to 4 cutting off the back screen, 3 immediately pops out to the top of the key where X3's help rotation has left him unguarded for an open jump shot."
+    }
+  ],
+  "play-celtics-x-action": [
+    {
+      "extraction": "paraphrase",
+      "source_hint": "[S14, p.49-50]",
+      "text": "When 4's interior feed to 3 is cut off by the defense, 4 reverses to 2 coming off 5's screen, then 4 sets a down screen for 3 to curl up to the elbow for a jump shot."
+    },
+    {
+      "extraction": "paraphrase",
+      "source_hint": "[S14, p.50]",
+      "text": "When 4 reverses to 2 off 5's screen and opts for a back screen instead of the down screen, 3 screens for 4 cutting to the rim for a lob, and if X3 collapses to stop the lob, 3 pops to the top of the key for an open jumper."
+    }
+  ],
+  "play-charlotte-pnr-back-screen": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense commits hard to stopping the PnR ball-handler, 1 can reject the back-screen action and attack the basket directly before the secondary reads develop."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When X4 drops off the wing to protect the post interior, 4 is left unguarded and can receive the ball for an open mid-range jumper."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When X2 sinks into the lane to help on the post, 2 can abandon the post-up and relocate to the perimeter for an open catch-and-shoot opportunity."
+    }
+  ],
+  "play-chin-series": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense switches on 5's back screen, 5 immediately rolls hard to the basket, exploiting the size mismatch against the smaller defender who switched onto him."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense collapses to stop 4 coming off the flare screen, 1 abandons the fade and rolls directly to the basket to receive a pass for a layup."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2 cannot receive the pass off the back screen, 5 shifts to the opposite elbow and reads the available secondary screening options to restart the action."
+    }
+  ],
+  "play-cross-screen": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When 4 receives the post-up entry pass cleanly, 4 executes standard post-game reads to attack from the block."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2's defender trails behind the double screen, 2 curls hard toward the basket to receive a pass for a layup."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2's defender cheats over the top of the double screen, 2 flares to the wing to catch and shoot an open jump shot."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 5's defender hedges aggressively on the screen, 5 slips immediately toward the basket to receive a lob pass from 1."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 4's defender rotates off to stop 5's slip, 1 redirects the lob entry to 4 on the block instead."
+    }
+  ],
+  "play-detroit-double-pnr-series": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense switches on the double pick-and-roll, the popping big gains a favorable size mismatch against a smaller defender on the perimeter."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense traps the ball handler off the screen, 4's quick pop or a skip to the weak-side spot-up shooters relieves the pressure."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2's defender overcommits to help on the drive, 1 in the corner is available for a post-feed entry pass to 5 rolling to the basket."
+    }
+  ],
+  "play-detroit-step-up-flare": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense sends extra help toward 3's drive, either 4 is available as an immediate slip to the rim or 2 comes open on the flare to the top of the key."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 4's defender abandons post position to contest 2's flare, 4 slips directly to the basket for a pass from 3."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 1's defender sags into the lane to help contain the pick-and-roll, 1 emerges unguarded off 5's down screen for an open look."
+    }
+  ],
+  "play-diagonal-screen": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense switches on 2's diagonal back screen, 5 immediately rolls hard to the basket to receive a lob pass from 1."
+    },
+    {
+      "extraction": "paraphrase",
+      "source_hint": "[S7, p.70]",
+      "text": "When weak-side help collapses into the lane, 3 cuts along the baseline off 4's body and receives the pass in the corner for an open look."
+    }
+  ],
+  "play-diamond-slob": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When D5 switches onto 2 on the on-ball screen, 5 immediately rolls to the rim or pops to an open area depending on which defender is now guarding them."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 1's flare cut to the wing is taken away by the defense, 2 skips the skip-pass look and goes directly into the pick-and-roll action with 5."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 3's baseline curl off the screen comes open early in the sequence, 1 delivers an immediate skip pass to 3 for a scoring opportunity before the later PnR action develops."
+    }
+  ],
+  "play-double-curls": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When x5 jumps the High-Post screen early, 5 slips straight to the rim for a direct pass and easy finish before the defense can recover."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 3's defender and x5 switch on the pick-and-roll, 5 seals the smaller switched defender in the post and calls for a feed."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 3 is stopped driving off the pick-and-roll, 1 and 2 waiting in the corners serve as pressure-release kick-out targets for open perimeter shots."
+    }
+  ],
+  "play-doubles": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When D4 reads the double screen early and fights over the top, 2 abandons the pop and curls hard toward the basket for a layup opportunity instead."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2 is completely denied off the double screen, either 3 or 4 seizes the opportunity to seal and duck in toward the paint after their screening action is complete."
+    }
+  ],
+  "play-drive-hammer": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense switches the on-ball screen, 5 immediately rolls hard toward the rim to create a mismatch and receive a direct pass for an easy finish inside."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When x1 anticipates the hammer screen and cheats over it early, 1 slides to a different spot in the corner to give 3 a fresh passing angle on the drive."
+    }
+  ],
+  "play-flare-overload": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense collapses to stop 2, 5's roll to the rim after setting the on-ball screen creates an uncontested layup opportunity in the lane."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When X1 drops back to protect the paint against 2's drive, 2 can reject the screen and attack the open space with a mid-range pull-up jumper."
+    }
+  ],
+  "play-flex-warrior": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2's defender fights over the flex screen, 2 reads the pressure and pops out to the corner rather than cutting hard to the rim."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When a defender anticipates the screen-the-screener action and jumps the curl early, 1 reverses direction and cuts backdoor to the basket for a direct pass from 4."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When all perimeter reads are covered, 5's deep paint seal \u2014 established immediately after the second screen \u2014 becomes the primary scoring option via an entry pass from 2."
+    }
+  ],
+  "play-flip-gate": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When x5 anticipates and fights over the top of the back screen, 5 can alter the route \u2014 popping out to the elbow or slipping early \u2014 to find a cleaner angle to receive the pass from 4."
+    },
+    {
+      "extraction": "paraphrase",
+      "source_hint": "[S4, p.63]",
+      "text": "When x4 reads the gate action and jumps into the passing lane, 4 abandons the screen and cuts aggressively to the rim for an uncontested layup."
+    }
+  ],
+  "play-forward-oriented-attack": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the hand-off from O3 is denied, O1 bypasses the exchange and attacks the basket directly off the dribble."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense switches O5's elbow screen, O5 immediately ducks into the post to exploit the size mismatch."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When two defenders collapse on O3's post-up, the split action O1 and O2 run off O3 creates an open look for the cutter or shooter."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense overplays O3 on the fade to prevent the three-pointer, O3 tightens the angle off the double screen and takes the higher-percentage curl jumper instead."
+    }
+  ],
+  "play-guard-oriented-attack": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense denies the initial guard-to-forward entry pass, O1 can bypass the pass entirely by dribble-entering or attacking the basket directly to keep the offense flowing."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When O5's down screen gets switched, the screener (O3 or O4) turns and immediately establishes post position to exploit the smaller defender now guarding them."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense hedges hard on O5's pick-and-roll, O5 pops out to available space while the ball-handling guard continues the drive to attack the exposed gap."
+    }
+  ],
+  "play-hawks-zipper-cross-screen": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When X4 switches onto 5 on the cross screen, 4 immediately seals X5 (who has slid onto 4) and rolls hard back to the ball for a post feed."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 4's back-screen cut produces an open lob opportunity at the rim, 3 delivers the pass immediately rather than waiting for the cross-screen phase to develop."
+    }
+  ],
+  "play-iverson-ram": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense switches the pick-and-roll, 5 immediately slips to the rim or seals the smaller defender for a post-up advantage."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When 2 cannot receive the pass on the wing exchange because the defender denies, 1 reverses the ball and initiates the entire action to the opposite side."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense reads and jumps 4's ram screen early, 4 slips straight to the rim before the screen is set, creating a direct scoring opportunity."
+    }
+  ]
+}
