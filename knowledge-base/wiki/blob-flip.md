@@ -59,6 +59,10 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "The play is a single-read, one-pass BLOB set where role 1 delivers directly to the open post; the scripted action limits dribble-handoff and skip-pass exposure that inflate turnover risk."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When both 4 and 5 are denied at the rim, 3 flashes up to the top of the key as a safety outlet to receive a lob pass over the defense."
+    extraction: llm-inferred
 ---
 
 # Flip (BLOB vs Man-to-Man)

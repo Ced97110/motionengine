@@ -59,6 +59,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: low
     rationale: "The multi-phase drag-and-screen setup requires deliberate dribble-drag and sequential screening actions before the shot is taken, consuming clock relative to a direct attack."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When X2 fails to track 2's dribble drag toward the top of the key, 2 is already open for a catch-and-shoot three before 5 ever sets the flare screen."
+    extraction: llm-inferred
+  - text: "When 1's skip pass over the top to 2 is cut off by X2, 1 reverses the ball to 3 on the weak-side wing to reset the attack."
+    extraction: llm-inferred
 ---
 
 # 23 Flare (Set Play vs 2-3 Zone)

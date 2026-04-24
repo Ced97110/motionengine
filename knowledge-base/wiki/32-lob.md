@@ -71,6 +71,10 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: low
     rationale: "The multi-phase zone manipulation (corner dribble, weak-side slide, reversal) consumes deliberate clock before the scoring action, slightly reducing overall pace."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When 3's backdoor cut is sealed off by the defense, 1 pivots the read to 4 sealing in the paint for a post touch, or the offense resets to its half-court alignment."
+    extraction: llm-inferred
 ---
 
 # 32 Lob (Set Play vs 2-3 Zone)

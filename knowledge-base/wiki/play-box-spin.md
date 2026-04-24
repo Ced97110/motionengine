@@ -59,6 +59,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "The set-play structure routes all action through a single inbound pass followed by one decisive read, keeping ball-handler decisions and live-ball exposure to a minimum."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When 3 cannot receive the pass at the rim, 5 stays put and 2 uses that screen to burst out to the three-point line for a catch-and-shoot opportunity."
+    extraction: llm-inferred
+  - text: "When both the rim cut and the three-point pop are taken away, 1 stationed in the weak-side corner serves as a safe outlet to reset the possession."
+    extraction: llm-inferred
 ---
 
 # Box Spin

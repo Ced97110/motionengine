@@ -67,6 +67,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "By sequencing a surprise back screen into a simultaneous staggered screen, the play creates two high-value shot opportunities (rim layup or open 3) from a single possession, driving above-average points-per-possession when either read is available."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When 5's defender reads the back screen early, 3 abandons the screen action and immediately looks for a pass from 1 to attack an open mid-range look."
+    extraction: llm-inferred
+  - text: "When 2's path through the staggered screen is cut off by denial pressure, either 4 or 3 seizes the opportunity to duck into the paint on their respective sides after completing their screen."
+    extraction: llm-inferred
 ---
 
 # Back Screen Post

@@ -59,6 +59,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "Sequential ball reversal forces the 2-3 zone to rotate across multiple gaps simultaneously, consistently generating an open catch-and-shoot opportunity for role-4 on each execution."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When X5 battles through 5's screen before 4 arrives, 4 abandons the baseline cut and pivots to flash toward the mid-post for a closer look."
+    extraction: llm-inferred
+  - text: "When X3 fails to fully honor 3's wing presence, 3 keeps the ball and rises for the open shot instead of swinging the pass to 4."
+    extraction: llm-inferred
 ---
 
 # Baseline Swing

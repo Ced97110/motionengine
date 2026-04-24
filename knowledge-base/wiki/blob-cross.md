@@ -76,6 +76,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "By design the play terminates in a corner three or an uncontested low-block catch-and-finish, both of which carry above-average points-per-possession relative to contested mid-range alternatives."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When both corner receivers are blanketed by zone defenders, the crossing post players arriving at the opposite low blocks should find themselves unguarded due to defensive overcommitment."
+    extraction: llm-inferred
+  - text: "When the low-block post players are picked up by zone defenders rotating inside, the corner shooters are left open because the bottom defenders have abandoned their perimeter coverage."
+    extraction: llm-inferred
 ---
 
 # BLOB: Cross (vs 2-3 Zone)

@@ -6,6 +6,14 @@ tags: [ball-screen, step-up, flare, back-screen, down-screen, skip-pass, PnR]
 team: Detroit Pistons
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense sends extra help toward 3's drive, either 4 is available as an immediate slip to the rim or 2 comes open on the flare to the top of the key."
+    extraction: llm-inferred
+  - text: "When 4's defender abandons post position to contest 2's flare, 4 slips directly to the basket for a pass from 3."
+    extraction: llm-inferred
+  - text: "When 1's defender sags into the lane to help contain the pick-and-roll, 1 emerges unguarded off 5's down screen for an open look."
+    extraction: llm-inferred
 ---
 
 # Detroit Pistons Step-Up Flare Action

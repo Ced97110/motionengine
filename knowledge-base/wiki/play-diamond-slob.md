@@ -52,6 +52,14 @@ demands_anatomy:
     criticality: optional
     supports_technique: roll-or-pop-read
     for_role: "5"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When D5 switches onto 2 on the on-ball screen, 5 immediately rolls to the rim or pops to an open area depending on which defender is now guarding them."
+    extraction: llm-inferred
+  - text: "When 1's flare cut to the wing is taken away by the defense, 2 skips the skip-pass look and goes directly into the pick-and-roll action with 5."
+    extraction: llm-inferred
+  - text: "When 3's baseline curl off the screen comes open early in the sequence, 1 delivers an immediate skip pass to 3 for a scoring opportunity before the later PnR action develops."
+    extraction: llm-inferred
 ---
 
 # Diamond (SLOB)

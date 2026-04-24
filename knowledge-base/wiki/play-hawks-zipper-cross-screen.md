@@ -6,6 +6,12 @@ tags: [zipper, back-screen, cross-screen, lob, pick-the-picker, post-up, combina
 team: Atlanta Hawks
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When X4 switches onto 5 on the cross screen, 4 immediately seals X5 (who has slid onto 4) and rolls hard back to the ball for a post feed."
+    extraction: llm-inferred
+  - text: "When 4's back-screen cut produces an open lob opportunity at the rim, 3 delivers the pass immediately rather than waiting for the cross-screen phase to develop."
+    extraction: llm-inferred
 ---
 
 # Atlanta Hawks Zipper to Cross Screen

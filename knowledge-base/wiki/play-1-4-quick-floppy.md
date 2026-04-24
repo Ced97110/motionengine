@@ -89,6 +89,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "Simultaneous perimeter and interior threats force the defense into a no-win rotation, consistently surfacing an open look at the rim or behind the arc on nearly every possession."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When a defender cheats under the screen, the cutting guard should immediately recognize it and pop to the perimeter ready to shoot on the catch."
+    extraction: llm-inferred
+  - text: "When defenders switch the screens, the post player sealed on a smaller defender should be attacked immediately with an interior pass for the duck-in score."
+    extraction: llm-inferred
 ---
 
 # 1-4 Quick Floppy

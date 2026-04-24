@@ -6,6 +6,14 @@ tags: [ball-screen, back-screen, post-up, PnR, lane-cross]
 team: Charlotte Hornets
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense commits hard to stopping the PnR ball-handler, 1 can reject the back-screen action and attack the basket directly before the secondary reads develop."
+    extraction: llm-inferred
+  - text: "When X4 drops off the wing to protect the post interior, 4 is left unguarded and can receive the ball for an open mid-range jumper."
+    extraction: llm-inferred
+  - text: "When X2 sinks into the lane to help on the post, 2 can abandon the post-up and relocate to the perimeter for an open catch-and-shoot opportunity."
+    extraction: llm-inferred
 ---
 
 # Charlotte Hornets Pick-and-Roll with Back Screen

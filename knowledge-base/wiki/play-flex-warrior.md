@@ -53,6 +53,14 @@ demands_anatomy:
     criticality: optional
     supports_technique: post-seal-deep
     for_role: "5"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When 2's defender fights over the flex screen, 2 reads the pressure and pops out to the corner rather than cutting hard to the rim."
+    extraction: llm-inferred
+  - text: "When a defender anticipates the screen-the-screener action and jumps the curl early, 1 reverses direction and cuts backdoor to the basket for a direct pass from 4."
+    extraction: llm-inferred
+  - text: "When all perimeter reads are covered, 5's deep paint seal — established immediately after the second screen — becomes the primary scoring option via an entry pass from 2."
+    extraction: llm-inferred
 ---
 
 # Flex Warrior

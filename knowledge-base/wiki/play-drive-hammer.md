@@ -56,6 +56,12 @@ demands_anatomy:
     criticality: optional
     supports_technique: roll-to-rim-after-screen
     for_role: "5"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense switches the on-ball screen, 5 immediately rolls hard toward the rim to create a mismatch and receive a direct pass for an easy finish inside."
+    extraction: llm-inferred
+  - text: "When x1 anticipates the hammer screen and cheats over it early, 1 slides to a different spot in the corner to give 3 a fresh passing angle on the drive."
+    extraction: llm-inferred
 ---
 
 # Drive Hammer

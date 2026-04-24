@@ -78,6 +78,14 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "Layering the ram screen on top of the PnR systematically removes the help defender, giving 2 multiple high-value reads — rim attack, roll pass, or corner kick-out — that each produce above-average shot quality."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense switches the pick-and-roll, 5 immediately slips to the rim or seals the smaller defender for a post-up advantage."
+    extraction: llm-inferred
+  - text: "When 2 cannot receive the pass on the wing exchange because the defender denies, 1 reverses the ball and initiates the entire action to the opposite side."
+    extraction: llm-inferred
+  - text: "When the defense reads and jumps 4's ram screen early, 4 slips straight to the rim before the screen is set, creating a direct scoring opportunity."
+    extraction: llm-inferred
 ---
 
 # Iverson Ram

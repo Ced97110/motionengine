@@ -67,6 +67,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: low
     rationale: "As a scripted BLOB quick-hitter reserved for special situations, the play is used infrequently and by design does not contribute to up-tempo possession generation."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When x3 cheats over the screen to cut off 2's corner cut, 4 is left unguarded on the low block and becomes the inbounder's primary target for a catch-and-shoot midrange jumper."
+    extraction: llm-inferred
+  - text: "When both 2 in the corner and 4 at the low block are covered by the defense, 1 relocating to the slot may present a safety-valve inbound target to retain possession."
+    extraction: llm-inferred
 ---
 
 # BLOB: Hawk (vs 2-3 Zone)

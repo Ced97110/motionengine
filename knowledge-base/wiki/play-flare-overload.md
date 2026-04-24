@@ -46,6 +46,12 @@ demands_anatomy:
     criticality: optional
     supports_technique: on-ball-screen-set-and-roll
     for_role: "5"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense collapses to stop 2, 5's roll to the rim after setting the on-ball screen creates an uncontested layup opportunity in the lane."
+    extraction: llm-inferred
+  - text: "When X1 drops back to protect the paint against 2's drive, 2 can reject the screen and attack the open space with a mid-range pull-up jumper."
+    extraction: llm-inferred
 ---
 
 # Flare Overload

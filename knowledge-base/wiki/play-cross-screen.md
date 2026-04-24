@@ -42,6 +42,18 @@ demands_anatomy:
     criticality: optional
     supports_technique: catch-and-shoot-off-screen
     for_role: "2"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When 4 receives the post-up entry pass cleanly, 4 executes standard post-game reads to attack from the block."
+    extraction: llm-inferred
+  - text: "When 2's defender trails behind the double screen, 2 curls hard toward the basket to receive a pass for a layup."
+    extraction: llm-inferred
+  - text: "When 2's defender cheats over the top of the double screen, 2 flares to the wing to catch and shoot an open jump shot."
+    extraction: llm-inferred
+  - text: "When 5's defender hedges aggressively on the screen, 5 slips immediately toward the basket to receive a lob pass from 1."
+    extraction: llm-inferred
+  - text: "When 4's defender rotates off to stop 5's slip, 1 redirects the lob entry to 4 on the block instead."
+    extraction: llm-inferred
 ---
 
 # Motion Offense Cross-Screen Play

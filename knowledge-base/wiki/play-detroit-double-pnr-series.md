@@ -6,6 +6,14 @@ tags: [ball-screen, double-screen, staggered, PnR, roll-and-pop, weak-side-spot-
 team: Detroit Pistons
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense switches on the double pick-and-roll, the popping big gains a favorable size mismatch against a smaller defender on the perimeter."
+    extraction: llm-inferred
+  - text: "When the defense traps the ball handler off the screen, 4's quick pop or a skip to the weak-side spot-up shooters relieves the pressure."
+    extraction: llm-inferred
+  - text: "When 2's defender overcommits to help on the drive, 1 in the corner is available for a post-feed entry pass to 5 rolling to the basket."
+    extraction: llm-inferred
 ---
 
 # Detroit Pistons Double Pick-and-Roll Series

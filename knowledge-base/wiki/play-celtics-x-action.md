@@ -6,6 +6,14 @@ tags: [ball-screen, down-screen, back-screen, PnR, lob, post-up, motion, cutting
 team: Boston Celtics
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When 4's interior feed to 3 is cut off by the defense, 4 reverses to 2 coming off 5's screen, then 4 sets a down screen for 3 to curl up to the elbow for a jump shot."
+    extraction: paraphrase
+    source_hint: "[S14, p.49-50]"
+  - text: "When 4 reverses to 2 off 5's screen and opts for a back screen instead of the down screen, 3 screens for 4 cutting to the rim for a lob, and if X3 collapses to stop the lob, 3 pops to the top of the key for an open jumper."
+    extraction: paraphrase
+    source_hint: "[S14, p.50]"
 ---
 
 # Boston Celtics X Action (1-4 High)

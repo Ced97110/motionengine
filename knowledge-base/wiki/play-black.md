@@ -55,6 +55,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "set-play mechanics limit the sequence to ≤2 passes; lower TOV surface than motion offense"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When D4 holds position and never rotates to stop the baseline drive, 2 has a clear path to the basket for an uncontested finish."
+    extraction: llm-inferred
+  - text: "When the kick-out pass to 3 is taken away by the defense, bring the ball back up to 1 at the top of the key and reset the play."
+    extraction: llm-inferred
 ---
 
 # Black

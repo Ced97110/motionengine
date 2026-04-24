@@ -5,6 +5,14 @@ formation: spread-5-out
 tags: [guard-play, down-screen, pick-and-roll, dribble-handoff, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense denies the initial guard-to-forward entry pass, O1 can bypass the pass entirely by dribble-entering or attacking the basket directly to keep the offense flowing."
+    extraction: llm-inferred
+  - text: "When O5's down screen gets switched, the screener (O3 or O4) turns and immediately establishes post position to exploit the smaller defender now guarding them."
+    extraction: llm-inferred
+  - text: "When the defense hedges hard on O5's pick-and-roll, O5 pops out to available space while the ball-handling guard continues the drive to attack the exposed gap."
+    extraction: llm-inferred
 ---
 
 # Guard-Oriented Attack

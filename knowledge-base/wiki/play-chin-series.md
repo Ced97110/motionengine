@@ -78,6 +78,14 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: low
     rationale: "The continuity system cycles through multiple screen layers and secondary options before a shot is taken, consuming half-court possession time and depressing overall pace."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense switches on 5's back screen, 5 immediately rolls hard to the basket, exploiting the size mismatch against the smaller defender who switched onto him."
+    extraction: llm-inferred
+  - text: "When the defense collapses to stop 4 coming off the flare screen, 1 abandons the fade and rolls directly to the basket to receive a pass for a layup."
+    extraction: llm-inferred
+  - text: "When 2 cannot receive the pass off the back screen, 5 shifts to the opposite elbow and reads the available secondary screening options to restart the action."
+    extraction: llm-inferred
 ---
 
 # Continuity — Chin Action

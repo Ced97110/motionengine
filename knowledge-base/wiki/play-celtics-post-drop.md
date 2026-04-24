@@ -28,6 +28,12 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "Continuous off-ball movement through the backdoor cut, down-screen, and back-screen chain ensures that if the primary post feed is denied the defense must still contest two additional high-efficiency scoring reads, keeping points-per-possession elevated across all branches."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When X3 shades toward the baseline early to take away the backdoor pass, 3 uses that overplay to seal the defender on the hip and post up directly on the left block for a feed from 4."
+    extraction: llm-inferred
+  - text: "When 2 cannot deliver the lob to 4 cutting off the back screen, 3 immediately pops out to the top of the key where X3's help rotation has left him unguarded for an open jump shot."
+    extraction: llm-inferred
 ---
 
 # Boston Celtics Post-Drop Action (1-4 High)

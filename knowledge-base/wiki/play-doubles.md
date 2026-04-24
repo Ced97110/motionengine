@@ -52,6 +52,12 @@ demands_anatomy:
     criticality: optional
     supports_technique: double-screen-set
     for_role: "4"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When D4 reads the double screen early and fights over the top, 2 abandons the pop and curls hard toward the basket for a layup opportunity instead."
+    extraction: llm-inferred
+  - text: "When 2 is completely denied off the double screen, either 3 or 4 seizes the opportunity to seal and duck in toward the paint after their screening action is complete."
+    extraction: llm-inferred
 ---
 
 # Doubles

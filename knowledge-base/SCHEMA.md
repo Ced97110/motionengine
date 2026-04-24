@@ -190,6 +190,16 @@ demands_anatomy:
     criticality: required | optional
     supports_technique: baseline-drive-on-catch
     for_role: "2"
+
+# Optional structured counters with provenance — gates which bullets are
+# safe to surface on user chrome. The body's `## Counters` section remains
+# the human-readable view; this YAML mirrors it with Motion-voice rewrites
+# and per-bullet extraction labels. Engine surfaces only entries with
+# extraction == "llm-inferred".
+counters:
+  - text: "When the defense switches the pick-and-roll, 5 slips to the rim."
+    extraction: llm-inferred       # verbatim | paraphrase | llm-inferred
+    source_hint: null              # optional [Sn, p.X] inferred from body
 ---
 ```
 

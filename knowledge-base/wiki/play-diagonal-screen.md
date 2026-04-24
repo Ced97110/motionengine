@@ -42,6 +42,13 @@ demands_anatomy:
     criticality: optional
     supports_technique: baseline-cut-rub
     for_role: "3"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the defense switches on 2's diagonal back screen, 5 immediately rolls hard to the basket to receive a lob pass from 1."
+    extraction: llm-inferred
+  - text: "When weak-side help collapses into the lane, 3 cuts along the baseline off 4's body and receives the pass in the corner for an open look."
+    extraction: paraphrase
+    source_hint: "[S7, p.70]"
 ---
 
 # Motion Offense Diagonal Screen Play

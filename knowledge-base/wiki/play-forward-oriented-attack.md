@@ -5,6 +5,16 @@ formation: balanced-5-out
 tags: [forward-play, hand-off, post-up, staggered-screen, split-action, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When the hand-off from O3 is denied, O1 bypasses the exchange and attacks the basket directly off the dribble."
+    extraction: llm-inferred
+  - text: "When the defense switches O5's elbow screen, O5 immediately ducks into the post to exploit the size mismatch."
+    extraction: llm-inferred
+  - text: "When two defenders collapse on O3's post-up, the split action O1 and O2 run off O3 creates an open look for the cutter or shooter."
+    extraction: llm-inferred
+  - text: "When the defense overplays O3 on the fade to prevent the three-pointer, O3 tightens the angle off the double screen and takes the higher-percentage curl jumper instead."
+    extraction: llm-inferred
 ---
 
 # Forward-Oriented Attack

@@ -45,6 +45,13 @@ demands_anatomy:
     criticality: optional
     supports_technique: rim-cut-off-screen
     for_role: "5"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When x5 anticipates and fights over the top of the back screen, 5 can alter the route — popping out to the elbow or slipping early — to find a cleaner angle to receive the pass from 4."
+    extraction: llm-inferred
+  - text: "When x4 reads the gate action and jumps into the passing lane, 4 abandons the screen and cuts aggressively to the rim for an uncontested layup."
+    extraction: paraphrase
+    source_hint: "[S4, p.63]"
 ---
 
 # Flip Gate

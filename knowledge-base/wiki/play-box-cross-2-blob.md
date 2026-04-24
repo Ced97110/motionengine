@@ -22,6 +22,14 @@ produces_signature:
     concept_slug: concept-four-factors
     magnitude: medium
     rationale: "The set-play structure limits ball-handling to the inbounder with a fixed 2-read sequence (O2 then O4), reducing improvised passing decisions that generate turnovers."
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When X2 reads and cheats over the cross screen early, O4 slips the screen and attacks the rim directly to punish the anticipation."
+    extraction: llm-inferred
+  - text: "When O2's cut is denied and no clean look develops, O1 can safely inbound to O3 relocated high and reset the possession."
+    extraction: llm-inferred
+  - text: "When the defense has scouted O2's cut, shift the call to 'Cross 3' or 'Diagonal 4' to attack a more favorable defensive matchup on the next possession."
+    extraction: llm-inferred
 ---
 
 # Box, Cross 2 (BLOB)

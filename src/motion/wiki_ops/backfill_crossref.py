@@ -184,6 +184,68 @@ _PLAY_TOOL_DEF: dict[str, Any] = {
     },
 }
 
+_COUNTERS_SYSTEM_PROMPT = """You are annotating basketball play pages with structured \
+provenance-labeled counters. The play's body has a `## Counters` section
+listing bullet reads (e.g. "if defense switches → slip"); your job is to
+mirror each bullet into a structured `counters:` YAML field with:
+
+- text: a Motion-voice rewrite of the bullet, in your own words. Do NOT
+  quote, paraphrase, or echo any book prose. Compose only from the play's
+  mechanics described in the body. Keep it tight (one sentence).
+- extraction: classify the ORIGINAL bullet's provenance:
+  * "verbatim" if the original bullet looks like a direct copy from a
+    source book — specific named formations, proper nouns from coaches,
+    highly specific phrasing that reads as authored language.
+  * "paraphrase" if the original carries a [Sn, p.X] citation, OR if it
+    references a specific book's terminology / formation language without
+    a direct citation.
+  * "llm-inferred" if the original is generic game-logic ("if defense
+    switches, X slips") with no source-specific phrasing — these are the
+    bullets safe to surface on user chrome.
+- source_hint: any [Sn, p.X] / [Sn] token found in the original bullet,
+  else null.
+
+Emit one entry per bullet in the body's `## Counters` section, IN ORDER.
+If the section is empty or absent, emit an empty list.
+"""
+
+_COUNTERS_TOOL_DEF: dict[str, Any] = {
+    "name": "emit_counters",
+    "description": "Emit counters structured field with provenance per bullet.",
+    "input_schema": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["counters"],
+        "properties": {
+            "counters": {
+                "type": "array",
+                "minItems": 0,
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": ["text", "extraction"],
+                    "properties": {
+                        "text": {
+                            "type": "string",
+                            "minLength": 5,
+                            "maxLength": 400,
+                        },
+                        "extraction": {
+                            "type": "string",
+                            "enum": ["verbatim", "paraphrase", "llm-inferred"],
+                        },
+                        "source_hint": {
+                            "type": ["string", "null"],
+                            "maxLength": 60,
+                        },
+                    },
+                },
+            },
+        },
+    },
+}
+
+
 _SIGNATURE_FACTOR_ALLOWLIST: frozenset[str] = frozenset({
     "efg-pct",
     "ftr",
@@ -320,6 +382,36 @@ def _validate_play(out: dict[str, Any], allowed_regions: set[str]) -> list[str]:
     return errs
 
 
+def _validate_counters(out: dict[str, Any]) -> list[str]:
+    errs: list[str] = []
+    if "counters" not in out:
+        errs.append("missing 'counters' field")
+        return errs
+    # Empty list is OK — play simply has no counters in the body.
+    return errs
+
+
+def _emit_yaml_counters(out: dict[str, Any]) -> str:
+    """Hand-format counters-side YAML — Motion-voice text + provenance label."""
+    lines: list[str] = []
+    lines.append(
+        "# Cross-ref edge — counters provenance (M4 part 3). "
+        "extraction labels gate which bullets are surface-safe."
+    )
+    if not out["counters"]:
+        lines.append("counters: []")
+        return "\n".join(lines)
+    lines.append("counters:")
+    for c in out["counters"]:
+        text = c["text"].replace("\\", "\\\\").replace('"', '\\"')
+        lines.append(f'  - text: "{text}"')
+        lines.append(f"    extraction: {c['extraction']}")
+        if c.get("source_hint"):
+            sh = c["source_hint"].replace("\\", "\\\\").replace('"', '\\"')
+            lines.append(f'    source_hint: "{sh}"')
+    return "\n".join(lines)
+
+
 def _validate_signature(out: dict[str, Any]) -> list[str]:
     errs: list[str] = []
     seen_factors: set[str] = set()
@@ -437,15 +529,17 @@ def _splice_frontmatter(
 _PLAY_FEWSHOT = "play-black.md"
 _DRILL_FEWSHOT = "drill-ankling.md"
 _SIGNATURE_FEWSHOT = "play-black.md"
+_COUNTERS_FEWSHOT = "play-black.md"
 _PLAY_FORBID = ("demands_techniques:", "demands_anatomy:")
 _DRILL_FORBID = ("trains_techniques:", "trains_anatomy:")
 _SIGNATURE_FORBID = ("produces_signature:",)
+_COUNTERS_FORBID = ("counters:",)
 
 
 def annotate(slug: str, write: bool, model: str, mode: str = "play") -> int:
-    if mode not in ("play", "drill", "signature"):
+    if mode not in ("play", "drill", "signature", "counters"):
         print(
-            f"error: unknown mode {mode!r} (expected play|drill|signature)",
+            f"error: unknown mode {mode!r} (expected play|drill|signature|counters)",
             file=sys.stderr,
         )
         return 2
@@ -460,8 +554,10 @@ def annotate(slug: str, write: bool, model: str, mode: str = "play") -> int:
         fewshot_name = _PLAY_FEWSHOT
     elif mode == "drill":
         fewshot_name = _DRILL_FEWSHOT
-    else:
+    elif mode == "signature":
         fewshot_name = _SIGNATURE_FEWSHOT
+    else:
+        fewshot_name = _COUNTERS_FEWSHOT
     fewshot_path = root / fewshot_name
     if not fewshot_path.is_file():
         print(
@@ -497,12 +593,18 @@ def annotate(slug: str, write: bool, model: str, mode: str = "play") -> int:
         tool_name = "emit_trains"
         target_kind = "drill"
         tool_call = "emit_trains"
-    else:
+    elif mode == "signature":
         system_prompt = _SIGNATURE_SYSTEM_PROMPT
         tool_def = _SIGNATURE_TOOL_DEF
         tool_name = "emit_signature"
         target_kind = "play"
         tool_call = "emit_signature"
+    else:
+        system_prompt = _COUNTERS_SYSTEM_PROMPT
+        tool_def = _COUNTERS_TOOL_DEF
+        tool_name = "emit_counters"
+        target_kind = "play"
+        tool_call = "emit_counters"
 
     user_prompt = (
         "## Few-shot example (already annotated; mirror this structure)\n\n"
@@ -533,8 +635,10 @@ def annotate(slug: str, write: bool, model: str, mode: str = "play") -> int:
         errs = _validate_play(out, set(allowed_regions))
     elif mode == "drill":
         errs = _validate_drill(out, set(allowed_regions))
-    else:
+    elif mode == "signature":
         errs = _validate_signature(out)
+    else:
+        errs = _validate_counters(out)
     if errs:
         for e in errs:
             print(f"validation error: {e}", file=sys.stderr)
@@ -546,9 +650,12 @@ def annotate(slug: str, write: bool, model: str, mode: str = "play") -> int:
     elif mode == "drill":
         additions = _emit_yaml_drill(out)
         forbid = _DRILL_FORBID
-    else:
+    elif mode == "signature":
         additions = _emit_yaml_signature(out)
         forbid = _SIGNATURE_FORBID
+    else:
+        additions = _emit_yaml_counters(out)
+        forbid = _COUNTERS_FORBID
     try:
         new_raw = _splice_frontmatter(target_raw, additions, forbid)
     except ValueError as exc:
@@ -588,9 +695,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("slug", help="page slug stem, e.g. play-iverson-ram")
     parser.add_argument(
         "--mode",
-        choices=("play", "drill", "signature"),
+        choices=("play", "drill", "signature", "counters"),
         default="play",
-        help="play (demands_*), drill (trains_*), or signature (produces_signature)",
+        help="play, drill, signature, or counters provenance backfill",
     )
     parser.add_argument(
         "--write", action="store_true", help="commit changes (default: dry-run)"

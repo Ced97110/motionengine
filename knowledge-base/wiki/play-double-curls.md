@@ -46,6 +46,14 @@ demands_anatomy:
     criticality: optional
     supports_technique: pick-and-roll-screen-set
     for_role: "5"
+# Cross-ref edge — counters provenance (M4 part 3). extraction labels gate which bullets are surface-safe.
+counters:
+  - text: "When x5 jumps the High-Post screen early, 5 slips straight to the rim for a direct pass and easy finish before the defense can recover."
+    extraction: llm-inferred
+  - text: "When 3's defender and x5 switch on the pick-and-roll, 5 seals the smaller switched defender in the post and calls for a feed."
+    extraction: llm-inferred
+  - text: "When 3 is stopped driving off the pick-and-roll, 1 and 2 waiting in the corners serve as pressure-release kick-out targets for open perimeter shots."
+    extraction: llm-inferred
 ---
 
 # High-Post Double Curls
