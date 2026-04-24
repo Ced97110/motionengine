@@ -6,6 +6,28 @@ tags: [post-up, backdoor, down-screen, back-screen, lob, cutting]
 team: Boston Celtics
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Every option in the play terminates at a high-value shot — left-block post finish, elbow jumper off a down-screen, or a basket-cut lob — systematically avoiding mid-range pull-ups."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The primary action is a left-block post-up where 3 seals and receives a direct feed, placing a skilled finisher in contact-heavy position that routinely draws fouls on the catch or through-move."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The play routes through a fixed sequence of at most two passes per option (entry to elbow, elbow to block/wing, wing to cutter), limiting live-ball exposure compared to free-flowing motion offense."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Continuous off-ball movement through the backdoor cut, down-screen, and back-screen chain ensures that if the primary post feed is denied the defense must still contest two additional high-efficiency scoring reads, keeping points-per-possession elevated across all branches."
 ---
 
 # Boston Celtics Post-Drop Action (1-4 High)

@@ -5,6 +5,46 @@ formation: box
 tags: [SLOB, man-to-man, backdoor, three-point, box-set, screen-the-screener, quick-hitter]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: down-screen-pop
+    role: "4"
+    criticality: required
+  - id: inbound-pass-entry
+    role: "3"
+    criticality: required
+  - id: quick-decision-pass
+    role: "1"
+    criticality: required
+  - id: screen-the-screener-cut
+    role: "5"
+    criticality: required
+  - id: backdoor-cut-finish
+    role: "3"
+    criticality: required
+  - id: catch-and-shoot-three
+    role: "2"
+    criticality: optional
+  - id: safety-valve-flash
+    role: "4"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: backdoor-cut-finish
+    for_role: "3"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: backdoor-cut-finish
+    for_role: "3"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: screen-the-screener-cut
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: quick-decision-pass
+    for_role: "1"
 ---
 
 # Deception (SLOB)

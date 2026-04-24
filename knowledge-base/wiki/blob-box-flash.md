@@ -5,6 +5,75 @@ formation: box
 tags: [BLOB, zone, 2-3-zone, corner-three, back-screen, double-screen, overload, inbounds]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-pass-entry
+    role: "2"
+    criticality: required
+  - id: sprint-to-wing-on-signal
+    role: "5"
+    criticality: required
+  - id: double-screen-set
+    role: "3"
+    criticality: required
+  - id: double-screen-set
+    role: "4"
+    criticality: required
+  - id: curl-off-double-screen
+    role: "2"
+    criticality: required
+  - id: back-screen-set
+    role: "4"
+    criticality: optional
+  - id: backdoor-cut
+    role: "5"
+    criticality: optional
+  - id: high-post-read-and-attack
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: curl-off-double-screen
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: sprint-to-wing-on-signal
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: backdoor-cut
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: double-screen-set
+    for_role: "4"
+  - region: glute_max
+    criticality: optional
+    supports_technique: high-post-read-and-attack
+    for_role: "3"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The primary action delivers the best shooter a catch-and-shoot corner three off a double screen, while secondary options include a backdoor layup — both among the highest-efficiency shot types by design."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: low
+    rationale: "Role 5's backdoor cut and role 3's rim attack from the high post both route players into the paint where contact fouls are possible, though these are secondary reads."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted two-pass entry sequence (inbound to 5, then to 1) and predetermined reads cap the number of live-ball decisions, limiting turnovers relative to a free-flowing zone offense."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Multiple high-value shot options (corner three, backdoor layup, wing three) are built into the same set, ensuring at least one quality look regardless of how the zone rotates."
 ---
 
 # BLOB: Box Flash (vs 2-3 Zone)

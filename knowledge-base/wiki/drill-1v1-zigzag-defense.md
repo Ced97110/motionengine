@@ -114,7 +114,6 @@ Teach the defender how to keep the dribbler in front of him and force the dribbl
 
 ## Concepts Taught
 - [[defensive-checklist-principles]] — forcing the dribbler to change direction; keeping the ball in front
-- [[defensive-practice-philosophy-herb-brown]] — building defense from 1-on-1 first
 
 ## Sources
 - [S1, p.54] — One-Against-One Zigzag Drill, Figure 5.2

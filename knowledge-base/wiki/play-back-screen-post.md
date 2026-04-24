@@ -5,6 +5,68 @@ formation: 3-out-2-in
 tags: [man-to-man, back-screen, staggered-screen, post-up, layup, quick-hitter, post-entry]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: staggered-screen-navigation
+    role: "1"
+    criticality: required
+  - id: back-screen-set
+    role: "3"
+    criticality: required
+  - id: basket-cut-off-back-screen
+    role: "5"
+    criticality: required
+  - id: post-entry-pass
+    role: "1"
+    criticality: required
+  - id: deep-post-establishment
+    role: "5"
+    criticality: optional
+  - id: staggered-screen-set
+    role: "4"
+    criticality: optional
+  - id: curl-cut-to-perimeter
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: basket-cut-off-back-screen
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: basket-cut-off-back-screen
+    for_role: "5"
+  - region: core_outer
+    criticality: required
+    supports_technique: back-screen-set
+    for_role: "3"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: staggered-screen-navigation
+    for_role: "1"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The back screen frees role-5 for a direct basket cut to the rim, and the secondary staggered screen frees the best shooter at the top of the key — both terminal reads are layups or open perimeter shots, eliminating contested mid-range attempts by design."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Role-5 rolling hard to the basket off the back screen draws contact from recovering defenders in the paint, inviting foul opportunities on the finish at the rim."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The set-play structure routes through a single primary decision-maker (role-1) with a clear read hierarchy — post entry or secondary shooter — capping the passing sequence at 1–2 actions and reducing unforced turnover exposure."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "By sequencing a surprise back screen into a simultaneous staggered screen, the play creates two high-value shot opportunities (rim layup or open 3) from a single possession, driving above-average points-per-possession when either read is available."
 ---
 
 # Back Screen Post

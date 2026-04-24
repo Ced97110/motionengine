@@ -5,6 +5,60 @@ formation: box
 tags: [BLOB, man-to-man, screen-the-screener, post, layup, up-screen, cross-screen]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: up-screen-set
+    role: "4"
+    criticality: required
+  - id: screen-the-screener-set
+    role: "5"
+    criticality: required
+  - id: weak-side-rim-cut
+    role: "4"
+    criticality: required
+  - id: post-seal-and-pivot
+    role: "5"
+    criticality: required
+  - id: decoy-cut-and-call
+    role: "1"
+    criticality: required
+  - id: inbound-pass-to-slot
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: weak-side-rim-cut
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-seal-and-pivot
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: weak-side-rim-cut
+    for_role: "4"
+  - region: core_outer
+    criticality: optional
+    supports_technique: screen-the-screener-set
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The screen-the-screener and post-seal actions are designed to free a post player at the rim for a layup, the highest-eFG shot available."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted 3-4 phase sequence limits decision-making to one or two predetermined pass targets, reducing the turnover surface compared to free-flow half-court offense."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Post players cutting to the rim after screening actions draw contact from scrambling defenders, inviting foul calls on the finish."
 ---
 
 # Two Inside (BLOB vs Man-to-Man)

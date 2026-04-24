@@ -5,6 +5,47 @@ formation: 1-3-1
 tags: [zone-offense, 2-3-zone, step-up-screen, baseline-drive, layup, kickout, surprise-play]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: wing-entry-pass
+    role: "1"
+    criticality: required
+  - id: step-up-screen-set
+    role: "4"
+    criticality: required
+  - id: baseline-drive-on-catch
+    role: "2"
+    criticality: required
+  - id: post-dive-to-rim
+    role: "5"
+    criticality: required
+  - id: dump-off-pass
+    role: "2"
+    criticality: optional
+  - id: kickout-pass
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: baseline-drive-on-catch
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: baseline-drive-on-catch
+    for_role: "2"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-dive-to-rim
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: post-dive-to-rim
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: step-up-screen-set
+    for_role: "4"
 ---
 
 # Step Up

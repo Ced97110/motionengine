@@ -5,6 +5,47 @@ formation: 2-3 high-post
 tags: [continuity, screen-away, backdoor, down-screen, high-post, motion, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: high-post-flash-and-catch
+    role: "5"
+    criticality: required
+  - id: screen-away-set
+    role: "1"
+    criticality: required
+  - id: backdoor-cut-read
+    role: "2"
+    criticality: required
+  - id: down-screen-set
+    role: "3"
+    criticality: required
+  - id: roll-or-pop-after-screen
+    role: "1"
+    criticality: optional
+  - id: high-post-multi-read-pass
+    role: "5"
+    criticality: required
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: backdoor-cut-read
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: backdoor-cut-read
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: high-post-flash-and-catch
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: roll-or-pop-after-screen
+    for_role: "1"
+  - region: core_outer
+    criticality: optional
+    supports_technique: down-screen-set
+    for_role: "3"
 ---
 
 # Continuity — Pass and Screen Away Set

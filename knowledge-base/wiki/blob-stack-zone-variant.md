@@ -5,6 +5,43 @@ formation: stack
 tags: [BLOB, zone, 2-3-zone, midrange, corner-three, screen, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: hard-cut-to-corner
+    role: "2"
+    criticality: required
+  - id: zone-screen-middle-defender
+    role: "5"
+    criticality: required
+  - id: gap-cut-midrange-catch-and-shoot
+    role: "4"
+    criticality: required
+  - id: inbound-read-and-pass
+    role: "1"
+    criticality: required
+  - id: corner-catch-and-shoot
+    role: "2"
+    criticality: optional
+  - id: perimeter-zone-clear
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: hard-cut-to-corner
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: gap-cut-midrange-catch-and-shoot
+    for_role: "4"
+  - region: core_outer
+    criticality: optional
+    supports_technique: zone-screen-middle-defender
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: hard-cut-to-corner
+    for_role: "2"
 ---
 
 # BLOB Stack Zone (Ball-Side Stack)

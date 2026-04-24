@@ -5,6 +5,61 @@ formation: stack
 tags: [BLOB, man-to-man, youth, hard-cut, stack, simple]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: hard-cut-to-corner
+    role: "1"
+    criticality: required
+  - id: hard-cut-to-opposite-block
+    role: "4"
+    criticality: required
+  - id: step-in-catch-and-finish
+    role: "3"
+    criticality: required
+  - id: inbound-pass-read
+    role: "2"
+    criticality: required
+  - id: safety-valve-spacing
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: hard-cut-to-corner
+    for_role: "1"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: hard-cut-to-opposite-block
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: hard-cut-to-opposite-block
+    for_role: "4"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: step-in-catch-and-finish
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: step-in-catch-and-finish
+    for_role: "3"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Sequential hard cuts clear defenders from the paint, leaving role 3 open to step in and catch near the block or rim — a high-percentage shot by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The scripted two-cut sequence delivers a single direct inbound pass to a pre-read primary target, capping ball-movement complexity and minimizing live-ball turnover risk."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Routing the primary scoring option to a catch-and-finish near the rim generates a consistently high expected-point shot on a set possession."
 ---
 
 # Stack (BLOB vs Man-to-Man — Simple Version)

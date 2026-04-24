@@ -5,6 +5,50 @@ formation: 2-3 high-post
 tags: [continuity, cut-away, backdoor, down-screen, motion, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: high-post-entry-pass
+    role: "1"
+    criticality: required
+  - id: cut-away-to-opposite-side
+    role: "1"
+    criticality: required
+  - id: cut-away-to-opposite-side
+    role: "2"
+    criticality: required
+  - id: down-screen-set
+    role: "4"
+    criticality: required
+  - id: backdoor-cut
+    role: "3"
+    criticality: optional
+  - id: dribble-toward-wing
+    role: "5"
+    criticality: optional
+  - id: high-post-read-and-distribute
+    role: "5"
+    criticality: required
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: cut-away-to-opposite-side
+    for_role: "1"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: cut-away-to-opposite-side
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: backdoor-cut
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: down-screen-set
+    for_role: "4"
+  - region: glute_max
+    criticality: optional
+    supports_technique: high-post-read-and-distribute
+    for_role: "5"
 ---
 
 # Continuity — Pass and Cut Away Set

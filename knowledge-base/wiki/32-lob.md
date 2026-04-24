@@ -5,6 +5,72 @@ formation: 3-out-2-in
 tags: [zone-offense, 2-3-zone, lob, backdoor, weak-side, alley-oop, quick-hitter]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: ball-entry-dribble-corner
+    role: "2"
+    criticality: required
+  - id: weak-side-corner-slide
+    role: "3"
+    criticality: required
+  - id: ball-reversal-pass
+    role: "2"
+    criticality: required
+  - id: zone-screen-low-defender
+    role: "5"
+    criticality: required
+  - id: backdoor-hard-cut
+    role: "3"
+    criticality: required
+  - id: lob-pass-delivery
+    role: "1"
+    criticality: required
+  - id: above-rim-finish
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: backdoor-hard-cut
+    for_role: "3"
+  - region: glute_max
+    criticality: required
+    supports_technique: backdoor-hard-cut
+    for_role: "3"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: backdoor-hard-cut
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: lob-pass-delivery
+    for_role: "1"
+  - region: core_outer
+    criticality: optional
+    supports_technique: zone-screen-low-defender
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The play's terminal action is a lob to an uncontested cutter at the rim, generating a layup or dunk — the highest-efficiency shot in basketball."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted 3-pass sequence (entry to 2 → reversal to 1 → lob to 3) limits improvised decision-making and reduces live-ball turnover exposure compared to motion offense."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "A designed lob to an open cutter behind a zone screen consistently produces a high-probability two-point finish, inflating points-per-possession when the play succeeds."
+  - factor: pace
+    direction: lowers
+    concept_slug: concept-four-factors
+    magnitude: low
+    rationale: "The multi-phase zone manipulation (corner dribble, weak-side slide, reversal) consumes deliberate clock before the scoring action, slightly reducing overall pace."
 ---
 
 # 32 Lob (Set Play vs 2-3 Zone)

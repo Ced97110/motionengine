@@ -7,6 +7,23 @@ duration_minutes: 8-12
 tags: [shooting, cutting, catch-and-shoot, two-count-stop, elbow, game-speed]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-off-screens
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: two-count-stop
+    emphasis: secondary
+  - id: v-cut-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Cut Intos Drill

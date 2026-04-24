@@ -5,6 +5,46 @@ formation: 2-3 high-post
 tags: [continuity, high-split, pick-and-roll, backdoor, back-screen, motion, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: high-post-entry-pass
+    role: "1"
+    criticality: required
+  - id: high-post-read-and-pass
+    role: "5"
+    criticality: required
+  - id: backdoor-cut
+    role: "4"
+    criticality: required
+  - id: pick-and-roll-screen-set
+    role: "1"
+    criticality: optional
+  - id: screen-and-pop
+    role: "1"
+    criticality: optional
+  - id: back-screen-set
+    role: "4"
+    criticality: optional
+  - id: off-ball-screen-use
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: backdoor-cut
+    for_role: "4"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: backdoor-cut
+    for_role: "4"
+  - region: core_outer
+    criticality: required
+    supports_technique: high-post-read-and-pass
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: pick-and-roll-screen-set
+    for_role: "1"
 ---
 
 # Continuity — Pass and Follow the Ball (High Split)

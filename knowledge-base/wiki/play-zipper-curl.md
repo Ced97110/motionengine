@@ -5,6 +5,43 @@ formation: 1-4-high
 tags: [zipper-cut, down-screen, double-screen, off-ball-screen, shooter, man-to-man, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: zipper-cut-off-down-screen
+    role: "2"
+    criticality: required
+  - id: down-screen-set
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot-wing
+    role: "3"
+    criticality: required
+  - id: screen-read-curl-or-pop
+    role: "3"
+    criticality: required
+  - id: double-screen-set
+    role: "1"
+    criticality: optional
+  - id: post-flash-to-ball
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: zipper-cut-off-down-screen
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: screen-read-curl-or-pop
+    for_role: "3"
+  - region: glute_max
+    criticality: required
+    supports_technique: catch-and-shoot-wing
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: double-screen-set
+    for_role: "1"
 ---
 
 # Zipper Curl

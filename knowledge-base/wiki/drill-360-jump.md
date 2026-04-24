@@ -7,6 +7,21 @@ duration_minutes: 5
 tags: [conditioning, lower-body, plyometrics, agility, balance, explosive-power]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: vertical-jump-development
+    emphasis: primary
+  - id: rotational-body-awareness
+    emphasis: primary
+  - id: stretch-shortening-cycle-plyometrics
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # 360 Jump

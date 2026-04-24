@@ -5,6 +5,57 @@ formation: 1-3-1
 tags: [zone-offense, 2-3-zone, post-flash, inside-scoring, fake-pass, draw-foul, interior-passing]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: dribble-penetration-wing-entry
+    role: "1"
+    criticality: required
+  - id: post-flash-mid-post
+    role: "4"
+    criticality: required
+  - id: post-flash-baseline
+    role: "5"
+    criticality: required
+  - id: interior-pass-under-pressure
+    role: "2"
+    criticality: required
+  - id: fake-pass-tight-space
+    role: "2"
+    criticality: required
+  - id: post-catch-and-finish
+    role: "4"
+    criticality: optional
+  - id: post-catch-and-finish
+    role: "5"
+    criticality: optional
+  - id: draw-contact-interior
+    role: "4"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-flash-mid-post
+    for_role: "4"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-flash-baseline
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-flash-baseline
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: post-flash-mid-post
+    for_role: "4"
+  - region: core_outer
+    criticality: optional
+    supports_technique: interior-pass-under-pressure
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: draw-contact-interior
+    for_role: "4"
 ---
 
 # Low Split

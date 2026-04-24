@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [defense, closeout, footwork, ball-pressure, stance]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: closeout-technique
+    emphasis: primary
+  - id: defensive-stance
+    emphasis: primary
+  - id: ball-pressure
+    emphasis: secondary
+  - id: skip-pass-reaction
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Michael Holton's Close-Out Drill

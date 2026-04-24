@@ -25,6 +25,12 @@ Two classes of output:
 - ``page-tags.json``             — ``{slug: [tags]}`` for all tagged pages
 - ``defending-insights.json``    — parsed ``## Common Mistakes`` + ``diagram:`` per defending-*.md
 
+**Defending edges (2 indexes — M4 tag-intersection back-refs):**
+- ``play-to-defending.json``    — ``{play_slug: [{defending, shared_tags[]}]}``
+- ``defending-to-play.json``    — inverted; ``{defending_slug: [{play, shared_tags[]}]}``
+Matching rule: a play matches a defending page iff their tag sets share at
+least one non-generic tag (i.e. not ``defense`` / ``man-to-man`` / similar).
+
 **Native wikilink & structural graphs (4 indexes — Karpathy-native edges):**
 - ``wikilink-graph.json``         — forward; ``{page_slug: [target_slugs]}`` (unique per source)
 - ``wikilink-graph-reverse.json`` — inverted; ``{target_slug: [pages_linking_here]}``
@@ -150,6 +156,25 @@ def _dict_items(fm: dict[str, Any], key: str) -> list[dict[str, Any]]:
     return [item for item in raw if isinstance(item, dict)]
 
 
+# Tags too generic to prove a play↔defending match on their own. Without this
+# filter, every man-to-man play matches every man-to-man defending page
+# (~7x more edges, ~1.5x more noise per edge). Keep in sync with
+# `spec/crossref-anatomy-chain.md` §M4 if added there.
+_GENERIC_DEFENDING_TAGS: frozenset[str] = frozenset({
+    "defense",
+    "man-to-man",
+    "help-defense",
+    "zone",
+    "press",
+    "pro",
+    "youth",
+    "offense",
+    "half-court",
+    "transition",
+    "formation-defense",
+})
+
+
 # --- main compile pass -------------------------------------------------------
 
 
@@ -160,6 +185,7 @@ def compile_indexes(
 
     Returns a mapping from output filename to the JSON-serialisable payload.
     """
+    play_slugs: set[str] = set()
     play_to_anatomy: dict[str, list[dict[str, str]]] = {}
     play_to_technique: dict[str, list[dict[str, str]]] = {}
     play_to_signature: dict[str, list[dict[str, str]]] = {}
@@ -207,6 +233,7 @@ def compile_indexes(
             citation_graph[citation_key].append(slug)
 
         if page_type == "play":
+            play_slugs.add(slug)
             formation = fm.get("formation")
             if isinstance(formation, str) and formation.strip():
                 formation_graph[formation.strip()].append(slug)
@@ -330,6 +357,12 @@ def compile_indexes(
                     _clean({"drill": slug, "emphasis": t.get("emphasis")})
                 )
 
+    play_to_defending, defending_to_play = _compile_defending_edges(
+        play_slugs=play_slugs,
+        defending_insights=defending_insights,
+        page_tags=page_tags,
+    )
+
     return {
         "play-to-anatomy.json": play_to_anatomy,
         "play-to-technique.json": play_to_technique,
@@ -342,11 +375,52 @@ def compile_indexes(
         "page-insights.json": page_insights,
         "page-tags.json": page_tags,
         "defending-insights.json": defending_insights,
+        "play-to-defending.json": play_to_defending,
+        "defending-to-play.json": defending_to_play,
         "wikilink-graph.json": wikilink_forward,
         "wikilink-graph-reverse.json": dict(wikilink_reverse),
         "citation-graph.json": dict(citation_graph),
         "formation-graph.json": dict(formation_graph),
     }
+
+
+def _compile_defending_edges(
+    *,
+    play_slugs: set[str],
+    defending_insights: dict[str, Any],
+    page_tags: dict[str, list[str]],
+) -> tuple[dict[str, list[dict[str, Any]]], dict[str, list[dict[str, Any]]]]:
+    """Join plays and defending-* pages via tag intersection.
+
+    A play ``P`` matches a defending page ``D`` iff
+    ``P.tags ∩ D.tags`` contains at least one tag outside
+    :data:`_GENERIC_DEFENDING_TAGS`. The shared-tag list is returned with the
+    edge so downstream Engine surfaces can render the match rationale
+    ("vs a back-screen defense…") without re-deriving.
+
+    Returns a ``(play_to_defending, defending_to_play)`` pair of sidecars.
+    """
+    play_to_defending: dict[str, list[dict[str, Any]]] = {}
+    defending_to_play: dict[str, list[dict[str, Any]]] = defaultdict(list)
+
+    for p_slug in sorted(play_slugs):
+        p_tags = set(page_tags.get(p_slug) or [])
+        if not p_tags:
+            continue
+        edges: list[dict[str, Any]] = []
+        for d_slug, d_info in defending_insights.items():
+            d_tags = set(d_info.get("tags") or [])
+            shared = (p_tags & d_tags) - _GENERIC_DEFENDING_TAGS
+            if not shared:
+                continue
+            edges.append({"defending": d_slug, "shared_tags": sorted(shared)})
+            defending_to_play[d_slug].append(
+                {"play": p_slug, "shared_tags": sorted(shared)}
+            )
+        if edges:
+            play_to_defending[p_slug] = edges
+
+    return play_to_defending, dict(defending_to_play)
 
 
 def write_indexes(indexes: dict[str, dict[str, Any]], out_dir: Path) -> None:
@@ -402,6 +476,8 @@ def main(argv: list[str] | None = None) -> int:
     n_defending_symptoms = sum(
         len(entry.get("symptoms", [])) for entry in indexes["defending-insights.json"].values()
     )
+    n_plays_defending = len(indexes["play-to-defending.json"])
+    n_defending_edges = sum(len(v) for v in indexes["play-to-defending.json"].values())
     n_wikilink_source_pages = len(indexes["wikilink-graph.json"])
     n_wikilink_edges = sum(len(targets) for targets in indexes["wikilink-graph.json"].values())
     n_wikilink_targets = len(indexes["wikilink-graph-reverse.json"])
@@ -409,7 +485,7 @@ def main(argv: list[str] | None = None) -> int:
     n_formation_keys = len(indexes["formation-graph.json"])
 
     sys.stdout.write(
-        f"[crossref] compiled 15 indexes to {out_dir}\n"
+        f"[crossref] compiled 17 indexes to {out_dir}\n"
         f"  plays with demands_anatomy:    {n_plays_anatomy}\n"
         f"  plays with demands_techniques: {n_plays_technique}\n"
         f"  plays with produces_signature: {n_plays_signature}\n"
@@ -421,6 +497,7 @@ def main(argv: list[str] | None = None) -> int:
         f"  pages with insights:           {n_insights}\n"
         f"  pages with tags:               {n_tagged_pages}\n"
         f"  defending pages parsed:        {n_defending} ({n_defending_symptoms} symptoms)\n"
+        f"  play → defending edges:        {n_defending_edges} across {n_plays_defending} plays\n"
         f"  wikilink source pages:         {n_wikilink_source_pages} "
         f"({n_wikilink_edges} unique (source, target) pairs → "
         f"{n_wikilink_targets} unique targets)\n"

@@ -349,6 +349,7 @@
     "daily-defensive-checklist",
     "defending-cross-four-get",
     "defending-drop-one",
+    "defenses-vs-counters",
     "defensive-keys-to-victory",
     "defensive-transition-principles",
     "drill-pride-zigzag-defensive"
@@ -495,7 +496,8 @@
     "sport-specific-saq-program-design"
   ],
   "basketball-glossary-defensive-terms": [
-    "basketball-glossary-offensive-terms"
+    "basketball-glossary-offensive-terms",
+    "defenses-vs-counters"
   ],
   "basketball-glossary-herb-brown": [
     "source-herb-brown-defense"
@@ -684,6 +686,9 @@
     "drill-youth-paye-drill"
   ],
   "concept-1on1-reads-and-attacks": [
+    "concept-technique-dribble-handoff-receipt",
+    "concept-technique-dump-off-pass",
+    "concept-technique-hard-cut-to-paint",
     "drill-change-of-pace-dribble",
     "drill-paye-drill"
   ],
@@ -809,12 +814,24 @@
     "exercise-v-up"
   ],
   "concept-anatomy-ankle-complex": [
+    "concept-technique-closeout-contest-verticality",
+    "concept-technique-dribble-handoff-receipt",
+    "concept-technique-flash-cut",
+    "concept-technique-soft-landing-mechanics",
     "drill-ankling",
     "drill-band-lateral-walk",
     "play-black"
   ],
   "concept-anatomy-core-outer": [
     "concept-core-muscle-injury-basketball",
+    "concept-technique-closeout-contest-verticality",
+    "concept-technique-dribble-handoff-receipt",
+    "concept-technique-dump-off-pass",
+    "concept-technique-flare-screen-set",
+    "concept-technique-flash-cut",
+    "concept-technique-hard-cut-to-paint",
+    "concept-technique-skip-pass",
+    "concept-technique-soft-landing-mechanics",
     "drill-back-extension",
     "drill-bird-dog",
     "drill-wood-chop",
@@ -824,6 +841,11 @@
     "concept-anatomical-core-basketball",
     "concept-anatomy-core-outer",
     "concept-lower-crossed-syndrome-basketball",
+    "concept-technique-closeout-contest-verticality",
+    "concept-technique-flare-screen-set",
+    "concept-technique-hard-cut-to-paint",
+    "concept-technique-skip-pass",
+    "concept-technique-soft-landing-mechanics",
     "drill-back-extension",
     "drill-band-lateral-walk",
     "drill-elevated-bridge-hold",
@@ -839,6 +861,10 @@
     "concept-core-muscle-injury-basketball",
     "concept-hip-groin-injuries-basketball",
     "concept-lower-crossed-syndrome-basketball",
+    "concept-technique-dribble-handoff-receipt",
+    "concept-technique-dump-off-pass",
+    "concept-technique-flash-cut",
+    "concept-technique-hard-cut-to-paint",
     "exercise-hip-thrust",
     "play-black"
   ],
@@ -937,6 +963,7 @@
     "concept-allergies-basketball-athlete"
   ],
   "concept-attacking-disruptive-defenses": [
+    "defenses-vs-counters",
     "play-versus-1-3-1",
     "play-versus-box-and-one",
     "play-versus-triangle-and-two",
@@ -1372,7 +1399,8 @@
   "concept-basketball-jump-landing-biomechanics": [
     "concept-basketball-ankle-sprain-biomechanics",
     "concept-basketball-lower-extremity-injury-epidemiology",
-    "concept-basketball-movement-demands-biomechanics"
+    "concept-basketball-movement-demands-biomechanics",
+    "concept-technique-soft-landing-mechanics"
   ],
   "concept-basketball-jump-load": [
     "concept-acl-biomechanical-rehabilitation-basketball",
@@ -1814,6 +1842,7 @@
     "concept-isolation-defense-del-harris",
     "concept-late-game-defensive-strategy",
     "concept-switching-defenses",
+    "defenses-vs-counters",
     "drill-defending-middle-pnr"
   ],
   "concept-combination-live-ball-moves": [
@@ -2010,6 +2039,7 @@
     "concept-balance-quickness-agility-youth",
     "concept-defensive-ball-handler-stances",
     "concept-individual-defensive-movement",
+    "concept-technique-closeout-contest-verticality",
     "drill-agility-tip-drill-s15",
     "drill-defensive-cone",
     "drill-defensive-step-youth",
@@ -2066,6 +2096,7 @@
     "concept-basketball-performance-indicators-winning",
     "concept-scoring-strategies-winning-teams",
     "concept-shared-mental-models-basketball",
+    "defenses-vs-counters",
     "exercise-pallof-press-variations"
   ],
   "concept-defensive-strategy-del-harris": [
@@ -2366,6 +2397,7 @@
     "concept-back-screen-reads",
     "concept-down-screen-reads",
     "concept-screening-fundamentals",
+    "concept-technique-flare-screen-set",
     "play-philadelphia-baseline-screening"
   ],
   "concept-flex-back-screen-footwork": [
@@ -2665,6 +2697,9 @@
     "concept-basketball-injury-epidemiology",
     "concept-shoulder-assessment-basketball"
   ],
+  "concept-isolation-defense-del-harris": [
+    "defenses-vs-counters"
+  ],
   "concept-jab-step": [
     "concept-1on1-reads-and-attacks",
     "concept-ankle-proprioception",
@@ -2818,7 +2853,8 @@
   ],
   "concept-late-game-defensive-adjustments": [
     "concept-oob-defense-del-harris",
-    "concept-time-out-strategy-value"
+    "concept-time-out-strategy-value",
+    "defenses-vs-counters"
   ],
   "concept-late-game-defensive-strategy": [
     "concept-basketball-performance-indicators-winning",
@@ -2828,7 +2864,8 @@
     "concept-in-game-defensive-adjustments",
     "concept-out-of-bounds-defense",
     "concept-pnr-coverage-options",
-    "concept-referee-inconsistency-effect"
+    "concept-referee-inconsistency-effect",
+    "defenses-vs-counters"
   ],
   "concept-lateral-ankle-sprain-basketball": [
     "concept-achilles-tendon-rupture-basketball",
@@ -2914,6 +2951,7 @@
   "concept-matchup-press-obrien": [
     "concept-defensive-strategies-del-harris",
     "concept-defensive-strategy-del-harris",
+    "defenses-vs-counters",
     "drill-4-4-4-full-court-press",
     "drill-obrien-press-1v1",
     "drill-obrien-press-2v2",
@@ -3218,6 +3256,7 @@
     "source-footwork-balance-pivoting"
   ],
   "concept-on-ball-pressure-fratello": [
+    "defenses-vs-counters",
     "drill-fence-slide",
     "drill-five-second-jamming",
     "drill-fratello-2v2-help-recover",
@@ -3274,7 +3313,8 @@
     "drill-triangle-passing-shooting"
   ],
   "concept-oob-defense-del-harris": [
-    "concept-late-game-defensive-adjustments"
+    "concept-late-game-defensive-adjustments",
+    "defenses-vs-counters"
   ],
   "concept-orthobiologics-acl-basketball": [
     "concept-orthobiologics-cartilage-basketball",
@@ -3308,7 +3348,8 @@
     "concept-muscle-injury-basketball"
   ],
   "concept-out-of-bounds-defense": [
-    "concept-late-game-defensive-strategy"
+    "concept-late-game-defensive-strategy",
+    "defenses-vs-counters"
   ],
   "concept-outlet-pass-pivot": [
     "concept-defensive-box-out-footwork",
@@ -3607,13 +3648,15 @@
     "play-orlando-angled-pnr"
   ],
   "concept-pnr-defense-s13": [
+    "defenses-vs-counters",
     "drill-defending-drag-sets",
     "drill-defending-middle-pnr",
     "drill-defending-sideline-pnr"
   ],
   "concept-pnr-defensive-coverages-del-harris": [
     "concept-isolation-defense-del-harris",
-    "concept-oob-defense-del-harris"
+    "concept-oob-defense-del-harris",
+    "defenses-vs-counters"
   ],
   "concept-points-per-possession": [
     "concept-basketball-statistical-framework",
@@ -3822,6 +3865,7 @@
     "drill-small-space-power-drills"
   ],
   "concept-press-break-banana-cut": [
+    "defenses-vs-counters",
     "drill-guard-to-center-pattern",
     "play-line-blob"
   ],
@@ -4153,6 +4197,7 @@
     "concept-screen-types-reads",
     "concept-spin-screen-footwork",
     "concept-stagger-screen-footwork",
+    "concept-technique-flare-screen-set",
     "concept-triangle-offense-principles",
     "concept-triangle-offense-second-pass",
     "concept-triangle-offense",
@@ -4231,6 +4276,8 @@
     "concept-shooting-off-screens-s3",
     "concept-shooting-off-screens",
     "concept-shooting-on-the-move",
+    "concept-technique-dribble-handoff-receipt",
+    "concept-technique-flare-screen-set",
     "concept-whole-part-whole-teaching",
     "defending-specific-plays",
     "drill-flex-offense-screen-the-screener-drill",
@@ -4673,7 +4720,8 @@
   ],
   "concept-switching-defenses": [
     "concept-basketball-bell-curve-model",
-    "concept-underdog-risky-strategies"
+    "concept-underdog-risky-strategies",
+    "defenses-vs-counters"
   ],
   "concept-syndesmotic-sprain-basketball": [
     "concept-lateral-ankle-sprain-basketball"
@@ -4685,6 +4733,20 @@
   "concept-team-first-player-second-analysis": [
     "concept-offensive-defensive-rating-team-analysis",
     "concept-specialist-player-evaluation"
+  ],
+  "concept-technique-dump-off-pass": [
+    "concept-technique-flash-cut",
+    "concept-technique-skip-pass"
+  ],
+  "concept-technique-flash-cut": [
+    "concept-technique-hard-cut-to-paint",
+    "concept-technique-skip-pass"
+  ],
+  "concept-technique-hard-cut-to-paint": [
+    "concept-technique-flash-cut"
+  ],
+  "concept-technique-skip-pass": [
+    "concept-technique-dump-off-pass"
   ],
   "concept-ten-steps-progression": [
     "concept-explosive-six",
@@ -5260,6 +5322,7 @@
     "concept-game-preparation-halftime",
     "concept-halftime-adjustments",
     "concept-individual-defensive-ratings",
+    "defenses-vs-counters",
     "defensive-practice-culture",
     "post-double-team-rotations",
     "transition-defense",
@@ -5294,7 +5357,6 @@
     "concept-productive-practices",
     "defensive-checklist-principles",
     "defensive-shell-drill",
-    "drill-1v1-zigzag-defense",
     "drill-2v2-full-court-defense",
     "drill-3v2-full-court-fast-break-defense",
     "drill-3v3-full-court-defense",
@@ -5373,6 +5435,7 @@
     "concept-press-break-banana-cut",
     "concept-trapping-footwork-pivots",
     "concept-trapping-footwork",
+    "defenses-vs-counters",
     "full-court-press-defense",
     "press-continuity-1",
     "run-and-jump-defense",
@@ -7007,6 +7070,7 @@
     "concept-pivoting-while-trapped",
     "concept-team-defensive-stunts",
     "concept-underdog-risky-strategies",
+    "defenses-vs-counters",
     "defensive-transition-drills",
     "diamond-zone-press",
     "drill-defensive-fast-break-progressions",
@@ -7087,6 +7151,7 @@
     "concept-isolation-defense-strategies",
     "concept-pnr-coverage-options",
     "concept-pnr-defensive-coverages-del-harris",
+    "defenses-vs-counters",
     "drill-mirroring-two-box",
     "pick-and-roll-defense",
     "post-up-defense"
@@ -7364,6 +7429,7 @@
     "defending-cross-four-get",
     "defending-dribble-handoff-and-get-action",
     "defending-off-ball-screens",
+    "defenses-vs-counters",
     "drill-closeout-1-2",
     "drill-defending-drag-sets",
     "drill-defending-middle-pnr",
@@ -7382,6 +7448,7 @@
     "defending-dribble-handoff",
     "defending-specific-plays",
     "defending-staggered-screens",
+    "defenses-vs-counters",
     "isolation-defense",
     "post-up-defense",
     "source-coaches-playbook"
@@ -7477,6 +7544,7 @@
   ],
   "play-diamond-slob": [
     "concept-reading-screens-off-ball",
+    "defenses-vs-counters",
     "play-deception-slob",
     "play-option-slob",
     "play-prowl-slob",
@@ -7723,11 +7791,13 @@
   ],
   "play-versus-1-3-1": [
     "concept-attacking-disruptive-defenses",
+    "defenses-vs-counters",
     "play-versus-box-and-one",
     "play-versus-triangle-and-two"
   ],
   "play-versus-box-and-one": [
     "concept-attacking-disruptive-defenses",
+    "defenses-vs-counters",
     "play-versus-1-3-1",
     "play-versus-triangle-and-two"
   ],
@@ -7980,6 +8050,7 @@
   ],
   "run-and-jump-defense": [
     "concept-team-defensive-stunts",
+    "defenses-vs-counters",
     "diamond-zone-press",
     "drill-containing-opponent",
     "drill-s15-run-and-jump",
@@ -8374,6 +8445,7 @@
     "reaction-time-training"
   ],
   "st-josephs-press": [
+    "defenses-vs-counters",
     "press-continuity-1"
   ],
   "strength-before-power-periodization": [
@@ -8619,6 +8691,7 @@
     "concept-combination-alternating-defenses",
     "concept-out-of-bounds-defense",
     "concept-pnr-coverage-options",
+    "defenses-vs-counters",
     "diamond-zone-press",
     "drill-push-and-talk-defensive",
     "face-guard-press",
@@ -8806,6 +8879,7 @@
     "shot-charting"
   ],
   "weak-side-defense-rotation": [
+    "defenses-vs-counters",
     "defensive-coaching-philosophy-herb-brown",
     "post-double-team-rotation"
   ],
@@ -8819,6 +8893,7 @@
     "concept-pnr-coverage-options",
     "concept-team-defensive-movement-principles",
     "concept-team-defensive-stunts",
+    "defenses-vs-counters",
     "defensive-coaching-philosophy",
     "drill-3v3-4v4-continuous-full-court",
     "drill-4v4-half-court-game-of-stops",
@@ -8867,6 +8942,7 @@
     "concept-combination-alternating-defenses",
     "concept-switching-defenses",
     "concept-trapping-footwork-pivots",
+    "defenses-vs-counters",
     "diamond-zone-press",
     "face-guard-press",
     "full-court-press-defense",

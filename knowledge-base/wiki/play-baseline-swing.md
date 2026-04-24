@@ -5,6 +5,60 @@ formation: 4-out 1-in
 tags: [zone-offense, 2-3-zone, baseline-cut, screen, shooter, corner-three, midrange]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: skip-pass-to-wing
+    role: "3"
+    criticality: required
+  - id: zone-ball-reversal
+    role: "1"
+    criticality: required
+  - id: post-screen-on-zone-defender
+    role: "5"
+    criticality: required
+  - id: baseline-cut-off-screen
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot-corner
+    role: "4"
+    criticality: required
+  - id: wing-cut-across-zone
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: baseline-cut-off-screen
+    for_role: "4"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: baseline-cut-off-screen
+    for_role: "4"
+  - region: glute_max
+    criticality: optional
+    supports_technique: catch-and-shoot-corner
+    for_role: "4"
+  - region: core_outer
+    criticality: optional
+    supports_technique: post-screen-on-zone-defender
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The play's geometry channels role-4 to a corner three or short-corner catch-and-shoot — both high-efficiency looks — by design, with no mid-range scramble shots."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Ball movement follows a scripted reversal path (1→3→1→2→3→4) with predetermined reads at each node, limiting unscripted dribble-penetration decisions that generate turnovers against zone."
+  - factor: floor-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Sequential ball reversal forces the 2-3 zone to rotate across multiple gaps simultaneously, consistently generating an open catch-and-shoot opportunity for role-4 on each execution."
 ---
 
 # Baseline Swing

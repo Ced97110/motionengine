@@ -287,6 +287,87 @@ def test_import_rejects_traversal(tmp_wiki: Path) -> None:
 # ---------------------------------------------------------------------------
 
 
+SCHEMA_V2_PAGE = """---
+type: play
+category: offense
+---
+
+# Schema V2
+
+## Overview
+Fixture exercising the schema v2 action fields.
+
+```json name=diagram-positions
+{"players":[{"role":"1","x":0,"y":33},{"role":"2","x":-18,"y":22},{"role":"3","x":18,"y":22},{"role":"4","x":-8,"y":29},{"role":"5","x":8,"y":29}],"ballStart":"2","actions":[{"from":"4","to":"2","type":"screen","path":"M 8 29 C 2 26 -6 24 -16 22","moveTo":[-14,22],"durationMs":2200,"gapAfterMs":250},{"from":"1","to":"2","type":"pass","ballTo":"2","path":"M 0 33 C 2 28 -4 24 -16 22"}],"notes":"Phase 1."}
+```
+
+## Phases
+
+### Phase 1: Only
+- 4 sets a screen for 2; 1 passes to 2.
+
+## Sources
+- [Sx, p.1]
+"""
+
+
+def test_schema_v2_fields_forwarded(tmp_wiki: Path) -> None:
+    """Authored path / moveTo / timing / ballTo / ballStart must survive import."""
+    _write_page(tmp_wiki, "play-schema-v2", SCHEMA_V2_PAGE)
+    result = import_wiki_play("play-schema-v2")
+
+    assert result.source == "wiki-structured"
+    assert result.play is not None
+    assert result.play["ballStart"] == "2"
+
+    actions = result.play["phases"][0]["actions"]
+    assert len(actions) == 2
+
+    screen, pass_action = actions
+    # Authored path preserved verbatim so downstream synthesizer leaves it alone.
+    assert screen["path"] == "M 8 29 C 2 26 -6 24 -16 22"
+    # moveTo wins over the role-destination lookup for "2".
+    assert screen["move"]["id"] == "4"
+    assert screen["move"]["to"] == [-14.0, 22.0]
+    # Timing overrides forwarded.
+    assert screen["durationMs"] == 2200
+    assert screen["gapAfterMs"] == 250
+
+    # Pass action uses explicit ballTo + authored path.
+    assert pass_action["marker"] == "arrow"
+    assert pass_action["dashed"] is True
+    assert pass_action["ball"] == {"from": "1", "to": "2"}
+    assert pass_action["path"] == "M 0 33 C 2 28 -4 24 -16 22"
+
+
+def test_schema_v2_backward_compat_no_overrides(tmp_wiki: Path) -> None:
+    """Pages without schema v2 fields emit V7 actions with no timing keys.
+
+    Paths end up synthesized (downstream), so the right thing to pin here is
+    the absence of the new optional keys (``durationMs`` / ``gapAfterMs``).
+    Presence of those would signal accidental field leakage.
+    """
+    _write_page(tmp_wiki, "play-black", SINGLE_BLOCK_PAGE)
+    result = import_wiki_play("play-black")
+    phases = result.play["phases"] if result.play else []
+    populated_actions = [a for p in phases for a in p["actions"]]
+    assert populated_actions, "fixture should yield at least one action"
+    for a in populated_actions:
+        assert "durationMs" not in a, f"unexpected timing override: {a}"
+        assert "gapAfterMs" not in a, f"unexpected timing override: {a}"
+    # ballStart still derived from default logic (role "1" present).
+    assert result.play["ballStart"] == "1"
+
+
+def test_schema_v2_ballstart_falls_back_when_unknown(tmp_wiki: Path) -> None:
+    """Explicit ballStart pointing at a non-existent player falls back safely."""
+    bad_page = SCHEMA_V2_PAGE.replace('"ballStart":"2"', '"ballStart":"99"')
+    _write_page(tmp_wiki, "play-bad-ball", bad_page)
+    result = import_wiki_play("play-bad-ball")
+    # 99 is not in the roster → falls back to "1".
+    assert result.play["ballStart"] == "1"
+
+
 def test_list_importable_plays_reports_diagram_flag(tmp_wiki: Path) -> None:
     """Listing surfaces slug/name/phaseCount/hasDiagram/blockCount per page."""
     _write_page(tmp_wiki, "play-black", SINGLE_BLOCK_PAGE)

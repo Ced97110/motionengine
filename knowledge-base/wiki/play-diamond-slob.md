@@ -5,6 +5,53 @@ formation: box
 tags: [SLOB, man-to-man, flare-screen, pick-and-roll, curl-cut, box-set, multi-option]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: down-screen-read
+    role: "1"
+    criticality: required
+  - id: catch-and-pass-off-screen
+    role: "1"
+    criticality: required
+  - id: flare-screen-set
+    role: "5"
+    criticality: required
+  - id: flare-cut-to-wing
+    role: "1"
+    criticality: required
+  - id: pick-and-roll-ball-handler
+    role: "2"
+    criticality: required
+  - id: curl-cut-off-screen
+    role: "3"
+    criticality: optional
+  - id: roll-or-pop-read
+    role: "5"
+    criticality: optional
+  - id: skip-pass
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: flare-cut-to-wing
+    for_role: "1"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: pick-and-roll-ball-handler
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: pick-and-roll-ball-handler
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: curl-cut-off-screen
+    for_role: "3"
+  - region: hip_flexor_complex
+    criticality: optional
+    supports_technique: roll-or-pop-read
+    for_role: "5"
 ---
 
 # Diamond (SLOB)

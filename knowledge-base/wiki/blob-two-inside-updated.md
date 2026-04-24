@@ -5,6 +5,49 @@ formation: box
 tags: [BLOB, man-to-man, screen-the-screener, post, layup, inside, mismatch, guards-clear]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-pass-timing
+    role: "3"
+    criticality: required
+  - id: up-screen-set
+    role: "4"
+    criticality: required
+  - id: cross-screen-set
+    role: "5"
+    criticality: required
+  - id: rim-cut-on-screen
+    role: "4"
+    criticality: required
+  - id: post-seal-and-pivot
+    role: "5"
+    criticality: required
+  - id: decoy-cut-with-call
+    role: "1"
+    criticality: optional
+  - id: decoy-cut-with-call
+    role: "2"
+    criticality: optional
+  - id: short-corner-bailout
+    role: "4"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: rim-cut-on-screen
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-seal-and-pivot
+    for_role: "5"
+  - region: core_outer
+    criticality: required
+    supports_technique: cross-screen-set
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: up-screen-set
+    for_role: "4"
 ---
 
 # BLOB Two Inside

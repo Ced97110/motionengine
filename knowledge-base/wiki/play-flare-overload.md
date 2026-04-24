@@ -5,6 +5,47 @@ formation: 1-3-1
 tags: [zone-offense, 2-3-zone, flare-screen, overload, skip-pass, three-point, on-ball-screen]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: skip-pass-to-open-shooter
+    role: "2"
+    criticality: required
+  - id: on-ball-screen-set-and-roll
+    role: "5"
+    criticality: required
+  - id: position-swap-cut
+    role: "1"
+    criticality: required
+  - id: perimeter-spacing-pop
+    role: "3"
+    criticality: required
+  - id: low-screen-on-zone-defender
+    role: "4"
+    criticality: required
+  - id: dribble-read-off-screen
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: position-swap-cut
+    for_role: "1"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: on-ball-screen-set-and-roll
+    for_role: "5"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: dribble-read-off-screen
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: low-screen-on-zone-defender
+    for_role: "4"
+  - region: glute_max
+    criticality: optional
+    supports_technique: on-ball-screen-set-and-roll
+    for_role: "5"
 ---
 
 # Flare Overload

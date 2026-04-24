@@ -1,4 +1,1003 @@
 {
+  "23-flare": [
+    {
+      "criticality": "required",
+      "id": "dribble-drag-defender",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-screen-use",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "pin-down-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "skip-pass-over-top",
+      "role": "1"
+    }
+  ],
+  "32-lob": [
+    {
+      "criticality": "required",
+      "id": "ball-entry-dribble-corner",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "weak-side-corner-slide",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "ball-reversal-pass",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "zone-screen-low-defender",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "backdoor-hard-cut",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "lob-pass-delivery",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "above-rim-finish",
+      "role": "3"
+    }
+  ],
+  "blob-4-low-flex": [
+    {
+      "criticality": "required",
+      "id": "inbound-lob-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-relay-pass",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "flex-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "flex-cut-to-block",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "pin-down-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "pass-read-dual-option",
+      "role": "3"
+    }
+  ],
+  "blob-4-low-flex-updated": [
+    {
+      "criticality": "required",
+      "id": "inbound-lob-pass",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "flex-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "flex-cut-to-block",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "pin-down-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "decision-making-pass-selection",
+      "role": "3"
+    }
+  ],
+  "blob-belmont-flash": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-entry",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "pop-to-wing-catch",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "mid-key-flash",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "curl-cut-to-corner",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "zone-read-pass",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-corner-three",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "low-block-finish",
+      "role": "5"
+    }
+  ],
+  "blob-box-flash": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-entry",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "sprint-to-wing-on-signal",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "double-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "double-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "curl-off-double-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "back-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "backdoor-cut",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "high-post-read-and-attack",
+      "role": "3"
+    }
+  ],
+  "blob-box-gate": [
+    {
+      "criticality": "required",
+      "id": "back-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "basket-cut-off-screen",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "gate-screen-usage",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-wing",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "cross-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "post-entry-duck-in",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "gate-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "gate-screen-set",
+      "role": "4"
+    }
+  ],
+  "blob-box-gate-updated": [
+    {
+      "criticality": "required",
+      "id": "back-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "hard-cut-to-rim",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "gate-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "gate-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "cross-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "post-up-duck-in",
+      "role": "5"
+    }
+  ],
+  "blob-cross": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "corner-cut-spacing",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "corner-cut-spacing",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "post-cross-cut",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "post-cross-cut",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-corner",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-corner",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "block-catch-and-finish",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "sprint-back-transition-defense",
+      "role": "2"
+    }
+  ],
+  "blob-double-skip": [
+    {
+      "criticality": "required",
+      "id": "inbound-entry-pass",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "skip-pass-vs-zone",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "skip-pass-vs-zone",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "shooter-flare-cut",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "pass-fake-vs-zone",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "screen-slip-vs-zone",
+      "role": "3"
+    }
+  ],
+  "blob-flip": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "cross-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "flash-cut-to-rim",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "post-seal-and-pivot",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "corner-flash-decoy",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "lob-pass-delivery",
+      "role": "1"
+    }
+  ],
+  "blob-flip-updated": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "cross-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "back-hip-seal",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "flash-to-rim",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "flash-to-rim",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "corner-decoy-cut",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "corner-decoy-cut",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "safety-outlet-cut",
+      "role": "3"
+    }
+  ],
+  "blob-hawk": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "curl-cut-to-corner",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "simultaneous-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "simultaneous-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-corner-three",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "low-block-catch-and-shoot",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "cut-disguise",
+      "role": "2"
+    }
+  ],
+  "blob-side-cross-elevator": [
+    {
+      "criticality": "required",
+      "id": "sequential-elevator-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "sequential-elevator-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "sprint-cut-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-delivery",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-corner-three",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "screen-slip-and-show",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "screen-slip-and-show",
+      "role": "5"
+    }
+  ],
+  "blob-stack-double": [
+    {
+      "criticality": "required",
+      "id": "pop-out-to-perimeter",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-entry",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "ball-reversal-pass",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "dribble-fake-misdirection",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "staggered-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "curl-cut-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-wing",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "decoy-move-baseline",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "weak-side-wing-clear",
+      "role": "3"
+    }
+  ],
+  "blob-stack-double-updated": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-reception-pop",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "dribble-fake-direction-change",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "staggered-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "staggered-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-read-off-ball",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-wing",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "baseline-sprint-clear",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "backdoor-cut-off-screen",
+      "role": "2"
+    }
+  ],
+  "blob-stack-man": [
+    {
+      "criticality": "required",
+      "id": "hard-cut-to-corner",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "hard-cut-to-opposite-block",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "step-in-catch-and-finish",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-read",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "safety-valve-spacing",
+      "role": "5"
+    }
+  ],
+  "blob-stack-man-spread": [
+    {
+      "criticality": "required",
+      "id": "hard-cut-to-corner",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "hard-cut-to-weak-side-block",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-finish-near-block",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-read",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "safety-outlet-cut",
+      "role": "5"
+    }
+  ],
+  "blob-stack-zone": [
+    {
+      "criticality": "required",
+      "id": "hard-cut-to-corner",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "zone-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-midrange",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-read",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-corner-three",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "safety-valve-positioning",
+      "role": "3"
+    }
+  ],
+  "blob-stack-zone-variant": [
+    {
+      "criticality": "required",
+      "id": "hard-cut-to-corner",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "zone-screen-middle-defender",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "gap-cut-midrange-catch-and-shoot",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-read-and-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "corner-catch-and-shoot",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "perimeter-zone-clear",
+      "role": "3"
+    }
+  ],
+  "blob-two-inside": [
+    {
+      "criticality": "required",
+      "id": "up-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-the-screener-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "weak-side-rim-cut",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "post-seal-and-pivot",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "decoy-cut-and-call",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "inbound-pass-to-slot",
+      "role": "3"
+    }
+  ],
+  "blob-two-inside-updated": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-timing",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "up-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "cross-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "rim-cut-on-screen",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "post-seal-and-pivot",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "decoy-cut-with-call",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "decoy-cut-with-call",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "short-corner-bailout",
+      "role": "4"
+    }
+  ],
+  "blob-yo-yo": [
+    {
+      "criticality": "required",
+      "id": "up-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "up-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "basket-cut-off-screen",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "basket-cut-off-screen",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-read-and-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "safety-valve-cut-to-wing",
+      "role": "3"
+    }
+  ],
+  "blob-yo-yo-updated": [
+    {
+      "criticality": "required",
+      "id": "up-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "up-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "rim-cut-off-screen",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "rim-cut-off-screen",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-read",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "safety-valve-wing-cut",
+      "role": "3"
+    }
+  ],
+  "play-1-4-quick-floppy": [
+    {
+      "criticality": "required",
+      "id": "floppy-cut-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "floppy-cut-off-screen",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "staggered-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "staggered-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "post-duck-in-seal",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "post-duck-in-seal",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "on-time-on-target-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-perimeter",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-perimeter",
+      "role": "3"
+    }
+  ],
+  "play-back-screen-post": [
+    {
+      "criticality": "required",
+      "id": "staggered-screen-navigation",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "back-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "basket-cut-off-back-screen",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "post-entry-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "deep-post-establishment",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "staggered-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "curl-cut-to-perimeter",
+      "role": "2"
+    }
+  ],
+  "play-baseline-swing": [
+    {
+      "criticality": "required",
+      "id": "skip-pass-to-wing",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "zone-ball-reversal",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "post-screen-on-zone-defender",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "baseline-cut-off-screen",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-corner",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "wing-cut-across-zone",
+      "role": "3"
+    }
+  ],
   "play-black": [
     {
       "criticality": "required",
@@ -19,6 +1018,1461 @@
       "criticality": "optional",
       "id": "dump-off-pass",
       "role": "2"
+    }
+  ],
+  "play-box-loop-post": [
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "curl-cut-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "post-seal-high-post",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "entry-pass-to-post",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "flare-cut-off-screen",
+      "role": "2"
+    }
+  ],
+  "play-box-spin": [
+    {
+      "criticality": "required",
+      "id": "inbound-pass-on-target",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "sequential-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "curl-cut-to-rim",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-three",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "pop-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "safety-outlet-read",
+      "role": "1"
+    }
+  ],
+  "play-chin-series": [
+    {
+      "criticality": "required",
+      "id": "back-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "rub-cut-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "post-pop-after-screen",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "multi-option-post-read",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "backdoor-cut",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "dribble-handoff-screen-on-ball",
+      "role": "1"
+    }
+  ],
+  "play-cross-screen": [
+    {
+      "criticality": "required",
+      "id": "dribble-entry-wing",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "cross-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "post-up-catch-and-hold",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "parallel-double-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "screen-slip-to-basket",
+      "role": "5"
+    }
+  ],
+  "play-deception-slob": [
+    {
+      "criticality": "required",
+      "id": "down-screen-pop",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-entry",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "quick-decision-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-the-screener-cut",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "backdoor-cut-finish",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-three",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "safety-valve-flash",
+      "role": "4"
+    }
+  ],
+  "play-diagonal-screen": [
+    {
+      "criticality": "required",
+      "id": "diagonal-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "post-up-on-catch",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "diagonal-back-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-the-screener-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "baseline-cut-rub",
+      "role": "3"
+    }
+  ],
+  "play-diamond-slob": [
+    {
+      "criticality": "required",
+      "id": "down-screen-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-pass-off-screen",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-cut-to-wing",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-ball-handler",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "curl-cut-off-screen",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "roll-or-pop-read",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "skip-pass",
+      "role": "2"
+    }
+  ],
+  "play-double-curls": [
+    {
+      "criticality": "required",
+      "id": "high-post-cut-off-screen",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "curl-cut-to-rim",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "staggered-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-ball-handler",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "slip-screen-to-rim",
+      "role": "5"
+    }
+  ],
+  "play-doubles": [
+    {
+      "criticality": "required",
+      "id": "pass-and-return",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "sharp-curl-cut",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "double-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "double-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "on-time-on-target-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "curl-to-basket",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "post-duck-in",
+      "role": "3"
+    }
+  ],
+  "play-drive-hammer": [
+    {
+      "criticality": "required",
+      "id": "dribble-entry-wing",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "high-cut-off-elbow-screen",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "drive-to-rim-off-ball-screen",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "hammer-back-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-off-back-screen",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "kickout-pass-on-drive",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "roll-to-rim-after-screen",
+      "role": "5"
+    }
+  ],
+  "play-flare-overload": [
+    {
+      "criticality": "required",
+      "id": "skip-pass-to-open-shooter",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-set-and-roll",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "position-swap-cut",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "perimeter-spacing-pop",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "low-screen-on-zone-defender",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "dribble-read-off-screen",
+      "role": "2"
+    }
+  ],
+  "play-flex-warrior": [
+    {
+      "criticality": "required",
+      "id": "flex-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "flex-cut-to-rim",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-off-screen",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "second-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "post-seal-deep",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "wing-catch-and-shoot",
+      "role": "2"
+    }
+  ],
+  "play-flip-gate": [
+    {
+      "criticality": "required",
+      "id": "back-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "deceptive-fake-cut",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "hand-off-give",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "rim-cut-off-screen",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "gate-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "baseline-runner-cut",
+      "role": "2"
+    }
+  ],
+  "play-high-pick-series": [
+    {
+      "criticality": "required",
+      "id": "high-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-pick-and-roll-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "double-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "dribble-handoff",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "rub-cut-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "backdoor-cut",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "roll-to-basket",
+      "role": "5"
+    }
+  ],
+  "play-high-post-double-screen": [
+    {
+      "criticality": "required",
+      "id": "high-post-cut-off-screen",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-pick-and-roll-attack",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "double-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "double-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "roll-to-rim",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "dump-off-pass",
+      "role": "2"
+    }
+  ],
+  "play-high-split-action": [
+    {
+      "criticality": "required",
+      "id": "high-post-entry-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "high-post-read-and-pass",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "backdoor-cut",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "pick-and-roll-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "screen-and-pop",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "back-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "off-ball-screen-use",
+      "role": "2"
+    }
+  ],
+  "play-inside-isolate": [
+    {
+      "criticality": "required",
+      "id": "low-post-flash-on-entry",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "post-entry-pass-from-wing",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "low-post-isolation-move",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "wing-to-slot-screen-exchange",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "post-kickout-pass",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-perimeter",
+      "role": "1"
+    }
+  ],
+  "play-iverson-ram": [
+    {
+      "criticality": "required",
+      "id": "iverson-cut-off-elbow-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "iverson-cut-off-elbow-screen",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "elbow-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "ram-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-ball-handler-read",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "roll-to-rim",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "dribble-signal-read",
+      "role": "1"
+    }
+  ],
+  "play-loop-fly-slob": [
+    {
+      "criticality": "required",
+      "id": "lob-pass-inbound",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "back-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "double-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "alley-oop-finish",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "hard-cut-to-rim",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "flash-to-corner",
+      "role": "5"
+    }
+  ],
+  "play-low-split": [
+    {
+      "criticality": "required",
+      "id": "dribble-penetration-wing-entry",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "post-flash-mid-post",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "post-flash-baseline",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "interior-pass-under-pressure",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "fake-pass-tight-space",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "post-catch-and-finish",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "post-catch-and-finish",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "draw-contact-interior",
+      "role": "4"
+    }
+  ],
+  "play-option-slob": [
+    {
+      "criticality": "required",
+      "id": "down-screen-entry",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "read-screen-direction",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-delivery",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "rim-attack-off-ball-screen",
+      "role": "1"
+    }
+  ],
+  "play-pass-and-cut-away": [
+    {
+      "criticality": "required",
+      "id": "high-post-entry-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "cut-away-to-opposite-side",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "cut-away-to-opposite-side",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "backdoor-cut",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "dribble-toward-wing",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "high-post-read-and-distribute",
+      "role": "5"
+    }
+  ],
+  "play-pass-and-screen-away": [
+    {
+      "criticality": "required",
+      "id": "high-post-flash-and-catch",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-away-set",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "backdoor-cut-read",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "roll-or-pop-after-screen",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "high-post-multi-read-pass",
+      "role": "5"
+    }
+  ],
+  "play-pick-and-roll-layered": [
+    {
+      "criticality": "required",
+      "id": "high-post-rub-cut",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "low-post-reception",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-ball-handler",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "roll-or-flare-read",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "double-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "double-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "curl-cut-off-double-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "multi-read-pass-decision",
+      "role": "1"
+    }
+  ],
+  "play-pick-overload": [
+    {
+      "criticality": "required",
+      "id": "dribble-drag-to-wing",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-use",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "drive-and-kick-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "spot-up-three-point-shooting",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "baseline-deep-cut",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "corner-three-catch-and-shoot",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "offensive-glass-crash",
+      "role": "5"
+    }
+  ],
+  "play-piston-elevator": [
+    {
+      "criticality": "required",
+      "id": "iverson-cut-decoy",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "elevator-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "elevator-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "change-of-direction-cut",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-three",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "on-time-skip-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "rim-dive-on-coverage",
+      "role": "4"
+    }
+  ],
+  "play-prowl-slob": [
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "cut-to-top-off-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-ball-handler",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "floor-spacing-wing",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "floor-spacing-wing",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "roll-to-rim",
+      "role": "5"
+    }
+  ],
+  "play-reverse-dribble-options": [
+    {
+      "criticality": "required",
+      "id": "reverse-dribble-entry",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "backdoor-cut",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "flash-to-elbow",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "pick-and-roll-ball-handler",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "double-screen-use",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "screen-and-roll",
+      "role": "4"
+    }
+  ],
+  "play-side-blaze": [
+    {
+      "criticality": "required",
+      "id": "dribble-hand-off-execution",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "hand-off-catch-and-attack",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-roll-man",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "backdoor-cut",
+      "role": "2"
+    }
+  ],
+  "play-skipper": [
+    {
+      "criticality": "required",
+      "id": "wing-entry-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-on-zone-defender",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-corner-three",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "skip-pass-overhead",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "shooter-cut-to-corner",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "pass-reset-top",
+      "role": "3"
+    }
+  ],
+  "play-step-up": [
+    {
+      "criticality": "required",
+      "id": "wing-entry-pass",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "step-up-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "baseline-drive-on-catch",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "post-dive-to-rim",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "dump-off-pass",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "kickout-pass",
+      "role": "5"
+    }
+  ],
+  "play-swinger": [
+    {
+      "criticality": "required",
+      "id": "wing-pass-and-return",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "blindside-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "pick-and-roll-ball-handler-read",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-and-roll-to-rim",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "corner-relocate-off-drive",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "pull-up-jump-shot",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "catch-and-shoot-corner-three",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "baseline-layup-on-feed",
+      "role": "4"
+    }
+  ],
+  "play-triangle-slob": [
+    {
+      "criticality": "required",
+      "id": "cross-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-the-screener-down-screen",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "high-low-cut-off-screen",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-off-screen",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "low-post-catch-and-finish",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-read-and-pass",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "drive-to-rim-off-rescreen",
+      "role": "1"
+    }
+  ],
+  "play-up-screen": [
+    {
+      "criticality": "required",
+      "id": "back-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "post-up-catch-and-read",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "elbow-catch-and-shoot",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set-and-roll",
+      "role": "5"
+    },
+    {
+      "criticality": "optional",
+      "id": "flare-cut-off-screen",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "duck-in-post-entry",
+      "role": "4"
+    }
+  ],
+  "play-x-cross": [
+    {
+      "criticality": "required",
+      "id": "stationary-high-post-screen",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "off-ball-screen-use",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "off-ball-screen-use",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "flex-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "flex-cut-to-rim",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "backdoor-cut",
+      "role": "4"
+    },
+    {
+      "criticality": "optional",
+      "id": "high-post-catch-and-shoot",
+      "role": "5"
+    }
+  ],
+  "play-zipper-curl": [
+    {
+      "criticality": "required",
+      "id": "zipper-cut-off-down-screen",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-wing",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "screen-read-curl-or-pop",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "double-screen-set",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "post-flash-to-ball",
+      "role": "5"
+    }
+  ],
+  "set-23-flare-updated": [
+    {
+      "criticality": "required",
+      "id": "skip-pass-over-screen",
+      "role": "1"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "flare-cut-to-wing",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "zone-ball-movement",
+      "role": "2"
+    },
+    {
+      "criticality": "optional",
+      "id": "pin-down-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "catch-and-shoot-off-screen",
+      "role": "2"
+    }
+  ],
+  "set-32-lob-updated": [
+    {
+      "criticality": "required",
+      "id": "dribble-penetration-to-corner",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "weak-side-repositioning",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "zone-screen-on-low-defender",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "backdoor-lob-cut",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "lob-pass-delivery",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "midrange-pull-up",
+      "role": "3"
+    }
+  ],
+  "slob-twist": [
+    {
+      "criticality": "optional",
+      "id": "lob-pass-inbound",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "down-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "up-screen-set",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "ram-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "on-ball-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "paint-attack-off-screen",
+      "role": "1"
+    }
+  ],
+  "slob-x": [
+    {
+      "criticality": "required",
+      "id": "diagonal-down-screen-set",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "inbound-pass-entry",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "shooting-off-staggered-screens",
+      "role": "2"
+    },
+    {
+      "criticality": "required",
+      "id": "shooting-off-staggered-screens",
+      "role": "3"
+    },
+    {
+      "criticality": "required",
+      "id": "staggered-screen-set",
+      "role": "5"
+    },
+    {
+      "criticality": "required",
+      "id": "staggered-screen-set",
+      "role": "4"
+    },
+    {
+      "criticality": "required",
+      "id": "inside-shoulder-pass-delivery",
+      "role": "1"
+    },
+    {
+      "criticality": "optional",
+      "id": "baseline-sprint-cut",
+      "role": "3"
+    },
+    {
+      "criticality": "optional",
+      "id": "ball-screen-attack-downhill",
+      "role": "1"
     }
   ]
 }

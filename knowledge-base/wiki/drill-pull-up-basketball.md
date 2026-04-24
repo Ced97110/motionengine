@@ -7,6 +7,12 @@ duration_minutes: 10-15
 tags: [strength, upper-body, pulling, conditioning, rebounding, back-strength]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: upper-body-pulling-strength
+    emphasis: primary
+  - id: scapular-retraction
+    emphasis: secondary
 ---
 
 # Pull-Up (Basketball)

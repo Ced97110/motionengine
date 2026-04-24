@@ -5,6 +5,53 @@ formation: 1-3-1
 tags: [zone-offense, 2-3-zone, on-ball-screen, overload, three-point, penetration-kick, corner-three]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: dribble-drag-to-wing
+    role: "1"
+    criticality: required
+  - id: on-ball-screen-use
+    role: "1"
+    criticality: required
+  - id: drive-and-kick-read
+    role: "1"
+    criticality: required
+  - id: on-ball-screen-set
+    role: "5"
+    criticality: required
+  - id: spot-up-three-point-shooting
+    role: "2"
+    criticality: required
+  - id: baseline-deep-cut
+    role: "3"
+    criticality: required
+  - id: corner-three-catch-and-shoot
+    role: "4"
+    criticality: optional
+  - id: offensive-glass-crash
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: drive-and-kick-read
+    for_role: "1"
+  - region: glute_max
+    criticality: required
+    supports_technique: drive-and-kick-read
+    for_role: "1"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: baseline-deep-cut
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: on-ball-screen-set
+    for_role: "5"
+  - region: hip_flexor_complex
+    criticality: optional
+    supports_technique: corner-three-catch-and-shoot
+    for_role: "4"
 ---
 
 # Pick Overload

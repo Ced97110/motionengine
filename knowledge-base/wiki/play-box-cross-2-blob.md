@@ -5,6 +5,23 @@ formation: box
 tags: [blob, baseline, cross-screen, lob, layup, box-set, flexible-nomenclature]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The cross-screen system is designed to free the primary cutter for a lob or layup at the rim, with no perimeter shot as the primary target — maximizing shot quality by design."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Attacking the basket via a cross-screen cut through the lane draws contact from rotating defenders, creating foul opportunities at the rim."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The set-play structure limits ball-handling to the inbounder with a fixed 2-read sequence (O2 then O4), reducing improvised passing decisions that generate turnovers."
 ---
 
 # Box, Cross 2 (BLOB)

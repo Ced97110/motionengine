@@ -5,6 +5,46 @@ formation: 1-4-high
 tags: [back-screen, gate-screen, rim-cut, catch-and-shoot, hand-off, deception]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: back-screen-set
+    role: "1"
+    criticality: required
+  - id: deceptive-fake-cut
+    role: "1"
+    criticality: required
+  - id: hand-off-give
+    role: "4"
+    criticality: required
+  - id: rim-cut-off-screen
+    role: "5"
+    criticality: required
+  - id: gate-screen-set
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot
+    role: "2"
+    criticality: required
+  - id: baseline-runner-cut
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: rim-cut-off-screen
+    for_role: "5"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: baseline-runner-cut
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: back-screen-set
+    for_role: "1"
+  - region: glute_max
+    criticality: optional
+    supports_technique: rim-cut-off-screen
+    for_role: "5"
 ---
 
 # Flip Gate

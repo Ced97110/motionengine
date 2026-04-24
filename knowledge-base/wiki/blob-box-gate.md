@@ -5,6 +5,79 @@ formation: box
 tags: [BLOB, man-to-man, back-screen, gate-screen, cross-screen, catch-and-shoot, post-up, layup]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: back-screen-set
+    role: "2"
+    criticality: required
+  - id: basket-cut-off-screen
+    role: "5"
+    criticality: required
+  - id: gate-screen-usage
+    role: "2"
+    criticality: required
+  - id: catch-and-shoot-wing
+    role: "2"
+    criticality: required
+  - id: cross-screen-set
+    role: "1"
+    criticality: required
+  - id: post-entry-duck-in
+    role: "5"
+    criticality: optional
+  - id: gate-screen-set
+    role: "3"
+    criticality: optional
+  - id: gate-screen-set
+    role: "4"
+    criticality: optional
+demands_anatomy:
+  - region: ankle_complex
+    criticality: required
+    supports_technique: basket-cut-off-screen
+    for_role: "5"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: basket-cut-off-screen
+    for_role: "5"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: gate-screen-usage
+    for_role: "2"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: catch-and-shoot-wing
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: cross-screen-set
+    for_role: "1"
+  - region: glute_max
+    criticality: optional
+    supports_technique: post-entry-duck-in
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Three sequential reads — rim cut off back screen, catch-and-shoot wing, and post duck-in — all target high-efficiency shot types (layup or open 3), eliminating mid-range attempts by design."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Role 5's hard basket cut off the back screen and subsequent post-up duck-in both invite body contact from the help defender in a confined paint area."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The play is a scripted BLOB sequence with pre-assigned reads in strict phase order, limiting live decision-making and keeping the pass count low against an organized man-to-man defense."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Cascading screen actions force the defense into sequential rotations, ensuring at least one of the three reads yields an uncontested shot or layup on nearly every possession."
 ---
 
 # Box Gate (BLOB vs Man-to-Man)

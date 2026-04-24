@@ -5,6 +5,77 @@ formation: 1-4-high
 tags: [BLOB, zone, 2-3-zone, cross, youth, simple, inbounds, corner-three]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-pass-read
+    role: "1"
+    criticality: required
+  - id: corner-cut-spacing
+    role: "2"
+    criticality: required
+  - id: corner-cut-spacing
+    role: "3"
+    criticality: required
+  - id: post-cross-cut
+    role: "4"
+    criticality: required
+  - id: post-cross-cut
+    role: "5"
+    criticality: required
+  - id: catch-and-shoot-corner
+    role: "2"
+    criticality: optional
+  - id: catch-and-shoot-corner
+    role: "3"
+    criticality: optional
+  - id: block-catch-and-finish
+    role: "4"
+    criticality: optional
+  - id: sprint-back-transition-defense
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-cross-cut
+    for_role: "4"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-cross-cut
+    for_role: "5"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: corner-cut-spacing
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: corner-cut-spacing
+    for_role: "3"
+  - region: glute_max
+    criticality: optional
+    supports_technique: block-catch-and-finish
+    for_role: "4"
+  - region: core_outer
+    criticality: optional
+    supports_technique: inbound-pass-read
+    for_role: "1"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The crossing post action and corner spacing force 3 zone defenders to cover 4 receivers, consistently freeing either a corner three or a low-block finish — both high-efficiency shot types."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The inbounder reads a predetermined two-option hierarchy (corner then block), capping decision complexity and limiting risky passes to a single direct delivery."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "By design the play terminates in a corner three or an uncontested low-block catch-and-finish, both of which carry above-average points-per-possession relative to contested mid-range alternatives."
 ---
 
 # BLOB: Cross (vs 2-3 Zone)

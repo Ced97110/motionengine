@@ -42,6 +42,14 @@ CheckId = Literal[
     "missing-citation",
     "schema-section-missing",
     "duplicate-slug",
+    # Play-geometry rules (added with the wiki-as-source-of-truth work).
+    # Graduated severity: new rules land as `warning` so a dirty corpus
+    # doesn't break CI; promote to `error` once the corpus is clean.
+    "play-diagram-per-phase",
+    "play-path-valid-svg",
+    "play-path-roles-resolve",
+    "play-duration-sane",
+    "play-ballstart-known",
 ]
 
 
@@ -677,6 +685,262 @@ def _check_gap_concepts(
 
 
 # ---------------------------------------------------------------------------
+# Play-geometry checks — validate schema v2 `diagram-positions` content.
+# Graduated severity: all five land as `warning` until the corpus has been
+# migrated; promote to `error` once clean.
+# ---------------------------------------------------------------------------
+
+import json  # noqa: E402  (section-local import, keeps diffs small)
+
+_PLAY_DIAGRAM_FENCE_RE = re.compile(
+    r"```\s*json\s+name=diagram-positions\s*\n(?P<body>.*?)\n```",
+    re.DOTALL,
+)
+_PLAY_PHASE_HEADER_RE = re.compile(
+    r"^###\s+Phase\s+(\d+)", re.MULTILINE
+)
+# Whitelist for SVG path data — M/L/C/Q commands, signed floats, whitespace,
+# commas. Rejects any angle bracket, quote, or script-like content.
+_PLAY_SVG_PATH_RE = re.compile(r"^[MLCQmlcq\s\d\.\,\-\+eE]+$")
+
+# Role tokens the importer's `_resolve_destination` recognizes. Duplicated
+# here to avoid a runtime import from a services module; keep in sync if
+# the importer's list grows.
+_PLAY_ROLE_TOKENS: frozenset[str] = frozenset({
+    "right_wing", "left_wing", "top", "right_corner", "left_corner",
+    "right_elbow", "left_elbow", "basket", "rim", "left_block", "right_block",
+    "ball_side_corner", "weak_side_corner", "weak_side_wing", "ball_side_wing",
+    "high_post", "low_post", "free_throw_line", "paint", "key",
+})
+
+
+def _play_blocks(page: PageRecord) -> list[tuple[dict, int]]:
+    """Parse every diagram-positions block; yield ``(data, line_no)``.
+
+    ``line_no`` is 1-based, pointing at the opening fence in the file.
+    """
+    out: list[tuple[dict, int]] = []
+    for match in _PLAY_DIAGRAM_FENCE_RE.finditer(page.body):
+        raw = match.group("body")
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(data, dict):
+            continue
+        # Line number of the opening fence, counted against body_start_line.
+        prefix_lines = page.body[: match.start()].count("\n")
+        out.append((data, page.body_start_line + prefix_lines))
+    return out
+
+
+def _is_play_page(page: PageRecord) -> bool:
+    return page.frontmatter.get("type") == "play"
+
+
+def _check_play_diagram_per_phase(pages: list[PageRecord]) -> list[Finding]:
+    """Warn when a play page's ### Phase count exceeds its block count."""
+    findings: list[Finding] = []
+    for p in pages:
+        if not _is_play_page(p):
+            continue
+        phases = set(_PLAY_PHASE_HEADER_RE.findall(p.body))
+        blocks = _play_blocks(p)
+        if not phases and not blocks:
+            continue
+        if len(blocks) < len(phases):
+            findings.append(
+                Finding(
+                    check="play-diagram-per-phase",
+                    severity="warning",
+                    file=p.file_path,
+                    message=(
+                        f"{len(phases)} phase section(s) but only {len(blocks)} "
+                        "diagram-positions block(s) — each phase should carry "
+                        "its own block for deterministic lab round-trip."
+                    ),
+                )
+            )
+    return findings
+
+
+def _check_play_path_valid_svg(pages: list[PageRecord]) -> list[Finding]:
+    """Reject authored paths that contain disallowed characters.
+
+    Whitelist: M/L/C/Q commands, digits, signs, decimals, exponents,
+    whitespace, commas. Anything else (angle brackets, quotes, script) is
+    a red flag for injection and fails the rule.
+    """
+    findings: list[Finding] = []
+    for p in pages:
+        if not _is_play_page(p):
+            continue
+        for block, line_no in _play_blocks(p):
+            actions = block.get("actions")
+            if not isinstance(actions, list):
+                continue
+            for idx, a in enumerate(actions):
+                if not isinstance(a, dict):
+                    continue
+                path = a.get("path")
+                if not isinstance(path, str) or not path.strip():
+                    continue
+                if not _PLAY_SVG_PATH_RE.match(path):
+                    findings.append(
+                        Finding(
+                            check="play-path-valid-svg",
+                            severity="warning",
+                            file=p.file_path,
+                            line=line_no,
+                            message=(
+                                f"action[{idx}].path contains characters outside "
+                                "the M/L/C/Q whitelist — possible injection or "
+                                f"malformed authoring: {path[:60]!r}"
+                            ),
+                        )
+                    )
+    return findings
+
+
+def _check_play_path_roles_resolve(pages: list[PageRecord]) -> list[Finding]:
+    """Every action's ``from`` / ``to`` must reference a known player or role token."""
+    findings: list[Finding] = []
+    for p in pages:
+        if not _is_play_page(p):
+            continue
+        for block, line_no in _play_blocks(p):
+            players = block.get("players")
+            if not isinstance(players, list):
+                continue
+            known_ids: set[str] = set()
+            for entry in players:
+                if isinstance(entry, dict) and entry.get("role") is not None:
+                    known_ids.add(str(entry["role"]))
+            actions = block.get("actions")
+            if not isinstance(actions, list):
+                continue
+            for idx, a in enumerate(actions):
+                if not isinstance(a, dict):
+                    continue
+                mover = a.get("from")
+                if mover is not None and str(mover) not in known_ids:
+                    findings.append(
+                        Finding(
+                            check="play-path-roles-resolve",
+                            severity="warning",
+                            file=p.file_path,
+                            line=line_no,
+                            message=(
+                                f"action[{idx}].from={mover!r} not in the block's "
+                                "players roster"
+                            ),
+                        )
+                    )
+                to = a.get("to")
+                # `to` can be: a player id (string matching a role),
+                # a role token (string in _PLAY_ROLE_TOKENS), or a coord list.
+                role_key = (
+                    to.lower().replace("-", "_").replace(" ", "_")
+                    if isinstance(to, str)
+                    else ""
+                )
+                if (
+                    isinstance(to, str)
+                    and to not in known_ids
+                    and role_key not in _PLAY_ROLE_TOKENS
+                ):
+                    findings.append(
+                        Finding(
+                            check="play-path-roles-resolve",
+                            severity="warning",
+                            file=p.file_path,
+                            line=line_no,
+                            message=(
+                                f"action[{idx}].to={to!r} is not a player id, a "
+                                "coord list, or a known role token"
+                            ),
+                        )
+                    )
+    return findings
+
+
+def _check_play_duration_sane(pages: list[PageRecord]) -> list[Finding]:
+    """Flag timing overrides outside the [500, 10000] ms range."""
+    findings: list[Finding] = []
+    for p in pages:
+        if not _is_play_page(p):
+            continue
+        for block, line_no in _play_blocks(p):
+            actions = block.get("actions")
+            if not isinstance(actions, list):
+                continue
+            for idx, a in enumerate(actions):
+                if not isinstance(a, dict):
+                    continue
+                for key in ("durationMs", "gapAfterMs"):
+                    value = a.get(key)
+                    if value is None:
+                        continue
+                    if not isinstance(value, (int, float)):
+                        findings.append(
+                            Finding(
+                                check="play-duration-sane",
+                                severity="warning",
+                                file=p.file_path,
+                                line=line_no,
+                                message=f"action[{idx}].{key}={value!r} is not numeric",
+                            )
+                        )
+                        continue
+                    if value < 500 or value > 10000:
+                        findings.append(
+                            Finding(
+                                check="play-duration-sane",
+                                severity="warning",
+                                file=p.file_path,
+                                line=line_no,
+                                message=(
+                                    f"action[{idx}].{key}={value} outside sane "
+                                    "range [500, 10000] ms"
+                                ),
+                            )
+                        )
+    return findings
+
+
+def _check_play_ballstart_known(pages: list[PageRecord]) -> list[Finding]:
+    """Block-level ``ballStart`` must match a player id in the same block."""
+    findings: list[Finding] = []
+    for p in pages:
+        if not _is_play_page(p):
+            continue
+        for block, line_no in _play_blocks(p):
+            ball_start = block.get("ballStart")
+            if ball_start is None:
+                continue
+            known_ids: set[str] = set()
+            players = block.get("players")
+            if isinstance(players, list):
+                for entry in players:
+                    if isinstance(entry, dict) and entry.get("role") is not None:
+                        known_ids.add(str(entry["role"]))
+            if str(ball_start) not in known_ids:
+                findings.append(
+                    Finding(
+                        check="play-ballstart-known",
+                        severity="warning",
+                        file=p.file_path,
+                        line=line_no,
+                        message=(
+                            f"ballStart={ball_start!r} not in the block's "
+                            "players roster"
+                        ),
+                    )
+                )
+    return findings
+
+
+# ---------------------------------------------------------------------------
 # Report
 # ---------------------------------------------------------------------------
 
@@ -788,6 +1052,12 @@ def run_lint(wiki_directory: Path) -> tuple[int, list[Finding]]:
     findings.extend(_check_schema_sections(pages))
     findings.extend(_check_duplicate_index_entries(pages))
     findings.extend(_check_gap_concepts(pages, slug_set, wiki_directory))
+    # Play-geometry checks.
+    findings.extend(_check_play_diagram_per_phase(pages))
+    findings.extend(_check_play_path_valid_svg(pages))
+    findings.extend(_check_play_path_roles_resolve(pages))
+    findings.extend(_check_play_duration_sane(pages))
+    findings.extend(_check_play_ballstart_known(pages))
     return len(pages), findings
 
 

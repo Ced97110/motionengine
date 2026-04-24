@@ -5,6 +5,60 @@ formation: box
 tags: [pick-and-roll, high-post, rub-cut, double-screen, post-up, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: high-post-rub-cut
+    role: "2"
+    criticality: required
+  - id: low-post-reception
+    role: "2"
+    criticality: optional
+  - id: pick-and-roll-ball-handler
+    role: "1"
+    criticality: required
+  - id: pick-and-roll-screen-set
+    role: "4"
+    criticality: required
+  - id: roll-or-flare-read
+    role: "4"
+    criticality: required
+  - id: double-screen-set
+    role: "5"
+    criticality: optional
+  - id: double-screen-set
+    role: "3"
+    criticality: optional
+  - id: curl-cut-off-double-screen
+    role: "2"
+    criticality: optional
+  - id: multi-read-pass-decision
+    role: "1"
+    criticality: required
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: high-post-rub-cut
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: high-post-rub-cut
+    for_role: "2"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: pick-and-roll-ball-handler
+    for_role: "1"
+  - region: core_outer
+    criticality: required
+    supports_technique: pick-and-roll-screen-set
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: roll-or-flare-read
+    for_role: "4"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: curl-cut-off-double-screen
+    for_role: "2"
 ---
 
 # Motion Offense Pick-and-Roll Play

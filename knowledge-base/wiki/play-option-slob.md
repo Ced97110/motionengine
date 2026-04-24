@@ -5,6 +5,43 @@ formation: box
 tags: [SLOB, man-to-man, shooter, read-the-defense, box-set, catch-and-shoot, on-ball-screen]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: down-screen-entry
+    role: "5"
+    criticality: required
+  - id: on-ball-screen-set
+    role: "4"
+    criticality: required
+  - id: read-screen-direction
+    role: "2"
+    criticality: required
+  - id: catch-and-shoot
+    role: "2"
+    criticality: required
+  - id: inbound-pass-delivery
+    role: "2"
+    criticality: required
+  - id: rim-attack-off-ball-screen
+    role: "1"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: read-screen-direction
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: catch-and-shoot
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: on-ball-screen-set
+    for_role: "4"
+  - region: glute_max
+    criticality: optional
+    supports_technique: rim-attack-off-ball-screen
+    for_role: "1"
 ---
 
 # Option (SLOB)

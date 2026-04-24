@@ -5,6 +5,57 @@ formation: 1-4-high
 tags: [high-post-cut, double-screen, pick-and-roll, catch-and-shoot, half-court, man-to-man]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: high-post-cut-off-screen
+    role: "1"
+    criticality: required
+  - id: on-ball-pick-and-roll-attack
+    role: "2"
+    criticality: required
+  - id: pick-and-roll-screen-set
+    role: "5"
+    criticality: required
+  - id: double-screen-set
+    role: "3"
+    criticality: required
+  - id: double-screen-set
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot
+    role: "1"
+    criticality: required
+  - id: roll-to-rim
+    role: "5"
+    criticality: optional
+  - id: dump-off-pass
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: high-post-cut-off-screen
+    for_role: "1"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: catch-and-shoot
+    for_role: "1"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: on-ball-pick-and-roll-attack
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: pick-and-roll-screen-set
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: roll-to-rim
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: double-screen-set
+    for_role: "4"
 ---
 
 # High-Post

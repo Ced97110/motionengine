@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [conditioning, core, strength, rotation, anti-rotation, injury-prevention]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: anti-rotation-core-stability
+    emphasis: primary
+  - id: core-bracing
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Horizontal Cable Core (Pallof) Press — Core Rotation/Anti-Rotation

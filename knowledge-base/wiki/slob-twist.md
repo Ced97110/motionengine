@@ -5,6 +5,43 @@ formation: box (slots variant)
 tags: [SLOB, lob, ram-screen, on-ball-screen, paint-attack, pick-and-roll]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: lob-pass-inbound
+    role: "2"
+    criticality: optional
+  - id: down-screen-set
+    role: "5"
+    criticality: required
+  - id: up-screen-set
+    role: "3"
+    criticality: required
+  - id: ram-screen-set
+    role: "5"
+    criticality: required
+  - id: on-ball-screen-set
+    role: "4"
+    criticality: required
+  - id: paint-attack-off-screen
+    role: "1"
+    criticality: required
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: paint-attack-off-screen
+    for_role: "1"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: paint-attack-off-screen
+    for_role: "1"
+  - region: glute_max
+    criticality: required
+    supports_technique: ram-screen-set
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: on-ball-screen-set
+    for_role: "4"
 ---
 
 # SLOB Twist

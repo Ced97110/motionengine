@@ -5203,6 +5203,65 @@
     "height",
     "roster-construction"
   ],
+  "concept-technique-closeout-contest-verticality": [
+    "defense",
+    "closeout",
+    "verticality",
+    "jump-contest",
+    "shot-defense"
+  ],
+  "concept-technique-dribble-handoff-receipt": [
+    "offense",
+    "handoff",
+    "dho",
+    "pick-and-roll",
+    "receipt"
+  ],
+  "concept-technique-dump-off-pass": [
+    "offense",
+    "passing",
+    "paint",
+    "finish",
+    "read",
+    "live-dribble"
+  ],
+  "concept-technique-flare-screen-set": [
+    "offense",
+    "screens",
+    "off-ball",
+    "flare",
+    "screen-setting",
+    "footwork"
+  ],
+  "concept-technique-flash-cut": [
+    "offense",
+    "cutting",
+    "high-post",
+    "flash",
+    "weak-side",
+    "zone-attack"
+  ],
+  "concept-technique-hard-cut-to-paint": [
+    "offense",
+    "cutting",
+    "off-ball",
+    "paint-touch",
+    "spacing"
+  ],
+  "concept-technique-skip-pass": [
+    "offense",
+    "passing",
+    "ball-reversal",
+    "zone-attack",
+    "skip"
+  ],
+  "concept-technique-soft-landing-mechanics": [
+    "biomechanics",
+    "landing",
+    "deceleration",
+    "injury-prevention",
+    "jumping"
+  ],
   "concept-ten-steps-progression": [
     "conditioning",
     "program-design",
@@ -5818,6 +5877,17 @@
     "staggered-screens",
     "man-to-man",
     "double-screens"
+  ],
+  "defenses-vs-counters": [
+    "defense",
+    "offense",
+    "man-to-man",
+    "zone",
+    "press",
+    "junk-defense",
+    "counters",
+    "game-plan",
+    "scouting"
   ],
   "defensive-checklist-principles": [
     "defense",

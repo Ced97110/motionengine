@@ -5,6 +5,43 @@ formation: 3-out-2-in
 tags: [zone, 2-3-zone, lob, backdoor, athletic, weak-side, overload, quick-hitter, set-play]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: dribble-penetration-to-corner
+    role: "2"
+    criticality: required
+  - id: weak-side-repositioning
+    role: "3"
+    criticality: required
+  - id: zone-screen-on-low-defender
+    role: "5"
+    criticality: required
+  - id: backdoor-lob-cut
+    role: "3"
+    criticality: required
+  - id: lob-pass-delivery
+    role: "1"
+    criticality: required
+  - id: midrange-pull-up
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: backdoor-lob-cut
+    for_role: "3"
+  - region: glute_max
+    criticality: required
+    supports_technique: backdoor-lob-cut
+    for_role: "3"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: dribble-penetration-to-corner
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: zone-screen-on-low-defender
+    for_role: "5"
 ---
 
 # Set Play: 32 Lob (vs 2-3 Zone)

@@ -4,6 +4,7 @@
     "defensive-coaching-philosophy"
   ],
   "S1, p.11": [
+    "defenses-vs-counters",
     "defensive-coaching-philosophy-herb-brown",
     "defensive-coaching-philosophy",
     "weak-side-defense-rotation",
@@ -179,11 +180,13 @@
     "team-defense-calls-signals"
   ],
   "S1, p.177": [
+    "defenses-vs-counters",
     "full-court-press-defense",
     "press-continuity-1",
     "run-and-jump-defense"
   ],
   "S1, p.178": [
+    "defenses-vs-counters",
     "full-court-press-defense",
     "zone-press-combinations"
   ],
@@ -201,18 +204,21 @@
     "team-defense-calls-signals"
   ],
   "S1, p.183": [
+    "defenses-vs-counters",
     "press-continuity-1",
     "run-and-jump-defense",
     "st-josephs-press",
     "zone-press-combinations"
   ],
   "S1, p.184": [
+    "defenses-vs-counters",
     "full-court-press-defense",
     "st-josephs-press",
     "team-defense-calls-signals",
     "zone-press-combinations"
   ],
   "S1, p.185": [
+    "defenses-vs-counters",
     "zone-press-combinations"
   ],
   "S1, p.186": [
@@ -425,6 +431,7 @@
     "weak-side-help-defense"
   ],
   "S1, pp.127-128": [
+    "defenses-vs-counters",
     "pick-and-roll-defense-summary",
     "pick-and-roll-defense"
   ],
@@ -528,7 +535,11 @@
   "S1, pp.176-182": [
     "full-court-press-defense"
   ],
+  "S1, pp.176-184": [
+    "defenses-vs-counters"
+  ],
   "S1, pp.176-186": [
+    "defenses-vs-counters",
     "full-court-press-defense"
   ],
   "S1, pp.177-182": [
@@ -551,6 +562,7 @@
     "press-continuity-1"
   ],
   "S1, pp.182-183": [
+    "defenses-vs-counters",
     "diamond-zone-press",
     "zone-press-combinations"
   ],
@@ -558,10 +570,12 @@
     "st-josephs-press"
   ],
   "S1, pp.183-185": [
+    "defenses-vs-counters",
     "st-josephs-press",
     "zone-press-combinations"
   ],
   "S1, pp.184-185": [
+    "defenses-vs-counters",
     "st-josephs-press",
     "zone-press-combinations"
   ],
@@ -635,6 +649,7 @@
   ],
   "S1, pp.42-43": [
     "basic-rules-of-defense",
+    "defenses-vs-counters",
     "defensive-transition-principles"
   ],
   "S1, pp.42-46": [
@@ -4332,7 +4347,8 @@
     "concept-defending-cross-screen-sts"
   ],
   "S13, p.210": [
-    "concept-pnr-defense-s13"
+    "concept-pnr-defense-s13",
+    "defenses-vs-counters"
   ],
   "S13, p.211": [
     "drill-defending-sideline-pnr"
@@ -4374,6 +4390,7 @@
     "play-line-blob"
   ],
   "S13, p.252": [
+    "defenses-vs-counters",
     "play-lob-blob"
   ],
   "S13, p.254": [
@@ -4512,6 +4529,7 @@
   ],
   "S13, pp.212-213": [
     "concept-pnr-defense-s13",
+    "defenses-vs-counters",
     "drill-defending-middle-pnr"
   ],
   "S13, pp.214-215": [
@@ -4540,15 +4558,19 @@
     "play-box-cross-2-blob"
   ],
   "S13, pp.252-257": [
-    "concept-attacking-disruptive-defenses"
+    "concept-attacking-disruptive-defenses",
+    "defenses-vs-counters"
   ],
   "S13, pp.253-254": [
+    "defenses-vs-counters",
     "play-versus-1-3-1"
   ],
   "S13, pp.254-255": [
+    "defenses-vs-counters",
     "play-versus-box-and-one"
   ],
   "S13, pp.255-256": [
+    "defenses-vs-counters",
     "play-versus-triangle-and-two"
   ],
   "S13, pp.3-5": [
@@ -9889,6 +9911,7 @@
   ],
   "S7, p.239": [
     "concept-on-ball-pressure-fratello",
+    "defenses-vs-counters",
     "drill-fratello-3v3-help-recover"
   ],
   "S7, p.240": [
@@ -9925,16 +9948,19 @@
     "drill-obrien-press-4v4v4"
   ],
   "S7, p.255": [
-    "concept-defensive-strategies-del-harris"
+    "concept-defensive-strategies-del-harris",
+    "defenses-vs-counters"
   ],
   "S7, p.256": [
-    "concept-defensive-strategies-del-harris"
+    "concept-defensive-strategies-del-harris",
+    "defenses-vs-counters"
   ],
   "S7, p.257": [
     "concept-pnr-coverage-options"
   ],
   "S7, p.258": [
-    "concept-pnr-defensive-coverages-del-harris"
+    "concept-pnr-defensive-coverages-del-harris",
+    "defenses-vs-counters"
   ],
   "S7, p.259": [
     "concept-isolation-defense-del-harris",
@@ -9956,7 +9982,8 @@
     "concept-in-game-defensive-adjustments"
   ],
   "S7, p.265": [
-    "concept-combination-alternating-defenses"
+    "concept-combination-alternating-defenses",
+    "defenses-vs-counters"
   ],
   "S7, p.266": [
     "concept-combination-alternating-defenses",
@@ -9964,7 +9991,8 @@
   ],
   "S7, p.267": [
     "concept-late-game-defensive-strategy",
-    "concept-pnr-coverage-options"
+    "concept-pnr-coverage-options",
+    "defenses-vs-counters"
   ],
   "S7, p.268": [
     "concept-late-game-defensive-strategy",
@@ -10411,7 +10439,8 @@
     "drill-zigzag-on-ball-pressure"
   ],
   "S7, pp.237-240": [
-    "concept-on-ball-pressure-fratello"
+    "concept-on-ball-pressure-fratello",
+    "defenses-vs-counters"
   ],
   "S7, pp.238-239": [
     "drill-fratello-3v3-help-recover",
@@ -10442,11 +10471,15 @@
     "concept-defensive-strategies-del-harris",
     "concept-defensive-strategy-del-harris"
   ],
+  "S7, pp.255-256": [
+    "defenses-vs-counters"
+  ],
   "S7, pp.257-258": [
     "concept-pnr-coverage-options"
   ],
   "S7, pp.257-260": [
-    "concept-pnr-defensive-coverages-del-harris"
+    "concept-pnr-defensive-coverages-del-harris",
+    "defenses-vs-counters"
   ],
   "S7, pp.260-262": [
     "concept-oob-defense-del-harris",
@@ -10456,7 +10489,8 @@
     "concept-in-game-defensive-adjustments"
   ],
   "S7, pp.265-266": [
-    "concept-combination-alternating-defenses"
+    "concept-combination-alternating-defenses",
+    "defenses-vs-counters"
   ],
   "S7, pp.266-268": [
     "concept-late-game-defensive-strategy"
@@ -10464,6 +10498,9 @@
   "S7, pp.266-269": [
     "concept-late-game-defensive-adjustments",
     "concept-late-game-defensive-strategy"
+  ],
+  "S7, pp.268-269": [
+    "defenses-vs-counters"
   ],
   "S7, pp.27-28": [
     "concept-dribble-moves-van-gundy"

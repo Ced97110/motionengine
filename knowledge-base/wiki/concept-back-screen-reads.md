@@ -72,7 +72,7 @@ Three players involved: ball handler (1), screener (5) coming from behind the de
 - [[concept-screening-fundamentals]] — screener rules, receiver rules, passer rules, and defensive reads
 - [[concept-down-screen-reads]] — off-ball down screen reads
 - [[concept-flare-screen-reads]] — off-ball flare screen reads
-- [[defending-off-ball-screens]] — Herb Brown's principles for defending back screens
+- [[defending-off-ball-screens]] — principles for defending back screens
 
 ## Sources
 - [S7, pp.54-55] — the source coach, Chapter 4: Screens and Screen Plays, pro Coaches Playbook

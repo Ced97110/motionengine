@@ -5,6 +5,43 @@ formation: box
 tags: [back-screen, down-screen, screen-the-screener, post-up, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: back-screen-set
+    role: "2"
+    criticality: required
+  - id: post-up-catch-and-read
+    role: "4"
+    criticality: required
+  - id: elbow-catch-and-shoot
+    role: "2"
+    criticality: required
+  - id: down-screen-set-and-roll
+    role: "5"
+    criticality: required
+  - id: flare-cut-off-screen
+    role: "3"
+    criticality: optional
+  - id: duck-in-post-entry
+    role: "4"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-up-catch-and-read
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-up-catch-and-read
+    for_role: "4"
+  - region: core_outer
+    criticality: required
+    supports_technique: back-screen-set
+    for_role: "2"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: down-screen-set-and-roll
+    for_role: "5"
 ---
 
 # Motion Offense Up Screen Play

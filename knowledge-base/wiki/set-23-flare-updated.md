@@ -5,6 +5,43 @@ formation: 1-3-1
 tags: [zone, 2-3-zone, flare-screen, three-point, quick-hitter, set-play, shooter, ball-movement]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: skip-pass-over-screen
+    role: "1"
+    criticality: required
+  - id: flare-screen-set
+    role: "5"
+    criticality: required
+  - id: flare-cut-to-wing
+    role: "2"
+    criticality: required
+  - id: zone-ball-movement
+    role: "2"
+    criticality: required
+  - id: pin-down-screen-set
+    role: "4"
+    criticality: optional
+  - id: catch-and-shoot-off-screen
+    role: "2"
+    criticality: required
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: flare-cut-to-wing
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: flare-cut-to-wing
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: flare-screen-set
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: catch-and-shoot-off-screen
+    for_role: "2"
 ---
 
 # Set Play: 23 Flare (vs 2-3 Zone)

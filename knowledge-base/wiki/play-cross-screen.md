@@ -5,6 +5,43 @@ formation: box
 tags: [cross-screen, double-screen, post-up, catch-and-shoot, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: dribble-entry-wing
+    role: "1"
+    criticality: required
+  - id: cross-screen-set
+    role: "2"
+    criticality: required
+  - id: post-up-catch-and-hold
+    role: "4"
+    criticality: required
+  - id: parallel-double-screen-set
+    role: "3"
+    criticality: required
+  - id: catch-and-shoot-off-screen
+    role: "2"
+    criticality: required
+  - id: screen-slip-to-basket
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-up-catch-and-hold
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-up-catch-and-hold
+    for_role: "4"
+  - region: core_outer
+    criticality: required
+    supports_technique: cross-screen-set
+    for_role: "2"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: catch-and-shoot-off-screen
+    for_role: "2"
 ---
 
 # Motion Offense Cross-Screen Play

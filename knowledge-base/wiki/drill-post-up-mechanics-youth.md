@@ -7,6 +7,25 @@ duration_minutes: 5
 tags: [post, offense, footwork, shooting, finishing, one-on-one]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-moves-back-to-basket
+    emphasis: primary
+  - id: post-footwork
+    emphasis: primary
+  - id: pump-fake
+    emphasis: secondary
+  - id: post-face-up-moves
+    emphasis: secondary
+  - id: drop-step
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Post-Up Mechanics (Drill 96)

@@ -5,6 +5,66 @@ formation: 1-4-high
 tags: [BLOB, zone, 2-3-zone, skip-pass, flare-screen, double-screen, inbounds, three-point]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-entry-pass
+    role: "2"
+    criticality: required
+  - id: skip-pass-vs-zone
+    role: "5"
+    criticality: required
+  - id: skip-pass-vs-zone
+    role: "4"
+    criticality: required
+  - id: flare-screen-set
+    role: "3"
+    criticality: required
+  - id: flare-screen-set
+    role: "5"
+    criticality: required
+  - id: shooter-flare-cut
+    role: "2"
+    criticality: required
+  - id: pass-fake-vs-zone
+    role: "4"
+    criticality: optional
+  - id: screen-slip-vs-zone
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: shooter-flare-cut
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: shooter-flare-cut
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: flare-screen-set
+    for_role: "3"
+  - region: glute_max
+    criticality: optional
+    supports_technique: flare-screen-set
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The entire play is designed to deliver the best shooter an open catch-and-shoot three-pointer on the weak-side wing; all screening and skip-pass actions exist solely to create that uncontested look."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted two-skip-pass sequence routes the ball along predetermined paths with optional pass fakes and relay options built in, limiting improvised ball movement that invites turnovers against a zone."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Delivering a set-play three-point attempt to the team's best shooter off a catch — a high-value possession outcome — directly raises points per possession versus a contested or lower-quality shot."
 ---
 
 # BLOB: Double Skip (vs 2-3 Zone)

@@ -5,6 +5,54 @@ formation: 2-3 high-post
 tags: [continuity, high-pick, pick-and-roll, double-screen, dribble-handoff, motion, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: high-screen-set
+    role: "5"
+    criticality: required
+  - id: on-ball-pick-and-roll-read
+    role: "1"
+    criticality: required
+  - id: double-screen-set
+    role: "3"
+    criticality: required
+  - id: dribble-handoff
+    role: "1"
+    criticality: required
+  - id: rub-cut-off-screen
+    role: "2"
+    criticality: required
+  - id: backdoor-cut
+    role: "4"
+    criticality: optional
+  - id: roll-to-basket
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: on-ball-pick-and-roll-read
+    for_role: "1"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: rub-cut-off-screen
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: roll-to-basket
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: high-screen-set
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: backdoor-cut
+    for_role: "4"
+  - region: hip_flexor_complex
+    criticality: optional
+    supports_technique: dribble-handoff
+    for_role: "1"
 ---
 
 # Continuity — Sets Out of the High Pick

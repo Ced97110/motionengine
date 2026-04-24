@@ -7,6 +7,27 @@ duration_minutes: 30-60
 tags: [athleticism, plyometrics, tumbling, agility, power, coordination, body-control, off-season]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: front-flip-mechanics
+    emphasis: primary
+  - id: explosive-vertical-jump
+    emphasis: primary
+  - id: landing-mechanics
+    emphasis: secondary
+  - id: rotational-tolerance
+    emphasis: secondary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: primary
 ---
 
 # Front Flip Progressive Chain (10 Steps)

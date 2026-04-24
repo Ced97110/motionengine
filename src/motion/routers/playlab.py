@@ -1,6 +1,6 @@
 """Play-lab HTTP endpoints — authoring surface for the Tier 0 editor.
 
-Two thin wrappers:
+Three groups of endpoints:
 
 - ``POST /api/playlab/extract-prose`` → Claude-based prose extractor
   (:mod:`motion.services.play_extractor`).
@@ -8,11 +8,16 @@ Two thin wrappers:
   → bypass the LLM and build V7Play drafts directly from the wiki's
   structured ``json name=diagram-positions`` blocks
   (:mod:`motion.services.wiki_importer`).
+- ``POST /api/playlab/save-to-wiki/{slug}`` → write-back: take a V7Play
+  authored in the lab and serialize it into the wiki page's
+  ``diagram-positions`` fences, preserving every other byte of the file.
+  Two-stage (preview → write) so every on-disk change is human-approved.
 """
 
 from __future__ import annotations
 
-from typing import Any
+import difflib
+from typing import Any, Literal
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, ConfigDict
@@ -20,9 +25,15 @@ from pydantic.alias_generators import to_camel
 
 from motion.services.play_extractor import extract_play_from_prose
 from motion.services.wiki_importer import (
+    _resolve_wiki_path,
     import_wiki_play,
     list_importable_wiki_plays,
 )
+from motion.services.wiki_writer import (
+    render_updated_markdown,
+    v7_play_to_diagram_blocks,
+)
+from motion.wiki_ops.paths import wiki_dir
 
 
 class _CamelModel(BaseModel):
@@ -96,4 +107,72 @@ async def import_wiki(slug: str) -> ImportWikiResponse:
         play=result.play,
         todos=result.todos,
         source=result.source,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Save-to-wiki (write-back)
+# ---------------------------------------------------------------------------
+
+
+class SaveToWikiRequest(_CamelModel):
+    play: dict[str, Any]
+    mode: Literal["preview", "write"]
+
+
+class SaveToWikiResponse(_CamelModel):
+    diff: str
+    warnings: list[str]
+    path: str | None = None
+    bytes_written: int | None = None
+
+
+@router.post("/save-to-wiki/{slug}", response_model=SaveToWikiResponse)
+async def save_to_wiki(
+    slug: str, request: SaveToWikiRequest
+) -> SaveToWikiResponse:
+    """Preview or persist a V7Play's geometry into a wiki page.
+
+    ``mode: "preview"`` returns a unified diff + warnings without writing;
+    the lab's confirmation modal uses this to let the human review changes.
+    ``mode: "write"`` persists ``new_md`` to disk and returns the same diff
+    plus the written path/bytes. No git commits are made — humans run
+    ``git add`` + commit so every change carries a reviewable message.
+    """
+    try:
+        root = wiki_dir()
+        path = _resolve_wiki_path(slug, root)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    if not path.is_file():
+        raise HTTPException(status_code=404, detail=f"wiki page not found: {slug}")
+
+    existing_md = path.read_text(encoding="utf-8")
+    blocks, writer_warnings = v7_play_to_diagram_blocks(request.play)
+    new_md, render_warnings = render_updated_markdown(existing_md, blocks)
+    warnings = [*writer_warnings, *render_warnings]
+
+    diff = "".join(
+        difflib.unified_diff(
+            existing_md.splitlines(keepends=True),
+            new_md.splitlines(keepends=True),
+            fromfile=f"a/{slug}.md",
+            tofile=f"b/{slug}.md",
+            n=3,
+        )
+    )
+
+    if request.mode == "preview":
+        return SaveToWikiResponse(diff=diff, warnings=warnings)
+
+    # mode == "write" — persist atomically. Writing via ``Path.write_text``
+    # is not strictly atomic across crashes, but matches how ingest.py
+    # already writes wiki files (wiki_ops/ingest.py:799,932). Upgrading to
+    # write-to-tmp-and-rename is a follow-up once we see real failure modes.
+    bytes_written = path.write_text(new_md, encoding="utf-8")
+    return SaveToWikiResponse(
+        diff=diff,
+        warnings=warnings,
+        path=str(path),
+        bytes_written=bytes_written,
     )

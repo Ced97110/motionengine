@@ -5,6 +5,68 @@ formation: irregular
 tags: [BLOB, zone, 2-3-zone, quick-hitter, corner-three, screen, post-up, inbounds]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-pass-read
+    role: "1"
+    criticality: required
+  - id: curl-cut-to-corner
+    role: "2"
+    criticality: required
+  - id: simultaneous-screen-set
+    role: "4"
+    criticality: required
+  - id: simultaneous-screen-set
+    role: "5"
+    criticality: required
+  - id: catch-and-shoot-corner-three
+    role: "2"
+    criticality: required
+  - id: low-block-catch-and-shoot
+    role: "4"
+    criticality: optional
+  - id: cut-disguise
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: curl-cut-to-corner
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: curl-cut-to-corner
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: simultaneous-screen-set
+    for_role: "4"
+  - region: glute_max
+    criticality: optional
+    supports_technique: low-block-catch-and-shoot
+    for_role: "4"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Dual simultaneous screens free role 2 for a corner three or role 4 for a low-block catch-and-shoot — both are high-efficiency shot types with no mid-range attempts by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The inbounder (role 1) makes a single pre-read pass to one of two predetermined targets, limiting the sequence to one decision and one delivery under pressure."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "By targeting a corner three as the primary option and a low-block jumper as the counter, the play concentrates possessions on above-average expected-point locations."
+  - factor: pace
+    direction: lowers
+    concept_slug: concept-four-factors
+    magnitude: low
+    rationale: "As a scripted BLOB quick-hitter reserved for special situations, the play is used infrequently and by design does not contribute to up-tempo possession generation."
 ---
 
 # BLOB: Hawk (vs 2-3 Zone)

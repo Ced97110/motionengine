@@ -5,6 +5,54 @@ formation: 1-4-high
 tags: [flex-screen, high-post, off-ball-screen, man-to-man, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: stationary-high-post-screen
+    role: "5"
+    criticality: required
+  - id: off-ball-screen-use
+    role: "1"
+    criticality: required
+  - id: off-ball-screen-use
+    role: "2"
+    criticality: required
+  - id: flex-screen-set
+    role: "3"
+    criticality: required
+  - id: flex-cut-to-rim
+    role: "4"
+    criticality: required
+  - id: backdoor-cut
+    role: "4"
+    criticality: optional
+  - id: high-post-catch-and-shoot
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: ankle_complex
+    criticality: required
+    supports_technique: stationary-high-post-screen
+    for_role: "5"
+  - region: core_outer
+    criticality: required
+    supports_technique: stationary-high-post-screen
+    for_role: "5"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: flex-cut-to-rim
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: flex-cut-to-rim
+    for_role: "4"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: backdoor-cut
+    for_role: "4"
+  - region: hip_flexor_complex
+    criticality: optional
+    supports_technique: off-ball-screen-use
+    for_role: "1"
 ---
 
 # X-Cross

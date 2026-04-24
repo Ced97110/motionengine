@@ -5,6 +5,57 @@ formation: stack
 tags: [BLOB, man-to-man, youth, stack, sequential-cuts, simplicity]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: hard-cut-to-corner
+    role: "1"
+    criticality: required
+  - id: hard-cut-to-weak-side-block
+    role: "4"
+    criticality: required
+  - id: catch-and-finish-near-block
+    role: "3"
+    criticality: required
+  - id: inbound-pass-read
+    role: "2"
+    criticality: required
+  - id: safety-outlet-cut
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: hard-cut-to-corner
+    for_role: "1"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: hard-cut-to-weak-side-block
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: catch-and-finish-near-block
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: inbound-pass-read
+    for_role: "2"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Sequential cuts by roles 1 and 4 pull defenders out of the paint, leaving role 3 with a catch-and-finish opportunity at the block — a high-percentage look by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The set-play structure routes the inbound pass directly to a pre-designated receiver after just one or two reads, limiting live-ball turnovers compared to open motion."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Targeting a near-block finish as the primary option converts a set-play possession into a near-rim attempt, maximizing expected points per trip."
 ---
 
 # BLOB Stack Man (Spread)

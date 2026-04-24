@@ -5,6 +5,49 @@ formation: box
 tags: [SLOB, man-to-man, pick-and-roll, box-set, quick-hitter, floor-spacing]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: down-screen-set
+    role: "4"
+    criticality: required
+  - id: down-screen-set
+    role: "5"
+    criticality: required
+  - id: cut-to-top-off-screen
+    role: "2"
+    criticality: required
+  - id: on-ball-screen-set
+    role: "5"
+    criticality: required
+  - id: pick-and-roll-ball-handler
+    role: "2"
+    criticality: required
+  - id: floor-spacing-wing
+    role: "1"
+    criticality: optional
+  - id: floor-spacing-wing
+    role: "3"
+    criticality: optional
+  - id: roll-to-rim
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: pick-and-roll-ball-handler
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: on-ball-screen-set
+    for_role: "5"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: cut-to-top-off-screen
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: on-ball-screen-set
+    for_role: "5"
 ---
 
 # Prowl (SLOB)

@@ -5,6 +5,43 @@ formation: box
 tags: [SLOB, man-to-man, alley-oop, back-screen, double-screen, wide-box, lob]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: lob-pass-inbound
+    role: "1"
+    criticality: required
+  - id: back-screen-set
+    role: "2"
+    criticality: required
+  - id: double-screen-set
+    role: "4"
+    criticality: required
+  - id: alley-oop-finish
+    role: "4"
+    criticality: required
+  - id: hard-cut-to-rim
+    role: "2"
+    criticality: optional
+  - id: flash-to-corner
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: alley-oop-finish
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: alley-oop-finish
+    for_role: "4"
+  - region: core_outer
+    criticality: required
+    supports_technique: back-screen-set
+    for_role: "2"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: hard-cut-to-rim
+    for_role: "2"
 ---
 
 # Loop Fly (SLOB)

@@ -5,6 +5,54 @@ formation: horns
 tags: [flex-screen, screen-the-screener, down-screen, post-up, catch-and-shoot, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: flex-screen-set
+    role: "1"
+    criticality: required
+  - id: flex-cut-to-rim
+    role: "2"
+    criticality: required
+  - id: down-screen-set
+    role: "5"
+    criticality: required
+  - id: catch-and-shoot-off-screen
+    role: "1"
+    criticality: required
+  - id: second-screen-set
+    role: "5"
+    criticality: optional
+  - id: post-seal-deep
+    role: "5"
+    criticality: optional
+  - id: wing-catch-and-shoot
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: flex-cut-to-rim
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: flex-cut-to-rim
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: catch-and-shoot-off-screen
+    for_role: "1"
+  - region: core_outer
+    criticality: optional
+    supports_technique: post-seal-deep
+    for_role: "5"
+  - region: hip_flexor_complex
+    criticality: optional
+    supports_technique: down-screen-set
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: post-seal-deep
+    for_role: "5"
 ---
 
 # Flex Warrior

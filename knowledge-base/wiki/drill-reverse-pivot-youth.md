@@ -7,6 +7,21 @@ duration_minutes: 2
 tags: [footwork, pivoting, ball-handling, passing, youth, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reverse-pivot
+    emphasis: primary
+  - id: jump-stop
+    emphasis: secondary
+  - id: ball-protection
+    emphasis: secondary
+  - id: triple-threat-position
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Reverse Pivot Drill (Youth)

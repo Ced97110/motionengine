@@ -95,9 +95,23 @@ def _build_stub(context: PlayContext, readiness: list[dict] | None) -> BriefResu
                 "consider substitution or shortened minutes."
             )
 
+    defending_phrase = ""
+    if context.defending:
+        top = context.defending[0]
+        tag = (top.shared_tags or ["generic"])[0]
+        defending_phrase = (
+            f" Expect {tag} coverage schemes from the defense — match precedent: "
+            f"{top.defending_slug}."
+        )
+    signature_phrase = ""
+    if context.signature:
+        top_sig = context.signature[0]
+        signature_phrase = (
+            f" Signature: {top_sig.direction} {top_sig.factor} ({top_sig.magnitude})."
+        )
     brief = (
         f"{context.play_slug.replace('-', ' ').title()} loads {body_phrase}. "
-        f"Prep priority: {drill_phrase}.{caveat}"
+        f"Prep priority: {drill_phrase}.{caveat}{defending_phrase}{signature_phrase}"
     )
     return BriefResult(
         brief=brief.strip(),
@@ -128,8 +142,20 @@ def _build_claude_prompt(context: PlayContext, readiness: list[dict] | None) -> 
         lines.append("Drills prescribed:")
         for d in context.drills:
             lines.append(f"  - {d.drill_slug} ({d.emphasis}, via {d.via})")
-            if d.insight and d.insight.coaching_cue:
-                lines.append(f"      cue: {d.insight.coaching_cue}")
+    if context.defending:
+        # Pass defending-page slugs + shared tags as structural context only.
+        # The symptom/remedy prose on defending-*.md pages is near-verbatim
+        # from S1 (see memory wiki-corpus-debt.md) and must not surface.
+        lines.append("Relevant defenses (match by shared tag):")
+        for edge in context.defending[:3]:
+            tags = ", ".join(edge.shared_tags) or "generic"
+            lines.append(f"  - {edge.defending_slug} (shared tags: {tags})")
+    if context.signature:
+        # Four-Factor signature — which stats this play lifts/protects/lowers.
+        # Rationales are author-composed (not book-derived) so are safe to echo.
+        lines.append("Analytic signature (Four-Factor directions):")
+        for s in context.signature:
+            lines.append(f"  - {s.factor} {s.direction} ({s.magnitude})")
     if readiness:
         lines.append("Roster readiness flags (player → flagged regions):")
         for entry in readiness:
@@ -138,11 +164,45 @@ def _build_claude_prompt(context: PlayContext, readiness: list[dict] | None) -> 
             lines.append(f"  - {name}: {regions}")
 
     lines.append("")
+    defending_directive = (
+        "Sentence 4 (only if 'Relevant defenses' are listed above): one sentence naming "
+        "the most-relevant defense by its shared tag and what to expect, in your own words. "
+        "Omit this sentence if no defenses are listed. "
+        if context.defending
+        else ""
+    )
+    signature_directive = (
+        "Sentence 5 (only if 'Analytic signature' is listed above): one short sentence "
+        "naming which Four-Factor the play lifts, protects, or lowers (by factor name), "
+        "in your own words. Omit if no signature is listed. "
+        if context.signature
+        else ""
+    )
+    extra_sentences = []
+    if context.defending:
+        extra_sentences.append("a defense")
+    if context.signature:
+        extra_sentences.append("an analytic signature")
+    length_note = (
+        f" (up to {3 + len(extra_sentences)} sentences if {' and '.join(extra_sentences)} apply)"
+        if extra_sentences
+        else ""
+    )
     lines.append(
-        "Write a 3-sentence coaching brief. Sentence 1: the play's action in plain language. "
-        "Sentence 2: the body demands with a roster caveat if a flagged region matches a required "
-        "anatomy region. Sentence 3: the top drill recommendation with its one-line coaching cue. "
-        "Cite [Sn, p.X] tokens verbatim from the context above — do NOT invent citations. "
+        "Write a 3-sentence coaching brief"
+        + length_note
+        + ". Sentence 1: the play's action in plain language. "
+        "Sentence 2: the body demands — you MUST explicitly name at least one required anatomy "
+        "region (use the human-readable form, e.g. 'hip flexor complex', 'ankle complex', "
+        "'core outer', 'glute max'); add a roster caveat if a flagged region matches a required "
+        "anatomy region. Sentence 3: the top drill recommendation (by slug) and why it prepares "
+        "this play. "
+        + defending_directive
+        + signature_directive
+        + "Compose every sentence in your own words; do NOT quote, paraphrase, or echo "
+        "any coaching cue, principle text, symptom line, or any phrase from the context above. "
+        "Book-derived prose must not surface; only structural references may. "
+        "Cite [Sn, p.X] tokens verbatim from the context above; do NOT invent citations. "
         "No preamble, no bullet list, no headings. Plain text only. "
         "Audience: basketball coach. Tone: declarative, no promotional language, no emojis."
     )

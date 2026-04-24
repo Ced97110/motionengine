@@ -5,6 +5,60 @@ formation: box
 tags: [BLOB, man-to-man, cross-screen, seal, post, layup, rim-attack, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-pass-read
+    role: "1"
+    criticality: required
+  - id: cross-screen-set
+    role: "5"
+    criticality: required
+  - id: flash-cut-to-rim
+    role: "4"
+    criticality: required
+  - id: post-seal-and-pivot
+    role: "5"
+    criticality: required
+  - id: corner-flash-decoy
+    role: "2"
+    criticality: optional
+  - id: lob-pass-delivery
+    role: "1"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: flash-cut-to-rim
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: flash-cut-to-rim
+    for_role: "4"
+  - region: core_outer
+    criticality: required
+    supports_technique: post-seal-and-pivot
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: cross-screen-set
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Both post players are routed to the rim via cross-screen and seal mechanics, generating layup attempts rather than mid-range or perimeter shots by design."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Role 5's post seal pins the defender, and role 4's flash cut to the rim invites body contact on the receive or finish, increasing the likelihood of foul calls."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The play is a single-read, one-pass BLOB set where role 1 delivers directly to the open post; the scripted action limits dribble-handoff and skip-pass exposure that inflate turnover risk."
 ---
 
 # Flip (BLOB vs Man-to-Man)

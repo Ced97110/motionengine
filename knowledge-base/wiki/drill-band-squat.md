@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [injury-prevention, ACL, knee, conditioning, strength-training, prehabilitation, glutes]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: dynamic-valgus-correction
+    emphasis: primary
+  - id: acl-injury-prevention
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Band Squat (ACL Ligament Dominance)

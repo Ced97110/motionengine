@@ -5,6 +5,90 @@ formation: 1-4-high
 tags: [man-to-man, floppy, double-screen, staggered-screen, perimeter, quick-hitter, shooter, post-duck-in]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: floppy-cut-off-screen
+    role: "2"
+    criticality: required
+  - id: floppy-cut-off-screen
+    role: "3"
+    criticality: required
+  - id: staggered-screen-set
+    role: "4"
+    criticality: required
+  - id: staggered-screen-set
+    role: "5"
+    criticality: required
+  - id: post-duck-in-seal
+    role: "4"
+    criticality: required
+  - id: post-duck-in-seal
+    role: "5"
+    criticality: required
+  - id: on-time-on-target-pass
+    role: "1"
+    criticality: required
+  - id: catch-and-shoot-perimeter
+    role: "2"
+    criticality: optional
+  - id: catch-and-shoot-perimeter
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: floppy-cut-off-screen
+    for_role: "2"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: floppy-cut-off-screen
+    for_role: "3"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: floppy-cut-off-screen
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: floppy-cut-off-screen
+    for_role: "3"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-duck-in-seal
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-duck-in-seal
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: staggered-screen-set
+    for_role: "4"
+  - region: core_outer
+    criticality: optional
+    supports_technique: staggered-screen-set
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Floppy cuts off staggered screens generate immediate catch-and-shoot perimeter looks or post duck-in layups, eliminating mid-range attempts by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The set-play structure funnels 1 into a single read-and-deliver decision from a fixed menu of four options, capping live-ball turnover exposure versus open motion."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Post duck-in seals after screens place 4 and 5 on mismatched or scrambling defenders in the paint, inviting contact on interior catches."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Simultaneous perimeter and interior threats force the defense into a no-win rotation, consistently surfacing an open look at the rim or behind the arc on nearly every possession."
 ---
 
 # 1-4 Quick Floppy

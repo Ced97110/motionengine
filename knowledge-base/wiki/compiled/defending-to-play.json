@@ -1,0 +1,372 @@
+{
+  "defending-cross-four-get": [
+    {
+      "play": "blob-box-gate",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "blob-box-gate-updated",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "blob-flip",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "blob-flip-updated",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "blob-two-inside",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "play-box-cross-2-blob",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "play-cross-screen",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "play-diamond-slob",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-double-curls",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-drive-hammer",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-guard-oriented-attack",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-hawks-zipper-cross-screen",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "play-high-pick-series",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-high-post-double-screen",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-high-split-action",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-indiana-box-high-x",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "play-iverson-ram",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-lob-blob",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "play-pick-and-roll-layered",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-power-cross-attack",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "play-prowl-slob",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-reverse-dribble-options",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-san-antonio-early-offense-corner-fill",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-san-antonio-guard-through",
+      "shared_tags": [
+        "cross-screen",
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-side-blaze",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-swinger",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    },
+    {
+      "play": "play-triangle-slob",
+      "shared_tags": [
+        "cross-screen"
+      ]
+    },
+    {
+      "play": "slob-twist",
+      "shared_tags": [
+        "pick-and-roll"
+      ]
+    }
+  ],
+  "defending-down-screens": [
+    {
+      "play": "slob-x",
+      "shared_tags": [
+        "off-ball-screens"
+      ]
+    }
+  ],
+  "defending-dribble-handoff": [
+    {
+      "play": "play-guard-oriented-attack",
+      "shared_tags": [
+        "dribble-handoff"
+      ]
+    },
+    {
+      "play": "play-high-pick-series",
+      "shared_tags": [
+        "dribble-handoff"
+      ]
+    }
+  ],
+  "defending-dribble-handoff-and-get-action": [
+    {
+      "play": "play-guard-oriented-attack",
+      "shared_tags": [
+        "dribble-handoff"
+      ]
+    },
+    {
+      "play": "play-high-pick-series",
+      "shared_tags": [
+        "dribble-handoff"
+      ]
+    },
+    {
+      "play": "play-pass-and-screen-away",
+      "shared_tags": [
+        "screen-away"
+      ]
+    }
+  ],
+  "defending-drop-one": [
+    {
+      "play": "play-knicks-zipper-baseline-triple",
+      "shared_tags": [
+        "isolation"
+      ]
+    },
+    {
+      "play": "play-minnesota-hawk-combination",
+      "shared_tags": [
+        "isolation"
+      ]
+    },
+    {
+      "play": "play-philadelphia-baseline-screening",
+      "shared_tags": [
+        "isolation"
+      ]
+    }
+  ],
+  "defending-flash-post": [
+    {
+      "play": "32-lob",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-celtics-post-drop",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-deception-slob",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-high-split-action",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-pass-and-cut-away",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-pass-and-screen-away",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-reverse-dribble-options",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-side-blaze",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "set-32-lob-updated",
+      "shared_tags": [
+        "backdoor"
+      ]
+    }
+  ],
+  "defending-flash-post-blind-pig": [
+    {
+      "play": "32-lob",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-celtics-post-drop",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-deception-slob",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-high-split-action",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-pass-and-cut-away",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-pass-and-screen-away",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-reverse-dribble-options",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "play-side-blaze",
+      "shared_tags": [
+        "backdoor"
+      ]
+    },
+    {
+      "play": "set-32-lob-updated",
+      "shared_tags": [
+        "backdoor"
+      ]
+    }
+  ],
+  "defending-off-ball-screens": [
+    {
+      "play": "slob-x",
+      "shared_tags": [
+        "off-ball-screens"
+      ]
+    }
+  ],
+  "defending-specific-plays": [
+    {
+      "play": "slob-x",
+      "shared_tags": [
+        "off-ball-screens"
+      ]
+    }
+  ],
+  "defending-staggered-screens": [
+    {
+      "play": "slob-x",
+      "shared_tags": [
+        "off-ball-screens",
+        "staggered-screens"
+      ]
+    }
+  ]
+}

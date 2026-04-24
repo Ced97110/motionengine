@@ -5,6 +5,47 @@ formation: 1-4-high
 tags: [high-post-cut, staggered-screen, curl-cut, pick-and-roll, layup, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: high-post-cut-off-screen
+    role: "1"
+    criticality: required
+  - id: curl-cut-to-rim
+    role: "2"
+    criticality: required
+  - id: staggered-screen-set
+    role: "4"
+    criticality: required
+  - id: pick-and-roll-ball-handler
+    role: "3"
+    criticality: required
+  - id: pick-and-roll-screen-set
+    role: "5"
+    criticality: required
+  - id: slip-screen-to-rim
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: high-post-cut-off-screen
+    for_role: "1"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: curl-cut-to-rim
+    for_role: "2"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: pick-and-roll-ball-handler
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: staggered-screen-set
+    for_role: "4"
+  - region: glute_max
+    criticality: optional
+    supports_technique: pick-and-roll-screen-set
+    for_role: "5"
 ---
 
 # High-Post Double Curls

@@ -5,6 +5,56 @@ formation: box
 tags: [SLOB, staggered-screens, shooter, three-point, wing, off-ball-screens]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: diagonal-down-screen-set
+    role: "2"
+    criticality: required
+  - id: inbound-pass-entry
+    role: "3"
+    criticality: required
+  - id: shooting-off-staggered-screens
+    role: "2"
+    criticality: required
+  - id: shooting-off-staggered-screens
+    role: "3"
+    criticality: required
+  - id: staggered-screen-set
+    role: "5"
+    criticality: required
+  - id: staggered-screen-set
+    role: "4"
+    criticality: required
+  - id: inside-shoulder-pass-delivery
+    role: "1"
+    criticality: required
+  - id: baseline-sprint-cut
+    role: "3"
+    criticality: optional
+  - id: ball-screen-attack-downhill
+    role: "1"
+    criticality: optional
+demands_anatomy:
+  - region: ankle_complex
+    criticality: required
+    supports_technique: shooting-off-staggered-screens
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: shooting-off-staggered-screens
+    for_role: "3"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: baseline-sprint-cut
+    for_role: "3"
+  - region: glute_max
+    criticality: optional
+    supports_technique: staggered-screen-set
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: shooting-off-staggered-screens
+    for_role: "2"
 ---
 
 # SLOB X

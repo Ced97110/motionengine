@@ -5,6 +5,60 @@ formation: box
 tags: [SLOB, man-to-man, high-post, down-screen, post-isolation, sequential-screens]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: down-screen-set
+    role: "5"
+    criticality: required
+  - id: down-screen-set
+    role: "4"
+    criticality: required
+  - id: curl-cut-off-screen
+    role: "2"
+    criticality: required
+  - id: post-seal-high-post
+    role: "4"
+    criticality: required
+  - id: entry-pass-to-post
+    role: "1"
+    criticality: required
+  - id: flare-cut-off-screen
+    role: "2"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-seal-high-post
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-seal-high-post
+    for_role: "4"
+  - region: core_outer
+    criticality: required
+    supports_technique: down-screen-set
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: curl-cut-off-screen
+    for_role: "2"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Sequential down screens manufacture a clean high-post isolation for the best post player, generating close-range scoring opportunities rather than contested mid-range or perimeter shots."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted two-screen sequence limits live-ball decisions to a single controlled entry pass from 1 to an isolated 4, reducing the number of passes where a turnover can occur."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The high-post 1-on-1 isolation by design invites physicality as 4 seals and holds contact against the defender, creating frequent foul opportunities on post moves."
 ---
 
 # Box Loop Post

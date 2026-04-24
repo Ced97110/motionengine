@@ -7,6 +7,17 @@ duration_minutes: 10-15
 tags: [strength, conditioning, leg-strength, resistance-band, lateral-movement, defensive-slides, hip-abductor]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lateral-defensive-slide
+    emphasis: primary
+  - id: lateral-direction-change
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Band Lateral Walk

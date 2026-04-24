@@ -5,6 +5,60 @@ formation: box
 tags: [SLOB, man-to-man, quick-hitter, curl-cut, three-point, double-screen, box-set]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-pass-on-target
+    role: "1"
+    criticality: required
+  - id: sequential-screen-set
+    role: "5"
+    criticality: required
+  - id: curl-cut-to-rim
+    role: "3"
+    criticality: required
+  - id: catch-and-shoot-three
+    role: "2"
+    criticality: required
+  - id: pop-off-screen
+    role: "2"
+    criticality: optional
+  - id: safety-outlet-read
+    role: "1"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: curl-cut-to-rim
+    for_role: "3"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: curl-cut-to-rim
+    for_role: "3"
+  - region: core_outer
+    criticality: required
+    supports_technique: sequential-screen-set
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: catch-and-shoot-three
+    for_role: "2"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The play's two primary reads are a rim-cut layup and a catch-and-shoot three, eliminating mid-range attempts by design."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Role 3's hard curl-cut through two sequential screens to the rim creates direct contact opportunities against defenders caught in the screen traffic."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The set-play structure routes all action through a single inbound pass followed by one decisive read, keeping ball-handler decisions and live-ball exposure to a minimum."
 ---
 
 # Box Spin

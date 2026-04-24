@@ -5,6 +5,43 @@ formation: 4-out 1-in
 tags: [post-isolation, mismatch, low-post, foul-trouble, spacing, perimeter-screens]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: low-post-flash-on-entry
+    role: "5"
+    criticality: required
+  - id: post-entry-pass-from-wing
+    role: "3"
+    criticality: required
+  - id: low-post-isolation-move
+    role: "5"
+    criticality: required
+  - id: wing-to-slot-screen-exchange
+    role: "2"
+    criticality: required
+  - id: post-kickout-pass
+    role: "5"
+    criticality: optional
+  - id: catch-and-shoot-perimeter
+    role: "1"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: low-post-flash-on-entry
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: low-post-isolation-move
+    for_role: "5"
+  - region: core_outer
+    criticality: required
+    supports_technique: low-post-isolation-move
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: wing-to-slot-screen-exchange
+    for_role: "2"
 ---
 
 # Inside Isolate

@@ -5,6 +5,43 @@ formation: 2-3 high-post
 tags: [continuity, reverse-dribble, backdoor, pick-and-roll, double-screen, motion, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: reverse-dribble-entry
+    role: "1"
+    criticality: required
+  - id: backdoor-cut
+    role: "2"
+    criticality: required
+  - id: flash-to-elbow
+    role: "5"
+    criticality: required
+  - id: pick-and-roll-ball-handler
+    role: "1"
+    criticality: optional
+  - id: double-screen-use
+    role: "2"
+    criticality: optional
+  - id: screen-and-roll
+    role: "4"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: reverse-dribble-entry
+    for_role: "1"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: backdoor-cut
+    for_role: "2"
+  - region: glute_max
+    criticality: optional
+    supports_technique: flash-to-elbow
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: pick-and-roll-ball-handler
+    for_role: "1"
 ---
 
 # Continuity — Reverse Dribble Options

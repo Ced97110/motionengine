@@ -5,6 +5,57 @@ formation: box
 tags: [pick-and-roll, hammer-screen, drive, corner, spacing, ball-screen]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: dribble-entry-wing
+    role: "1"
+    criticality: required
+  - id: high-cut-off-elbow-screen
+    role: "3"
+    criticality: required
+  - id: on-ball-screen-set
+    role: "5"
+    criticality: required
+  - id: drive-to-rim-off-ball-screen
+    role: "3"
+    criticality: required
+  - id: hammer-back-screen-set
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot-off-back-screen
+    role: "1"
+    criticality: optional
+  - id: kickout-pass-on-drive
+    role: "3"
+    criticality: optional
+  - id: roll-to-rim-after-screen
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: drive-to-rim-off-ball-screen
+    for_role: "3"
+  - region: glute_max
+    criticality: required
+    supports_technique: drive-to-rim-off-ball-screen
+    for_role: "3"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: high-cut-off-elbow-screen
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: on-ball-screen-set
+    for_role: "5"
+  - region: hip_flexor_complex
+    criticality: optional
+    supports_technique: catch-and-shoot-off-back-screen
+    for_role: "1"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: roll-to-rim-after-screen
+    for_role: "5"
 ---
 
 # Drive Hammer

@@ -5,6 +5,57 @@ formation: box
 tags: [BLOB, man-to-man, cross-screen, rim-attack, layup, post, seal]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-pass-read
+    role: "1"
+    criticality: required
+  - id: cross-screen-set
+    role: "5"
+    criticality: required
+  - id: back-hip-seal
+    role: "5"
+    criticality: required
+  - id: flash-to-rim
+    role: "4"
+    criticality: required
+  - id: flash-to-rim
+    role: "5"
+    criticality: required
+  - id: corner-decoy-cut
+    role: "2"
+    criticality: required
+  - id: corner-decoy-cut
+    role: "3"
+    criticality: required
+  - id: safety-outlet-cut
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: flash-to-rim
+    for_role: "4"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: flash-to-rim
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: back-hip-seal
+    for_role: "5"
+  - region: core_outer
+    criticality: required
+    supports_technique: back-hip-seal
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: corner-decoy-cut
+    for_role: "2"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: corner-decoy-cut
+    for_role: "3"
 ---
 
 # BLOB Flip

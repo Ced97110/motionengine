@@ -5,6 +5,46 @@ formation: box
 tags: [BLOB, man-to-man, back-screen, gate-screen, cross-screen, post-up, catch-and-shoot, layup]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: back-screen-set
+    role: "2"
+    criticality: required
+  - id: hard-cut-to-rim
+    role: "5"
+    criticality: required
+  - id: gate-screen-set
+    role: "3"
+    criticality: required
+  - id: gate-screen-set
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot-off-screen
+    role: "2"
+    criticality: required
+  - id: cross-screen-set
+    role: "1"
+    criticality: optional
+  - id: post-up-duck-in
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: hard-cut-to-rim
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: hard-cut-to-rim
+    for_role: "5"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: catch-and-shoot-off-screen
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: back-screen-set
+    for_role: "2"
 ---
 
 # BLOB Box Gate

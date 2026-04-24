@@ -25,7 +25,10 @@ from motion.services.play_extractor import _strip_code_fence
 
 _MODEL = "claude-sonnet-4-6"
 _MAX_TOKENS = 1024
-_TEMPERATURE = 0.2
+# Deterministic decoding — iverson-ram validation showed P2.4 (5→wing target)
+# flipping run-to-run at 0.2. 0.0 makes reruns reproducible so prompt edits are
+# measurable instead of lost in sampling noise.
+_TEMPERATURE = 0.0
 
 # ---------------------------------------------------------------------------
 # Allowed vocabularies — the importer's ``_convert_actions`` is the source of
@@ -102,22 +105,50 @@ movement / screen / pass / shot), return [].
 - Prefer player-id targets for passes and screens when the text names a \
 specific player as the recipient/screenee. Use role tokens only when the \
 text names a court location (wing, corner, elbow, block, basket, top).
-- Preserve the order in which actions occur in the text.
+
+ATOMIC SEQUENCING:
+- One atomic action per array element. If the phase text bundles multiple \
+actions into one sentence ("4 screens down on 5's defender as 5 sprints up \
+to screen for 2"), emit SEPARATE entries for each movement/screen/pass.
+- A movement that ENDS by setting a screen is ONE action: emit it with a \
+screen-family type (screen, down-screen, back-screen, flare-screen, \
+cross-screen, pin-down). Do NOT emit a preceding "move" step for the same \
+player in the same phase.
+
+CAUSAL ORDERING (overrides syntactic order):
+- If action N depends on action M's effect, M comes first in the array.
+- A screener's arrival at the screen location ALWAYS precedes the cutter \
+using that screen. Emit the screener's action before the cutter's.
+- In screen-the-screener sequences (A screens for B, then B screens for C), \
+emit A's screen first — it must free B before B can screen C.
+- When the text uses explicit numbering that would violate causality, \
+reorder by causality silently.
+
+POSITION AWARENESS:
+- When current_positions is provided, use it as GROUND TRUTH for where each \
+player stands at the start of this phase. If the text says "5 screens for 2" \
+and the positions show 2 at right_wing, emit to=\"2\" (player-id) — do NOT \
+guess a role token. When you must pick a role token, pick the one matching \
+the named player's current position, not a default.
 """
 
 _FEW_SHOT_EXAMPLE_TEXT = (
-    "Both wing players exchange sides simultaneously using the elbow post "
-    "players as screeners. 2 cuts over the top, receiving a screen from 4. "
-    "3 cuts under, receiving a screen from 5 on the low block. 1 opens up "
-    "the angle with a dribble and passes to 2 coming off 4's screen."
+    "4 screens down on 5's defender as 5 sprints up to set a ball screen "
+    "for 2. 2 uses the screen and cuts over the top toward the right wing."
 )
 
+# Notes on why this output is correct (for human review; NOT sent to model):
+# - "screens down ... as ... sprints up" is a BUNDLED sentence — two distinct
+#   actions, emitted separately.
+# - Causal order: 4 frees 5 FIRST (down-screen), then 5 can screen for 2,
+#   then 2 can cut off 5's screen. Emission order follows causality even
+#   though the sentence structure mentions 2's cut last.
+# - 5's "sprint up to set a ball screen" is one atomic action with
+#   screen-family type, not a move+screen pair.
 _FEW_SHOT_EXAMPLE_OUTPUT = (
-    '[{"from":"2","to":"right_wing","type":"cut"},'
-    '{"from":"3","to":"left_wing","type":"cut"},'
-    '{"from":"4","to":"2","type":"screen"},'
-    '{"from":"5","to":"3","type":"screen"},'
-    '{"from":"1","to":"2","type":"pass"}]'
+    '[{"from":"4","to":"5","type":"down-screen"},'
+    '{"from":"5","to":"2","type":"screen"},'
+    '{"from":"2","to":"right_wing","type":"cut"}]'
 )
 
 
@@ -139,7 +170,7 @@ def _build_user_message(
     parts: list[str] = [
         "EXAMPLE",
         "-------",
-        "phase_label: Phase 1: Wing Exchange",
+        "phase_label: Phase 2: Screen The Screener",
         "player_ids: [\"1\", \"2\", \"3\", \"4\", \"5\"]",
         "phase_text:",
         _FEW_SHOT_EXAMPLE_TEXT,

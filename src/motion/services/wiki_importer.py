@@ -419,7 +419,11 @@ def _extract_related(body: str) -> list[str]:
 def _extract_players_and_ball(block: dict[str, Any]) -> tuple[dict[str, tuple[float, float]], str]:
     """Read the first block's ``players`` array → V7 ``players`` map.
 
-    Ball-handler defaults to role "1" when present, else the first listed role.
+    Ball-handler resolution order:
+    1. Explicit block-level ``ballStart`` field (schema v2) — if it names a
+       known player, use it.
+    2. Role "1" when present.
+    3. First listed role (stable iteration order).
     """
     raw_players = block.get("players")
     players: dict[str, tuple[float, float]] = {}
@@ -445,6 +449,13 @@ def _extract_players_and_ball(block: dict[str, Any]) -> tuple[dict[str, tuple[fl
             "4": (-20, 6),
             "5": (20, 6),
         }
+
+    # Schema v2: explicit block-level ``ballStart``.
+    explicit = block.get("ballStart")
+    if isinstance(explicit, (str, int)):
+        explicit_str = str(explicit)
+        if explicit_str in players:
+            return players, explicit_str
     ball_start = "1" if "1" in players else next(iter(players))
     return players, ball_start
 
@@ -479,7 +490,21 @@ def _convert_actions(
     players: dict[str, tuple[float, float]],
     phase_label: str,
 ) -> tuple[list[dict[str, Any]], list[str]]:
-    """Map wiki ``actions[]`` → V7 ``actions[]`` + collect TODOs."""
+    """Map wiki ``actions[]`` → V7 ``actions[]`` + collect TODOs.
+
+    Schema v2 additions (all optional, backward compatible):
+    - ``path``: authored SVG path string preserved verbatim; when set, the
+      downstream path synthesizer leaves the action alone (``_needs_synthesis``
+      short-circuit in :mod:`motion.services.play_extractor`).
+    - ``moveTo``: explicit ``[x, y]`` endpoint that supersedes the
+      role-destination lookup for ``to``. Used when the maintainer nudged a
+      player in the lab to a coord that no role token matches exactly.
+    - ``durationMs`` / ``gapAfterMs``: forwarded to the V7Action so the
+      viewer honors authored timing overrides.
+    - ``ballTo``: explicit pass receiver. When set on a pass, the V7
+      ``action.ball.to`` becomes this id; falls back to the classic
+      ``to`` string if absent.
+    """
     todos: list[str] = []
     v7_actions: list[dict[str, Any]] = []
     if not isinstance(raw_actions, list):
@@ -510,12 +535,45 @@ def _convert_actions(
         if dashed:
             action["dashed"] = True
 
+        # Schema v2: honor authored SVG path. Empty/missing falls through to
+        # downstream synthesis as before.
+        authored_path = raw.get("path")
+        if isinstance(authored_path, str) and authored_path.strip():
+            action["path"] = authored_path
+
+        # Schema v2: explicit moveTo wins over role-destination lookup.
+        move_to_override = raw.get("moveTo")
+        override_coord = (
+            _coerce_xy_list(move_to_override) if move_to_override is not None else None
+        )
+
         # Pass actions get rendered as ball travel, not player motion — skip `move`
         # when the "from" is a player and the "to" is another player (classic pass).
-        dest_coord = _resolve_destination(raw.get("to"), players)
-        if atype == "pass" and isinstance(raw.get("to"), str) and raw.get("to") in players:
-            # Emit as ball travel between the two player ids.
-            action["ball"] = {"from": mover_id, "to": str(raw.get("to"))}
+        dest_coord = override_coord or _resolve_destination(raw.get("to"), players)
+
+        # Schema v2: explicit ballTo wins for passes.
+        ball_to_override = raw.get("ballTo")
+        ball_to_str = (
+            str(ball_to_override)
+            if isinstance(ball_to_override, (str, int))
+            else None
+        )
+
+        if atype == "pass":
+            legacy_to = raw.get("to")
+            if ball_to_str and ball_to_str in players:
+                receiver: str | None = ball_to_str
+            elif isinstance(legacy_to, str) and legacy_to in players:
+                receiver = legacy_to
+            else:
+                receiver = None
+            if receiver is not None:
+                action["ball"] = {"from": mover_id, "to": receiver}
+            elif dest_coord is None:
+                todos.append(
+                    f"[{phase_label}] unresolved pass receiver {raw.get('to')!r} for "
+                    f"{mover_id} — skipped ball transfer."
+                )
         elif dest_coord is not None and mover_id in players:
             action["move"] = {"id": mover_id, "to": [dest_coord[0], dest_coord[1]]}
         elif dest_coord is None:
@@ -524,8 +582,29 @@ def _convert_actions(
                 f"{mover_id} ({atype or 'unknown'}) — skipped move."
             )
 
+        # Schema v2: forward timing overrides verbatim.
+        dur_ms = raw.get("durationMs")
+        if isinstance(dur_ms, (int, float)) and dur_ms > 0:
+            action["durationMs"] = int(dur_ms)
+        gap_ms = raw.get("gapAfterMs")
+        if isinstance(gap_ms, (int, float)) and gap_ms >= 0:
+            action["gapAfterMs"] = int(gap_ms)
+
         v7_actions.append(action)
     return v7_actions, todos
+
+
+def _coerce_xy_list(value: Any) -> tuple[float, float] | None:
+    """Accept ``[x, y]`` as floats/ints; reject anything else.
+
+    Shared helper for schema v2 ``moveTo`` normalization.
+    """
+    if not isinstance(value, (list, tuple)) or len(value) != 2:
+        return None
+    try:
+        return float(value[0]), float(value[1])
+    except (TypeError, ValueError):
+        return None
 
 
 # ---------------------------------------------------------------------------

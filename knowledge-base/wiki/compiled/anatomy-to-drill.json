@@ -1,27 +1,219 @@
 {
   "ankle_complex": [
     {
+      "drill": "drill-360-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-40-yard-sprint-agility",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-60-yard-shuttle-sprint",
+      "emphasis": "secondary"
+    },
+    {
       "drill": "drill-ankling",
       "emphasis": "primary"
     },
     {
+      "drill": "drill-back-squat-basketball",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-back-squat",
+      "emphasis": "secondary"
+    },
+    {
       "drill": "drill-band-lateral-walk",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-barbell-jump-squat",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-barrier-jump-cut-sprint",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-block-jump",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-body-weight-squat-knee-rehab",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-box-jump-knee-rehab",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-bridge-kick-over",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-butt-kick-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-catch-tuck-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-cut-intos",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-defensive-slide-change-direction",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-depth-jump-into-jump-shot",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-front-flip-chain",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-holton-closeout",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-interception-stance",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-jump-stop-youth",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-reverse-pivot-youth",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-single-leg-hurdle-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-skater-hop",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-stride-stop-youth",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-tuck-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "exercise-reverse-step-down-from-box",
       "emphasis": "secondary"
     }
   ],
   "core_outer": [
     {
+      "drill": "drill-360-jump",
+      "emphasis": "secondary"
+    },
+    {
       "drill": "drill-back-extension",
       "emphasis": "primary"
     },
     {
+      "drill": "drill-back-squat-basketball",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-back-squat",
+      "emphasis": "secondary"
+    },
+    {
       "drill": "drill-bird-dog",
       "emphasis": "primary"
+    },
+    {
+      "drill": "drill-catch-tuck-jump",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-cut-intos",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-front-flip-chain",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-hip-pullup",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-holton-closeout",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-jump-stop-youth",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-landmine-trunk-rotation",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-muscle-up",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-pallof-press",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-plyo-push-ups",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-post-up-mechanics-youth",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-single-arm-dumbbell-row-basketball",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-tuck-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "exercise-romanian-deadlift",
+      "emphasis": "secondary"
     }
   ],
   "glute_max": [
     {
+      "drill": "drill-360-jump",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-40-yard-sprint-agility",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-60-yard-shuttle-sprint",
+      "emphasis": "primary"
+    },
+    {
       "drill": "drill-back-extension",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-back-squat-basketball",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-back-squat",
       "emphasis": "primary"
     },
     {
@@ -29,13 +221,225 @@
       "emphasis": "primary"
     },
     {
+      "drill": "drill-band-squat",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-barbell-jump-squat",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-barrier-jump-cut-sprint",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-block-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-body-weight-squat-knee-rehab",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-box-jump-knee-rehab",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-butt-kick-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-catch-tuck-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-defensive-slide-change-direction",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-depth-jump-into-jump-shot",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-front-flip-chain",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-hip-pullup",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-jump-stop-youth",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-landmine-trunk-rotation",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-muscle-up",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-pallof-press",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-post-up-mechanics-youth",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-single-leg-hurdle-jump",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-skater-hop",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-stride-stop-youth",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-tuck-jump",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "exercise-band-lateral-walk",
+      "emphasis": "secondary"
+    },
+    {
       "drill": "exercise-hip-thrust",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "exercise-reverse-lunge",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "exercise-reverse-step-down-from-box",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "exercise-romanian-deadlift",
       "emphasis": "primary"
     }
   ],
   "hip_flexor_complex": [
     {
+      "drill": "drill-40-yard-sprint-agility",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-60-yard-shuttle-sprint",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-back-squat-basketball",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-band-squat",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-barbell-jump-squat",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-barrier-jump-cut-sprint",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-block-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-body-weight-squat-knee-rehab",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-box-jump-knee-rehab",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-butt-kick-jump",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-catch-tuck-jump",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-cut-intos",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-defensive-slide-change-direction",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-depth-jump-into-jump-shot",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-front-flip-chain",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-hip-pullup",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-holton-closeout",
+      "emphasis": "primary"
+    },
+    {
+      "drill": "drill-interception-stance",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-post-up-mechanics-youth",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-reverse-pivot-youth",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-single-leg-hurdle-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-skater-hop",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-stride-stop-youth",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "drill-tuck-jump",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "exercise-band-lateral-walk",
+      "emphasis": "secondary"
+    },
+    {
       "drill": "exercise-hip-thrust",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "exercise-reverse-lunge",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "exercise-reverse-step-down-from-box",
+      "emphasis": "secondary"
+    },
+    {
+      "drill": "exercise-romanian-deadlift",
       "emphasis": "secondary"
     }
   ]

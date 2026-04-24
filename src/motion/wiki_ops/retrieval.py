@@ -86,6 +86,26 @@ class DrillPrescription:
 
 
 @dataclass(frozen=True)
+class DefendingEdge:
+    """A compiled play↔defending match with the shared-tag rationale."""
+
+    defending_slug: str
+    shared_tags: list[str]
+    symptoms: list[DefensiveSymptom] = field(default_factory=list)
+
+
+@dataclass(frozen=True)
+class SignatureEntry:
+    """One Four-Factor signature direction declared on a play."""
+
+    factor: str
+    direction: str
+    magnitude: str
+    rationale: str
+    concept_slug: str | None = None
+
+
+@dataclass(frozen=True)
 class PlayContext:
     """Full retrieval bundle for a single play (Q-A output)."""
 
@@ -93,6 +113,8 @@ class PlayContext:
     anatomy: list[AnatomyDemand] = field(default_factory=list)
     techniques: list[TechniqueDemand] = field(default_factory=list)
     drills: list[DrillPrescription] = field(default_factory=list)
+    defending: list[DefendingEdge] = field(default_factory=list)
+    signature: list[SignatureEntry] = field(default_factory=list)
 
 
 @dataclass(frozen=True)
@@ -130,6 +152,7 @@ class CompiledIndexes:
 
     play_to_anatomy: dict[str, list[dict[str, str]]]
     play_to_technique: dict[str, list[dict[str, str]]]
+    play_to_signature: dict[str, list[dict[str, str]]]
     anatomy_to_play: dict[str, list[dict[str, str]]]
     anatomy_to_drill: dict[str, list[dict[str, str]]]
     technique_to_play: dict[str, list[dict[str, str]]]
@@ -138,6 +161,7 @@ class CompiledIndexes:
     page_insights: dict[str, dict[str, Any]]
     page_tags: dict[str, list[str]]
     defending_insights: dict[str, dict[str, Any]]
+    play_to_defending: dict[str, list[dict[str, Any]]]
     # Native Karpathy cross-refs compiled from body prose (2026-04-20).
     wikilink_forward: dict[str, list[str]]
     wikilink_reverse: dict[str, list[str]]
@@ -168,6 +192,7 @@ def load_indexes(compiled_directory: Path | None = None) -> CompiledIndexes:
     return CompiledIndexes(
         play_to_anatomy=_read_json(base / "play-to-anatomy.json"),
         play_to_technique=_read_json(base / "play-to-technique.json"),
+        play_to_signature=_maybe_read("play-to-signature.json"),
         anatomy_to_play=_read_json(base / "anatomy-to-play.json"),
         anatomy_to_drill=_read_json(base / "anatomy-to-drill.json"),
         technique_to_play=_read_json(base / "technique-to-play.json"),
@@ -176,6 +201,7 @@ def load_indexes(compiled_directory: Path | None = None) -> CompiledIndexes:
         page_insights=_maybe_read("page-insights.json"),
         page_tags=_maybe_read("page-tags.json"),
         defending_insights=_maybe_read("defending-insights.json"),
+        play_to_defending=_maybe_read("play-to-defending.json"),
         wikilink_forward=_maybe_read("wikilink-graph.json"),
         wikilink_reverse=_maybe_read("wikilink-graph-reverse.json"),
         citation_graph=_maybe_read("citation-graph.json"),
@@ -302,11 +328,53 @@ def build_play_context(play_slug: str, indexes: CompiledIndexes) -> PlayContext:
                 )
             )
     drills.sort(key=lambda d: (0 if d.emphasis == "primary" else 1, d.drill_slug))
+    defending_edges: list[DefendingEdge] = []
+    for raw in indexes.play_to_defending.get(play_slug, []):
+        d_slug = raw.get("defending")
+        shared = raw.get("shared_tags") or []
+        if not isinstance(d_slug, str) or not d_slug:
+            continue
+        payload = indexes.defending_insights.get(d_slug) or {}
+        symptoms_raw = payload.get("symptoms") or []
+        symptoms = [
+            DefensiveSymptom(
+                symptom=entry.get("symptom", ""),
+                remedy=entry.get("remedy", ""),
+            )
+            for entry in symptoms_raw
+            if isinstance(entry, dict) and entry.get("symptom")
+        ]
+        defending_edges.append(
+            DefendingEdge(
+                defending_slug=d_slug,
+                shared_tags=[t for t in shared if isinstance(t, str)],
+                symptoms=symptoms,
+            )
+        )
+    signature: list[SignatureEntry] = []
+    for raw in indexes.play_to_signature.get(play_slug, []):
+        factor = raw.get("factor")
+        direction = raw.get("direction")
+        magnitude = raw.get("magnitude")
+        rationale = raw.get("rationale") or ""
+        if not factor or not direction or not magnitude:
+            continue
+        signature.append(
+            SignatureEntry(
+                factor=factor,
+                direction=direction,
+                magnitude=magnitude,
+                rationale=rationale,
+                concept_slug=raw.get("concept_slug"),
+            )
+        )
     return PlayContext(
         play_slug=play_slug,
         anatomy=anatomy_demands,
         techniques=technique_demands,
         drills=drills,
+        defending=defending_edges,
+        signature=signature,
     )
 
 

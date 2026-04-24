@@ -5,6 +5,60 @@ formation: 1-3-1
 tags: [zone-offense, 2-3-zone, flare-screen, three-point, shooter, quick-hitter]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: dribble-drag-defender
+    role: "2"
+    criticality: required
+  - id: flare-screen-set
+    role: "5"
+    criticality: required
+  - id: flare-screen-use
+    role: "2"
+    criticality: required
+  - id: catch-and-shoot-off-screen
+    role: "2"
+    criticality: required
+  - id: pin-down-screen-set
+    role: "4"
+    criticality: required
+  - id: skip-pass-over-top
+    role: "1"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: dribble-drag-defender
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: flare-screen-use
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: flare-screen-use
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: flare-screen-set
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The entire sequence is engineered to deliver the best shooter an uncontested catch-and-shoot three off the flare screen, eliminating mid-range or low-efficiency looks by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted ball-movement chain (wing → corner → top) keeps the pass count low and each read pre-determined, reducing live-read turnovers versus open motion against the zone."
+  - factor: pace
+    direction: lowers
+    concept_slug: concept-four-factors
+    magnitude: low
+    rationale: "The multi-phase drag-and-screen setup requires deliberate dribble-drag and sequential screening actions before the shot is taken, consuming clock relative to a direct attack."
 ---
 
 # 23 Flare (Set Play vs 2-3 Zone)

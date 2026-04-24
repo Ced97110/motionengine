@@ -55,7 +55,7 @@ As the ball moves via dribble, the defender slides continuously to maintain the 
 - [[drill-help-side-drill]] — primary practice drill for ball-you-man positioning
 - [[drill-interception-stance]] — the stance used within the flat triangle
 - [[drill-close-the-gap-stance]] — how to respond when the ball drives toward your assignment
-- [[weak-side-help-defense]] — Herb Brown's system using similar shadow/tilt principles
+- [[weak-side-help-defense]] — related system using similar shadow/tilt principles
 - [[drill-dual-help-drill]] — advanced application helping on both lob passes and drives
 
 ## Sources

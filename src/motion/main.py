@@ -20,6 +20,8 @@ from motion.db import get_engine
 from motion.middleware.request_id import RequestIdMiddleware
 from motion.routers.knowledge import router as knowledge_router
 from motion.routers.playlab import router as playlab_router
+from motion.routers.public_plays import router as public_plays_router
+from motion.routers.public_wiki import router as public_wiki_router
 from motion.schemas.errors import ErrorBody, ErrorEnvelope
 
 logger = logging.getLogger("motion.main")
@@ -124,6 +126,8 @@ def create_app() -> FastAPI:
 
     app.include_router(knowledge_router)
     app.include_router(playlab_router)
+    app.include_router(public_plays_router)
+    app.include_router(public_wiki_router)
 
     return app
 

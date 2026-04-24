@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [defense, footwork, lateral-movement, conditioning, slides]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-slide
+    emphasis: primary
+  - id: change-of-direction
+    emphasis: primary
+  - id: pivot-footwork
+    emphasis: secondary
+  - id: defensive-stance
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Defensive Slide and Change-of-Direction Drill

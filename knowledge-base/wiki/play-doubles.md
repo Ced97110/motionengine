@@ -5,6 +5,53 @@ formation: 1-4-high
 tags: [man-to-man, double-screen, shooter, quick-hitter, perimeter, wing]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: pass-and-return
+    role: "2"
+    criticality: required
+  - id: sharp-curl-cut
+    role: "2"
+    criticality: required
+  - id: double-screen-set
+    role: "3"
+    criticality: required
+  - id: double-screen-set
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot
+    role: "2"
+    criticality: required
+  - id: on-time-on-target-pass
+    role: "1"
+    criticality: required
+  - id: curl-to-basket
+    role: "2"
+    criticality: optional
+  - id: post-duck-in
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: sharp-curl-cut
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: sharp-curl-cut
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: catch-and-shoot
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: double-screen-set
+    for_role: "3"
+  - region: core_outer
+    criticality: optional
+    supports_technique: double-screen-set
+    for_role: "4"
 ---
 
 # Doubles

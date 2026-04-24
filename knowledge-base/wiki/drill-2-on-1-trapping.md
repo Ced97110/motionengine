@@ -43,7 +43,7 @@ Teach two defenders to trap and contain a live ball handler — preventing him f
 3. **Advanced:** Front-court corner, live, with a third player positioned as an outlet receiver — interceptor must be added; now 2-on-1 trap + 1 interceptor vs. 1 dribbler + 1 outlet.
 
 ## Concepts Taught
-- [[trapping-and-double-teaming]] — this drill is the core training vehicle for Herb Brown's trapping system
+- [[trapping-and-double-teaming]] — this drill is the core training vehicle for the trapping system
 
 ## Sources
 - [S1, p.165] — Herb Brown's Trapping Drill description and Figure 10.20

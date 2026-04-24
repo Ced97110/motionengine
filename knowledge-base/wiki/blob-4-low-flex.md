@@ -5,6 +5,63 @@ formation: 4-low
 tags: [BLOB, man-to-man, flex-screen, pin-down, screen-the-screener, layup, catch-and-shoot]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-lob-pass
+    role: "1"
+    criticality: required
+  - id: catch-and-relay-pass
+    role: "4"
+    criticality: required
+  - id: flex-screen-set
+    role: "2"
+    criticality: required
+  - id: flex-cut-to-block
+    role: "5"
+    criticality: required
+  - id: pin-down-screen-set
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot-off-screen
+    role: "2"
+    criticality: required
+  - id: pass-read-dual-option
+    role: "3"
+    criticality: required
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: flex-cut-to-block
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: flex-cut-to-block
+    for_role: "5"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: catch-and-shoot-off-screen
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: flex-screen-set
+    for_role: "2"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The play generates two high-percentage looks by design — a flex-cut layup at the block and a catch-and-shoot at the top of the key — eliminating mid-range attempts entirely."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted sequence routes the ball through a fixed relay chain (1→4→3→5 or 2) capping live-ball decisions to a single read by 3, which limits the turnover surface compared to open motion."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: low
+    rationale: "Role 5's flex cut to the block creates a contact-prone finish opportunity in traffic, drawing foul calls when defenders chase through the screen to contest."
 ---
 
 # 4-Low Flex (BLOB vs Man-to-Man)

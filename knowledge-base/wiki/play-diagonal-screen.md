@@ -5,6 +5,43 @@ formation: box
 tags: [diagonal-screen, screen-the-screener, post-up, half-court, continuity]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: diagonal-screen-set
+    role: "5"
+    criticality: required
+  - id: post-up-on-catch
+    role: "2"
+    criticality: required
+  - id: diagonal-back-screen-set
+    role: "2"
+    criticality: required
+  - id: screen-the-screener-read
+    role: "1"
+    criticality: required
+  - id: down-screen-set
+    role: "5"
+    criticality: required
+  - id: baseline-cut-rub
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: post-up-on-catch
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: post-up-on-catch
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: diagonal-screen-set
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: baseline-cut-rub
+    for_role: "3"
 ---
 
 # Motion Offense Diagonal Screen Play

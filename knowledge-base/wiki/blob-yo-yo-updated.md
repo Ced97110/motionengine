@@ -5,6 +5,47 @@ formation: box
 tags: [BLOB, man-to-man, up-screen, post, layup, rim-cut, youth, simplicity]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: up-screen-set
+    role: "2"
+    criticality: required
+  - id: up-screen-set
+    role: "3"
+    criticality: required
+  - id: rim-cut-off-screen
+    role: "4"
+    criticality: required
+  - id: rim-cut-off-screen
+    role: "5"
+    criticality: required
+  - id: inbound-pass-read
+    role: "1"
+    criticality: required
+  - id: safety-valve-wing-cut
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: rim-cut-off-screen
+    for_role: "4"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: rim-cut-off-screen
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: rim-cut-off-screen
+    for_role: "4"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: up-screen-set
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: up-screen-set
+    for_role: "3"
 ---
 
 # BLOB Yo-Yo

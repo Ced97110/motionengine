@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [conditioning, core, strength, rotation, power]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: core-rotational-power
+    emphasis: primary
+  - id: trunk-stability
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Landmine Trunk Rotation — Core Rotation

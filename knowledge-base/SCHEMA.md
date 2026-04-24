@@ -110,6 +110,20 @@ duration_minutes: 10-15
 tags: [shooting, defense, conditioning, ball-handling, passing, rebounding, etc.]
 source_count: 1
 last_updated: 2026-04-11
+
+# Optional structured cross-refs. The crossref compiler inverts these into
+# technique-to-drill.json / anatomy-to-drill.json so the Engine can answer
+# "what drill trains technique X" or "what drill loads body region Y" in
+# O(1). If the drill's text makes a technique or anatomy region explicit,
+# emit the matching entry. Slugs must reference real wiki pages
+# (concept-technique-*.md / concept-anatomy-*.md); lint will flag dangling
+# refs.
+trains_techniques:
+  - id: baseline-drive-on-catch   # slug stem of a concept-technique-* page
+    emphasis: primary | secondary
+trains_anatomy:
+  - region: glute_max             # slug stem of a concept-anatomy-* page
+    emphasis: primary | secondary
 ---
 ```
 
@@ -158,11 +172,30 @@ type: play
 category: offense | defense | out-of-bounds | press-break | transition
 formation: horns | spread | 1-4-high | 2-3-zone | etc.
 tags: [ball-screen, flare, slip, backdoor, post-up, etc.]
-team: Lakers | Warriors | etc.  # if from NBA Playbook
 source_count: 1
 last_updated: 2026-04-11
+
+# Optional structured cross-refs. The crossref compiler inverts these into
+# play-to-technique.json / play-to-anatomy.json so the Engine can answer
+# "what techniques does my 2 need to execute this play" and "what body
+# regions are loaded for role X". Slugs must reference real wiki pages
+# (concept-technique-*.md / concept-anatomy-*.md); lint will flag dangling
+# refs.
+demands_techniques:
+  - id: baseline-drive-on-catch   # slug stem of a concept-technique-* page
+    role: "2"                      # which role (digit 1-5) needs this
+    criticality: required | optional
+demands_anatomy:
+  - region: hip_flexor_complex    # slug stem of a concept-anatomy-* page
+    criticality: required | optional
+    supports_technique: baseline-drive-on-catch
+    for_role: "2"
 ---
 ```
+
+Note: `team: Lakers | Warriors | etc.` was documented in earlier revisions but
+is deprecated and MUST NOT be emitted — team names leak IP and fail the
+`check-nba-terms` lint. Use `tags:` for attribution-free categorization.
 
 **Required sections:**
 
@@ -191,6 +224,14 @@ Starting positions described in words (e.g., "1 at top of key, 4 and 5 at elbows
 
 ## Counters
 What to do when the defense adjusts (e.g., "if they switch, 4 slips to the rim").
+
+## Related Concepts
+Required. Link each technique and anatomy region the play demands — these
+wikilinks are the human-readable twin of the `demands_techniques` /
+`demands_anatomy` YAML front-matter. At minimum one per field entry.
+
+- [[concept-technique-slug]] — technique a specific role needs to execute this play
+- [[concept-anatomy-region]] — body system loaded by a role's movement in this play
 
 ## Related Plays
 - [[play-slug]] — similar action or counter

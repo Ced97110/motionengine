@@ -5,6 +5,53 @@ formation: 1-3-1
 tags: [man-to-man, pick-and-roll, blindside-screen, PnR, decision-making, corner-three, layup, pull-up]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: wing-pass-and-return
+    role: "1"
+    criticality: required
+  - id: blindside-screen-set
+    role: "5"
+    criticality: required
+  - id: pick-and-roll-ball-handler-read
+    role: "1"
+    criticality: required
+  - id: screen-and-roll-to-rim
+    role: "5"
+    criticality: required
+  - id: corner-relocate-off-drive
+    role: "3"
+    criticality: required
+  - id: pull-up-jump-shot
+    role: "1"
+    criticality: optional
+  - id: catch-and-shoot-corner-three
+    role: "3"
+    criticality: optional
+  - id: baseline-layup-on-feed
+    role: "4"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: pick-and-roll-ball-handler-read
+    for_role: "1"
+  - region: glute_max
+    criticality: required
+    supports_technique: pick-and-roll-ball-handler-read
+    for_role: "1"
+  - region: core_outer
+    criticality: required
+    supports_technique: blindside-screen-set
+    for_role: "5"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: corner-relocate-off-drive
+    for_role: "3"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: baseline-layup-on-feed
+    for_role: "4"
 ---
 
 # Swinger

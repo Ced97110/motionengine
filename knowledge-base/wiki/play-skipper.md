@@ -5,6 +5,43 @@ formation: 1-3-1
 tags: [zone-offense, 2-3-zone, skip-pass, corner-three, screen, quick-hitter, shooter]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: wing-entry-pass
+    role: "1"
+    criticality: required
+  - id: screen-on-zone-defender
+    role: "5"
+    criticality: required
+  - id: catch-and-shoot-corner-three
+    role: "2"
+    criticality: required
+  - id: skip-pass-overhead
+    role: "3"
+    criticality: required
+  - id: shooter-cut-to-corner
+    role: "2"
+    criticality: required
+  - id: pass-reset-top
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: shooter-cut-to-corner
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: catch-and-shoot-corner-three
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: skip-pass-overhead
+    for_role: "3"
+  - region: glute_max
+    criticality: optional
+    supports_technique: screen-on-zone-defender
+    for_role: "5"
 ---
 
 # Skipper

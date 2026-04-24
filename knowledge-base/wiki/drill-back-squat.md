@@ -7,6 +7,19 @@ duration_minutes: 15-20
 tags: [strength, conditioning, lower-body, legs, weight-training]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: bilateral-lower-extremity-strength
+    emphasis: primary
+  - id: squat-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Back Squat

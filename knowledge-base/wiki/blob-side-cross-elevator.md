@@ -5,6 +5,63 @@ formation: box
 tags: [BLOB, zone, 2-3-zone, elevator-screen, sequential-screen, corner-three, inbounds]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: sequential-elevator-screen-set
+    role: "5"
+    criticality: required
+  - id: sequential-elevator-screen-set
+    role: "4"
+    criticality: required
+  - id: sprint-cut-off-screen
+    role: "2"
+    criticality: required
+  - id: inbound-pass-delivery
+    role: "1"
+    criticality: required
+  - id: catch-and-shoot-corner-three
+    role: "2"
+    criticality: required
+  - id: screen-slip-and-show
+    role: "4"
+    criticality: optional
+  - id: screen-slip-and-show
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: sprint-cut-off-screen
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: sprint-cut-off-screen
+    for_role: "2"
+  - region: glute_max
+    criticality: required
+    supports_technique: sequential-elevator-screen-set
+    for_role: "4"
+  - region: core_outer
+    criticality: optional
+    supports_technique: sequential-elevator-screen-set
+    for_role: "5"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The entire play is engineered to deliver the best shooter a catch-and-shoot corner three via sequential elevator screens, the highest-value shot type by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted two-screen sequence routes the inbound pass directly to the corner shooter in a single delivery, limiting live-ball turnover exposure to one pass."
+  - factor: floor-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Built-in counter reads — shooter going over the top, 3 above the arc, and screen slips by 4 and 5 — ensure the play generates a scoring opportunity even when the primary action is contested."
 ---
 
 # BLOB: Side Cross Elevator (vs 2-3 Zone)

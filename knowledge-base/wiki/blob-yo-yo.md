@@ -5,6 +5,68 @@ formation: box
 tags: [BLOB, man-to-man, up-screen, post, layup, box, rim-attack]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: up-screen-set
+    role: "2"
+    criticality: required
+  - id: up-screen-set
+    role: "3"
+    criticality: required
+  - id: basket-cut-off-screen
+    role: "4"
+    criticality: required
+  - id: basket-cut-off-screen
+    role: "5"
+    criticality: required
+  - id: inbound-read-and-pass
+    role: "1"
+    criticality: required
+  - id: safety-valve-cut-to-wing
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: basket-cut-off-screen
+    for_role: "4"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: basket-cut-off-screen
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: basket-cut-off-screen
+    for_role: "4"
+  - region: glute_max
+    criticality: required
+    supports_technique: basket-cut-off-screen
+    for_role: "5"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: up-screen-set
+    for_role: "2"
+  - region: core_outer
+    criticality: optional
+    supports_technique: up-screen-set
+    for_role: "3"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Dual up-screens simultaneously free two post players for direct basket cuts, targeting high-percentage layup attempts at the rim by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The inbounder makes a single decisive pass to a predetermined cutter, keeping the sequence to one pass and minimizing exposed ball-handling time."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Two simultaneous rim cuts from a box formation create layup opportunities on nearly every possession, maximizing expected points per trip."
 ---
 
 # Yo-Yo (BLOB vs Man-to-Man)

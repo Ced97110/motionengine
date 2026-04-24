@@ -7,6 +7,21 @@ duration_minutes: 15-20
 tags: [upper-body, pulling, pushing, plyometric, explosive, calisthenics, total-body, power]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: upper-body-explosive-power
+    emphasis: primary
+  - id: pull-to-press-transition
+    emphasis: primary
+  - id: kip-swing-mechanics
+    emphasis: secondary
+  - id: stretch-shortening-cycle-plyometrics
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # The Muscle-Up (Master Step)

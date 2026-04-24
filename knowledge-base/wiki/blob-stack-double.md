@@ -5,6 +5,69 @@ formation: stack
 tags: [BLOB, man-to-man, staggered-screen, shooter, wing, three-point, midrange]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: pop-out-to-perimeter
+    role: "4"
+    criticality: required
+  - id: inbound-pass-entry
+    role: "3"
+    criticality: required
+  - id: ball-reversal-pass
+    role: "4"
+    criticality: required
+  - id: dribble-fake-misdirection
+    role: "1"
+    criticality: required
+  - id: staggered-screen-set
+    role: "4"
+    criticality: required
+  - id: curl-cut-off-screen
+    role: "2"
+    criticality: required
+  - id: catch-and-shoot-wing
+    role: "2"
+    criticality: required
+  - id: decoy-move-baseline
+    role: "2"
+    criticality: optional
+  - id: weak-side-wing-clear
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: curl-cut-off-screen
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: curl-cut-off-screen
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: dribble-fake-misdirection
+    for_role: "1"
+  - region: glute_max
+    criticality: optional
+    supports_technique: staggered-screen-set
+    for_role: "4"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The entire play is architected to deliver role-2 (best shooter) an uncontested catch-and-shoot look on the wing off a staggered double screen, targeting a high-value three-point or open midrange attempt by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted ball-reversal sequence (inbound → role-4 → role-1 → role-2) limits live-ball decision-making to a fixed 3-pass chain, reducing improvised reads that generate turnovers."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Funneling the team's best shooter into a clean wing catch-and-shoot directly off a BLOB set converts a dead-ball possession into a high-efficiency shot, raising expected points per trip."
 ---
 
 # Stack Double (BLOB vs Man-to-Man)

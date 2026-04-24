@@ -5,6 +5,60 @@ formation: stack
 tags: [BLOB, zone, 2-3-zone, midrange, corner-three, screen, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: hard-cut-to-corner
+    role: "2"
+    criticality: required
+  - id: zone-screen-set
+    role: "5"
+    criticality: required
+  - id: catch-and-shoot-midrange
+    role: "4"
+    criticality: required
+  - id: inbound-pass-read
+    role: "1"
+    criticality: required
+  - id: catch-and-shoot-corner-three
+    role: "2"
+    criticality: optional
+  - id: safety-valve-positioning
+    role: "3"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: hard-cut-to-corner
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: hard-cut-to-corner
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: zone-screen-set
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: catch-and-shoot-midrange
+    for_role: "4"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The play's mechanics guarantee either an open midrange catch-and-shoot for 4 or an uncontested corner three for 2, eliminating contested mid-action attempts by design."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The set-play structure limits action to a single inbound read with at most two pass targets, reducing the turnover surface compared to a freely flowing half-court offense."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Screening the middle zone defender while dragging the low wing defender guarantees one of two shooters is open, producing a high-value possession from a dead-ball situation."
 ---
 
 # Stack (BLOB vs 2-3 Zone)

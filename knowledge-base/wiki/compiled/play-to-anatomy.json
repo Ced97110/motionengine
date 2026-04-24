@@ -1,4 +1,826 @@
 {
+  "23-flare": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "dribble-drag-defender"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "flare-screen-use"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "flare-screen-use"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "flare-screen-set"
+    }
+  ],
+  "32-lob": [
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "backdoor-hard-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "glute_max",
+      "supports_technique": "backdoor-hard-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-hard-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "lob-pass-delivery"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "zone-screen-low-defender"
+    }
+  ],
+  "blob-4-low-flex": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flex-cut-to-block"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "flex-cut-to-block"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "flex-screen-set"
+    }
+  ],
+  "blob-4-low-flex-updated": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flex-cut-to-block"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "flex-cut-to-block"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "flex-screen-set"
+    }
+  ],
+  "blob-belmont-flash": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "curl-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "curl-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "mid-key-flash"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "down-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "low-block-finish"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "catch-and-shoot-corner-three"
+    }
+  ],
+  "blob-box-flash": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "curl-off-double-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "sprint-to-wing-on-signal"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "double-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "glute_max",
+      "supports_technique": "high-post-read-and-attack"
+    }
+  ],
+  "blob-box-gate": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "basket-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "basket-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "gate-screen-usage"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-wing"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "cross-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "post-entry-duck-in"
+    }
+  ],
+  "blob-box-gate-updated": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "hard-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "hard-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "back-screen-set"
+    }
+  ],
+  "blob-cross": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-cross-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-cross-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "corner-cut-spacing"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "corner-cut-spacing"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "block-catch-and-finish"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "inbound-pass-read"
+    }
+  ],
+  "blob-double-skip": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "shooter-flare-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "shooter-flare-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "flare-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "flare-screen-set"
+    }
+  ],
+  "blob-flip": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flash-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "flash-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "post-seal-and-pivot"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "cross-screen-set"
+    }
+  ],
+  "blob-flip-updated": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flash-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flash-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "back-hip-seal"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "back-hip-seal"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "corner-decoy-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "corner-decoy-cut"
+    }
+  ],
+  "blob-hawk": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "curl-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "curl-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "simultaneous-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "low-block-catch-and-shoot"
+    }
+  ],
+  "blob-side-cross-elevator": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "sprint-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "sprint-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "sequential-elevator-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "sequential-elevator-screen-set"
+    }
+  ],
+  "blob-stack-double": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "curl-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "curl-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "dribble-fake-misdirection"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "staggered-screen-set"
+    }
+  ],
+  "blob-stack-double-updated": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "screen-read-off-ball"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "screen-read-off-ball"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "dribble-fake-direction-change"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "staggered-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "glute_max",
+      "supports_technique": "baseline-sprint-clear"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-wing"
+    }
+  ],
+  "blob-stack-man": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "hard-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "hard-cut-to-opposite-block"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "hard-cut-to-opposite-block"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "step-in-catch-and-finish"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "step-in-catch-and-finish"
+    }
+  ],
+  "blob-stack-man-spread": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "hard-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "hard-cut-to-weak-side-block"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "glute_max",
+      "supports_technique": "catch-and-finish-near-block"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "inbound-pass-read"
+    }
+  ],
+  "blob-stack-zone": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "hard-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "hard-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "zone-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "catch-and-shoot-midrange"
+    }
+  ],
+  "blob-stack-zone-variant": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "hard-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "gap-cut-midrange-catch-and-shoot"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "zone-screen-middle-defender"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "hard-cut-to-corner"
+    }
+  ],
+  "blob-two-inside": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "weak-side-rim-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "post-seal-and-pivot"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "weak-side-rim-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "screen-the-screener-set"
+    }
+  ],
+  "blob-two-inside-updated": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "rim-cut-on-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "post-seal-and-pivot"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "cross-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "up-screen-set"
+    }
+  ],
+  "blob-yo-yo": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "basket-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "basket-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "basket-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "basket-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "up-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "up-screen-set"
+    }
+  ],
+  "blob-yo-yo-updated": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "rim-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "rim-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "rim-cut-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "up-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "up-screen-set"
+    }
+  ],
+  "play-1-4-quick-floppy": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "floppy-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "floppy-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "floppy-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "floppy-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "post-duck-in-seal"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "post-duck-in-seal"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "staggered-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "staggered-screen-set"
+    }
+  ],
+  "play-back-screen-post": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "basket-cut-off-back-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "basket-cut-off-back-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "back-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "ankle_complex",
+      "supports_technique": "staggered-screen-navigation"
+    }
+  ],
+  "play-baseline-swing": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "baseline-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "baseline-cut-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "catch-and-shoot-corner"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "post-screen-on-zone-defender"
+    }
+  ],
   "play-black": [
     {
       "criticality": "required",
@@ -23,6 +845,1238 @@
       "for_role": "4",
       "region": "core_outer",
       "supports_technique": "step-up-screen-set"
+    }
+  ],
+  "play-box-loop-post": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-seal-high-post"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "post-seal-high-post"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "down-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "curl-cut-off-screen"
+    }
+  ],
+  "play-box-spin": [
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "curl-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "curl-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "sequential-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "catch-and-shoot-three"
+    }
+  ],
+  "play-chin-series": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "rub-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "rub-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "back-screen-set"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "back-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "backdoor-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "ankle_complex",
+      "supports_technique": "flare-screen-set"
+    }
+  ],
+  "play-cross-screen": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-up-catch-and-hold"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "post-up-catch-and-hold"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "cross-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-off-screen"
+    }
+  ],
+  "play-deception-slob": [
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "backdoor-cut-finish"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-cut-finish"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "screen-the-screener-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "quick-decision-pass"
+    }
+  ],
+  "play-diagonal-screen": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-up-on-catch"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "post-up-on-catch"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "diagonal-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "baseline-cut-rub"
+    }
+  ],
+  "play-diamond-slob": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flare-cut-to-wing"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "pick-and-roll-ball-handler"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "pick-and-roll-ball-handler"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "curl-cut-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "roll-or-pop-read"
+    }
+  ],
+  "play-double-curls": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "high-post-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "curl-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "pick-and-roll-ball-handler"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "staggered-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "pick-and-roll-screen-set"
+    }
+  ],
+  "play-doubles": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "sharp-curl-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "sharp-curl-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "catch-and-shoot"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "double-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "double-screen-set"
+    }
+  ],
+  "play-drive-hammer": [
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "drive-to-rim-off-ball-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "glute_max",
+      "supports_technique": "drive-to-rim-off-ball-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "high-cut-off-elbow-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "on-ball-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "catch-and-shoot-off-back-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "roll-to-rim-after-screen"
+    }
+  ],
+  "play-flare-overload": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "position-swap-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "on-ball-screen-set-and-roll"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "dribble-read-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "low-screen-on-zone-defender"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "on-ball-screen-set-and-roll"
+    }
+  ],
+  "play-flex-warrior": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flex-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "flex-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "post-seal-deep"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "down-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "post-seal-deep"
+    }
+  ],
+  "play-flip-gate": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "rim-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "baseline-runner-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "back-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "rim-cut-off-screen"
+    }
+  ],
+  "play-high-pick-series": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "on-ball-pick-and-roll-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "rub-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "roll-to-basket"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "high-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "dribble-handoff"
+    }
+  ],
+  "play-high-post-double-screen": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "high-post-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "on-ball-pick-and-roll-attack"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "pick-and-roll-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "roll-to-rim"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "double-screen-set"
+    }
+  ],
+  "play-high-split-action": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "backdoor-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "high-post-read-and-pass"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "glute_max",
+      "supports_technique": "pick-and-roll-screen-set"
+    }
+  ],
+  "play-inside-isolate": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "low-post-flash-on-entry"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "low-post-isolation-move"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "low-post-isolation-move"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "wing-to-slot-screen-exchange"
+    }
+  ],
+  "play-iverson-ram": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "iverson-cut-off-elbow-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "iverson-cut-off-elbow-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "on-ball-screen-set"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "iverson-cut-off-elbow-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "ram-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "roll-to-rim"
+    }
+  ],
+  "play-loop-fly-slob": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "alley-oop-finish"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "alley-oop-finish"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "back-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "hard-cut-to-rim"
+    }
+  ],
+  "play-low-split": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-flash-mid-post"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-flash-baseline"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "post-flash-baseline"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "post-flash-mid-post"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "interior-pass-under-pressure"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "draw-contact-interior"
+    }
+  ],
+  "play-option-slob": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "read-screen-direction"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "on-ball-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "glute_max",
+      "supports_technique": "rim-attack-off-ball-screen"
+    }
+  ],
+  "play-pass-and-cut-away": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "cut-away-to-opposite-side"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "cut-away-to-opposite-side"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "down-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "high-post-read-and-distribute"
+    }
+  ],
+  "play-pass-and-screen-away": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "backdoor-cut-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-cut-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "high-post-flash-and-catch"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "glute_max",
+      "supports_technique": "roll-or-pop-after-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "down-screen-set"
+    }
+  ],
+  "play-pick-and-roll-layered": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "high-post-rub-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "high-post-rub-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "pick-and-roll-ball-handler"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "pick-and-roll-screen-set"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "roll-or-flare-read"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "curl-cut-off-double-screen"
+    }
+  ],
+  "play-pick-overload": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "drive-and-kick-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "glute_max",
+      "supports_technique": "drive-and-kick-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "baseline-deep-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "on-ball-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "corner-three-catch-and-shoot"
+    }
+  ],
+  "play-piston-elevator": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "change-of-direction-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "change-of-direction-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "elevator-screen-set"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "elevator-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "rim-dive-on-coverage"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "iverson-cut-decoy"
+    }
+  ],
+  "play-prowl-slob": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "pick-and-roll-ball-handler"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "on-ball-screen-set"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "cut-to-top-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "on-ball-screen-set"
+    }
+  ],
+  "play-reverse-dribble-options": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "reverse-dribble-entry"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "flash-to-elbow"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "pick-and-roll-ball-handler"
+    }
+  ],
+  "play-side-blaze": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "hand-off-catch-and-attack"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "pick-and-roll-roll-man"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "hand-off-catch-and-attack"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "on-ball-screen-set"
+    }
+  ],
+  "play-skipper": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "shooter-cut-to-corner"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-corner-three"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "core_outer",
+      "supports_technique": "skip-pass-overhead"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "screen-on-zone-defender"
+    }
+  ],
+  "play-step-up": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "baseline-drive-on-catch"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "baseline-drive-on-catch"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-dive-to-rim"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "post-dive-to-rim"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "step-up-screen-set"
+    }
+  ],
+  "play-swinger": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "pick-and-roll-ball-handler-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "glute_max",
+      "supports_technique": "pick-and-roll-ball-handler-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "blindside-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "corner-relocate-off-drive"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "baseline-layup-on-feed"
+    }
+  ],
+  "play-triangle-slob": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "hip_flexor_complex",
+      "supports_technique": "high-low-cut-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "low-post-catch-and-finish"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "cross-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "ankle_complex",
+      "supports_technique": "catch-and-shoot-off-screen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "drive-to-rim-off-rescreen"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "screen-the-screener-down-screen"
+    }
+  ],
+  "play-up-screen": [
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "post-up-catch-and-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "post-up-catch-and-read"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "back-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "down-screen-set-and-roll"
+    }
+  ],
+  "play-x-cross": [
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "ankle_complex",
+      "supports_technique": "stationary-high-post-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "stationary-high-post-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flex-cut-to-rim"
+    },
+    {
+      "criticality": "required",
+      "for_role": "4",
+      "region": "glute_max",
+      "supports_technique": "flex-cut-to-rim"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "ankle_complex",
+      "supports_technique": "backdoor-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "off-ball-screen-use"
+    }
+  ],
+  "play-zipper-curl": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "zipper-cut-off-down-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "screen-read-curl-or-pop"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "glute_max",
+      "supports_technique": "catch-and-shoot-wing"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "1",
+      "region": "core_outer",
+      "supports_technique": "double-screen-set"
+    }
+  ],
+  "set-23-flare-updated": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "hip_flexor_complex",
+      "supports_technique": "flare-cut-to-wing"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "flare-cut-to-wing"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "flare-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "glute_max",
+      "supports_technique": "catch-and-shoot-off-screen"
+    }
+  ],
+  "set-32-lob-updated": [
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "backdoor-lob-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "glute_max",
+      "supports_technique": "backdoor-lob-cut"
+    },
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "dribble-penetration-to-corner"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "core_outer",
+      "supports_technique": "zone-screen-on-low-defender"
+    }
+  ],
+  "slob-twist": [
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "hip_flexor_complex",
+      "supports_technique": "paint-attack-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "1",
+      "region": "ankle_complex",
+      "supports_technique": "paint-attack-off-screen"
+    },
+    {
+      "criticality": "required",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "ram-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "4",
+      "region": "core_outer",
+      "supports_technique": "on-ball-screen-set"
+    }
+  ],
+  "slob-x": [
+    {
+      "criticality": "required",
+      "for_role": "2",
+      "region": "ankle_complex",
+      "supports_technique": "shooting-off-staggered-screens"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "ankle_complex",
+      "supports_technique": "shooting-off-staggered-screens"
+    },
+    {
+      "criticality": "required",
+      "for_role": "3",
+      "region": "hip_flexor_complex",
+      "supports_technique": "baseline-sprint-cut"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "5",
+      "region": "glute_max",
+      "supports_technique": "staggered-screen-set"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "2",
+      "region": "core_outer",
+      "supports_technique": "shooting-off-staggered-screens"
     }
   ]
 }

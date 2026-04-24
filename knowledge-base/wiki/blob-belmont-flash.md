@@ -5,6 +5,79 @@ formation: wide-box
 tags: [BLOB, zone, 2-3-zone, corner-three, flash, screen, inbounds]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: inbound-pass-entry
+    role: "2"
+    criticality: required
+  - id: pop-to-wing-catch
+    role: "3"
+    criticality: required
+  - id: mid-key-flash
+    role: "4"
+    criticality: required
+  - id: down-screen-set
+    role: "5"
+    criticality: required
+  - id: curl-cut-to-corner
+    role: "2"
+    criticality: required
+  - id: zone-read-pass
+    role: "4"
+    criticality: required
+  - id: catch-and-shoot-corner-three
+    role: "2"
+    criticality: required
+  - id: low-block-finish
+    role: "5"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: curl-cut-to-corner
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: curl-cut-to-corner
+    for_role: "2"
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: mid-key-flash
+    for_role: "4"
+  - region: core_outer
+    criticality: required
+    supports_technique: down-screen-set
+    for_role: "5"
+  - region: glute_max
+    criticality: optional
+    supports_technique: low-block-finish
+    for_role: "5"
+  - region: core_outer
+    criticality: optional
+    supports_technique: catch-and-shoot-corner-three
+    for_role: "2"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The play is designed by construction to deliver the ball to the best shooter at the corner for a three-point attempt, the highest-value shot type in eFG terms."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The counter option routes the ball inside to role 5 on the low block, where contact from a recovering zone defender is expected and draws fouls."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The scripted inbounds sequence limits live-ball touches to a fixed two-pass chain (3 → 4 → 2), minimizing the improvised decision-making that generates turnovers."
+  - factor: ppp
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "Targeting either a corner three or a low-block layup as the only two designed outcomes concentrates possessions in the two most efficient shot locations on the floor."
 ---
 
 # BLOB: Belmont Flash (vs 2-3 Zone)

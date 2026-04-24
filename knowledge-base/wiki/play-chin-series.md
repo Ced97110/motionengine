@@ -5,6 +5,79 @@ formation: 2-3 high-post
 tags: [continuity, back-screen, chin, flare, down-screen, motion, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: back-screen-set
+    role: "5"
+    criticality: required
+  - id: rub-cut-off-screen
+    role: "2"
+    criticality: required
+  - id: post-pop-after-screen
+    role: "5"
+    criticality: required
+  - id: down-screen-set
+    role: "3"
+    criticality: required
+  - id: flare-screen-set
+    role: "1"
+    criticality: required
+  - id: multi-option-post-read
+    role: "5"
+    criticality: required
+  - id: backdoor-cut
+    role: "4"
+    criticality: optional
+  - id: dribble-handoff-screen-on-ball
+    role: "1"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: rub-cut-off-screen
+    for_role: "2"
+  - region: ankle_complex
+    criticality: required
+    supports_technique: rub-cut-off-screen
+    for_role: "2"
+  - region: core_outer
+    criticality: required
+    supports_technique: back-screen-set
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: back-screen-set
+    for_role: "5"
+  - region: hip_flexor_complex
+    criticality: optional
+    supports_technique: backdoor-cut
+    for_role: "4"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: flare-screen-set
+    for_role: "1"
+# Cross-ref edge #8 — analytic signature. See backend/spec/crossref-anatomy-chain.md §M4 signature expansion
+produces_signature:
+  - factor: efg-pct
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: high
+    rationale: "The play cascades back screens, down screens, and flare screens simultaneously, generating layup attempts at the rim (roll cuts) and open catch-and-shoot looks on the perimeter — eliminating contested mid-range attempts by design."
+  - factor: ftr
+    direction: lifts
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "Rub cuts off back screens and post rollers attacking the paint force defenders into body contact, inviting foul calls on closeout and pursuit situations."
+  - factor: tov-pct
+    direction: protects
+    concept_slug: concept-four-factors
+    magnitude: medium
+    rationale: "The structured multi-option read hierarchy gives the passer (role 5 or role 3) a sequenced decision tree rather than ad-hoc improvisation, reducing unforced turnovers relative to open motion offense."
+  - factor: pace
+    direction: lowers
+    concept_slug: concept-four-factors
+    magnitude: low
+    rationale: "The continuity system cycles through multiple screen layers and secondary options before a shot is taken, consuming half-court possession time and depressing overall pace."
 ---
 
 # Continuity — Chin Action

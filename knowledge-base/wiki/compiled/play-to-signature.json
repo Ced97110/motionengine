@@ -1,4 +1,513 @@
 {
+  "23-flare": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The entire sequence is engineered to deliver the best shooter an uncontested catch-and-shoot three off the flare screen, eliminating mid-range or low-efficiency looks by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted ball-movement chain (wing \u2192 corner \u2192 top) keeps the pass count low and each read pre-determined, reducing live-read turnovers versus open motion against the zone."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lowers",
+      "factor": "pace",
+      "magnitude": "low",
+      "rationale": "The multi-phase drag-and-screen setup requires deliberate dribble-drag and sequential screening actions before the shot is taken, consuming clock relative to a direct attack."
+    }
+  ],
+  "32-lob": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The play's terminal action is a lob to an uncontested cutter at the rim, generating a layup or dunk \u2014 the highest-efficiency shot in basketball."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted 3-pass sequence (entry to 2 \u2192 reversal to 1 \u2192 lob to 3) limits improvised decision-making and reduces live-ball turnover exposure compared to motion offense."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "high",
+      "rationale": "A designed lob to an open cutter behind a zone screen consistently produces a high-probability two-point finish, inflating points-per-possession when the play succeeds."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lowers",
+      "factor": "pace",
+      "magnitude": "low",
+      "rationale": "The multi-phase zone manipulation (corner dribble, weak-side slide, reversal) consumes deliberate clock before the scoring action, slightly reducing overall pace."
+    }
+  ],
+  "blob-4-low-flex": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The play generates two high-percentage looks by design \u2014 a flex-cut layup at the block and a catch-and-shoot at the top of the key \u2014 eliminating mid-range attempts entirely."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted sequence routes the ball through a fixed relay chain (1\u21924\u21923\u21925 or 2) capping live-ball decisions to a single read by 3, which limits the turnover surface compared to open motion."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "low",
+      "rationale": "Role 5's flex cut to the block creates a contact-prone finish opportunity in traffic, drawing foul calls when defenders chase through the screen to contest."
+    }
+  ],
+  "blob-belmont-flash": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The play is designed by construction to deliver the ball to the best shooter at the corner for a three-point attempt, the highest-value shot type in eFG terms."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "The counter option routes the ball inside to role 5 on the low block, where contact from a recovering zone defender is expected and draws fouls."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted inbounds sequence limits live-ball touches to a fixed two-pass chain (3 \u2192 4 \u2192 2), minimizing the improvised decision-making that generates turnovers."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "high",
+      "rationale": "Targeting either a corner three or a low-block layup as the only two designed outcomes concentrates possessions in the two most efficient shot locations on the floor."
+    }
+  ],
+  "blob-box-flash": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The primary action delivers the best shooter a catch-and-shoot corner three off a double screen, while secondary options include a backdoor layup \u2014 both among the highest-efficiency shot types by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "low",
+      "rationale": "Role 5's backdoor cut and role 3's rim attack from the high post both route players into the paint where contact fouls are possible, though these are secondary reads."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted two-pass entry sequence (inbound to 5, then to 1) and predetermined reads cap the number of live-ball decisions, limiting turnovers relative to a free-flowing zone offense."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Multiple high-value shot options (corner three, backdoor layup, wing three) are built into the same set, ensuring at least one quality look regardless of how the zone rotates."
+    }
+  ],
+  "blob-box-gate": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Three sequential reads \u2014 rim cut off back screen, catch-and-shoot wing, and post duck-in \u2014 all target high-efficiency shot types (layup or open 3), eliminating mid-range attempts by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "Role 5's hard basket cut off the back screen and subsequent post-up duck-in both invite body contact from the help defender in a confined paint area."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The play is a scripted BLOB sequence with pre-assigned reads in strict phase order, limiting live decision-making and keeping the pass count low against an organized man-to-man defense."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Cascading screen actions force the defense into sequential rotations, ensuring at least one of the three reads yields an uncontested shot or layup on nearly every possession."
+    }
+  ],
+  "blob-cross": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The crossing post action and corner spacing force 3 zone defenders to cover 4 receivers, consistently freeing either a corner three or a low-block finish \u2014 both high-efficiency shot types."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The inbounder reads a predetermined two-option hierarchy (corner then block), capping decision complexity and limiting risky passes to a single direct delivery."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "By design the play terminates in a corner three or an uncontested low-block catch-and-finish, both of which carry above-average points-per-possession relative to contested mid-range alternatives."
+    }
+  ],
+  "blob-double-skip": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The entire play is designed to deliver the best shooter an open catch-and-shoot three-pointer on the weak-side wing; all screening and skip-pass actions exist solely to create that uncontested look."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted two-skip-pass sequence routes the ball along predetermined paths with optional pass fakes and relay options built in, limiting improvised ball movement that invites turnovers against a zone."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Delivering a set-play three-point attempt to the team's best shooter off a catch \u2014 a high-value possession outcome \u2014 directly raises points per possession versus a contested or lower-quality shot."
+    }
+  ],
+  "blob-flip": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Both post players are routed to the rim via cross-screen and seal mechanics, generating layup attempts rather than mid-range or perimeter shots by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "Role 5's post seal pins the defender, and role 4's flash cut to the rim invites body contact on the receive or finish, increasing the likelihood of foul calls."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The play is a single-read, one-pass BLOB set where role 1 delivers directly to the open post; the scripted action limits dribble-handoff and skip-pass exposure that inflate turnover risk."
+    }
+  ],
+  "blob-hawk": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Dual simultaneous screens free role 2 for a corner three or role 4 for a low-block catch-and-shoot \u2014 both are high-efficiency shot types with no mid-range attempts by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The inbounder (role 1) makes a single pre-read pass to one of two predetermined targets, limiting the sequence to one decision and one delivery under pressure."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "By targeting a corner three as the primary option and a low-block jumper as the counter, the play concentrates possessions on above-average expected-point locations."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lowers",
+      "factor": "pace",
+      "magnitude": "low",
+      "rationale": "As a scripted BLOB quick-hitter reserved for special situations, the play is used infrequently and by design does not contribute to up-tempo possession generation."
+    }
+  ],
+  "blob-side-cross-elevator": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The entire play is engineered to deliver the best shooter a catch-and-shoot corner three via sequential elevator screens, the highest-value shot type by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted two-screen sequence routes the inbound pass directly to the corner shooter in a single delivery, limiting live-ball turnover exposure to one pass."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "floor-pct",
+      "magnitude": "medium",
+      "rationale": "Built-in counter reads \u2014 shooter going over the top, 3 above the arc, and screen slips by 4 and 5 \u2014 ensure the play generates a scoring opportunity even when the primary action is contested."
+    }
+  ],
+  "blob-stack-double": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The entire play is architected to deliver role-2 (best shooter) an uncontested catch-and-shoot look on the wing off a staggered double screen, targeting a high-value three-point or open midrange attempt by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted ball-reversal sequence (inbound \u2192 role-4 \u2192 role-1 \u2192 role-2) limits live-ball decision-making to a fixed 3-pass chain, reducing improvised reads that generate turnovers."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Funneling the team's best shooter into a clean wing catch-and-shoot directly off a BLOB set converts a dead-ball possession into a high-efficiency shot, raising expected points per trip."
+    }
+  ],
+  "blob-stack-man": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Sequential hard cuts clear defenders from the paint, leaving role 3 open to step in and catch near the block or rim \u2014 a high-percentage shot by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "high",
+      "rationale": "The scripted two-cut sequence delivers a single direct inbound pass to a pre-read primary target, capping ball-movement complexity and minimizing live-ball turnover risk."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Routing the primary scoring option to a catch-and-finish near the rim generates a consistently high expected-point shot on a set possession."
+    }
+  ],
+  "blob-stack-man-spread": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Sequential cuts by roles 1 and 4 pull defenders out of the paint, leaving role 3 with a catch-and-finish opportunity at the block \u2014 a high-percentage look by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The set-play structure routes the inbound pass directly to a pre-designated receiver after just one or two reads, limiting live-ball turnovers compared to open motion."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Targeting a near-block finish as the primary option converts a set-play possession into a near-rim attempt, maximizing expected points per trip."
+    }
+  ],
+  "blob-stack-zone": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The play's mechanics guarantee either an open midrange catch-and-shoot for 4 or an uncontested corner three for 2, eliminating contested mid-action attempts by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The set-play structure limits action to a single inbound read with at most two pass targets, reducing the turnover surface compared to a freely flowing half-court offense."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Screening the middle zone defender while dragging the low wing defender guarantees one of two shooters is open, producing a high-value possession from a dead-ball situation."
+    }
+  ],
+  "blob-two-inside": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The screen-the-screener and post-seal actions are designed to free a post player at the rim for a layup, the highest-eFG shot available."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted 3-4 phase sequence limits decision-making to one or two predetermined pass targets, reducing the turnover surface compared to free-flow half-court offense."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "Post players cutting to the rim after screening actions draw contact from scrambling defenders, inviting foul calls on the finish."
+    }
+  ],
+  "blob-yo-yo": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Dual up-screens simultaneously free two post players for direct basket cuts, targeting high-percentage layup attempts at the rim by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The inbounder makes a single decisive pass to a predetermined cutter, keeping the sequence to one pass and minimizing exposed ball-handling time."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "high",
+      "rationale": "Two simultaneous rim cuts from a box formation create layup opportunities on nearly every possession, maximizing expected points per trip."
+    }
+  ],
+  "play-1-4-quick-floppy": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Floppy cuts off staggered screens generate immediate catch-and-shoot perimeter looks or post duck-in layups, eliminating mid-range attempts by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The set-play structure funnels 1 into a single read-and-deliver decision from a fixed menu of four options, capping live-ball turnover exposure versus open motion."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "Post duck-in seals after screens place 4 and 5 on mismatched or scrambling defenders in the paint, inviting contact on interior catches."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Simultaneous perimeter and interior threats force the defense into a no-win rotation, consistently surfacing an open look at the rim or behind the arc on nearly every possession."
+    }
+  ],
+  "play-back-screen-post": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The back screen frees role-5 for a direct basket cut to the rim, and the secondary staggered screen frees the best shooter at the top of the key \u2014 both terminal reads are layups or open perimeter shots, eliminating contested mid-range attempts by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "Role-5 rolling hard to the basket off the back screen draws contact from recovering defenders in the paint, inviting foul opportunities on the finish at the rim."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The set-play structure routes through a single primary decision-maker (role-1) with a clear read hierarchy \u2014 post entry or secondary shooter \u2014 capping the passing sequence at 1\u20132 actions and reducing unforced turnover exposure."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "By sequencing a surprise back screen into a simultaneous staggered screen, the play creates two high-value shot opportunities (rim layup or open 3) from a single possession, driving above-average points-per-possession when either read is available."
+    }
+  ],
+  "play-baseline-swing": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The play's geometry channels role-4 to a corner three or short-corner catch-and-shoot \u2014 both high-efficiency looks \u2014 by design, with no mid-range scramble shots."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "Ball movement follows a scripted reversal path (1\u21923\u21921\u21922\u21923\u21924) with predetermined reads at each node, limiting unscripted dribble-penetration decisions that generate turnovers against zone."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "floor-pct",
+      "magnitude": "medium",
+      "rationale": "Sequential ball reversal forces the 2-3 zone to rotate across multiple gaps simultaneously, consistently generating an open catch-and-shoot opportunity for role-4 on each execution."
+    }
+  ],
   "play-black": [
     {
       "concept_slug": "concept-four-factors",
@@ -20,6 +529,165 @@
       "factor": "tov-pct",
       "magnitude": "medium",
       "rationale": "set-play mechanics limit the sequence to \u22642 passes; lower TOV surface than motion offense"
+    }
+  ],
+  "play-box-cross-2-blob": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The cross-screen system is designed to free the primary cutter for a lob or layup at the rim, with no perimeter shot as the primary target \u2014 maximizing shot quality by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "Attacking the basket via a cross-screen cut through the lane draws contact from rotating defenders, creating foul opportunities at the rim."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The set-play structure limits ball-handling to the inbounder with a fixed 2-read sequence (O2 then O4), reducing improvised passing decisions that generate turnovers."
+    }
+  ],
+  "play-box-loop-post": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Sequential down screens manufacture a clean high-post isolation for the best post player, generating close-range scoring opportunities rather than contested mid-range or perimeter shots."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted two-screen sequence limits live-ball decisions to a single controlled entry pass from 1 to an isolated 4, reducing the number of passes where a turnover can occur."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "The high-post 1-on-1 isolation by design invites physicality as 4 seals and holds contact against the defender, creating frequent foul opportunities on post moves."
+    }
+  ],
+  "play-box-spin": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The play's two primary reads are a rim-cut layup and a catch-and-shoot three, eliminating mid-range attempts by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "Role 3's hard curl-cut through two sequential screens to the rim creates direct contact opportunities against defenders caught in the screen traffic."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The set-play structure routes all action through a single inbound pass followed by one decisive read, keeping ball-handler decisions and live-ball exposure to a minimum."
+    }
+  ],
+  "play-celtics-post-drop": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "Every option in the play terminates at a high-value shot \u2014 left-block post finish, elbow jumper off a down-screen, or a basket-cut lob \u2014 systematically avoiding mid-range pull-ups."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "The primary action is a left-block post-up where 3 seals and receives a direct feed, placing a skilled finisher in contact-heavy position that routinely draws fouls on the catch or through-move."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The play routes through a fixed sequence of at most two passes per option (entry to elbow, elbow to block/wing, wing to cutter), limiting live-ball exposure compared to free-flowing motion offense."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Continuous off-ball movement through the backdoor cut, down-screen, and back-screen chain ensures that if the primary post feed is denied the defense must still contest two additional high-efficiency scoring reads, keeping points-per-possession elevated across all branches."
+    }
+  ],
+  "play-chin-series": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The play cascades back screens, down screens, and flare screens simultaneously, generating layup attempts at the rim (roll cuts) and open catch-and-shoot looks on the perimeter \u2014 eliminating contested mid-range attempts by design."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "Rub cuts off back screens and post rollers attacking the paint force defenders into body contact, inviting foul calls on closeout and pursuit situations."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The structured multi-option read hierarchy gives the passer (role 5 or role 3) a sequenced decision tree rather than ad-hoc improvisation, reducing unforced turnovers relative to open motion offense."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lowers",
+      "factor": "pace",
+      "magnitude": "low",
+      "rationale": "The continuity system cycles through multiple screen layers and secondary options before a shot is taken, consuming half-court possession time and depressing overall pace."
+    }
+  ],
+  "play-iverson-ram": [
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "efg-pct",
+      "magnitude": "high",
+      "rationale": "The ram screen eliminates x5 (the primary helper), leaving 2 a clear lane to attack the rim or find 5 rolling for a high-percentage finish."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ftr",
+      "magnitude": "medium",
+      "rationale": "With x5 screened away by 4's ram action, 2 drives into the paint against reduced help, increasing the likelihood of contact and foul-drawing at the rim."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "protects",
+      "factor": "tov-pct",
+      "magnitude": "medium",
+      "rationale": "The scripted Iverson-cut exchange into a structured PnR sequences the ball through predetermined reads, limiting improvised passes and reducing live-ball turnover exposure."
+    },
+    {
+      "concept_slug": "concept-four-factors",
+      "direction": "lifts",
+      "factor": "ppp",
+      "magnitude": "medium",
+      "rationale": "Layering the ram screen on top of the PnR systematically removes the help defender, giving 2 multiple high-value reads \u2014 rim attack, roll pass, or corner kick-out \u2014 that each produce above-average shot quality."
     }
   ]
 }

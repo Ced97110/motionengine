@@ -5,6 +5,54 @@ formation: triangle
 tags: [SLOB, man-to-man, cross-screen, screen-the-screener, low-post, catch-and-shoot, drive]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+demands_techniques:
+  - id: cross-screen-set
+    role: "1"
+    criticality: required
+  - id: screen-the-screener-down-screen
+    role: "4"
+    criticality: required
+  - id: high-low-cut-off-screen
+    role: "5"
+    criticality: required
+  - id: catch-and-shoot-off-screen
+    role: "1"
+    criticality: required
+  - id: low-post-catch-and-finish
+    role: "5"
+    criticality: required
+  - id: inbound-read-and-pass
+    role: "2"
+    criticality: required
+  - id: drive-to-rim-off-rescreen
+    role: "1"
+    criticality: optional
+demands_anatomy:
+  - region: hip_flexor_complex
+    criticality: required
+    supports_technique: high-low-cut-off-screen
+    for_role: "5"
+  - region: glute_max
+    criticality: required
+    supports_technique: low-post-catch-and-finish
+    for_role: "5"
+  - region: core_outer
+    criticality: required
+    supports_technique: cross-screen-set
+    for_role: "1"
+  - region: ankle_complex
+    criticality: optional
+    supports_technique: catch-and-shoot-off-screen
+    for_role: "1"
+  - region: hip_flexor_complex
+    criticality: optional
+    supports_technique: drive-to-rim-off-rescreen
+    for_role: "1"
+  - region: core_outer
+    criticality: optional
+    supports_technique: screen-the-screener-down-screen
+    for_role: "4"
 ---
 
 # Triangle (SLOB)

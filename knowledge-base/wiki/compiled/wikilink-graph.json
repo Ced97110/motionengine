@@ -4347,6 +4347,58 @@
     "concept-roster-stability",
     "concept-basketball-position-anthropometrics-nsca"
   ],
+  "concept-technique-closeout-contest-verticality": [
+    "concept-defensive-footwork-breakdown-drills",
+    "concept-anatomy-ankle-complex",
+    "concept-anatomy-glute-max",
+    "concept-anatomy-core-outer"
+  ],
+  "concept-technique-dribble-handoff-receipt": [
+    "concept-setting-screens",
+    "concept-1on1-reads-and-attacks",
+    "concept-anatomy-hip-flexor-complex",
+    "concept-anatomy-ankle-complex",
+    "concept-anatomy-core-outer"
+  ],
+  "concept-technique-dump-off-pass": [
+    "concept-1on1-reads-and-attacks",
+    "concept-technique-skip-pass",
+    "concept-anatomy-core-outer",
+    "concept-anatomy-hip-flexor-complex"
+  ],
+  "concept-technique-flare-screen-set": [
+    "concept-flare-screen-reads",
+    "concept-setting-screens",
+    "concept-screen-the-screener-footwork",
+    "concept-anatomy-glute-max",
+    "concept-anatomy-core-outer"
+  ],
+  "concept-technique-flash-cut": [
+    "concept-technique-hard-cut-to-paint",
+    "concept-technique-dump-off-pass",
+    "concept-anatomy-hip-flexor-complex",
+    "concept-anatomy-ankle-complex",
+    "concept-anatomy-core-outer"
+  ],
+  "concept-technique-hard-cut-to-paint": [
+    "concept-technique-flash-cut",
+    "concept-1on1-reads-and-attacks",
+    "concept-anatomy-hip-flexor-complex",
+    "concept-anatomy-glute-max",
+    "concept-anatomy-core-outer"
+  ],
+  "concept-technique-skip-pass": [
+    "concept-technique-dump-off-pass",
+    "concept-technique-flash-cut",
+    "concept-anatomy-core-outer",
+    "concept-anatomy-glute-max"
+  ],
+  "concept-technique-soft-landing-mechanics": [
+    "concept-anatomy-ankle-complex",
+    "concept-anatomy-glute-max",
+    "concept-anatomy-core-outer",
+    "concept-basketball-jump-landing-biomechanics"
+  ],
   "concept-ten-steps-progression": [
     "concept-explosive-six",
     "concept-explosive-training-principles",
@@ -4819,6 +4871,39 @@
     "concept-reading-screens-off-ball",
     "pick-and-roll-defense-summary"
   ],
+  "defenses-vs-counters": [
+    "play-versus-1-3-1",
+    "play-versus-box-and-one",
+    "concept-attacking-disruptive-defenses",
+    "diamond-zone-press",
+    "concept-press-break-banana-cut",
+    "run-and-jump-defense",
+    "zone-press-combinations",
+    "st-josephs-press",
+    "concept-oob-defense-del-harris",
+    "concept-out-of-bounds-defense",
+    "play-diamond-slob",
+    "weak-side-help-defense",
+    "weak-side-defense-rotation",
+    "basic-rules-of-defense",
+    "concept-combination-alternating-defenses",
+    "concept-defensive-strategies-del-harris",
+    "concept-pnr-defensive-coverages-del-harris",
+    "concept-pnr-defense-s13",
+    "concept-on-ball-pressure-fratello",
+    "concept-late-game-defensive-strategy",
+    "concept-late-game-defensive-adjustments",
+    "concept-switching-defenses",
+    "defensive-coaching-philosophy",
+    "full-court-press-defense",
+    "pick-and-roll-defense-summary",
+    "pick-and-roll-defense",
+    "isolation-defense",
+    "concept-isolation-defense-del-harris",
+    "concept-matchup-press-obrien",
+    "team-defense-calls-and-signals",
+    "basketball-glossary-defensive-terms"
+  ],
   "defensive-checklist-principles": [
     "defensive-practice-philosophy-herb-brown",
     "post-defense-fronting",
@@ -4933,8 +5018,7 @@
     "concept-1on1-pivoting-techniques"
   ],
   "drill-1v1-zigzag-defense": [
-    "defensive-checklist-principles",
-    "defensive-practice-philosophy-herb-brown"
+    "defensive-checklist-principles"
   ],
   "drill-2-on-1-trapping": [
     "trapping-and-double-teaming"

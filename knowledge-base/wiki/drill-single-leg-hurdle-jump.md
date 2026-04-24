@@ -7,6 +7,19 @@ duration_minutes: 10-15
 tags: [conditioning, plyometrics, lower-body, explosiveness, jumping, rebounding]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: single-leg-explosive-takeoff
+    emphasis: primary
+  - id: plyometric-landing-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Single-Leg Hurdle Jump

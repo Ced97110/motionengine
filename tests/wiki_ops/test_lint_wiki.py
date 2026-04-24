@@ -217,3 +217,104 @@ def test_findings_have_expected_severities(minimal_wiki: Path) -> None:
     for f in findings:
         assert f.severity in {"error", "warning", "info"}
         assert isinstance(f, Finding)
+
+
+# ---------------------------------------------------------------------------
+# Play-geometry lint rules
+# ---------------------------------------------------------------------------
+
+
+_VALID_PLAY_MD = """---
+type: play
+category: offense
+---
+
+# Clean
+
+## Overview
+Sample.
+
+```json name=diagram-positions
+{"players":[{"role":"1","x":0,"y":33},{"role":"2","x":-18,"y":22}],"ballStart":"1","actions":[{"from":"1","to":"2","type":"pass","path":"M 0 33 L -18 22"}],"notes":"Phase 1."}
+```
+
+## Phases
+
+### Phase 1: Only
+- 1 passes to 2.
+
+## Sources
+- [Sx, p.1]
+"""
+
+
+def test_play_diagram_per_phase_warns_on_missing_block(tmp_path: Path) -> None:
+    wiki = tmp_path / "wiki"
+    md = _VALID_PLAY_MD + "\n### Phase 2: Action\n- Later.\n"
+    _write(wiki / "play-sparse.md", md)
+    _, findings = run_lint(wiki)
+    rule = [f for f in findings if f.check == "play-diagram-per-phase"]
+    assert rule, "expected warning when phase count exceeds block count"
+    assert rule[0].severity == "warning"
+
+
+def test_play_path_valid_svg_flags_angle_brackets(tmp_path: Path) -> None:
+    wiki = tmp_path / "wiki"
+    bad = _VALID_PLAY_MD.replace(
+        '"path":"M 0 33 L -18 22"',
+        '"path":"<script>alert(1)</script>"',
+    )
+    _write(wiki / "play-evil.md", bad)
+    _, findings = run_lint(wiki)
+    rule = [f for f in findings if f.check == "play-path-valid-svg"]
+    assert rule
+    assert rule[0].severity == "warning"
+
+
+def test_play_path_roles_resolve_flags_unknown_from(tmp_path: Path) -> None:
+    wiki = tmp_path / "wiki"
+    bad = _VALID_PLAY_MD.replace('"from":"1"', '"from":"99"')
+    _write(wiki / "play-ghost.md", bad)
+    _, findings = run_lint(wiki)
+    rule = [f for f in findings if f.check == "play-path-roles-resolve"]
+    assert rule
+    assert "99" in rule[0].message
+
+
+def test_play_duration_sane_flags_extreme(tmp_path: Path) -> None:
+    wiki = tmp_path / "wiki"
+    bad = _VALID_PLAY_MD.replace(
+        '"path":"M 0 33 L -18 22"',
+        '"path":"M 0 33 L -18 22","durationMs":120000',
+    )
+    _write(wiki / "play-slow.md", bad)
+    _, findings = run_lint(wiki)
+    rule = [f for f in findings if f.check == "play-duration-sane"]
+    assert rule
+    assert "120000" in rule[0].message
+
+
+def test_play_ballstart_known_flags_off_roster(tmp_path: Path) -> None:
+    wiki = tmp_path / "wiki"
+    bad = _VALID_PLAY_MD.replace('"ballStart":"1"', '"ballStart":"99"')
+    _write(wiki / "play-bad-ball.md", bad)
+    _, findings = run_lint(wiki)
+    rule = [f for f in findings if f.check == "play-ballstart-known"]
+    assert rule
+    assert "99" in rule[0].message
+
+
+def test_valid_play_page_triggers_no_play_warnings(tmp_path: Path) -> None:
+    wiki = tmp_path / "wiki"
+    _write(wiki / "play-clean.md", _VALID_PLAY_MD)
+    _, findings = run_lint(wiki)
+    play_rules = [
+        "play-diagram-per-phase",
+        "play-path-valid-svg",
+        "play-path-roles-resolve",
+        "play-duration-sane",
+        "play-ballstart-known",
+    ]
+    for rule in play_rules:
+        hits = [f for f in findings if f.check == rule]
+        assert not hits, f"unexpected {rule} finding(s): {hits}"
