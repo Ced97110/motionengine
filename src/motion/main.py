@@ -18,6 +18,7 @@ from motion import __version__
 from motion.config import get_settings
 from motion.db import get_engine
 from motion.middleware.request_id import RequestIdMiddleware
+from motion.routers.form_coach import router as form_coach_router
 from motion.routers.knowledge import router as knowledge_router
 from motion.routers.playlab import router as playlab_router
 from motion.routers.public_plays import router as public_plays_router
@@ -128,6 +129,7 @@ def create_app() -> FastAPI:
     app.include_router(playlab_router)
     app.include_router(public_plays_router)
     app.include_router(public_wiki_router)
+    app.include_router(form_coach_router)
 
     return app
 

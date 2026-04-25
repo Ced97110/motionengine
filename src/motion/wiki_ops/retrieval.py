@@ -120,6 +120,44 @@ class CounterEntry:
 
 
 @dataclass(frozen=True)
+class FormMeasurement:
+    """One computed signal extracted from the player's joint timeline.
+
+    Computed client-side from MediaPipe Pose Landmarker output. Examples:
+
+    - ``elbow_flair`` (degrees from vertical at release)
+    - ``follow_through_droop`` (degrees of wrist drop after release)
+    - ``knee_valgus`` (degrees of inward knee collapse on landing)
+    - ``trunk_lean`` (degrees forward at peak)
+    - ``release_height_ratio`` (release point / player height)
+    """
+
+    name: str
+    value: float
+    unit: str  # "deg" | "ratio" | "px"
+    flagged: bool
+    threshold: float
+
+
+@dataclass(frozen=True)
+class FormContext:
+    """Phase-1 form-coach retrieval bundle.
+
+    Produced by :func:`build_form_context`. Carries the shot type, the
+    flagged + within-threshold measurements, and the anatomy / technique /
+    drill focus slugs picked from the existing knowledge graph for this
+    shot type.
+    """
+
+    shot_type: str
+    measurements: list[FormMeasurement] = field(default_factory=list)
+    anatomy: list[AnatomyDemand] = field(default_factory=list)
+    technique_focus: list[str] = field(default_factory=list)
+    drill_focus: list[str] = field(default_factory=list)
+    keyframe_count: int = 0
+
+
+@dataclass(frozen=True)
 class PlayContext:
     """Full retrieval bundle for a single play (Q-A output)."""
 
@@ -484,6 +522,134 @@ def build_drill_justification(drill_slug: str, indexes: CompiledIndexes) -> list
             if entry.get("criticality") == "required":
                 plays.add(entry["play"])
     return sorted(plays)
+
+
+# --- Q-D: form-coach context (Phase 1) ---------------------------------------
+
+
+# Shot-type → anatomy/technique/drill focus map. Hand-curated based on
+# the existing wiki concept pages. The anatomy regions referenced here
+# may not all have concept-anatomy-* pages yet (shoulder_girdle,
+# wrist_complex, elbow_complex are scheduled for Phase 1 day 3 authoring);
+# `build_form_context` filters out missing pages so the bundle stays
+# clean as content lands.
+_FORM_FOCUS: dict[str, dict[str, list[str]]] = {
+    "free-throw": {
+        "anatomy": [
+            "shoulder_girdle",
+            "wrist_complex",
+            "elbow_complex",
+            "core_outer",
+        ],
+        "techniques": [
+            "concept-jump-shot-mechanics",
+            "concept-jump-shot-release-and-follow-through",
+            "concept-quiet-eye-basketball-shooting",
+            "concept-shooting-confidence-rhythm",
+        ],
+    },
+    "jump-shot": {
+        "anatomy": [
+            "shoulder_girdle",
+            "wrist_complex",
+            "elbow_complex",
+            "core_outer",
+            "glute_max",
+            "ankle_complex",
+        ],
+        "techniques": [
+            "concept-jump-shot-biomechanics",
+            "concept-jump-shot-mechanics",
+            "concept-jump-shot-release-and-follow-through",
+            "concept-midrange-jump-shot",
+        ],
+    },
+    "layup": {
+        "anatomy": [
+            "hip_flexor_complex",
+            "glute_max",
+            "ankle_complex",
+            "core_outer",
+        ],
+        "techniques": [
+            "concept-1on1-reads-and-attacks",
+            "concept-first-step-quickness",
+        ],
+    },
+    "unknown": {
+        "anatomy": ["core_outer"],
+        "techniques": [],
+    },
+}
+
+
+def _wiki_page_exists(slug: str, indexes: CompiledIndexes) -> bool:
+    """Check whether a page slug appears anywhere in the compiled graph.
+
+    Cheap proxy: if the slug shows up as a wikilink target, in page-tags,
+    or as the source of a wikilink, it has a backing page. Avoids a
+    filesystem read at retrieval time.
+    """
+    return (
+        slug in indexes.page_tags
+        or slug in indexes.wikilink_forward
+        or slug in indexes.wikilink_reverse
+    )
+
+
+def build_form_context(
+    shot_type: str,
+    measurements: list[FormMeasurement],
+    indexes: CompiledIndexes,
+    keyframe_count: int = 0,
+) -> FormContext:
+    """Assemble the Phase-1 form-coach retrieval bundle.
+
+    Picks anatomy + technique + drill focus from :data:`_FORM_FOCUS` for
+    the shot type, filters to pages that actually exist in the wiki, and
+    pulls drills via the existing anatomy → drill graph so prescriptions
+    resolve through the same chain ``play_brief`` uses.
+    """
+    focus = _FORM_FOCUS.get(shot_type) or _FORM_FOCUS["unknown"]
+
+    anatomy_demands: list[AnatomyDemand] = []
+    for region in focus["anatomy"]:
+        concept_slug = _region_to_concept_slug(region)
+        if not _wiki_page_exists(concept_slug, indexes):
+            continue
+        anatomy_demands.append(
+            AnatomyDemand(
+                region=region,
+                concept_slug=concept_slug,
+                criticality="required",
+                insight=_anatomy_insight_for(concept_slug, indexes.page_insights),
+            )
+        )
+
+    technique_focus = [
+        slug for slug in focus["techniques"] if _wiki_page_exists(slug, indexes)
+    ]
+
+    # Drills: union of primary-emphasis drills across the focus anatomy.
+    seen: set[str] = set()
+    drill_focus: list[str] = []
+    for a in anatomy_demands:
+        for edge in indexes.anatomy_to_drill.get(a.region, []):
+            slug = edge["drill"]
+            if slug in seen or edge.get("emphasis") != "primary":
+                continue
+            seen.add(slug)
+            drill_focus.append(slug)
+    drill_focus.sort()
+
+    return FormContext(
+        shot_type=shot_type,
+        measurements=measurements,
+        anatomy=anatomy_demands,
+        technique_focus=technique_focus,
+        drill_focus=drill_focus,
+        keyframe_count=keyframe_count,
+    )
 
 
 # --- serialization -----------------------------------------------------------

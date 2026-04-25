@@ -420,6 +420,13 @@
     "drill-pallof-press",
     "play-black"
   ],
+  "concept-anatomy-elbow-complex": [
+    "concept-anatomy-shoulder-girdle",
+    "concept-anatomy-glute-max",
+    "concept-anatomy-wrist-complex",
+    "concept-jump-shot-mechanics",
+    "concept-jump-shot-release-and-follow-through"
+  ],
   "concept-anatomy-glute-max": [
     "concept-anatomy-hip-flexor-complex",
     "exercise-hip-thrust",
@@ -437,6 +444,20 @@
     "concept-first-step-quickness",
     "concept-agility-training",
     "play-black"
+  ],
+  "concept-anatomy-shoulder-girdle": [
+    "concept-anatomy-wrist-complex",
+    "concept-anatomy-glute-max",
+    "concept-anatomy-core-outer",
+    "concept-anatomy-elbow-complex",
+    "concept-jump-shot-mechanics",
+    "concept-jump-shot-release-and-follow-through"
+  ],
+  "concept-anatomy-wrist-complex": [
+    "concept-anatomy-elbow-complex",
+    "concept-anatomy-shoulder-girdle",
+    "concept-jump-shot-release-and-follow-through",
+    "concept-quiet-eye-basketball-shooting"
   ],
   "concept-ankle-proprioception": [
     "ankle-strengthening",

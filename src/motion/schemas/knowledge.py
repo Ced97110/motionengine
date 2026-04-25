@@ -181,3 +181,37 @@ class PlayBriefResponse(_CamelModel):
     brief: str
     source_citations: list[str]
     source: str  # "claude" | "stub"
+
+
+# --- Form-coach (Phase 1 video-grounded coaching) ----------------------------
+
+
+class FormMeasurementIn(_CamelModel):
+    """One client-computed measurement from MediaPipe joint output."""
+
+    name: str
+    value: float
+    unit: str  # "deg" | "ratio" | "px"
+    flagged: bool
+    threshold: float
+
+
+class FormCoachRequest(_CamelModel):
+    """Phase-1 form-coach payload.
+
+    Joint extraction runs in the browser (MediaPipe Pose Landmarker); we
+    only receive the computed measurements + 0-3 keyframes (base64 JPEG).
+    Raw video stays on the user's device.
+    """
+
+    shot_type: str  # "free-throw" | "jump-shot" | "layup" | "unknown"
+    measurements: list[FormMeasurementIn]
+    keyframes_base64: list[str] = []
+
+
+class FormCoachResponse(_CamelModel):
+    shot_type: str
+    feedback: str
+    source_citations: list[str]
+    source: str  # "claude" | "stub"
+    cross_refs: list[str]  # concept-anatomy + concept-technique + drill slugs cited

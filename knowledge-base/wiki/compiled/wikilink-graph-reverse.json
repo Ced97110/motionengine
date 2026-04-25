@@ -823,6 +823,7 @@
     "play-black"
   ],
   "concept-anatomy-core-outer": [
+    "concept-anatomy-shoulder-girdle",
     "concept-core-muscle-injury-basketball",
     "concept-technique-closeout-contest-verticality",
     "concept-technique-dribble-handoff-receipt",
@@ -837,9 +838,15 @@
     "drill-wood-chop",
     "play-black"
   ],
+  "concept-anatomy-elbow-complex": [
+    "concept-anatomy-shoulder-girdle",
+    "concept-anatomy-wrist-complex"
+  ],
   "concept-anatomy-glute-max": [
     "concept-anatomical-core-basketball",
     "concept-anatomy-core-outer",
+    "concept-anatomy-elbow-complex",
+    "concept-anatomy-shoulder-girdle",
     "concept-lower-crossed-syndrome-basketball",
     "concept-technique-closeout-contest-verticality",
     "concept-technique-flare-screen-set",
@@ -867,6 +874,14 @@
     "concept-technique-hard-cut-to-paint",
     "exercise-hip-thrust",
     "play-black"
+  ],
+  "concept-anatomy-shoulder-girdle": [
+    "concept-anatomy-elbow-complex",
+    "concept-anatomy-wrist-complex"
+  ],
+  "concept-anatomy-wrist-complex": [
+    "concept-anatomy-elbow-complex",
+    "concept-anatomy-shoulder-girdle"
   ],
   "concept-ankle-proprioception": [
     "ankle-strengthening",
@@ -2770,6 +2785,8 @@
   ],
   "concept-jump-shot-mechanics": [
     "bank-shot",
+    "concept-anatomy-elbow-complex",
+    "concept-anatomy-shoulder-girdle",
     "concept-three-point-shooting",
     "drill-curl-shot-off-screen",
     "drill-fill-shot-off-screen",
@@ -2779,6 +2796,9 @@
     "strength-then-power-training-principle"
   ],
   "concept-jump-shot-release-and-follow-through": [
+    "concept-anatomy-elbow-complex",
+    "concept-anatomy-shoulder-girdle",
+    "concept-anatomy-wrist-complex",
     "concept-calling-the-ball",
     "concept-midrange-jump-shot",
     "concept-one-two-step-footwork",
@@ -3922,6 +3942,7 @@
     "speed-cycle-five-stages"
   ],
   "concept-quiet-eye-basketball-shooting": [
+    "concept-anatomy-wrist-complex",
     "concept-basketball-anxiety-performance",
     "source-basketball-sports-medicine-science"
   ],

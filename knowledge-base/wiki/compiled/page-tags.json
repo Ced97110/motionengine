@@ -572,6 +572,14 @@
     "stability",
     "injury-prevention"
   ],
+  "concept-anatomy-elbow-complex": [
+    "anatomy",
+    "upper-body",
+    "elbow",
+    "shooting",
+    "alignment",
+    "flair"
+  ],
   "concept-anatomy-glute-max": [
     "anatomy",
     "lower-body",
@@ -586,6 +594,23 @@
     "mobility",
     "hip-flexor",
     "injury-prevention"
+  ],
+  "concept-anatomy-shoulder-girdle": [
+    "anatomy",
+    "upper-body",
+    "shoulder",
+    "shooting",
+    "release",
+    "scapula"
+  ],
+  "concept-anatomy-wrist-complex": [
+    "anatomy",
+    "upper-body",
+    "wrist",
+    "shooting",
+    "release",
+    "follow-through",
+    "fingertip-touch"
   ],
   "concept-ankle-proprioception": [
     "injury-prevention",
