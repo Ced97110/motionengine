@@ -8,7 +8,8 @@ stripping live in one place.
 Routes:
 
 - ``GET /api/public/plays`` — list every renderable play as
-  ``{slug, name, tag, phaseCount}``. IP-leaking slugs are filtered.
+  ``{slug, name, tag, phaseCount, tags, formation, defendsAgainst}``.
+  IP-leaking slugs are filtered.
 - ``GET /api/public/plays/{slug}`` — detail: the V7Play + narrative
   prose sections (overview, coaching points) + related slugs. The
   authoring-only ``todos`` / ``source`` fields from the importer are
@@ -25,7 +26,7 @@ from __future__ import annotations
 
 import json
 import re
-from typing import Any
+from typing import Any, TypedDict
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, ConfigDict
@@ -112,11 +113,20 @@ class _CamelModel(BaseModel):
     model_config = ConfigDict(alias_generator=to_camel, populate_by_name=True)
 
 
+class DefendsEntry(_CamelModel):
+    slug: str
+    display_name: str
+    shared_tags: list[str]
+
+
 class PublicPlayListEntry(_CamelModel):
     slug: str
     name: str
     tag: str
     phase_count: int
+    tags: list[str] = []
+    formation: str | None = None
+    defends_against: list[DefendsEntry] = []
 
 
 class PublicPlayProse(_CamelModel):
@@ -178,6 +188,7 @@ router = APIRouter(prefix="/api/public/plays", tags=["public-plays"])
 async def list_plays() -> list[PublicPlayListEntry]:
     """List every IP-safe play page with renderable geometry."""
     entries = list_importable_wiki_plays()
+    play_to_defending = _load_compiled_index("play-to-defending.json")
     out: list[PublicPlayListEntry] = []
     for e in entries:
         slug = e["slug"]
@@ -187,15 +198,16 @@ async def list_plays() -> list[PublicPlayListEntry]:
         # 404 on them, so hiding from the list gives a cleaner gallery.
         if not e.get("hasDiagram"):
             continue
-        # Re-read the frontmatter for the tag. `list_importable_wiki_plays`
-        # doesn't surface it, and tag is a useful list-level signal.
-        tag = _read_tag_from_file(slug)
+        facets = _read_facets_from_file(slug)
         out.append(
             PublicPlayListEntry(
                 slug=slug,
                 name=e["name"],
-                tag=tag,
+                tag=facets["tag"],
                 phase_count=e["phaseCount"],
+                tags=facets["tags"],
+                formation=facets["formation"],
+                defends_against=_top_defending(slug, play_to_defending),
             )
         )
     return out
@@ -420,26 +432,105 @@ def _play_chain(slug: str) -> PlayChain:
     )
 
 
-def _read_tag_from_file(slug: str) -> str:
-    """Read ``category`` (fallback: first tag) from the page's frontmatter.
+class _Facets(TypedDict):
+    tag: str
+    tags: list[str]
+    formation: str | None
 
-    Mirrors ``wiki_importer._extract_tag`` but reads from disk once per
-    list call. If the page or its frontmatter is unreadable, returns an
-    empty string rather than surfacing an error at list time.
+
+def _read_facets_from_file(slug: str) -> _Facets:
+    """Read ``tag``, ``tags``, and ``formation`` from front-matter in one pass.
+
+    ``tag`` mirrors the historical single-string surface (category, falling
+    back to the first ``tags`` entry). ``tags`` is the full list. ``formation``
+    is the raw front-matter value or ``None``. Unreadable pages return safe
+    empties rather than surfacing an error at list time.
     """
     root = wiki_dir()
     path = root / f"{slug}.md"
     try:
         raw = path.read_text(encoding="utf-8")
     except OSError:
-        return ""
+        return {"tag": "", "tags": [], "formation": None}
     fm, _ = parse_full(raw)
+    raw_tags_field = fm.get("tags")
+    tags: list[str] = []
+    if isinstance(raw_tags_field, list):
+        tags = [t.strip() for t in raw_tags_field if isinstance(t, str) and t.strip()]
     category = fm.get("category")
-    if isinstance(category, str) and category.strip():
-        return category.strip()
-    tags = fm.get("tags")
-    if isinstance(tags, list) and tags:
-        first = tags[0]
-        if isinstance(first, str):
-            return first.strip()
-    return ""
+    tag = (
+        category.strip()
+        if isinstance(category, str) and category.strip()
+        else (tags[0] if tags else "")
+    )
+    formation_raw = fm.get("formation")
+    formation = (
+        formation_raw.strip()
+        if isinstance(formation_raw, str) and formation_raw.strip()
+        else None
+    )
+    return {"tag": tag, "tags": tags, "formation": formation}
+
+
+# ---------------------------------------------------------------------------
+# Defending-edges enrichment
+# ---------------------------------------------------------------------------
+#
+# ``play-to-defending.json`` (compiled by ``crossref.py``) maps each play
+# slug to the defending pages that share at least one non-generic tag. The
+# raw list can be 5+ entries for plays with broad action tags
+# (e.g. ``cross-screen``); for the gallery facet we cap at the **top 2**
+# matches sorted by shared-tag count, descending. Cap = 2 keeps the chip
+# distribution tight (no defense ends up linked to 28 plays at once) and
+# matches the M4 brief logic of "TOP match" referenced in the play-brief
+# prompt.
+# ---------------------------------------------------------------------------
+
+
+def _defending_display_name(slug: str) -> str:
+    """Mirror ``defendingDisplayName`` in ``frontend/src/lib/knowledge/display-names.ts``.
+
+    ``defending-flash-post`` → ``Flash post``. Server-side derivation keeps
+    the API self-describing so the FE doesn't import a slug-mapping table
+    just to render a chip.
+    """
+    stripped = slug.removeprefix("defending-").replace("-", " ")
+    if not stripped:
+        return stripped
+    # Title-case every word (matches the FE ``\b\w`` regex behaviour).
+    return " ".join(word[:1].upper() + word[1:] for word in stripped.split())
+
+
+def _top_defending(
+    slug: str, play_to_defending: dict[str, Any]
+) -> list[DefendsEntry]:
+    raw = play_to_defending.get(slug, [])
+    if not isinstance(raw, list):
+        return []
+    candidates: list[tuple[int, str, list[str]]] = []
+    for entry in raw:
+        if not isinstance(entry, dict):
+            continue
+        defending_slug = entry.get("defending") or entry.get("defending_slug")
+        shared = entry.get("shared_tags")
+        if not isinstance(defending_slug, str) or not defending_slug:
+            continue
+        if not isinstance(shared, list):
+            continue
+        # Defending slugs go through the same IP filter as plays — a stray
+        # team-named defending page in compiled data must not surface as a
+        # consumer-facing chip label.
+        if not _is_ip_safe_slug(defending_slug):
+            continue
+        shared_clean = [s for s in shared if isinstance(s, str) and s]
+        candidates.append((len(shared_clean), defending_slug, shared_clean))
+    # Sort by (shared-tag count desc, slug asc) for determinism.
+    candidates.sort(key=lambda c: (-c[0], c[1]))
+    return [
+        DefendsEntry(
+            slug=defending_slug,
+            display_name=_defending_display_name(defending_slug),
+            shared_tags=shared_clean,
+        )
+        for _, defending_slug, shared_clean in candidates[:2]
+    ]

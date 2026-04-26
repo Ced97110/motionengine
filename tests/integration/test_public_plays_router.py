@@ -157,8 +157,83 @@ def test_list_entry_shape_matches_pydantic_model(client: TestClient, tmp_wiki: P
     assert entries, "fixture should produce at least one entry"
     entry = entries[0]
     # Response uses camelCase per the _CamelModel alias.
-    assert set(entry.keys()) == {"slug", "name", "tag", "phaseCount"}
+    assert set(entry.keys()) == {
+        "slug",
+        "name",
+        "tag",
+        "phaseCount",
+        "tags",
+        "formation",
+        "defendsAgainst",
+    }
     assert entry["phaseCount"] >= 1
+    # Filter facets default to safe empties when front-matter omits them.
+    assert isinstance(entry["tags"], list)
+    assert isinstance(entry["defendsAgainst"], list)
+
+
+def test_list_includes_facets_from_frontmatter(
+    client: TestClient, tmp_wiki: Path
+) -> None:
+    """Tag list + formation + defendsAgainst surface from front-matter / sidecar."""
+    page_with_facets = SAMPLE_PAGE.replace(
+        "tags: [ram-screen]",
+        "tags: [ram-screen, pick-and-roll, half-court]",
+    ).replace(
+        "category: offense",
+        "category: offense\nformation: 1-4-high",
+    )
+    _write(tmp_wiki, "play-faceted", page_with_facets)
+    # Inject a compiled play-to-defending sidecar pointing at this slug.
+    compiled = tmp_wiki / "compiled"
+    compiled.mkdir(exist_ok=True)
+    (compiled / "play-to-defending.json").write_text(
+        '{"play-faceted": ['
+        '{"defending": "defending-flash-post", "shared_tags": ["pick-and-roll", "high-post", "horns"]},'
+        '{"defending": "defending-drop-one", "shared_tags": ["pick-and-roll", "high-post"]},'
+        '{"defending": "defending-cross-four-get", "shared_tags": ["cross-screen"]}'
+        ']}',
+        encoding="utf-8",
+    )
+    entries = client.get("/api/public/plays").json()
+    entry = next(e for e in entries if e["slug"] == "play-faceted")
+    assert entry["formation"] == "1-4-high"
+    assert "pick-and-roll" in entry["tags"]
+    # Top-2 cap: highest shared-tag count first, the third entry drops off.
+    assert [d["slug"] for d in entry["defendsAgainst"]] == [
+        "defending-flash-post",
+        "defending-drop-one",
+    ]
+    # Display names mirror the FE defendingDisplayName transform.
+    assert entry["defendsAgainst"][0]["displayName"] == "Flash Post"
+    assert entry["defendsAgainst"][1]["displayName"] == "Drop One"
+
+
+def test_facet_labels_are_ip_safe(client: TestClient, tmp_wiki: Path) -> None:
+    """defendsAgainst displayNames must never leak IP-blocked fragments.
+
+    A bug in compiled crossref data could ship a defending slug that
+    embeds a team token (e.g. ``defending-celtics-flash``). The list
+    endpoint must scrub those rather than rendering a chip with the
+    forbidden word.
+    """
+    _write(tmp_wiki, "play-sample", SAMPLE_PAGE)
+    compiled = tmp_wiki / "compiled"
+    compiled.mkdir(exist_ok=True)
+    (compiled / "play-to-defending.json").write_text(
+        '{"play-sample": ['
+        '{"defending": "defending-celtics-flash", "shared_tags": ["ram-screen"]}'
+        ']}',
+        encoding="utf-8",
+    )
+    entries = client.get("/api/public/plays").json()
+    entry = next(e for e in entries if e["slug"] == "play-sample")
+    for d in entry["defendsAgainst"]:
+        lowered = d["displayName"].lower() + " " + d["slug"].lower()
+        for fragment in ("celtics", "lakers", "knicks"):
+            assert fragment not in lowered, (
+                f"defending facet leaked IP fragment '{fragment}': {d}"
+            )
 
 
 # ---------------------------------------------------------------------------
