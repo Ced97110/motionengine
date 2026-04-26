@@ -240,6 +240,9 @@ class PracticeBlockOut(_CamelModel):
     duration_minutes: int
     reasoning: str  # coach-voice 1-2 sentences, may embed cross-ref slugs
     cross_refs: list[str]  # slugs surfaced in reasoning (subset of plan-level)
+    # v0.1 visual-polish enrichment — derived server-side, no extra LLM cost.
+    phase: str = "skill"  # "warmup" | "skill" | "competitive" | "cooldown"
+    anatomy_regions: list[str] = []  # snake_case slugs trained by this drill
 
 
 class PracticeResponse(_CamelModel):

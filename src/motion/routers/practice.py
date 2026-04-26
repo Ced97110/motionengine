@@ -12,6 +12,7 @@ call fails — UX never dead-ends.
 from __future__ import annotations
 
 import re
+from collections import defaultdict
 from functools import lru_cache
 
 from fastapi import APIRouter, HTTPException
@@ -54,6 +55,45 @@ _SLUG_RE = re.compile(r"\b((?:concept|drill|exercise|play)-[a-z0-9][a-z0-9-]+)\b
 @lru_cache(maxsize=1)
 def _cached_indexes() -> CompiledIndexes:
     return load_indexes()
+
+
+@lru_cache(maxsize=1)
+def _drill_to_anatomy() -> dict[str, list[str]]:
+    """Invert anatomy_to_drill into drill_slug → [region] for O(1) lookup.
+
+    Used at response-enrichment time to surface trained anatomy regions per
+    block as visual chips. No extra LLM cost — pure structural lookup over
+    the compiled cross-ref sidecar.
+    """
+    out: dict[str, list[str]] = defaultdict(list)
+    indexes = _cached_indexes()
+    for region, edges in indexes.anatomy_to_drill.items():
+        for edge in edges:
+            slug = edge.get("drill")
+            if not slug or region in out[slug]:
+                continue
+            out[slug].append(region)
+    return dict(out)
+
+
+def _derive_phase(block_index: int, total_blocks: int) -> str:
+    """Map block position to a practice-arc phase.
+
+    First block → warmup, last → cooldown, middle blocks split between
+    skill (front half) and competitive (back half). Heuristic only —
+    Sonnet's prose may say otherwise; this is for color coding, not
+    business logic.
+    """
+    if block_index == 0:
+        return "warmup"
+    if block_index == total_blocks - 1:
+        return "cooldown"
+    middle_count = total_blocks - 2
+    middle_index = block_index - 1
+    # First half of middle blocks → skill; second half → competitive.
+    if middle_index < (middle_count + 1) // 2:
+        return "skill"
+    return "competitive"
 
 
 def _extract_cross_refs(text: str) -> list[str]:
@@ -123,14 +163,18 @@ async def generate(request: PracticeRequest) -> PracticeResponse:
 
     result = build_practice_brief(context)
 
+    drill_anatomy = _drill_to_anatomy()
+    total_blocks = len(result.plan)
     blocks_out = [
         PracticeBlockOut(
             drill_slug=b.drill_slug,
             duration_minutes=b.duration_minutes,
             reasoning=b.reasoning,
             cross_refs=b.cross_refs,
+            phase=_derive_phase(idx, total_blocks),
+            anatomy_regions=drill_anatomy.get(b.drill_slug, []),
         )
-        for b in result.plan
+        for idx, b in enumerate(result.plan)
     ]
     union_refs: list[str] = []
     for b in blocks_out:
