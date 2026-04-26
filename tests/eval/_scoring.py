@@ -86,7 +86,27 @@ def _normalize_for_match(slug: str) -> list[str]:
             stripped = parts[1]
             forms.add(stripped)
             forms.add(stripped.replace("-", " "))
+    # Basketball-voice synonyms for anatomy slugs. Form-coach briefs
+    # translate clinical anatomy ("ankle_complex") into how a coach speaks
+    # ("ankles", "feet"). The eval rubric must accept those translations or
+    # it would force the prompt to regress to clinical jargon — see
+    # feedback-coach-voice-not-clinical.md.
+    forms.update(_ANATOMY_BASKETBALL_FORMS.get(slug, ()))
     return [f for f in forms if f]
+
+
+_ANATOMY_BASKETBALL_FORMS: dict[str, tuple[str, ...]] = {
+    "ankle_complex": ("ankle", "ankles", "feet"),
+    "elbow_complex": ("elbow", "elbows", "shooting elbow"),
+    "shoulder_girdle": ("shoulder", "shoulders", "shoulder line"),
+    "wrist_complex": ("wrist", "wrists", "shooting hand"),
+    "hip_flexor_complex": ("hip", "hips", "hip flexor"),
+    "hip_complex": ("hip", "hips"),
+    "core_outer": ("core", "midsection", "trunk"),
+    "core": ("core", "midsection"),
+    "glute_max": ("glutes", "hip", "hips", "butt"),
+    "knee": ("knee", "knees"),
+}
 
 
 def _any_of_slugs(text: str, slugs: list[str]) -> tuple[bool, str]:
