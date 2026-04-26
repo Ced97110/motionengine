@@ -98,12 +98,19 @@ IP-leaking slug; must be suppressed.
 
 @pytest.fixture
 def tmp_wiki(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
-    """Throwaway wiki dir; patch every consumer to point at it."""
+    """Throwaway wiki dir; patch every consumer to point at it.
+
+    Returns a flat dir (no per-sport subdir) so test pages can be written
+    directly via ``_write(tmp_wiki, slug, body)``. The patched ``wiki_dir``
+    accepts (and ignores) ``sport`` and ``override`` kwargs so the
+    sport-portable signature stays compatible with the test surface.
+    """
     wiki = tmp_path / "wiki"
     wiki.mkdir()
-    monkeypatch.setattr(paths_module, "wiki_dir", lambda: wiki)
-    monkeypatch.setattr(wiki_importer, "wiki_dir", lambda: wiki)
-    monkeypatch.setattr(public_plays_router_module, "wiki_dir", lambda: wiki)
+    fake_wiki_dir = lambda *_args, **_kwargs: wiki  # noqa: E731
+    monkeypatch.setattr(paths_module, "wiki_dir", fake_wiki_dir)
+    monkeypatch.setattr(wiki_importer, "wiki_dir", fake_wiki_dir)
+    monkeypatch.setattr(public_plays_router_module, "wiki_dir", fake_wiki_dir)
     return wiki
 
 

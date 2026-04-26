@@ -4,7 +4,62 @@ level: beginner
 positions: [PG, SG, SF, PF, C]
 tags: [defense, help-side, positioning, man-to-man, off-ball-defense]
 source_count: 1
-last_updated: 2026-04-11
+last_updated: 2026-04-26
+# Cross-ref edge — concept-as-rule schema. See backend/spec/crossref-anatomy-chain.md §4.5
+rule_family: positioning
+domain: off-ball-defense
+geometry:
+  shape: flat-triangle
+  vertices: [ball, defender, assignment]
+  defender_anchor:
+    distance_ratio_from_ball: 0.667
+    perpendicular_offset: one-step
+vision_constraint:
+  mode: peripheral
+  simultaneous_targets: [ball, assignment]
+  head_movement: forbidden
+motion_constraint:
+  slide_triggers: [pass, dribble]
+  continuity: continuous
+  invariant: distance_ratio_from_ball
+stance:
+  weight_foot: ball-side
+  hips_orientation: open-to-passing-lane
+failure_modes:
+  - id: ball-fixation
+    category: vision
+    correction: peripheral-vision
+    exploit: backdoor-cut
+  - id: assignment-fixation
+    category: vision
+    correction: peripheral-vision
+    exploit: drive-past
+  - id: half-distance-positioning
+    category: geometry
+    correction: ratio-2-3
+    exploit: [no-intercept, no-deny]
+  - id: static-defender
+    category: motion
+    correction: continuous-slide
+    exploit: triangle-collapse
+  - id: head-movement
+    category: vision
+    correction: peripheral-vision
+    exploit: rotation-telegraphed
+trained_by_drills:
+  - id: drill-help-side-drill
+    emphasis: primary
+  - id: drill-interception-stance
+    emphasis: primary
+  - id: drill-close-the-gap-stance
+    emphasis: secondary
+  - id: drill-dual-help-drill
+    emphasis: secondary
+extends:
+  - id: man-to-man-defense
+prerequisite_for:
+  - id: weak-side-help-defense
+  - id: closing-the-gap
 ---
 
 # Ball-You-Man / Flat Triangle

@@ -10,8 +10,12 @@ Resolution order (wiki_dir):
 
 1. Explicit override (``MOTION_WIKI_DIR`` environment variable or the
    ``--wiki-dir`` CLI flag where supported).
-2. ``<repo_root>/backend/knowledge-base/wiki`` — sibling-dev layout.
-3. ``<repo_root>/knowledge-base/wiki`` — legacy single-repo layout.
+2. ``<repo_root>/backend/knowledge-base/wiki/<sport>`` — sibling-dev layout.
+3. ``<repo_root>/knowledge-base/wiki/<sport>`` — legacy single-repo layout.
+
+Sport defaults to ``DEFAULT_SPORT`` (``"basketball"``) so callers that
+pre-date the sport-portable foundations blueprint behave identically to
+pre-Step-2.
 
 Raw PDF resolution is simpler: ``<repo_root>/backend/knowledge-base/raw``
 unless ``MOTION_WIKI_RAW_DIR`` is set.
@@ -21,6 +25,8 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+
+from motion.sports import DEFAULT_SPORT, Sport
 
 
 def repo_root() -> Path:
@@ -44,23 +50,32 @@ def frontend_root() -> Path:
     return repo_root() / "frontend"
 
 
-def wiki_dir(override: str | os.PathLike[str] | None = None) -> Path:
-    """Resolve the wiki directory.
+def wiki_dir(
+    override: str | os.PathLike[str] | None = None,
+    *,
+    sport: Sport = DEFAULT_SPORT,
+) -> Path:
+    """Resolve the per-sport wiki directory.
 
     ``override`` takes precedence, followed by ``MOTION_WIKI_DIR``,
-    followed by the two canonical fallbacks. Unlike
-    ``frontend/src/lib/wiki-loader.ts`` this helper does not swallow
-    missing directories — callers must handle the "no wiki" error case.
+    followed by the two canonical fallbacks (each suffixed with
+    ``/<sport>``). Unlike ``frontend/src/lib/wiki-loader.ts`` this helper
+    does not swallow missing directories — callers must handle the
+    "no wiki" error case.
+
+    ``override`` is treated as a literal leaf path (no ``/<sport>``
+    appended) so test fixtures that monkeypatch this function can return
+    a flat tmp dir and write basketball pages directly into it.
     """
     if override is not None:
         return Path(override).resolve()
     env = os.environ.get("MOTION_WIKI_DIR")
     if env:
         return Path(env).resolve()
-    sibling = backend_root() / "knowledge-base" / "wiki"
+    sibling = backend_root() / "knowledge-base" / "wiki" / sport
     if sibling.is_dir():
         return sibling
-    legacy = repo_root() / "knowledge-base" / "wiki"
+    legacy = repo_root() / "knowledge-base" / "wiki" / sport
     return legacy
 
 

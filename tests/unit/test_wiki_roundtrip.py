@@ -134,7 +134,7 @@ def test_corpus_roundtrip(
     tmp_wiki = tmp_path / "wiki"
     tmp_wiki.mkdir()
     (tmp_wiki / f"{slug}.md").write_text(md1, encoding="utf-8")
-    monkeypatch.setattr(wiki_importer, "wiki_dir", lambda: tmp_wiki)
+    monkeypatch.setattr(wiki_importer, "wiki_dir", lambda *_a, **_k: tmp_wiki)
 
     result_b = import_wiki_play(slug)
     v7_b = result_b.play

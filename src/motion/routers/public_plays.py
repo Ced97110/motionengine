@@ -28,15 +28,17 @@ import json
 import re
 from typing import Any, TypedDict
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, ConfigDict
 from pydantic.alias_generators import to_camel
 
+from motion.middleware.sport import current_sport
 from motion.services.wiki_importer import (
     _resolve_wiki_path,
     import_wiki_play,
     list_importable_wiki_plays,
 )
+from motion.sports import Sport
 from motion.wiki_ops.frontmatter import parse_full
 from motion.wiki_ops.paths import wiki_dir
 
@@ -185,10 +187,11 @@ router = APIRouter(prefix="/api/public/plays", tags=["public-plays"])
 
 
 @router.get("", response_model=list[PublicPlayListEntry])
-async def list_plays() -> list[PublicPlayListEntry]:
+async def list_plays(request: Request) -> list[PublicPlayListEntry]:
     """List every IP-safe play page with renderable geometry."""
-    entries = list_importable_wiki_plays()
-    play_to_defending = _load_compiled_index("play-to-defending.json")
+    sport: Sport = current_sport(request)
+    entries = list_importable_wiki_plays(sport=sport)
+    play_to_defending = _load_compiled_index("play-to-defending.json", sport=sport)
     out: list[PublicPlayListEntry] = []
     for e in entries:
         slug = e["slug"]
@@ -198,7 +201,7 @@ async def list_plays() -> list[PublicPlayListEntry]:
         # 404 on them, so hiding from the list gives a cleaner gallery.
         if not e.get("hasDiagram"):
             continue
-        facets = _read_facets_from_file(slug)
+        facets = _read_facets_from_file(slug, sport=sport)
         out.append(
             PublicPlayListEntry(
                 slug=slug,
@@ -214,10 +217,11 @@ async def list_plays() -> list[PublicPlayListEntry]:
 
 
 @router.get("/{slug}", response_model=PublicPlayDetail)
-async def play_detail(slug: str) -> PublicPlayDetail:
+async def play_detail(slug: str, request: Request) -> PublicPlayDetail:
     """Return a renderable V7Play + narrative prose for ``slug``."""
+    sport: Sport = current_sport(request)
     try:
-        root = wiki_dir()
+        root = wiki_dir(sport=sport)
         path = _resolve_wiki_path(slug, root)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
@@ -229,7 +233,7 @@ async def play_detail(slug: str) -> PublicPlayDetail:
     if not path.is_file():
         raise HTTPException(status_code=404, detail=f"play not found: {slug}")
 
-    result = import_wiki_play(slug)
+    result = import_wiki_play(slug, sport=sport)
     if result.play is None:
         raise HTTPException(
             status_code=404,
@@ -249,8 +253,8 @@ async def play_detail(slug: str) -> PublicPlayDetail:
     related = [r for r in related_raw if isinstance(r, str) and r]
 
     formation = _formation_from_fm(fm)
-    siblings = _formation_siblings(slug, formation)
-    chain = _play_chain(slug)
+    siblings = _formation_siblings(slug, formation, sport=sport)
+    chain = _play_chain(slug, sport=sport)
 
     return PublicPlayDetail(
         slug=slug,
@@ -294,8 +298,8 @@ def _formation_from_fm(fm: dict[str, Any]) -> str | None:
     return None
 
 
-def _load_formation_graph() -> dict[str, list[str]]:
-    path = wiki_dir() / "compiled" / "formation-graph.json"
+def _load_formation_graph(*, sport: Sport) -> dict[str, list[str]]:
+    path = wiki_dir(sport=sport) / "compiled" / "formation-graph.json"
     try:
         raw = path.read_text(encoding="utf-8")
     except OSError:
@@ -314,11 +318,11 @@ def _load_formation_graph() -> dict[str, list[str]]:
 
 
 def _formation_siblings(
-    this_slug: str, formation: str | None
+    this_slug: str, formation: str | None, *, sport: Sport
 ) -> list[FormationSibling]:
     if not formation:
         return []
-    graph = _load_formation_graph()
+    graph = _load_formation_graph(sport=sport)
     candidate_slugs = graph.get(formation, [])
     if not candidate_slugs:
         return []
@@ -328,7 +332,7 @@ def _formation_siblings(
     # would 404. Chips should never deep-link into a dead end.
     renderable = {
         p["slug"]: p["name"]
-        for p in list_importable_wiki_plays()
+        for p in list_importable_wiki_plays(sport=sport)
         if p.get("hasDiagram")
     }
     out: list[FormationSibling] = []
@@ -361,8 +365,8 @@ def _formation_siblings(
 # ---------------------------------------------------------------------------
 
 
-def _load_compiled_index(name: str) -> dict[str, Any]:
-    path = wiki_dir() / "compiled" / name
+def _load_compiled_index(name: str, *, sport: Sport) -> dict[str, Any]:
+    path = wiki_dir(sport=sport) / "compiled" / name
     try:
         raw = path.read_text(encoding="utf-8")
     except OSError:
@@ -374,10 +378,10 @@ def _load_compiled_index(name: str) -> dict[str, Any]:
     return data if isinstance(data, dict) else {}
 
 
-def _play_chain(slug: str) -> PlayChain:
-    techniques_idx = _load_compiled_index("play-to-technique.json")
-    anatomy_idx = _load_compiled_index("play-to-anatomy.json")
-    drills_idx = _load_compiled_index("anatomy-to-drill.json")
+def _play_chain(slug: str, *, sport: Sport) -> PlayChain:
+    techniques_idx = _load_compiled_index("play-to-technique.json", sport=sport)
+    anatomy_idx = _load_compiled_index("play-to-anatomy.json", sport=sport)
+    drills_idx = _load_compiled_index("anatomy-to-drill.json", sport=sport)
 
     techniques: list[ChainTechnique] = []
     for entry in techniques_idx.get(slug, []):
@@ -438,7 +442,7 @@ class _Facets(TypedDict):
     formation: str | None
 
 
-def _read_facets_from_file(slug: str) -> _Facets:
+def _read_facets_from_file(slug: str, *, sport: Sport) -> _Facets:
     """Read ``tag``, ``tags``, and ``formation`` from front-matter in one pass.
 
     ``tag`` mirrors the historical single-string surface (category, falling
@@ -446,7 +450,7 @@ def _read_facets_from_file(slug: str) -> _Facets:
     is the raw front-matter value or ``None``. Unreadable pages return safe
     empties rather than surfacing an error at list time.
     """
-    root = wiki_dir()
+    root = wiki_dir(sport=sport)
     path = root / f"{slug}.md"
     try:
         raw = path.read_text(encoding="utf-8")

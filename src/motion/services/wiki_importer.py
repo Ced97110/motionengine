@@ -31,6 +31,7 @@ from typing import Any, Literal
 
 from motion.services.phase_expander import expand_phase_from_narrative
 from motion.services.play_extractor import _synthesize_action_paths
+from motion.sports import DEFAULT_SPORT, Sport
 from motion.wiki_ops.frontmatter import parse_full
 from motion.wiki_ops.paths import wiki_dir
 
@@ -194,14 +195,16 @@ def _resolve_wiki_path(slug: str, wiki_root: Path) -> Path:
     return candidate
 
 
-def list_importable_wiki_plays() -> list[dict[str, Any]]:
-    """Inventory every ``type: play`` page in the wiki.
+def list_importable_wiki_plays(
+    *, sport: Sport = DEFAULT_SPORT,
+) -> list[dict[str, Any]]:
+    """Inventory every ``type: play`` page in the per-sport wiki.
 
     Returns one entry per page with slug, display name, phase count, and
     whether at least one diagram block is present. The lab uses this to
     render a picker.
     """
-    root = wiki_dir()
+    root = wiki_dir(sport=sport)
     entries: list[dict[str, Any]] = []
     for md_path in sorted(root.glob("*.md")):
         try:
@@ -226,14 +229,14 @@ def list_importable_wiki_plays() -> list[dict[str, Any]]:
     return entries
 
 
-def import_wiki_play(slug: str) -> ImportResult:
-    """Build a V7Play draft from ``<wiki>/<slug>.md``.
+def import_wiki_play(slug: str, *, sport: Sport = DEFAULT_SPORT) -> ImportResult:
+    """Build a V7Play draft from ``<wiki>/<sport>/<slug>.md``.
 
     Returns ``source="wiki-no-diagram"`` (with ``play=None``) if the page
     has no diagram blocks — the caller should route those through the
     prose extractor instead.
     """
-    root = wiki_dir()
+    root = wiki_dir(sport=sport)
     path = _resolve_wiki_path(slug, root)
     if not path.is_file():
         raise FileNotFoundError(f"wiki page not found: {slug}")
