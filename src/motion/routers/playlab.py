@@ -19,10 +19,11 @@ from __future__ import annotations
 import difflib
 from typing import Any, Literal
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, ConfigDict
 from pydantic.alias_generators import to_camel
 
+from motion.middleware.sport import current_sport
 from motion.services.play_extractor import extract_play_from_prose
 from motion.services.wiki_importer import (
     _resolve_wiki_path,
@@ -33,6 +34,7 @@ from motion.services.wiki_writer import (
     render_updated_markdown,
     v7_play_to_diagram_blocks,
 )
+from motion.sports import Sport
 from motion.wiki_ops.paths import wiki_dir
 
 
@@ -79,9 +81,10 @@ async def extract_prose(request: ExtractProseRequest) -> ExtractProseResponse:
 
 
 @router.get("/wiki-plays", response_model=list[WikiPlayEntry])
-async def wiki_plays() -> list[WikiPlayEntry]:
+async def wiki_plays(request: Request) -> list[WikiPlayEntry]:
     """List every ``type: play`` wiki page with import eligibility flags."""
-    entries = list_importable_wiki_plays()
+    sport: Sport = current_sport(request)
+    entries = list_importable_wiki_plays(sport=sport)
     return [
         WikiPlayEntry(
             slug=e["slug"],
@@ -95,10 +98,11 @@ async def wiki_plays() -> list[WikiPlayEntry]:
 
 
 @router.get("/import-wiki/{slug}", response_model=ImportWikiResponse)
-async def import_wiki(slug: str) -> ImportWikiResponse:
+async def import_wiki(slug: str, request: Request) -> ImportWikiResponse:
     """Build a V7Play draft from the named wiki page."""
+    sport: Sport = current_sport(request)
     try:
-        result = import_wiki_play(slug)
+        result = import_wiki_play(slug, sport=sport)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     except FileNotFoundError as exc:
@@ -129,7 +133,7 @@ class SaveToWikiResponse(_CamelModel):
 
 @router.post("/save-to-wiki/{slug}", response_model=SaveToWikiResponse)
 async def save_to_wiki(
-    slug: str, request: SaveToWikiRequest
+    slug: str, body: SaveToWikiRequest, request: Request
 ) -> SaveToWikiResponse:
     """Preview or persist a V7Play's geometry into a wiki page.
 
@@ -139,8 +143,9 @@ async def save_to_wiki(
     plus the written path/bytes. No git commits are made — humans run
     ``git add`` + commit so every change carries a reviewable message.
     """
+    sport: Sport = current_sport(request)
     try:
-        root = wiki_dir()
+        root = wiki_dir(sport=sport)
         path = _resolve_wiki_path(slug, root)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
@@ -148,7 +153,7 @@ async def save_to_wiki(
         raise HTTPException(status_code=404, detail=f"wiki page not found: {slug}")
 
     existing_md = path.read_text(encoding="utf-8")
-    blocks, writer_warnings = v7_play_to_diagram_blocks(request.play)
+    blocks, writer_warnings = v7_play_to_diagram_blocks(body.play)
     new_md, render_warnings = render_updated_markdown(existing_md, blocks)
     warnings = [*writer_warnings, *render_warnings]
 
@@ -162,7 +167,7 @@ async def save_to_wiki(
         )
     )
 
-    if request.mode == "preview":
+    if body.mode == "preview":
         return SaveToWikiResponse(diff=diff, warnings=warnings)
 
     # mode == "write" — persist atomically. Writing via ``Path.write_text``

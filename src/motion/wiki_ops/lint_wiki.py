@@ -27,6 +27,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Literal
 
+from motion.sports import DEFAULT_SPORT
+
 from .frontmatter import parse_shallow
 from .paths import frontend_root, wiki_dir
 
@@ -1077,6 +1079,12 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--wiki-dir", type=Path, default=None, help="Override the wiki directory.")
     parser.add_argument(
+        "--sport",
+        default=DEFAULT_SPORT,
+        choices=("basketball", "football"),
+        help="Sport wiki to lint (default: basketball).",
+    )
+    parser.add_argument(
         "--report",
         type=Path,
         default=None,
@@ -1094,7 +1102,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     reference = args.root if args.root is not None else frontend_root()
-    wiki_directory = wiki_dir(args.wiki_dir)
+    wiki_directory = wiki_dir(args.wiki_dir, sport=args.sport)
+    sys.stdout.write(f"[lint-wiki] sport: {args.sport}\n")
     t0 = time.monotonic()
     try:
         total_pages, findings = run_lint(wiki_directory)

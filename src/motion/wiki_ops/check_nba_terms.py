@@ -22,6 +22,8 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
+from motion.sports import DEFAULT_SPORT
+
 from .paths import frontend_root, frontend_src_dir, wiki_dir
 
 _SCAN_EXTS: frozenset[str] = frozenset({".ts", ".tsx", ".md"})
@@ -288,11 +290,18 @@ def main(argv: list[str] | None = None) -> int:
         "--src-dir", type=Path, default=None, help="Override the frontend src/ directory."
     )
     parser.add_argument("--wiki-dir", type=Path, default=None, help="Override the wiki directory.")
+    parser.add_argument(
+        "--sport",
+        default=DEFAULT_SPORT,
+        choices=("basketball", "football"),
+        help="Sport wiki to scan (default: basketball).",
+    )
     args = parser.parse_args(argv)
 
     reference = args.root if args.root is not None else frontend_root()
     src_root = args.src_dir if args.src_dir is not None else frontend_src_dir()
-    wiki_root = wiki_dir(args.wiki_dir)
+    wiki_root = wiki_dir(args.wiki_dir, sport=args.sport)
+    sys.stdout.write(f"[check-nba-terms] sport: {args.sport}\n")
 
     hits = scan([src_root, wiki_root], reference=reference)
     if not hits:

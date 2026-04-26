@@ -80,6 +80,8 @@ from typing import Any, Literal, cast
 import anthropic
 import pypdfium2
 
+from motion.sports import DEFAULT_SPORT, Sport
+
 from .paths import backend_root, raw_pdf_dir, repo_root, wiki_dir
 from .sources import SOURCE_PDFS
 
@@ -954,6 +956,7 @@ def run(
     page_offsets_path: Path | None = None,
     client: anthropic.Anthropic | None = None,
     today: date | None = None,
+    sport: Sport = DEFAULT_SPORT,
 ) -> IngestSummary:
     """Ingest one source PDF end-to-end.
 
@@ -973,7 +976,7 @@ def run(
     chunk_size = _normalize_chunk_size(chunk_size)
     start = start_page if start_page is not None else 1
 
-    wiki_root_path = wiki_root if wiki_root is not None else wiki_dir()
+    wiki_root_path = wiki_root if wiki_root is not None else wiki_dir(sport=sport)
     offsets = load_page_offsets(page_offsets_path)
     offset = offsets.get(source_id, 0)
 
@@ -992,6 +995,7 @@ def run(
     sys.stdout.write(
         f"Source: {source.title} ({source.id})\n"
         f"PDF: {source_pdf}\n"
+        f"Sport: {sport}\n"
         f"Model: {model}\n"
         f"Chunk size: {chunk_size} printed pages\n"
         f"Offset (printed -> physical): +{offset}\n"
@@ -1222,6 +1226,12 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         default=None,
         help="Override the path to the page-offsets JSON artifact.",
     )
+    parser.add_argument(
+        "--sport",
+        default="basketball",
+        choices=("basketball", "football"),
+        help="Sport wiki to write into (default: basketball).",
+    )
     return parser.parse_args(argv)
 
 
@@ -1241,6 +1251,7 @@ def main(argv: list[str] | None = None) -> int:
             raw_dir=args.raw_dir,
             wiki_root=args.wiki_dir,
             page_offsets_path=args.page_offsets,
+            sport=args.sport,
         )
     except KeyError as exc:
         sys.stderr.write(f"ingest failed: {exc}\n")

@@ -20,11 +20,13 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, ConfigDict
 from pydantic.alias_generators import to_camel
 
+from motion.middleware.sport import current_sport
 from motion.routers.public_plays import _is_ip_safe_slug
+from motion.sports import Sport
 from motion.wiki_ops.frontmatter import parse_full
 from motion.wiki_ops.paths import wiki_dir
 
@@ -57,7 +59,7 @@ class PublicWikiPage(_CamelModel):
 router = APIRouter(prefix="/api/public/wiki", tags=["public-wiki"])
 
 
-def _resolve_safe_path(slug: str) -> Path:
+def _resolve_safe_path(slug: str, *, sport: Sport) -> Path:
     """Block path traversal — slug must be a bare filename stem."""
     if Path(slug).name != slug or slug.startswith("."):
         raise HTTPException(status_code=400, detail="invalid slug")
@@ -65,7 +67,7 @@ def _resolve_safe_path(slug: str) -> Path:
         # Don't expose play-* via this endpoint; force callers to the
         # richer ``/api/public/plays/{slug}`` surface.
         raise HTTPException(status_code=404, detail=f"page not found: {slug}")
-    root = wiki_dir()
+    root = wiki_dir(sport=sport)
     target = (root / f"{slug}.md").resolve()
     if root.resolve() not in target.parents:
         raise HTTPException(status_code=400, detail="invalid slug")
@@ -93,12 +95,13 @@ def _extract_tags(fm: dict) -> list[str]:
 
 
 @router.get("/{slug}", response_model=PublicWikiPage)
-async def wiki_page(slug: str) -> PublicWikiPage:
+async def wiki_page(slug: str, request: Request) -> PublicWikiPage:
+    sport: Sport = current_sport(request)
     if not _is_ip_safe_slug(slug):
         # 404 not 403 so the public surface doesn't leak the distinction
         # between "blocked" and "doesn't exist."
         raise HTTPException(status_code=404, detail=f"page not found: {slug}")
-    target = _resolve_safe_path(slug)
+    target = _resolve_safe_path(slug, sport=sport)
     if not target.is_file():
         raise HTTPException(status_code=404, detail=f"page not found: {slug}")
 

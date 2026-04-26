@@ -56,10 +56,10 @@ def tmp_wiki(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     """
     wiki = tmp_path / "wiki"
     wiki.mkdir()
-    monkeypatch.setattr(paths_module, "wiki_dir", lambda: wiki)
-    monkeypatch.setattr(wiki_importer, "wiki_dir", lambda: wiki)
+    monkeypatch.setattr(paths_module, "wiki_dir", lambda *_a, **_k: wiki)
+    monkeypatch.setattr(wiki_importer, "wiki_dir", lambda *_a, **_k: wiki)
     # The router imports wiki_dir at module load time — patch there too.
-    monkeypatch.setattr(playlab_router, "wiki_dir", lambda: wiki)
+    monkeypatch.setattr(playlab_router, "wiki_dir", lambda *_a, **_k: wiki)
     return wiki
 
 

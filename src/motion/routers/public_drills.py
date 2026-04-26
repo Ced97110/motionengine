@@ -27,10 +27,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import JSONResponse
 
-from motion.wiki_ops.paths import wiki_dir
+from motion.middleware.sport import current_sport
+from motion.wiki_ops.paths import backend_root
 
 router = APIRouter(prefix="/api/public/drills", tags=["public-drills"])
 
@@ -38,13 +39,14 @@ router = APIRouter(prefix="/api/public/drills", tags=["public-drills"])
 def _diagram_dirs() -> list[Path]:
     """Both top-50 and spike — concatenated lookup with top-50 first.
 
-    The repo layout is ``<backend>/eval/drill-diagrams-{spike,top50}/``;
-    derive that from ``wiki_dir`` which already resolves the backend root.
+    The repo layout is ``<backend>/eval/drill-diagrams-{spike,top50}/``.
+    Uses ``backend_root()`` directly so the path is sport-invariant and
+    stable regardless of which sport wiki_dir() resolves to.
     """
-    backend_root = wiki_dir().parent.parent
+    be_root = backend_root()
     return [
-        backend_root / "eval" / "drill-diagrams-top50",
-        backend_root / "eval" / "drill-diagrams-spike",
+        be_root / "eval" / "drill-diagrams-top50",
+        be_root / "eval" / "drill-diagrams-spike",
     ]
 
 
@@ -58,13 +60,19 @@ def _resolve_diagram_path(slug: str) -> Path | None:
 
 
 @router.get("/{slug}/diagram")
-def get_drill_diagram(slug: str) -> JSONResponse:
+def get_drill_diagram(slug: str, request: Request) -> JSONResponse:
     """Return the DrillDiagram JSON for a drill slug, or 404 if absent.
 
     The JSON is returned verbatim — schema is owned by the spike pipeline,
     consumer-side adapter at ``frontend/src/lib/drills/toV7Drill.ts`` does
     the V7 conversion.
     """
+    # Resolve sport so requests carrying X-Motion-Sport are validated by
+    # SportMiddleware (400 on invalid sport) before we look up the diagram.
+    # The eval dirs are currently basketball-only; when football diagrams
+    # land, sport will gate which corpus is searched.
+    current_sport(request)
+
     # Defensive slug check — prevents path traversal via "../" or similar.
     # Drill slugs are kebab-case-only by repo convention.
     if not slug.replace("-", "").replace("_", "").isalnum():

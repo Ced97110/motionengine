@@ -62,6 +62,8 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
+from motion.sports import DEFAULT_SPORT
+
 from .frontmatter import parse_full
 from .paths import wiki_dir
 
@@ -491,10 +493,21 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="Override the compiled output directory (defaults to `<wiki>/compiled/`).",
     )
+    parser.add_argument(
+        "--sport",
+        default=DEFAULT_SPORT,
+        choices=("basketball", "football"),
+        help="Sport wiki to compile indexes for (default: basketball).",
+    )
     args = parser.parse_args(argv)
 
-    wiki_root = wiki_dir(args.wiki_dir)
+    # When --wiki-dir is provided it is treated as a literal override (no
+    # sport suffix appended) — the caller is responsible for pointing at the
+    # right per-sport directory. When absent, wiki_dir() resolves the
+    # canonical per-sport path via the sport kwarg.
+    wiki_root = wiki_dir(args.wiki_dir, sport=args.sport)
     out_dir = args.out_dir if args.out_dir is not None else wiki_root / "compiled"
+    sys.stdout.write(f"[crossref] sport: {args.sport}\n")
 
     indexes = compile_indexes(wiki_root)
     write_indexes(indexes, out_dir)

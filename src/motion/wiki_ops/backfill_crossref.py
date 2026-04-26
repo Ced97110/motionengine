@@ -35,6 +35,7 @@ from typing import Any
 
 import anthropic
 
+from motion.sports import DEFAULT_SPORT, Sport
 from motion.wiki_ops.paths import wiki_dir
 
 _PLAY_SYSTEM_PROMPT = """You are annotating basketball play pages with structured \
@@ -536,7 +537,13 @@ _SIGNATURE_FORBID = ("produces_signature:",)
 _COUNTERS_FORBID = ("counters:",)
 
 
-def annotate(slug: str, write: bool, model: str, mode: str = "play") -> int:
+def annotate(
+    slug: str,
+    write: bool,
+    model: str,
+    mode: str = "play",
+    sport: Sport = DEFAULT_SPORT,
+) -> int:
     if mode not in ("play", "drill", "signature", "counters"):
         print(
             f"error: unknown mode {mode!r} (expected play|drill|signature|counters)",
@@ -544,7 +551,7 @@ def annotate(slug: str, write: bool, model: str, mode: str = "play") -> int:
         )
         return 2
 
-    root = wiki_dir()
+    root = wiki_dir(sport=sport)
     target_path = root / f"{slug}.md"
     if not target_path.is_file():
         print(f"error: {target_path} not found", file=sys.stderr)
@@ -705,8 +712,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--model", default="claude-sonnet-4-6", help="Claude model id"
     )
+    parser.add_argument(
+        "--sport",
+        default="basketball",
+        choices=("basketball", "football"),
+        help="Sport wiki to annotate (default: basketball).",
+    )
     args = parser.parse_args(argv)
-    return annotate(args.slug, args.write, args.model, args.mode)
+    sys.stdout.write(f"[backfill-crossref] sport: {args.sport}\n")
+    return annotate(args.slug, args.write, args.model, args.mode, sport=args.sport)
 
 
 if __name__ == "__main__":

@@ -27,7 +27,7 @@ def tmp_wiki(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     """Create an empty wiki dir and patch :func:`wiki_importer.wiki_dir`."""
     wiki = tmp_path / "wiki"
     wiki.mkdir()
-    monkeypatch.setattr(wiki_importer, "wiki_dir", lambda: wiki)
+    monkeypatch.setattr(wiki_importer, "wiki_dir", lambda *_a, **_k: wiki)
     return wiki
 
 

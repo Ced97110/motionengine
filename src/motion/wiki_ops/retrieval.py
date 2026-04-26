@@ -21,6 +21,8 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
+from motion.sports import DEFAULT_SPORT, Sport
+
 from .paths import wiki_dir
 
 # --- dataclasses -------------------------------------------------------------
@@ -264,12 +266,22 @@ def _read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_indexes(compiled_directory: Path | None = None) -> CompiledIndexes:
+def load_indexes(
+    compiled_directory: Path | None = None,
+    *,
+    sport: Sport = DEFAULT_SPORT,
+) -> CompiledIndexes:
     """Load the 6 inverted indexes + technique-aliases.json from disk.
 
-    ``compiled_directory`` defaults to ``<wiki>/compiled/``.
+    ``compiled_directory`` defaults to ``<wiki>/compiled/``. When
+    ``compiled_directory`` is not provided, ``sport`` selects which per-sport
+    wiki tree to read from.
     """
-    base = compiled_directory if compiled_directory is not None else wiki_dir() / "compiled"
+    base = (
+        compiled_directory
+        if compiled_directory is not None
+        else wiki_dir(sport=sport) / "compiled"
+    )
     aliases_raw = _read_json(base / "technique-aliases.json")
     aliases = aliases_raw.get("aliases", {}) if isinstance(aliases_raw, dict) else {}
 
