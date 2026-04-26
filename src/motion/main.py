@@ -18,6 +18,7 @@ from motion import __version__
 from motion.config import get_settings
 from motion.db import get_engine
 from motion.middleware.request_id import RequestIdMiddleware
+from motion.middleware.sport import SportMiddleware
 from motion.routers.form_coach import router as form_coach_router
 from motion.routers.knowledge import router as knowledge_router
 from motion.routers.playlab import router as playlab_router
@@ -67,6 +68,7 @@ def create_app() -> FastAPI:
     )
 
     app.add_middleware(RequestIdMiddleware)
+    app.add_middleware(SportMiddleware)
     app.add_middleware(
         CORSMiddleware,
         allow_origins=_cors_origins(),

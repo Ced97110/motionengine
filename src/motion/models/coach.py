@@ -17,8 +17,9 @@ from sqlalchemy import (
     SmallInteger,
     String,
     func,
+    text,
 )
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.dialects.postgresql import ARRAY, UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from motion.db import Base
@@ -47,6 +48,11 @@ class CoachProfile(Base):
     years_coaching: Mapped[int | None] = mapped_column(SmallInteger, nullable=True)
     level_coached: Mapped[str | None] = mapped_column(String, nullable=True)
     region: Mapped[str | None] = mapped_column(String, nullable=True)
+    sports: Mapped[list[str]] = mapped_column(
+        ARRAY(String),
+        nullable=False,
+        server_default=text("'{basketball}'"),
+    )
     onboarded_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), nullable=False, server_default=func.now()
