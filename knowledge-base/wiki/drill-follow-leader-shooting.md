@@ -7,6 +7,27 @@ duration_minutes: 15-25
 tags: [shooting, spot-shots, three-point, live-ball-moves, partner-drill, free-throws, team-drill]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: spot-shooting
+    emphasis: primary
+  - id: three-point-shooting
+    emphasis: primary
+  - id: live-ball-moves
+    emphasis: secondary
+  - id: shot-fake
+    emphasis: secondary
+  - id: free-throw-shooting
+    emphasis: secondary
+  - id: open-court-dribble-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Follow-the-Leader Shooting Series (Workouts #11-4, #11-5, #11-6, #11-7, #11-8, #11-9)

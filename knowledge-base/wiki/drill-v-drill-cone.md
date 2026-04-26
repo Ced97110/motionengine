@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [agility, cone-drill, backpedal, change-of-direction, footwork, sprint, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: plant-and-go
+    emphasis: primary
+  - id: backpedal-mechanics
+    emphasis: primary
+  - id: change-of-direction
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # V-Drill Cone Drill

@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [quickness, change-of-direction, reaction, speed, backpedal, defense, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: change-of-direction
+    emphasis: primary
+  - id: backpedal
+    emphasis: primary
+  - id: defensive-transition
+    emphasis: secondary
+  - id: explosive-deceleration
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Mirroring Partner Sprints

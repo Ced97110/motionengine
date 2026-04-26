@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [injury-prevention, ACL, knee, conditioning, strength-training, prehabilitation, hamstrings, posterior-chain]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: posterior-chain-strengthening
+    emphasis: primary
+  - id: acl-injury-prevention
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Physioball Hamstring Curl (ACL Quadriceps Dominance)

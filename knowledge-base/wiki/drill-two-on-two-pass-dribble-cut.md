@@ -7,6 +7,23 @@ duration_minutes: 3
 tags: [offense, cutting, defense, motion-offense, passing, dribbling, 2-on-2, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: backdoor-cut
+    emphasis: primary
+  - id: v-cut-footwork
+    emphasis: primary
+  - id: middle-cut
+    emphasis: primary
+  - id: motion-offense-four-rules
+    emphasis: secondary
+  - id: dribble-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Two-on-Two Pass, Dribble, and Cut (Drill 62)

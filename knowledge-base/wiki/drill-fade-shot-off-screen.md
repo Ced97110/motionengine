@@ -7,6 +7,23 @@ duration_minutes: 15-40
 tags: [shooting, off-screen, fade, catch-and-shoot, midrange, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: fade-shot-off-screen
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: reading-screens-off-ball
+    emphasis: secondary
+  - id: shooting-on-the-move
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Fade Shot Off Screen Workout (Workouts #5-1, #5-2, #5-3)

@@ -7,6 +7,21 @@ duration_minutes: 12-18
 tags: [defense, help-and-recover, full-rotation, communication, half-court, 3-on-3]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: help-and-recover
+    emphasis: primary
+  - id: full-rotation-defense
+    emphasis: primary
+  - id: weak-side-help-defense
+    emphasis: secondary
+  - id: trapping-and-double-teaming
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # 3-on-3 Help-and-Recover Drill (Fratello)

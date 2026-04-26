@@ -7,6 +7,23 @@ duration_minutes: 15-20
 tags: [defense, offense, full-court, press, transition, fast-break, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: full-court-press
+    emphasis: primary
+  - id: fast-break-offense
+    emphasis: primary
+  - id: transition-defense
+    emphasis: secondary
+  - id: tandem-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # O'Brien 4-4-4 Full-Court Press Drill

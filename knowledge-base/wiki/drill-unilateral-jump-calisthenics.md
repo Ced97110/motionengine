@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [explosiveness, single-leg, balance, ankle-strength, coordination, plyometrics, small-space]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: single-leg-explosive-power
+    emphasis: primary
+  - id: triple-extension
+    emphasis: secondary
+  - id: single-leg-landing-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Unilateral Jump

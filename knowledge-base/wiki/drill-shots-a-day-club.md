@@ -7,6 +7,25 @@ duration_minutes: 60-120
 tags: [shooting, conditioning, ball-handling, individual-workout, off-season]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shot-fake
+    emphasis: primary
+  - id: rip-step
+    emphasis: primary
+  - id: concept-three-point-shooting
+    emphasis: secondary
+  - id: concept-combination-scoring-moves
+    emphasis: secondary
+  - id: shot-charting
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Shots-a-Day Club

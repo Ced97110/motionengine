@@ -7,6 +7,27 @@ duration_minutes: 4
 tags: [post-play, rebounding, defense, shooting, passing, team, integration, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-catch-mechanics
+    emphasis: primary
+  - id: post-drop-step
+    emphasis: primary
+  - id: offensive-rebounding-techniques
+    emphasis: secondary
+  - id: defensive-box-out-footwork
+    emphasis: secondary
+  - id: flash-pivot-cut
+    emphasis: secondary
+  - id: help-side-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Post Moves: Passing-Shooting-Rebounding

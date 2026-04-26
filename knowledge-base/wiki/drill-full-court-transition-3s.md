@@ -7,6 +7,23 @@ duration_minutes: 20-40
 tags: [shooting, conditioning, transition, three-point, full-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: three-point-shooting
+    emphasis: primary
+  - id: shooting-on-the-move
+    emphasis: primary
+  - id: transition-conditioning
+    emphasis: secondary
+  - id: free-throw-shooting
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Full-Court Transition 3s (Workouts #6-5 & #6-6)

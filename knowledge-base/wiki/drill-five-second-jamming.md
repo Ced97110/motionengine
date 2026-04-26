@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [defense, on-ball, pressure, ball-jam, 1v1]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ball-jam
+    emphasis: primary
+  - id: on-ball-pressure
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Five-Second Jamming Drill

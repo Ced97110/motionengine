@@ -7,6 +7,25 @@ duration_minutes: 15-20
 tags: [conditioning, strength-training, power, Olympic-lifting, jumping, core, contact-absorption]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-hip-extension
+    emphasis: primary
+  - id: olympic-lifting-power-clean
+    emphasis: primary
+  - id: front-rack-catch-stabilization
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: core_outer
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Power Clean From Hang Position

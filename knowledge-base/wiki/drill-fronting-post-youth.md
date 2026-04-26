@@ -7,6 +7,23 @@ duration_minutes: 2
 tags: [post, defense, offense, fronting, lob-pass, passing]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-lob-entry-catch
+    emphasis: primary
+  - id: post-seal-technique
+    emphasis: primary
+  - id: post-up-finish
+    emphasis: secondary
+  - id: overhead-lob-pass
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Fronting Drill (Drill 98)

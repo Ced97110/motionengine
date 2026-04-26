@@ -7,6 +7,31 @@ duration_minutes: 5-10
 tags: [quickness, medicine-ball, elastic-strength, lateral-movement, defensive-footwork, reaction-time]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lateral-shuffle
+    emphasis: primary
+  - id: defensive-lateral-quickness
+    emphasis: primary
+  - id: chest-pass
+    emphasis: secondary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+  - id: reaction-time-training
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Medicine-Ball Lateral Shuffle/Pass

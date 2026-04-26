@@ -7,6 +7,23 @@ duration_minutes: 6
 tags: [offense, defense, motion-offense, dribble-penetration, help-side, cutting, 3v3]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: dribble-penetration
+    emphasis: primary
+  - id: help-side-defense
+    emphasis: primary
+  - id: v-cut-footwork
+    emphasis: secondary
+  - id: backdoor-cut
+    emphasis: secondary
+  - id: motion-offense-principles
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Penetration Drill (#113)

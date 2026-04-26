@@ -7,6 +7,25 @@ duration_minutes: 5
 tags: [offense, post-play, low-post, drop-step, footwork, jump-stop, power-layup, baby-hook]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-drop-step
+    emphasis: primary
+  - id: jump-stop
+    emphasis: primary
+  - id: pivot-footwork
+    emphasis: secondary
+  - id: post-fakes
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Drop-Step Baseline/Middle Drill (#114)

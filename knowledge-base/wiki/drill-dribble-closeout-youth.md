@@ -7,6 +7,25 @@ duration_minutes: 1
 tags: [defense, closeout, breakaway-drive, overplay, slide-step, swing-step, 1on1]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: closeout-technique
+    emphasis: primary
+  - id: slide-step
+    emphasis: primary
+  - id: overplay-defense
+    emphasis: primary
+  - id: swing-step
+    emphasis: secondary
+  - id: on-ball-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Dribble Closeout Drill (#149)

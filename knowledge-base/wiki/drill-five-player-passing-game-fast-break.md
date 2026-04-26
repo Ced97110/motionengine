@@ -7,6 +7,27 @@ duration_minutes: 15
 tags: [transition, fast-break, passing, conditioning, decision-making]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: passing-game-fast-break
+    emphasis: primary
+  - id: full-court-transition
+    emphasis: primary
+  - id: decision-making-under-fatigue
+    emphasis: secondary
+  - id: give-and-go
+    emphasis: secondary
+  - id: backdoor-cut
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Five-Player Passing Game Fast Break Drill

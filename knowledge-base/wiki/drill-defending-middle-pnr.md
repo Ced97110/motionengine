@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [defense, pick-and-roll, middle, man-to-man, team-defense, communication, rotation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: pick-and-roll-defense
+    emphasis: primary
+  - id: defensive-communication
+    emphasis: primary
+  - id: defensive-rotation
+    emphasis: secondary
+  - id: hard-hedge
+    emphasis: secondary
+  - id: soft-coverage
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Defending Middle Pick-and-Rolls Drill

@@ -7,6 +7,15 @@ duration_minutes: 5-10
 tags: [rehabilitation, ankle, proprioception, injury-prevention]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ankle-proprioception
+    emphasis: primary
+  - id: ankle-rehabilitation
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
 ---
 
 # Seated Physioball Perturbation

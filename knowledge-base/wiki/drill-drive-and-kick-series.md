@@ -7,6 +7,25 @@ duration_minutes: 15-20
 tags: [offense, drive-and-kick, spacing, penetration, passing, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: drive-and-kick
+    emphasis: primary
+  - id: paint-penetration
+    emphasis: primary
+  - id: kick-out-pass
+    emphasis: secondary
+  - id: skip-pass
+    emphasis: secondary
+  - id: off-ball-spacing
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Drive-and-Kick Series (Three Out, Two In)

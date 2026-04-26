@@ -7,6 +7,29 @@ duration_minutes: 6
 tags: [defense, man-to-man, help-side, post-defense, closeout, rotation, flash-pivot, comprehensive, 1on1]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: help-side-defense
+    emphasis: primary
+  - id: man-to-man-rotation
+    emphasis: primary
+  - id: closeout
+    emphasis: primary
+  - id: post-defense
+    emphasis: primary
+  - id: flash-pivot-denial
+    emphasis: primary
+  - id: jump-to-the-ball
+    emphasis: secondary
+  - id: charge-taking
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # One-on-One Multiple Skills Drill (#152)

@@ -7,6 +7,25 @@ duration_minutes: 20-40
 tags: [shooting, ball-handling, footwork, live-ball, off-dribble, three-point]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rip-step
+    emphasis: primary
+  - id: hop-back
+    emphasis: primary
+  - id: crossover-dribble
+    emphasis: secondary
+  - id: three-point-shooting
+    emphasis: secondary
+  - id: creating-your-own-shot
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Rip Step Hop Back / Roll Out / Crossover Shooting Drill Series

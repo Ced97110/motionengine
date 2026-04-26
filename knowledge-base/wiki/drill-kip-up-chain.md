@@ -7,6 +7,25 @@ duration_minutes: 15-20
 tags: [conditioning, agility, hip-power, explosive-power, core, athleticism, floor-movement, progression]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: kip-up
+    emphasis: primary
+  - id: hip-snap
+    emphasis: primary
+  - id: explosive-power
+    emphasis: secondary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Kip-Up Chain (10-Step Progressive System)

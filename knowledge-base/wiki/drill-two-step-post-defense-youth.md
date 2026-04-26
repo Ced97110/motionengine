@@ -7,6 +7,21 @@ duration_minutes: 5
 tags: [post, defense, footwork, one-on-one]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-defense-two-step
+    emphasis: primary
+  - id: post-defense-fronting
+    emphasis: secondary
+  - id: post-defense-positioning
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Two-Step Drill — Post Defense (Drill 99)

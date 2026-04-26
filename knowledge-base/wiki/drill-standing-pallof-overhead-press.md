@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [core, strength, anti-rotation, cable, stability]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: anti-rotation-core-stability
+    emphasis: primary
+  - id: anti-lateral-flexion
+    emphasis: primary
+  - id: overhead-press-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Standing Pallof Overhead Press

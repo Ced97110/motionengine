@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [strength, upper-body, pulling, pushing, core, conditioning, stability, dumbbells]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: upper-body-pulling-strength
+    emphasis: primary
+  - id: core-anti-rotation-stability
+    emphasis: primary
+  - id: upper-body-pushing-strength
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # Renegade Row (Basketball)

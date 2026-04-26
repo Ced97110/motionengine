@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [conditioning, plyometrics, total-body, jumping, rebounding, core-strength, medicine-ball]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reactive-vertical-jump
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+  - id: core-bracing
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Medicine Ball Slam Into Vertical Jump

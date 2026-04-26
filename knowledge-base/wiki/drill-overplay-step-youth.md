@@ -7,6 +7,21 @@ duration_minutes: 2
 tags: [defense, overplay, on-ball, dribble, full-court, slide-step, man-to-man, forcing]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: on-ball-overplay
+    emphasis: primary
+  - id: defensive-slide-step
+    emphasis: primary
+  - id: forcing-direction-change
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Overplay Step

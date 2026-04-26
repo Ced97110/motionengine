@@ -7,6 +7,23 @@ duration_minutes: 15-20
 tags: [transition, fast-break, conditioning, decision-making, shooting]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: transition-fast-break
+    emphasis: primary
+  - id: decision-making-under-pressure
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: secondary
+  - id: push-dribble-attack
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Beep-Beep Fast Break Drill

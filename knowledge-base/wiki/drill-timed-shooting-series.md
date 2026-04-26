@@ -7,6 +7,23 @@ duration_minutes: 9-12
 tags: [shooting, inside-shooting, three-point, passing, rebounding, timed, competitive]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: shot-fake
+    emphasis: secondary
+  - id: outlet-passing
+    emphasis: secondary
+  - id: offensive-rebounding
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Timed Shooting Drill Series

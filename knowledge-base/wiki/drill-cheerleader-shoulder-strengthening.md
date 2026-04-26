@@ -7,6 +7,17 @@ duration_minutes: 10
 tags: [conditioning, injury-prevention, shoulder, scapular-stability, strengthening, resistance-band]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: scapular-stability
+    emphasis: primary
+  - id: rotator-cuff-strengthening
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # Cheerleader Shoulder Strengthening

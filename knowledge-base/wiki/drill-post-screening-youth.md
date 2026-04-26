@@ -7,6 +7,25 @@ duration_minutes: 20
 tags: [post, screening, offense, motion-offense, high-low, reads]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-screening
+    emphasis: primary
+  - id: screen-and-come-back
+    emphasis: primary
+  - id: screen-and-fade
+    emphasis: secondary
+  - id: high-low-post-offense
+    emphasis: secondary
+  - id: defensive-screen-coverage
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Post Screening (Drill 103)

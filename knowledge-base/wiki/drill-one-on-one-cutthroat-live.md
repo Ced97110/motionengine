@@ -7,6 +7,20 @@ duration_minutes: 15-30
 tags: [1-on-1, live-ball-moves, competitive, scoring, defense, ball-handling, game-simulation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: live-ball-moves
+    emphasis: primary
+  - id: combination-scoring-moves
+    emphasis: primary
+  - id: pivot-foot-establishment
+    emphasis: secondary
+  - id: jab-step
+    emphasis: secondary
+  - id: step-back
+    emphasis: secondary
+  - id: show-and-go
+    emphasis: secondary
 ---
 
 # One-on-One Cutthroat Live (Workout #4-26)

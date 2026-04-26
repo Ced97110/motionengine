@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [core, glutes, posterior-chain, isometric, strength, rehabilitation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: posterior-chain-isometric
+    emphasis: primary
+  - id: hip-extension-strength
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Reverse Hip Extension Hold

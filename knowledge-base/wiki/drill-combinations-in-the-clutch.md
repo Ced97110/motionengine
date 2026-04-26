@@ -7,6 +7,25 @@ duration_minutes: 45-60
 tags: [shooting, live-ball-moves, clutch, scoring, free-throw, three-point, ball-handling, competitive]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: combination-scoring-moves
+    emphasis: primary
+  - id: live-ball-moves
+    emphasis: primary
+  - id: hop-back-crossover-combo
+    emphasis: secondary
+  - id: three-point-shot-technique
+    emphasis: secondary
+  - id: free-throw-technique
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Combinations in the Clutch (Workout #4-25)

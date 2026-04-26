@@ -7,6 +7,21 @@ duration_minutes: 2
 tags: [offense, triple-threat, footwork, pivoting, V-cut, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: triple-threat-position
+    emphasis: primary
+  - id: v-cut-footwork
+    emphasis: secondary
+  - id: pivoting-fundamentals
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Triple-Threat Position (Drill 9)

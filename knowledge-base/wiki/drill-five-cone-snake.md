@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [agility, cone-drill, cutting, change-of-direction, sprint, footwork]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: cutting
+    emphasis: primary
+  - id: change-of-direction
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Five-Cone Snake Drill

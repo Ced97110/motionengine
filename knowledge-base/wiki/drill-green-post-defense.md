@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [defense, post-defense, fronting, help-defense, shell-drill, communication]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-defense-fronting
+    emphasis: primary
+  - id: weak-side-help-defense
+    emphasis: primary
+  - id: defensive-shell-drill
+    emphasis: secondary
+  - id: ball-pressure-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Green Drill (Front the Low Post)

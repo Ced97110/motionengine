@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [rehabilitation, ankle, proprioception, balance, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ankle-proprioception-stabilization
+    emphasis: primary
+  - id: unilateral-balance
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Contralateral Kick (Unilateral Ankle Balance)

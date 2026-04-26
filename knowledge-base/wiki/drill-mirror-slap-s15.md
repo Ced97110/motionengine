@@ -7,6 +7,23 @@ duration_minutes: 2
 tags: [quickness, agility, footwork, defense, offense, reaction-time, mirroring, pivoting]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reactive-mirroring
+    emphasis: primary
+  - id: pivot-footwork
+    emphasis: primary
+  - id: defensive-footwork
+    emphasis: secondary
+  - id: triple-threat-position
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Mirror Slap

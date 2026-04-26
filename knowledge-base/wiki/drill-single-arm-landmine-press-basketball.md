@@ -7,6 +7,17 @@ duration_minutes: 10-15
 tags: [strength-training, upper-body, overhead, shoulder, unilateral, landmine, gym]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: unilateral-overhead-press
+    emphasis: primary
+  - id: trunk-stability
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Single-Arm Landmine Press (Basketball Strength Exercise)

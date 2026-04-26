@@ -7,6 +7,21 @@ duration_minutes: 6
 tags: [offense, defense, 1v1, loose-ball, competitive, transition, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: loose-ball-recovery
+    emphasis: primary
+  - id: perimeter-one-on-one-moves
+    emphasis: secondary
+  - id: defensive-closeout
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Recovery Drill (#109)

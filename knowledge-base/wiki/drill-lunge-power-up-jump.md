@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [conditioning, plyometrics, lower-body, quickness, power, lunge]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lower-body-plyometrics
+    emphasis: primary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+  - id: landing-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Lunge With Power-Up Jump

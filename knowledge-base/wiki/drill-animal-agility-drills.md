@@ -7,6 +7,27 @@ duration_minutes: 10-20
 tags: [conditioning, agility, athleticism, warm-up, coordination, injury-prevention, calisthenics]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: multi-planar-agility
+    emphasis: primary
+  - id: lateral-chain-training
+    emphasis: primary
+  - id: joint-health-calisthenics
+    emphasis: secondary
+  - id: body-weight-locomotion
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Animal Agility Drills

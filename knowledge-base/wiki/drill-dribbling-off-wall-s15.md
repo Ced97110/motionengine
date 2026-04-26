@@ -7,6 +7,19 @@ duration_minutes: 1
 tags: [ball-handling, dribbling, agility, hand-quickness, ball-control, balance, conditioning, fingertip-control]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: fingertip-ball-control
+    emphasis: primary
+  - id: wrist-action-dribbling
+    emphasis: primary
+  - id: dribbling-driving-techniques
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # Dribbling Off the Wall

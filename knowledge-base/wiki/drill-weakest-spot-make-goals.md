@@ -7,6 +7,21 @@ duration_minutes: 20-60
 tags: [shooting, spot-shots, make-based, individual-workout, weakness-training, self-improvement]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: spot-shooting
+    emphasis: primary
+  - id: make-based-training
+    emphasis: primary
+  - id: weakness-elimination
+    emphasis: secondary
+  - id: shooting-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Weakest Spot Make-Goal Workouts (Workouts #11-13, #11-14, #11-15)

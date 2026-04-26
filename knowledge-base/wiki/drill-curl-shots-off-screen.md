@@ -7,6 +7,23 @@ duration_minutes: 15-30
 tags: [shooting, off-screen, curl-cut, elbow, midrange, catch-and-shoot, individual-workout]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: curl-shot-off-screen
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: reading-screens-off-ball
+    emphasis: secondary
+  - id: shooting-off-screens
+    emphasis: secondary
+trains_anatomy:
+  - region: elbow_complex
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Curl Shots Off Screen Drill Series

@@ -7,6 +7,21 @@ duration_minutes: 6
 tags: [post, passing, offense, footwork, high-low, reading-defense]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: high-low-passing
+    emphasis: primary
+  - id: post-read-defense
+    emphasis: primary
+  - id: front-pivot-triple-threat
+    emphasis: secondary
+  - id: post-entry-pass-selection
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # High-Low Post Passing (Drill 102)

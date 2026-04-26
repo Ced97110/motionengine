@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [plyometrics, jumping, lower-body, unilateral, explosive-power, calisthenics]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: unilateral-explosive-jumping
+    emphasis: primary
+  - id: tuck-mechanics
+    emphasis: primary
+  - id: single-leg-landing
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Thread Jump (Step 9)

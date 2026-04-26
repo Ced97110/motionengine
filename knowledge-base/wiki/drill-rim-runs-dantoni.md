@@ -7,6 +7,23 @@ duration_minutes: 8-12
 tags: [transition, fast-break, screening, lob, roll, big-men, post]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rim-run-roll
+    emphasis: primary
+  - id: side-screen-and-roll
+    emphasis: primary
+  - id: lob-pass-finish
+    emphasis: secondary
+  - id: secondary-break-trailer
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Rim Runs Drill (D'Antoni Secondary Break)

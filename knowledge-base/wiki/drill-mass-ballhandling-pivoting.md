@@ -7,6 +7,25 @@ duration_minutes: 8
 tags: [offense, footwork, pivoting, passing, ball-handling, press-break, trapping, team-drill]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: pivoting-while-trapped
+    emphasis: primary
+  - id: split-the-trap
+    emphasis: primary
+  - id: catch-and-pivot
+    emphasis: secondary
+  - id: triple-threat-position
+    emphasis: secondary
+  - id: press-break-passing
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Mass Ballhandling and Pivoting Drill

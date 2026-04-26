@@ -7,6 +7,21 @@ duration_minutes: 6
 tags: [defense, closeout, 1v1, perimeter, live-ball-moves]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: closeout-technique
+    emphasis: primary
+  - id: on-ball-defense
+    emphasis: secondary
+  - id: perimeter-one-on-one-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Approach and Close Out Drill (#111)

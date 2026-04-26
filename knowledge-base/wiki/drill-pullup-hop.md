@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [upper-body, explosive-power, calisthenics, pulling, grip, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: kipping-pullup
+    emphasis: primary
+  - id: explosive-upper-body-power
+    emphasis: primary
+  - id: muscle-up-progression
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Pull-Up Hop (Muscle-Up Chain — Step 4)

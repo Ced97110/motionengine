@@ -7,6 +7,21 @@ duration_minutes: 1
 tags: [ball-handling, dribbling, fakes, change-of-direction, conditioning, pivoting, passing]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: in-and-out-dribble
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+  - id: pivoting-fundamentals
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: primary
 ---
 
 # In-and-Out Dribble Maneuver (Drill #28)

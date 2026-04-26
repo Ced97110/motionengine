@@ -7,6 +7,17 @@ duration_minutes: 5
 tags: [conditioning, injury-prevention, shoulder, flexibility, stretching, rotator-cuff]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: posterior-shoulder-flexibility
+    emphasis: primary
+  - id: rotator-cuff-mobility
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Sleeper Stretch

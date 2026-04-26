@@ -7,6 +7,23 @@ duration_minutes: 15-45
 tags: [shooting, three-point, ball-handling, footwork, off-dribble, live-ball]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rip-step
+    emphasis: primary
+  - id: three-point-shooting
+    emphasis: primary
+  - id: pull-up-jumper
+    emphasis: secondary
+  - id: off-dribble-shooting
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Rip Step Pull-Up 3s Drill Series

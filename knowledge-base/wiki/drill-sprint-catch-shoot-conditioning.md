@@ -7,6 +7,25 @@ duration_minutes: 10-20
 tags: [conditioning, shooting, transition, sprint, layup, pull-up, skills-conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-off-the-move
+    emphasis: primary
+  - id: skills-conditioning
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: secondary
+  - id: pull-up-jumper
+    emphasis: secondary
+  - id: drive-to-layup
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Sprint, Catch, and Shoot Conditioning Drill

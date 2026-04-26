@@ -7,6 +7,21 @@ duration_minutes: 10-20
 tags: [three-point-shooting, shooting, competition, team-drill, pressure]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: three-point-shooting
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: secondary
+  - id: pressure-shooting
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Three-Point Shooting (Competitive Team Drill)

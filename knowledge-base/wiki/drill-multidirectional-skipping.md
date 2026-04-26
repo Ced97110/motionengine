@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [quickness, agility, coordination, footwork, conditioning, reaction-time]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: multidirectional-footwork
+    emphasis: primary
+  - id: quickness-and-reaction-time-training
+    emphasis: primary
+  - id: basketball-acceleration-and-deceleration
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Multidirectional Skipping (Assorted Biomotor Skills)

@@ -7,6 +7,23 @@ duration_minutes: 15-40
 tags: [shooting, off-screen, fade, catch-and-shoot, shooting-off-screens]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-off-screens
+    emphasis: primary
+  - id: fade-cut
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: secondary
+  - id: reading-screens-off-ball
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Fade Shot Workout Series (Workouts #5-1, #5-2, #5-3)

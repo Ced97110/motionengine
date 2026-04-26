@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [speed, plyometrics, sprint-mechanics, hip-flexor, stride-length, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: high-knees
+    emphasis: primary
+  - id: butt-kickers
+    emphasis: primary
+  - id: sprint-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # 4 × 4s

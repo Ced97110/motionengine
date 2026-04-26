@@ -7,6 +7,20 @@ duration_minutes: 10-15
 tags: [offense, half-court, continuity, backdoor, high-post, double-screen, press-break, LA-offense]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: guard-to-center-entry
+    emphasis: primary
+  - id: backdoor-cut
+    emphasis: primary
+  - id: high-post-hub
+    emphasis: secondary
+  - id: double-screen
+    emphasis: secondary
+  - id: dribble-handoff
+    emphasis: secondary
+  - id: pick-and-roll
+    emphasis: secondary
 ---
 
 # Guard-to-Center Pass Pattern (LA Offense)

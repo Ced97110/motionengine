@@ -7,6 +7,25 @@ duration_minutes: 5-10
 tags: [1-on-1, scoring, driving, competitiveness, conditioning, offensive-moves, live-ball]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: live-ball-moves
+    emphasis: primary
+  - id: 1on1-scoring
+    emphasis: primary
+  - id: rip-step
+    emphasis: secondary
+  - id: post-footwork
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # 1-on-1 Baseline Touch Drill

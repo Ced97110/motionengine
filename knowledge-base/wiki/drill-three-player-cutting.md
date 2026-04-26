@@ -7,6 +7,14 @@ duration_minutes: 9
 tags: [offense, cutting, motion-offense, passing, spacing, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: motion-offense-cutting
+    emphasis: primary
+  - id: v-cut-footwork
+    emphasis: secondary
+  - id: spacing-principles
+    emphasis: secondary
 ---
 
 # Three-Player Cutting (Drill 59)

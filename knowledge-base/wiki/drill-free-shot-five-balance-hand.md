@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [shooting, free-throw, weak-hand, layup, ball-handling, multi-skill]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: free-throw-shooting
+    emphasis: primary
+  - id: shooting-follow-through
+    emphasis: secondary
+  - id: weak-hand-layup
+    emphasis: primary
+  - id: weak-hand-dribbling
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Five Free Shots, Five Balance-Hand Layups

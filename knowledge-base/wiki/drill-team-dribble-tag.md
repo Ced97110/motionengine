@@ -7,6 +7,21 @@ duration_minutes: 1
 tags: [ball-handling, ball-protection, quick-footwork, peripheral-vision, agility, conditioning, fun, competitive]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ball-handling-under-pressure
+    emphasis: primary
+  - id: peripheral-vision-training
+    emphasis: primary
+  - id: change-of-pace-dribble
+    emphasis: secondary
+  - id: control-dribble-stance
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Team Dribble Tag (Drill #34)

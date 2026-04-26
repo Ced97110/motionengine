@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [conditioning, agility, calisthenics, acrobatics, explosive-power, shoulder-strength]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: back-handspring-mechanics
+    emphasis: primary
+  - id: rotational-inversion-pattern
+    emphasis: secondary
+  - id: single-arm-support-inversion
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Back Macaco

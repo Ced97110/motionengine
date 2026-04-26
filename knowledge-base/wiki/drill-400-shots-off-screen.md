@@ -7,6 +7,27 @@ duration_minutes: 60-90
 tags: [shooting, off-screen, live-ball moves, dribble moves, curl cut, baseline, paint attack, reading defenders, high-volume, comprehensive workout]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reading-defender-off-screen
+    emphasis: primary
+  - id: shooting-off-screens
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: secondary
+  - id: curl-cut
+    emphasis: secondary
+  - id: dribble-attack-off-screen
+    emphasis: secondary
+  - id: v-cut
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # 400+ Shots Off a Screen (Comprehensive Screen Workout)

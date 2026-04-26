@@ -7,6 +7,21 @@ duration_minutes: 10-20
 tags: [shooting, free-throw, conditioning, mental-toughness, team, game-like]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: free-throw-shooting
+    emphasis: primary
+  - id: mental-toughness-under-pressure
+    emphasis: secondary
+  - id: shooting-follow-through
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # 3-25 Free-Shot Drill

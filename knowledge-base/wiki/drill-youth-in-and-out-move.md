@@ -7,6 +7,19 @@ duration_minutes: 5
 tags: [dribbling, offense, footwork, in-and-out, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: in-and-out-dribble
+    emphasis: primary
+  - id: ball-fake
+    emphasis: secondary
+  - id: attack-dribble-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # In-and-Out Move (Drill 12)

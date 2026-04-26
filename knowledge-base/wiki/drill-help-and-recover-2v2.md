@@ -7,6 +7,19 @@ duration_minutes: 8-12
 tags: [defense, help-defense, closeout, on-ball, penetration, 2v2]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: help-and-recover
+    emphasis: primary
+  - id: closeout
+    emphasis: secondary
+  - id: weak-side-help-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Two-on-Two Help-and-Recover (the head coach)

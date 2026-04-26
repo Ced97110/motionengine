@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [strength-training, upper-body, triceps, cable, elbow-extension]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: elbow-extension-strength
+    emphasis: primary
+  - id: upper-body-pushing
+    emphasis: secondary
+trains_anatomy:
+  - region: elbow_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Triceps Pushdown — Cable Machine (Basketball Strength Training)

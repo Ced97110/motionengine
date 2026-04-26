@@ -7,6 +7,23 @@ duration_minutes: 6
 tags: [footwork, pivoting, passing, shooting, ball-handling, offense, defense]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: pivot-and-pass-technique
+    emphasis: primary
+  - id: one-two-step-footwork
+    emphasis: primary
+  - id: rip-step
+    emphasis: secondary
+  - id: defensive-stance
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Pivot-and-Pass Station Drill

@@ -7,6 +7,21 @@ duration_minutes: 7
 tags: [offense, cutting, dribble-penetration, motion-offense, help-defense, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: dribble-penetration-reads
+    emphasis: primary
+  - id: backdoor-cut
+    emphasis: secondary
+  - id: motion-offense-principles
+    emphasis: secondary
+  - id: v-cut-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Defeat Help and Recover (Drill 60)

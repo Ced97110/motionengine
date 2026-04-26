@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [conditioning, plyometrics, upper-body, passing, chest-pass, footwork, jab-step, medicine-ball]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: chest-pass
+    emphasis: primary
+  - id: jab-step
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+  - id: pass-fake
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Pivot Step to Medicine Ball Chest Pass

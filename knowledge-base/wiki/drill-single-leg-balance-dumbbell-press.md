@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [balance, proprioception, strength, single-leg, upper-body, tri-plane]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: single-leg-balance
+    emphasis: primary
+  - id: overhead-press
+    emphasis: secondary
+  - id: tri-plane-stability
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Single-Leg Balance Dumbbell Presses

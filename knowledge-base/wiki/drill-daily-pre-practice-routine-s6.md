@@ -7,6 +7,31 @@ duration_minutes: 42
 tags: [fundamentals, shooting, dribbling, pivoting, passing, rebounding, screening, transition, warm-up, pre-practice]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-fundamentals
+    emphasis: primary
+  - id: dribbling-fundamentals
+    emphasis: primary
+  - id: pivoting-and-passing
+    emphasis: primary
+  - id: offensive-rebounding
+    emphasis: primary
+  - id: screen-setting
+    emphasis: secondary
+  - id: defensive-fundamentals
+    emphasis: secondary
+  - id: transition-offense
+    emphasis: secondary
+  - id: post-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Daily Pre-Practice Routine (42-Minute Scoreboard Clock System)

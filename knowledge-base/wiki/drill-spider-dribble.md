@@ -7,6 +7,15 @@ duration_minutes: 1
 tags: [ball-handling, touch, hand-eye-coordination, hand-quickness, youth, fingertips]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: fingertip-ball-control
+    emphasis: primary
+  - id: dribbling-driving-techniques
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
 ---
 
 # Spider Dribble (Drill #22)

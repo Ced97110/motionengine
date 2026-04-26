@@ -7,6 +7,29 @@ duration_minutes: 45-90
 tags: [shooting, ball-handling, scoring, live-ball, combination-moves, stride-stop, hop-back, crossover, layup, free-throws]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: combination-live-ball-moves
+    emphasis: primary
+  - id: stride-stop
+    emphasis: primary
+  - id: hop-back
+    emphasis: secondary
+  - id: step-through
+    emphasis: secondary
+  - id: crossover-dribble
+    emphasis: secondary
+  - id: attack-layup
+    emphasis: secondary
+  - id: shot-fake
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Combination Live-Ball Workouts

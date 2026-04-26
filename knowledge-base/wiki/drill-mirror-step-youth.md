@@ -7,6 +7,23 @@ duration_minutes: 2
 tags: [defense, footwork, on-ball, mirror, individual, man-to-man, reactive]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: on-ball-defensive-footwork
+    emphasis: primary
+  - id: retreat-step
+    emphasis: secondary
+  - id: overplay-slide
+    emphasis: secondary
+  - id: reactive-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Mirror Step

@@ -7,6 +7,21 @@ duration_minutes: 5
 tags: [dribbling, offense, footwork, crossover, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: crossover-dribble
+    emphasis: primary
+  - id: attack-dribble-drive
+    emphasis: secondary
+  - id: shot-fake-and-shoulder-fake
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Crossover Move (Drill 13)

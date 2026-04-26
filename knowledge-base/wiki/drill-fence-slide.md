@@ -7,6 +7,21 @@ duration_minutes: 1
 tags: [defense, denial, footwork, on-ball-defense, off-ball-defense, man-to-man]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: denial-defense-stance
+    emphasis: primary
+  - id: lateral-defensive-slide
+    emphasis: primary
+  - id: v-cut-off-ball
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Fence Slide

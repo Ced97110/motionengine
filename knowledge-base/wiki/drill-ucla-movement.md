@@ -7,6 +7,18 @@ duration_minutes: 10-15
 tags: [offense, half-court, spacing, screening, passing, continuity, decision-making]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: off-ball-screening
+    emphasis: primary
+  - id: floor-spacing
+    emphasis: primary
+  - id: down-screen-reads
+    emphasis: secondary
+  - id: pass-and-cut
+    emphasis: secondary
+  - id: motion-offense-principles
+    emphasis: secondary
 ---
 
 # UCLA Movement Drill

@@ -7,6 +7,15 @@ duration_minutes: 5
 tags: [conditioning, injury-prevention, shoulder, flexibility, stretching]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shoulder-mobility
+    emphasis: primary
+  - id: injury-prevention-prehab
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
 ---
 
 # Latissimus Dorsi Stretch

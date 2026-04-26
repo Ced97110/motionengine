@@ -7,6 +7,21 @@ duration_minutes: 8-12
 tags: [transition, fast-break, dribble-handoff, pick-and-roll, big-men]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: dribble-handoff
+    emphasis: primary
+  - id: screen-and-roll
+    emphasis: primary
+  - id: secondary-break
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Dribble Drags Drill (D'Antoni Secondary Break)

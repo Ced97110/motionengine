@@ -7,6 +7,21 @@ duration_minutes: 5-8
 tags: [footwork, lateral-quickness, defensive-footwork, change-of-direction, agility, movement-skills]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lateral-defensive-slide
+    emphasis: primary
+  - id: change-of-direction
+    emphasis: primary
+  - id: defensive-pivot
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Line Slide With Change of Direction

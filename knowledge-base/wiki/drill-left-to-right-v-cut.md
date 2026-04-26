@@ -7,6 +7,25 @@ duration_minutes: 10-15
 tags: [shooting, footwork, v-cut, catch-and-shoot, passing, rebounding, team-drill, off-screen]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: v-cut
+    emphasis: primary
+  - id: shooting-on-the-move
+    emphasis: secondary
+  - id: reading-screens-off-ball
+    emphasis: secondary
+  - id: rhythm-passing
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Left-to-Right V-Cut Shooting Drill

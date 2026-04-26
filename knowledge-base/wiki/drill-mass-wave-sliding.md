@@ -7,6 +7,25 @@ duration_minutes: 1
 tags: [defense, footwork, man-to-man, mass-drill, on-ball, advance-retreat-swing, fence-slide, team]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-footwork
+    emphasis: primary
+  - id: advance-retreat-swing-steps
+    emphasis: primary
+  - id: on-ball-defense
+    emphasis: secondary
+  - id: fence-slide
+    emphasis: secondary
+  - id: close-out
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Mass Wave Sliding Drill (#145)

@@ -7,6 +7,21 @@ duration_minutes: 5
 tags: [offense, footwork, jab-step, rocker-step, triple-threat, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: jab-step
+    emphasis: primary
+  - id: rocker-step
+    emphasis: primary
+  - id: triple-threat-position
+    emphasis: secondary
+  - id: dribble-drive
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Rocker Step (Drill 11)

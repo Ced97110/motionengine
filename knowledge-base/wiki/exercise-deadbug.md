@@ -7,6 +7,15 @@ duration_minutes: 5-10
 tags: [strength-training, core, isometric, dynamic, deep-stabilizers, stability-ball]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: anti-extension-core-stability
+    emphasis: primary
+  - id: contralateral-limb-coordination
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
 ---
 
 # Deadbug

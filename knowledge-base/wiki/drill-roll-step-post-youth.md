@@ -7,6 +7,25 @@ duration_minutes: 5
 tags: [post, offense, footwork, pivoting, one-on-one]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-reverse-pivot
+    emphasis: primary
+  - id: post-seal
+    emphasis: primary
+  - id: post-footwork
+    emphasis: secondary
+  - id: read-and-react-offense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Roll Step Drill (Drill 100)

@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [transition, fast-break, defense, conditioning, full-court, communication]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: transition-defense-tandem
+    emphasis: primary
+  - id: fast-break-offense
+    emphasis: secondary
+  - id: defensive-communication
+    emphasis: secondary
+  - id: 2-on-1-advantage
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # 3-on-2 to 2-on-1 Transition Drill

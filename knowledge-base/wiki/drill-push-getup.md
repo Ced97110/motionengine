@@ -7,6 +7,19 @@ duration_minutes: 5
 tags: [conditioning, upper-body, lower-body, explosive-power, total-body, plyometrics]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-level-change
+    emphasis: primary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Push Get-Up

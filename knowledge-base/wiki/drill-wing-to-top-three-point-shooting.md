@@ -7,6 +7,23 @@ duration_minutes: 15-20
 tags: [shooting, three-point, on-the-move, catch-and-shoot, game-speed, charting]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: three-point-shooting
+    emphasis: primary
+  - id: shooting-on-the-move
+    emphasis: secondary
+  - id: shot-charting-and-evaluation
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Wing to Top Three-Point Shooting (Workout #11-16)

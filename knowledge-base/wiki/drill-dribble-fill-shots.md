@@ -7,6 +7,23 @@ duration_minutes: 15-30
 tags: [shooting, off-screen, live-ball, dribble-move, middle-attack, reading-defense, individual-workout]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: dribble-fill-shot
+    emphasis: primary
+  - id: reading-screens-off-ball
+    emphasis: primary
+  - id: shooting-off-screens
+    emphasis: secondary
+  - id: live-ball-pivot
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Dribble Fill Shot Drill Series

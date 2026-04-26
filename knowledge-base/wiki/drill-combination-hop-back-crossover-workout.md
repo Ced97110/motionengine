@@ -7,6 +7,21 @@ duration_minutes: 20-40
 tags: [ball-handling, shooting, live-ball-moves, dribble-combinations, self-creation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: hop-back-crossover-combo
+    emphasis: primary
+  - id: free-throw-shooting
+    emphasis: secondary
+  - id: combination-scoring-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Combination Live-Ball Hop-Back to Crossover Dribble Workout Series

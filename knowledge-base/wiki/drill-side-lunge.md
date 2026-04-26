@@ -7,6 +7,19 @@ duration_minutes: 10-15
 tags: [strength, lower-body, lateral, hip-abductors, hip-adductors, quads, glutes, dumbbells, defensive-slides, cutting]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lateral-strength-training
+    emphasis: primary
+  - id: hip-hinge
+    emphasis: secondary
+  - id: defensive-slide
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Side Lunge

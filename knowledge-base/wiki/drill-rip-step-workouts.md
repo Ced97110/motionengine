@@ -7,6 +7,27 @@ duration_minutes: 30-90
 tags: [offense, live-ball, footwork, shooting, scoring, conditioning, ball-handling, individual-workout]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rip-step
+    emphasis: primary
+  - id: live-ball-footwork
+    emphasis: primary
+  - id: stride-stop
+    emphasis: secondary
+  - id: hop-back
+    emphasis: secondary
+  - id: step-through
+    emphasis: secondary
+  - id: shot-creation
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Rip Step Workout Series (Workouts #2-1 to #2-5)

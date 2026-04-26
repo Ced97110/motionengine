@@ -7,6 +7,25 @@ duration_minutes: 10-20
 tags: [shooting, scoring, footwork, conditioning, game-situations, layup, jump-shot, chair-drills]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: catch-and-shoot-footwork
+    emphasis: primary
+  - id: square-up-mechanics
+    emphasis: primary
+  - id: shooting-off-screens
+    emphasis: secondary
+  - id: low-to-high-shooting
+    emphasis: secondary
+  - id: two-count-stop
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Chair Drill Series (Kevin Eastman)

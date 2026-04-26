@@ -7,6 +7,27 @@ duration_minutes: 20-60
 tags: [shooting, footwork, live-ball, ball-handling, off-dribble, scoring, one-on-one]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shot-fake-step-fake
+    emphasis: primary
+  - id: stride-stop
+    emphasis: primary
+  - id: off-dribble-pull-up
+    emphasis: secondary
+  - id: hop-back
+    emphasis: secondary
+  - id: crossover-dribble
+    emphasis: secondary
+  - id: attack-layup
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Shot Fake / Step Fake Full Workout Series (Workouts 3-1 to 3-5)

@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [shooting, screening, flex, roll-to-basket, reading defense]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: flex-offense
+    emphasis: primary
+  - id: reading-defender-off-screen
+    emphasis: primary
+  - id: post-roll
+    emphasis: secondary
+  - id: perimeter-screening
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Flex Offense Shooting Drill — Three Players

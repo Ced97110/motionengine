@@ -7,6 +7,18 @@ duration_minutes: 10-15
 tags: [offense, half-court, continuity, back-screen, pin-down, pick-and-roll, LA-offense, guard-play]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: back-screen-reads
+    emphasis: primary
+  - id: down-screen-reads
+    emphasis: primary
+  - id: guard-to-guard-entry
+    emphasis: secondary
+  - id: pick-and-roll
+    emphasis: secondary
+  - id: post-read-and-pass
+    emphasis: secondary
 ---
 
 # Guard-to-Guard Pass Pattern (LA Offense)

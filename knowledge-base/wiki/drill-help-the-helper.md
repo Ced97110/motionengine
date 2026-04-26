@@ -7,6 +7,31 @@ duration_minutes: 6
 tags: [defense, help-side, weak-side, man-to-man, rotation, deny, fence-slide, rebounding]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: weak-side-help-defense
+    emphasis: primary
+  - id: flat-triangle-positioning
+    emphasis: primary
+  - id: help-and-recover
+    emphasis: secondary
+  - id: defensive-rotation
+    emphasis: secondary
+  - id: denial-defense
+    emphasis: secondary
+  - id: fence-slide
+    emphasis: secondary
+  - id: close-the-gap
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Help the Helper

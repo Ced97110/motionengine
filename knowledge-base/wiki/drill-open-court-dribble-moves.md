@@ -7,6 +7,23 @@ duration_minutes: 15-25
 tags: [ball-handling, dribbling, scoring, full-court, conditioning, transition]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: open-court-dribble-moves
+    emphasis: primary
+  - id: creating-your-own-shot
+    emphasis: primary
+  - id: combination-scoring-moves
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Open-Court Dribble Moves (Workout #7-3)

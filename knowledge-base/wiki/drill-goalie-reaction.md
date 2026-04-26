@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [quickness, reaction-time, lateral-movement, upper-body, visual-stimulus, agility]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reaction-time-training
+    emphasis: primary
+  - id: lateral-quickness
+    emphasis: secondary
+  - id: hand-eye-coordination
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Goalie Drill (Sports-Ball Reaction)

@@ -7,6 +7,21 @@ duration_minutes: 1
 tags: [post, dribbling, footwork, ball-handling]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: slide-step-dribble
+    emphasis: primary
+  - id: post-ball-handling
+    emphasis: secondary
+  - id: post-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Slide-Step Dribble (Drill 97)

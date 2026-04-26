@@ -7,6 +7,21 @@ duration_minutes: 5
 tags: [ball-handling, dribbling, change-of-pace, conditioning, full-court, youth, pivot, jump-stop]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: change-of-pace-dribble
+    emphasis: primary
+  - id: ball-handling
+    emphasis: secondary
+  - id: jump-stop
+    emphasis: secondary
+  - id: pivot
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Change of Pace Dribble (Drill #25)

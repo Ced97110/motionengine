@@ -7,6 +7,21 @@ duration_minutes: 3
 tags: [offense, defense, 1v1, competitive, scoring, live-ball-moves, post-moves]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: perimeter-one-on-one-moves
+    emphasis: primary
+  - id: shot-creation-space
+    emphasis: primary
+  - id: triple-threat-position
+    emphasis: secondary
+  - id: shot-fake-step-fake
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # One-on-One-on-One (#110)

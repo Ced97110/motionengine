@@ -7,6 +7,21 @@ duration_minutes: 8-12
 tags: [shooting, screening, flex, off-ball movement, catch-and-shoot]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-off-screens
+    emphasis: primary
+  - id: flex-back-screen-footwork
+    emphasis: primary
+  - id: reading-defender-off-screen
+    emphasis: secondary
+  - id: catch-and-shoot
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Flex Offense Shooting Drill — Two Players

@@ -7,6 +7,25 @@ duration_minutes: 10-15
 tags: [offense, defense, ball-handling, 1v1, footwork, decision-making, rocker-step, jab-series]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: triple-threat-position
+    emphasis: secondary
+  - id: jab-step
+    emphasis: primary
+  - id: 1on1-reads-and-attacks
+    emphasis: primary
+  - id: step-back
+    emphasis: secondary
+  - id: dribble-moves-van-gundy
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Paye Drill

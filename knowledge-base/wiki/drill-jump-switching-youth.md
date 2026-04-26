@@ -7,6 +7,23 @@ duration_minutes: 8
 tags: [defense, pick-and-roll, jump-switch, screen, on-ball, help-side, rotation, team, switching]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: jump-switch
+    emphasis: primary
+  - id: pick-and-roll-defense
+    emphasis: primary
+  - id: help-side-rotation
+    emphasis: secondary
+  - id: hedge-and-recover
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Jump Switching

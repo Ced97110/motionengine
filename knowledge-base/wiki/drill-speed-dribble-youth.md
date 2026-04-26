@@ -7,6 +7,21 @@ duration_minutes: 5
 tags: [ball-handling, dribbling, conditioning, speed-dribble, pivot, jump-stop, passing, full-court, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: speed-dribble
+    emphasis: primary
+  - id: pivot-footwork
+    emphasis: secondary
+  - id: jump-stop
+    emphasis: secondary
+  - id: chest-pass
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Speed Dribble (Drill #23)

@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [strength, lower-body, quads, glutes, hamstrings, hip-flexors, lunges, dumbbells, dynamic-balance]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lower-body-strength
+    emphasis: primary
+  - id: dynamic-balance
+    emphasis: primary
+  - id: lunge-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Walking Lunge

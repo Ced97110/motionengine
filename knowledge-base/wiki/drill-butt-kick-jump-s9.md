@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [jumping, plyometrics, conditioning, bodyweight, hip-flexors, leg-speed]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: tuck-jump-mechanics
+    emphasis: primary
+  - id: explosive-vertical-jump
+    emphasis: secondary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Butt-Kick Jump (Power Jump Chain Step 5)

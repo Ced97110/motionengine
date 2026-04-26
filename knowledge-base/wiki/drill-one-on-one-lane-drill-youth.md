@@ -7,6 +7,23 @@ duration_minutes: 4
 tags: [offense, defense, one-on-one, dribbling, perimeter, decision-making]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: perimeter-one-on-one-moves
+    emphasis: primary
+  - id: dribble-moves
+    emphasis: primary
+  - id: jab-step
+    emphasis: secondary
+  - id: shot-creation
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # One-on-One Lane Drill (Drill 104)

@@ -7,6 +7,23 @@ duration_minutes: 5-15
 tags: [athleticism, tumbling, agility, plyometrics, body-control, landing-mechanics, off-season]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: front-handspring-takeoff-mechanics
+    emphasis: primary
+  - id: landing-mechanics
+    emphasis: secondary
+  - id: rotational-body-control
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
+  - region: glute_max
+    emphasis: primary
 ---
 
 # Back-Drop Handspring (Front Flip Chain — Step 5)

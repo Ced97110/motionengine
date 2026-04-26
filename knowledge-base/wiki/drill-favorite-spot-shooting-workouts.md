@@ -7,6 +7,19 @@ duration_minutes: 15-45
 tags: [shooting, spot-shooting, confidence, individual-workout, make-based]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: spot-shooting
+    emphasis: primary
+  - id: shooting-mechanics
+    emphasis: secondary
+  - id: make-based-training
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Favorite Spot Shooting Workouts

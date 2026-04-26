@@ -7,6 +7,21 @@ duration_minutes: 1
 tags: [defense, 1-on-1, dribble, on-ball, triple-threat, competitive, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: on-ball-defensive-footwork
+    emphasis: primary
+  - id: belly-up-charge-draw
+    emphasis: secondary
+  - id: defensive-stance
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Defensive Cone

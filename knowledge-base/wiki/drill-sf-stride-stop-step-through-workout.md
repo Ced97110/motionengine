@@ -7,6 +7,25 @@ duration_minutes: 20-60
 tags: [shooting, shot-fake, step-through, stride-stop, pull-up, finishing, individual-workout]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shot-fake
+    emphasis: primary
+  - id: shot-fake-step-through
+    emphasis: primary
+  - id: shot-fake-stride-stop
+    emphasis: secondary
+  - id: pull-up-jumper
+    emphasis: secondary
+  - id: ball-protection
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Shot Fake (SF) Stride Stop / Step-Through Workouts

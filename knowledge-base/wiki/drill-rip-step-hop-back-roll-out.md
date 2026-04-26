@@ -7,6 +7,25 @@ duration_minutes: 20-45
 tags: [shot-creation, ball-handling, footwork, dribble-drive, combination-moves, free-throw]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rip-step
+    emphasis: primary
+  - id: hop-back
+    emphasis: primary
+  - id: roll-out-dribble
+    emphasis: primary
+  - id: combination-scoring-moves
+    emphasis: secondary
+  - id: shot-creation
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Rip Step Hop Back / Roll Out

@@ -7,6 +7,23 @@ duration_minutes: 4
 tags: [offense, defense, 1v1, competitive, live-ball-moves, scoring, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: perimeter-one-on-one-moves
+    emphasis: primary
+  - id: pivoting-offense
+    emphasis: primary
+  - id: triple-threat-position
+    emphasis: secondary
+  - id: transition-speed
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # One-on-One-on-One-on-One (#107)

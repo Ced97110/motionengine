@@ -7,6 +7,23 @@ duration_minutes: 2
 tags: [defense, quickness, hand-quickness, defensive-stance, deflection, 1-on-1, ball-security]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-hand-quickness
+    emphasis: primary
+  - id: defensive-stance
+    emphasis: primary
+  - id: deflection
+    emphasis: secondary
+  - id: live-ball-transition
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: primary
 ---
 
 # Quick Hands

@@ -7,6 +7,23 @@ duration_minutes: 2
 tags: [defense, help-side, hedge, help-and-recover, rotation, closeout, 1-on-1, man-to-man]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: help-side-positioning
+    emphasis: primary
+  - id: hedge-and-recover
+    emphasis: primary
+  - id: defensive-rotation
+    emphasis: secondary
+  - id: closeout
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Help and Recover

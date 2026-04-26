@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [defense, half-court, competitive, rebounding, stops, team]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-rebounding-footwork
+    emphasis: primary
+  - id: weak-side-help-defense
+    emphasis: secondary
+  - id: transition-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Four-Against-Four Half-Court Game of Stops

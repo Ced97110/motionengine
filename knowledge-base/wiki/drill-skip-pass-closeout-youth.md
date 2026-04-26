@@ -7,6 +7,23 @@ duration_minutes: 6
 tags: [defense, closeout, skip-pass, interception-stance, help-side, off-ball, 1on1]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: help-side-interception-stance
+    emphasis: primary
+  - id: closeout-technique
+    emphasis: primary
+  - id: weak-side-help-defense
+    emphasis: secondary
+  - id: one-on-one-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Skip Pass and Closeout Drill (#150)

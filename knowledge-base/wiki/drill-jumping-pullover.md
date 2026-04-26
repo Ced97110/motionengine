@@ -7,6 +7,25 @@ duration_minutes: 10-15
 tags: [upper-body, pulling, plyometric, explosive, calisthenics, muscle-up-progression, technique]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: wrist-rotation
+    emphasis: primary
+  - id: bar-pullover-mechanics
+    emphasis: primary
+  - id: explosive-pulling
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Jumping Pullover (Muscle-Up Chain Step 8)

@@ -7,6 +7,19 @@ duration_minutes: 1
 tags: [shooting, fundamentals, youth, alignment, follow-through, muscle-memory]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: straight-stick-shooting
+    emphasis: primary
+  - id: shooting-follow-through
+    emphasis: secondary
+trains_anatomy:
+  - region: elbow_complex
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Lift, Extend, Flip Drill

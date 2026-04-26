@@ -7,6 +7,25 @@ duration_minutes: 20-45
 tags: [shooting, three-point, shot-creation, footwork, step-back, free-throw]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rip-step
+    emphasis: primary
+  - id: step-back
+    emphasis: primary
+  - id: three-point-shot-technique
+    emphasis: secondary
+  - id: shot-creation-footwork
+    emphasis: secondary
+  - id: free-throw-technique
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Rip Step Hop Backs

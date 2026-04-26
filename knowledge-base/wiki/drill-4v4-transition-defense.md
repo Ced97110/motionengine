@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [defense, transition, fast-break, help-defense, communication]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: transition-defense
+    emphasis: primary
+  - id: help-defense-rotation
+    emphasis: primary
+  - id: match-up-by-proximity
+    emphasis: secondary
+  - id: stop-the-ball
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # 4-on-4 Full-Court Transition Defense Drill

@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [shooting, cutting, elbow, catch-and-shoot, footwork, game-situations]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: v-cut-footwork
+    emphasis: primary
+  - id: elbow-jump-shot
+    emphasis: secondary
+  - id: one-two-step-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Flex Elbow Shooting Drill

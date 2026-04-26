@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [conditioning, agility, plyometrics, explosive-power, calisthenics, floor-work]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: kip-up
+    emphasis: primary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+  - id: explosive-power-expression
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Kip-Up (Step 7 of Kip-Up Chain)

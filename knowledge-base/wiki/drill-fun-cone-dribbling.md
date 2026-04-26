@@ -7,6 +7,23 @@ duration_minutes: 2
 tags: [ball-handling, dribbling, agility, change-of-pace, change-of-direction, conditioning, fun]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ball-handling-dribble-moves
+    emphasis: primary
+  - id: change-of-pace-dribble
+    emphasis: primary
+  - id: change-of-direction
+    emphasis: secondary
+  - id: eyes-up-dribbling
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Fun Cone Dribbling Drill (Drill #32)

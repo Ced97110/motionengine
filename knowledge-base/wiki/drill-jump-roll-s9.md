@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [athleticism, tumbling, agility, plyometrics, body-control, coordination, off-season]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: vertical-jump-development
+    emphasis: primary
+  - id: stretch-shortening-cycle-plyometrics
+    emphasis: secondary
+  - id: body-control-rotational-tolerance
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Jump Roll (Front Flip Chain — Step 3)

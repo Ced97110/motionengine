@@ -7,6 +7,23 @@ duration_minutes: 4
 tags: [shooting, rebounding, conditioning, cutting, teamwork]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-mechanics
+    emphasis: primary
+  - id: rebounding-pivot-footwork
+    emphasis: primary
+  - id: v-cut-footwork
+    emphasis: secondary
+  - id: catch-and-shoot
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Rebound-Pass-Shoot (Drill 94)

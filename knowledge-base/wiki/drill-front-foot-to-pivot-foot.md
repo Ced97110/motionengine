@@ -7,6 +7,23 @@ duration_minutes: 3
 tags: [defense, on-ball-defense, footwork, man-to-man, stance]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: front-foot-to-pivot-foot-stance
+    emphasis: primary
+  - id: on-ball-defensive-footwork
+    emphasis: primary
+  - id: swing-step
+    emphasis: secondary
+  - id: defensive-stance
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Front Foot to Pivot Foot

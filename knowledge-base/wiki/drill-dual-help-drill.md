@@ -7,6 +7,23 @@ duration_minutes: 3
 tags: [defense, help-side, charge, footwork, man-to-man, off-ball-defense]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: help-side-defense
+    emphasis: primary
+  - id: drawing-charge
+    emphasis: primary
+  - id: lob-pass-deflection
+    emphasis: secondary
+  - id: flat-triangle-positioning
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Dual-Help Drill

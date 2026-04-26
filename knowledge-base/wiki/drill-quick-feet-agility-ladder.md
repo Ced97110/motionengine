@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [quickness, agility, ladder, first-step, reaction, footwork, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-first-step
+    emphasis: primary
+  - id: stride-frequency
+    emphasis: primary
+  - id: lateral-agility
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Quick Feet (in All Directions)

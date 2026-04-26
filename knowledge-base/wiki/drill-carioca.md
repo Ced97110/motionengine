@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [agility, footwork, lateral-speed, conditioning, hip-flexibility]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: carioca-footwork
+    emphasis: primary
+  - id: lateral-speed
+    emphasis: secondary
+  - id: hip-rotation
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Carioca

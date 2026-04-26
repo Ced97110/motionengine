@@ -7,6 +7,21 @@ duration_minutes: 7
 tags: [defense, full-court, trapping, pressure-defense, defensive-stunts, interception, pass-trap]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: trapping-and-double-teaming
+    emphasis: primary
+  - id: pass-invitation-lure
+    emphasis: primary
+  - id: interception-positioning
+    emphasis: secondary
+  - id: pressure-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Trap the Pass

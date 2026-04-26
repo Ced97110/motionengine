@@ -7,6 +7,23 @@ duration_minutes: 20-40
 tags: [shooting, spot-shots, free-throws, conditioning, individual-workout]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: spot-shooting
+    emphasis: primary
+  - id: free-throw-shooting
+    emphasis: secondary
+  - id: shooting-off-movement
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Spot Shot Workout Series (Workouts #11-2 and #11-3)

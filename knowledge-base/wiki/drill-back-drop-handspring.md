@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [conditioning, agility, explosiveness, plyometrics, body-weight, calisthenics, rotation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: handspring-entry-mechanics
+    emphasis: primary
+  - id: explosive-takeoff
+    emphasis: secondary
+  - id: landing-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Back-Drop Handspring (Front Flip Chain — Step 5)

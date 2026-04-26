@@ -7,6 +7,25 @@ duration_minutes: 6
 tags: [offense, cutting, defense, motion-offense, 2-on-2, recognition, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: read-and-react-cutting
+    emphasis: primary
+  - id: backdoor-cut
+    emphasis: primary
+  - id: motion-offense-four-rules
+    emphasis: secondary
+  - id: flash-pivot-cut
+    emphasis: secondary
+  - id: v-cut-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Two-on-Two Recognition (Drill 63)

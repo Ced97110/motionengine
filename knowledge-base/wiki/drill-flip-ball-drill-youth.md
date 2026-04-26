@@ -7,6 +7,19 @@ duration_minutes: 1
 tags: [shooting, fundamentals, alignment, youth, muscle-memory, wrist]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: straight-stick-shooting
+    emphasis: primary
+  - id: shooting-hand-grip
+    emphasis: secondary
+  - id: wrist-cock-release
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # Flip-Ball Drill

@@ -7,6 +7,23 @@ duration_minutes: 3
 tags: [shooting, layup, passing, conditioning, rebounding, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: layup-mechanics
+    emphasis: primary
+  - id: bounce-pass
+    emphasis: secondary
+  - id: chest-pass
+    emphasis: secondary
+  - id: rebounding-positioning
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Basic Layup (Drill 8)

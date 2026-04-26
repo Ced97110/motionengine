@@ -7,6 +7,25 @@ duration_minutes: 10-15
 tags: [conditioning, agility, explosiveness, plyometrics, body-weight, calisthenics, power, rotation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: front-flip-rotation
+    emphasis: primary
+  - id: block-jump-takeoff
+    emphasis: secondary
+  - id: tuck-body-position
+    emphasis: secondary
+  - id: safe-landing-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Back-Drop Flip (Front Flip Chain — Step 8)

@@ -7,6 +7,23 @@ duration_minutes: 5
 tags: [dribbling, offense, footwork, half-spin, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: half-spin-move
+    emphasis: primary
+  - id: spin-move
+    emphasis: secondary
+  - id: dribble-moves
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Half-Spin Move (Drill 15)

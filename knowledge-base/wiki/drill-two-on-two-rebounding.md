@@ -7,6 +7,25 @@ duration_minutes: 4
 tags: [rebounding, post-play, defense, team, conditioning, passing, shooting]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-box-out-footwork
+    emphasis: primary
+  - id: offensive-rebounding
+    emphasis: primary
+  - id: post-moves-back-to-basket
+    emphasis: secondary
+  - id: outlet-pass-pivot
+    emphasis: secondary
+  - id: rebounding-position-savvy
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Two-on-Two Rebounding

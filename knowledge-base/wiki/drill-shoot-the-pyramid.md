@@ -7,6 +7,23 @@ duration_minutes: 20-45
 tags: [shooting, conditioning, individual-development, mental-toughness, competition]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: pressure-shooting
+    emphasis: primary
+  - id: free-throw-technique
+    emphasis: primary
+  - id: live-ball-pull-up
+    emphasis: secondary
+  - id: shot-consistency
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Shoot the Pyramid (6-5-4-3-2-Till You Miss)

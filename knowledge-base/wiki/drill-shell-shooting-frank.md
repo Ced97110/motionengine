@@ -7,6 +7,14 @@ duration_minutes: 30
 tags: [defense, shooting, offense, team, shell-drill, organization]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-shell-drill
+    emphasis: primary
+  - id: catch-and-shoot
+    emphasis: secondary
+  - id: practice-organization
+    emphasis: primary
 ---
 
 # Shell Shooting (the head coach / the originating head coach Format)

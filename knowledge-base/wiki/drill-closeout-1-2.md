@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [defense, closeout, lateral-movement, conditioning, footwork]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-closeout
+    emphasis: primary
+  - id: defensive-lateral-slide
+    emphasis: primary
+  - id: closeout-angle-no-middle
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Closeout 1 and Closeout 2 (the head coach)

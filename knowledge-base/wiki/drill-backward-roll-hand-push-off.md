@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [agility, tumbling, kinesthetic-awareness, conditioning, upper-body]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: kinesthetic-awareness
+    emphasis: primary
+  - id: tumbling-agility
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Backward Roll to Hand Push-Off (Tumbling Drill)

@@ -7,6 +7,23 @@ duration_minutes: 12
 tags: [footwork, pivoting, post, perimeter, offense, screening, team-drill]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: pivot-footwork
+    emphasis: primary
+  - id: post-footwork
+    emphasis: primary
+  - id: setting-screens
+    emphasis: secondary
+  - id: pin-screen-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Mass Footwork Rotation Drill

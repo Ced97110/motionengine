@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [agility, reaction-time, conditioning, change-of-direction, quickness]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: change-of-direction
+    emphasis: primary
+  - id: reaction-time-training
+    emphasis: primary
+  - id: explosive-floor-recovery
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Drop and Get Up (Crazy Z-Ball Drill)

@@ -7,6 +7,21 @@ duration_minutes: 4
 tags: [defense, man-to-man, denial, fence-slide, ball-side, wing, V-cut, backdoor]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: wing-denial
+    emphasis: primary
+  - id: fence-slide
+    emphasis: primary
+  - id: backdoor-cut
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Deny the Wing Drill (#147)

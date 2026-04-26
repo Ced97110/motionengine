@@ -7,6 +7,21 @@ duration_minutes: 7
 tags: [defense, full-court, trapping, pressure-defense, defensive-stunts, interception, man-to-man]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: trapping-and-double-teaming
+    emphasis: primary
+  - id: passing-lane-coverage
+    emphasis: primary
+  - id: eye-reading-passer
+    emphasis: secondary
+  - id: weak-side-help-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Run and Trap (Defensive Stunt)

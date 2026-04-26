@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [defense, full-court, press, 2v2, trapping, on-ball]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: press-denial
+    emphasis: primary
+  - id: full-court-trap
+    emphasis: primary
+  - id: back-tip
+    emphasis: secondary
+  - id: inbounds-denial
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # O'Brien Press 2-on-2 Drill

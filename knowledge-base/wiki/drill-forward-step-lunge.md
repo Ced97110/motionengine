@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [strength, lower-body, quads, glutes, hamstrings, lunges, barbell, bilateral]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lower-extremity-strength
+    emphasis: primary
+  - id: lunge-mechanics
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Forward Step Lunge

@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [strength-training, olympic-lifts, explosive-power, unilateral, total-body, dumbbell]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: unilateral-explosive-power
+    emphasis: primary
+  - id: olympic-lifting-basketball
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # One-Arm Dumbbell Snatch (Basketball)

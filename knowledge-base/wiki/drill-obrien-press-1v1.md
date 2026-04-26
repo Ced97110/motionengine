@@ -7,6 +7,21 @@ duration_minutes: 8-12
 tags: [defense, full-court, press, 1v1, on-ball, back-tip]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: inbounds-denial
+    emphasis: primary
+  - id: on-ball-pressure
+    emphasis: primary
+  - id: back-tip
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # O'Brien Press 1-on-1 Drill

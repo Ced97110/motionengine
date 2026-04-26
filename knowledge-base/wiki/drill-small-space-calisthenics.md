@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [conditioning, athleticism, explosive-training, core, power, calisthenics, warm-up]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lateral-plyometric-push-up
+    emphasis: primary
+  - id: explosive-core-power
+    emphasis: primary
+  - id: unilateral-hip-power
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Small Space Calisthenics Drills

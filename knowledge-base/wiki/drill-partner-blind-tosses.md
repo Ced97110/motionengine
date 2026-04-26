@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [quickness, reaction-time, visual-stimulus, first-step, conditioning, perception]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reaction-time-training
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: primary
+  - id: peripheral-vision-awareness
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Partner Blind Tosses (Sports-Ball Reaction)

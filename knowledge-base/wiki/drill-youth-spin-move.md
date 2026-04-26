@@ -7,6 +7,23 @@ duration_minutes: 5
 tags: [dribbling, offense, footwork, spin-move, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: spin-move
+    emphasis: primary
+  - id: reverse-pivot
+    emphasis: primary
+  - id: ball-protection
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Spin (Reverse) Move (Drill 14)

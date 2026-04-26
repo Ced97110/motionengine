@@ -7,6 +7,15 @@ duration_minutes: 5-10
 tags: [explosiveness, upper-body, pressing-power, acrobatics, small-space, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-pressing-power
+    emphasis: primary
+  - id: pike-push-up
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
 ---
 
 # Kojaks

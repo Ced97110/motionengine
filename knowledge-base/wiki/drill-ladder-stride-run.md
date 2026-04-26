@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [speed, conditioning, sprint-mechanics, stride-frequency, agility-ladder, posture]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: sprint-mechanics
+    emphasis: primary
+  - id: stride-frequency
+    emphasis: primary
+  - id: sprint-posture
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Ladder Stride Run

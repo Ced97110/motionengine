@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [reaction-time, agility, quickness, conditioning, whole-body-reaction]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reaction-time-training
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Barrel Roll to Reaction (Whole-Body Reaction)

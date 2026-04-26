@@ -7,6 +7,25 @@ duration_minutes: 20-45
 tags: [shooting, ball-handling, footwork, hop-back, roll-out, live-ball, counter-move, free-throw]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: hop-back
+    emphasis: primary
+  - id: roll-out-dribble
+    emphasis: primary
+  - id: live-ball-combination-moves
+    emphasis: secondary
+  - id: creating-your-own-shot
+    emphasis: secondary
+  - id: pull-up-jump-shot
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Combo Hop Back / Roll Out Drill

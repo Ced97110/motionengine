@@ -7,6 +7,19 @@ duration_minutes: 10-15
 tags: [strength, upper-body, pushing, chest, shoulders, triceps, bench-press]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: upper-body-pressing
+    emphasis: primary
+  - id: contact-resistance
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # Dumbbell Bench Press

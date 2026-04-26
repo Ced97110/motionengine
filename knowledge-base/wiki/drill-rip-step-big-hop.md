@@ -7,6 +7,23 @@ duration_minutes: 30-60
 tags: [finishing, layup, footwork, ball-handling, shot-creation, free-throw, contact]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rip-step
+    emphasis: primary
+  - id: two-foot-gather
+    emphasis: primary
+  - id: paint-finishing
+    emphasis: secondary
+  - id: free-throw
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Rip Step Big Hop

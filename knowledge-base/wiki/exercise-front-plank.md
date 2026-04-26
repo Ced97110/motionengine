@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [strength-training, core, isometric, injury-prevention]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: isometric-core-stability
+    emphasis: primary
+  - id: force-transfer-legs-to-upper-body
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Front Plank

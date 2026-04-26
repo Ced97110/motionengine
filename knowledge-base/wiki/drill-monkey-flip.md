@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [conditioning, agility, calisthenics, acrobatics, explosive-power, shoulder-strength]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: backward-rotational-power
+    emphasis: primary
+  - id: explosive-hip-drive
+    emphasis: primary
+  - id: back-handspring-progression
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Monkey Flip

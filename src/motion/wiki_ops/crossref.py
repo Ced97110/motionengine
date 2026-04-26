@@ -367,13 +367,31 @@ def compile_indexes(
                 for item in _dict_items(fm, "trains_techniques")
                 if item.get("id")
             ]
+            # Practice-generator filtering needs level + duration at retrieval
+            # time. Emitting them per edge avoids re-reading every drill page.
+            drill_level = fm.get("level")
+            drill_duration = fm.get("duration_minutes")
             for a in trains_a:
                 anatomy_to_drill[a["region"]].append(
-                    _clean({"drill": slug, "emphasis": a.get("emphasis")})
+                    _clean(
+                        {
+                            "drill": slug,
+                            "emphasis": a.get("emphasis"),
+                            "level": drill_level,
+                            "duration_minutes": drill_duration,
+                        }
+                    )
                 )
             for t in trains_t:
                 technique_to_drill[t["id"]].append(
-                    _clean({"drill": slug, "emphasis": t.get("emphasis")})
+                    _clean(
+                        {
+                            "drill": slug,
+                            "emphasis": t.get("emphasis"),
+                            "level": drill_level,
+                            "duration_minutes": drill_duration,
+                        }
+                    )
                 )
 
     play_to_defending, defending_to_play = _compile_defending_edges(

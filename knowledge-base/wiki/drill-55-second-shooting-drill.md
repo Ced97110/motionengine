@@ -7,6 +7,23 @@ duration_minutes: 6
 tags: [shooting, rebounding, passing, outlet-pass, footwork, competitive, timed, game-realistic]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: shot-fake
+    emphasis: secondary
+  - id: offensive-rebounding
+    emphasis: secondary
+  - id: outlet-pass
+    emphasis: secondary
+  - id: shooting-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Basic 55-Second Shooting Drill

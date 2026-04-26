@@ -7,6 +7,19 @@ duration_minutes: 12-20
 tags: [shooting, screening, flex, decision-making, 4on4, live, defense]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reading-screens-off-ball
+    emphasis: primary
+  - id: flex-offense
+    emphasis: secondary
+  - id: screen-the-screener-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Flex Offense — Shooting With Two Screens (4-on-4)

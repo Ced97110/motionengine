@@ -7,6 +7,21 @@ duration_minutes: 12-15
 tags: [shooting, screening, flex, 4on4, screen-the-screener, skip pass, continuity]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: screen-the-screener
+    emphasis: primary
+  - id: flex-back-screen-footwork
+    emphasis: primary
+  - id: skip-pass
+    emphasis: secondary
+  - id: reading-screens-off-ball
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Flex Offense Screen-the-Screener Shooting Drill (4-on-4)

@@ -7,6 +7,27 @@ duration_minutes: 10
 tags: [defense, man-to-man, comprehensive, strong-side, weak-side, post-defense, denial, closeout, flash-pivot, interception]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: jump-to-the-ball
+    emphasis: secondary
+  - id: post-defense
+    emphasis: secondary
+  - id: denial-defense
+    emphasis: primary
+  - id: closeout
+    emphasis: primary
+  - id: flash-pivot-denial
+    emphasis: secondary
+  - id: man-to-man-defense
+    emphasis: primary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Eight-Point Drill (#151)

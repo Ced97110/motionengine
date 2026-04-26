@@ -7,6 +7,25 @@ duration_minutes: 6
 tags: [post, shooting, footwork, power-move, drop-step, inside-scoring, bubble-defense, physical, pivot]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: drop-step
+    emphasis: primary
+  - id: post-power-move
+    emphasis: primary
+  - id: pivot-footwork
+    emphasis: secondary
+  - id: shot-fake
+    emphasis: secondary
+  - id: scoring-under-contact
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Power Shot Drills — Post with Bubble Defense

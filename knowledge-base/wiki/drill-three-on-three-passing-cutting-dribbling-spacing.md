@@ -7,6 +7,25 @@ duration_minutes: 6
 tags: [offense, cutting, dribbling, passing, spacing, motion-offense, 3-on-3, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: motion-offense-four-rules
+    emphasis: primary
+  - id: backdoor-cut
+    emphasis: primary
+  - id: v-cut-footwork
+    emphasis: secondary
+  - id: triple-threat-position
+    emphasis: secondary
+  - id: dribble-moves-van-gundy
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Three-on-Three Passing, Cutting, Dribbling, and Spacing (Drill 65)

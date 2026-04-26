@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [jumping, plyometrics, conditioning, bodyweight, blocking, transition]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: blocking-horizontal-to-vertical-conversion
+    emphasis: primary
+  - id: bilateral-jump-takeoff
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Block Jump (Power Jump Chain Step 4)

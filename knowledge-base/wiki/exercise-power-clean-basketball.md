@@ -7,6 +7,27 @@ duration_minutes: 15-20
 tags: [strength-training, olympic-lifts, explosive-power, total-body, lower-body, upper-body]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-weight-training
+    emphasis: primary
+  - id: olympic-lifting
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+  - id: vertical-jump-mechanics
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Power Clean (Basketball)

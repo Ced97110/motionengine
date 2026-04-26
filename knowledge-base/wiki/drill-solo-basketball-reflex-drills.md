@@ -7,6 +7,21 @@ duration_minutes: 10-20
 tags: [reaction-time, quickness, conditioning, ball-handling, athleticism, solo-training]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reaction-time-training
+    emphasis: primary
+  - id: explosive-coordination
+    emphasis: secondary
+  - id: ball-handling
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Solo Basketball Reflex Drills

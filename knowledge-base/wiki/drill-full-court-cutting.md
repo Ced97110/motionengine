@@ -7,6 +7,25 @@ duration_minutes: 2
 tags: [offense, cutting, passing, conditioning, full-court, youth, layup]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: cutting-timing
+    emphasis: primary
+  - id: passing-accuracy
+    emphasis: primary
+  - id: backdoor-cut
+    emphasis: secondary
+  - id: v-cut-footwork
+    emphasis: secondary
+  - id: pivot-and-pass-technique
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Full-Court Cutting (Drill 61)

@@ -7,6 +7,17 @@ duration_minutes: 10-20
 tags: [upper-body, pushing, strength, calisthenics, muscle-up-progression, dips, progressive-overload]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: muscle-up-dip-press
+    emphasis: primary
+  - id: upper-body-pushing-strength
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # Dip Progression Chain (Muscle-Up Supplemental Training)

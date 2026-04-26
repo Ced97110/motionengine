@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [strength-training, upper-body, biceps, barbell, elbow-flexion]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: elbow-flexion-strength
+    emphasis: primary
+  - id: upper-body-pulling-strength
+    emphasis: secondary
+trains_anatomy:
+  - region: elbow_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Barbell Biceps Curl (Basketball Strength Training)

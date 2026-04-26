@@ -7,6 +7,17 @@ duration_minutes: 5-8
 tags: [footwork, lateral-quickness, agility, defensive-footwork, conditioning, movement-skills]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lateral-defensive-slide
+    emphasis: primary
+  - id: foot-mind-coordination
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Three-Line Lateral Footwork Drill

@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [defense, closeout, help-defense, conditioning, weak-side, movement-skills]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: weak-side-help-rotation
+    emphasis: primary
+  - id: closeout
+    emphasis: primary
+  - id: penetration-stop
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Weak-Side Help Conditioning Drill

@@ -7,6 +7,23 @@ duration_minutes: 15-45
 tags: [shooting, shot-fake, hop-back, three-point, step-back, individual-workout, space-creation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shot-fake-hop-back
+    emphasis: primary
+  - id: three-point-shooting
+    emphasis: primary
+  - id: shot-fake
+    emphasis: secondary
+  - id: step-back
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Shot Fake (SF) Hop Back Workouts

@@ -7,6 +7,23 @@ duration_minutes: 8-12
 tags: [offense, defense, transition, conditioning, live-play]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: transition-defense
+    emphasis: primary
+  - id: offensive-to-defensive-transition
+    emphasis: primary
+  - id: defensive-transition-principles
+    emphasis: secondary
+  - id: matchup-communication
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Five-on-Five Change

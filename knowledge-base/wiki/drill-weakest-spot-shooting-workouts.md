@@ -7,6 +7,23 @@ duration_minutes: 20-60
 tags: [shooting, spot-shooting, weakness-development, individual-workout, make-based]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: spot-shooting
+    emphasis: primary
+  - id: shooting-technique-fundamentals
+    emphasis: primary
+  - id: weakness-development
+    emphasis: secondary
+  - id: make-based-training
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Weakest Spot Shooting Workouts

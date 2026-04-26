@@ -7,6 +7,17 @@ duration_minutes: 1
 tags: [shooting, alignment, fundamentals, youth, straight-stick, wall-drill]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: straight-stick-shooting
+    emphasis: primary
+  - id: shooting-elbow-alignment
+    emphasis: secondary
+trains_anatomy:
+  - region: elbow_complex
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Flip the Ball Off the Wall

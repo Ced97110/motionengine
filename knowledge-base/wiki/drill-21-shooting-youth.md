@@ -7,6 +7,21 @@ duration_minutes: 6
 tags: [shooting, competitive, passing, rebounding, youth, team, game-like]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: straight-stick-shooting
+    emphasis: primary
+  - id: passing-technique
+    emphasis: secondary
+  - id: rebounding-fundamentals
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # 21 Shooting Drill

@@ -7,6 +7,25 @@ duration_minutes: 3
 tags: [passing, fundamentals, youth, ball-handling]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: chest-pass
+    emphasis: primary
+  - id: bounce-pass
+    emphasis: primary
+  - id: overhead-pass
+    emphasis: primary
+  - id: baseball-pass
+    emphasis: secondary
+  - id: pass-fake
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # Two-Line Standing Still Drill

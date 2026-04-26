@@ -7,6 +7,23 @@ duration_minutes: 12-15
 tags: [shooting, screening, flex, 4on4, defensive reads, curl, fade, roll]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reading-defender-off-screen
+    emphasis: primary
+  - id: curl-shot-off-screen
+    emphasis: secondary
+  - id: dribble-fade-shot
+    emphasis: secondary
+  - id: flex-offense
+    emphasis: secondary
+  - id: screen-and-roll
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Flex Offense Shooting Drill — Two Screens (4-on-4)

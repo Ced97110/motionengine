@@ -7,6 +7,18 @@ duration_minutes: 20
 tags: [offense, defense, full-court, motion-offense, team-defense, scrimmage, five-on-five]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: motion-offense-principles
+    emphasis: primary
+  - id: team-defense
+    emphasis: primary
+  - id: cutting
+    emphasis: secondary
+  - id: screening
+    emphasis: secondary
+  - id: dribble-penetration
+    emphasis: secondary
 ---
 
 # Five on Five (Youth Full-Team Scrimmage)

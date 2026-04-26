@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [shooting, form, alignment, balance-hand, warm-up]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-balance-hand
+    emphasis: primary
+  - id: shooting-elbow-alignment
+    emphasis: secondary
+  - id: shooting-hand-grip
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Balance-Hand Form Shooting

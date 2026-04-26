@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [quickness, lateral-speed, reaction, agility, defensive-slide, mirroring, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-slide
+    emphasis: primary
+  - id: lateral-shuffle
+    emphasis: primary
+  - id: reactive-mirroring
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Mirror Drills in Box With Square Shuffle

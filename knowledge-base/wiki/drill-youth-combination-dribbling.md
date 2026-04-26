@@ -7,6 +7,21 @@ duration_minutes: 3
 tags: [dribbling, offense, footwork, combination, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rocker-step
+    emphasis: primary
+  - id: dribbling-driving-techniques
+    emphasis: primary
+  - id: triple-threat-position
+    emphasis: secondary
+  - id: live-ball-combination-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Combination Dribbling Moves (Drill 16)

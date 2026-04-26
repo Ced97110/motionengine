@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [conditioning, core, hip-flexors, floor-movement, kip-up-progression]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: kip-up-roll-mechanics
+    emphasis: primary
+  - id: bridge-hand-position
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: primary
 ---
 
 # Rolling Sit-Up (Kip-Up Step 1)

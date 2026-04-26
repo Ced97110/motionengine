@@ -7,6 +7,18 @@ duration_minutes: 10-15
 tags: [offense, half-court, continuity, screening, ball-reversal, pick-and-roll, LA-offense]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ball-reversal-swing
+    emphasis: primary
+  - id: down-screen-reads
+    emphasis: primary
+  - id: guard-to-forward-entry
+    emphasis: secondary
+  - id: pick-and-roll
+    emphasis: secondary
+  - id: continuity-offense-reads
+    emphasis: secondary
 ---
 
 # Guard-to-Forward Pass Pattern (LA Offense)

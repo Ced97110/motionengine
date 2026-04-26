@@ -7,6 +7,23 @@ duration_minutes: 20-45
 tags: [shooting, ball-handling, footwork, pull-up, driving, one-on-one, perimeter]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: rip-step
+    emphasis: primary
+  - id: pull-up-jump-shot
+    emphasis: primary
+  - id: one-two-step-footwork
+    emphasis: secondary
+  - id: triple-threat-position
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Rip Step Stride Stop (Pull-Up Jump Shot)

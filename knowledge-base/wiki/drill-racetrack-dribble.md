@@ -7,6 +7,25 @@ duration_minutes: 20-30
 tags: [ball-handling, dribbling, scoring, conditioning, full-court, transition, 1-on-1]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ball-handling-under-pressure
+    emphasis: primary
+  - id: open-court-dribble-moves
+    emphasis: primary
+  - id: tempo-change
+    emphasis: primary
+  - id: combination-scoring-moves
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # The Racetrack (Workout #7-4)

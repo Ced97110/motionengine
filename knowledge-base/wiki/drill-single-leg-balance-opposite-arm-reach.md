@@ -7,6 +7,19 @@ duration_minutes: 10-15
 tags: [balance, proprioception, injury-prevention, single-leg, rehabilitation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: single-leg-balance
+    emphasis: primary
+  - id: proprioceptive-reach
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Single-Leg Balance With Opposite-Arm Reach

@@ -7,6 +7,23 @@ duration_minutes: 15-25
 tags: [shooting, off-screen, dribble, baseline-drive, live-ball-moves, shooting-off-screens]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-off-screens
+    emphasis: primary
+  - id: dribble-fade
+    emphasis: primary
+  - id: baseline-drive
+    emphasis: secondary
+  - id: pivot-foot-establishment
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Dribble Fade Workout (Workout #5-4: 25 Dribble Fade Shots)

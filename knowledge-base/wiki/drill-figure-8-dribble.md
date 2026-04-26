@@ -7,6 +7,19 @@ duration_minutes: 2
 tags: [ball-handling, dribbling, touch, coordination, fingertips, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: fingertip-dribble-control
+    emphasis: primary
+  - id: bilateral-ball-handling
+    emphasis: primary
+  - id: dribbling-driving-techniques
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Figure 8 Dribble (Drill #20)

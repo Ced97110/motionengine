@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [strength-training, upper-body, shoulder, rotator-cuff, injury-prevention, cable]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: scapular-retraction
+    emphasis: primary
+  - id: posterior-shoulder-strengthening
+    emphasis: primary
+  - id: injury-prevention
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Face Pull (Basketball Strength Training)

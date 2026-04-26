@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [agility, cone-drill, shuffle, backpedal, sprint, multi-directional, footwork, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: lateral-shuffle
+    emphasis: primary
+  - id: multi-directional-agility
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+  - id: backpedal
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # E-Movement Cone Drill

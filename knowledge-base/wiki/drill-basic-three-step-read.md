@@ -7,6 +7,21 @@ duration_minutes: 2
 tags: [offense, motion-offense, cutting, help-side-defense, v-cut, backdoor-cut, reading-defense]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: v-cut-footwork
+    emphasis: secondary
+  - id: backdoor-cut
+    emphasis: primary
+  - id: help-side-read
+    emphasis: primary
+  - id: motion-offense-principles
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Basic Three-Step Read Drill (#112)

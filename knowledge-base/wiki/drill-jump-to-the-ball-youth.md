@@ -7,6 +7,19 @@ duration_minutes: 5
 tags: [defense, man-to-man, help-side, jump-to-ball, interception-stance, off-ball, team]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: jump-to-the-ball
+    emphasis: primary
+  - id: help-side-defense
+    emphasis: secondary
+  - id: ball-you-man-positioning
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Jump to the Ball Drill (#146)

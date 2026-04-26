@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [conditioning, core, strength, lateral-flexion, shoulder, injury-prevention]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: anti-lateral-flexion
+    emphasis: primary
+  - id: overhead-shoulder-stability
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Overhead Cable Core Press — Core Lateral Flexion

@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [strength-training, upper-body, shoulder, anterior-deltoid, plate]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: anterior-deltoid-strengthening
+    emphasis: primary
+  - id: shoulder-raise
+    emphasis: primary
+  - id: chest-pass-power
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Plate Front Shoulder Raise (Basketball Strength Training)

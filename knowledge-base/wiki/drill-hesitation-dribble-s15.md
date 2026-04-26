@@ -7,6 +7,25 @@ duration_minutes: 1
 tags: [ball-handling, dribbling, change-of-pace, conditioning, pivoting, passing]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: hesitation-dribble
+    emphasis: primary
+  - id: change-of-pace
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+  - id: pivoting-fundamentals
+    emphasis: secondary
+  - id: ball-handling
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Hesitation Dribble (Drill #26)

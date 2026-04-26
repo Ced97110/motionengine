@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [quickness, hand-speed, reaction, upper-body, assessment]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reaction-time-training
+    emphasis: primary
+  - id: hand-speed
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Ruler Drop Test

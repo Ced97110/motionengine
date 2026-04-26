@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [strength-training, olympic-lifts, explosive-power, total-body, pull]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: triple-extension
+    emphasis: primary
+  - id: explosive-hip-extension
+    emphasis: secondary
+  - id: rate-of-force-development
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # Hang Pull (Basketball)

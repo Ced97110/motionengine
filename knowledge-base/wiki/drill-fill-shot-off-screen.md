@@ -7,6 +7,23 @@ duration_minutes: 15-30
 tags: [shooting, off-screen, catch-and-shoot, wing, midrange, reading defenders]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: catch-and-shoot
+    emphasis: primary
+  - id: shooting-off-screens
+    emphasis: primary
+  - id: reading-defender-off-screen
+    emphasis: secondary
+  - id: v-cut
+    emphasis: secondary
+trains_anatomy:
+  - region: wrist_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Fill Shot Off a Screen Drill

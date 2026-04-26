@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [conditioning, upper-body, plyometrics, passing, quickness, medicine-ball]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: upper-body-strength-pushing
+    emphasis: primary
+  - id: stretch-shortening-cycle-plyometrics
+    emphasis: primary
+  - id: explosive-passing
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Medicine-Ball Wall Chest Passes

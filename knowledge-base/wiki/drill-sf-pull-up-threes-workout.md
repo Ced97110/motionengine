@@ -7,6 +7,23 @@ duration_minutes: 20-50
 tags: [shooting, three-point, shot-fake, pull-up, scoring, free-throws]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shot-fake
+    emphasis: primary
+  - id: three-point-shot-technique
+    emphasis: primary
+  - id: pull-up-jumper
+    emphasis: secondary
+  - id: free-throw-shooting
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Shot Fake Pull-Up Three-Point Workout

@@ -7,6 +7,23 @@ duration_minutes: 8
 tags: [offense, screening, motion-offense, cutting, ball-movement]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: motion-offense-principles
+    emphasis: primary
+  - id: screening-basics
+    emphasis: primary
+  - id: off-ball-screen-reads
+    emphasis: secondary
+  - id: screen-the-screener-footwork
+    emphasis: secondary
+  - id: v-cut
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Three-Player Continuous Screening

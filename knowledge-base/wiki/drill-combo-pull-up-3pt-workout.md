@@ -7,6 +7,23 @@ duration_minutes: 20-45
 tags: [shooting, three-point, pull-up, live-ball-moves, ball-handling]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: pull-up-three-point-shooting
+    emphasis: primary
+  - id: hop-back-crossover-combo
+    emphasis: primary
+  - id: combination-scoring-moves
+    emphasis: secondary
+  - id: live-ball-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Combination Live-Ball Pull-Up 3-Point Workout Series

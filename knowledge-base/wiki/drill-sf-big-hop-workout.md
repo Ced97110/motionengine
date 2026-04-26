@@ -7,6 +7,23 @@ duration_minutes: 20-60
 tags: [shooting, shot-fake, big-hop, jump-stop, pull-up, individual-workout, finishing, midrange]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shot-fake
+    emphasis: primary
+  - id: big-hop-gather
+    emphasis: primary
+  - id: pull-up-jump-shot
+    emphasis: secondary
+  - id: jump-stop
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Shot Fake (SF) Big Hop Workouts

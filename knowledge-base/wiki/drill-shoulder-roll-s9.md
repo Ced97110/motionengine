@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [athleticism, tumbling, agility, body-control, coordination, off-season, injury-prevention]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: forward-roll-mechanics
+    emphasis: primary
+  - id: force-absorption-shoulder
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Shoulder Roll (Front Flip Chain — Step 1)

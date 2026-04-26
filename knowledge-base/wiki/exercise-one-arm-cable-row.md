@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [strength, upper-body, pulling, unilateral, cable, lats, back, posterior-deltoid, grip]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: upper-body-pulling-strength
+    emphasis: primary
+  - id: scapular-retraction
+    emphasis: secondary
+  - id: unilateral-strength-training
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # One-Arm Cable Row

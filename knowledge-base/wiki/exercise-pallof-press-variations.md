@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [strength-training, core, anti-rotation, cable, isometric]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: anti-rotation-core-stability
+    emphasis: primary
+  - id: isometric-core-bracing
+    emphasis: secondary
+  - id: defensive-lateral-shuffle
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Pallof Press and Variations

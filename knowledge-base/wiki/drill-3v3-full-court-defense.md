@@ -7,6 +7,21 @@ duration_minutes: 8-12
 tags: [defense, 3v3, full-court, communication, screens, transition, continuous]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-communication
+    emphasis: primary
+  - id: weak-side-help-defense
+    emphasis: primary
+  - id: defending-screens
+    emphasis: secondary
+  - id: transition-defense
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Three-Against-Three Full-Court Drill

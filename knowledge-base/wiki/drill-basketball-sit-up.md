@@ -7,6 +7,15 @@ duration_minutes: 1
 tags: [conditioning, core, preseason, abdominals, strength]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: core-strength-training
+    emphasis: primary
+  - id: trunk-stability
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
 ---
 
 # Sit-Up — Basketball Preseason Core Drill

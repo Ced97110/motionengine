@@ -7,6 +7,21 @@ duration_minutes: 8-12
 tags: [defense, full-court press, inbounds denial, trapping, back-tip, 2-on-2]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: inbounds-denial
+    emphasis: primary
+  - id: full-court-press-alignment
+    emphasis: primary
+  - id: trapping
+    emphasis: secondary
+  - id: back-tip
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Full-Court Press 2-on-2 Inbounds Drill (O'Brien)

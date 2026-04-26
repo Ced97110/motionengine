@@ -7,6 +7,19 @@ duration_minutes: 5-10
 tags: [jumping, plyometrics, conditioning, bodyweight, ankle-strength]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: elastic-rebound
+    emphasis: primary
+  - id: jump-landing-mechanics
+    emphasis: secondary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Straight Hop (Power Jump Chain Step 1)

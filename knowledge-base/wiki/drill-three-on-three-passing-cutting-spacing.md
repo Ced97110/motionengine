@@ -7,6 +7,21 @@ duration_minutes: 4
 tags: [offense, cutting, passing, spacing, motion-offense, 3-on-3, no-dribble, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: backdoor-cut
+    emphasis: primary
+  - id: v-cut-footwork
+    emphasis: primary
+  - id: motion-offense-spacing
+    emphasis: secondary
+  - id: pass-accuracy
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Three-on-Three Passing, Cutting, and Spacing (Drill 64)

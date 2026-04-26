@@ -7,6 +7,27 @@ duration_minutes: 2
 tags: [shooting, competitive, game-simulation, youth, individual, three-point, post-moves, free-throw]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: three-point-shooting
+    emphasis: primary
+  - id: shot-fake-step-fake
+    emphasis: primary
+  - id: post-drop-step
+    emphasis: secondary
+  - id: free-throw-shooting
+    emphasis: secondary
+  - id: rebound-read
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # NBA Shooting Drill

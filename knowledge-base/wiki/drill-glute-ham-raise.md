@@ -7,6 +7,19 @@ duration_minutes: 10-15
 tags: [strength, hamstrings, glutes, posterior-chain, lower-body, glute-ham-bench]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: hip-extension-strength
+    emphasis: primary
+  - id: knee-flexion-eccentric-control
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Glute-Ham Raise

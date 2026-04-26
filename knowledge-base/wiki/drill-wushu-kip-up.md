@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [conditioning, agility, plyometrics, explosive-power, calisthenics, floor-work]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: hip-dominant-power
+    emphasis: primary
+  - id: kip-up-progression
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Wushu Kip-Up (Step 9 of Kip-Up Chain)

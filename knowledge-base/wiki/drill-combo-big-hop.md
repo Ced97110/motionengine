@@ -7,6 +7,25 @@ duration_minutes: 30-60
 tags: [shooting, ball-handling, footwork, big-hop, pull-up, live-ball, free-throw]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: big-hop-gather
+    emphasis: primary
+  - id: pull-up-jump-shot
+    emphasis: primary
+  - id: live-ball-combination-moves
+    emphasis: secondary
+  - id: one-two-step-footwork
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Combo Big Hop Drill

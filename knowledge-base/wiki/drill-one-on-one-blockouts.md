@@ -7,6 +7,19 @@ duration_minutes: 1
 tags: [rebounding, defense, footwork, post-play, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-box-out-footwork
+    emphasis: primary
+  - id: offensive-rebounding-techniques
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # One-on-One Blockouts

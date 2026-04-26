@@ -7,6 +7,31 @@ duration_minutes: 10
 tags: [defense, man-to-man, help-side, denial, rotation, rebounding, closeout, flash-pivot, 1on1, comprehensive]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: on-ball-defense-footwork
+    emphasis: primary
+  - id: deny-the-wing
+    emphasis: primary
+  - id: help-side-positioning
+    emphasis: primary
+  - id: defensive-rotation
+    emphasis: primary
+  - id: closeout
+    emphasis: secondary
+  - id: flash-pivot-denial
+    emphasis: secondary
+  - id: defensive-rebounding
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Four Individual Defensive Traits Drill (#144)

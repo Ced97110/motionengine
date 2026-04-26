@@ -7,6 +7,25 @@ duration_minutes: 10-15
 tags: [offense, shooting, footwork, pivoting, outlet-pass, cutting, rebounding]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-off-the-move
+    emphasis: primary
+  - id: inside-heel-pivot
+    emphasis: primary
+  - id: outlet-pass
+    emphasis: secondary
+  - id: shot-fake-stride-stop
+    emphasis: secondary
+  - id: catch-and-shoot
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Cutting, Outlet Pass, and Shooting Drill

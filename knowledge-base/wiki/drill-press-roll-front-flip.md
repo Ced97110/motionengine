@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [conditioning, agility, explosiveness, body-weight, calisthenics, rotation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: forward-rotation-control
+    emphasis: primary
+  - id: upper-limb-lever-mechanics
+    emphasis: primary
+  - id: tuck-and-roll
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: primary
+  - region: wrist_complex
+    emphasis: secondary
+  - region: elbow_complex
+    emphasis: secondary
 ---
 
 # Press Roll (Front Flip Chain — Step 2)

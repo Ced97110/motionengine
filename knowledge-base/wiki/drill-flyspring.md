@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [conditioning, agility, explosiveness, plyometrics, body-weight, calisthenics, power]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: bilateral-block-jump
+    emphasis: primary
+  - id: lower-body-plyometrics
+    emphasis: secondary
+  - id: front-handspring
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Flyspring / Bounder (Front Flip Chain — Step 7)

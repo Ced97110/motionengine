@@ -7,6 +7,25 @@ duration_minutes: 10-15
 tags: [conditioning, plyometrics, lower-body, jumping, rebounding, explosiveness, change-of-direction]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reactive-floor-contact
+    emphasis: primary
+  - id: lower-body-plyometrics
+    emphasis: primary
+  - id: countermovement-jump
+    emphasis: secondary
+  - id: arm-drive
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Multiple-Box Jump

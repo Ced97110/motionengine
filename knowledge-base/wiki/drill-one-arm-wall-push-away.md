@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [upper-body, explosive-power, calisthenics, pushing, conditioning, injury-prevention]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-pressing-power
+    emphasis: primary
+  - id: unilateral-upper-body-strength
+    emphasis: secondary
+trains_anatomy:
+  - region: elbow_complex
+    emphasis: primary
+  - region: shoulder_girdle
+    emphasis: secondary
 ---
 
 # One-Arm Wall Push-Away

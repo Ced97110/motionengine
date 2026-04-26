@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [agility, tumbling, kinesthetic-awareness, conditioning]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: tumbling-body-control
+    emphasis: primary
+  - id: kinesthetic-awareness
+    emphasis: primary
+  - id: basketball-acceleration-and-deceleration
+    emphasis: secondary
+trains_anatomy:
+  - region: core_outer
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Forward Roll–Backward Roll Combination (Tumbling Drill)

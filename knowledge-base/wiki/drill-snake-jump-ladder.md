@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [agility, ladder-drill, jump, hip-rotation, balance, coordination, quickness, plyometrics]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: hip-rotation-jump
+    emphasis: primary
+  - id: reactive-landing
+    emphasis: secondary
+  - id: lateral-agility
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # Snake Jump Agility Ladder Drill

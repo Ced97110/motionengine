@@ -7,6 +7,21 @@ duration_minutes: 10
 tags: [offense, defense, footwork, read-and-react, 1-on-1, youth, jab-step, dribbling]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: read-and-react
+    emphasis: primary
+  - id: triple-threat-position
+    emphasis: secondary
+  - id: jab-step
+    emphasis: secondary
+  - id: dribble-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Paye Drill (Drill 17)

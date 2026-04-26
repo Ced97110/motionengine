@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [shooting, one-on-one, offense, shot-fake, closeout, competitive, scoring]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: show-and-go
+    emphasis: primary
+  - id: closeout-read
+    emphasis: secondary
+  - id: shot-fake
+    emphasis: secondary
+  - id: jab-step
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Show-and-Go Closeout 1-on-1-on-1 Drill

@@ -7,6 +7,25 @@ duration_minutes: 3
 tags: [footwork, dribbling, stopping, pivoting, passing, v-cut, conditioning, youth, team]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: jump-stop
+    emphasis: primary
+  - id: pivot-footwork
+    emphasis: primary
+  - id: v-cut
+    emphasis: secondary
+  - id: dribble-moves
+    emphasis: secondary
+  - id: passing
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Four-Corner Stopping, Pivoting

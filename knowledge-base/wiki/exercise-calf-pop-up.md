@@ -7,6 +7,17 @@ duration_minutes: 10-15
 tags: [strength, conditioning, leg-strength, calf, Achilles, jumping, rebounding, second-jump]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: calf-raise-explosiveness
+    emphasis: primary
+  - id: stretch-shortening-cycle-plyometrics
+    emphasis: secondary
+  - id: second-jump-elasticity
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
 ---
 
 # Calf Pop-Up

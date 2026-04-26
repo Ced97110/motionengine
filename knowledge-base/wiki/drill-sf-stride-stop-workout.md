@@ -7,6 +7,23 @@ duration_minutes: 30-60
 tags: [shooting, shot-fake, pull-up, stride-stop, individual-workout, ball-handling, midrange]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shot-fake-stride-stop
+    emphasis: primary
+  - id: pull-up-jump-shot
+    emphasis: primary
+  - id: shot-fake
+    emphasis: secondary
+  - id: free-throw-shooting
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Shot Fake (SF) Stride Stop Shooting Workouts

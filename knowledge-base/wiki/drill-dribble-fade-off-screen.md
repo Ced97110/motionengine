@@ -7,6 +7,23 @@ duration_minutes: 15-20
 tags: [shooting, off-screen, dribble-fade, baseline-drive, live-ball, midrange, catch-and-shoot]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: shooting-off-a-screen
+    emphasis: primary
+  - id: dribble-fade
+    emphasis: primary
+  - id: reading-screens-off-ball
+    emphasis: secondary
+  - id: pivot-foot-establishment
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Dribble Fade Off Screen Drill (Workout #5-4)

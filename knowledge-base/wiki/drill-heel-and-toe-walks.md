@@ -7,6 +7,17 @@ duration_minutes: 5-10
 tags: [speed, gait-strength, ankle, shin-splint-prevention, conditioning, injury-prevention]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ankle-strengthening
+    emphasis: primary
+  - id: shin-splint-prevention
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
 ---
 
 # Heel and Toe Walks

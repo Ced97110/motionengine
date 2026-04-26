@@ -7,6 +7,23 @@ duration_minutes: 10-15
 tags: [defense, help-defense, rotation, 3v3, communication, man-to-man]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: help-and-recover
+    emphasis: primary
+  - id: defensive-rotation
+    emphasis: primary
+  - id: trapping-and-double-teaming
+    emphasis: secondary
+  - id: on-ball-pressure
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Fratello 3-on-3 Help-and-Recover / Full-Rotation Drill

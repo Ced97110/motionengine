@@ -7,6 +7,23 @@ duration_minutes: 5
 tags: [post, offense, footwork, post-moves, drop-step, youth]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: post-positioning
+    emphasis: primary
+  - id: drop-step
+    emphasis: primary
+  - id: post-entry-reception
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: elbow_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Post Position (Drill 10)

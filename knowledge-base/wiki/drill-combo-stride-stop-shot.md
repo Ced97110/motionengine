@@ -7,6 +7,25 @@ duration_minutes: 30-60
 tags: [shooting, ball-handling, footwork, pull-up, stride-stop, live-ball, free-throw]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: stride-stop-jump-shot
+    emphasis: primary
+  - id: pull-up-jumper
+    emphasis: primary
+  - id: live-ball-combination-moves
+    emphasis: secondary
+  - id: free-throw-shooting
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Combo Stride Stop Shot Drill

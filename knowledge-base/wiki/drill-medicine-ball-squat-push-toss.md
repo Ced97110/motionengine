@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [quickness, medicine-ball, power, elastic-strength, reaction-time, conditioning, plyometrics]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: stretch-shortening-cycle-plyometrics
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+  - id: rate-of-force-development
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Medicine-Ball Squat, Push Toss, Bounce, and Catch

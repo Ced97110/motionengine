@@ -7,6 +7,23 @@ duration_minutes: 2
 tags: [pivoting, footwork, ball-handling, passing, triple-threat, quickness, agility]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: front-pivot
+    emphasis: primary
+  - id: triple-threat-position
+    emphasis: primary
+  - id: jump-stop
+    emphasis: secondary
+  - id: passing
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Front Pivot (Drill #35)

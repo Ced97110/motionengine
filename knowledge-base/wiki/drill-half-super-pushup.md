@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [conditioning, upper-body, plyometrics, explosive-power, pushing, shoulder-speed]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-upper-body-plyometrics
+    emphasis: primary
+  - id: shoulder-speed
+    emphasis: primary
+  - id: stretch-shortening-cycle-plyometrics
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Half-Super Pushup (Power Pushup Step 8)

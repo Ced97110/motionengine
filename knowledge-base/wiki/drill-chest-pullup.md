@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [upper-body, pulling, plyometric, explosive, calisthenics, muscle-up-progression]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: chest-pull-up
+    emphasis: primary
+  - id: swing-kip
+    emphasis: secondary
+  - id: scapular-retraction
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: elbow_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Chest Pull-Up (Muscle-Up Chain Step 6)

@@ -7,6 +7,25 @@ duration_minutes: 15
 tags: [transition, defense, offense, fast-break, communication, footwork, full-court, competitive]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: basket-man-ball-man
+    emphasis: primary
+  - id: defensive-transition
+    emphasis: primary
+  - id: 3-on-2-fast-break
+    emphasis: secondary
+  - id: defensive-role-communication
+    emphasis: secondary
+  - id: wing-pass-swap
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # 3-on-2 to 2-on-1 Transition Drill (S6 Version)

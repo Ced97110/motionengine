@@ -7,6 +7,23 @@ duration_minutes: 15-30
 tags: [shooting, off-screen, dribble moves, curl cut, elbow, paint attack, reading defenders, live-ball moves]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: curl-cut-off-screen
+    emphasis: primary
+  - id: dribble-curl-attack
+    emphasis: primary
+  - id: reading-defender-off-screen
+    emphasis: secondary
+  - id: live-ball-scoring-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Dribble Curl Off a Screen Drill

@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [defense, on-ball pressure, full-court, sliding, footwork]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-slide-footwork
+    emphasis: primary
+  - id: on-ball-pressure
+    emphasis: primary
+  - id: defensive-stance
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: glute_max
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Zigzag On-Ball Pressure Drill (Fratello)

@@ -7,6 +7,25 @@ duration_minutes: 15-20
 tags: [conditioning, strength-training, power, Olympic-lifting, acceleration, mobility]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-power-development
+    emphasis: primary
+  - id: triple-extension
+    emphasis: primary
+  - id: linear-acceleration
+    emphasis: secondary
+  - id: explosive-first-step
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
 ---
 
 # Power Snatch From Floor

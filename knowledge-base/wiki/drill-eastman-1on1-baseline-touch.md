@@ -7,6 +7,21 @@ duration_minutes: 10-15
 tags: [1on1, conditioning, competition, perimeter, post, first-step, game-speed]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: explosive-first-step
+    emphasis: primary
+  - id: one-on-one-offense
+    emphasis: primary
+  - id: sprint-mechanics-basketball
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: glute_max
+    emphasis: secondary
 ---
 
 # One-on-One Baseline Touch Drill

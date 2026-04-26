@@ -7,6 +7,16 @@ duration_minutes: 9
 tags: [offense, motion-offense, team-offense, decision-making, half-court]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: motion-offense-principles
+    emphasis: primary
+  - id: decision-making
+    emphasis: primary
+  - id: backdoor-cut
+    emphasis: secondary
+  - id: screening-basics
+    emphasis: secondary
 ---
 
 # Follow the Rules — Motion Offense Drill

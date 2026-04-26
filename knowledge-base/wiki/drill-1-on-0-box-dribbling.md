@@ -7,6 +7,21 @@ duration_minutes: 5-10
 tags: [ball-handling, dribbling, pressure, half-court, offense]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: ball-handling-under-pressure
+    emphasis: primary
+  - id: change-of-direction-dribble
+    emphasis: secondary
+  - id: combination-scoring-moves
+    emphasis: secondary
+trains_anatomy:
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # 1-on-0 in the Box (Workout #7-1)

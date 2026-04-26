@@ -7,6 +7,27 @@ duration_minutes: 10-20
 tags: [athleticism, tumbling, plyometrics, body-control, power, off-season, landing-mechanics]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: bilateral-block-jump
+    emphasis: primary
+  - id: explosive-two-foot-takeoff
+    emphasis: primary
+  - id: landing-mechanics
+    emphasis: secondary
+  - id: stretch-shortening-cycle
+    emphasis: secondary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: ankle_complex
+    emphasis: secondary
+  - region: shoulder_girdle
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Flyspring / Bounder (Front Flip Chain — Step 7)

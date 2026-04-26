@@ -7,6 +7,23 @@ duration_minutes: 5
 tags: [post, shooting, finishing, footwork]
 source_count: 1
 last_updated: 2025-01-30
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: baby-hook-shot
+    emphasis: primary
+  - id: post-footwork
+    emphasis: secondary
+  - id: back-to-basket-finishing
+    emphasis: secondary
+trains_anatomy:
+  - region: shoulder_girdle
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
+  - region: core_outer
+    emphasis: secondary
+  - region: wrist_complex
+    emphasis: secondary
 ---
 
 # Baby Hook Shot

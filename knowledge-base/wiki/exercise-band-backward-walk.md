@@ -7,6 +7,19 @@ duration_minutes: 10-20
 tags: [strength, conditioning, leg-strength, resistance-band, strength-endurance, deceleration, defensive-stance]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: defensive-stance
+    emphasis: secondary
+  - id: deceleration
+    emphasis: secondary
+  - id: lower-body-strength-endurance
+    emphasis: primary
+trains_anatomy:
+  - region: glute_max
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: secondary
 ---
 
 # Band Backward Walk

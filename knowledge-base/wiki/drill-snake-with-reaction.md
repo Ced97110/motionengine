@@ -7,6 +7,23 @@ duration_minutes: 5-10
 tags: [reaction-time, agility, quickness, conditioning, ladder, peripheral-vision, court-sense, ankle-strength, hip-rotation]
 source_count: 1
 last_updated: 2026-04-11
+# Cross-ref edge #1 — anatomy chain. See backend/spec/crossref-anatomy-chain.md §4.1
+trains_techniques:
+  - id: reaction-time-training
+    emphasis: primary
+  - id: hip-rotation
+    emphasis: primary
+  - id: explosive-first-step
+    emphasis: secondary
+  - id: stretch-shortening-cycle-plyometrics
+    emphasis: secondary
+trains_anatomy:
+  - region: ankle_complex
+    emphasis: primary
+  - region: hip_flexor_complex
+    emphasis: primary
+  - region: core_outer
+    emphasis: secondary
 ---
 
 # Snake With Reaction (Quick Feet)
