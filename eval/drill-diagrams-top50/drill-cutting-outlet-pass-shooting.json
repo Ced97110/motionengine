@@ -1,0 +1,388 @@
+{
+  "drill_slug": "drill-cutting-outlet-pass-shooting",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "passer",
+      "id": "P1",
+      "x": 0,
+      "y": 7
+    },
+    {
+      "role": "ball_handler",
+      "id": "P2",
+      "x": -22,
+      "y": 4
+    },
+    {
+      "role": "passer",
+      "id": "P3",
+      "x": 0,
+      "y": 10
+    },
+    {
+      "role": "ball_handler",
+      "id": "P4",
+      "x": 22,
+      "y": 4
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -22,
+      "y": 4
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 22,
+      "y": 4
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Cutter reads, gets hands ready",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -22,
+            4
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            22,
+            4
+          ],
+          "to": [
+            18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Hands up early \u2014 fingers spread before the catch",
+        "Inside foot is your pivot foot \u2014 know it before you cut",
+        "Eyes to the passer as you clear the corner"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Pass to cutting shooter",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "pass",
+          "from": [
+            0,
+            10
+          ],
+          "to": [
+            18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Lead the cutter \u2014 pass to where they are going",
+        "Sharp two-hand chest pass or overhead \u2014 no rainbows"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Inside-heel pivot, square up, shoot",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "shot",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Drive the inside heel into the floor the instant the ball hits your shooting hand",
+        "Swing the free foot all the way around \u2014 full square, no half-turns",
+        "Low hips, elbow under the ball, feet quiet on the landing"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Rebound and outlet pass",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            -5,
+            7
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "move",
+          "from": [
+            0,
+            10
+          ],
+          "to": [
+            5,
+            7
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "pass",
+          "from": [
+            5,
+            7
+          ],
+          "to": [
+            18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Rebounder: pivot off the outside foot \u2014 front pivot away from the imaginary defender",
+        "Swing the inside foot, then fire a two-hand overhead outlet pass",
+        "Cutter: the moment the rebounder secures it, start your next cut"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Perimeter rotation, switch sides",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            0,
+            33
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            22,
+            4
+          ]
+        }
+      ],
+      "cues": [
+        "Keep moving around the arc \u2014 catch, pivot, shoot, keep going",
+        "Hit the deep corner, sprint baseline, restart on the opposite side",
+        "Now the inside foot switches \u2014 right foot is the pivot going left"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Shot-fake variation",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -22,
+            4
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -14,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            -14,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Shot fake must be game-realistic \u2014 sell it before the dribble",
+        "After 1-2 dribbles, same inside-heel pivot mechanics apply",
+        "Coach sets the required dribble count \u2014 discipline beats habit"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        7
+      ],
+      "to": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        7
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -5,
+        7
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        22,
+        4
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        -14,
+        22
+      ]
+    }
+  ],
+  "notes": "Run 4 pairs simultaneously around the perimeter \u2014 cutters rotate corner to corner catching outlet passes and shooting off the inside-heel pivot; after each full rotation, switch directions so both pivot feet get equal work. Add the shot-fake dribble variation once the footwork is automatic."
+}

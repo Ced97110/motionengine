@@ -1,0 +1,275 @@
+{
+  "drill_slug": "drill-rip-step-hop-back-roll-out",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 0,
+      "y": 19
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Triple Threat + Rip Step",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Start in triple threat on the wing",
+        "Low hips, ball protected",
+        "Rip ball through on the drive side"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "1-2 Dribble Attack",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -12,
+            20
+          ]
+        }
+      ],
+      "cues": [
+        "1 or 2 hard dribbles at the defender",
+        "Stay low, shoulders forward",
+        "Push pace to force the reaction"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Hop Back \u2014 Create Space",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -12,
+            20
+          ],
+          "to": [
+            -14,
+            24
+          ]
+        }
+      ],
+      "cues": [
+        "Gather and hop straight back",
+        "Land balanced, feet quiet",
+        "Eyes up \u2014 read the defender NOW"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Read: Shoot or Roll Out",
+      "duration_s": 25,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -14,
+            24
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -14,
+            24
+          ],
+          "to": [
+            -20,
+            20
+          ]
+        }
+      ],
+      "cues": [
+        "Defender stops? Shoot the hop-back jumper",
+        "Defender chases? Roll out \u2014 push dribble away from pressure",
+        "Outside hand protects the ball on roll out"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Roll Out Finish",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -20,
+            20
+          ],
+          "to": [
+            -20,
+            10
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -20,
+            10
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Attack the new angle hard",
+        "Shoot, drive to rim, or kick \u2014 don't waste the edge",
+        "Alternate L and R sides each set"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Free Throws Between Sets",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -20,
+            10
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "5-10 FTs after every set",
+        "Same routine every rep",
+        "Target 85% \u2014 track makes and misses"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        -12,
+        20
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -12,
+        20
+      ],
+      "to": [
+        -14,
+        24
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -14,
+        24
+      ],
+      "to": [
+        -20,
+        20
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -20,
+        20
+      ],
+      "to": [
+        -20,
+        10
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        0,
+        19
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Hop back to freeze them, roll out to punish them \u2014 this two-read combo is the whole drill. Run equal reps left and right, track every FGA and FTA, and only roll out when the defender over-pursues; the hop-back jumper is always an option."
+}

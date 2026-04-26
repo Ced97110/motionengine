@@ -1,0 +1,341 @@
+{
+  "drill_slug": "drill-sprint-catch-shoot-conditioning",
+  "court": "full",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -18,
+      "y": 2
+    },
+    {
+      "role": "passer",
+      "id": "P2",
+      "x": 0,
+      "y": 47
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Sprint & Catch-and-Shoot",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -18,
+            2
+          ],
+          "to": [
+            -18,
+            70
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            0,
+            47
+          ],
+          "to": [
+            -18,
+            70
+          ]
+        }
+      ],
+      "cues": [
+        "Sprint to the spot \u2014 don't slow down before the catch",
+        "Square up on the run, shoot on rhythm",
+        "Passer times the ball to meet the stride"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Catch-and-Shoot \u2014 Far Wing",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -18,
+            70
+          ],
+          "to": [
+            0,
+            88
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -18,
+            70
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            0,
+            47
+          ],
+          "to": [
+            18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Shoot and immediately sprint back the other direction",
+        "No rest between reps \u2014 fatigue is the point"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Sprint & Pull-Up Jumper",
+      "duration_s": 120,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            18,
+            70
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            0,
+            47
+          ],
+          "to": [
+            18,
+            70
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            18,
+            70
+          ],
+          "to": [
+            12,
+            65
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            12,
+            65
+          ],
+          "to": [
+            0,
+            88
+          ]
+        }
+      ],
+      "cues": [
+        "One or two dribbles max \u2014 pull up quickly",
+        "Low hips on the gather, shooting elbow up",
+        "Repeat on the opposite wing after sprinting back"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Sprint, Catch & Drive to Layup",
+      "duration_s": 120,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            70
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            0,
+            47
+          ],
+          "to": [
+            -18,
+            70
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -18,
+            70
+          ],
+          "to": [
+            0,
+            88
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            88
+          ],
+          "to": [
+            0,
+            92
+          ]
+        }
+      ],
+      "cues": [
+        "Catch on the wing and attack the basket with pace",
+        "Finish strong \u2014 layup or power finish at the rim",
+        "Alternate wings each sprint"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Repeat Sequences \u2014 Track Makes",
+      "duration_s": 180,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            92
+          ],
+          "to": [
+            18,
+            2
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            18,
+            2
+          ],
+          "to": [
+            18,
+            70
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            0,
+            47
+          ],
+          "to": [
+            18,
+            70
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            18,
+            70
+          ],
+          "to": [
+            0,
+            88
+          ]
+        }
+      ],
+      "cues": [
+        "Complete 4-6 full sequences \u2014 all three shot types each end",
+        "Count makes-to-attempts every round",
+        "When you're tired, technique must be perfect"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        47
+      ],
+      "to": [
+        -18,
+        70
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        47
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        47
+      ],
+      "to": [
+        18,
+        70
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        47
+      ],
+      "to": [
+        -18,
+        70
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        0,
+        47
+      ],
+      "to": [
+        18,
+        70
+      ]
+    }
+  ],
+  "notes": "Sprint the full court and execute a catch-and-shoot, pull-up jumper, or drive-to-layup on each rep \u2014 the whole point is performing clean skills while fatigued. Passer must time every delivery so the shooter never breaks stride."
+}

@@ -1,0 +1,281 @@
+{
+  "drill_slug": "drill-rip-step-stride-stop-step-through",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -10,
+      "y": 18
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Triple Threat \u2014 Rip Step",
+      "duration_s": 5,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Ball low in triple threat",
+        "Rip across the body \u2014 protect it tight",
+        "Eyes up before you go"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "1-Dribble Attack to Stride Stop",
+      "duration_s": 5,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -8,
+            17
+          ]
+        }
+      ],
+      "cues": [
+        "One hard dribble into the lane",
+        "Lead foot lands first on stride stop",
+        "Shooting foot squares \u2014 stay low, don't rise"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Read Defender \u2014 Step Through",
+      "duration_s": 6,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -8,
+            17
+          ],
+          "to": [
+            -4,
+            13
+          ]
+        }
+      ],
+      "cues": [
+        "Defender upright? Step through \u2014 don't shoot",
+        "Step foot clears their near foot \u2014 go to the side",
+        "Ball stays low and tight through the move"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Finish \u2014 Layup or Floater",
+      "duration_s": 4,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -4,
+            13
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "Layup off glass or float over the help",
+        "Stay low through contact \u2014 finish soft",
+        "Runner if help is dropping early"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Mirror Right Side \u2014 2-Dribble Variation",
+      "duration_s": 8,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            6,
+            16
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            6,
+            16
+          ],
+          "to": [
+            4,
+            13
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            4,
+            13
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "Same read \u2014 stride stop, then step through",
+        "Two dribbles: first opens the angle, second sets the stop",
+        "Alternate L and R every set"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Free Throws Between Sets",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "5 free throws after every set",
+        "Feet quiet, elbow in, same routine every time",
+        "Log FGA, FGM, FTA, FTM in shot chart journal"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        -8,
+        17
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -8,
+        17
+      ],
+      "to": [
+        -4,
+        13
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -4,
+        13
+      ],
+      "to": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        0,
+        19
+      ],
+      "to": [
+        0,
+        7
+      ]
+    }
+  ],
+  "notes": "Player works rip step into a 1- or 2-dribble stride stop, reads the defender, and counters with a step-through layup or floater instead of pulling up. Alternate left and right each set; embed free throws between every set and track all makes and attempts in a shot chart journal."
+}

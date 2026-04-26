@@ -1,0 +1,411 @@
+{
+  "drill_slug": "drill-four-individual-defensive-traits",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": -14,
+      "y": 12
+    },
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -16,
+      "y": 10
+    },
+    {
+      "role": "ball_handler",
+      "id": "P2",
+      "x": -6,
+      "y": 18
+    },
+    {
+      "role": "ball_handler",
+      "id": "P3",
+      "x": 6,
+      "y": 18
+    },
+    {
+      "role": "ball_handler",
+      "id": "P4",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "ball_handler",
+      "id": "P5",
+      "x": 22,
+      "y": 4
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Phase A \u2014 On-Ball 1-on-1",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -14,
+            12
+          ],
+          "to": [
+            -16,
+            10
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -16,
+            10
+          ],
+          "to": [
+            -12,
+            14
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -16,
+            10
+          ],
+          "to": [
+            -12,
+            14
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -12,
+            14
+          ],
+          "to": [
+            -12,
+            14
+          ]
+        }
+      ],
+      "cues": [
+        "Front-foot-to-pivot-foot \u2014 mirror every fake",
+        "Stay low, feet quiet between advance and retreat steps",
+        "3 dribbles only \u2014 force P1 to work"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Phase B \u2014 Deny Wing / Close Gap / Rebound",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            -14,
+            12
+          ],
+          "to": [
+            -14,
+            16
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            -16,
+            10
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -14,
+            16
+          ],
+          "to": [
+            -16,
+            13
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -16,
+            10
+          ],
+          "to": [
+            -20,
+            14
+          ]
+        }
+      ],
+      "cues": [
+        "Fence-slide denial \u2014 lead hand in passing lane",
+        "Close the gap on any dribble drive \u2014 stay between ball and basket",
+        "Box out hard on the shot \u2014 two hands on the ball"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Phase C \u2014 Help-Side Flat Triangle",
+      "duration_s": 50,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            -14,
+            12
+          ],
+          "to": [
+            0,
+            14
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "pass",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            0,
+            14
+          ],
+          "to": [
+            6,
+            16
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "shot",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            6,
+            18
+          ]
+        }
+      ],
+      "cues": [
+        "Ball-you-man \u2014 see both on every glance",
+        "Stay in the flat triangle; don't go above the line of the ball",
+        "Jump to the ball on every pass \u2014 don't let the ball beat you"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Phase D \u2014 Rotation, Closeout, Flash Denial",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            -14,
+            12
+          ],
+          "to": [
+            4,
+            14
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "pass",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            16,
+            10
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            4,
+            14
+          ],
+          "to": [
+            16,
+            10
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -16,
+            10
+          ],
+          "to": [
+            0,
+            18
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            16,
+            10
+          ],
+          "to": [
+            0,
+            16
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "dribble",
+          "from": [
+            22,
+            4
+          ],
+          "to": [
+            10,
+            4
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            0,
+            16
+          ],
+          "to": [
+            10,
+            6
+          ]
+        }
+      ],
+      "cues": [
+        "Closeout \u2014 chop steps, hand high, no fly-by",
+        "Deny the flash pivot \u2014 chest to chest, feel the cutter",
+        "Rotate early on baseline drive \u2014 set your feet and draw the charge"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -16,
+        10
+      ],
+      "to": [
+        -12,
+        14
+      ]
+    },
+    {
+      "phase_index": 0,
+      "from": [
+        -12,
+        14
+      ],
+      "to": [
+        -6,
+        18
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        -16,
+        10
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -16,
+        10
+      ],
+      "to": [
+        6,
+        18
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        22,
+        4
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        22,
+        4
+      ],
+      "to": [
+        10,
+        4
+      ]
+    }
+  ],
+  "notes": "Run X1 through all four defensive traits \u2014 on-ball lockdown, wing denial, help-side flat triangle, and rotation/closeout \u2014 in one continuous gauntlet. Early in the season stop and correct each mistake on the spot; later let all four phases flow and debrief X1 at the end before rotating roles."
+}

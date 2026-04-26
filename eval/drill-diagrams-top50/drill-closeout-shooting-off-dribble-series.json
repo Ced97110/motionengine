@@ -1,0 +1,376 @@
+{
+  "drill_slug": "drill-closeout-shooting-off-dribble-series",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "shooter",
+      "id": "S",
+      "x": -14,
+      "y": 22
+    },
+    {
+      "role": "passer",
+      "id": "P",
+      "x": 0,
+      "y": 12
+    },
+    {
+      "role": "defender",
+      "id": "D",
+      "x": 0,
+      "y": 7
+    },
+    {
+      "role": "open_shooter",
+      "id": "O",
+      "x": 18,
+      "y": 22
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Pass & Closeout",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P",
+          "type": "pass",
+          "from": [
+            0,
+            12
+          ],
+          "to": [
+            -14,
+            22
+          ]
+        },
+        {
+          "actor": "P",
+          "type": "move",
+          "from": [
+            0,
+            12
+          ],
+          "to": [
+            -10,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Sharp pass to the wing \u2014 make it catchable",
+        "Passer closes out high hands, under control",
+        "Shooter catch ready, eyes up"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Shot Fake & Scrape",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "S",
+          "type": "shot",
+          "from": [
+            -14,
+            22
+          ],
+          "to": [
+            -14,
+            22
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "dribble",
+          "from": [
+            -14,
+            22
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P",
+          "type": "shuffle",
+          "from": [
+            -10,
+            22
+          ],
+          "to": [
+            -8,
+            20
+          ]
+        }
+      ],
+      "cues": [
+        "Sell the shot fake \u2014 freeze the closeout defender",
+        "Scrape shoulder-to-shoulder past the defender",
+        "Low hips into the drive, two or three dribbles max"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Pull-Up or Power Layup",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "S",
+          "type": "dribble",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            -4,
+            12
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "shot",
+          "from": [
+            -4,
+            12
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Variation 1: pull up at the elbow \u2014 feet quiet at gather",
+        "Variation 2: attack all the way, power layup off two feet",
+        "Alternate drive direction and dribble count every rep"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Drive vs. Second Defender",
+      "duration_s": 50,
+      "action_paths": [
+        {
+          "actor": "S",
+          "type": "dribble",
+          "from": [
+            -14,
+            22
+          ],
+          "to": [
+            -3,
+            10
+          ]
+        },
+        {
+          "actor": "D",
+          "type": "move",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            -3,
+            9
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "shot",
+          "from": [
+            -3,
+            10
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Second defender stays near the basket \u2014 force a decision",
+        "Second shot fake if needed before the power move",
+        "Score through contact, two feet on the floor"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Penetrate & Pitch or Dish",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "S",
+          "type": "dribble",
+          "from": [
+            -14,
+            22
+          ],
+          "to": [
+            -5,
+            14
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "pass",
+          "from": [
+            -5,
+            14
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "O",
+          "type": "shot",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "D",
+          "type": "move",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            14,
+            20
+          ]
+        }
+      ],
+      "cues": [
+        "Variation 4: dish early to cutter attacking the second defender",
+        "Variation 5: pitch back to the corner or wing for a three",
+        "Open shooter \u2014 catch, set feet, quick release vs. closeout"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Rotate & Repeat",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "S",
+          "type": "move",
+          "from": [
+            -5,
+            14
+          ],
+          "to": [
+            0,
+            12
+          ]
+        },
+        {
+          "actor": "P",
+          "type": "move",
+          "from": [
+            -10,
+            22
+          ],
+          "to": [
+            -14,
+            22
+          ]
+        },
+        {
+          "actor": "D",
+          "type": "move",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "Rebounder outlets, becomes passer \u2014 no standing around",
+        "Track makes and attempts by zone every rep"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        12
+      ],
+      "to": [
+        -14,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -14,
+        22
+      ],
+      "to": [
+        -14,
+        22
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -14,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -14,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -14,
+        22
+      ],
+      "to": [
+        -5,
+        14
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -5,
+        14
+      ],
+      "to": [
+        18,
+        22
+      ]
+    }
+  ],
+  "notes": "Run Variations 1-2 as the base (shot fake into pull-up or power layup), add a second defender for Variation 3, then layer in the dish and pitch reads with four players in Variations 4-5. Dual-ball Variation 6 is the conditioning finisher \u2014 hold shooters to the rep and make targets listed."
+}

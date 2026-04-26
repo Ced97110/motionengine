@@ -1,0 +1,288 @@
+{
+  "drill_slug": "drill-follow-leader-shooting",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 3
+    },
+    {
+      "role": "shooter",
+      "id": "P2",
+      "x": 0,
+      "y": 1
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": 0,
+      "y": 19
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Spinout & Sprint",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            3
+          ],
+          "to": [
+            0,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            3
+          ],
+          "to": [
+            0,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Throw the ball out from under the basket toward mid-range",
+        "Sprint to it \u2014 never walk to the ball",
+        "Square your feet before you catch"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Leader Shoots (Spot or 3PT)",
+      "duration_s": 8,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Pick your shot \u2014 spot-up, jab-step, rip, shot-fake, or dribble move",
+        "Low hips, shooting elbow in, feet quiet on the catch",
+        "Call your move so the follower knows what to copy"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Follower Mirrors Exactly",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            0,
+            3
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            0,
+            1
+          ],
+          "to": [
+            0,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Same spot, same move, same finish \u2014 no shortcuts",
+        "P1 goes straight to rebound while P2 shoots",
+        "Keep the pace up \u2014 next rep starts immediately"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Advanced Move Rep (Dribble or Fake)",
+      "duration_s": 12,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            15
+          ],
+          "to": [
+            -6,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -6,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            0,
+            15
+          ],
+          "to": [
+            -6,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            -6,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Open-court dribble move or shot-fake into the shot \u2014 game speed",
+        "Follower copies the exact handle and finish",
+        "P1 rebounds and feeds back under the basket for next spinout"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Free Throws Between Sets",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "5 FTs each after every set of 10 field goals",
+        "Same routine every time \u2014 this is not a rest break",
+        "Feet quiet, elbow in, hold your follow-through"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        3
+      ],
+      "to": [
+        0,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        3
+      ],
+      "to": [
+        0,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        15
+      ],
+      "to": [
+        -6,
+        22
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        0,
+        19
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Partner drill \u2014 the leader picks any shot or move, the follower copies it exactly at game speed. Run 4 sets of 10 field goals with 5 FTs between each set; target 60% from the field and 85% from the line across all six workout variants."
+}

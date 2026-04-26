@@ -1,0 +1,230 @@
+{
+  "drill_slug": "drill-one-on-one-cutthroat-live",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "O1",
+      "x": 0,
+      "y": 19
+    },
+    {
+      "role": "defender",
+      "id": "D1",
+      "x": 0,
+      "y": 21
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C3",
+      "x": 0,
+      "y": 33
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Ball Out \u2014 Catch with a Rip",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "D1",
+          "type": "move",
+          "from": [
+            0,
+            21
+          ],
+          "to": [
+            0,
+            14
+          ]
+        },
+        {
+          "actor": "O1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        }
+      ],
+      "cues": [
+        "Defense rolls ball to offense",
+        "Catch with a rip \u2014 ball below chin, elbows out",
+        "Establish your pivot foot immediately"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Jab or Show \u2014 Read the Defender",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "move",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            -5,
+            16
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            0,
+            14
+          ],
+          "to": [
+            -4,
+            15
+          ]
+        }
+      ],
+      "cues": [
+        "Jab step to test the defender",
+        "Pivot foot stays locked",
+        "Show-and-go if defender bites"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Live-Ball Combo Move \u2014 Attack",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            -5,
+            16
+          ],
+          "to": [
+            0,
+            10
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            -4,
+            15
+          ],
+          "to": [
+            1,
+            11
+          ]
+        }
+      ],
+      "cues": [
+        "Max three dribbles \u2014 be decisive",
+        "Step-back or crossover combo to create separation",
+        "Low hips through the move"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Finish or Rotate \u2014 Make It Take It",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "shot",
+          "from": [
+            0,
+            10
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "move",
+          "from": [
+            1,
+            11
+          ],
+          "to": [
+            0,
+            21
+          ]
+        }
+      ],
+      "cues": [
+        "Score off a true live-ball move \u2014 no plain drives",
+        "Made basket: offense keeps possession after 3 points",
+        "Defender gets stop: they rotate to offense",
+        "First to 21 wins"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        14
+      ],
+      "to": [
+        -6,
+        18
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        -5,
+        16
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -5,
+        16
+      ],
+      "to": [
+        0,
+        10
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        10
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Cutthroat 1-on-1 to 21 \u2014 offense must catch with a rip, lock in a pivot foot, and score off a live-ball combo in three dribbles or less; make-it/take-it kicks in at 3 points to raise competitive stakes. Rotate in additional players after each stop; advanced groups add a 5-second shot clock and cut dribble limit to two."
+}

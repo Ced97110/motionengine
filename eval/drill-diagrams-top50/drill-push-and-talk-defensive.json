@@ -1,0 +1,283 @@
+{
+  "drill_slug": "drill-push-and-talk-defensive",
+  "court": "full",
+  "starting_positions": [
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": 0,
+      "y": 2
+    },
+    {
+      "role": "defender",
+      "id": "X2",
+      "x": 4,
+      "y": 2
+    },
+    {
+      "role": "defender",
+      "id": "X3",
+      "x": 8,
+      "y": 2
+    },
+    {
+      "role": "defender",
+      "id": "X4",
+      "x": -4,
+      "y": 2
+    },
+    {
+      "role": "defender",
+      "id": "X5",
+      "x": -8,
+      "y": 2
+    },
+    {
+      "role": "cone",
+      "id": "CA",
+      "x": 0,
+      "y": 47
+    },
+    {
+      "role": "cone",
+      "id": "CB",
+      "x": 0,
+      "y": 75
+    },
+    {
+      "role": "cone",
+      "id": "CC",
+      "x": -22,
+      "y": 75
+    },
+    {
+      "role": "cone",
+      "id": "CD",
+      "x": 22,
+      "y": 75
+    },
+    {
+      "role": "cone",
+      "id": "CE",
+      "x": -22,
+      "y": 56
+    },
+    {
+      "role": "cone",
+      "id": "CF",
+      "x": 0,
+      "y": 56
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Advance Step to Mid-Court",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            0,
+            2
+          ],
+          "to": [
+            0,
+            47
+          ]
+        }
+      ],
+      "cues": [
+        "Advance step \u2014 lead foot punches forward, trail foot snaps up",
+        "Head up, eyes scanning the floor ahead",
+        "Quick feet, low hips, stay balanced"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Drop-and-Swing to Free-Throw Line",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            0,
+            47
+          ],
+          "to": [
+            0,
+            75
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "move",
+          "from": [
+            4,
+            2
+          ],
+          "to": [
+            4,
+            47
+          ]
+        }
+      ],
+      "cues": [
+        "Drop foot back, swing lead arm \u2014 full reverse pivot, not a crossover",
+        "Push off hard into the slide \u2014 as fast and as hard as you can",
+        "X2 goes when X1 hits the free-throw line",
+        "Keep talking \u2014 call out teammates' positions"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Slide to Corner \u2014 Direction Change",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            0,
+            75
+          ],
+          "to": [
+            22,
+            75
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            22,
+            75
+          ],
+          "to": [
+            -22,
+            75
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "move",
+          "from": [
+            4,
+            47
+          ],
+          "to": [
+            4,
+            75
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            8,
+            2
+          ],
+          "to": [
+            8,
+            47
+          ]
+        }
+      ],
+      "cues": [
+        "Left foot pivot on direction change going right \u2014 alternate pivot each time",
+        "Swing the lead arm back on every drop-and-swing",
+        "Stay wide and low through the slide \u2014 feet quiet, no crossing",
+        "Communicate loudly \u2014 teammates are moving toward you"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Return Slide Through Lane \u2014 All Five Moving",
+      "duration_s": 25,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -22,
+            75
+          ],
+          "to": [
+            0,
+            56
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            0,
+            56
+          ],
+          "to": [
+            0,
+            2
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            4,
+            75
+          ],
+          "to": [
+            4,
+            56
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            8,
+            47
+          ],
+          "to": [
+            8,
+            75
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "move",
+          "from": [
+            -4,
+            2
+          ],
+          "to": [
+            -4,
+            47
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "move",
+          "from": [
+            -8,
+            2
+          ],
+          "to": [
+            -8,
+            47
+          ]
+        }
+      ],
+      "cues": [
+        "Right foot pivot on the return direction change",
+        "Push back through the free-throw lane \u2014 eyes up, read teammates",
+        "Call out 'I got left!' or 'Coming through!' \u2014 mandatory communication",
+        "Finish hard to the baseline \u2014 no coasting the last step"
+      ]
+    }
+  ],
+  "ball_path": [],
+  "notes": "Five defenders stagger their starts off the free-throw line trigger and run the full route simultaneously \u2014 advance step to mid-court, drop-and-swing into hard slides across the lane, two alternating direction changes with correct pivot feet, then push back to baseline. Communication is not optional: heads up and voices on at all times to avoid collisions and build game-ready defensive habits."
+}

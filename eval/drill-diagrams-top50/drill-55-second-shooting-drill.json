@@ -1,0 +1,416 @@
+{
+  "drill_slug": "drill-55-second-shooting-drill",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "shooter",
+      "id": "S",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "passer",
+      "id": "P",
+      "x": 0,
+      "y": 28
+    },
+    {
+      "role": "rebounder",
+      "id": "R",
+      "x": 0,
+      "y": 5
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Catch & Shoot \u2014 Wing",
+      "duration_s": 55,
+      "action_paths": [
+        {
+          "actor": "P",
+          "type": "pass",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "shot",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "R",
+          "type": "move",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            -3,
+            6
+          ]
+        },
+        {
+          "actor": "R",
+          "type": "pass",
+          "from": [
+            -3,
+            6
+          ],
+          "to": [
+            0,
+            28
+          ]
+        }
+      ],
+      "cues": [
+        "Feet and hands ready before the pass arrives",
+        "Shoot on the catch \u2014 no extra dribbles",
+        "R crashes the glass hard, outlet back to P fast"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Shot Fake, One Dribble Pull-Up",
+      "duration_s": 55,
+      "action_paths": [
+        {
+          "actor": "P",
+          "type": "pass",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -14,
+            20
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "dribble",
+          "from": [
+            -14,
+            20
+          ],
+          "to": [
+            -12,
+            19
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "shot",
+          "from": [
+            -12,
+            19
+          ],
+          "to": [
+            -12,
+            19
+          ]
+        },
+        {
+          "actor": "R",
+          "type": "move",
+          "from": [
+            -3,
+            6
+          ],
+          "to": [
+            -5,
+            7
+          ]
+        },
+        {
+          "actor": "R",
+          "type": "pass",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            0,
+            28
+          ]
+        }
+      ],
+      "cues": [
+        "Shot fake must be a real threat \u2014 sell it",
+        "One hard dribble into the pull-up, low hips on landing",
+        "P release pass as shooter finishes footwork"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Role Rotation",
+      "duration_s": 5,
+      "action_paths": [
+        {
+          "actor": "S",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            0,
+            5
+          ]
+        },
+        {
+          "actor": "R",
+          "type": "move",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "P",
+          "type": "move",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "5-second window only \u2014 sprint to next role",
+        "No standing around; wasted time kills drill value"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Rapid Fire \u2014 Two Balls",
+      "duration_s": 55,
+      "action_paths": [
+        {
+          "actor": "P",
+          "type": "pass",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "R",
+          "type": "pass",
+          "from": [
+            5,
+            7
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "shot",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Instant reset after every shot \u2014 feet quiet, hands up",
+        "P and R alternate feeds; S must track each incoming ball",
+        "Speed cannot break shooting form \u2014 coach watch closely"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Competitive Finish & Penalty",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "S",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            0,
+            22
+          ]
+        },
+        {
+          "actor": "P",
+          "type": "move",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            0,
+            22
+          ]
+        },
+        {
+          "actor": "R",
+          "type": "move",
+          "from": [
+            5,
+            7
+          ],
+          "to": [
+            0,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Tally makes and attempts per shooter per zone",
+        "Group below standard runs \u2014 real competitive pressure",
+        "Set individual AND group benchmarks before drill starts"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        28
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 0,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        -3,
+        6
+      ]
+    },
+    {
+      "phase_index": 0,
+      "from": [
+        -3,
+        6
+      ],
+      "to": [
+        0,
+        28
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        28
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -12,
+        19
+      ],
+      "to": [
+        -5,
+        7
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -5,
+        7
+      ],
+      "to": [
+        0,
+        28
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        28
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        5,
+        7
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    }
+  ],
+  "notes": "Run three 55-second windows (one per shooter role) with a hard 5-second rotation between each; track makes and attempts by zone and hold individuals and groups to posted standards \u2014 losers run. Progress from catch-and-shoot to shot-fake pull-up to Rapid Fire (2 balls) as players earn it."
+}

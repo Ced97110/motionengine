@@ -1,0 +1,488 @@
+{
+  "drill_slug": "drill-transition-shooting-series-10",
+  "court": "full",
+  "starting_positions": [
+    {
+      "role": "shooter",
+      "id": "S1",
+      "x": 18,
+      "y": 4
+    },
+    {
+      "role": "passer",
+      "id": "P1",
+      "x": 0,
+      "y": 2
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Shoot & Baseline Sprint (Right Side)",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            2
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            2
+          ],
+          "to": [
+            0,
+            2
+          ]
+        }
+      ],
+      "cues": [
+        "Rhythm up \u2014 catch and shoot in one motion",
+        "Sprint baseline immediately after release",
+        "Passer rebounds and adjusts angle"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Half-Court Sprint & Left-Side Transition Shot",
+      "duration_s": 35,
+      "action_paths": [
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            0,
+            2
+          ],
+          "to": [
+            -18,
+            47
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            -18,
+            47
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            2
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Sprint to half court, turn and attack the spot",
+        "Feet quiet on the catch \u2014 rhythm up into the shot",
+        "Passer leads the shooter, not the other way around"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Left-Side Sequence (Corner \u2192 Wing \u2192 Lane \u2192 Top)",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -22,
+            4
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            -22,
+            4
+          ],
+          "to": [
+            -22,
+            4
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            -22,
+            4
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            0,
+            33
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            0,
+            33
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            2
+          ],
+          "to": [
+            -5,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "No walking between spots \u2014 sprint every gap",
+        "Each catch is a new scoring decision",
+        "Passer tracks movement and leads each spot"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Shot Fake & Live-Ball Variations (#6-2 / #6-3)",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            5,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "Catch, shot fake, read the defense \u2014 then score",
+        "Rip step low and tight on the catch",
+        "No two consecutive shots the same \u2014 stay creative",
+        "Low hips on every live-ball move"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Combination Moves & Free-Throw Break (#6-4 + FT)",
+      "duration_s": 75,
+      "action_paths": [
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            22,
+            4
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            22,
+            4
+          ],
+          "to": [
+            22,
+            4
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "cut",
+          "from": [
+            22,
+            4
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "S1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            5,
+            7
+          ],
+          "to": [
+            0,
+            2
+          ]
+        }
+      ],
+      "cues": [
+        "Combination: jab + shot fake, or step-back + drive \u2014 your choice",
+        "Sprint hard to every spot \u2014 conditioning is the point",
+        "10 free throws after each full rep \u2014 simulate pressure FTs on tired legs",
+        "Sprint, rhythm, shoot \u2014 no walking, no waiting"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        0,
+        2
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        2
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -5,
+        7
+      ],
+      "to": [
+        -22,
+        4
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        5,
+        7
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        0,
+        2
+      ],
+      "to": [
+        22,
+        4
+      ]
+    }
+  ],
+  "notes": "Run 10 consecutive transition shots per rep \u2014 right side start, baseline sprint, half-court turn, left-side sequence, then back right. Cycle all four variations (#6-1 spot-up, #6-2 shot fake, #6-3 rip step, #6-4 combination) across reps; 10 free throws between each rep to simulate exhaustion pressure."
+}

@@ -1,0 +1,378 @@
+{
+  "drill_slug": "drill-defending-middle-pnr",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "O1",
+      "x": -2,
+      "y": 30
+    },
+    {
+      "role": "wing",
+      "id": "O2",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "wing",
+      "id": "O3",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "screener",
+      "id": "O5",
+      "x": 0,
+      "y": 26
+    },
+    {
+      "role": "post",
+      "id": "O4",
+      "x": -5,
+      "y": 7
+    },
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": -2,
+      "y": 28
+    },
+    {
+      "role": "defender",
+      "id": "X2",
+      "x": 16,
+      "y": 20
+    },
+    {
+      "role": "defender",
+      "id": "X3",
+      "x": -16,
+      "y": 20
+    },
+    {
+      "role": "defender",
+      "id": "X5",
+      "x": 1,
+      "y": 24
+    },
+    {
+      "role": "defender",
+      "id": "X4",
+      "x": -4,
+      "y": 9
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Pre-screen communication",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "O5",
+          "type": "move",
+          "from": [
+            0,
+            26
+          ],
+          "to": [
+            2,
+            23
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "shuffle",
+          "from": [
+            1,
+            24
+          ],
+          "to": [
+            3,
+            22
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -2,
+            28
+          ],
+          "to": [
+            0,
+            27
+          ]
+        }
+      ],
+      "cues": [
+        "X5 calls out the screen early \u2014 loud and clear",
+        "X1 and X5 talk before contact; no surprises",
+        "Both defenders know their assignment before O5 sets"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Soft coverage \u2014 X1 drops, no split",
+      "duration_s": 35,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            -2,
+            30
+          ],
+          "to": [
+            4,
+            24
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "backpedal",
+          "from": [
+            0,
+            27
+          ],
+          "to": [
+            3,
+            22
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "shuffle",
+          "from": [
+            3,
+            22
+          ],
+          "to": [
+            5,
+            20
+          ]
+        }
+      ],
+      "cues": [
+        "X1 drops even with O5 \u2014 take away the split lane",
+        "Keep O1 in front at all times; no middle penetration",
+        "X2 and X3 stay home; don't leave shooters"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Hard hedge option \u2014 double the ball",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            -2,
+            30
+          ],
+          "to": [
+            4,
+            25
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "move",
+          "from": [
+            3,
+            22
+          ],
+          "to": [
+            2,
+            27
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            0,
+            27
+          ],
+          "to": [
+            3,
+            26
+          ]
+        }
+      ],
+      "cues": [
+        "X5 steps up hard \u2014 show two on the ball handler",
+        "Trap the middle; force O1 to pick up dribble or retreat",
+        "Know your rotation rules before X5 commits"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "O5 rolls, O4 pops \u2014 high-low threat",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "O5",
+          "type": "cut",
+          "from": [
+            2,
+            23
+          ],
+          "to": [
+            1,
+            8
+          ]
+        },
+        {
+          "actor": "O4",
+          "type": "cut",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -3,
+            17
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "move",
+          "from": [
+            2,
+            27
+          ],
+          "to": [
+            1,
+            13
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "move",
+          "from": [
+            -4,
+            9
+          ],
+          "to": [
+            -3,
+            15
+          ]
+        }
+      ],
+      "cues": [
+        "X5 sprints to cut off O5's roll path to the rim",
+        "X4 steps up to tag O4 popping to the elbow",
+        "Two threats at once \u2014 rotation rules must be called before the roll"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Draw-and-kick read \u2014 wings stay home",
+      "duration_s": 35,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "pass",
+          "from": [
+            4,
+            24
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            -16,
+            20
+          ],
+          "to": [
+            -14,
+            19
+          ]
+        }
+      ],
+      "cues": [
+        "X2 closes out fast \u2014 contest without fouling",
+        "X3 shrinks toward paint; ready for skip pass",
+        "Soft coverage pays off here \u2014 wings never left early"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -2,
+        30
+      ],
+      "to": [
+        -2,
+        30
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -2,
+        30
+      ],
+      "to": [
+        4,
+        24
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -2,
+        30
+      ],
+      "to": [
+        4,
+        25
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        4,
+        25
+      ],
+      "to": [
+        1,
+        8
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        4,
+        24
+      ],
+      "to": [
+        18,
+        22
+      ]
+    }
+  ],
+  "notes": "Run this drill 5v5 live; cycle through soft coverage and hard hedge so all five defenders feel both assignments. Key rule \u2014 no splits on the middle PnR, and rotation answers for the roll-and-pop must be called before O5 makes contact."
+}

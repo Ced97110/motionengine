@@ -1,0 +1,394 @@
+{
+  "drill_slug": "drill-rip-step-hop-back-crossover",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 0,
+      "y": 19
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Rip Step + 1 Dribble (Left Wing)",
+      "duration_s": 120,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -20,
+            20
+          ]
+        }
+      ],
+      "cues": [
+        "Rip through aggressively \u2014 explode through the arm",
+        "One dribble only before the hop back",
+        "Stay low on the catch, feet ready"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Hop Back to Three (Left Wing)",
+      "duration_s": 120,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -20,
+            20
+          ],
+          "to": [
+            -22,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -22,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Two-foot landing \u2014 land balanced, not fading",
+        "Feet quiet on landing, shoot on the way up",
+        "Primary read: if space is there, shoot it"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Crossover Attack if Shot Denied (Left)",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "crossover",
+          "from": [
+            -22,
+            22
+          ],
+          "to": [
+            -14,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -14,
+            18
+          ],
+          "to": [
+            -8,
+            12
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -8,
+            12
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Read before you cross \u2014 only go if hop-back shot is taken away",
+        "Attack the paint off the crossover",
+        "Shoot at game speed every rep"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Free Throws",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -8,
+            12
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Reset mentally between FTs",
+        "Target 85% \u2014 treat every free throw as game pressure"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Rip + 2 Dribble Hop Back (Right Wing)",
+      "duration_s": 180,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            20,
+            20
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            20,
+            20
+          ],
+          "to": [
+            22,
+            21
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            22,
+            21
+          ],
+          "to": [
+            24,
+            23
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            24,
+            23
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Two dribbles before the hop \u2014 stay under control",
+        "Do not rush the second dribble; read the defense",
+        "Same two-foot balanced landing on the hop back"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Crossover Right + Free Throws",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "crossover",
+          "from": [
+            24,
+            23
+          ],
+          "to": [
+            14,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            14,
+            18
+          ],
+          "to": [
+            8,
+            12
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            8,
+            12
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            8,
+            12
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Mirror left-side reps \u2014 same reads, same speed",
+        "Finish with free throws to close the segment",
+        "Track every make and miss \u2014 FG target 60%, FT target 85%"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        -20,
+        20
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -20,
+        20
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -22,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        19
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        8,
+        12
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Player works both wings: rip through, 1-2 dribbles, hop back to a balanced two-foot three \u2014 shoot it if open, crossover and attack if the defense takes it away. Free throws between every action segment; track all makes and misses every session."
+}

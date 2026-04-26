@@ -1,0 +1,349 @@
+{
+  "drill_slug": "drill-five-on-five-no-defense",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "role": "shooter",
+      "id": "P2",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "shooter",
+      "id": "P3",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "passer",
+      "id": "P4",
+      "x": -5,
+      "y": 7
+    },
+    {
+      "role": "passer",
+      "id": "P5",
+      "x": 5,
+      "y": 7
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "1-3-1 Set \u2014 Pass & Screen Away",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -22,
+            4
+          ]
+        }
+      ],
+      "cues": [
+        "Pass and go screen away \u2014 no standing still",
+        "P3 V-cut to vacate, fill the top",
+        "P4 drift to corner to spread the floor"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Screen & Roll \u2014 Post Action",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P4",
+          "type": "screen",
+          "from": [
+            -22,
+            4
+          ],
+          "to": [
+            -5,
+            7
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "cut",
+          "from": [
+            5,
+            7
+          ],
+          "to": [
+            0,
+            12
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -3,
+            5
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            0,
+            12
+          ]
+        }
+      ],
+      "cues": [
+        "P4 sets screen then rolls hard to the rim",
+        "P5 reads the roll \u2014 catch in rhythm",
+        "P2 make the simple pass, stay ready"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "V-Cut & Backdoor Read",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            3,
+            10
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "pass",
+          "from": [
+            0,
+            12
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            -3,
+            5
+          ],
+          "to": [
+            -22,
+            4
+          ]
+        }
+      ],
+      "cues": [
+        "P3 V-cut sharp \u2014 sell the move before catching",
+        "P1 reads overplay \u2014 go backdoor immediately",
+        "Feet quiet on the catch, attack the rim"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Ball Reversal & Finish",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P3",
+          "type": "pass",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            3,
+            10
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            0,
+            12
+          ],
+          "to": [
+            5,
+            7
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Reverse the ball \u2014 keep defense moving",
+        "Read the gap \u2014 elbow jumper or drive",
+        "Finish with a score before the minute is up"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        0,
+        12
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        12
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        0,
+        28
+      ]
+    }
+  ],
+  "notes": "Run free motion for one full minute with no defense \u2014 demand constant movement and variety in reads: V-cuts, backdoors, screens, and ball reversal. Rotate teams every minute, each starting from a different formation; progress to token then live 5v5 defense as players sharpen their reads."
+}

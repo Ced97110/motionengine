@@ -1,0 +1,293 @@
+{
+  "drill_slug": "drill-two-player-cutting",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -10,
+      "y": 22
+    },
+    {
+      "role": "passer",
+      "id": "P2",
+      "x": 10,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -10,
+      "y": 28
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 10,
+      "y": 28
+    },
+    {
+      "role": "cone",
+      "id": "C3",
+      "x": 0,
+      "y": 19
+    },
+    {
+      "role": "cone",
+      "id": "C4",
+      "x": -18,
+      "y": 14
+    },
+    {
+      "role": "cone",
+      "id": "C5",
+      "x": 18,
+      "y": 14
+    },
+    {
+      "role": "cone",
+      "id": "C6",
+      "x": 0,
+      "y": 33
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Pass & Read the Cone",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            -10,
+            22
+          ],
+          "to": [
+            10,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "P1 passes to P2 \u2014 now read your cone defender",
+        "Is the cone between you and the ball or shading away?"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Middle Cut \u2014 Call It Out",
+      "duration_s": 12,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -10,
+            22
+          ],
+          "to": [
+            0,
+            14
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            14
+          ],
+          "to": [
+            8,
+            8
+          ]
+        }
+      ],
+      "cues": [
+        "Cone didn't jump to ball \u2014 Middle cut!",
+        "P1 must say it loud: 'Middle cut \u2014 defender didn't jump'",
+        "Cut hard, chin up, catch ready"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Backdoor Cut \u2014 Call It Out",
+      "duration_s": 12,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -10,
+            22
+          ],
+          "to": [
+            -14,
+            26
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -14,
+            26
+          ],
+          "to": [
+            -5,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "Cone overplays the lane \u2014 Backdoor cut!",
+        "P1 calls: 'Backdoor \u2014 defender overplayed'",
+        "Plant outside foot, push back door, hands ready for pass"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "V-Cut to Restore Spacing",
+      "duration_s": 12,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -10,
+            22
+          ],
+          "to": [
+            -10,
+            17
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -10,
+            17
+          ],
+          "to": [
+            -16,
+            24
+          ]
+        }
+      ],
+      "cues": [
+        "No advantage \u2014 V-cut to reset",
+        "Call it: 'V-cut \u2014 maintaining spacing'",
+        "Stay 15 feet from your partner at all times"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "P2 Dribbles to Close Gap Then Passes",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            10,
+            22
+          ],
+          "to": [
+            2,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            2,
+            22
+          ],
+          "to": [
+            -16,
+            24
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            2,
+            22
+          ],
+          "to": [
+            10,
+            14
+          ]
+        }
+      ],
+      "cues": [
+        "If P1 is too far, P2 dribbles to close gap before passing",
+        "Pass made \u2014 P2 reads their cone and cuts",
+        "Keep spacing: never closer than 15 feet, never farther than you can pass"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -10,
+        22
+      ],
+      "to": [
+        10,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        10,
+        22
+      ],
+      "to": [
+        8,
+        8
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        10,
+        22
+      ],
+      "to": [
+        -5,
+        7
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        10,
+        22
+      ],
+      "to": [
+        -16,
+        24
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        2,
+        22
+      ],
+      "to": [
+        -16,
+        24
+      ]
+    }
+  ],
+  "notes": "Two players pass, cut, and verbalize the cut name and reason \u2014 cone placement changes daily to force fresh reads. If spacing collapses inside 15 feet, the receiver dribbles away or V-cuts before the next pass; do not prescribe cuts, let players read and decide."
+}

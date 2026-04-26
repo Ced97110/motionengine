@@ -1,0 +1,397 @@
+{
+  "drill_slug": "drill-penetration-drill",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "coach",
+      "id": "C1",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 28
+    },
+    {
+      "role": "ball_handler",
+      "id": "P2",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "ball_handler",
+      "id": "P3",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": 0,
+      "y": 25
+    },
+    {
+      "role": "defender",
+      "id": "X2",
+      "x": -14,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "X3",
+      "x": 14,
+      "y": 22
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Coach Entry Pass \u2014 Defenders Jump to Ball",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "C1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            0,
+            24
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            -14,
+            22
+          ],
+          "to": [
+            -9,
+            23
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            14,
+            22
+          ],
+          "to": [
+            9,
+            23
+          ]
+        }
+      ],
+      "cues": [
+        "All offense stationary until coach passes",
+        "Defenders jump to ball \u2014 two-thirds distance to ball, one-third from assignment",
+        "X2 and X3 shade toward the lane on catch"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "P1 Penetrates Left \u2014 Freeze and Check",
+      "duration_s": 25,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            -10,
+            20
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            0,
+            24
+          ],
+          "to": [
+            -8,
+            20
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            -9,
+            23
+          ],
+          "to": [
+            -6,
+            17
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            9,
+            23
+          ],
+          "to": [
+            5,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Coach freezes the drill \u2014 are defenders at proper help positions?",
+        "X2 drops to protect the rim on drive side",
+        "X3 holds weak-side help, stays in passing lane",
+        "Low hips, feet quiet on the drive"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Off-Ball Cuts \u2014 Backdoor or Stay",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -5,
+            7
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            18,
+            28
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            18,
+            28
+          ],
+          "to": [
+            18,
+            19
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            -6,
+            17
+          ],
+          "to": [
+            -4,
+            10
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            5,
+            22
+          ],
+          "to": [
+            13,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "P2 nearest the drive \u2014 read X2: backdoor if overplayed, cut behind drive if X2 drops",
+        "P3 far side \u2014 V-cut to keep X3 occupied",
+        "Don't let off-ball players stand and watch"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Kick-Out Pass \u2014 Secondary Penetration",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            -10,
+            20
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -12,
+            14
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            -4,
+            10
+          ],
+          "to": [
+            -10,
+            14
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -8,
+            20
+          ],
+          "to": [
+            -4,
+            17
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            13,
+            22
+          ],
+          "to": [
+            6,
+            20
+          ]
+        }
+      ],
+      "cues": [
+        "Defenders close out under control on the pass \u2014 no fly-bys",
+        "Receiver attacks off the catch \u2014 same reads apply for off-ball players",
+        "Penetration must earn a layup, clean pull-up, or perfect pass \u2014 no lazy drives"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Finish \u2014 Layup or Pull-Up",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            -12,
+            14
+          ],
+          "to": [
+            -2,
+            4
+          ]
+        }
+      ],
+      "cues": [
+        "Layups only option keeps reps focused on penetration",
+        "Rotate: offense to defense, defense to end of line",
+        "Run 3 reps before rotating groups"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        0,
+        28
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        28
+      ],
+      "to": [
+        -10,
+        20
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -10,
+        20
+      ],
+      "to": [
+        -10,
+        20
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -10,
+        20
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -12,
+        14
+      ],
+      "to": [
+        -2,
+        4
+      ]
+    }
+  ],
+  "notes": "Teach motion-offense penetration rules in a controlled 3-on-3 setting \u2014 freeze the drill after each drive to correct help-side positioning before allowing cuts and secondary actions. Progress from positioning-only reps to full live play as defenders demonstrate proper gap coverage."
+}

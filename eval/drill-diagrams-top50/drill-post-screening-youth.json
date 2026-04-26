@@ -1,0 +1,462 @@
+{
+  "drill_slug": "drill-post-screening-youth",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "role": "SF",
+      "id": "P3",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "C",
+      "id": "P5",
+      "x": -5,
+      "y": 7
+    },
+    {
+      "role": "PF",
+      "id": "P4",
+      "x": 5,
+      "y": 14
+    },
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": 0,
+      "y": 35
+    },
+    {
+      "role": "defender",
+      "id": "X3",
+      "x": -17,
+      "y": 24
+    },
+    {
+      "role": "defender",
+      "id": "X5",
+      "x": -5,
+      "y": 9
+    },
+    {
+      "role": "coach",
+      "id": "CO",
+      "x": 6,
+      "y": 28
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Phase 1 Setup \u2014 Post Reads Screen Target",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            0,
+            33
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -16,
+            20
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -12,
+            18
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            -17,
+            24
+          ],
+          "to": [
+            -15,
+            21
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "move",
+          "from": [
+            -5,
+            9
+          ],
+          "to": [
+            -11,
+            16
+          ]
+        }
+      ],
+      "cues": [
+        "P5 calls P3's name before leaving the block",
+        "P3 set your defender up \u2014 wait, then attack the screen",
+        "Feet quiet when you receive the screen"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Phase 1 \u2014 Screen and Come Back vs. Fade",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P5",
+          "type": "screen",
+          "from": [
+            -12,
+            18
+          ],
+          "to": [
+            -14,
+            20
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            -16,
+            20
+          ],
+          "to": [
+            -6,
+            19
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            -15,
+            21
+          ],
+          "to": [
+            -6,
+            20
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "cut",
+          "from": [
+            -14,
+            20
+          ],
+          "to": [
+            -1,
+            15
+          ]
+        },
+        {
+          "actor": "CO",
+          "type": "pass",
+          "from": [
+            6,
+            28
+          ],
+          "to": [
+            -6,
+            19
+          ]
+        }
+      ],
+      "cues": [
+        "P5 \u2014 read X5 after contact: come back to ball or fade away",
+        "Coach reads the coverage \u2014 pass to whoever is open",
+        "Screen and come back means pop to elbow, stay open to the ball"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Phase 1 \u2014 Screen and Fade Option",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P5",
+          "type": "screen",
+          "from": [
+            -12,
+            18
+          ],
+          "to": [
+            -14,
+            20
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            -16,
+            20
+          ],
+          "to": [
+            -6,
+            19
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "cut",
+          "from": [
+            -14,
+            20
+          ],
+          "to": [
+            5,
+            7
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "move",
+          "from": [
+            -11,
+            16
+          ],
+          "to": [
+            -6,
+            20
+          ]
+        },
+        {
+          "actor": "CO",
+          "type": "pass",
+          "from": [
+            6,
+            28
+          ],
+          "to": [
+            5,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "If X5 chases P3 hard, P5 fades to the opposite block",
+        "Coach delivers entry pass to the open post",
+        "Low hips on the catch \u2014 ready to go up strong"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Phase 2 \u2014 Post-to-Post Screen, Roll Back High",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P4",
+          "type": "screen",
+          "from": [
+            5,
+            7
+          ],
+          "to": [
+            -4,
+            7
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "cut",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -5,
+            4
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            -4,
+            7
+          ],
+          "to": [
+            0,
+            14
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "move",
+          "from": [
+            -5,
+            9
+          ],
+          "to": [
+            -5,
+            5
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            0,
+            35
+          ],
+          "to": [
+            1,
+            16
+          ]
+        }
+      ],
+      "cues": [
+        "X4 goes over the top \u2014 no shortcuts",
+        "P4 rolls back high immediately after screen contact",
+        "High-low is alive \u2014 P4 at elbow, P5 on the block"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Phase 2 \u2014 Coach Reads, Entry Pass, High-Low Action",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "CO",
+          "type": "pass",
+          "from": [
+            6,
+            28
+          ],
+          "to": [
+            0,
+            14
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "shot",
+          "from": [
+            0,
+            14
+          ],
+          "to": [
+            0,
+            14
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            -5,
+            4
+          ],
+          "to": [
+            -5,
+            7
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "move",
+          "from": [
+            -5,
+            5
+          ],
+          "to": [
+            -3,
+            8
+          ]
+        }
+      ],
+      "cues": [
+        "If P4 catches at elbow, look immediately to P5 sealing on the block",
+        "X5 bump the screener is legal \u2014 stay physical early",
+        "Defense cannot cover both threats if the roll-back is quick"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        6,
+        28
+      ],
+      "to": [
+        6,
+        28
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        6,
+        28
+      ],
+      "to": [
+        -6,
+        19
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        6,
+        28
+      ],
+      "to": [
+        5,
+        7
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        6,
+        28
+      ],
+      "to": [
+        6,
+        28
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        6,
+        28
+      ],
+      "to": [
+        0,
+        14
+      ]
+    }
+  ],
+  "notes": "Run Phase 1 (10 min) with a perimeter screen, rotating all six players through offense and defense. Run Phase 2 (10 min) with post-to-post screening and the high-low roll-back; insist X4 goes over every screen and X5 bumps legally before recovering. Progressions: walk-through first, then add full live defense."
+}

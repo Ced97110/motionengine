@@ -1,0 +1,684 @@
+{
+  "drill_slug": "drill-rip-step-workouts",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 19
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C3",
+      "x": -6,
+      "y": 18
+    },
+    {
+      "role": "cone",
+      "id": "C4",
+      "x": 6,
+      "y": 18
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Spot Shots + Free Throws",
+      "duration_s": 120,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Feet quiet before you catch",
+        "Same shot every rep \u2014 build the habit",
+        "Step to the line \u2014 FTs simulate game pressure, do not rush"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Rip Step Stride Stop (L & R)",
+      "duration_s": 180,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            -12,
+            15
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -12,
+            15
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -12,
+            15
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            12,
+            15
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            12,
+            15
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Rip the ball convincingly across the body \u2014 a limp rip does not move anyone",
+        "Establish pivot foot before the half-dribble",
+        "Stride stop: land both feet under your hips, low hips, balanced",
+        "Work both directions every set"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Stride Stop / Step-Through + Big Hop",
+      "duration_s": 180,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            -10,
+            13
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -10,
+            13
+          ],
+          "to": [
+            -4,
+            8
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -4,
+            8
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -4,
+            8
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            10,
+            13
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            10,
+            13
+          ],
+          "to": [
+            3,
+            7
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            3,
+            7
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Stride stop first, read the defense, then step through if lane is open",
+        "Big hop: explode off one foot, gather in the air, land balanced",
+        "Do not rush the step-through \u2014 control beats speed here"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Hop Back 3s (1 Dribble, L & R)",
+      "duration_s": 180,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -14,
+            20
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -14,
+            20
+          ],
+          "to": [
+            -20,
+            25
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -20,
+            25
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -20,
+            25
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            14,
+            20
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            20,
+            25
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            20,
+            25
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Rip, one hard dribble, then hop back behind the arc",
+        "Land with feet ready \u2014 no extra hops before the shot",
+        "Game speed \u2014 slow hop-backs do not transfer"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Hop Back to Roll Out / Crossover",
+      "duration_s": 180,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            -10,
+            16
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -10,
+            16
+          ],
+          "to": [
+            -14,
+            21
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -14,
+            21
+          ],
+          "to": [
+            -8,
+            24
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -8,
+            24
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -8,
+            24
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            10,
+            16
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            14,
+            21
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            14,
+            21
+          ],
+          "to": [
+            4,
+            24
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            4,
+            24
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Hop back sells the pull-up \u2014 defender commits \u2014 roll out or crossover immediately",
+        "Keep dribble alive through the counter",
+        "Finish with a confident shot, not a hesitation"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Game-Speed 3s + Free Throws",
+      "duration_s": 180,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Every rep at game speed \u2014 slow reps build slow habits",
+        "Catch and shoot off the rip \u2014 no extra dribbles",
+        "Close out the workout with disciplined free throws \u2014 track every make and miss"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        19
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Run all five workouts in progression: start with attack lay-ups and stride stops (#2-3, #2-4), advance to the full 130-shot sequence (#2-1), then double volume (#2-2). Log every FGA, FGM, 3PT, and FT rep against the target benchmarks \u2014 no tracking means no accountability."
+}

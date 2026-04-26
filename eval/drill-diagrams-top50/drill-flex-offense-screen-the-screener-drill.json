@@ -1,0 +1,354 @@
+{
+  "drill_slug": "drill-flex-offense-screen-the-screener-drill",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "role": "wing",
+      "id": "P2",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "wing",
+      "id": "P3",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "post",
+      "id": "P4",
+      "x": -5,
+      "y": 7
+    },
+    {
+      "role": "defender",
+      "id": "D1",
+      "x": 0,
+      "y": 30
+    },
+    {
+      "role": "defender",
+      "id": "D2",
+      "x": -16,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "D3",
+      "x": 16,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "D4",
+      "x": -5,
+      "y": 9
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Entry pass & back screen",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -10,
+            14
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -2,
+            10
+          ]
+        }
+      ],
+      "cues": [
+        "P1 hits P3 on the wing \u2014 ball side triggers the action",
+        "P4 sets a back screen on P2's defender immediately on the catch",
+        "P2 reads the defender \u2014 curl if they go under, straight cut if they trail"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Screen the screener",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "screen",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -8,
+            18
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            -10,
+            14
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            -2,
+            10
+          ],
+          "to": [
+            -22,
+            4
+          ]
+        }
+      ],
+      "cues": [
+        "The moment P4 finishes the back screen, P1 sets the high screen for P4 \u2014 no pause",
+        "P4 pops high off P1's screen looking for the ball",
+        "If you screen, you are getting screened next \u2014 stay ready"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "P4 receives & skip pass",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P3",
+          "type": "pass",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            2,
+            30
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "pass",
+          "from": [
+            2,
+            30
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "P3 delivers to P4 popping high \u2014 catch in triple-threat, feet quiet",
+        "P4 skips across to P1 (now relocated to weak-side wing) immediately",
+        "Keep ball moving \u2014 skip pass resets the action on the other side"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Action repeats weak side",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "screen",
+          "from": [
+            -22,
+            4
+          ],
+          "to": [
+            -10,
+            14
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            2,
+            10
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "screen",
+          "from": [
+            2,
+            30
+          ],
+          "to": [
+            8,
+            18
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -10,
+            14
+          ],
+          "to": [
+            0,
+            28
+          ]
+        }
+      ],
+      "cues": [
+        "P2 sets back screen for P3 as ball arrives weak side \u2014 mirror the first action",
+        "P4 immediately screens for P2 \u2014 screen the screener on this side now",
+        "P2 pops high, P3 reads the lane \u2014 look for the cutter first, shooter second"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Shoot or continue",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "move",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "Take the shot only if it is earned \u2014 cutter in the lane or clean look off the high screen",
+        "No shot available \u2014 continue the pattern, do not force",
+        "Defenders: stay live until a real shot opportunity is created"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        2,
+        30
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        2,
+        30
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        0,
+        28
+      ]
+    }
+  ],
+  "notes": "Run this drill live 4-on-4 until a shot is earned off the back-screen cutter or the high-screen pop \u2014 if nothing is open, keep the figure-eight pattern going. The core rhythm: every screener immediately gets screened, with no pause between actions."
+}

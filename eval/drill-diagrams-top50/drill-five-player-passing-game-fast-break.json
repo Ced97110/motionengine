@@ -1,0 +1,514 @@
+{
+  "drill_slug": "drill-five-player-passing-game-fast-break",
+  "court": "full",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -10,
+      "y": 1
+    },
+    {
+      "role": "wing",
+      "id": "P2",
+      "x": -18,
+      "y": 3
+    },
+    {
+      "role": "wing",
+      "id": "P3",
+      "x": 18,
+      "y": 3
+    },
+    {
+      "role": "trailer",
+      "id": "P4",
+      "x": -6,
+      "y": 1
+    },
+    {
+      "role": "trailer",
+      "id": "P5",
+      "x": 6,
+      "y": 1
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Initiate \u2014 push the ball",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -10,
+            1
+          ],
+          "to": [
+            0,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -18,
+            3
+          ],
+          "to": [
+            -18,
+            25
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            18,
+            3
+          ],
+          "to": [
+            18,
+            25
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -6,
+            1
+          ],
+          "to": [
+            -8,
+            18
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            6,
+            1
+          ],
+          "to": [
+            8,
+            18
+          ]
+        }
+      ],
+      "cues": [
+        "Push at full speed \u2014 no strolling ever",
+        "Wings sprint wide, stay above the ball",
+        "Trailers fill behind \u2014 don't bunch"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Passing game \u2014 cuts & give-and-go",
+      "duration_s": 35,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            -18,
+            25
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -18,
+            25
+          ],
+          "to": [
+            -5,
+            40
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            5,
+            35
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "move",
+          "from": [
+            18,
+            25
+          ],
+          "to": [
+            10,
+            38
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -8,
+            18
+          ],
+          "to": [
+            -12,
+            30
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            8,
+            18
+          ],
+          "to": [
+            0,
+            28
+          ]
+        }
+      ],
+      "cues": [
+        "Read your teammate \u2014 give-and-go or clear out",
+        "Ball moves, feet move \u2014 no standing",
+        "Any passing game option is live"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Finish at the rim",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            -5,
+            40
+          ],
+          "to": [
+            0,
+            47
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            5,
+            35
+          ],
+          "to": [
+            0,
+            47
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            47
+          ],
+          "to": [
+            0,
+            47
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "move",
+          "from": [
+            10,
+            38
+          ],
+          "to": [
+            8,
+            44
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -12,
+            30
+          ],
+          "to": [
+            -8,
+            44
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            0,
+            40
+          ]
+        }
+      ],
+      "cues": [
+        "Attack the rim hard \u2014 no layup at half-speed",
+        "Crashers ready \u2014 offensive board if it's short"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Transition back \u2014 reverse direction",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P3",
+          "type": "dribble",
+          "from": [
+            8,
+            44
+          ],
+          "to": [
+            0,
+            72
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            47
+          ],
+          "to": [
+            18,
+            69
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -5,
+            40
+          ],
+          "to": [
+            -18,
+            69
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -8,
+            44
+          ],
+          "to": [
+            -8,
+            62
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            0,
+            40
+          ],
+          "to": [
+            8,
+            62
+          ]
+        }
+      ],
+      "cues": [
+        "Score or miss \u2014 you run back immediately",
+        "Sprinter leads, wings fill, trailers trail",
+        "No walking ever \u2014 if you're tired, call time"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Continue until fatigue \u2014 self-regulate",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P3",
+          "type": "pass",
+          "from": [
+            0,
+            72
+          ],
+          "to": [
+            -18,
+            69
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -18,
+            69
+          ],
+          "to": [
+            -5,
+            84
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            0,
+            72
+          ],
+          "to": [
+            5,
+            80
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            18,
+            69
+          ],
+          "to": [
+            12,
+            80
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -8,
+            62
+          ],
+          "to": [
+            -10,
+            75
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            8,
+            62
+          ],
+          "to": [
+            0,
+            70
+          ]
+        }
+      ],
+      "cues": [
+        "Keep full speed \u2014 any option on the passing game",
+        "Backdoor always open if the wing over-plays",
+        "Fourth-quarter decisions matter most \u2014 stay locked in",
+        "First player who needs a breather calls time \u2014 no shame, be honest"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -10,
+        1
+      ],
+      "to": [
+        0,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        22
+      ],
+      "to": [
+        -18,
+        25
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -18,
+        25
+      ],
+      "to": [
+        -5,
+        40
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -5,
+        40
+      ],
+      "to": [
+        0,
+        47
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        8,
+        44
+      ],
+      "to": [
+        0,
+        72
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        0,
+        72
+      ],
+      "to": [
+        -18,
+        69
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -18,
+        69
+      ],
+      "to": [
+        -5,
+        84
+      ]
+    }
+  ],
+  "notes": "Five players run continuous full-court passing game \u2014 any cut, give-and-go, or backdoor option is live as long as every player stays at full speed both directions. Groups rotate every time a player calls time-out; run for 15 minutes total so decision-making under fatigue gets real conditioning work."
+}

@@ -1,0 +1,474 @@
+{
+  "drill_slug": "drill-flex-shooting-two-screens",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "role": "shooter",
+      "id": "P2",
+      "x": -5,
+      "y": 7
+    },
+    {
+      "role": "screener",
+      "id": "P4",
+      "x": 3,
+      "y": 14
+    },
+    {
+      "role": "screener",
+      "id": "P5",
+      "x": -3,
+      "y": 19
+    },
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": 0,
+      "y": 36
+    },
+    {
+      "role": "defender",
+      "id": "X2",
+      "x": -5,
+      "y": 5
+    },
+    {
+      "role": "defender",
+      "id": "X4",
+      "x": 3,
+      "y": 12
+    },
+    {
+      "role": "defender",
+      "id": "X5",
+      "x": -3,
+      "y": 17
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Set the two screens",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            3,
+            14
+          ],
+          "to": [
+            2,
+            10
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            -3,
+            19
+          ],
+          "to": [
+            -2,
+            13
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -4,
+            9
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            -5,
+            5
+          ],
+          "to": [
+            -4,
+            8
+          ]
+        }
+      ],
+      "cues": [
+        "4 and 5 set both screens in the lane before 2 cuts",
+        "Hold the screen \u2014 don't move until the defender commits",
+        "1, eyes up, see all four options"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Read 1: Defender slides through \u2014 Fade",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            -4,
+            8
+          ],
+          "to": [
+            -1,
+            11
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "screen",
+          "from": [
+            -2,
+            13
+          ],
+          "to": [
+            -2,
+            13
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            -2,
+            13
+          ],
+          "to": [
+            -3,
+            15
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -4,
+            9
+          ],
+          "to": [
+            -14,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -14,
+            18
+          ]
+        }
+      ],
+      "cues": [
+        "X2 tries to slide through \u2014 5 re-screens, shifts angle",
+        "2 fades away, creates separation at 15-18 ft",
+        "1 fires the pass to 2 on the fade \u2014 feet quiet, catch and shoot"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Read 2: Defender trails \u2014 Curl",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            -4,
+            8
+          ],
+          "to": [
+            -5,
+            12
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -4,
+            9
+          ],
+          "to": [
+            2,
+            16
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            2,
+            16
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "screen",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            10
+          ]
+        }
+      ],
+      "cues": [
+        "X2 trails behind 2 \u2014 2 curls tight around 4's screen",
+        "Catch on the curl, low hips, shooting elbow in",
+        "If X5 sags, 1 can skip to 5 rolling instead of hitting 2"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Roll option: Screener to rim",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "P5",
+          "type": "cut",
+          "from": [
+            -3,
+            15
+          ],
+          "to": [
+            -2,
+            5
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            3,
+            5
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -2,
+            5
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "shuffle",
+          "from": [
+            -3,
+            17
+          ],
+          "to": [
+            -1,
+            10
+          ]
+        }
+      ],
+      "cues": [
+        "After the screen, both 4 and 5 roll hard to the rim",
+        "1 hits the roller if X4 or X5 sags to help on 2's curl",
+        "Roll with purpose \u2014 catch at the rim, finish strong"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Live 4-on-4 \u2014 make or stop",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            2,
+            31
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -4,
+            9
+          ],
+          "to": [
+            -12,
+            20
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            3,
+            5
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "cut",
+          "from": [
+            -3,
+            15
+          ],
+          "to": [
+            -2,
+            5
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            0,
+            36
+          ],
+          "to": [
+            2,
+            34
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            -4,
+            8
+          ],
+          "to": [
+            -10,
+            19
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "shuffle",
+          "from": [
+            3,
+            12
+          ],
+          "to": [
+            3,
+            7
+          ]
+        },
+        {
+          "actor": "X5",
+          "type": "shuffle",
+          "from": [
+            -3,
+            17
+          ],
+          "to": [
+            -2,
+            9
+          ]
+        }
+      ],
+      "cues": [
+        "Defense: call 'through' or 'fight' on every screen \u2014 communicate",
+        "Offense: read the defense, choose fade, curl, or roll",
+        "Rotate after each possession; track makes and stops"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        0,
+        33
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        -14,
+        18
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        2,
+        16
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        -2,
+        5
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        2,
+        31
+      ],
+      "to": [
+        -12,
+        20
+      ]
+    }
+  ],
+  "notes": "This drill trains 2 to read the defender's path off two simultaneous flex screens and choose the correct action \u2014 fade on a slide-through, curl and shoot or hit the roller when the defender trails. Run 5-minute live segments and track stops vs. makes to build competitive reps."
+}

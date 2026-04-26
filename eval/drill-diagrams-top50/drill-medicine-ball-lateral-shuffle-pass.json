@@ -1,0 +1,235 @@
+{
+  "drill_slug": "drill-medicine-ball-lateral-shuffle-pass",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -6,
+      "y": 19
+    },
+    {
+      "role": "defender",
+      "id": "P2",
+      "x": 6,
+      "y": 19
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Set Stance & Face Up",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            -6,
+            19
+          ],
+          "to": [
+            -6,
+            19
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shuffle",
+          "from": [
+            6,
+            19
+          ],
+          "to": [
+            6,
+            19
+          ]
+        }
+      ],
+      "cues": [
+        "Athletic stance \u2014 feet shoulder-width, hips low",
+        "Face your partner, both in defensive stance",
+        "Ball starts with P1"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Shuffle Right, Chest Pass",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            -6,
+            19
+          ],
+          "to": [
+            6,
+            19
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shuffle",
+          "from": [
+            6,
+            19
+          ],
+          "to": [
+            18,
+            19
+          ]
+        }
+      ],
+      "cues": [
+        "Both shuffle same direction \u2014 no crossover steps",
+        "Pass on the move \u2014 don't stop to throw",
+        "Elbows in, wrists snap through each pass"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Reach End, Reverse Direction",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            6,
+            19
+          ],
+          "to": [
+            -6,
+            19
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shuffle",
+          "from": [
+            18,
+            19
+          ],
+          "to": [
+            6,
+            19
+          ]
+        }
+      ],
+      "cues": [
+        "Reverse at the boundary \u2014 stay low through the change",
+        "Keep passing \u2014 no pause at the turn",
+        "Feet quiet, hips stay square"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Reactive \u2014 Leader Changes Direction",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            -6,
+            19
+          ],
+          "to": [
+            10,
+            19
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shuffle",
+          "from": [
+            6,
+            19
+          ],
+          "to": [
+            20,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            10,
+            19
+          ],
+          "to": [
+            -8,
+            19
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shuffle",
+          "from": [
+            20,
+            19
+          ],
+          "to": [
+            4,
+            19
+          ]
+        }
+      ],
+      "cues": [
+        "P1 is the leader \u2014 change direction anytime",
+        "P2 reacts and mirrors \u2014 stay level with your partner",
+        "Pass stays continuous through every direction change"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -6,
+        19
+      ],
+      "to": [
+        -6,
+        19
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -6,
+        19
+      ],
+      "to": [
+        6,
+        19
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        6,
+        19
+      ],
+      "to": [
+        18,
+        19
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        10,
+        19
+      ],
+      "to": [
+        20,
+        19
+      ]
+    }
+  ],
+  "notes": "Two players face each other and lateral shuffle in the same direction while continuously chest passing a medicine ball \u2014 no stopping to pass, no crossover steps, hips low throughout. Progress to reactive format where one player leads direction changes and the other mirrors, converting the drill to live defensive footwork."
+}

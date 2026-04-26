@@ -1,0 +1,321 @@
+{
+  "drill_slug": "drill-wing-to-top-combination-live-ball-move-shooting",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "passer",
+      "id": "P2",
+      "x": 0,
+      "y": 16
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "role": "cone",
+      "id": "C3",
+      "x": -18,
+      "y": 22
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Right Wing \u2014 Catch & Two-Foot Stop",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            18,
+            24
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            0,
+            16
+          ],
+          "to": [
+            18,
+            24
+          ]
+        }
+      ],
+      "cues": [
+        "Two-foot stop past the arc \u2014 both feet land together",
+        "Chest up, hips low, live-ball position",
+        "Either pivot foot is available \u2014 don't give it away"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Right Wing \u2014 Combo Move & Shoot",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            18,
+            24
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            18,
+            24
+          ],
+          "to": [
+            18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Sell the fake before you shoot \u2014 make it game-realistic",
+        "Jab, jab-jumper, shot-fake-and-shoot, or step-back \u2014 your choice",
+        "Let the move create space, then rise into the shot"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Wing-to-Top Cut & Catch",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            33
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            0,
+            16
+          ],
+          "to": [
+            0,
+            33
+          ]
+        }
+      ],
+      "cues": [
+        "Relocate at game speed \u2014 don't walk between reps",
+        "Two-foot stop at the top, re-establish live-ball position"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Top of Key \u2014 Combo Move & Shoot",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Step-back creates the most space at the top \u2014 use it",
+        "Feet quiet on the catch, then explode into the move",
+        "Stay balanced through the combo \u2014 don't fade sideways"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Left Wing \u2014 Combo Move & Shoot",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -18,
+            24
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            0,
+            16
+          ],
+          "to": [
+            -18,
+            24
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -18,
+            24
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Mirror the right-side reps \u2014 same moves, weak side",
+        "Sell every fake the same way you would against a live defender"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Free Throws \u2014 Pressure Simulation",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "5 FTs after each set of 10 \u2014 simulate late-game pressure",
+        "Same routine every time \u2014 feet quiet, shooting elbow in",
+        "Track makes: hold yourself to the benchmark"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        16
+      ],
+      "to": [
+        18,
+        24
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        18,
+        24
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        16
+      ],
+      "to": [
+        0,
+        33
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        0,
+        16
+      ],
+      "to": [
+        -18,
+        24
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        0,
+        19
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Player works the right wing \u2192 top \u2192 left wing arc, catching on a two-foot stop at each spot and executing a combo live-ball move (jab, shot-fake, or step-back) before shooting at game speed. Interleave 5 free throws between every set of 10 field-goal attempts; target 60% from the field across 60 attempts per full session."
+}

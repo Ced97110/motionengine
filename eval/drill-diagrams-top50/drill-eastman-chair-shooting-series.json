@@ -1,0 +1,729 @@
+{
+  "drill_slug": "drill-eastman-chair-shooting-series",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 24
+    },
+    {
+      "role": "rebounder",
+      "id": "R1",
+      "x": 0,
+      "y": 5
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -6,
+      "y": 18
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 6,
+      "y": 18
+    },
+    {
+      "role": "cone",
+      "id": "C3",
+      "x": -18,
+      "y": 8
+    },
+    {
+      "role": "cone",
+      "id": "C4",
+      "x": 18,
+      "y": 8
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Intensity Layup \u2014 figure-8 at elbows",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            24
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            3,
+            5
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            3,
+            5
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            -3,
+            5
+          ]
+        },
+        {
+          "actor": "R1",
+          "type": "move",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            0,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Cut wide around the chair \u2014 don't shortcut it",
+        "Get low to pick up the ball, rise into the layup",
+        "4 layups in 15 seconds \u2014 push the pace"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Elbow Jump Shot \u2014 fake then cut",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            24
+          ],
+          "to": [
+            -4,
+            21
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -4,
+            21
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "R1",
+          "type": "move",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            0,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Sell the fake with your eyes and first step",
+        "Square your feet to the basket before you shoot \u2014 not a half-square",
+        "Feet quiet on the catch, low hips into the shot"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Reverse Pivot \u2014 past the chair, spin back",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            24
+          ],
+          "to": [
+            8,
+            17
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            8,
+            17
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            -8,
+            17
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -8,
+            17
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "R1",
+          "type": "move",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            0,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Go past the chair, then reverse pivot \u2014 sell the overcut first",
+        "Stay low through the pivot, don't pop up early",
+        "Come off the back side of the chair already in shot-ready position"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Four Chairs \u2014 perimeter sequence",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -5,
+            7
+          ],
+          "to": [
+            -18,
+            8
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -18,
+            8
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -18,
+            8
+          ],
+          "to": [
+            18,
+            8
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            18,
+            8
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            18,
+            8
+          ],
+          "to": [
+            -6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -6,
+            18
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "R1",
+          "type": "move",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            0,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Hit all four spots in order \u2014 no lazy jog between chairs",
+        "Low to high on every pick-up, same mechanics at every spot",
+        "Rebounder: ball back on the chair before the shooter arrives"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Figure-8 Shooting \u2014 baseline to elbow loop",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            12,
+            22
+          ],
+          "to": [
+            18,
+            8
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            18,
+            8
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            18,
+            8
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            18,
+            8
+          ]
+        },
+        {
+          "actor": "R1",
+          "type": "move",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            0,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Tight loop around each chair \u2014 don't drift wide and waste steps",
+        "Pick up the ball low, rise straight into your shot",
+        "Mirror drill on the left side for equal reps"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Flare Screen \u2014 cut off imaginary screen to arc",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            14,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            14,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            14,
+            22
+          ],
+          "to": [
+            18,
+            10
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            18,
+            10
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "R1",
+          "type": "move",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            0,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Set up the flare with a hard step toward the basket first",
+        "Come off the screen shoulder-to-shoulder \u2014 tight cut",
+        "Hands ready before you reach the chair \u2014 no late lift"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 0,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -18,
+        8
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        18,
+        8
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        18,
+        8
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        14,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        18,
+        10
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Six chair-drill progressions building the low-to-high shooting habit \u2014 player must get hips down to pick up every ball, forcing the same mechanics they need in games. Run each drill for set time or makes, keep the rebounder active, and demand perfect feet on every rep before adding speed."
+}

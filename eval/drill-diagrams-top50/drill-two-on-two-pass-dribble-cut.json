@@ -1,0 +1,344 @@
+{
+  "drill_slug": "drill-two-on-two-pass-dribble-cut",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "role": "cutter",
+      "id": "P2",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": 1,
+      "y": 31
+    },
+    {
+      "role": "defender",
+      "id": "X2",
+      "x": 16,
+      "y": 24
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Middle Cut \u2014 Defender Sags",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "backpedal",
+          "from": [
+            1,
+            31
+          ],
+          "to": [
+            1,
+            27
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            2,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            2,
+            19
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            2,
+            19
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "X1 sags \u2014 that's your cue to middle-cut",
+        "Split the gap between ball and defender",
+        "Catch on the move, attack the rim"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Backdoor Cut \u2014 Defender Overplays",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            16,
+            24
+          ],
+          "to": [
+            14,
+            23
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            18,
+            8
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            18,
+            8
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            18,
+            8
+          ],
+          "to": [
+            5,
+            4
+          ]
+        }
+      ],
+      "cues": [
+        "Overplay in the lane \u2014 go backdoor immediately",
+        "Defender's eyes on ball? Push behind and go",
+        "Lead pass to the basket \u2014 make it catchable"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "V-Cut \u2014 Proper Denial, Reverse Ball",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            18,
+            15
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            18,
+            15
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -10,
+            20
+          ]
+        }
+      ],
+      "cues": [
+        "No gap available \u2014 V-cut to get open",
+        "Sell the drive step, push back out",
+        "Every player moves on every pass \u2014 fill the space"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Live 2-on-2 \u2014 Read and React",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -6,
+            28
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            1,
+            31
+          ],
+          "to": [
+            -5,
+            27
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            16,
+            24
+          ],
+          "to": [
+            2,
+            21
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            -6,
+            28
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "No assigned cut \u2014 read what the defense gives you",
+        "Ball moves by pass or dribble \u2014 that triggers your cut",
+        "Rocker step or pump fake if they close out hard",
+        "Feet quiet on the catch before you attack"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        2,
+        19
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        18,
+        8
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -6,
+        28
+      ],
+      "to": [
+        0,
+        19
+      ]
+    }
+  ],
+  "notes": "Run each cut type separately for 1 minute before combining \u2014 defenders should exaggerate the cue (deep sag, heavy overplay, clean denial) so players read the trigger, not guess. Rotate offense to defense to end of line every minute; reinforce all four motion-offense rules after each rotation."
+}

@@ -1,0 +1,385 @@
+{
+  "drill_slug": "drill-eight-point-defensive-drill",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": 16,
+      "y": 22
+    },
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "coach",
+      "id": "C1",
+      "x": 6,
+      "y": 18
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Jump to Ball + Post Defense",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            6,
+            18
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            16,
+            22
+          ],
+          "to": [
+            14,
+            20
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            5,
+            7
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            4,
+            8
+          ]
+        }
+      ],
+      "cues": [
+        "Pass triggers jump-to-the-ball \u2014 X1 closes gap immediately",
+        "Force backdoor by cutting off the wing",
+        "X1 fronts or three-quarters at the low block \u2014 no easy entry"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Corner Denial + 1-on-1",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            5,
+            7
+          ],
+          "to": [
+            22,
+            4
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            20,
+            5
+          ]
+        },
+        {
+          "actor": "C1",
+          "type": "pass",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            22,
+            4
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            22,
+            4
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "X1 stays denial on the break to corner \u2014 hand in the passing lane",
+        "If P1 overcuts, make the backdoor available",
+        "Ball caught \u2014 P1 squares triple-threat, play it live"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Weak-Side Interception Stance",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            22,
+            4
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            20,
+            5
+          ],
+          "to": [
+            -12,
+            18
+          ]
+        },
+        {
+          "actor": "C1",
+          "type": "pass",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "X1 finds interception stance: two-thirds to coach, one-third to P1",
+        "One step off the direct passing line",
+        "Coach rolls it hard \u2014 X1 pivots and picks it off"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Dribble Closeout",
+      "duration_s": 35,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            -12,
+            18
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "C1",
+          "type": "dribble",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            -14,
+            4
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -14,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "X1 returns ball to coach, then closes out on the driving coach",
+        "Low hips, push steps \u2014 close the gap without fouling",
+        "Cut off baseline or middle drive angle"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Lob Closeout + Flash Pivot Denial",
+      "duration_s": 55,
+      "action_paths": [
+        {
+          "actor": "C1",
+          "type": "pass",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            -14,
+            5
+          ],
+          "to": [
+            -16,
+            20
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -6,
+            15
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -16,
+            20
+          ],
+          "to": [
+            -5,
+            14
+          ]
+        },
+        {
+          "actor": "C1",
+          "type": "pass",
+          "from": [
+            6,
+            18
+          ],
+          "to": [
+            -6,
+            15
+          ]
+        }
+      ],
+      "cues": [
+        "Lob tossed \u2014 X1 sprints closeout, feet quiet on arrival",
+        "Play 1-on-1 from triple-threat",
+        "Ball returned to coach \u2014 P1 flash pivots, X1 denies the cut",
+        "X1 stays between P1 and the ball \u2014 no free catches in the paint"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        6,
+        18
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        22,
+        4
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        6,
+        18
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        6,
+        18
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    }
+  ],
+  "notes": "Chain all 8 fundamental defensive situations in one rep \u2014 run strong-side four first, then weak-side four without a break. Coach controls tempo; spend extra time on whichever point breaks down."
+}

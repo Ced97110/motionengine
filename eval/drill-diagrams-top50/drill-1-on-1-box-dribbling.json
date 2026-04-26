@@ -1,0 +1,382 @@
+{
+  "drill_slug": "drill-1-on-1-box-dribbling",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "O1",
+      "x": 0,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "D1",
+      "x": 0,
+      "y": 23.5
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Set the Box",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "move",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            0,
+            22
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "move",
+          "from": [
+            0,
+            23.5
+          ],
+          "to": [
+            0,
+            23.5
+          ]
+        }
+      ],
+      "cues": [
+        "Both players inside the imaginary box at top of key",
+        "Box is free-throw line width, 2-3 ft deep",
+        "Defense: get a chest away and get low"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Strong Dribble & Rocker",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            0,
+            21
+          ]
+        },
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            0,
+            21
+          ],
+          "to": [
+            0,
+            23
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            0,
+            23.5
+          ],
+          "to": [
+            0,
+            22.5
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            0,
+            22.5
+          ],
+          "to": [
+            0,
+            23.5
+          ]
+        }
+      ],
+      "cues": [
+        "Offense: pound the ball low and hard \u2014 protect the rock",
+        "Rocker: sell the forward step, snap back without picking up the dribble",
+        "Defense: take it \u2014 hands active, stay legal",
+        "Keep eyes up, read the defender"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Rocker-to-Crossover",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            0,
+            21
+          ]
+        },
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            0,
+            21
+          ],
+          "to": [
+            -2,
+            22
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            0,
+            23
+          ],
+          "to": [
+            -1.5,
+            22
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            -1.5,
+            22
+          ],
+          "to": [
+            0,
+            23
+          ]
+        }
+      ],
+      "cues": [
+        "Rocker first \u2014 make the defender bite \u2014 then rip the crossover low",
+        "Crossover must stay below the knees",
+        "Defense: force the move, then recover hard",
+        "Stay in the box \u2014 stepping out is cheating yourself"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Switch Dribble Under Pressure",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            -2,
+            22
+          ],
+          "to": [
+            2,
+            22
+          ]
+        },
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            2,
+            22
+          ],
+          "to": [
+            -1,
+            22
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            -1.5,
+            22
+          ],
+          "to": [
+            2.5,
+            22
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            2.5,
+            22
+          ],
+          "to": [
+            -0.5,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "Switch dribble: smooth and quick \u2014 not casual",
+        "Transfer low to avoid deflection",
+        "Defense: attack the hand change \u2014 make it difficult",
+        "Neither player leaves the box \u2014 reset if you step out"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "60-Second Full Pressure",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            0,
+            22
+          ],
+          "to": [
+            2,
+            21
+          ]
+        },
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            2,
+            21
+          ],
+          "to": [
+            -2,
+            23
+          ]
+        },
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            -2,
+            23
+          ],
+          "to": [
+            1,
+            22
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            0,
+            23.5
+          ],
+          "to": [
+            2.5,
+            22
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            2.5,
+            22
+          ],
+          "to": [
+            -1.5,
+            23.5
+          ]
+        },
+        {
+          "actor": "D1",
+          "type": "shuffle",
+          "from": [
+            -1.5,
+            23.5
+          ],
+          "to": [
+            1.5,
+            22.5
+          ]
+        }
+      ],
+      "cues": [
+        "All four moves \u2014 offense mixes them freely under max pressure",
+        "Defense: take it. Offense: protect it. Neither one leaves the box.",
+        "Low hips, feet quiet \u2014 survive the full 60",
+        "Stepping out resets the rep \u2014 no escape valves"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        22
+      ],
+      "to": [
+        0,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        22
+      ],
+      "to": [
+        0,
+        21
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        21
+      ],
+      "to": [
+        -2,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -2,
+        22
+      ],
+      "to": [
+        2,
+        22
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        2,
+        22
+      ],
+      "to": [
+        -2,
+        23
+      ]
+    }
+  ],
+  "notes": "Offense works all four dribble moves \u2014 strong dribble, rocker, rocker-to-crossover, switch \u2014 inside a confined box at the top of the key against maximum defensive pressure. Progress from 15-second intervals up to 60 seconds; confinement is the constraint, so reset immediately any time either player steps outside the box."
+}

@@ -1,0 +1,370 @@
+{
+  "drill_slug": "drill-follow-the-leader-shooting-workouts",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "shooter",
+      "id": "P2",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": 0,
+      "y": 19
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "P1 throws out & shoots",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            -14,
+            26
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -14,
+            26
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "P1 picks the spot \u2014 choose your best shot, not the easiest",
+        "Feet quiet on catch, low hips before shooting",
+        "Outside 5 feet only \u2014 no layups"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "P2 mirrors exact shot",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            -14,
+            26
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            -14,
+            26
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "P2 sprints to the exact same spot \u2014 no shortcuts",
+        "Mirror the move, mirror the footwork",
+        "Same spot, same action \u2014 that is the drill"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Sprint rebound & reset",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -14,
+            26
+          ],
+          "to": [
+            0,
+            4
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            4
+          ],
+          "to": [
+            12,
+            24
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -14,
+            26
+          ],
+          "to": [
+            0,
+            4
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            0,
+            4
+          ],
+          "to": [
+            -12,
+            24
+          ]
+        }
+      ],
+      "cues": [
+        "Sprint after every rebound \u2014 no walking ever",
+        "Shooter follows shot, rebounder outlets and resets",
+        "Alternate roles each rep through the full set of 10"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Live-ball move variant",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            6,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            6,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -12,
+            24
+          ],
+          "to": [
+            6,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            6,
+            22
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Jab-step, shot fake, rip-step, or step-back \u2014 P1 calls the move",
+        "P2 must replicate the exact live-ball action",
+        "Keep shooting elbow in, eyes on rim through the release"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Free throws after set",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "5 free throws each \u2014 mandatory, no skipping",
+        "Step to the line after a hard set \u2014 this is late-game conditioning",
+        "Routine: feet set, deep breath, same release every time",
+        "Target 17 of 20 (85%) over the full workout"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -18,
+        22
+      ],
+      "to": [
+        -14,
+        26
+      ]
+    },
+    {
+      "phase_index": 0,
+      "from": [
+        -14,
+        26
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        4
+      ],
+      "to": [
+        -14,
+        26
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -14,
+        26
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        0
+      ],
+      "to": [
+        0,
+        4
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        25
+      ],
+      "to": [
+        6,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        6,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        0,
+        19
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Follow the Leader is a mirror-shooting workout for pairs: P1 picks the spot and move, P2 must replicate exactly \u2014 spot, footwork, and action \u2014 then both sprint rebounds and swap. Run 4 sets of 10 field goal attempts each, followed by 5 mandatory free throws per player per set (40 FGA + 20 FTs total); variants cover three-point spot shots, live-ball combination moves, rip-step moves, shot fakes, and open-court dribble moves."
+}

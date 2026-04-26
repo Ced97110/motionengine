@@ -1,0 +1,337 @@
+{
+  "drill_slug": "drill-2v2-full-court-defense",
+  "court": "full",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "O1",
+      "x": -12,
+      "y": 47
+    },
+    {
+      "role": "cutter",
+      "id": "O2",
+      "x": 10,
+      "y": 47
+    },
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": -10,
+      "y": 49
+    },
+    {
+      "role": "defender",
+      "id": "X2",
+      "x": 8,
+      "y": 49
+    },
+    {
+      "role": "coach",
+      "id": "C1",
+      "x": 0,
+      "y": 94
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Inbound & V-Position",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "move",
+          "from": [
+            -12,
+            47
+          ],
+          "to": [
+            -12,
+            60
+          ]
+        },
+        {
+          "actor": "O2",
+          "type": "move",
+          "from": [
+            10,
+            47
+          ],
+          "to": [
+            10,
+            60
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -10,
+            49
+          ],
+          "to": [
+            -10,
+            58
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            8,
+            49
+          ],
+          "to": [
+            2,
+            57
+          ]
+        }
+      ],
+      "cues": [
+        "X2 jumps to the ball on the inbound pass",
+        "Get in the middle of a V \u2014 see your man and the ball",
+        "Low hips, feet quiet, ready to fake at the ball"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "DHO \u2014 Slide Through",
+      "duration_s": 12,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            -12,
+            60
+          ],
+          "to": [
+            0,
+            65
+          ]
+        },
+        {
+          "actor": "O2",
+          "type": "cut",
+          "from": [
+            10,
+            60
+          ],
+          "to": [
+            0,
+            65
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            -10,
+            58
+          ],
+          "to": [
+            -4,
+            63
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "cut",
+          "from": [
+            2,
+            57
+          ],
+          "to": [
+            0,
+            65
+          ]
+        }
+      ],
+      "cues": [
+        "X1 slides back to let X2 through \u2014 don't fight the screen",
+        "X2 slides through the gap and picks up the new ball handler",
+        "Stay connected on the DHO \u2014 no free catches"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Run & Jump",
+      "duration_s": 12,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            0,
+            65
+          ],
+          "to": [
+            -10,
+            72
+          ]
+        },
+        {
+          "actor": "O2",
+          "type": "cut",
+          "from": [
+            0,
+            65
+          ],
+          "to": [
+            8,
+            70
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "cut",
+          "from": [
+            0,
+            65
+          ],
+          "to": [
+            -10,
+            72
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "cut",
+          "from": [
+            -4,
+            63
+          ],
+          "to": [
+            8,
+            70
+          ]
+        }
+      ],
+      "cues": [
+        "X2 run-and-jump at the dribbler \u2014 make him pick it up or change direction",
+        "X1 sprints to cover O2 the instant X2 commits",
+        "Force the ball uphill, away from the basket"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Help & Recover / Finish",
+      "duration_s": 16,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "pass",
+          "from": [
+            -10,
+            72
+          ],
+          "to": [
+            8,
+            70
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "backpedal",
+          "from": [
+            -10,
+            72
+          ],
+          "to": [
+            -4,
+            75
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            8,
+            70
+          ],
+          "to": [
+            8,
+            78
+          ]
+        },
+        {
+          "actor": "O2",
+          "type": "dribble",
+          "from": [
+            8,
+            70
+          ],
+          "to": [
+            6,
+            80
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "cut",
+          "from": [
+            -4,
+            75
+          ],
+          "to": [
+            4,
+            80
+          ]
+        }
+      ],
+      "cues": [
+        "Every pass pulls the off-ball defender toward the ball",
+        "No reaching \u2014 pressure through your feet, not your arms",
+        "No defensive safety net \u2014 own your assignment all the way to the rim"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        94
+      ],
+      "to": [
+        -12,
+        60
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -12,
+        60
+      ],
+      "to": [
+        0,
+        65
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        65
+      ],
+      "to": [
+        -10,
+        72
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -10,
+        72
+      ],
+      "to": [
+        8,
+        70
+      ]
+    }
+  ],
+  "notes": "Two defenders pressure two offensive players the length of the floor with no help behind them. Progress from slide-through DHO coverage, to run-and-jump switches, to trapping the DHO \u2014 each rep demands ball pressure, V-position off the ball, and instant help-and-recover on every pass."
+}

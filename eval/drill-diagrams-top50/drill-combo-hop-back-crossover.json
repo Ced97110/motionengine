@@ -1,0 +1,359 @@
+{
+  "drill_slug": "drill-combo-hop-back-crossover",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -6,
+      "y": 22
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": -6,
+      "y": 19
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": 6,
+      "y": 19
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Live dribble \u2014 left-hand hop back",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -6,
+            22
+          ],
+          "to": [
+            -6,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -6,
+            22
+          ],
+          "to": [
+            -6,
+            17
+          ]
+        }
+      ],
+      "cues": [
+        "Start with a live left-hand dribble at the arc",
+        "One dribble, then hop back \u2014 low hips, feet quiet on landing",
+        "Stay on your toes, ready to cross"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Crossover right \u2014 attack hip",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -6,
+            17
+          ],
+          "to": [
+            2,
+            17
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            2,
+            17
+          ],
+          "to": [
+            4,
+            10
+          ]
+        }
+      ],
+      "cues": [
+        "Cross immediately at roll-out \u2014 not after you stand up",
+        "Ball at or below knee on the crossover",
+        "Attack the defender's near hip, not the space behind"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Finish right side \u2014 pull-up or floater",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Hop back. Cross. Explode.",
+        "Shoot pull-up, layup, or floater \u2014 read the defense",
+        "5 reps left-to-right, tracking makes"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Free-throw routine",
+      "duration_s": 75,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            0,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Step to the line \u2014 full pre-shot routine every rep",
+        "5 FTs; goal is 85%",
+        "Reset mentally before stepping back to the arc"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Mirror \u2014 right-hand hop back, crossover left",
+      "duration_s": 90,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            6,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            6,
+            22
+          ],
+          "to": [
+            6,
+            17
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            6,
+            17
+          ],
+          "to": [
+            -2,
+            17
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -2,
+            17
+          ],
+          "to": [
+            -4,
+            10
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -4,
+            10
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Same sequence, opposite hand \u2014 no shortcuts",
+        "Crossover must be just as low and immediate on this side",
+        "5 reps right-to-left, then 5 FTs; track all makes"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "2-dribble variation both sides",
+      "duration_s": 195,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -6,
+            22
+          ],
+          "to": [
+            -6,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -6,
+            22
+          ],
+          "to": [
+            -6,
+            17
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -6,
+            17
+          ],
+          "to": [
+            4,
+            10
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            0,
+            0
+          ]
+        }
+      ],
+      "cues": [
+        "Two initiating dribbles before the hop back \u2014 same crossover timing rule",
+        "Extra dribbles should sell the drive before the hop back",
+        "Complete 4 sets total; prioritize clean reps over volume"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -6,
+        22
+      ],
+      "to": [
+        -6,
+        17
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -6,
+        17
+      ],
+      "to": [
+        4,
+        10
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        4,
+        10
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        19
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        6,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        -6,
+        22
+      ],
+      "to": [
+        0,
+        0
+      ]
+    }
+  ],
+  "notes": "Run 4 sets of 5 combos each side \u2014 left-hand hop back crossing to the right, then right-hand crossing to the left \u2014 with 5 FTs between each set; crossover must happen at roll-out, ball stays at or below the knee, and the attack targets the defender's near hip every rep."
+}

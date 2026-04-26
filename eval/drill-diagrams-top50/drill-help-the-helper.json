@@ -1,0 +1,413 @@
+{
+  "drill_slug": "drill-help-the-helper",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 28
+    },
+    {
+      "role": "wing_offense",
+      "id": "P2",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "wing_offense",
+      "id": "P3",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": 1,
+      "y": 30
+    },
+    {
+      "role": "defender",
+      "id": "X2",
+      "x": 14,
+      "y": 23
+    },
+    {
+      "role": "defender",
+      "id": "X3",
+      "x": -10,
+      "y": 20
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Flat Triangle Positioning",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            1,
+            30
+          ],
+          "to": [
+            1,
+            29
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            14,
+            23
+          ],
+          "to": [
+            12,
+            24
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            -10,
+            20
+          ],
+          "to": [
+            -11,
+            19
+          ]
+        }
+      ],
+      "cues": [
+        "Jump to the ball \u2014 two-thirds to ball, one-third to your man",
+        "X3 stays in flat triangle on weak side",
+        "All three defenders move every pass"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Denial & Fence Slide",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            12,
+            24
+          ],
+          "to": [
+            15,
+            22
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "shuffle",
+          "from": [
+            -11,
+            19
+          ],
+          "to": [
+            -13,
+            21
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            1,
+            29
+          ],
+          "to": [
+            2,
+            27
+          ]
+        }
+      ],
+      "cues": [
+        "X2 fence-slide \u2014 chest open to ball, hand in passing lane",
+        "X3 denies weak-side wing, never lose sight of ball",
+        "X1 pressures 1 after dribble pickup"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Drive & Gap Close",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            4,
+            22
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "cut",
+          "from": [
+            2,
+            27
+          ],
+          "to": [
+            6,
+            22
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "cut",
+          "from": [
+            -13,
+            21
+          ],
+          "to": [
+            -2,
+            18
+          ]
+        }
+      ],
+      "cues": [
+        "X1 closes the gap \u2014 low hips, feet quiet, meet the drive",
+        "X3 rotates to stop ball if P2 splits X1 and X2",
+        "X3 ready to draw charge on continued penetration"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Help the Helper",
+      "duration_s": 40,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            4,
+            22
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "cut",
+          "from": [
+            -2,
+            18
+          ],
+          "to": [
+            -4,
+            22
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "backpedal",
+          "from": [
+            -4,
+            22
+          ],
+          "to": [
+            -13,
+            22
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "cut",
+          "from": [
+            6,
+            22
+          ],
+          "to": [
+            -8,
+            18
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            15,
+            22
+          ],
+          "to": [
+            13,
+            24
+          ]
+        }
+      ],
+      "cues": [
+        "X3 hedges toward P1 on pass-back, then retreats to P3 \u2014 help the helper",
+        "X1 drops baseline to cover P3 cut",
+        "No free cuts \u2014 everyone accounts for their man after rotation"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Rotate & Repeat",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            28
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            4,
+            22
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "move",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            0,
+            28
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            -8,
+            18
+          ],
+          "to": [
+            14,
+            23
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "move",
+          "from": [
+            13,
+            24
+          ],
+          "to": [
+            -10,
+            20
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            -13,
+            22
+          ],
+          "to": [
+            1,
+            29
+          ]
+        }
+      ],
+      "cues": [
+        "Offense rotates 1\u21922\u21923\u21921, defense rotates X1\u2192X2\u2192X3\u2192X1",
+        "Every player defends both point and wing \u2014 no shortcuts"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        28
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        4,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        4,
+        22
+      ],
+      "to": [
+        0,
+        28
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        0,
+        28
+      ],
+      "to": [
+        0,
+        28
+      ]
+    }
+  ],
+  "notes": "Three defenders continuously cycle through denial, gap-close, and rotation responsibilities as the ball moves around the perimeter \u2014 the key teaching moment is X3 hedging toward the point on a pass-back and sprinting back to the weak-side wing before the offense can attack. Run all three phases, then rotate every player through all spots so nobody only learns one defensive role."
+}

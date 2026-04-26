@@ -1,0 +1,464 @@
+{
+  "drill_slug": "drill-control-dribble-youth",
+  "court": "full",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -9,
+      "y": 1
+    },
+    {
+      "role": "ball_handler",
+      "id": "P2",
+      "x": -3,
+      "y": 1
+    },
+    {
+      "role": "ball_handler",
+      "id": "P3",
+      "x": 3,
+      "y": 1
+    },
+    {
+      "role": "ball_handler",
+      "id": "P4",
+      "x": 9,
+      "y": 1
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Control dribble down \u2014 right hand",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -9,
+            1
+          ],
+          "to": [
+            -11,
+            23
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -11,
+            23
+          ],
+          "to": [
+            -7,
+            46
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            -3,
+            1
+          ],
+          "to": [
+            -5,
+            23
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            -5,
+            23
+          ],
+          "to": [
+            -1,
+            46
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "dribble",
+          "from": [
+            3,
+            1
+          ],
+          "to": [
+            5,
+            23
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "dribble",
+          "from": [
+            5,
+            23
+          ],
+          "to": [
+            1,
+            46
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "dribble",
+          "from": [
+            9,
+            1
+          ],
+          "to": [
+            11,
+            23
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "dribble",
+          "from": [
+            11,
+            23
+          ],
+          "to": [
+            7,
+            46
+          ]
+        }
+      ],
+      "cues": [
+        "Low hips \u2014 more crouched than your speed dribble",
+        "Off arm bent and parallel to the floor, shield the ball",
+        "Eyes up \u2014 never look at the ball",
+        "Dribble with the finger pads, ball beside the knee"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Pivot at far end",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -7,
+            46
+          ],
+          "to": [
+            -9,
+            93
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            -1,
+            46
+          ],
+          "to": [
+            -3,
+            93
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            1,
+            46
+          ],
+          "to": [
+            3,
+            93
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            7,
+            46
+          ],
+          "to": [
+            9,
+            93
+          ]
+        }
+      ],
+      "cues": [
+        "Reverse or front pivot \u2014 stay low through the turn",
+        "Protect the ball as you change direction",
+        "Reset off arm before the first dribble back"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Control dribble back \u2014 left hand",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -9,
+            93
+          ],
+          "to": [
+            -11,
+            70
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -11,
+            70
+          ],
+          "to": [
+            -7,
+            48
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            -3,
+            93
+          ],
+          "to": [
+            -5,
+            70
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            -5,
+            70
+          ],
+          "to": [
+            -1,
+            48
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "dribble",
+          "from": [
+            3,
+            93
+          ],
+          "to": [
+            5,
+            70
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "dribble",
+          "from": [
+            5,
+            70
+          ],
+          "to": [
+            1,
+            48
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "dribble",
+          "from": [
+            9,
+            93
+          ],
+          "to": [
+            11,
+            70
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "dribble",
+          "from": [
+            11,
+            70
+          ],
+          "to": [
+            7,
+            48
+          ]
+        }
+      ],
+      "cues": [
+        "Switch to left hand \u2014 same low, shielded position",
+        "Zigzag one step off the straight line, eyes ahead",
+        "Keep the ball away from your foot to protect it"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Jump-stop & chest pass",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -7,
+            48
+          ],
+          "to": [
+            -9,
+            16
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "pass",
+          "from": [
+            -9,
+            16
+          ],
+          "to": [
+            -9,
+            1
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            -1,
+            48
+          ],
+          "to": [
+            -3,
+            16
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "pass",
+          "from": [
+            -3,
+            16
+          ],
+          "to": [
+            -3,
+            1
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "move",
+          "from": [
+            1,
+            48
+          ],
+          "to": [
+            3,
+            16
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "pass",
+          "from": [
+            3,
+            16
+          ],
+          "to": [
+            3,
+            1
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            7,
+            48
+          ],
+          "to": [
+            9,
+            16
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "pass",
+          "from": [
+            9,
+            16
+          ],
+          "to": [
+            9,
+            1
+          ]
+        }
+      ],
+      "cues": [
+        "Jump-stop on two feet, feet quiet on landing",
+        "Chest pass to the next player in line \u2014 step into it",
+        "Then sprint to the back of the line"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -9,
+        1
+      ],
+      "to": [
+        -7,
+        46
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        -7,
+        46
+      ],
+      "to": [
+        -9,
+        93
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        -9,
+        93
+      ],
+      "to": [
+        -7,
+        48
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        -7,
+        48
+      ],
+      "to": [
+        -9,
+        1
+      ]
+    }
+  ],
+  "notes": "Four full-court lanes, right hand down and left hand back, with a pivot at the far end and a jump-stop chest pass to finish. Drive home the difference between control dribble \u2014 low hips, off arm shielding, ball beside the knee \u2014 and the speed dribble used in the open floor."
+}

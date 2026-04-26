@@ -1,0 +1,409 @@
+{
+  "drill_slug": "drill-dribble-tag-s15",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -1.5,
+      "y": 25
+    },
+    {
+      "role": "ball_handler",
+      "id": "P2",
+      "x": 1.5,
+      "y": 25
+    },
+    {
+      "role": "ball_handler",
+      "id": "P3",
+      "x": -16,
+      "y": 25
+    },
+    {
+      "role": "ball_handler",
+      "id": "P4",
+      "x": -13,
+      "y": 25
+    },
+    {
+      "role": "ball_handler",
+      "id": "P5",
+      "x": 13,
+      "y": 25
+    },
+    {
+      "role": "ball_handler",
+      "id": "P6",
+      "x": 16,
+      "y": 25
+    },
+    {
+      "role": "cone",
+      "id": "C1",
+      "x": 0,
+      "y": 25
+    },
+    {
+      "role": "cone",
+      "id": "C2",
+      "x": -14.5,
+      "y": 25
+    },
+    {
+      "role": "cone",
+      "id": "C3",
+      "x": 14.5,
+      "y": 25
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Enter circle, both dribbling",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -1.5,
+            25
+          ],
+          "to": [
+            -1.5,
+            25
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "dribble",
+          "from": [
+            1.5,
+            25
+          ],
+          "to": [
+            1.5,
+            25
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "dribble",
+          "from": [
+            -16,
+            25
+          ],
+          "to": [
+            -16,
+            25
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "dribble",
+          "from": [
+            -13,
+            25
+          ],
+          "to": [
+            -13,
+            25
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "dribble",
+          "from": [
+            13,
+            25
+          ],
+          "to": [
+            13,
+            25
+          ]
+        },
+        {
+          "actor": "P6",
+          "type": "dribble",
+          "from": [
+            16,
+            25
+          ],
+          "to": [
+            16,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "Eyes up \u2014 not on your ball",
+        "Ball low, body between you and opponent",
+        "Feet quiet, stay on the balls of your feet"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Fake and dart \u2014 strike the ball",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "cut",
+          "from": [
+            -1.5,
+            25
+          ],
+          "to": [
+            1.2,
+            25
+          ]
+        },
+        {
+          "actor": "P2",
+          "type": "cut",
+          "from": [
+            1.5,
+            25
+          ],
+          "to": [
+            -1.2,
+            25
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "cut",
+          "from": [
+            -16,
+            25
+          ],
+          "to": [
+            -13.3,
+            25
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "cut",
+          "from": [
+            -13,
+            25
+          ],
+          "to": [
+            -15.7,
+            25
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "cut",
+          "from": [
+            13,
+            25
+          ],
+          "to": [
+            15.7,
+            25
+          ]
+        },
+        {
+          "actor": "P6",
+          "type": "cut",
+          "from": [
+            16,
+            25
+          ],
+          "to": [
+            13.3,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "Strike when the ball leaves their palm \u2014 highest point",
+        "In-and-out fake first, then dart",
+        "Pull back fast after the swipe \u2014 don't lunge"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Ball knocked out \u2014 winner stays",
+      "duration_s": 10,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            1.5,
+            25
+          ],
+          "to": [
+            3,
+            27
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -13,
+            25
+          ],
+          "to": [
+            -11,
+            27
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            13,
+            25
+          ],
+          "to": [
+            15,
+            27
+          ]
+        }
+      ],
+      "cues": [
+        "Ball out of the circle \u2014 you lose, step out",
+        "Winner holds the circle",
+        "Next challenger steps in immediately"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "King of the Circle \u2014 challenger enters",
+      "duration_s": 20,
+      "action_paths": [
+        {
+          "actor": "P2",
+          "type": "move",
+          "from": [
+            3,
+            27
+          ],
+          "to": [
+            1.5,
+            25
+          ]
+        },
+        {
+          "actor": "P4",
+          "type": "move",
+          "from": [
+            -11,
+            27
+          ],
+          "to": [
+            -13,
+            25
+          ]
+        },
+        {
+          "actor": "P5",
+          "type": "move",
+          "from": [
+            15,
+            27
+          ],
+          "to": [
+            13,
+            25
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            -1.5,
+            25
+          ],
+          "to": [
+            -1.5,
+            25
+          ]
+        },
+        {
+          "actor": "P3",
+          "type": "dribble",
+          "from": [
+            -16,
+            25
+          ],
+          "to": [
+            -16,
+            25
+          ]
+        },
+        {
+          "actor": "P6",
+          "type": "dribble",
+          "from": [
+            16,
+            25
+          ],
+          "to": [
+            16,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "One new challenger only \u2014 King of the Circle",
+        "Keep intensity up, no standing around",
+        "Guards on one circle, bigs on another"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -1.5,
+        25
+      ],
+      "to": [
+        -1.5,
+        25
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        1.5,
+        25
+      ],
+      "to": [
+        3.5,
+        23
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        3.5,
+        23
+      ],
+      "to": [
+        5,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        1.5,
+        25
+      ],
+      "to": [
+        1.5,
+        25
+      ]
+    }
+  ],
+  "notes": "Run 1-minute rounds in all three court circles simultaneously \u2014 keep lines short and rotate winners fast. Progress to two balls per player once players can stay in their own dribble while looking up."
+}
