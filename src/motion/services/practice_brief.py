@@ -219,10 +219,17 @@ def _build_text_prompt(context: PracticeContext) -> str:
 
 
 _PROMPT_INSTRUCTIONS = (
-    "Compose a 5-7 block practice plan that fits the total duration."
+    "Compose a practice plan that fits the total duration."
     " Use the `emit_practice_plan` tool to return structured blocks.\n"
     "\n"
     "RULES:\n"
+    "- BLOCK COUNT — match block count to total duration so individual"
+    " blocks stay long enough to be useful. Hard caps:\n"
+    "  • 30 min → 4-5 blocks (do NOT exceed 6)\n"
+    "  • 45 min → 5-6 blocks (do NOT exceed 7)\n"
+    "  • 60 min → 5-7 blocks (do NOT exceed 7)\n"
+    "  • 90 min → 6-7 blocks (do NOT exceed 7)\n"
+    "  • 120 min → 7-8 blocks (do NOT exceed 8)\n"
     "- Each block has: drill_slug, duration_minutes (integer), reasoning"
     " (1-2 sentences in coach voice).\n"
     "- EVERY drill_slug MUST appear verbatim in the candidate list above."
