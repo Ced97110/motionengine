@@ -5727,6 +5727,37 @@
     "concept-power-pushup-principles",
     "drill-hip-strike-pushup"
   ],
+  "drill-cooldown-ankle-mobility": [
+    "concept-anatomy-ankle-complex",
+    "ankle-strengthening",
+    "ankle-proprioception-basketball",
+    "concept-basketball-recovery-strategies"
+  ],
+  "drill-cooldown-breath-recovery": [
+    "drill-cooldown-hip-flow",
+    "concept-anatomy-core-outer",
+    "concept-basketball-recovery-strategies",
+    "concept-mental-health-injury-recovery-basketball"
+  ],
+  "drill-cooldown-hip-flow": [
+    "drill-cooldown-breath-recovery",
+    "concept-anatomy-hip-flexor-complex",
+    "concept-anatomy-glute-max",
+    "concept-anatomy-core-outer",
+    "concept-basketball-recovery-strategies"
+  ],
+  "drill-cooldown-mindful-shooting": [
+    "concept-anatomy-wrist-complex",
+    "concept-anatomy-shoulder-girdle",
+    "concept-anatomy-elbow-complex",
+    "concept-free-throw-strategy",
+    "concept-quiet-eye-free-throw"
+  ],
+  "drill-cooldown-shoulder-circuit": [
+    "concept-anatomy-shoulder-girdle",
+    "concept-anatomy-wrist-complex",
+    "concept-basketball-recovery-strategies"
+  ],
   "drill-cossacks-small-space": [
     "concept-jump-chain-progression",
     "concept-agility-and-balance-training",

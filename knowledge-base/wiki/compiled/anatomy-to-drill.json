@@ -667,6 +667,12 @@
       "level": "beginner"
     },
     {
+      "drill": "drill-cooldown-ankle-mobility",
+      "duration_minutes": "5",
+      "emphasis": "primary",
+      "level": "beginner"
+    },
+    {
       "drill": "drill-cossacks-small-space",
       "duration_minutes": "3-5",
       "emphasis": "secondary",
@@ -3225,6 +3231,18 @@
       "level": "advanced"
     },
     {
+      "drill": "drill-cooldown-breath-recovery",
+      "duration_minutes": "3",
+      "emphasis": "primary",
+      "level": "beginner"
+    },
+    {
+      "drill": "drill-cooldown-hip-flow",
+      "duration_minutes": "7",
+      "emphasis": "secondary",
+      "level": "beginner"
+    },
+    {
       "drill": "drill-count-slide-pivot-savvy",
       "duration_minutes": "4",
       "emphasis": "secondary",
@@ -5345,6 +5363,12 @@
       "level": "advanced"
     },
     {
+      "drill": "drill-cooldown-mindful-shooting",
+      "duration_minutes": "10",
+      "emphasis": "secondary",
+      "level": "intermediate"
+    },
+    {
       "drill": "drill-curl-shot-off-screen",
       "duration_minutes": "15-30",
       "emphasis": "secondary",
@@ -6197,6 +6221,12 @@
       "duration_minutes": "5-10",
       "emphasis": "secondary",
       "level": "intermediate"
+    },
+    {
+      "drill": "drill-cooldown-hip-flow",
+      "duration_minutes": "7",
+      "emphasis": "primary",
+      "level": "beginner"
     },
     {
       "drill": "drill-cossacks-small-space",
@@ -8279,6 +8309,12 @@
     {
       "drill": "drill-control-dribble-youth",
       "duration_minutes": "5",
+      "emphasis": "primary",
+      "level": "beginner"
+    },
+    {
+      "drill": "drill-cooldown-hip-flow",
+      "duration_minutes": "7",
       "emphasis": "primary",
       "level": "beginner"
     },
@@ -11117,6 +11153,18 @@
       "level": "advanced"
     },
     {
+      "drill": "drill-cooldown-mindful-shooting",
+      "duration_minutes": "10",
+      "emphasis": "secondary",
+      "level": "intermediate"
+    },
+    {
+      "drill": "drill-cooldown-shoulder-circuit",
+      "duration_minutes": "5",
+      "emphasis": "primary",
+      "level": "beginner"
+    },
+    {
       "drill": "drill-dip-progression-chain",
       "duration_minutes": "10-20",
       "emphasis": "primary",
@@ -12194,6 +12242,18 @@
     },
     {
       "drill": "drill-control-dribble-youth",
+      "duration_minutes": "5",
+      "emphasis": "secondary",
+      "level": "beginner"
+    },
+    {
+      "drill": "drill-cooldown-mindful-shooting",
+      "duration_minutes": "10",
+      "emphasis": "primary",
+      "level": "intermediate"
+    },
+    {
+      "drill": "drill-cooldown-shoulder-circuit",
       "duration_minutes": "5",
       "emphasis": "secondary",
       "level": "beginner"

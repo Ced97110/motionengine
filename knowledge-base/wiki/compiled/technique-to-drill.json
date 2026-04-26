@@ -6297,6 +6297,14 @@
       "level": "intermediate"
     }
   ],
+  "free-throw-routine": [
+    {
+      "drill": "drill-cooldown-mindful-shooting",
+      "duration_minutes": "10",
+      "emphasis": "primary",
+      "level": "intermediate"
+    }
+  ],
   "free-throw-shooting": [
     {
       "drill": "drill-combination-hop-back-crossover-workout",

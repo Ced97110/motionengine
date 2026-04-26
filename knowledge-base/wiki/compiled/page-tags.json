@@ -7231,6 +7231,45 @@
     "explosive-power",
     "pushing"
   ],
+  "drill-cooldown-ankle-mobility": [
+    "cooldown",
+    "mobility",
+    "ankles",
+    "recovery",
+    "injury-prevention",
+    "all-levels"
+  ],
+  "drill-cooldown-breath-recovery": [
+    "cooldown",
+    "breathing",
+    "recovery",
+    "mental",
+    "all-levels"
+  ],
+  "drill-cooldown-hip-flow": [
+    "cooldown",
+    "mobility",
+    "hips",
+    "glutes",
+    "recovery",
+    "all-levels"
+  ],
+  "drill-cooldown-mindful-shooting": [
+    "cooldown",
+    "shooting",
+    "free-throw",
+    "focus",
+    "recovery",
+    "intermediate"
+  ],
+  "drill-cooldown-shoulder-circuit": [
+    "cooldown",
+    "mobility",
+    "shoulder",
+    "wrist",
+    "recovery",
+    "all-levels"
+  ],
   "drill-cossacks-small-space": [
     "conditioning",
     "lower-body-power",

@@ -201,6 +201,7 @@
     "drill-40-yard-square-single-leg-hop-backpedal",
     "drill-bunny-jumps-ladder",
     "drill-contralateral-kick-balance",
+    "drill-cooldown-ankle-mobility",
     "drill-crossover-shuffle-ladder",
     "drill-heel-and-toe-walks",
     "drill-hop-and-stick-balance",
@@ -299,6 +300,7 @@
     "drill-body-weight-squat-knee-rehab",
     "drill-bunny-jumps-ladder",
     "drill-contralateral-kick",
+    "drill-cooldown-ankle-mobility",
     "drill-heel-and-toe-walks",
     "drill-hopping-proprioception",
     "drill-in-place-ankle-jumps",
@@ -820,6 +822,7 @@
     "concept-technique-soft-landing-mechanics",
     "drill-ankling",
     "drill-band-lateral-walk",
+    "drill-cooldown-ankle-mobility",
     "play-black"
   ],
   "concept-anatomy-core-outer": [
@@ -835,12 +838,15 @@
     "concept-technique-soft-landing-mechanics",
     "drill-back-extension",
     "drill-bird-dog",
+    "drill-cooldown-breath-recovery",
+    "drill-cooldown-hip-flow",
     "drill-wood-chop",
     "play-black"
   ],
   "concept-anatomy-elbow-complex": [
     "concept-anatomy-shoulder-girdle",
-    "concept-anatomy-wrist-complex"
+    "concept-anatomy-wrist-complex",
+    "drill-cooldown-mindful-shooting"
   ],
   "concept-anatomy-glute-max": [
     "concept-anatomical-core-basketball",
@@ -855,6 +861,7 @@
     "concept-technique-soft-landing-mechanics",
     "drill-back-extension",
     "drill-band-lateral-walk",
+    "drill-cooldown-hip-flow",
     "drill-elevated-bridge-hold",
     "drill-reverse-hip-extension-hold",
     "exercise-barbell-hip-thrust-nsca",
@@ -872,16 +879,21 @@
     "concept-technique-dump-off-pass",
     "concept-technique-flash-cut",
     "concept-technique-hard-cut-to-paint",
+    "drill-cooldown-hip-flow",
     "exercise-hip-thrust",
     "play-black"
   ],
   "concept-anatomy-shoulder-girdle": [
     "concept-anatomy-elbow-complex",
-    "concept-anatomy-wrist-complex"
+    "concept-anatomy-wrist-complex",
+    "drill-cooldown-mindful-shooting",
+    "drill-cooldown-shoulder-circuit"
   ],
   "concept-anatomy-wrist-complex": [
     "concept-anatomy-elbow-complex",
-    "concept-anatomy-shoulder-girdle"
+    "concept-anatomy-shoulder-girdle",
+    "drill-cooldown-mindful-shooting",
+    "drill-cooldown-shoulder-circuit"
   ],
   "concept-ankle-proprioception": [
     "ankle-strengthening",
@@ -1699,7 +1711,11 @@
     "concept-velocity-based-training-basketball"
   ],
   "concept-basketball-recovery-strategies": [
-    "concept-basketball-load-management"
+    "concept-basketball-load-management",
+    "drill-cooldown-ankle-mobility",
+    "drill-cooldown-breath-recovery",
+    "drill-cooldown-hip-flow",
+    "drill-cooldown-shoulder-circuit"
   ],
   "concept-basketball-resistance-training-principles": [
     "concept-basketball-strength-training-methodology",
@@ -2525,6 +2541,7 @@
   "concept-free-throw-strategy": [
     "concept-offensive-system-design",
     "concept-three-point-shot-trends",
+    "drill-cooldown-mindful-shooting",
     "drill-six-basket-free-throws",
     "drill-two-basket-free-throws"
   ],
@@ -2984,6 +3001,7 @@
     "concept-knee-injuries-basketball-overview"
   ],
   "concept-mental-health-injury-recovery-basketball": [
+    "drill-cooldown-breath-recovery",
     "source-basketball-sports-medicine-science"
   ],
   "concept-mentally-correcting-a-miss": [
@@ -3951,7 +3969,8 @@
     "concept-basketball-performance-anxiety",
     "concept-clutch-choking-basketball",
     "concept-hot-hand-basketball",
-    "concept-hot-hand-fallacy"
+    "concept-hot-hand-fallacy",
+    "drill-cooldown-mindful-shooting"
   ],
   "concept-reaction-time-basketball": [
     "concept-acl-on-parquet-rehabilitation-basketball",
@@ -5745,6 +5764,12 @@
   ],
   "drill-convict-pushup": [
     "drill-hip-strike-pushup"
+  ],
+  "drill-cooldown-breath-recovery": [
+    "drill-cooldown-hip-flow"
+  ],
+  "drill-cooldown-hip-flow": [
+    "drill-cooldown-breath-recovery"
   ],
   "drill-count-slide-pivot-savvy": [
     "concept-rebounding-position-savvy"
