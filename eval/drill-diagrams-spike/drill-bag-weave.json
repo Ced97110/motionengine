@@ -1,0 +1,255 @@
+{
+  "drill_slug": "drill-bag-weave",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -4,
+      "y": 4
+    },
+    {
+      "role": "bag",
+      "id": "B1",
+      "x": -4,
+      "y": 10
+    },
+    {
+      "role": "bag",
+      "id": "B2",
+      "x": -4,
+      "y": 16
+    },
+    {
+      "role": "bag",
+      "id": "B3",
+      "x": -4,
+      "y": 22
+    },
+    {
+      "role": "bag",
+      "id": "B4",
+      "x": -4,
+      "y": 28
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Sprint to first bag",
+      "duration_s": 5,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -4,
+            4
+          ],
+          "to": [
+            -4,
+            10
+          ]
+        }
+      ],
+      "cues": [
+        "chest forward",
+        "low hips",
+        "drive knees up"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Shuffle right past bag gap",
+      "duration_s": 5,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            -4,
+            10
+          ],
+          "to": [
+            4,
+            10
+          ]
+        }
+      ],
+      "cues": [
+        "no crossing feet",
+        "stay square to baseline",
+        "feet quiet and quick"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Backpedal one step past bag",
+      "duration_s": 5,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "backpedal",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            4,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "hips down",
+        "chest forward",
+        "short choppy steps back"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Repeat sprint-shuffle-backpedal through bags",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            4,
+            7
+          ],
+          "to": [
+            4,
+            16
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            4,
+            16
+          ],
+          "to": [
+            -4,
+            16
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "backpedal",
+          "from": [
+            -4,
+            16
+          ],
+          "to": [
+            -4,
+            13
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -4,
+            13
+          ],
+          "to": [
+            -4,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            -4,
+            22
+          ],
+          "to": [
+            4,
+            22
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "backpedal",
+          "from": [
+            4,
+            22
+          ],
+          "to": [
+            4,
+            19
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            4,
+            19
+          ],
+          "to": [
+            4,
+            28
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shuffle",
+          "from": [
+            4,
+            28
+          ],
+          "to": [
+            -4,
+            28
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "backpedal",
+          "from": [
+            -4,
+            28
+          ],
+          "to": [
+            -4,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "change gears fast",
+        "chest always faces forward",
+        "no wasted steps"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Finish past last bag",
+      "duration_s": 5,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            -4,
+            25
+          ],
+          "to": [
+            -4,
+            31
+          ]
+        }
+      ],
+      "cues": [
+        "sprint through the finish",
+        "full speed to the end"
+      ]
+    }
+  ],
+  "ball_path": [],
+  "notes": "Run this drill at full speed \u2014 walk it once to lock in the sprint-shuffle-backpedal sequence, then go live. No crossing feet on the shuffle is the number-one coaching point; stop and reset if it happens."
+}

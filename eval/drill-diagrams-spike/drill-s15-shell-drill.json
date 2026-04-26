@@ -1,0 +1,605 @@
+{
+  "drill_slug": "drill-s15-shell-drill",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "O1",
+      "x": 0,
+      "y": 33
+    },
+    {
+      "role": "wing_attacker",
+      "id": "O2",
+      "x": 18,
+      "y": 22
+    },
+    {
+      "role": "wing_attacker",
+      "id": "O3",
+      "x": -18,
+      "y": 22
+    },
+    {
+      "role": "corner_attacker",
+      "id": "O4",
+      "x": 18,
+      "y": 7
+    },
+    {
+      "role": "defender",
+      "id": "X1",
+      "x": 0,
+      "y": 30
+    },
+    {
+      "role": "defender",
+      "id": "X2",
+      "x": 14,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "X3",
+      "x": -14,
+      "y": 22
+    },
+    {
+      "role": "defender",
+      "id": "X4",
+      "x": 14,
+      "y": 10
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Jump to the Ball \u2014 Positioning",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            18,
+            22
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            0,
+            30
+          ],
+          "to": [
+            4,
+            27
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "move",
+          "from": [
+            14,
+            22
+          ],
+          "to": [
+            16,
+            21
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            -14,
+            22
+          ],
+          "to": [
+            -10,
+            20
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "move",
+          "from": [
+            14,
+            10
+          ],
+          "to": [
+            10,
+            12
+          ]
+        }
+      ],
+      "cues": [
+        "Jump to the ball while it's in the air \u2014 never after the catch",
+        "Help-side defenders: ball-you-man, flat triangle",
+        "Hold 3 seconds \u2014 check your position before next pass"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Drive Rotation \u2014 Last Line",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "O2",
+          "type": "dribble",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            6,
+            10
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "move",
+          "from": [
+            10,
+            12
+          ],
+          "to": [
+            6,
+            9
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            -10,
+            20
+          ],
+          "to": [
+            -2,
+            8
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "backpedal",
+          "from": [
+            16,
+            21
+          ],
+          "to": [
+            10,
+            15
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            4,
+            27
+          ],
+          "to": [
+            18,
+            22
+          ]
+        }
+      ],
+      "cues": [
+        "X4 calls 'rotate' and picks up the ball \u2014 loud, fast",
+        "Weak-side X3 drops to protect the basket",
+        "Original on-ball defender rotates to the open attacker"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Close the Gap \u2014 Stop Penetration",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "dribble",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            0,
+            22
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "move",
+          "from": [
+            10,
+            15
+          ],
+          "to": [
+            3,
+            20
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            -2,
+            8
+          ],
+          "to": [
+            -3,
+            20
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "move",
+          "from": [
+            6,
+            9
+          ],
+          "to": [
+            5,
+            12
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "shuffle",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            1,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "Nearest help-side defender steps in to wall off the drive lane",
+        "Low hips, feet quiet \u2014 stay between ball and basket",
+        "Recover to your man the instant the ball stops"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Flash & Cutter Defense",
+      "duration_s": 75,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "pass",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "O4",
+          "type": "cut",
+          "from": [
+            18,
+            7
+          ],
+          "to": [
+            0,
+            17
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "move",
+          "from": [
+            5,
+            12
+          ],
+          "to": [
+            2,
+            15
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "cut",
+          "from": [
+            1,
+            25
+          ],
+          "to": [
+            -14,
+            22
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "move",
+          "from": [
+            3,
+            20
+          ],
+          "to": [
+            0,
+            16
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            -3,
+            20
+          ],
+          "to": [
+            -16,
+            21
+          ]
+        }
+      ],
+      "cues": [
+        "X4 denies the flash \u2014 get between the cutter and the ball",
+        "X1 and X2 sag to crowd the lane on the flash",
+        "Middle cuts are never allowed \u2014 jump to the ball immediately"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Screen Defense \u2014 Away & On-Ball",
+      "duration_s": 75,
+      "action_paths": [
+        {
+          "actor": "O1",
+          "type": "screen",
+          "from": [
+            0,
+            33
+          ],
+          "to": [
+            -18,
+            22
+          ]
+        },
+        {
+          "actor": "O3",
+          "type": "cut",
+          "from": [
+            -18,
+            22
+          ],
+          "to": [
+            0,
+            33
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            -14,
+            22
+          ],
+          "to": [
+            -16,
+            24
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            -16,
+            21
+          ],
+          "to": [
+            0,
+            31
+          ]
+        },
+        {
+          "actor": "O2",
+          "type": "screen",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            6,
+            28
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "shuffle",
+          "from": [
+            0,
+            16
+          ],
+          "to": [
+            8,
+            26
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "move",
+          "from": [
+            2,
+            15
+          ],
+          "to": [
+            4,
+            18
+          ]
+        }
+      ],
+      "cues": [
+        "Screen away: show the screen early and fight over the top",
+        "On-ball screen: help-side defenders sag \u2014 no free rolls to the rim",
+        "Jump-switch only when you have help behind you"
+      ]
+    },
+    {
+      "phase_index": 5,
+      "label": "Post Entry \u2014 Perimeter Dive",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "O4",
+          "type": "move",
+          "from": [
+            0,
+            17
+          ],
+          "to": [
+            5,
+            7
+          ]
+        },
+        {
+          "actor": "O2",
+          "type": "pass",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            5,
+            7
+          ]
+        },
+        {
+          "actor": "X4",
+          "type": "move",
+          "from": [
+            4,
+            18
+          ],
+          "to": [
+            5,
+            8
+          ]
+        },
+        {
+          "actor": "X1",
+          "type": "move",
+          "from": [
+            -16,
+            24
+          ],
+          "to": [
+            2,
+            14
+          ]
+        },
+        {
+          "actor": "X2",
+          "type": "move",
+          "from": [
+            8,
+            26
+          ],
+          "to": [
+            12,
+            16
+          ]
+        },
+        {
+          "actor": "X3",
+          "type": "move",
+          "from": [
+            0,
+            31
+          ],
+          "to": [
+            -4,
+            18
+          ]
+        }
+      ],
+      "cues": [
+        "Ball in the post \u2014 all perimeter defenders dive toward it",
+        "Post defender chooses front, three-quarter, or behind \u2014 commit and hold",
+        "Force the ball back to the perimeter; no easy baseline spin"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        18,
+        22
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        6,
+        10
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        0,
+        22
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        -18,
+        22
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        0,
+        33
+      ],
+      "to": [
+        6,
+        28
+      ]
+    },
+    {
+      "phase_index": 5,
+      "from": [
+        18,
+        22
+      ],
+      "to": [
+        5,
+        7
+      ]
+    }
+  ],
+  "notes": "Run phases 1\u20133 for beginners, add phases 4\u20135 as the group earns it. Change the offensive formation daily \u2014 2-2, 1-3, 1-2-1 \u2014 so defenders can't cheat to one look. Two consecutive stops earns the defense a rotation."
+}

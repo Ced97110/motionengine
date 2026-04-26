@@ -1,0 +1,229 @@
+{
+  "drill_slug": "drill-mikan-baby-hook",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": -3,
+      "y": 5
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Left-side baby hook",
+      "duration_s": 4,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -3,
+            5
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "Left hand only on the left side",
+        "Soft flip off the glass, elbow up",
+        "Low hips, feet quiet before the release"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Rebound and slide right",
+      "duration_s": 3,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            3,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Slide-step, don't jog",
+        "Stay low through the slide",
+        "Catch the rebound live \u2014 no standing still"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Right-side baby hook",
+      "duration_s": 4,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            3,
+            5
+          ],
+          "to": [
+            0,
+            7
+          ]
+        }
+      ],
+      "cues": [
+        "Right hand only on the right side",
+        "Same soft touch, elbow up",
+        "Don't favor the strong hand \u2014 both hands equal"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Rebound and slide left",
+      "duration_s": 3,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            -3,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Slide-step back immediately",
+        "No rest \u2014 keep the rhythm going",
+        "Condition to max speed the full minute"
+      ]
+    },
+    {
+      "phase_index": 4,
+      "label": "Continuous rhythm \u2014 repeat",
+      "duration_s": 46,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            -3,
+            5
+          ],
+          "to": [
+            0,
+            7
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            3,
+            5
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "shot",
+          "from": [
+            3,
+            5
+          ],
+          "to": [
+            0,
+            7
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "move",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            -3,
+            5
+          ]
+        }
+      ],
+      "cues": [
+        "Slide-step, don't jog \u2014 maintain tempo",
+        "Left shoots left, right shoots right \u2014 no exceptions",
+        "This is cardio too \u2014 push through fatigue",
+        "Keep low hips through every rep"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        -3,
+        5
+      ],
+      "to": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        7
+      ],
+      "to": [
+        3,
+        5
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        3,
+        5
+      ],
+      "to": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        0,
+        7
+      ],
+      "to": [
+        -3,
+        5
+      ]
+    },
+    {
+      "phase_index": 4,
+      "from": [
+        -3,
+        5
+      ],
+      "to": [
+        0,
+        7
+      ]
+    }
+  ],
+  "notes": "Player works continuously for 1 minute, shooting left-handed baby hooks from the left block and right-handed baby hooks from the right block with a quick slide-step between each rep. Enforce bilateral finishing \u2014 no favoring the strong hand \u2014 and push tempo so the drill doubles as conditioning."
+}

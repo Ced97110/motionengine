@@ -1,0 +1,205 @@
+{
+  "drill_slug": "drill-1-on-0-box-dribbling",
+  "court": "half",
+  "starting_positions": [
+    {
+      "role": "ball_handler",
+      "id": "P1",
+      "x": 0,
+      "y": 25
+    }
+  ],
+  "phases": [
+    {
+      "phase_index": 0,
+      "label": "Strong Dribble \u2014 15 sec",
+      "duration_s": 15,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            0,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "Low hips, hard pound \u2014 snap it back fast",
+        "Eyes up, not on the ball",
+        "Stay home \u2014 feet inside the box"
+      ]
+    },
+    {
+      "phase_index": 1,
+      "label": "Rocker Dribble \u2014 30 sec",
+      "duration_s": 30,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            0,
+            27
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            27
+          ],
+          "to": [
+            0,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "Step forward, sell the drive \u2014 rock back hard",
+        "Stay low through the hesitation",
+        "Keep the dribble below your knee"
+      ]
+    },
+    {
+      "phase_index": 2,
+      "label": "Rocker-to-Crossover \u2014 45 sec",
+      "duration_s": 45,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            0,
+            27
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            27
+          ],
+          "to": [
+            0,
+            25
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            1,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "Rocker first \u2014 sell the hesitation, then attack with the cross",
+        "Cross low and tight \u2014 don't let it get high",
+        "Eyes up when you change hands"
+      ]
+    },
+    {
+      "phase_index": 3,
+      "label": "Switch Dribble \u2014 60 sec",
+      "duration_s": 60,
+      "action_paths": [
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            0,
+            25
+          ],
+          "to": [
+            1,
+            25
+          ]
+        },
+        {
+          "actor": "P1",
+          "type": "dribble",
+          "from": [
+            1,
+            25
+          ],
+          "to": [
+            -1,
+            25
+          ]
+        }
+      ],
+      "cues": [
+        "Smooth transfer \u2014 no bobbles, stay low",
+        "Feet quiet, hips down through the switch",
+        "Low hips, hard pound, eyes up \u2014 stay home"
+      ]
+    }
+  ],
+  "ball_path": [
+    {
+      "phase_index": 0,
+      "from": [
+        0,
+        25
+      ],
+      "to": [
+        0,
+        25
+      ]
+    },
+    {
+      "phase_index": 1,
+      "from": [
+        0,
+        25
+      ],
+      "to": [
+        0,
+        27
+      ]
+    },
+    {
+      "phase_index": 2,
+      "from": [
+        0,
+        27
+      ],
+      "to": [
+        1,
+        25
+      ]
+    },
+    {
+      "phase_index": 3,
+      "from": [
+        1,
+        25
+      ],
+      "to": [
+        -1,
+        25
+      ]
+    }
+  ],
+  "notes": "Player works four dribble moves \u2014 strong pound, rocker, rocker-to-crossover, and switch \u2014 inside an imaginary box at the top of the key, progressing from 15 to 60 seconds. Low hips, hard pound, and eyes up are the three constants on every rep."
+}
