@@ -246,3 +246,103 @@ def score_halftime(
 def failed_signals(signals: Signals) -> list[str]:
     """Return signal names that failed, sorted, for error-message use."""
     return sorted(name for name, s in signals.items() if not s["pass_"])
+
+
+# --- practice-generator rubric ----------------------------------------------
+
+
+def score_practice_brief(
+    *,
+    plan: list[dict[str, Any]],
+    source_citations: list[str],
+    case: dict[str, Any],
+    forbidden_phrases: list[str],
+    bundle_anatomy: list[str] | None = None,
+    bundle_drills: list[str] | None = None,
+) -> Signals:
+    """Grade a practice plan against the v0 rubric.
+
+    `plan` is a list of `{drill_slug, duration_minutes, reasoning, cross_refs}`
+    dicts (the JSON-shape of PracticeBlockOut). `case` carries:
+
+    - ``min_blocks`` / ``max_blocks`` — accepted block-count band
+    - ``duration_tolerance_pct`` — sum of block durations must be within
+      this percent of the requested ``duration_minutes``
+    - ``reasoning_min_length`` / ``reasoning_max_length`` — concatenated
+      reasoning across all blocks
+    - ``must_reference_any_of.anatomy`` — at least one anatomy slug appears
+      in concatenated reasoning
+    - ``must_contain_any`` — at least one keyword appears (case-insensitive)
+    """
+    exp = case.get("expectations", {})
+    ref = exp.get("must_reference_any_of", {})
+    out: Signals = {}
+
+    out["non_empty"] = _signal(len(plan) > 0, f"{len(plan)} blocks")
+
+    min_blocks = int(exp.get("min_blocks", 4))
+    max_blocks = int(exp.get("max_blocks", 7))
+    block_count_ok = min_blocks <= len(plan) <= max_blocks
+    out["block_count_ok"] = _signal(
+        block_count_ok, f"{len(plan)} blocks in [{min_blocks},{max_blocks}]"
+    )
+
+    requested = int(case.get("duration_minutes", 60))
+    summed = sum(int(b.get("duration_minutes") or 0) for b in plan)
+    tol_pct = float(exp.get("duration_tolerance_pct", 15))
+    lo = requested * (1 - tol_pct / 100)
+    hi = requested * (1 + tol_pct / 100)
+    out["duration_balanced"] = _signal(
+        lo <= summed <= hi,
+        f"sum={summed}min, requested={requested}min, tol=±{tol_pct}%",
+    )
+
+    concat = " ".join(b.get("reasoning") or "" for b in plan)
+    min_len = int(exp.get("reasoning_min_length", 200))
+    max_len = int(exp.get("reasoning_max_length", 3000))
+    out["length_ok"] = _signal(
+        min_len <= len(concat) <= max_len,
+        f"concat={len(concat)}chars in [{min_len},{max_len}]",
+    )
+
+    out["no_forbidden"] = _check_forbidden(concat, forbidden_phrases)
+
+    anatomy_candidates = list(
+        dict.fromkeys((ref.get("anatomy") or []) + (bundle_anatomy or []))
+    )
+    if anatomy_candidates:
+        passed, detail = _any_of_slugs(concat, anatomy_candidates)
+        out["anatomy_ref"] = _signal(passed, detail)
+    else:
+        out["anatomy_ref"] = _signal(True, "no anatomy candidates to match")
+
+    # Every block names a drill via drill_slug — we just verify each is in the
+    # bundle if a bundle is supplied (i.e. the engine didn't invent a drill).
+    if bundle_drills:
+        bundle_set = set(bundle_drills)
+        unknown = [
+            b.get("drill_slug")
+            for b in plan
+            if b.get("drill_slug") not in bundle_set
+        ]
+        out["drill_ref"] = _signal(
+            not unknown,
+            "all drills in bundle"
+            if not unknown
+            else f"unknown drills: {unknown}",
+        )
+    else:
+        out["drill_ref"] = _signal(True, "no drill bundle to validate against")
+
+    out["valid_citations"] = _citations_valid(concat, source_citations)
+
+    must_contain = exp.get("must_contain_any") or []
+    if must_contain:
+        lower = concat.lower()
+        hit = next((tok for tok in must_contain if tok.lower() in lower), None)
+        out["must_contain_any"] = _signal(
+            bool(hit),
+            f"matched {hit!r}" if hit else f"none of {must_contain!r} present",
+        )
+
+    return out

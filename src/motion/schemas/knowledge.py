@@ -215,3 +215,38 @@ class FormCoachResponse(_CamelModel):
     source_citations: list[str]
     source: str  # "claude" | "stub"
     cross_refs: list[str]  # concept-anatomy + concept-technique + drill slugs cited
+
+
+# --- Practice generator (v0) -------------------------------------------------
+
+
+class PracticeRequest(_CamelModel):
+    """Coach-supplied inputs for one practice plan.
+
+    `plays_in_library` is reserved for v1 team-context wiring (M5); v0
+    accepts but ignores the field.
+    """
+
+    level: str  # "beginner" | "intermediate" | "advanced"
+    duration_minutes: int  # 30 | 45 | 60 | 90 | 120
+    focus_areas: list[str]
+    plays_in_library: list[str] = []
+
+
+class PracticeBlockOut(_CamelModel):
+    """One timed block in the generated practice plan."""
+
+    drill_slug: str
+    duration_minutes: int
+    reasoning: str  # coach-voice 1-2 sentences, may embed cross-ref slugs
+    cross_refs: list[str]  # slugs surfaced in reasoning (subset of plan-level)
+
+
+class PracticeResponse(_CamelModel):
+    level: str
+    duration_minutes: int
+    focus_areas: list[str]
+    plan: list[PracticeBlockOut]
+    source_citations: list[str]
+    source: str  # "claude" | "stub"
+    cross_refs: list[str]  # union across all blocks

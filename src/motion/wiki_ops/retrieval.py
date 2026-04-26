@@ -171,6 +171,40 @@ class PlayContext:
 
 
 @dataclass(frozen=True)
+class PracticeDrillCandidate:
+    """One drill the practice composer can pick from.
+
+    Carries the metadata the composer needs to score + place the drill in a
+    timed block: the slug, why it surfaced (which anatomy / technique edge),
+    the drill's own level + nominal duration, and emphasis (primary first).
+    """
+
+    drill_slug: str
+    emphasis: str  # "primary" | "secondary"
+    via_anatomy: str | None
+    via_technique: str | None
+    level: str | None  # beginner | intermediate | advanced (from drill frontmatter)
+    duration_minutes: int | None  # nominal duration of one rep block
+
+
+@dataclass(frozen=True)
+class PracticeContext:
+    """Practice-generator retrieval bundle (v0).
+
+    `plays_in_library` is plumbed through for v1 team-context wiring (M5);
+    v0 builders ignore it.
+    """
+
+    level: str
+    duration_minutes: int
+    focus_areas: list[str]
+    anatomy: list[AnatomyDemand] = field(default_factory=list)
+    techniques: list[str] = field(default_factory=list)
+    candidate_drills: list[PracticeDrillCandidate] = field(default_factory=list)
+    plays_in_library: list[str] = field(default_factory=list)
+
+
+@dataclass(frozen=True)
 class ReadinessBundle:
     """Q-B output: safe plays + primary-emphasis prescription drills."""
 
@@ -812,3 +846,228 @@ def build_defensive_mirror(
     # (so visual content surfaces ahead of text-only ties), then alphabetical.
     candidates.sort(key=lambda m: (-m.overlap_score, 0 if m.diagram else 1, m.defending_slug))
     return candidates[:top_k]
+
+
+# --- Practice generator (v0) -----------------------------------------------
+#
+# `_PRACTICE_FOCUS` maps a coach-facing focus area (chip on the UI) to the
+# anatomy regions and technique slugs the engine should traverse. Anatomy
+# slugs MUST appear in the 7 concept-anatomy pages; technique slugs are
+# concept-technique stems. `build_practice_context` filters out unknown pages
+# at retrieval time so this map can list aspirational slugs without breaking.
+
+_PRACTICE_FOCUS: dict[str, dict[str, list[str]]] = {
+    "shooting": {
+        "anatomy": ["wrist_complex", "elbow_complex", "shoulder_girdle", "core_outer"],
+        "techniques": [],
+    },
+    "free-throws": {
+        "anatomy": ["wrist_complex", "elbow_complex", "shoulder_girdle"],
+        "techniques": [],
+    },
+    "ball-handling": {
+        "anatomy": ["wrist_complex", "ankle_complex", "hip_flexor_complex"],
+        "techniques": [],
+    },
+    "finishing": {
+        "anatomy": [
+            "ankle_complex",
+            "glute_max",
+            "hip_flexor_complex",
+            "core_outer",
+            "shoulder_girdle",
+        ],
+        "techniques": ["concept-technique-hard-cut-to-paint"],
+    },
+    "defense": {
+        "anatomy": ["ankle_complex", "glute_max", "hip_flexor_complex", "core_outer"],
+        "techniques": ["concept-technique-closeout-contest-verticality"],
+    },
+    "conditioning": {
+        "anatomy": ["ankle_complex", "glute_max", "hip_flexor_complex", "core_outer"],
+        "techniques": [],
+    },
+    "rebounding": {
+        "anatomy": ["glute_max", "core_outer", "shoulder_girdle", "hip_flexor_complex"],
+        "techniques": [],
+    },
+    "scrimmage": {
+        "anatomy": [
+            "ankle_complex",
+            "glute_max",
+            "hip_flexor_complex",
+            "core_outer",
+            "shoulder_girdle",
+            "wrist_complex",
+        ],
+        "techniques": [],
+    },
+}
+
+_LEVEL_ORDER: dict[str, int] = {"beginner": 0, "intermediate": 1, "advanced": 2}
+
+
+def _level_compatible(drill_level: str | None, request_level: str) -> bool:
+    """A drill is usable at request_level if its own level is at-or-below.
+
+    Beginner request → beginner drills only.
+    Intermediate request → beginner + intermediate.
+    Advanced request → all three.
+    Drills with no level metadata are accepted (conservative — better to
+    surface than hide; coach can skip).
+    """
+    if drill_level is None:
+        return True
+    if drill_level not in _LEVEL_ORDER or request_level not in _LEVEL_ORDER:
+        return True
+    return _LEVEL_ORDER[drill_level] <= _LEVEL_ORDER[request_level]
+
+
+def _coerce_duration(value: Any) -> int | None:
+    """Coerce a drill `duration_minutes` field into an upper-bound int.
+
+    The wiki schema allows int (``5``) or range string (``"5-10"``,
+    ``"30-45"``). For practice planning we want the upper bound — that's
+    what the coach should budget for.
+    """
+    if value is None:
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, str):
+        s = value.strip()
+        if "-" in s:
+            parts = s.split("-", 1)
+            try:
+                return int(parts[1].strip())
+            except (ValueError, IndexError):
+                return None
+        try:
+            return int(s)
+        except ValueError:
+            return None
+    return None
+
+
+def _drill_duration_ok(drill_dur: Any, budget: int) -> bool:
+    """A drill's nominal duration must fit inside the practice budget.
+
+    Drill `duration_minutes` may be int, string range (``"5-10"``), or
+    missing. If unparseable, accept conservatively.
+    """
+    coerced = _coerce_duration(drill_dur)
+    if coerced is None:
+        return True
+    return coerced <= budget
+
+
+def build_practice_context(
+    level: str,
+    duration_minutes: int,
+    focus_areas: list[str],
+    indexes: CompiledIndexes,
+    plays_in_library: list[str] | None = None,
+) -> PracticeContext:
+    """Assemble the v0 practice-generator retrieval bundle.
+
+    For each focus area, walk the anatomy + technique edges into candidate
+    drills, filter by level + duration budget, dedupe, sort primary-first.
+    Cap candidates so the composer prompt stays under ~30 drills.
+    """
+    anatomy_slugs: list[str] = []
+    technique_slugs: list[str] = []
+    for area in focus_areas:
+        focus = _PRACTICE_FOCUS.get(area)
+        if not focus:
+            continue
+        for region in focus["anatomy"]:
+            if region not in anatomy_slugs:
+                anatomy_slugs.append(region)
+        for tech in focus["techniques"]:
+            if tech not in technique_slugs:
+                technique_slugs.append(tech)
+
+    anatomy_demands: list[AnatomyDemand] = []
+    for region in anatomy_slugs:
+        concept_slug = _region_to_concept_slug(region)
+        if not _wiki_page_exists(concept_slug, indexes):
+            continue
+        anatomy_demands.append(
+            AnatomyDemand(
+                region=region,
+                concept_slug=concept_slug,
+                criticality="required",
+                insight=_anatomy_insight_for(concept_slug, indexes.page_insights),
+            )
+        )
+
+    technique_focus = [
+        slug for slug in technique_slugs if _wiki_page_exists(slug, indexes)
+    ]
+
+    seen: set[str] = set()
+    candidates: list[PracticeDrillCandidate] = []
+
+    for region in anatomy_slugs:
+        for edge in indexes.anatomy_to_drill.get(region, []):
+            slug = edge["drill"]
+            if slug in seen:
+                continue
+            edge_level = edge.get("level")
+            edge_duration = _coerce_duration(edge.get("duration_minutes"))
+            if not _level_compatible(edge_level, level):
+                continue
+            if not _drill_duration_ok(edge_duration, duration_minutes):
+                continue
+            seen.add(slug)
+            candidates.append(
+                PracticeDrillCandidate(
+                    drill_slug=slug,
+                    emphasis=edge.get("emphasis") or "secondary",
+                    via_anatomy=region,
+                    via_technique=None,
+                    level=edge_level,
+                    duration_minutes=edge_duration,
+                )
+            )
+
+    for tech in technique_slugs:
+        # Strip "concept-technique-" prefix to match the technique_to_drill key.
+        tech_id = tech.removeprefix("concept-technique-")
+        for edge in indexes.technique_to_drill.get(tech_id, []):
+            slug = edge["drill"]
+            if slug in seen:
+                continue
+            edge_level = edge.get("level")
+            edge_duration = _coerce_duration(edge.get("duration_minutes"))
+            if not _level_compatible(edge_level, level):
+                continue
+            if not _drill_duration_ok(edge_duration, duration_minutes):
+                continue
+            seen.add(slug)
+            candidates.append(
+                PracticeDrillCandidate(
+                    drill_slug=slug,
+                    emphasis=edge.get("emphasis") or "secondary",
+                    via_anatomy=None,
+                    via_technique=tech,
+                    level=edge_level,
+                    duration_minutes=edge_duration,
+                )
+            )
+
+    # Sort: primary first, then alphabetical for stability.
+    candidates.sort(key=lambda c: (0 if c.emphasis == "primary" else 1, c.drill_slug))
+
+    # Cap: keep prompt size sane. 30 drills is plenty for a 5-7 block plan.
+    candidates = candidates[:30]
+
+    return PracticeContext(
+        level=level,
+        duration_minutes=duration_minutes,
+        focus_areas=focus_areas,
+        anatomy=anatomy_demands,
+        techniques=technique_focus,
+        candidate_drills=candidates,
+        plays_in_library=plays_in_library or [],
+    )
