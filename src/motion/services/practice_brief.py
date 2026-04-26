@@ -223,8 +223,12 @@ _PROMPT_INSTRUCTIONS = (
     " Use the `emit_practice_plan` tool to return structured blocks.\n"
     "\n"
     "RULES:\n"
-    "- Each block has: drill_slug (MUST be from the candidate list above),"
-    " duration_minutes (integer), reasoning (1-2 sentences in coach voice).\n"
+    "- Each block has: drill_slug, duration_minutes (integer), reasoning"
+    " (1-2 sentences in coach voice).\n"
+    "- EVERY drill_slug MUST appear verbatim in the candidate list above."
+    " Do NOT invent slugs. Do NOT use 'concept-*' slugs (those are wiki"
+    " concept pages, not drills). Slugs MUST start with 'drill-' or"
+    " 'exercise-'.\n"
     "- The sum of block durations MUST be within ±10% of the total"
     " duration above.\n"
     "- Cover the full arc: warm-up (5-10 min), skill blocks (the bulk),"
@@ -292,7 +296,7 @@ _PRACTICE_TOOL_DEF: dict[str, Any] = {
                     "properties": {
                         "drill_slug": {
                             "type": "string",
-                            "pattern": "^(?:drill|exercise|concept)-[a-z0-9][a-z0-9-]+$",
+                            "pattern": "^(?:drill|exercise)-[a-z0-9][a-z0-9-]+$",
                         },
                         "duration_minutes": {
                             "type": "integer",
@@ -343,6 +347,14 @@ def build_practice_brief(context: PracticeContext) -> PracticeBriefResult:
         _log.warning("practice_brief: claude call failed (%s), falling back to stub", exc)
         return _build_stub(context)
 
+    # Registry of slugs the composer is allowed to emit. The composer's
+    # tool prompt says "drill_slug MUST be from the candidate list"; the
+    # regex pattern is a backstop, but we also enforce membership here so
+    # a hallucinated slug (e.g. concept-technique-*) doesn't reach the FE.
+    candidate_slugs = [c.drill_slug for c in context.candidate_drills]
+    candidate_set = set(candidate_slugs)
+    candidate_iter = iter(candidate_slugs)
+
     plan: list[PracticeBlock] = []
     citations: list[str] = []
     for raw in raw_blocks:
@@ -351,6 +363,25 @@ def build_practice_brief(context: PracticeContext) -> PracticeBriefResult:
         reasoning = raw.get("reasoning") or ""
         if not slug or not isinstance(dur, int) or dur <= 0:
             continue
+        if candidate_set and slug not in candidate_set:
+            # Hallucinated slug — substitute with the next unused candidate
+            # (degrade gracefully) and log so we can audit the prompt.
+            substitute = next(
+                (c for c in candidate_iter if c not in {b.drill_slug for b in plan}),
+                None,
+            )
+            if substitute is None:
+                _log.warning(
+                    "practice_brief: dropping hallucinated drill_slug %r (no substitute)",
+                    slug,
+                )
+                continue
+            _log.warning(
+                "practice_brief: substituting hallucinated drill_slug %r -> %r",
+                slug,
+                substitute,
+            )
+            slug = substitute
         # Always include the drill_slug itself as a primary cross-ref —
         # prose doesn't always repeat it verbatim, but the slug IS the
         # canonical wiki entry the user should be able to click.
