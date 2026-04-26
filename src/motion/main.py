@@ -22,6 +22,7 @@ from motion.routers.form_coach import router as form_coach_router
 from motion.routers.knowledge import router as knowledge_router
 from motion.routers.playlab import router as playlab_router
 from motion.routers.practice import router as practice_router
+from motion.routers.public_drills import router as public_drills_router
 from motion.routers.public_plays import router as public_plays_router
 from motion.routers.public_wiki import router as public_wiki_router
 from motion.schemas.errors import ErrorBody, ErrorEnvelope
@@ -128,6 +129,7 @@ def create_app() -> FastAPI:
 
     app.include_router(knowledge_router)
     app.include_router(playlab_router)
+    app.include_router(public_drills_router)
     app.include_router(public_plays_router)
     app.include_router(public_wiki_router)
     app.include_router(form_coach_router)
