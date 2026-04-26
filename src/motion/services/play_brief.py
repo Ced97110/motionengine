@@ -20,6 +20,8 @@ import os
 import re
 from dataclasses import dataclass
 
+from motion.prompts import get_prompts
+from motion.sports import DEFAULT_SPORT, Sport
 from motion.wiki_ops.retrieval import PlayContext
 
 _MODEL = "claude-sonnet-4-6"
@@ -120,8 +122,13 @@ def _build_stub(context: PlayContext, readiness: list[dict] | None) -> BriefResu
     )
 
 
-def _build_claude_prompt(context: PlayContext, readiness: list[dict] | None) -> str:
+def _build_claude_prompt(
+    context: PlayContext,
+    readiness: list[dict] | None,
+    sport: Sport = DEFAULT_SPORT,
+) -> str:
     """Compose the user message: bundle + readiness + template instructions."""
+    prompts = get_prompts(sport)
     lines: list[str] = []
     lines.append(f"Play slug: {context.play_slug}")
     if context.techniques:
@@ -204,7 +211,7 @@ def _build_claude_prompt(context: PlayContext, readiness: list[dict] | None) -> 
         "Book-derived prose must not surface; only structural references may. "
         "Cite [Sn, p.X] tokens verbatim from the context above; do NOT invent citations. "
         "No preamble, no bullet list, no headings. Plain text only. "
-        "Audience: basketball coach. Tone: declarative, no promotional language, no emojis."
+        + prompts.PLAY_BRIEF_AUDIENCE_CLAUSE
     )
     return "\n".join(lines)
 
@@ -212,6 +219,7 @@ def _build_claude_prompt(context: PlayContext, readiness: list[dict] | None) -> 
 def build_brief(
     context: PlayContext,
     readiness: list[dict] | None = None,
+    sport: Sport = DEFAULT_SPORT,
 ) -> BriefResult:
     """Compose a play brief. Falls back to a stub if no API key is present."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -230,7 +238,7 @@ def build_brief(
             messages=[
                 {
                     "role": "user",
-                    "content": _build_claude_prompt(context, readiness),
+                    "content": _build_claude_prompt(context, readiness, sport),
                 }
             ],
         )

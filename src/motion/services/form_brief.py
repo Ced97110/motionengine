@@ -26,6 +26,8 @@ import os
 import re
 from dataclasses import dataclass
 
+from motion.prompts import get_prompts
+from motion.sports import DEFAULT_SPORT, Sport
 from motion.wiki_ops.retrieval import FormContext, FormMeasurement
 
 _MODEL = "claude-sonnet-4-6"
@@ -116,87 +118,13 @@ def _build_stub(context: FormContext) -> FormBriefResult:
     )
 
 
-_PROMPT_INSTRUCTIONS = (
+_PROMPT_HEADER = (
     "Write a 3-5 sentence coaching note addressed to the PLAYER,"
     " in their second person.\n"
     "\n"
-    "AUDIENCE: a basketball player or their coach reading on their phone."
-    " They speak basketball, NOT anatomy, NOT biomechanics, NOT sports medicine."
-    " If a 16-year-old player or a high-school coach would not say it on"
-    " the court, do not write it.\n"
-    "\n"
-    "EVERY SENTENCE GENERATES A SOLUTION."
-    " Do not describe a problem without immediately telling them what to DO"
-    " about it on their next shot or next rep."
-    " The brief is a fix-list, not a diagnosis."
-    " Pair every flag with an action they can take TODAY.\n"
-    "\n"
-    "STRUCTURE (problem-paired-with-fix):\n"
-    "- Sentence 1: name the biggest visible problem in plain language AND"
-    " the cue that fixes it, in the same sentence."
-    " (e.g. 'Your shooting elbow is flying out — tuck it under the ball"
-    " and let your forearm rise straight up the front of your face.')\n"
-    "- Sentence 2: a concrete physical cue they can feel on their NEXT shot"
-    " to check the fix is working."
-    " (e.g. 'You should feel your shooting elbow brush past your ear"
-    " on the way up.')\n"
-    "- Sentence 3: name ONE drill by its slug from the context above and"
-    " tell them the ONE thing to focus on during reps — not why the drill"
-    " works. (e.g. 'Run drill-foo and on every rep watch your elbow stay"
-    " inside your shoulder line.')\n"
-    "- Sentences 4-5 (optional, only if a second signal is flagged or"
-    " there is a safety risk): same problem→fix pairing."
-    " If a flag is a safety risk, lead with 'Fix this before you keep"
-    " shooting:' and prescribe the action.\n"
-    "\n"
-    "NUMBER RULE: if you reference a number from the measurements, say it"
-    " in plain English ('about 30 degrees off line', 'releasing way too"
-    " low'). NEVER write the raw measurement name (elbow_flair,"
-    " knee_valgus, follow_through_droop, release_height_ratio, trunk_lean)"
-    " and NEVER write '32.3deg' or '0.2ratio' — those are debug strings,"
-    " not coach speech.\n"
-    "\n"
-    "TRANSLATION TABLE — anatomy region in context → basketball word"
-    " in your prose:\n"
-    "  elbow complex     -> 'shooting elbow' or 'elbow'\n"
-    "  shoulder girdle   -> 'shoulder' (or 'shoulder line' if alignment matters)\n"
-    "  wrist complex     -> 'wrist' or 'shooting hand'\n"
-    "  ankle complex     -> 'ankles' or 'feet'\n"
-    "  hip complex       -> 'hips'\n"
-    "  knee              -> 'knees'\n"
-    "  core              -> 'core'\n"
-    "TRANSLATION TABLE — measurement name in context → how it looks"
-    " on tape:\n"
-    "  elbow_flair             -> 'elbow winging out' / 'elbow flying"
-    " away from your body'\n"
-    "  follow_through_droop    -> 'wrist not finishing' / 'no snap on"
-    " the follow-through'\n"
-    "  knee_valgus             -> 'knees caving inward' / 'knees"
-    " buckling in'\n"
-    "  release_height_ratio    -> 'releasing too low' / 'letting the"
-    " ball go before you reach up'\n"
-    "  trunk_lean              -> 'leaning forward through the shot'\n"
-    "\n"
-    "BANNED VOCABULARY — do not use any of these or close variants:\n"
-    "  stretch-shortening cycle, plantar-flexor, dorsiflexion,"
-    " ground-reaction, kinetic chain,\n"
-    "  medial structures, lateral structures, anti-rotation,"
-    " sagittal plane, frontal plane,\n"
-    "  eccentric loading, concentric, isometric, proprioception,"
-    " neuromuscular, biomechanics,\n"
-    "  asymmetric load, ligament injury, valgus, varus, posterior chain,"
-    " anterior chain,\n"
-    "  distal, proximal, kinematic, glute max activation, force transfer,"
-    " vertical plane,\n"
-    "  ratio, threshold, signal, measurement, reading, value.\n"
-    "Also avoid the words 'complex', 'girdle', 'apparatus', 'structures'"
-    " when naming a body part.\n"
-    "\n"
-    "VOICE: coach-on-the-sideline, not trainer-in-a-clinic."
-    " Imperative verbs ('tuck', 'snap', 'load', 'finish', 'sit', 'drive',"
-    " 'square up', 'rise'). Sentences short — feel the urgency of halftime"
-    " in a tight game. No promotional language. No emojis."
-    " No exclamation marks. No rhetorical questions.\n"
+)
+
+_PROMPT_FOOTER = (
     "\n"
     "OTHER RULES:\n"
     "- Compose every sentence in your own words; do NOT quote, paraphrase,"
@@ -210,7 +138,13 @@ _PROMPT_INSTRUCTIONS = (
 )
 
 
-def _build_text_prompt(context: FormContext) -> str:
+def _build_prompt_instructions(sport: Sport = DEFAULT_SPORT) -> str:
+    """Assemble the form-coach prompt rules with the per-sport voice block."""
+    prompts = get_prompts(sport)
+    return _PROMPT_HEADER + prompts.FORM_BRIEF_VOICE_BLOCK + _PROMPT_FOOTER
+
+
+def _build_text_prompt(context: FormContext, sport: Sport = DEFAULT_SPORT) -> str:
     """Compose the text portion of the multimodal prompt."""
     lines: list[str] = []
     lines.append(f"Shot type: {context.shot_type}")
@@ -240,15 +174,19 @@ def _build_text_prompt(context: FormContext) -> str:
         )
 
     lines.append("")
-    lines.append(_PROMPT_INSTRUCTIONS)
+    lines.append(_build_prompt_instructions(sport))
     return "\n".join(lines)
 
 
 def _build_message_blocks(
-    context: FormContext, keyframe_images: list[bytes]
+    context: FormContext,
+    keyframe_images: list[bytes],
+    sport: Sport = DEFAULT_SPORT,
 ) -> list[dict]:
     """Assemble the Anthropic content blocks (text + image_blocks)."""
-    blocks: list[dict] = [{"type": "text", "text": _build_text_prompt(context)}]
+    blocks: list[dict] = [
+        {"type": "text", "text": _build_text_prompt(context, sport)}
+    ]
     for img in keyframe_images[:3]:
         b64 = base64.b64encode(img).decode("ascii")
         blocks.append(
@@ -267,6 +205,7 @@ def _build_message_blocks(
 def build_form_brief(
     context: FormContext,
     keyframe_images: list[bytes] | None = None,
+    sport: Sport = DEFAULT_SPORT,
 ) -> FormBriefResult:
     """Compose a form-coach brief. Falls back to a stub if no API key is present.
 
@@ -291,7 +230,7 @@ def build_form_brief(
             messages=[
                 {
                     "role": "user",
-                    "content": _build_message_blocks(context, images),
+                    "content": _build_message_blocks(context, images, sport),
                 }
             ],
         )

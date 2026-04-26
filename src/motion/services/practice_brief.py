@@ -27,6 +27,8 @@ from typing import Any
 
 import anthropic
 
+from motion.prompts import get_prompts
+from motion.sports import DEFAULT_SPORT, Sport
 from motion.wiki_ops.retrieval import PracticeContext, PracticeDrillCandidate
 
 _log = logging.getLogger(__name__)
@@ -197,7 +199,9 @@ def _build_drill_table(context: PracticeContext) -> str:
     return "\n".join(lines)
 
 
-def _build_text_prompt(context: PracticeContext) -> str:
+def _build_text_prompt(
+    context: PracticeContext, sport: Sport = DEFAULT_SPORT
+) -> str:
     lines: list[str] = []
     lines.append(f"Level: {context.level}")
     lines.append(f"Total duration: {context.duration_minutes} min")
@@ -214,74 +218,52 @@ def _build_text_prompt(context: PracticeContext) -> str:
     lines.append("Candidate drills (graph-matched, sorted primary-first):")
     lines.append(_build_drill_table(context))
     lines.append("")
-    lines.append(_PROMPT_INSTRUCTIONS)
+    lines.append(_build_prompt_instructions(sport))
     return "\n".join(lines)
 
 
-_PROMPT_INSTRUCTIONS = (
-    "Compose a practice plan that fits the total duration."
-    " Use the `emit_practice_plan` tool to return structured blocks.\n"
-    "\n"
-    "RULES:\n"
-    "- BLOCK COUNT — match block count to total duration so individual"
-    " blocks stay long enough to be useful. Hard caps:\n"
-    "  • 30 min → 4-5 blocks (do NOT exceed 6)\n"
-    "  • 45 min → 5-6 blocks (do NOT exceed 7)\n"
-    "  • 60 min → 5-7 blocks (do NOT exceed 7)\n"
-    "  • 90 min → 6-7 blocks (do NOT exceed 7)\n"
-    "  • 120 min → 7-8 blocks (do NOT exceed 8)\n"
-    "- Each block has: drill_slug, duration_minutes (integer), reasoning"
-    " (1-2 sentences in coach voice).\n"
-    "- EVERY drill_slug MUST appear verbatim in the candidate list above."
-    " Do NOT invent slugs. Do NOT use 'concept-*' slugs (those are wiki"
-    " concept pages, not drills). Slugs MUST start with 'drill-' or"
-    " 'exercise-'.\n"
-    "- The sum of block durations MUST be within ±10% of the total"
-    " duration above.\n"
-    "- Cover the full arc: warm-up (5-10 min), skill blocks (the bulk),"
-    " a competitive or scrimmage block, cooldown (3-5 min).\n"
-    "- Do NOT invent drill slugs. If the candidate list is short, repeat"
-    " a drill before inventing one.\n"
-    "- Each reasoning sentence pairs the WHY (which anatomy region or"
-    " technique it loads, in basketball language) with WHAT THE COACH"
-    " SHOULD WATCH FOR during reps.\n"
-    "\n"
-    "AUDIENCE: a basketball coach reading this on their phone before"
-    " practice. They speak basketball, NOT anatomy / biomechanics /"
-    " sports medicine.\n"
-    "\n"
-    "TRANSLATION TABLE — anatomy region in context → basketball word"
-    " in your prose:\n"
-    "  elbow_complex     -> 'shooting elbow' or 'elbow'\n"
-    "  shoulder_girdle   -> 'shoulder' or 'shoulder line'\n"
-    "  wrist_complex     -> 'wrist' or 'shooting hand'\n"
-    "  ankle_complex     -> 'ankles' or 'feet'\n"
-    "  hip_flexor_complex-> 'hips' or 'hip flexors'\n"
-    "  glute_max         -> 'glutes' or 'hips'\n"
-    "  core_outer        -> 'core'\n"
-    "\n"
-    "BANNED VOCABULARY — do not use any of these or close variants:\n"
-    "  stretch-shortening cycle, plantar-flexor, dorsiflexion,"
-    " ground-reaction, kinetic chain, medial structures, lateral"
-    " structures, anti-rotation, sagittal plane, frontal plane,"
-    " eccentric loading, concentric, isometric, proprioception,"
-    " neuromuscular, biomechanics, asymmetric load, valgus, varus,"
-    " posterior chain, anterior chain, distal, proximal, kinematic.\n"
-    "Avoid 'complex', 'girdle', 'apparatus', 'structures' when naming a"
-    " body part.\n"
-    "\n"
-    "VOICE: coach-on-the-clipboard, not trainer-in-a-clinic. Imperative"
-    " verbs. Short sentences. No promotional language. No emojis."
-    " No exclamation marks. No rhetorical questions.\n"
-    "\n"
-    "OTHER RULES:\n"
-    "- Compose every reasoning sentence in your own words; do NOT quote"
-    " or paraphrase any coaching cue or principle text from the context.\n"
-    "- Book-derived prose must not surface; only structural slug"
-    " references may.\n"
-    "- Cite [Sn, p.X] tokens verbatim if you use them; do NOT invent"
-    " citations."
-)
+def _build_prompt_instructions(sport: Sport = DEFAULT_SPORT) -> str:
+    """Assemble the practice prompt rules with the per-sport voice block."""
+    prompts = get_prompts(sport)
+    return (
+        "Compose a practice plan that fits the total duration."
+        " Use the `emit_practice_plan` tool to return structured blocks.\n"
+        "\n"
+        "RULES:\n"
+        "- BLOCK COUNT — match block count to total duration so individual"
+        " blocks stay long enough to be useful. Hard caps:\n"
+        "  • 30 min → 4-5 blocks (do NOT exceed 6)\n"
+        "  • 45 min → 5-6 blocks (do NOT exceed 7)\n"
+        "  • 60 min → 5-7 blocks (do NOT exceed 7)\n"
+        "  • 90 min → 6-7 blocks (do NOT exceed 7)\n"
+        "  • 120 min → 7-8 blocks (do NOT exceed 8)\n"
+        "- Each block has: drill_slug, duration_minutes (integer), reasoning"
+        " (1-2 sentences in coach voice).\n"
+        "- EVERY drill_slug MUST appear verbatim in the candidate list above."
+        " Do NOT invent slugs. Do NOT use 'concept-*' slugs (those are wiki"
+        " concept pages, not drills). Slugs MUST start with 'drill-' or"
+        " 'exercise-'.\n"
+        "- The sum of block durations MUST be within ±10% of the total"
+        " duration above.\n"
+        "- Cover the full arc: warm-up (5-10 min), skill blocks (the bulk),"
+        " a competitive or scrimmage block, cooldown (3-5 min).\n"
+        "- Do NOT invent drill slugs. If the candidate list is short, repeat"
+        " a drill before inventing one.\n"
+        "- Each reasoning sentence pairs the WHY (which anatomy region or"
+        f" technique it loads, in {prompts.PRACTICE_BRIEF_REASONING_LANGUAGE}) "
+        "with WHAT THE COACH"
+        " SHOULD WATCH FOR during reps.\n"
+        "\n"
+        + prompts.PRACTICE_BRIEF_VOICE_BLOCK
+        + "\n"
+        "OTHER RULES:\n"
+        "- Compose every reasoning sentence in your own words; do NOT quote"
+        " or paraphrase any coaching cue or principle text from the context.\n"
+        "- Book-derived prose must not surface; only structural slug"
+        " references may.\n"
+        "- Cite [Sn, p.X] tokens verbatim if you use them; do NOT invent"
+        " citations."
+    )
 
 
 _PRACTICE_TOOL_DEF: dict[str, Any] = {
@@ -323,7 +305,9 @@ _PRACTICE_TOOL_DEF: dict[str, Any] = {
 }
 
 
-def build_practice_brief(context: PracticeContext) -> PracticeBriefResult:
+def build_practice_brief(
+    context: PracticeContext, sport: Sport = DEFAULT_SPORT
+) -> PracticeBriefResult:
     """Compose a practice plan. Falls back to a stub if no API key is present."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
         return _build_stub(context)
@@ -338,7 +322,7 @@ def build_practice_brief(context: PracticeContext) -> PracticeBriefResult:
             messages=[
                 {
                     "role": "user",
-                    "content": _build_text_prompt(context),
+                    "content": _build_text_prompt(context, sport),
                 }
             ],
         )
