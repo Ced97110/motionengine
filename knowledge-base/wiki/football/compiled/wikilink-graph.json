@@ -1,0 +1,48 @@
+{
+  "defending-cover-2": [
+    "play-cover-2-beater-skinny-post",
+    "defending-cover-3",
+    "play-screen-pass"
+  ],
+  "defending-cover-3": [
+    "defending-cover-2",
+    "play-rpo-slant",
+    "play-quick-out",
+    "play-cover-2-beater-skinny-post"
+  ],
+  "play-counter-trey": [
+    "play-rpo-slant",
+    "play-screen-pass",
+    "play-quick-out",
+    "concept-anatomy-hip-flexor-complex",
+    "concept-anatomy-glute-max"
+  ],
+  "play-cover-2-beater-skinny-post": [
+    "play-quick-out",
+    "play-rpo-slant",
+    "play-screen-pass",
+    "defending-cover-2",
+    "defending-cover-3"
+  ],
+  "play-quick-out": [
+    "play-rpo-slant",
+    "play-screen-pass",
+    "play-cover-2-beater-skinny-post",
+    "defending-cover-2",
+    "defending-cover-3"
+  ],
+  "play-rpo-slant": [
+    "play-quick-out",
+    "play-counter-trey",
+    "play-cover-2-beater-skinny-post",
+    "defending-cover-3",
+    "defending-cover-2"
+  ],
+  "play-screen-pass": [
+    "play-counter-trey",
+    "play-quick-out",
+    "play-rpo-slant",
+    "defending-cover-2",
+    "defending-cover-3"
+  ]
+}

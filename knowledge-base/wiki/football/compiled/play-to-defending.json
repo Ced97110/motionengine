@@ -1,0 +1,26 @@
+{
+  "play-cover-2-beater-skinny-post": [
+    {
+      "defending": "defending-cover-2",
+      "shared_tags": [
+        "cover-2"
+      ]
+    }
+  ],
+  "play-rpo-slant": [
+    {
+      "defending": "defending-cover-3",
+      "shared_tags": [
+        "cover-3"
+      ]
+    }
+  ],
+  "play-screen-pass": [
+    {
+      "defending": "defending-cover-3",
+      "shared_tags": [
+        "cover-3"
+      ]
+    }
+  ]
+}

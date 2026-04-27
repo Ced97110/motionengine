@@ -1,0 +1,132 @@
+{
+  "play-counter-trey": [
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "hip_flexor_complex"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "glute_max"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "ankle_complex"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "core_outer"
+    },
+    {
+      "criticality": "required",
+      "for_role": "FB",
+      "region": "glute_max"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "FB",
+      "region": "hip_flexor_complex"
+    }
+  ],
+  "play-cover-2-beater-skinny-post": [
+    {
+      "criticality": "required",
+      "for_role": "QB",
+      "region": "shoulder_girdle"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "region": "hip_flexor_complex"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "region": "glute_max"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "WR2",
+      "region": "ankle_complex"
+    }
+  ],
+  "play-quick-out": [
+    {
+      "criticality": "required",
+      "for_role": "QB",
+      "region": "shoulder_girdle"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "region": "hip_flexor_complex"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "region": "ankle_complex"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "WR2",
+      "region": "hip_flexor_complex"
+    }
+  ],
+  "play-rpo-slant": [
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "hip_flexor_complex"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "glute_max"
+    },
+    {
+      "criticality": "required",
+      "for_role": "QB",
+      "region": "shoulder_girdle"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "region": "hip_flexor_complex"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "region": "ankle_complex"
+    }
+  ],
+  "play-screen-pass": [
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "hip_flexor_complex"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "glute_max"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "region": "ankle_complex"
+    },
+    {
+      "criticality": "required",
+      "for_role": "QB",
+      "region": "shoulder_girdle"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "WR1",
+      "region": "hip_flexor_complex"
+    }
+  ]
+}

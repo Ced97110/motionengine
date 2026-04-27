@@ -1,0 +1,56 @@
+{
+  "defending-cover-2": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "the outside receiver runs an eight-yard out behind the corner who has already bailed into a deep third. Correction: the corner must maintain inside leverage and carry the flat zone.",
+        "symptom": "Corner releases too early"
+      },
+      {
+        "remedy": "the safety rotates to the number-two receiver's vertical stem and the backside half is uncovered. Correction: the safety carries his half first; only man-match a number-two receiver when the curl-flat linebacker confirms help.",
+        "symptom": "Safety over-rotates"
+      },
+      {
+        "remedy": "the linebacker over-pursues a crossing route and opens the hook zone for a dump-off. Correction: wall the hook zone before rotating to the crossing route.",
+        "symptom": "MLB abandons the middle hook"
+      }
+    ],
+    "tags": [
+      "defense",
+      "cover-2",
+      "zone",
+      "two-deep",
+      "flat-defender",
+      "cornerback",
+      "safety",
+      "pass-coverage"
+    ]
+  },
+  "defending-cover-3": {
+    "diagram": null,
+    "symptoms": [
+      {
+        "remedy": "the corner drops into the deep third before confirming a pass, and the run attacks the flat. Correction: the corner's first read is run or pass key; bail only after confirming pass.",
+        "symptom": "Corner bails before reading run"
+      },
+      {
+        "remedy": "the FS cheats toward a motion or a pre-snap route stem and the backside deep middle opens. Correction: FS stays center until the route stem confirms vertical direction.",
+        "symptom": "FS over-rotates to one side"
+      },
+      {
+        "remedy": "the linebacker follows the running back into the flat and vacates the curl zone for a receiver running a curl or comeback. Correction: the flat route belongs to the overhang player, not the inside linebacker.",
+        "symptom": "Curl-flat defender widens on a flat route"
+      }
+    ],
+    "tags": [
+      "defense",
+      "cover-3",
+      "zone",
+      "single-high",
+      "free-safety",
+      "cornerback",
+      "curl-flat",
+      "pass-coverage"
+    ]
+  }
+}

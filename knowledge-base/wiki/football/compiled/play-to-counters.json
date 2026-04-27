@@ -1,0 +1,52 @@
+{
+  "play-counter-trey": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the backside linebacker scrapes hard across the line expecting the counter, the fullback kicks out that linebacker instead of the defensive end, and the running back bends the path one gap wider."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When both linebackers flow immediately to the back's initial step, reset the series with a true inside zone run; the counter's misdirection value depends on the defense respecting the initial fake."
+    }
+  ],
+  "play-cover-2-beater-skinny-post": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the free safety rotates to the post side before the snap, redirect WR1 to a corner route outside the safety's leverage and deliver the ball to the vacated seam."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When both safeties stay deep and the corner walls at twelve yards, check down to the running back on a wheel route into the flat where no defender is aligned."
+    }
+  ],
+  "play-quick-out": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the corner drives hard on the out at the snap, the quarterback hitches up and releases the ball over the top on a fade to the same receiver."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense rotates to a two-high look pre-snap, check to the in-breaking route on the opposite side where the overhang linebacker is displaced."
+    }
+  ],
+  "play-rpo-slant": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the overhang defender squeezes inside on the zone run, the quarterback pulls the ball and delivers the slant to the boundary receiver before the corner can rotate."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the corner plays inside leverage on the slant receiver at the snap, the quarterback hands off on the zone run and the running back attacks the outside edge where the corner vacated."
+    }
+  ],
+  "play-screen-pass": [
+    {
+      "extraction": "llm-inferred",
+      "text": "When the defense pattern-reads the screen and the linebacker stays home in the flat, the quarterback resets and throws the slant to the boundary receiver who is one-on-one with no help."
+    },
+    {
+      "extraction": "llm-inferred",
+      "text": "When the edge rusher chases the screen release and opens the edge, the quarterback keeps the ball on a designed scramble outside the screen side."
+    }
+  ]
+}

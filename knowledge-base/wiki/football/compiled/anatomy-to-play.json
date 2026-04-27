@@ -1,0 +1,132 @@
+{
+  "ankle_complex": [
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-counter-trey"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "WR2",
+      "play": "play-cover-2-beater-skinny-post"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "play": "play-quick-out"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "play": "play-rpo-slant"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-screen-pass"
+    }
+  ],
+  "core_outer": [
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-counter-trey"
+    }
+  ],
+  "glute_max": [
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-counter-trey"
+    },
+    {
+      "criticality": "required",
+      "for_role": "FB",
+      "play": "play-counter-trey"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "play": "play-cover-2-beater-skinny-post"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-rpo-slant"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-screen-pass"
+    }
+  ],
+  "hip_flexor_complex": [
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-counter-trey"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "FB",
+      "play": "play-counter-trey"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "play": "play-cover-2-beater-skinny-post"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "play": "play-quick-out"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "WR2",
+      "play": "play-quick-out"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-rpo-slant"
+    },
+    {
+      "criticality": "required",
+      "for_role": "WR1",
+      "play": "play-rpo-slant"
+    },
+    {
+      "criticality": "required",
+      "for_role": "RB",
+      "play": "play-screen-pass"
+    },
+    {
+      "criticality": "optional",
+      "for_role": "WR1",
+      "play": "play-screen-pass"
+    }
+  ],
+  "shoulder_girdle": [
+    {
+      "criticality": "required",
+      "for_role": "QB",
+      "play": "play-cover-2-beater-skinny-post"
+    },
+    {
+      "criticality": "required",
+      "for_role": "QB",
+      "play": "play-quick-out"
+    },
+    {
+      "criticality": "required",
+      "for_role": "QB",
+      "play": "play-rpo-slant"
+    },
+    {
+      "criticality": "required",
+      "for_role": "QB",
+      "play": "play-screen-pass"
+    }
+  ]
+}

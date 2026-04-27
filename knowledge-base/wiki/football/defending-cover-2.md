@@ -78,9 +78,9 @@ The structure places the entire burden of deep coverage on the two safeties. Its
 
 ## Common Mistakes
 
-1. **Corner releases too early** — the outside receiver runs an eight-yard out behind the corner who has already bailed into a deep third. Correction: the corner must maintain inside leverage and carry the flat zone.
-2. **Safety over-rotates** — the safety rotates to the number-two receiver's vertical stem and the backside half is uncovered. Correction: the safety carries his half first; only man-match a number-two receiver when the curl-flat linebacker confirms help.
-3. **MLB abandons the middle hook** — the linebacker over-pursues a crossing route and opens the hook zone for a dump-off. Correction: wall the hook zone before rotating to the crossing route.
+1. **Corner releases too early** → the outside receiver runs an eight-yard out behind the corner who has already bailed into a deep third. Correction: the corner must maintain inside leverage and carry the flat zone.
+2. **Safety over-rotates** → the safety rotates to the number-two receiver's vertical stem and the backside half is uncovered. Correction: the safety carries his half first; only man-match a number-two receiver when the curl-flat linebacker confirms help.
+3. **MLB abandons the middle hook** → the linebacker over-pursues a crossing route and opens the hook zone for a dump-off. Correction: wall the hook zone before rotating to the crossing route.
 
 ## Related Concepts
 - [[defending-cover-3]] — single-high alternative; the free safety is centered and the corners have deeper responsibilities, eliminating the seam-between-halves gap

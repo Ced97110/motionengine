@@ -78,9 +78,9 @@ Cover-3 is a base coverage because it is easy to teach, disguises well from a tw
 
 ## Common Mistakes
 
-1. **Corner bails before reading run** — the corner drops into the deep third before confirming a pass, and the run attacks the flat. Correction: the corner's first read is run or pass key; bail only after confirming pass.
-2. **FS over-rotates to one side** — the FS cheats toward a motion or a pre-snap route stem and the backside deep middle opens. Correction: FS stays center until the route stem confirms vertical direction.
-3. **Curl-flat defender widens on a flat route** — the linebacker follows the running back into the flat and vacates the curl zone for a receiver running a curl or comeback. Correction: the flat route belongs to the overhang player, not the inside linebacker.
+1. **Corner bails before reading run** → the corner drops into the deep third before confirming a pass, and the run attacks the flat. Correction: the corner's first read is run or pass key; bail only after confirming pass.
+2. **FS over-rotates to one side** → the FS cheats toward a motion or a pre-snap route stem and the backside deep middle opens. Correction: FS stays center until the route stem confirms vertical direction.
+3. **Curl-flat defender widens on a flat route** → the linebacker follows the running back into the flat and vacates the curl zone for a receiver running a curl or comeback. Correction: the flat route belongs to the overhang player, not the inside linebacker.
 
 ## Related Concepts
 - [[defending-cover-2]] — two-high alternative; eliminates the deep middle hole but exposes the seam between the two safety halves

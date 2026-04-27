@@ -1,0 +1,73 @@
+{
+  "defending-cover-2": [
+    "defense",
+    "cover-2",
+    "zone",
+    "two-deep",
+    "flat-defender",
+    "cornerback",
+    "safety",
+    "pass-coverage"
+  ],
+  "defending-cover-3": [
+    "defense",
+    "cover-3",
+    "zone",
+    "single-high",
+    "free-safety",
+    "cornerback",
+    "curl-flat",
+    "pass-coverage"
+  ],
+  "play-counter-trey": [
+    "gap-run",
+    "counter",
+    "power",
+    "i-formation",
+    "man-to-man",
+    "run-blocking",
+    "goal-line",
+    "red-zone"
+  ],
+  "play-cover-2-beater-skinny-post": [
+    "pass",
+    "dropback",
+    "cover-2",
+    "post",
+    "seam-route",
+    "shotgun",
+    "play-action",
+    "intermediate"
+  ],
+  "play-quick-out": [
+    "pass",
+    "quick-game",
+    "out-route",
+    "shotgun",
+    "man-to-man",
+    "cover-1",
+    "three-step"
+  ],
+  "play-rpo-slant": [
+    "RPO",
+    "pass",
+    "slant",
+    "zone-run",
+    "shotgun",
+    "quick-game",
+    "man-to-man",
+    "cover-1",
+    "cover-3"
+  ],
+  "play-screen-pass": [
+    "pass",
+    "screen",
+    "bubble-screen",
+    "run-blocking",
+    "shotgun",
+    "quick-game",
+    "man-to-man",
+    "cover-1",
+    "cover-3"
+  ]
+}
