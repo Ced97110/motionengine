@@ -14,8 +14,6 @@ a process restart to pick up the new JSON.
 
 from __future__ import annotations
 
-from functools import lru_cache
-
 from fastapi import APIRouter
 
 from motion.schemas.knowledge import (
@@ -44,24 +42,18 @@ from motion.schemas.knowledge import (
 )
 from motion.services.play_brief import build_brief
 from motion.wiki_ops.retrieval import (
-    CompiledIndexes,
     build_defensive_mirror,
     build_drill_justification,
     build_play_context,
     build_readiness_filter,
+    cached_indexes,
     get_formation_siblings,
     get_incoming_links,
     get_outgoing_links,
     get_shared_citation_pages,
-    load_indexes,
 )
 
 router = APIRouter(prefix="/api/knowledge", tags=["knowledge"])
-
-
-@lru_cache(maxsize=1)
-def _cached_indexes() -> CompiledIndexes:
-    return load_indexes()
 
 
 def _anatomy_insight_out(insight: object) -> AnatomyInsightOut | None:
@@ -205,7 +197,7 @@ def _defensive_mirror_out(matches: list) -> list[DefensiveMatchOut]:
 @router.post("/play-context", response_model=PlayContextResponse)
 async def play_context(request: PlayContextRequest) -> PlayContextResponse:
     """Q-A + defensive mirror + native-graph adjacencies: full retrieval bundle."""
-    indexes = _cached_indexes()
+    indexes = cached_indexes()
     ctx = build_play_context(request.play_slug, indexes)
     mirror = build_defensive_mirror(request.play_slug, indexes, top_k=3)
     return PlayContextResponse(
@@ -224,7 +216,7 @@ async def play_context(request: PlayContextRequest) -> PlayContextResponse:
 @router.post("/readiness", response_model=ReadinessResponse)
 async def readiness(request: ReadinessRequest) -> ReadinessResponse:
     """Q-B: filter playable-tonight set + prescribe recovery drills."""
-    bundle = build_readiness_filter(request.flagged_regions, _cached_indexes())
+    bundle = build_readiness_filter(request.flagged_regions, cached_indexes())
     return ReadinessResponse(
         flagged_regions=bundle.flagged_regions,
         excluded_plays=bundle.excluded_plays,
@@ -238,7 +230,7 @@ async def drill_justification(
     request: DrillJustificationRequest,
 ) -> DrillJustificationResponse:
     """Q-C: return plays this drill prepares (filtered to criticality=required)."""
-    plays = build_drill_justification(request.drill_slug, _cached_indexes())
+    plays = build_drill_justification(request.drill_slug, cached_indexes())
     return DrillJustificationResponse(drill_slug=request.drill_slug, plays=plays)
 
 
@@ -249,7 +241,7 @@ async def play_brief(request: PlayBriefRequest) -> PlayBriefResponse:
     Falls back to a deterministic stub when no ``ANTHROPIC_API_KEY`` is set
     or the Claude call fails — the UX never dead-ends.
     """
-    context = build_play_context(request.play_slug, _cached_indexes())
+    context = build_play_context(request.play_slug, cached_indexes())
     readiness_dicts = (
         [r.model_dump(by_alias=False) for r in request.roster_readiness]
         if request.roster_readiness

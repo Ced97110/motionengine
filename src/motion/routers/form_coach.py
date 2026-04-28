@@ -19,17 +19,15 @@ from __future__ import annotations
 import base64
 import binascii
 import re
-from functools import lru_cache
 
 from fastapi import APIRouter, HTTPException
 
 from motion.schemas.knowledge import FormCoachRequest, FormCoachResponse
 from motion.services.form_brief import build_form_brief
 from motion.wiki_ops.retrieval import (
-    CompiledIndexes,
     FormMeasurement,
     build_form_context,
-    load_indexes,
+    cached_indexes,
 )
 
 router = APIRouter(prefix="/api/form-coach", tags=["form-coach"])
@@ -42,11 +40,6 @@ _MAX_KEYFRAME_BYTES: int = 1_500_000  # 1.5 MB after base64-decode — comfortab
 _MAX_MEASUREMENTS: int = 20
 
 _SLUG_RE = re.compile(r"\b((?:concept|drill|exercise)-[a-z0-9][a-z0-9-]+)\b")
-
-
-@lru_cache(maxsize=1)
-def _cached_indexes() -> CompiledIndexes:
-    return load_indexes()
 
 
 def _decode_keyframe(b64: str) -> bytes:
@@ -120,7 +113,7 @@ async def analyze(request: FormCoachRequest) -> FormCoachResponse:
     context = build_form_context(
         shot_type=shot_type,
         measurements=measurements,
-        indexes=_cached_indexes(),
+        indexes=cached_indexes(),
         keyframe_count=len(keyframe_bytes),
     )
 

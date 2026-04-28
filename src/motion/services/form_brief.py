@@ -23,16 +23,15 @@ from __future__ import annotations
 
 import base64
 import os
-import re
 from dataclasses import dataclass
 
 from motion.prompts import get_prompts
+from motion.services._brief_utils import collect_anatomy_citations, extract_citations
 from motion.sports import DEFAULT_SPORT, Sport
 from motion.wiki_ops.retrieval import FormContext, FormMeasurement
 
 _MODEL = "claude-sonnet-4-6"
 _MAX_TOKENS = 600
-_CITATION_RE = re.compile(r"\[S\d+(?:,\s*pp?\.\s*[\d\-–]+)?\]")  # noqa: RUF001
 
 
 @dataclass(frozen=True)
@@ -40,36 +39,6 @@ class FormBriefResult:
     brief: str
     source_citations: list[str]
     source: str  # "claude" | "stub"
-
-
-def _extract_citations(text: str) -> list[str]:
-    """Return the unique ``[Sn, p.X]`` citations appearing in ``text``, in order."""
-    seen: list[str] = []
-    for match in _CITATION_RE.finditer(text):
-        token = match.group(0)
-        if token not in seen:
-            seen.append(token)
-    return seen
-
-
-def _collect_bundle_citations(context: FormContext) -> list[str]:
-    """Harvest `[Sn, p.X]` tokens from every concept-anatomy/technique insight."""
-    cites: list[str] = []
-    seen: set[str] = set()
-
-    def _add(token: str | None) -> None:
-        if token and token not in seen:
-            seen.add(token)
-            cites.append(token)
-
-    for a in context.anatomy:
-        if a.insight is None:
-            continue
-        for p in a.insight.key_principles:
-            _add(p.get("citation"))
-        for m in a.insight.common_mistakes:
-            _add(m.get("citation"))
-    return cites
 
 
 def _flagged(measurements: list[FormMeasurement]) -> list[FormMeasurement]:
@@ -113,7 +82,7 @@ def _build_stub(context: FormContext) -> FormBriefResult:
         )
     return FormBriefResult(
         brief=brief.strip(),
-        source_citations=_collect_bundle_citations(context),
+        source_citations=collect_anatomy_citations(context.anatomy),
         source="stub",
     )
 
@@ -140,8 +109,7 @@ _PROMPT_FOOTER = (
 
 def _build_prompt_instructions(sport: Sport = DEFAULT_SPORT) -> str:
     """Assemble the form-coach prompt rules with the per-sport voice block."""
-    prompts = get_prompts(sport)
-    return _PROMPT_HEADER + prompts.FORM_BRIEF_VOICE_BLOCK + _PROMPT_FOOTER
+    return _PROMPT_HEADER + get_prompts(sport).FORM_BRIEF_VOICE_BLOCK + _PROMPT_FOOTER
 
 
 def _build_text_prompt(context: FormContext, sport: Sport = DEFAULT_SPORT) -> str:
@@ -248,6 +216,6 @@ def build_form_brief(
 
     return FormBriefResult(
         brief=brief,
-        source_citations=_extract_citations(brief),
+        source_citations=extract_citations(brief),
         source="claude",
     )

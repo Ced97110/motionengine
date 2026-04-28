@@ -24,9 +24,8 @@ from motion.schemas.knowledge import (
 )
 from motion.services.practice_brief import build_practice_brief
 from motion.wiki_ops.retrieval import (
-    CompiledIndexes,
     build_practice_context,
-    load_indexes,
+    cached_indexes,
 )
 
 router = APIRouter(prefix="/api/practice", tags=["practice"])
@@ -53,11 +52,6 @@ _SLUG_RE = re.compile(r"\b((?:concept|drill|exercise|play)-[a-z0-9][a-z0-9-]+)\b
 
 
 @lru_cache(maxsize=1)
-def _cached_indexes() -> CompiledIndexes:
-    return load_indexes()
-
-
-@lru_cache(maxsize=1)
 def _drill_to_anatomy() -> dict[str, list[str]]:
     """Invert anatomy_to_drill into drill_slug → [region] for O(1) lookup.
 
@@ -66,7 +60,7 @@ def _drill_to_anatomy() -> dict[str, list[str]]:
     the compiled cross-ref sidecar.
     """
     out: dict[str, list[str]] = defaultdict(list)
-    indexes = _cached_indexes()
+    indexes = cached_indexes()
     for region, edges in indexes.anatomy_to_drill.items():
         for edge in edges:
             slug = edge.get("drill")
@@ -157,7 +151,7 @@ async def generate(request: PracticeRequest) -> PracticeResponse:
         level=request.level,
         duration_minutes=request.duration_minutes,
         focus_areas=list(request.focus_areas),
-        indexes=_cached_indexes(),
+        indexes=cached_indexes(),
         plays_in_library=list(request.plays_in_library),
     )
 

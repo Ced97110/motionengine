@@ -30,6 +30,8 @@ import json
 import os
 import re
 import sys
+from collections.abc import Callable
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -537,6 +539,64 @@ _SIGNATURE_FORBID = ("produces_signature:",)
 _COUNTERS_FORBID = ("counters:",)
 
 
+@dataclass(frozen=True)
+class _ModeConfig:
+    """Per-mode dispatch table — collapses four 4-arm if-chains in ``annotate``."""
+
+    fewshot: str
+    system_prompt: str
+    tool_def: dict[str, Any]
+    tool_name: str
+    target_kind: str
+    validate: Callable[[dict[str, Any], set[str]], list[str]]
+    emit: Callable[[dict[str, Any]], str]
+    forbid: tuple[str, ...]
+
+
+_MODE_CONFIG: dict[str, _ModeConfig] = {
+    "play": _ModeConfig(
+        fewshot=_PLAY_FEWSHOT,
+        system_prompt=_PLAY_SYSTEM_PROMPT,
+        tool_def=_PLAY_TOOL_DEF,
+        tool_name="emit_demands",
+        target_kind="play",
+        validate=_validate_play,
+        emit=_emit_yaml_play,
+        forbid=_PLAY_FORBID,
+    ),
+    "drill": _ModeConfig(
+        fewshot=_DRILL_FEWSHOT,
+        system_prompt=_DRILL_SYSTEM_PROMPT,
+        tool_def=_DRILL_TOOL_DEF,
+        tool_name="emit_trains",
+        target_kind="drill",
+        validate=_validate_drill,
+        emit=_emit_yaml_drill,
+        forbid=_DRILL_FORBID,
+    ),
+    "signature": _ModeConfig(
+        fewshot=_SIGNATURE_FEWSHOT,
+        system_prompt=_SIGNATURE_SYSTEM_PROMPT,
+        tool_def=_SIGNATURE_TOOL_DEF,
+        tool_name="emit_signature",
+        target_kind="play",
+        validate=lambda out, _regions: _validate_signature(out),
+        emit=_emit_yaml_signature,
+        forbid=_SIGNATURE_FORBID,
+    ),
+    "counters": _ModeConfig(
+        fewshot=_COUNTERS_FEWSHOT,
+        system_prompt=_COUNTERS_SYSTEM_PROMPT,
+        tool_def=_COUNTERS_TOOL_DEF,
+        tool_name="emit_counters",
+        target_kind="play",
+        validate=lambda out, _regions: _validate_counters(out),
+        emit=_emit_yaml_counters,
+        forbid=_COUNTERS_FORBID,
+    ),
+}
+
+
 def annotate(
     slug: str,
     write: bool,
@@ -544,7 +604,8 @@ def annotate(
     mode: str = "play",
     sport: Sport = DEFAULT_SPORT,
 ) -> int:
-    if mode not in ("play", "drill", "signature", "counters"):
+    cfg = _MODE_CONFIG.get(mode)
+    if cfg is None:
         print(
             f"error: unknown mode {mode!r} (expected play|drill|signature|counters)",
             file=sys.stderr,
@@ -557,18 +618,10 @@ def annotate(
         print(f"error: {target_path} not found", file=sys.stderr)
         return 2
 
-    if mode == "play":
-        fewshot_name = _PLAY_FEWSHOT
-    elif mode == "drill":
-        fewshot_name = _DRILL_FEWSHOT
-    elif mode == "signature":
-        fewshot_name = _SIGNATURE_FEWSHOT
-    else:
-        fewshot_name = _COUNTERS_FEWSHOT
-    fewshot_path = root / fewshot_name
+    fewshot_path = root / cfg.fewshot
     if not fewshot_path.is_file():
         print(
-            f"error: {fewshot_name} missing — required as few-shot example",
+            f"error: {cfg.fewshot} missing — required as few-shot example",
             file=sys.stderr,
         )
         return 2
@@ -588,48 +641,23 @@ def annotate(
         print("error: ANTHROPIC_API_KEY not set", file=sys.stderr)
         return 2
 
-    if mode == "play":
-        system_prompt = _PLAY_SYSTEM_PROMPT
-        tool_def = _PLAY_TOOL_DEF
-        tool_name = "emit_demands"
-        target_kind = "play"
-        tool_call = "emit_demands"
-    elif mode == "drill":
-        system_prompt = _DRILL_SYSTEM_PROMPT
-        tool_def = _DRILL_TOOL_DEF
-        tool_name = "emit_trains"
-        target_kind = "drill"
-        tool_call = "emit_trains"
-    elif mode == "signature":
-        system_prompt = _SIGNATURE_SYSTEM_PROMPT
-        tool_def = _SIGNATURE_TOOL_DEF
-        tool_name = "emit_signature"
-        target_kind = "play"
-        tool_call = "emit_signature"
-    else:
-        system_prompt = _COUNTERS_SYSTEM_PROMPT
-        tool_def = _COUNTERS_TOOL_DEF
-        tool_name = "emit_counters"
-        target_kind = "play"
-        tool_call = "emit_counters"
-
     user_prompt = (
         "## Few-shot example (already annotated; mirror this structure)\n\n"
         f"{fewshot_raw}\n\n"
         "## Allowed anatomy region slugs (use ONLY these)\n"
         f"{json.dumps(allowed_regions, indent=2)}\n\n"
-        f"## Target {target_kind} to annotate\n\n"
+        f"## Target {cfg.target_kind} to annotate\n\n"
         f"{target_raw}\n\n"
-        f"Emit the structured fields via the {tool_call} tool."
+        f"Emit the structured fields via the {cfg.tool_name} tool."
     )
 
     client = anthropic.Anthropic()
     response = client.messages.create(
         model=model,
         max_tokens=2048,
-        system=system_prompt,
-        tools=[tool_def],
-        tool_choice={"type": "tool", "name": tool_name},
+        system=cfg.system_prompt,
+        tools=[cfg.tool_def],
+        tool_choice={"type": "tool", "name": cfg.tool_name},
         messages=[{"role": "user", "content": user_prompt}],
     )
     tool_use = next((b for b in response.content if b.type == "tool_use"), None)
@@ -638,33 +666,15 @@ def annotate(
         return 1
     out = dict(tool_use.input)  # type: ignore[arg-type]
 
-    if mode == "play":
-        errs = _validate_play(out, set(allowed_regions))
-    elif mode == "drill":
-        errs = _validate_drill(out, set(allowed_regions))
-    elif mode == "signature":
-        errs = _validate_signature(out)
-    else:
-        errs = _validate_counters(out)
+    errs = cfg.validate(out, set(allowed_regions))
     if errs:
         for e in errs:
             print(f"validation error: {e}", file=sys.stderr)
         return 1
 
-    if mode == "play":
-        additions = _emit_yaml_play(out)
-        forbid = _PLAY_FORBID
-    elif mode == "drill":
-        additions = _emit_yaml_drill(out)
-        forbid = _DRILL_FORBID
-    elif mode == "signature":
-        additions = _emit_yaml_signature(out)
-        forbid = _SIGNATURE_FORBID
-    else:
-        additions = _emit_yaml_counters(out)
-        forbid = _COUNTERS_FORBID
+    additions = cfg.emit(out)
     try:
-        new_raw = _splice_frontmatter(target_raw, additions, forbid)
+        new_raw = _splice_frontmatter(target_raw, additions, cfg.forbid)
     except ValueError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1

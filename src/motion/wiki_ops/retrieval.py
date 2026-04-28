@@ -17,246 +17,69 @@ No LLM, no fuzzy matching, no HTTP. Pure front-matter inversion lookups.
 from __future__ import annotations
 
 import json
-from dataclasses import asdict, dataclass, field
+from dataclasses import asdict
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
 from motion.sports import DEFAULT_SPORT, Sport
 
 from .paths import wiki_dir
+from .retrieval_focus_maps import FORM_FOCUS, PRACTICE_FOCUS
+from .retrieval_models import (
+    AnatomyDemand,
+    AnatomyInsight,
+    CompiledIndexes,
+    CounterEntry,
+    DefendingEdge,
+    DefensiveMatch,
+    DefensiveSymptom,
+    DrillInsight,
+    DrillPrescription,
+    FormContext,
+    FormMeasurement,
+    PlayContext,
+    PracticeContext,
+    PracticeDrillCandidate,
+    ReadinessBundle,
+    SignatureEntry,
+    TechniqueDemand,
+)
 
-# --- dataclasses -------------------------------------------------------------
-
-
-@dataclass(frozen=True)
-class AnatomyInsight:
-    """Insight payload for a concept-anatomy page (coaching content)."""
-
-    key_principles: list[dict[str, str]] = field(default_factory=list)
-    common_mistakes: list[dict[str, str]] = field(default_factory=list)
-
-
-@dataclass(frozen=True)
-class DrillInsight:
-    """Insight payload for a drill or exercise page."""
-
-    safety_tip: dict[str, str] | None = None
-    coaching_cue: str | None = None
-    primary_form_error: dict[str, str] | None = None
-
-
-@dataclass(frozen=True)
-class AnatomyDemand:
-    """One entry of ``play.demands_anatomy`` with its concept-page slug."""
-
-    region: str
-    concept_slug: str
-    criticality: str
-    insight: AnatomyInsight | None = None
-    supports_technique: str | None = None
-    for_role: str | None = None
-
-
-@dataclass(frozen=True)
-class TechniqueDemand:
-    """One entry of ``play.demands_techniques`` with its resolved concept slug."""
-
-    technique_id: str
-    concept_slug: str | None
-    role: str | None
-    criticality: str
-
-
-@dataclass(frozen=True)
-class DrillPrescription:
-    """One prescribed drill, with the edge it was reached through.
-
-    ``target_technique`` and ``target_role`` are populated when the drill was
-    reached via an anatomy region that carries a ``supports_technique`` /
-    ``for_role`` linkage on the play's front-matter (edge #1 enriched authoring).
-    They let the UI render play-grounded sentences like "prepares role 5's
-    hard flash cut" instead of machine-slug traversal labels.
-    """
-
-    drill_slug: str
-    emphasis: str
-    via: str
-    insight: DrillInsight | None = None
-    target_region: str | None = None
-    target_technique: str | None = None
-    target_role: str | None = None
-
-
-@dataclass(frozen=True)
-class DefendingEdge:
-    """A compiled play↔defending match with the shared-tag rationale."""
-
-    defending_slug: str
-    shared_tags: list[str]
-    symptoms: list[DefensiveSymptom] = field(default_factory=list)
-
-
-@dataclass(frozen=True)
-class SignatureEntry:
-    """One Four-Factor signature direction declared on a play."""
-
-    factor: str
-    direction: str
-    magnitude: str
-    rationale: str
-    concept_slug: str | None = None
-
-
-@dataclass(frozen=True)
-class CounterEntry:
-    """One structured counter bullet with provenance label.
-
-    ``extraction`` ∈ {"verbatim", "paraphrase", "llm-inferred"}. Engine
-    consumers surface only ``llm-inferred`` entries on user chrome — the
-    other two flags mark book-derived prose that must not surface.
-    """
-
-    text: str
-    extraction: str
-    source_hint: str | None = None
-
-
-@dataclass(frozen=True)
-class FormMeasurement:
-    """One computed signal extracted from the player's joint timeline.
-
-    Computed client-side from MediaPipe Pose Landmarker output. Examples:
-
-    - ``elbow_flair`` (degrees from vertical at release)
-    - ``follow_through_droop`` (degrees of wrist drop after release)
-    - ``knee_valgus`` (degrees of inward knee collapse on landing)
-    - ``trunk_lean`` (degrees forward at peak)
-    - ``release_height_ratio`` (release point / player height)
-    """
-
-    name: str
-    value: float
-    unit: str  # "deg" | "ratio" | "px"
-    flagged: bool
-    threshold: float
-
-
-@dataclass(frozen=True)
-class FormContext:
-    """Phase-1 form-coach retrieval bundle.
-
-    Produced by :func:`build_form_context`. Carries the shot type, the
-    flagged + within-threshold measurements, and the anatomy / technique /
-    drill focus slugs picked from the existing knowledge graph for this
-    shot type.
-    """
-
-    shot_type: str
-    measurements: list[FormMeasurement] = field(default_factory=list)
-    anatomy: list[AnatomyDemand] = field(default_factory=list)
-    technique_focus: list[str] = field(default_factory=list)
-    drill_focus: list[str] = field(default_factory=list)
-    keyframe_count: int = 0
-
-
-@dataclass(frozen=True)
-class PlayContext:
-    """Full retrieval bundle for a single play (Q-A output)."""
-
-    play_slug: str
-    anatomy: list[AnatomyDemand] = field(default_factory=list)
-    techniques: list[TechniqueDemand] = field(default_factory=list)
-    drills: list[DrillPrescription] = field(default_factory=list)
-    defending: list[DefendingEdge] = field(default_factory=list)
-    signature: list[SignatureEntry] = field(default_factory=list)
-    counters: list[CounterEntry] = field(default_factory=list)
-
-
-@dataclass(frozen=True)
-class PracticeDrillCandidate:
-    """One drill the practice composer can pick from.
-
-    Carries the metadata the composer needs to score + place the drill in a
-    timed block: the slug, why it surfaced (which anatomy / technique edge),
-    the drill's own level + nominal duration, and emphasis (primary first).
-    """
-
-    drill_slug: str
-    emphasis: str  # "primary" | "secondary"
-    via_anatomy: str | None
-    via_technique: str | None
-    level: str | None  # beginner | intermediate | advanced (from drill frontmatter)
-    duration_minutes: int | None  # nominal duration of one rep block
-
-
-@dataclass(frozen=True)
-class PracticeContext:
-    """Practice-generator retrieval bundle (v0).
-
-    `plays_in_library` is plumbed through for v1 team-context wiring (M5);
-    v0 builders ignore it.
-    """
-
-    level: str
-    duration_minutes: int
-    focus_areas: list[str]
-    anatomy: list[AnatomyDemand] = field(default_factory=list)
-    techniques: list[str] = field(default_factory=list)
-    candidate_drills: list[PracticeDrillCandidate] = field(default_factory=list)
-    plays_in_library: list[str] = field(default_factory=list)
-
-
-@dataclass(frozen=True)
-class ReadinessBundle:
-    """Q-B output: safe plays + primary-emphasis prescription drills."""
-
-    flagged_regions: list[str]
-    excluded_plays: list[str]
-    safe_plays: list[str]
-    prescription_drills: list[DrillPrescription]
-
-
-@dataclass(frozen=True)
-class DefensiveSymptom:
-    """One symptom/remedy pair parsed from a defending page's ``## Common Mistakes``."""
-
-    symptom: str
-    remedy: str
-
-
-@dataclass(frozen=True)
-class DefensiveMatch:
-    """A defending page relevant to a play, scored by tag overlap."""
-
-    defending_slug: str
-    overlap_score: int
-    matched_tags: list[str]
-    symptoms: list[DefensiveSymptom]
-    diagram: dict[str, Any] | None = None
-
-
-@dataclass(frozen=True)
-class CompiledIndexes:
-    """Compiled cross-ref indexes + auxiliary lookups."""
-
-    play_to_anatomy: dict[str, list[dict[str, str]]]
-    play_to_technique: dict[str, list[dict[str, str]]]
-    play_to_signature: dict[str, list[dict[str, str]]]
-    play_to_counters: dict[str, list[dict[str, str]]]
-    anatomy_to_play: dict[str, list[dict[str, str]]]
-    anatomy_to_drill: dict[str, list[dict[str, str]]]
-    technique_to_play: dict[str, list[dict[str, str]]]
-    technique_to_drill: dict[str, list[dict[str, str]]]
-    technique_aliases: dict[str, dict[str, Any]]
-    page_insights: dict[str, dict[str, Any]]
-    page_tags: dict[str, list[str]]
-    defending_insights: dict[str, dict[str, Any]]
-    play_to_defending: dict[str, list[dict[str, Any]]]
-    # Native Karpathy cross-refs compiled from body prose (2026-04-20).
-    wikilink_forward: dict[str, list[str]]
-    wikilink_reverse: dict[str, list[str]]
-    citation_graph: dict[str, list[str]]
-    formation_graph: dict[str, list[str]]
+__all__ = [
+    "AnatomyDemand",
+    "AnatomyInsight",
+    "CompiledIndexes",
+    "CounterEntry",
+    "DefendingEdge",
+    "DefensiveMatch",
+    "DefensiveSymptom",
+    "DrillInsight",
+    "DrillPrescription",
+    "FormContext",
+    "FormMeasurement",
+    "PlayContext",
+    "PracticeContext",
+    "PracticeDrillCandidate",
+    "ReadinessBundle",
+    "SignatureEntry",
+    "TechniqueDemand",
+    "build_defensive_mirror",
+    "build_drill_justification",
+    "build_form_context",
+    "build_play_context",
+    "build_practice_context",
+    "build_readiness_filter",
+    "cached_indexes",
+    "context_to_dict",
+    "get_cite_cluster",
+    "get_formation_siblings",
+    "get_incoming_links",
+    "get_outgoing_links",
+    "get_shared_citation_pages",
+    "load_indexes",
+    "readiness_to_dict",
+]
 
 
 # --- loading -----------------------------------------------------------------
@@ -308,6 +131,16 @@ def load_indexes(
         citation_graph=_maybe_read("citation-graph.json"),
         formation_graph=_maybe_read("formation-graph.json"),
     )
+
+
+@lru_cache(maxsize=1)
+def cached_indexes() -> CompiledIndexes:
+    """Process-wide cache for the default-sport compiled indexes.
+
+    Routers used to keep their own ``lru_cache`` per module, which loaded
+    the same files three times at startup. This shared cache reads once.
+    """
+    return load_indexes()
 
 
 # --- helpers -----------------------------------------------------------------
@@ -573,62 +406,6 @@ def build_drill_justification(drill_slug: str, indexes: CompiledIndexes) -> list
 # --- Q-D: form-coach context (Phase 1) ---------------------------------------
 
 
-# Shot-type → anatomy/technique/drill focus map. Hand-curated based on
-# the existing wiki concept pages. The anatomy regions referenced here
-# may not all have concept-anatomy-* pages yet (shoulder_girdle,
-# wrist_complex, elbow_complex are scheduled for Phase 1 day 3 authoring);
-# `build_form_context` filters out missing pages so the bundle stays
-# clean as content lands.
-_FORM_FOCUS: dict[str, dict[str, list[str]]] = {
-    "free-throw": {
-        "anatomy": [
-            "shoulder_girdle",
-            "wrist_complex",
-            "elbow_complex",
-            "core_outer",
-        ],
-        "techniques": [
-            "concept-jump-shot-mechanics",
-            "concept-jump-shot-release-and-follow-through",
-            "concept-quiet-eye-basketball-shooting",
-            "concept-shooting-confidence-rhythm",
-        ],
-    },
-    "jump-shot": {
-        "anatomy": [
-            "shoulder_girdle",
-            "wrist_complex",
-            "elbow_complex",
-            "core_outer",
-            "glute_max",
-            "ankle_complex",
-        ],
-        "techniques": [
-            "concept-jump-shot-biomechanics",
-            "concept-jump-shot-mechanics",
-            "concept-jump-shot-release-and-follow-through",
-            "concept-midrange-jump-shot",
-        ],
-    },
-    "layup": {
-        "anatomy": [
-            "hip_flexor_complex",
-            "glute_max",
-            "ankle_complex",
-            "core_outer",
-        ],
-        "techniques": [
-            "concept-1on1-reads-and-attacks",
-            "concept-first-step-quickness",
-        ],
-    },
-    "unknown": {
-        "anatomy": ["core_outer"],
-        "techniques": [],
-    },
-}
-
-
 def _wiki_page_exists(slug: str, indexes: CompiledIndexes) -> bool:
     """Check whether a page slug appears anywhere in the compiled graph.
 
@@ -651,12 +428,12 @@ def build_form_context(
 ) -> FormContext:
     """Assemble the Phase-1 form-coach retrieval bundle.
 
-    Picks anatomy + technique + drill focus from :data:`_FORM_FOCUS` for
+    Picks anatomy + technique + drill focus from :data:`FORM_FOCUS` for
     the shot type, filters to pages that actually exist in the wiki, and
     pulls drills via the existing anatomy → drill graph so prescriptions
     resolve through the same chain ``play_brief`` uses.
     """
-    focus = _FORM_FOCUS.get(shot_type) or _FORM_FOCUS["unknown"]
+    focus = FORM_FOCUS.get(shot_type) or FORM_FOCUS["unknown"]
 
     anatomy_demands: list[AnatomyDemand] = []
     for region in focus["anatomy"]:
@@ -861,60 +638,6 @@ def build_defensive_mirror(
 
 
 # --- Practice generator (v0) -----------------------------------------------
-#
-# `_PRACTICE_FOCUS` maps a coach-facing focus area (chip on the UI) to the
-# anatomy regions and technique slugs the engine should traverse. Anatomy
-# slugs MUST appear in the 7 concept-anatomy pages; technique slugs are
-# concept-technique stems. `build_practice_context` filters out unknown pages
-# at retrieval time so this map can list aspirational slugs without breaking.
-
-_PRACTICE_FOCUS: dict[str, dict[str, list[str]]] = {
-    "shooting": {
-        "anatomy": ["wrist_complex", "elbow_complex", "shoulder_girdle", "core_outer"],
-        "techniques": [],
-    },
-    "free-throws": {
-        "anatomy": ["wrist_complex", "elbow_complex", "shoulder_girdle"],
-        "techniques": [],
-    },
-    "ball-handling": {
-        "anatomy": ["wrist_complex", "ankle_complex", "hip_flexor_complex"],
-        "techniques": [],
-    },
-    "finishing": {
-        "anatomy": [
-            "ankle_complex",
-            "glute_max",
-            "hip_flexor_complex",
-            "core_outer",
-            "shoulder_girdle",
-        ],
-        "techniques": ["concept-technique-hard-cut-to-paint"],
-    },
-    "defense": {
-        "anatomy": ["ankle_complex", "glute_max", "hip_flexor_complex", "core_outer"],
-        "techniques": ["concept-technique-closeout-contest-verticality"],
-    },
-    "conditioning": {
-        "anatomy": ["ankle_complex", "glute_max", "hip_flexor_complex", "core_outer"],
-        "techniques": [],
-    },
-    "rebounding": {
-        "anatomy": ["glute_max", "core_outer", "shoulder_girdle", "hip_flexor_complex"],
-        "techniques": [],
-    },
-    "scrimmage": {
-        "anatomy": [
-            "ankle_complex",
-            "glute_max",
-            "hip_flexor_complex",
-            "core_outer",
-            "shoulder_girdle",
-            "wrist_complex",
-        ],
-        "techniques": [],
-    },
-}
 
 _LEVEL_ORDER: dict[str, int] = {"beginner": 0, "intermediate": 1, "advanced": 2}
 
@@ -989,7 +712,7 @@ def build_practice_context(
     anatomy_slugs: list[str] = []
     technique_slugs: list[str] = []
     for area in focus_areas:
-        focus = _PRACTICE_FOCUS.get(area)
+        focus = PRACTICE_FOCUS.get(area)
         if not focus:
             continue
         for region in focus["anatomy"]:

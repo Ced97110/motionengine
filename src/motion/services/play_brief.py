@@ -17,16 +17,15 @@ a degradation indicator if needed. Mirrors the pattern in
 from __future__ import annotations
 
 import os
-import re
 from dataclasses import dataclass
 
 from motion.prompts import get_prompts
+from motion.services._brief_utils import collect_anatomy_citations, extract_citations
 from motion.sports import DEFAULT_SPORT, Sport
 from motion.wiki_ops.retrieval import PlayContext
 
 _MODEL = "claude-sonnet-4-6"
 _MAX_TOKENS = 400
-_CITATION_RE = re.compile(r"\[S\d+(?:,\s*pp?\.\s*[\d\-\u2013]+)?\]")
 
 
 @dataclass(frozen=True)
@@ -36,40 +35,20 @@ class BriefResult:
     source: str  # "claude" | "stub"
 
 
-def _extract_citations(text: str) -> list[str]:
-    """Return the unique ``[Sn, p.X]`` citations appearing in ``text``, in order."""
-    seen: list[str] = []
-    for match in _CITATION_RE.finditer(text):
-        token = match.group(0)
-        if token not in seen:
-            seen.append(token)
-    return seen
-
-
 def _collect_bundle_citations(context: PlayContext) -> list[str]:
     """Harvest all `[Sn, p.X]` citations referenced across the bundle's insights."""
-    cites: list[str] = []
-    seen: set[str] = set()
-
-    def _add(token: str | None) -> None:
-        if token and token not in seen:
-            seen.add(token)
-            cites.append(token)
-
-    for a in context.anatomy:
-        if a.insight is None:
-            continue
-        for p in a.insight.key_principles:
-            _add(p.get("citation"))
-        for m in a.insight.common_mistakes:
-            _add(m.get("citation"))
+    cites = collect_anatomy_citations(context.anatomy)
+    seen: set[str] = set(cites)
     for d in context.drills:
         if d.insight is None:
             continue
-        if d.insight.safety_tip:
-            _add(d.insight.safety_tip.get("citation"))
-        if d.insight.primary_form_error:
-            _add(d.insight.primary_form_error.get("citation"))
+        for blob in (d.insight.safety_tip, d.insight.primary_form_error):
+            if not blob:
+                continue
+            cite = blob.get("citation")
+            if cite and cite not in seen:
+                seen.add(cite)
+                cites.append(cite)
     return cites
 
 
@@ -257,6 +236,6 @@ def build_brief(
 
     return BriefResult(
         brief=brief,
-        source_citations=_extract_citations(brief),
+        source_citations=extract_citations(brief),
         source="claude",
     )
